@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>しわもこコーチ</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 24px; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 16px; max-width: 560px; }
+    .meta { font-size: 12px; opacity: .7; margin-top: 8px; }
+    .controls { margin-top: 12px; display: flex; gap: 8px; }
+    button { padding: 8px 12px; border-radius: 10px; border: 1px solid #ccc; background: #fff; cursor: pointer; }
+    button:disabled { opacity: .4; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <h1>しわもこコーチ</h1>
+
+  <div class="card">
+    <div id="slideText">読み込み中…</div>
+    <div class="meta" id="meta"></div>
+
+    <div class="controls">
+      <button id="prev">まえ</button>
+      <button id="next">つぎ</button>
+      <button id="toggle">とめる</button>
+      <button id="reload">さいよみこみ</button>
+    </div>
+  </div>
+
+<script>
+  // ここを自分のgas webアプリのexec urlに置き換え
+  const GAS_EXEC_URL = "https://script.google.com/macros/s/xxxxx/exec";
+  // tokenが必要ならここに。不要なら空のままでok
+  const TOKEN = "yyyyy";
+
+  let timerId = null;
+  let items = [];
+  let index = 0;
+  let autoplay = true;
+  let intervalMs = 4000;
+  let modelUsed = "";
+
+  function buildUrl() {
+    const u = new URL(GAS_EXEC_URL);
+    if (TOKEN) u.searchParams.set("token", TOKEN);
+    // 必要なら追加パラメータもここで付ける
+    return u.toString();
+  }
+
+  function render() {
+    const el = document.getElementById("slideText");
+    const meta = document.getElementById("meta");
+
+    if (!items.length) {
+      el.textContent = "データがありません";
+      meta.textContent = "";
+      return;
+    }
+
+    const it = items[index];
+    el.textContent = it.text ?? it.advice ?? JSON.stringify(it);
+
+    meta.textContent =
+      `${index + 1}/${items.length}` +
+      (modelUsed ? `  model:${modelUsed}` : "") +
+      `  autoplay:${autoplay ? "on" : "off"}` +
+      `  interval:${intervalMs}ms`;
+  }
+
+  function stopAutoplay() {
+    if (timerId) clearInterval(timerId);
+    timerId = null;
+    document.getElementById("toggle").textContent = "さいせい";
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    timerId = setInterval(() => {
+      index = (index + 1) % items.length;
+      render();
+    }, intervalMs);
+    document.getElementById("toggle").textContent = "とめる";
+  }
+
+  async function loadData() {
+    stopAutoplay();
+    document.getElementById("slideText").textContent = "読み込み中…";
+    document.getElementById("meta").textContent = "";
+
+    const res = await fetch(buildUrl(), { cache: "no-store" });
+    if (!res.ok) {
+      document.getElementById("slideText").textContent = `取得失敗: ${res.status}`;
+      return;
+    }
+
+    const data = await res.json();
+
+    // dataの形はgas側に合わせて調整できる
+    // 想定:
+    // { autoplay: true, intervalMs: 5000, startIndex: 0, items: [{text:"..."}, ...], modelUsed:"..." }
+    autoplay = data.autoplay ?? true;
+    intervalMs = data.intervalMs ?? 4000;
+    index = data.startIndex ?? 0;
+    modelUsed = data.modelUsed ?? "";
+
+    items = Array.isArray(data.items) ? data.items : (Array.isArray(data) ? data : []);
+    if (index < 0) index = 0;
+    if (items.length && index >= items.length) index = 0;
+
+    render();
+    if (autoplay && items.length >= 2) startAutoplay();
+  }
+
+  document.getElementById("prev").onclick = () => {
+    if (!items.length) return;
+    index = (index - 1 + items.length) % items.length;
+    render();
+  };
+
+  document.getElementById("next").onclick = () => {
+    if (!items.length) return;
+    index = (index + 1) % items.length;
+    render();
+  };
+
+  document.getElementById("toggle").onclick = () => {
+    if (!items.length) return;
+    if (timerId) stopAutoplay();
+    else startAutoplay();
+  };
+
+  document.getElementById("reload").onclick = () => loadData();
+
+  // 初回読み込み
+  loadData();
+</script>
+</body>
+</html>
