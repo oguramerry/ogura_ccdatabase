@@ -57,22 +57,38 @@
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const input = document.getElementById("userInput");
-    console.log("input要素:", input);
+    let timer = null;
 
     if (!input) {
       console.log("input見つからないよ");
       return;
     }
 
-    let timer = null;
     input.addEventListener("input", () => {
       clearTimeout(timer);
       timer = setTimeout(() => {
-        console.log("確定:", input.value);
+        const user = input.value.trim();
+        if (!user) return;
+
+        console.log("確定:", user);
+
+        const url =
+          "https://script.google.com/macros/s/AKfycbyDgeYvhDjnhp-feeD-4_g-rRf6f9sRGM5-YLO4BRvIVRDlBRKubWeT_JMy9-6FZ3aCOg/exec" +
+          "?action=stats&user=" + encodeURIComponent(user);
+
+        fetch(url)
+          .then(res => res.json())
+          .then(data => {
+            console.log("gasから返ってきたよ:", data);
+          })
+          .catch(err => {
+            console.error("gasよびだし失敗:", err);
+          });
       }, 500);
     });
   });
 </script>
+
 
 </body>
 </html>
