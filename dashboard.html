@@ -11,83 +11,84 @@
     a{ color:#1f2937; text-decoration:none; border-bottom: 1px dashed #8bd0ff; }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="card">
-  <p style="margin:0 0 12px; font-size:18px;">統計分析ページ</p>
+      <p style="margin:0 0 12px; font-size:18px;">統計分析ページ</p>
 
-  <div style="
-    display:flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 14px;
-    border:1px solid #cfeaff;
-    border-radius:999px;
-    background:#f6fbff;
-    max-width:360px;
-  ">
-    <span style="font-size:12px; color:#6b7280;">user</span>
-    
-    <input
-  id="userInput"
-  type="text"
-  placeholder="ユーザー名を入力…"
-  style="
-    border:none;
-    outline:none;
-    background:transparent;
-    font-size:14px;
-    flex:1;
-  "
-/>
+      <div style="
+        display:flex;
+        align-items:center;
+        gap:10px;
+        padding:12px 14px;
+        border:1px solid #cfeaff;
+        border-radius:999px;
+        background:#f6fbff;
+        max-width:360px;
+      ">
+        <span style="font-size:12px; color:#6b7280;">user</span>
 
+        <input
+          id="userInput"
+          type="text"
+          placeholder="ユーザー名を入力…"
+          style="
+            border:none;
+            outline:none;
+            background:transparent;
+            font-size:14px;
+            flex:1;
+          "
+        />
+      </div>
+
+      <p style="margin:14px 0 0; font-size:12px; color:#6b7280;">
+        入力したら自動で集計される予定だよ
+      </p>
+
+      <p style="margin:14px 0 0;">
+        <a href="./index.html">トップへ戻る</a>
+      </p>
+    </div>
   </div>
 
-  <p style="margin:14px 0 0; font-size:12px; color:#6b7280;">
-    入力したら自動で集計される予定だよ
-  </p>
+  <script>
+    console.log("mode: jsonp only");
 
-  <p style="margin:14px 0 0;">
-    <a href="./index.html">トップへ戻る</a>
-  </p>
-</div>
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("userInput");
+      let timer = null;
 
-  </div>
+      window.handleStatsJsonp = (data) => {
+        console.log("gas stats(jsonp):", data);
+      };
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const input = document.getElementById("userInput");
-    let timer = null;
+      input.addEventListener("input", () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          const user = input.value.trim();
+          if (!user) return;
 
-    window.handleStatsJsonp = (data) => {
-      console.log("gas stats(jsonp):", data);
-    };
+          const old = document.getElementById("jsonpStats");
+          if (old) old.remove();
 
-    input.addEventListener("input", () => {
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        const user = input.value.trim();
-        if (!user) return;
+          const s = document.createElement("script");
+          s.id = "jsonpStats";
+          s.onload = () => console.log("jsonp script loaded");
+          s.onerror = () => console.log("jsonp script load failed");
 
-        const old = document.getElementById("jsonpStats");
-        if (old) old.remove();
+          s.src =
+            "https://script.google.com/macros/s/AKfycbyDgeYvhDjnhp-feeD-4_g-rRf6f9sRGM5-YLO4BRvIVRDlBRKubWeT_JMy9-6FZ3aCOg/exec" +
+            "?action=stats&user=" + encodeURIComponent(user) +
+            "&callback=handleStatsJsonp" +
+            "&_=" + Date.now();
 
-        const s = document.createElement("script");
-        s.id = "jsonpStats";
-        s.onload = () => console.log("jsonp script loaded");
-        s.onerror = () => console.log("jsonp script load failed");
-
-        s.src =
-          "https://script.google.com/macros/s/AKfycbyDgeYvhDjnhp-feeD-4_g-rRf6f9sRGM5-YLO4BRvIVRDlBRKubWeT_JMy9-6FZ3aCOg/exec" +
-          "?action=stats&user=" + encodeURIComponent(user) +
-          "&callback=handleStatsJsonp" +
-          "&_=" + Date.now(); // キャッシュ回避
-
-        document.body.appendChild(s);
-      }, 500);
+          console.log("jsonp url:", s.src);
+          document.body.appendChild(s);
+        }, 500);
+      });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
