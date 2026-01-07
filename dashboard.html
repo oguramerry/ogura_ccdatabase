@@ -130,6 +130,10 @@ if (h) {
     `試合数 ${m.total} / 勝率 ${m.winRate ?? "-"}`;
 }
 
+const stageEl = document.getElementById("topStageBody");
+if (stageEl) stageEl.textContent = "あとでここにステージtop3が入るよ";
+
+        
 };
 
       window.handleUsersJsonp = (data) => {
