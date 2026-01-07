@@ -30,8 +30,9 @@
         <span style="font-size:12px; color:#6b7280;">user</span>
 
         <input
-          id="userInput"
-          type="text"
+            id="userInput"
+            list="userList"
+            type="text"
           placeholder="ユーザー名を入力…"
           style="
             border:none;
@@ -41,6 +42,7 @@
             flex:1;
           "
         />
+        <datalist id="userList"></datalist>
       </div>
 
       <p style="margin:14px 0 0; font-size:12px; color:#6b7280;">
@@ -70,6 +72,31 @@
   el.textContent =
     `試合数 ${m.total} / 勝ち ${m.wins} / 負け ${m.losses} / 勝率 ${m.winRate ?? "-"}`;
 };
+
+      window.handleUsersJsonp = (data) => {
+  console.log("gas users(jsonp):", data);
+
+  const list = document.getElementById("userList");
+  if (!list) return;
+
+  list.innerHTML = "";
+
+  const users = data.users || [];
+  for (const u of users) {
+    const opt = document.createElement("option");
+    opt.value = u;
+    list.appendChild(opt);
+  }
+};
+
+      <script>
+  const sUsers = document.createElement("script");
+  sUsers.src =
+    "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec" +
+    "?action=users&callback=handleUsersJsonp" +
+    "&_=" + Date.now();
+  document.body.appendChild(sUsers);
+</script>
 
 
       input.addEventListener("input", () => {
