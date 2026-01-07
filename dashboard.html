@@ -62,8 +62,16 @@
       let timer = null;
 
       window.handleStatsJsonp = (data) => {
-        console.log("gas stats(jsonp):", data);
-      };
+  console.log("gas stats(jsonp):", data);
+
+  const el = document.getElementById("result");
+  if (!el) return;
+
+  const m = data.meta;
+  el.textContent =
+    `試合数 ${m.total} / 勝ち ${m.wins} / 負け ${m.losses} / 勝率 ${m.winRate ?? "-"}`;
+};
+
 
       input.addEventListener("input", () => {
         clearTimeout(timer);
