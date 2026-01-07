@@ -52,12 +52,19 @@
   </div>
 
   <script>
-  const input = document.querySelector("input");
+  const input = document.getElementById("userInput");
+  let timer = null;
 
   input.addEventListener("input", () => {
     console.log("入力中:", input.value);
+
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      console.log("確定:", input.value);
+    }, 500);
   });
 </script>
+
 
 </body>
 </html>
