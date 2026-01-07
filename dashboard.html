@@ -59,8 +59,9 @@
     const input = document.getElementById("userInput");
     let timer = null;
 
-    window.handleStatsJsonp = function (data) {
-      console.log("gas(jsonp):", data);
+    // jsonpの受け口（gasが callback=handleStatsJsonp で呼んでくる）
+    window.handleStatsJsonp = (data) => {
+      console.log("gas stats(jsonp):", data);
     };
 
     input.addEventListener("input", () => {
@@ -69,12 +70,12 @@
         const user = input.value.trim();
         if (!user) return;
 
-        // 既存scriptがあれば消す
-        const old = document.getElementById("jsonp");
+        // 以前のscriptを消す
+        const old = document.getElementById("jsonpStats");
         if (old) old.remove();
 
         const s = document.createElement("script");
-        s.id = "jsonp";
+        s.id = "jsonpStats";
         s.src =
           "https://script.google.com/macros/s/AKfycbyDgeYvhDjnhp-feeD-4_g-rRf6f9sRGM5-YLO4BRvIVRDlBRKubWeT_JMy9-6FZ3aCOg/exec" +
           "?action=stats&user=" + encodeURIComponent(user) +
@@ -85,8 +86,5 @@
     });
   });
 </script>
-
-
-
 </body>
 </html>
