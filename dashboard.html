@@ -59,10 +59,9 @@
     const input = document.getElementById("userInput");
     let timer = null;
 
-    if (!input) {
-      console.log("input見つからないよ");
-      return;
-    }
+    window.handleStatsJsonp = function (data) {
+      console.log("gas(jsonp):", data);
+    };
 
     input.addEventListener("input", () => {
       clearTimeout(timer);
@@ -70,24 +69,23 @@
         const user = input.value.trim();
         if (!user) return;
 
-        console.log("確定:", user);
+        // 既存scriptがあれば消す
+        const old = document.getElementById("jsonp");
+        if (old) old.remove();
 
-        const url =
+        const s = document.createElement("script");
+        s.id = "jsonp";
+        s.src =
           "https://script.google.com/macros/s/AKfycbyDgeYvhDjnhp-feeD-4_g-rRf6f9sRGM5-YLO4BRvIVRDlBRKubWeT_JMy9-6FZ3aCOg/exec" +
-          "?action=stats&user=" + encodeURIComponent(user);
+          "?action=stats&user=" + encodeURIComponent(user) +
+          "&callback=handleStatsJsonp";
 
-        fetch(url)
-          .then(res => res.json())
-          .then(data => {
-            console.log("gasから返ってきたよ:", data);
-          })
-          .catch(err => {
-            console.error("gasよびだし失敗:", err);
-          });
+        document.body.appendChild(s);
       }, 500);
     });
   });
 </script>
+
 
 
 </body>
