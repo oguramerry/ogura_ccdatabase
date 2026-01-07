@@ -85,6 +85,12 @@
   const m = data.meta;
   el.textContent =
     `試合数 ${m.total} / 勝ち ${m.wins} / 負け ${m.losses} / 勝率 ${m.winRate ?? "-"}`;
+        const h = document.getElementById("highlight");
+if (h) {
+  h.querySelector("p:last-child").textContent =
+    `試合数 ${m.total} / 勝率 ${m.winRate ?? "-"}`;
+}
+
 };
 
       window.handleUsersJsonp = (data) => {
