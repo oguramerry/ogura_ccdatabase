@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
         " / 曜日 " + (hasWeekday ? "あり" : "なし");
     }
   };
-});
   
   const setActiveTab = (tab) => {
       activeTab = tab;
