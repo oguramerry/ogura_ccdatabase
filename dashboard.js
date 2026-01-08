@@ -35,11 +35,32 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
 
-    else if (activeTab === "stage") panelInner.textContent = "stage を表示（仮）";
-    else if (activeTab === "jobStage") panelInner.textContent = "job*stage を表示（仮）";
-    else if (activeTab === "time") panelInner.textContent = "🕒 を表示（仮）";
-    else panelInner.textContent = "unknown tab: " + activeTab;
-  };
+    else if (activeTab === "stage") {
+  const map = statsData.byStage;
+  if (!map) {
+    panelInner.textContent = "stage 集計なし";
+    return;
+  }
+  panelInner.textContent = "ステージ数 " + Object.keys(map).length;
+}
+
+    else if (activeTab === "jobStage") {
+      const map = statsData.byStageJob;
+      if (!map) {
+    panelInner.textContent = "job*stage 集計なし";
+        return;
+  }
+  panelInner.textContent = "組み合わせ数 " + Object.keys(map).length;
+}
+
+    else if (activeTab === "time") {
+      const hasHour = !!statsData.byHour;
+      const hasWeekday = !!statsData.byHourWeekday;
+      panelInner.textContent =
+        "時間帯 " + (hasHour ? "あり" : "なし") +
+        " / 曜日 " + (hasWeekday ? "あり" : "なし");
+    }
+
 
   
   const setActiveTab = (tab) => {
