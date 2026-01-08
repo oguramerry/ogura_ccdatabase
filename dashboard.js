@@ -134,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(s);
     }, 500);
   });
-});
 
 // deploy refresh
 
