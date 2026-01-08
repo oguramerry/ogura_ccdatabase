@@ -9,14 +9,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.getElementById("tabButtons");
   let activeTab = "main";
   const panelInner = document.getElementById("panelInner");
-  const setActiveTab = (tab) => {
+  const render = () => {
+    if (!panelInner) return;
+
+    if (!statsData) {
+      panelInner.textContent = "ユーザーを入力してね（まだデータなし）";
+      return;
+    }
+
+    if (activeTab === "main") panelInner.textContent = "main を表示（仮）";
+    else if (activeTab === "job") panelInner.textContent = "job を表示（仮）";
+    else if (activeTab === "stage") panelInner.textContent = "stage を表示（仮）";
+    else if (activeTab === "jobStage") panelInner.textContent = "job*stage を表示（仮）";
+    else if (activeTab === "time") panelInner.textContent = "🕒 を表示（仮）";
+    else panelInner.textContent = "unknown tab: " + activeTab;
+  };
+
+  
+    const setActiveTab = (tab) => {
     activeTab = tab;
     console.log("tab:", activeTab);
-
-    if (panelInner) {
-      panelInner.textContent = "いまは " + activeTab + " を表示（仮）";
-    }
+    render();
   };
+
 
   console.log("tabs:", tabs);
   if (!tabs) console.log("tabButtons が見つからない（html未反映 or キャッシュ or 別ページ）");
@@ -34,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   window.handleStatsJsonp = (data) => {
     statsData = data;
+    render();
     const el = document.getElementById("result");
     if (!el) return;
 
