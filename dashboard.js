@@ -25,7 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
         "試合数 " + (m.total ?? "-") + " / 勝率 " + winRateText;
     }
 
-    else if (activeTab === "job") panelInner.textContent = "job を表示（仮）";
+    else if (activeTab === "job") {
+      const map = statsData.byJob;
+      if (!map) {
+        panelInner.textContent = "job 集計なし";
+        return;
+      }
+  panelInner.textContent = "ジョブ数 " + Object.keys(map).length;
+}
+
+
     else if (activeTab === "stage") panelInner.textContent = "stage を表示（仮）";
     else if (activeTab === "jobStage") panelInner.textContent = "job*stage を表示（仮）";
     else if (activeTab === "time") panelInner.textContent = "🕒 を表示（仮）";
