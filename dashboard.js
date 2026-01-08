@@ -5,6 +5,22 @@ console.log("mode: jsonp only");
 
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("userInput");
+  const tabs = document.getElementById("tabButtons");
+  let activeTab = "main";
+
+  const setActiveTab = (tab) => {
+    activeTab = tab;
+    console.log("tab:", activeTab);
+  };
+
+  if (tabs) {
+    tabs.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-tab]");
+      if (!btn) return;
+      setActiveTab(btn.dataset.tab);
+    });
+  }
+
   let timer = null;
 
   window.handleStatsJsonp = (data) => {
