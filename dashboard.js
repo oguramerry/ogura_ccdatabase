@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   
-    const setActiveTab = (tab) => {
-    activeTab = tab;
-    console.log("tab:", activeTab);
-    render();
+  const setActiveTab = (tab) => {
+      activeTab = tab;
+      console.log("tab:", activeTab);
+      render();
   };
 
 
@@ -52,15 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
     render();
     const el = document.getElementById("result");
     if (!el) return;
-
     const m = data.meta;
-    `試合数 ${m.total} / 勝ち ${m.wins} / 負け ${m.losses} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`
-
-
+    
     const h = document.getElementById("highlight");
     if (h) {
      h.querySelector("p:last-child").textContent =
-  `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
+       `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
 
     const stageEl = document.getElementById("topStageBody");
