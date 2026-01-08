@@ -7,10 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("userInput");
   const tabs = document.getElementById("tabButtons");
   let activeTab = "main";
-
+  const panelInner = document.getElementById("panelInner");
   const setActiveTab = (tab) => {
     activeTab = tab;
     console.log("tab:", activeTab);
+
+    if (panelInner) {
+      panelInner.textContent = "いまは " + activeTab + " を表示（仮）";
+    }
   };
 
   console.log("tabs:", tabs);
