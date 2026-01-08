@@ -4,105 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>dashboard</title>
-  <style>
-    body{ margin:0; font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans JP", sans-serif; background:#f6fbff; }
-    .wrap{ max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
-    .card{ background:#fff; border:1px solid #cfeaff; border-radius: 20px; padding: 18px; }
-    a{ color:#1f2937; text-decoration:none; border-bottom: 1px dashed #8bd0ff; }
-  </style>
+  <link rel="stylesheet" href="dashboard.css">
 </head>
 
 <body>
   <div class="wrap">
     <div class="card">
-      <p style="margin:0 0 12px; font-size:18px;">統計分析ページ</p>
-      <div id="highlight" style="
-  margin-bottom:16px;
-  padding:16px;
-  border-radius:20px;
-  background:#ffffff;
-  border:1px solid #cfeaff;
-">
-         <div style="
-        display:flex;
-        align-items:center;
-        gap:10px;
-        padding:12px 14px;
-        border:1px solid #cfeaff;
-        border-radius:999px;
-        background:#f6fbff;
-        max-width:360px;
-      ">
-        
-        <span style="font-size:12px; color:#6b7280;">user</span>
+      <p class="page-title">統計分析ページ</p>
 
-        <input
+      <div id="highlight">
+        <div class="search-box">
+          <span class="search-label">user</span>
+          <input
             id="userInput"
             list="userList"
             type="text"
-          placeholder="ユーザー名を入力…"
-          style="
-            border:none;
-            outline:none;
-            background:transparent;
-            font-size:14px;
-            flex:1;
-          "
-        />
-        
-        <datalist id="userList"></datalist>
+            placeholder="ユーザー名を入力…"
+            class="search-input"
+          />
+          <datalist id="userList"></datalist>
+        </div>
+        <p class="highlight-label">ユーザーハイライト</p>
+        <p class="highlight-stats">試合数 -- / 勝率 --</p>
       </div>
-  <p style="margin:0 0 8px; font-size:14px; color:#6b7280;">
-    ユーザーハイライト
-  </p>
-  <p style="margin:0; font-size:16px;">
-    試合数 -- / 勝率 --
-  </p>
-</div>
 
-      <div style="
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:12px;
-  margin-top:16px;
-">
-  <div id="topStage" style="padding:14px; border-radius:16px; border:1px solid #cfeaff; background:#ffffff;">
-    <p style="margin:0 0 6px; font-size:13px; color:#6b7280;">
-      おすすめステージ top3
-    </p>
-    <p id="topStageBody" style="margin:0; font-size:14px;">
-      1位　ステージA<br>
-      2位　ステージB<br>
-      3位　ステージC<br>
-    </p>
-  </div>
+      <div class="stats-grid">
+        <div id="topStage" class="stat-card">
+          <p class="stat-title">おすすめステージ top3</p>
+          <p id="topStageBody" class="stat-body">
+            1位　ステージA<br>
+            2位　ステージB<br>
+            3位　ステージC
+          </p>
+        </div>
 
-  <div id="topJob" style="padding:14px; border-radius:16px; border:1px solid #cfeaff; background:#ffffff;">
-    <p style="margin:0 0 6px; font-size:13px; color:#6b7280;">
-      おすすめジョブ top3
-    </p>
-    <p id="topJobBody" style="margin:0; font-size:14px;">
-      1位　ジョブA<br>
-      2位　ジョブB<br>
-      3位　ジョブC<br>
-    </p>
-  </div>
+        <div id="topJob" class="stat-card">
+          <p class="stat-title">おすすめジョブ top3</p>
+          <p id="topJobBody" class="stat-body">
+            1位　ジョブA<br>
+            2位　ジョブB<br>
+            3位　ジョブC
+          </p>
+        </div>
 
-  <div id="topHour" style="padding:14px; border-radius:16px; border:1px solid #cfeaff; background:#ffffff;">
-    <p style="margin:0 0 6px; font-size:13px; color:#6b7280;">
-      おすすめ時間帯 top3
-    </p>
-    <p id="topHourBody" style="margin:0; font-size:14px;">
-      1位　00:00～00:00<br>
-      2位　00:00～00:00<br>
-      3位　00:00～00:00<br>
-    </p>
-  </div>
-</div>
+        <div id="topHour" class="stat-card">
+          <p class="stat-title">おすすめ時間帯 top3</p>
+          <p id="topHourBody" class="stat-body">
+            1位　00:00～00:00<br>
+            2位　00:00～00:00<br>
+            3位　00:00～00:00
+          </p>
+        </div>
+      </div>
 
-       <div id="result" style="margin-top:16px; font-size:14px;"></div>
+      <div id="result" class="result-area"></div>
 
-      <p style="margin:14px 0 0;">
+      <p class="back-link">
         <a href="./index.html">トップへ戻る</a>
       </p>
     </div>
