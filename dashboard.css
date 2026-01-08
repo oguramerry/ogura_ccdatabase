@@ -1,0 +1,116 @@
+/* フォント読み込み (必ず1行目) */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+/* 全体の基本設定 */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans JP", sans-serif;
+  background: #f6fbff;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #cfeaff;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+/* リンクの下線デザイン */
+a {
+  color: #1f2937;
+  text-decoration: none;
+  border-bottom: 1px dashed #8bd0ff;
+}
+
+/* 各パーツのスタイル */
+.page-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+/* ハイライトエリア */
+#highlight {
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #cfeaff;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid #cfeaff;
+  border-radius: 999px;
+  background: #f6fbff;
+  max-width: 360px;
+  margin-bottom: 8px; /* 下のテキストとの余白 */
+}
+
+.search-label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  flex: 1;
+}
+
+.highlight-label {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.highlight-stats {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* 3カラムグリッドレイアウト */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* グリッド内の各カード共通設定 */
+.stat-card {
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid #cfeaff;
+  background: #ffffff;
+}
+
+.stat-title {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.stat-body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.result-area {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.back-link {
+  margin: 14px 0 0;
+}
