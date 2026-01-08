@@ -17,7 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    if (activeTab === "main") panelInner.textContent = "main を表示（仮）";
+    if (activeTab === "main") {
+      const m = statsData.meta || {};
+      const winRateText =
+        m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-";
+      panelInner.textContent =
+        "試合数 " + (m.total ?? "-") + " / 勝率 " + winRateText;
+    }
+
     else if (activeTab === "job") panelInner.textContent = "job を表示（仮）";
     else if (activeTab === "stage") panelInner.textContent = "stage を表示（仮）";
     else if (activeTab === "jobStage") panelInner.textContent = "job*stage を表示（仮）";
