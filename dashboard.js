@@ -4,6 +4,7 @@ const GAS_BASE =
 console.log("mode: jsonp only");
 
 document.addEventListener("DOMContentLoaded", () => {
+  let statsData = null;
   const input = document.getElementById("userInput");
   const tabs = document.getElementById("tabButtons");
   let activeTab = "main";
@@ -30,8 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let timer = null;
-
+  
   window.handleStatsJsonp = (data) => {
+    statsData = data;
     const el = document.getElementById("result");
     if (!el) return;
 
