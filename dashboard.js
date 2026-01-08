@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "時間帯 " + (hasHour ? "あり" : "なし") +
         " / 曜日 " + (hasWeekday ? "あり" : "なし");
     }
-
-
+  };
+});
   
   const setActiveTab = (tab) => {
       activeTab = tab;
@@ -135,4 +135,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   });
 });
-
