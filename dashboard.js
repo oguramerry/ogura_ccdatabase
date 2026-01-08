@@ -12,11 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!el) return;
 
     const m = data.meta;
-    el.textContent = `試合数 ${m.total} / 勝ち ${m.wins} / 負け ${m.losses} / 勝率 ${m.winRate ?? "-"}`;
+    `試合数 ${m.total} / 勝ち ${m.wins} / 負け ${m.losses} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`
+
 
     const h = document.getElementById("highlight");
     if (h) {
-      h.querySelector("p:last-child").textContent = `試合数 ${m.total} / 勝率 ${m.winRate ?? "-"}`;
+     h.querySelector("p:last-child").textContent =
+  `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
 
     const stageEl = document.getElementById("topStageBody");
