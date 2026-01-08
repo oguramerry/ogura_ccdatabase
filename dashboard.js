@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("tab:", activeTab);
   };
 
+  console.log("tabs:", tabs);
+  if (!tabs) console.log("tabButtons が見つからない（html未反映 or キャッシュ or 別ページ）");
+
+  
   if (tabs) {
     tabs.addEventListener("click", (e) => {
       const btn = e.target.closest("button[data-tab]");
