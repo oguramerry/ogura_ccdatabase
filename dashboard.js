@@ -106,22 +106,35 @@ const top3 = map
   `;
 }
 
-    else if (activeTab === "jobStage") {
-      const map = statsData.byStageJob;
-      if (!map) {
-        panelInner.textContent = "job*stage 集計なし";
-        return;
-      }
-      
-      panelInner.innerHTML = `
-        <div class="stat-card">
-          <p class="stat-title">ジョブ × ステージ</p>
-          <p class="stat-body">
-            組み合わせ数 ${Object.keys(map).length}
-          </p>
-        </div>
-      `;
-    }
+else if (activeTab === "jobStage") {
+  const arr = statsData.byStageJob;
+  if (!arr || !arr.length) {
+    panelInner.textContent = "job*stage 集計なし";
+    return;
+  }
+
+  const minGames = 5; // 少なすぎるブレを避けたいならここ調整
+  const top3 = arr
+    .filter(row => (row.total ?? 0) >= minGames)
+    .slice()
+    .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+    .slice(0, 3);
+
+  panelInner.innerHTML = `
+    <div class="stat-card">
+      <p class="stat-title">ジョブ × ステージ top3（勝率）</p>
+      <p class="stat-body">
+        組み合わせ数 ${arr.length}<br><br>
+        ${top3.map((row, i) => {
+          const jobJp = JOB_NAME_JP[row.job] ?? row.job;
+          const wr = ((row.winRate ?? 0) * 100).toFixed(1);
+          return `${i + 1}位：${jobJp} × ${row.stage}（${wr}% / ${row.wins}勝${row.losses}敗 / ${row.total}試合）`;
+        }).join("<br>")}
+      </p>
+    </div>
+  `;
+}
+}
 
     else if (activeTab === "time") {
       panelInner.innerHTML = `
