@@ -207,10 +207,22 @@ else if (activeTab === "time") {
     }
   };
 
-  // users を先に読み込み
-  const sUsers = document.createElement("script");
-  sUsers.src = GAS_BASE + "?action=users&callback=handleUsersJsonp&_=" + Date.now();
-  document.body.appendChild(sUsers);
+  // users読み込み
+const q = encodeURIComponent(input.value.trim());
+
+const oldUsers = document.getElementById("jsonpUsers");
+if (oldUsers) oldUsers.remove();
+
+const su = document.createElement("script");
+su.id = "jsonpUsers";
+su.src = GAS_BASE
+  + "?action=users"
+  + "&q=" + q
+  + "&callback=handleUsersJsonp"
+  + "&_=" + Date.now();
+
+document.body.appendChild(su);
+
 
   input.addEventListener("input", () => {
     clearTimeout(timer);
