@@ -134,7 +134,6 @@ else if (activeTab === "jobStage") {
     </div>
   `;
 }
-}
 
     else if (activeTab === "time") {
       panelInner.innerHTML = `
