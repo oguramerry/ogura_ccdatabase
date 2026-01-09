@@ -56,23 +56,29 @@ else if (activeTab === "job") {
   `;
 }
 
+else if (activeTab === "stage") {
+  const map = statsData.byStage;
+  if (!map) {
+    panelInner.textContent = "stage 集計なし";
+    return;
+  }
 
-    else if (activeTab === "stage") {
-      const map = statsData.byStage;
-      if (!map) {
-        panelInner.textContent = "stage 集計なし";
-        return;
-      }
-    
-      panelInner.innerHTML = `
-      <div class="stat-card">
-      <p class="stat-title">ステージ</p>
+  const top3 = Object.entries(map)
+    .sort((a, b) => (b[1].winRate ?? 0) - (a[1].winRate ?? 0))
+    .slice(0, 3);
+
+  panelInner.innerHTML = `
+    <div class="stat-card">
+      <p class="stat-title">ステージ top3（勝率）</p>
       <p class="stat-body">
-      ステージ数 ${Object.keys(map).length}
-    </p>
-  </div>
+        ${top3.map(([stage, v], i) =>
+          `${i + 1}位 ${stage} ${((v.winRate ?? 0) * 100).toFixed(1)}%`
+        ).join("<br>")}
+      </p>
+    </div>
   `;
-    }
+}
+
 
     else if (activeTab === "jobStage") {
       const map = statsData.byStageJob;
