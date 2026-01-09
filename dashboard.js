@@ -131,17 +131,17 @@ else if (activeTab === "jobStage") {
     </div>
   `;
 }
-    else if (activeTab === "time") {
-      panelInner.innerHTML = `
-        <div class="stat-card">
-          <p class="stat-title">時間帯 / 曜日</p>
-          <p class="stat-body">
-            時間帯 ${statsData.byHour ? "あり" : "なし"}<br>
-            曜日 ${statsData.byHourWeekday ? "あり" : "なし"}
-          </p>
+else if (activeTab === "time") {
+    panelInner.innerHTML = `
+      <div class="stat-card">
+         <p class="stat-title">時間帯 / 曜日</p>
+        <p class="stat-body">
+        時間帯 ${statsData.byHour ? "あり" : "なし"}<br>
+        曜日 ${statsData.byHourWeekday ? "あり" : "なし"}
+        </p>
         </div>
         `;
-    }
+}
   };
   
   const setActiveTab = (tab) => {
