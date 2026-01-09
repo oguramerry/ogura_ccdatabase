@@ -26,6 +26,15 @@ const JOB_NAME_JP = {
   "RDM": "赤魔道士",
 };
 
+function formatCharacterName(name) {
+  if (!name) return name;
+
+  // すでに半角スペースがあるならそのまま
+  if (name.includes(" ")) return name;
+
+  // OguraChan -> Ogura Chan みたいに分割
+  return name.replace(/([a-z])([A-Z])/g, "$1 $2");
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   let statsData = null;
@@ -202,7 +211,7 @@ else if (activeTab === "time") {
     const users = data.users || [];
     for (const u of users) {
       const opt = document.createElement("option");
-      opt.value = u;
+      opt.value = formatCharacterName(u);
       list.appendChild(opt);
     }
   };
@@ -228,14 +237,15 @@ document.body.appendChild(su);
     clearTimeout(timer);
     timer = setTimeout(() => {
       const user = input.value.trim();
-      if (!user) return;
+      const userForApi = user.replace(/\s+/g, ""); // スペース消す
+      if (!userForApi) return;
 
       const old = document.getElementById("jsonpStats");
       if (old) old.remove();
 
       const s = document.createElement("script");
       s.id = "jsonpStats";
-      s.src = GAS_BASE + "?action=stats&user=" + encodeURIComponent(user) + "&callback=handleStatsJsonp&_=" + Date.now();
+      s.src = GAS_BASE + "?action=stats&user=" + encodeURIComponent(userForApi) + "&callback=handleStatsJsonp&_=" + Date.now();
       document.body.appendChild(s);
     }, 500);
   });
