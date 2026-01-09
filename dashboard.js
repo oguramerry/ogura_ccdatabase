@@ -67,7 +67,7 @@ else if (activeTab === "job") {
 const top3 = map
   .slice()
   .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-  .slice(0, 3);
+  .slice(0, 5);
 
   panelInner.innerHTML = `
     <div class="stat-card">
@@ -91,7 +91,7 @@ else if (activeTab === "stage") {
 const top3 = map
   .slice()
   .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-  .slice(0, 3);
+  .slice(0, 5);
 
   panelInner.innerHTML = `
     <div class="stat-card">
@@ -113,18 +113,16 @@ else if (activeTab === "jobStage") {
     return;
   }
 
-  const minGames = 5; // 少なすぎるブレを避けたいならここ調整
   const top3 = arr
     .filter(row => (row.total ?? 0) >= minGames)
     .slice()
     .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-    .slice(0, 3);
+    .slice(0, 5);
 
   panelInner.innerHTML = `
     <div class="stat-card">
       <p class="stat-title">ジョブ × ステージ top3（勝率）</p>
       <p class="stat-body">
-        組み合わせ数 ${arr.length}<br><br>
         ${top3.map((row, i) => {
           const jobJp = JOB_NAME_JP[row.job] ?? row.job;
           const wr = ((row.winRate ?? 0) * 100).toFixed(1);
@@ -134,7 +132,6 @@ else if (activeTab === "jobStage") {
     </div>
   `;
 }
-
     else if (activeTab === "time") {
       panelInner.innerHTML = `
         <div class="stat-card">
@@ -154,11 +151,9 @@ else if (activeTab === "jobStage") {
       render();
   };
 
-
   console.log("tabs:", tabs);
   if (!tabs) console.log("tabButtons が見つからない（html未反映 or キャッシュ or 別ページ）");
 
-  
   if (tabs) {
     tabs.addEventListener("click", (e) => {
       const btn = e.target.closest("button[data-tab]");
