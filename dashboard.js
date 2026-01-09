@@ -188,11 +188,10 @@ else if (activeTab === "time") {
     const el = document.getElementById("result");
     if (!el) return;
     const m = data.meta;
-    
-    const h = document.getElementById("highlight");
-    if (h) {
-     h.querySelector("p:last-child").textContent =
-       `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
+    const resultEl = document.getElementById("result");
+    if (resultEl) {
+      resultEl.textContent =
+        `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
 
     const stageEl = document.getElementById("topStageBody");
