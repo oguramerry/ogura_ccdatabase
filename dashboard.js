@@ -3,15 +3,6 @@ const GAS_BASE =
 
 console.log("mode: jsonp only");
 
-const STAGE_NAME_MAP = {
-  "0": "パライストラ",
-  "1": "ヴォルカニック・ハート",
-  "2": "クラウドナイン",
-  "3": "東方絡繰御殿",
-  "4": "レッド・サンズ",
-  "5": "ベイサイド・バトルグラウンド"
-};
-
 const JOB_NAME_JP = {
   "PLD": "ナイト",
   "WAR": "戦士",
