@@ -64,7 +64,7 @@ else if (activeTab === "job") {
     return;
   }
 
-const top3 = map
+const ranking = map
   .slice()
   .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
   .slice(0, 5);
@@ -73,7 +73,7 @@ const top3 = map
     <div class="stat-card">
       <p class="stat-title">ジョブ top5（勝率）</p>
       <p class="stat-body">
-  ${top3.map((row, i) =>
+  ${ranking.map((row, i) =>
     `${i + 1}位：${JOB_NAME_JP[row.job] ?? row.job}（${((row.winRate ?? 0) * 100).toFixed(1)}% / ${row.total}試合）`
   ).join("<br>")}
       </p>
@@ -88,7 +88,7 @@ else if (activeTab === "stage") {
     return;
   }
 
-const top3 = map
+const ranking = map
   .slice()
   .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
   .slice(0, 6);
@@ -97,7 +97,7 @@ const top3 = map
     <div class="stat-card">
       <p class="stat-title">ステージ勝率ランキング</p>
       <p class="stat-body">
-  ${top3.map((row, i) =>
+  ${ranking.map((row, i) =>
     `${i + 1}位：${row.stage}（${((row.winRate ?? 0) * 100).toFixed(1)}% / ${row.total}試合）`
   ).join("<br>")}
 
@@ -113,7 +113,7 @@ else if (activeTab === "jobStage") {
     return;
   }
 
-  const top3 = arr
+  const ranking = arr
     .slice()
     .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
     .slice(0, 10);
@@ -122,7 +122,7 @@ else if (activeTab === "jobStage") {
     <div class="stat-card">
       <p class="stat-title">ジョブ × ステージ top10（勝率）</p>
       <p class="stat-body">
-        ${top3.map((row, i) => {
+        ${ranking.map((row, i) => {
           const jobJp = JOB_NAME_JP[row.job] ?? row.job;
           const wr = ((row.winRate ?? 0) * 100).toFixed(1);
           return `${i + 1}位：${jobJp} × ${row.stage}（${wr}% / ${row.total}試合）`;
