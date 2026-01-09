@@ -134,6 +134,7 @@ else if (activeTab === "stage") {
   
   window.handleStatsJsonp = (data) => {
     statsData = data;
+    console.log("byStage keys", Object.keys(statsData.byStage || {}));
     render();
     const el = document.getElementById("result");
     if (!el) return;
