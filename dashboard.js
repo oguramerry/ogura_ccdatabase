@@ -114,7 +114,6 @@ else if (activeTab === "jobStage") {
   }
 
   const top3 = arr
-    .filter(row => (row.total ?? 0) >= minGames)
     .slice()
     .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
     .slice(0, 5);
