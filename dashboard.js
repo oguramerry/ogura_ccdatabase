@@ -234,8 +234,10 @@ function fetchUsers(qText) {
   
   input.addEventListener("input", () => {
     clearTimeout(timer);
+    
     timer = setTimeout(() => {
       const user = input.value.trim();
+      fetchUsers(user);
       const userForApi = user.replace(/\s+/g, ""); // スペース消す
       if (!userForApi) return;
 
