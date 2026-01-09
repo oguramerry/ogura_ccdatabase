@@ -46,6 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const panelInner = document.getElementById("panelInner");
   const render = () => {
     if (!panelInner) return;
+    
+    if (!statsData) {
+      panelInner.textContent = "ユーザーを入力してね（まだデータなし）";
+      return;
+    }
+    
     if (activeTab === "main") {
   const m = statsData.meta || {};
   const winRateText =
@@ -211,24 +217,21 @@ else if (activeTab === "time") {
     }
   };
 
-  // users読み込み
-const qRaw = input.value.trim();
-const q = encodeURIComponent(qRaw.replace(/\s+/g, ""));
+function fetchUsers(qText) {
+  const q = encodeURIComponent(String(qText || "").replace(/\s+/g, ""));
+  const oldUsers = document.getElementById("jsonpUsers");
+  if (oldUsers) oldUsers.remove();
 
-const oldUsers = document.getElementById("jsonpUsers");
-if (oldUsers) oldUsers.remove();
-
-const su = document.createElement("script");
-su.id = "jsonpUsers";
-su.src = GAS_BASE
-  + "?action=users"
-  + "&q=" + q
-  + "&callback=handleUsersJsonp"
-  + "&_=" + Date.now();
-
-document.body.appendChild(su);
-
-
+  const su = document.createElement("script");
+  su.id = "jsonpUsers";
+  su.src = GAS_BASE
+    + "?action=users"
+    + "&q=" + q
+    + "&callback=handleUsersJsonp"
+    + "&_=" + Date.now();
+  document.body.appendChild(su);
+}
+  
   input.addEventListener("input", () => {
     clearTimeout(timer);
     timer = setTimeout(() => {
@@ -245,4 +248,5 @@ document.body.appendChild(su);
       document.body.appendChild(s);
     }, 500);
   });
+  fetchUsers("");
 });
