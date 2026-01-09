@@ -168,7 +168,7 @@ const top3 = map
   
   window.handleStatsJsonp = (data) => {
     statsData = data;
-    console.log("byStage keys", Object.keys(statsData.byStage || {}));
+    console.log("byStage sample", statsData.byStage?.[0]);
     render();
     const el = document.getElementById("result");
     if (!el) return;
