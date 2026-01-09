@@ -33,21 +33,29 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
 }
 
-    else if (activeTab === "job") {
-      const map = statsData.byJob;
-      if (!map) {
-        panelInner.textContent = "job 集計なし";
-        return;
-      }
-      panelInner.innerHTML = `
-      <div class="stat-card">
-      <p class="stat-title">ジョブ</p>
+else if (activeTab === "job") {
+  const map = statsData.byJob;
+  if (!map) {
+    panelInner.textContent = "job 集計なし";
+    return;
+  }
+
+  const top3 = Object.entries(map)
+    .sort((a, b) => (b[1].winRate ?? 0) - (a[1].winRate ?? 0))
+    .slice(0, 3);
+
+  panelInner.innerHTML = `
+    <div class="stat-card">
+      <p class="stat-title">ジョブ top3（勝率）</p>
       <p class="stat-body">
-      ジョブ数 ${Object.keys(map).length}
+        ${top3.map(([job, v], i) =>
+          `${i + 1}位 ${job} ${((v.winRate ?? 0) * 100).toFixed(1)}%`
+        ).join("<br>")}
       </p>
-      </div>
-      `;
-    }
+    </div>
+  `;
+}
+
 
     else if (activeTab === "stage") {
       const map = statsData.byStage;
