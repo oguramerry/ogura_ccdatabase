@@ -98,7 +98,7 @@ const top3 = map
       <p class="stat-title">ステージ勝率ランキング</p>
       <p class="stat-body">
   ${top3.map((row, i) =>
-    `${i + 1}位：${row.stage}（${((row.winRate ?? 0) * 100).toFixed(1)}%）`
+    `${i + 1}位：${row.stage}（${((row.winRate ?? 0) * 100).toFixed(1)}% / ${row.total}試合）`
   ).join("<br>")}
 
       </p>
