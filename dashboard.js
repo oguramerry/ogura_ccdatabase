@@ -3,6 +3,14 @@ const GAS_BASE =
 
 console.log("mode: jsonp only");
 
+const STAGE_NAME_MAP = {
+  "0": "パライストラ",
+  "1": "ヴォルカニック・ハート",
+  "2": "クラウドナイン",
+  "3": "東方絡繰御殿",
+  "4": "レッド・サンズ"
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   let statsData = null;
   const input = document.getElementById("userInput");
@@ -40,17 +48,19 @@ else if (activeTab === "job") {
     return;
   }
 
-  const top3 = Object.entries(map)
-    .sort((a, b) => (b[1].winRate ?? 0) - (a[1].winRate ?? 0))
-    .slice(0, 3);
+const top3 = map
+  .slice()
+  .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+  .slice(0, 3);
 
   panelInner.innerHTML = `
     <div class="stat-card">
       <p class="stat-title">ジョブ top3（勝率）</p>
       <p class="stat-body">
-        ${top3.map(([job, v], i) =>
-          `${i + 1}位 :${job} ${((v.winRate ?? 0) * 100).toFixed(1)}%`
-        ).join("<br>")}
+  ${top3.map((row, i) =>
+    `${i + 1}位：${row.job}（${((row.winRate ?? 0) * 100).toFixed(1)}%）`
+  ).join("<br>")}
+
       </p>
     </div>
   `;
@@ -63,18 +73,19 @@ else if (activeTab === "stage") {
     return;
   }
 
-  const top3 = Object.entries(map)
-    .sort((a, b) => (b[1].winRate ?? 0) - (a[1].winRate ?? 0))
-    .slice(0, 3);
+const top3 = map
+  .slice()
+  .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+  .slice(0, 3);
 
   panelInner.innerHTML = `
     <div class="stat-card">
       <p class="stat-title">ステージ top3（勝率）</p>
       <p class="stat-body">
-        ${top3.map(([stage, v], i) =>
-          `${i + 1}位：${stage}（${((v.winRate ?? 0) * 100).toFixed(1)}%）`
+  ${top3.map((row, i) =>
+    `${i + 1}位：${row.stage}（${((row.winRate ?? 0) * 100).toFixed(1)}%）`
+  ).join("<br>")}
 
-        ).join("<br>")}
       </p>
     </div>
   `;
