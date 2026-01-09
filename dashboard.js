@@ -217,7 +217,8 @@ else if (activeTab === "time") {
   };
 
   // users読み込み
-const q = encodeURIComponent(input.value.trim());
+const qRaw = input.value.trim();
+const q = encodeURIComponent(qRaw.replace(/\s+/g, ""));
 
 const oldUsers = document.getElementById("jsonpUsers");
 if (oldUsers) oldUsers.remove();
