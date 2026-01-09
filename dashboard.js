@@ -132,15 +132,28 @@ else if (activeTab === "jobStage") {
   `;
 }
 else if (activeTab === "time") {
-    panelInner.innerHTML = `
-      <div class="stat-card">
-         <p class="stat-title">時間帯 / 曜日</p>
-        <p class="stat-body">
-        時間帯 ${statsData.byHour ? "あり" : "なし"}<br>
-        曜日 ${statsData.byHourWeekday ? "あり" : "なし"}
-        </p>
-        </div>
-        `;
+  const arr = statsData.byHour;
+  if (!arr || !arr.length) {
+    panelInner.textContent = "時間帯 集計なし";
+    return;
+  }
+
+  const ranking = arr
+    .slice()
+    .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+    .slice(0, 5);
+
+  panelInner.innerHTML = `
+    <div class="stat-card">
+      <p class="stat-title">時間帯 top5（勝率）</p>
+      <p class="stat-body">
+        ${ranking.map((row, i) => {
+          const wr = ((row.winRate ?? 0) * 100).toFixed(1);
+          return `${i + 1}位：${row.hour}時台（${wr}% / ${row.total}試合）`;
+        }).join("<br>")}
+      </p>
+    </div>
+  `;
 }
   };
   
