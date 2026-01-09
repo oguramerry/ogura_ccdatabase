@@ -55,7 +55,15 @@ document.addEventListener("DOMContentLoaded", () => {
         panelInner.textContent = "stage 集計なし";
         return;
       }
-      panelInner.textContent = "ステージ数 " + Object.keys(map).length;
+    
+      panelInner.innerHTML = `
+      <div class="stat-card">
+      <p class="stat-title">ステージ</p>
+      <p class="stat-body">
+      ステージ数 ${Object.keys(map).length}
+    </p>
+  </div>
+  `;
     }
 
     else if (activeTab === "jobStage") {
@@ -64,15 +72,27 @@ document.addEventListener("DOMContentLoaded", () => {
         panelInner.textContent = "job*stage 集計なし";
         return;
       }
-      panelInner.textContent = "組み合わせ数 " + Object.keys(map).length;
+      
+      panelInner.innerHTML = `
+        <div class="stat-card">
+          <p class="stat-title">ジョブ × ステージ</p>
+          <p class="stat-body">
+            組み合わせ数 ${Object.keys(map).length}
+          </p>
+        </div>
+      `;
     }
 
     else if (activeTab === "time") {
-      const hasHour = !!statsData.byHour;
-      const hasWeekday = !!statsData.byHourWeekday;
-      panelInner.textContent =
-        "時間帯 " + (hasHour ? "あり" : "なし") +
-        " / 曜日 " + (hasWeekday ? "あり" : "なし");
+      panelInner.innerHTML = `
+        <div class="stat-card">
+          <p class="stat-title">時間帯 / 曜日</p>
+          <p class="stat-body">
+            時間帯 ${statsData.byHour ? "あり" : "なし"}<br>
+            曜日 ${statsData.byHourWeekday ? "あり" : "なし"}
+          </p>
+        </div>
+        `;
     }
   };
   
