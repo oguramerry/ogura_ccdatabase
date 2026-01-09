@@ -44,12 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const panelInner = document.getElementById("panelInner");
   const render = () => {
     if (!panelInner) return;
-
-    if (!statsData) {
-      panelInner.textContent = "ユーザーを入力してね（まだデータなし）";
-      return;
-    }
-
     if (activeTab === "main") {
   const m = statsData.meta || {};
   const winRateText =
