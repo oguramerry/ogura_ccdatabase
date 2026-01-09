@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const render = () => {
     if (!panelInner) return;
     
-    if (!statsData) {
-      panelInner.textContent = "ユーザーを入力してね（まだデータなし）";
-      return;
-    }
+if (!statsData) {
+  return;
+}
+
     
     if (activeTab === "main") {
   const m = statsData.meta || {};
@@ -188,6 +188,7 @@ else if (activeTab === "time") {
   let timer = null;
   
   window.handleStatsJsonp = (data) => {
+    console.log("handleStatsJsonp called", data);
     statsData = data;
     console.log("byStage sample", statsData.byStage?.[0]);
     render();
