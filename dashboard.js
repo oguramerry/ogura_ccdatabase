@@ -9,6 +9,7 @@ const STAGE_NAME_MAP = {
   "2": "クラウドナイン",
   "3": "東方絡繰御殿",
   "4": "レッド・サンズ"
+  "5": "ベイサイド・バトルグラウンド"
 };
 
 const JOB_NAME_JP = {
@@ -81,9 +82,8 @@ const top3 = map
       <p class="stat-title">ジョブ top3（勝率）</p>
       <p class="stat-body">
   ${top3.map((row, i) =>
-    `${i + 1}位：${row.job}（${((row.winRate ?? 0) * 100).toFixed(1)}%）`
+    `${i + 1}位：${JOB_NAME_JP[row.job] ?? row.job}（${((row.winRate ?? 0) * 100).toFixed(1)}%）`
   ).join("<br>")}
-
       </p>
     </div>
   `;
@@ -106,14 +106,13 @@ const top3 = map
       <p class="stat-title">ステージ top3（勝率）</p>
       <p class="stat-body">
   ${top3.map((row, i) =>
-    `${i + 1}位：${row.stage}（${((row.winRate ?? 0) * 100).toFixed(1)}%）`
+    `${i + 1}位：${JOB_NAME_JP[row.job] ?? row.job}（${((row.winRate ?? 0) * 100).toFixed(1)}%）`
   ).join("<br>")}
 
       </p>
     </div>
   `;
 }
-
 
     else if (activeTab === "jobStage") {
       const map = statsData.byStageJob;
