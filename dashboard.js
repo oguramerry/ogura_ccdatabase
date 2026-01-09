@@ -18,12 +18,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (activeTab === "main") {
-      const m = statsData.meta || {};
-      const winRateText =
-        m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-";
-      panelInner.textContent =
-        "試合数 " + (m.total ?? "-") + " / 勝率 " + winRateText;
-    }
+  const m = statsData.meta || {};
+  const winRateText =
+    m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-";
+
+  panelInner.innerHTML = `
+    <div class="stat-card">
+    <p class="stat-title">サマリ</p>
+    <p class="stat-body">
+    試合数 ${m.total ?? "-"}<br>
+    勝率 ${winRateText}
+    </p>
+    </div>
+  `;
+}
 
     else if (activeTab === "job") {
       const map = statsData.byJob;
@@ -31,27 +39,33 @@ document.addEventListener("DOMContentLoaded", () => {
         panelInner.textContent = "job 集計なし";
         return;
       }
-  panelInner.textContent = "ジョブ数 " + Object.keys(map).length;
-}
-
+      panelInner.innerHTML = `
+      <div class="stat-card">
+      <p class="stat-title">ジョブ</p>
+      <p class="stat-body">
+      ジョブ数 ${Object.keys(map).length}
+      </p>
+      </div>
+      `;
+    }
 
     else if (activeTab === "stage") {
-  const map = statsData.byStage;
-  if (!map) {
-    panelInner.textContent = "stage 集計なし";
-    return;
-  }
-  panelInner.textContent = "ステージ数 " + Object.keys(map).length;
-}
+      const map = statsData.byStage;
+      if (!map) {
+        panelInner.textContent = "stage 集計なし";
+        return;
+      }
+      panelInner.textContent = "ステージ数 " + Object.keys(map).length;
+    }
 
     else if (activeTab === "jobStage") {
       const map = statsData.byStageJob;
       if (!map) {
-    panelInner.textContent = "job*stage 集計なし";
+        panelInner.textContent = "job*stage 集計なし";
         return;
-  }
-  panelInner.textContent = "組み合わせ数 " + Object.keys(map).length;
-}
+      }
+      panelInner.textContent = "組み合わせ数 " + Object.keys(map).length;
+    }
 
     else if (activeTab === "time") {
       const hasHour = !!statsData.byHour;
