@@ -11,6 +11,29 @@ const STAGE_NAME_MAP = {
   "4": "レッド・サンズ"
 };
 
+const JOB_NAME_JP = {
+  "PLD": "ナイト",
+  "WAR": "戦士",
+  "DRK": "暗黒騎士",
+  "GNB": "ガンブレイカー",
+  "WHM": "白魔道士",
+  "SCH": "学者",
+  "AST": "占星術師",
+  "SGE": "賢者",
+  "MNK": "モンク",
+  "DRG": "竜騎士",
+  "NIN": "忍者",
+  "SAM": "侍",
+  "RPR": "リーパー",
+  "BRD": "吟遊詩人",
+  "MCH": "機工士",
+  "DNC": "踊り子",
+  "BLM": "黒魔道士",
+  "SMN": "召喚士",
+  "RDM": "赤魔道士",
+};
+
+
 document.addEventListener("DOMContentLoaded", () => {
   let statsData = null;
   const input = document.getElementById("userInput");
