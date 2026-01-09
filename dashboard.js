@@ -125,7 +125,7 @@ else if (activeTab === "jobStage") {
         ${top3.map((row, i) => {
           const jobJp = JOB_NAME_JP[row.job] ?? row.job;
           const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-          return `${i + 1}位：${jobJp} × ${row.stage}（${wr}% / ${row.wins}勝${row.losses}敗 / ${row.total}試合）`;
+          return `${i + 1}位：${jobJp} × ${row.stage}（${wr}% / ${row.total}試合）`;
         }).join("<br>")}
       </p>
     </div>
