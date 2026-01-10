@@ -201,7 +201,7 @@ else if (activeTab === "time") {
         `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
 
-    const stageEl = document.getElementById("topStageBody");
+  
     const stageEl = document.getElementById("topStageBody");
 if (stageEl && data.byStage && data.byStage.length) {
   const ranking = data.byStage
