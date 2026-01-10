@@ -202,7 +202,18 @@ else if (activeTab === "time") {
     }
 
     const stageEl = document.getElementById("topStageBody");
-    if (stageEl) stageEl.textContent = "あとでここにステージtop3が入るよ";
+    const stageEl = document.getElementById("topStageBody");
+if (stageEl && data.byStage && data.byStage.length) {
+  const ranking = data.byStage
+    .slice()
+    .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+    .slice(0, 3);
+
+  stageEl.innerHTML = ranking.map((row, i) => {
+    const wr = ((row.winRate ?? 0) * 100).toFixed(1);
+    return `${i + 1}位　${row.stage}<br>勝率 ${wr}%（${row.total}試合）`;
+  }).join("<br>");
+}
   };
 
   window.handleUsersJsonp = (data) => {
