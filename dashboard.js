@@ -214,6 +214,20 @@ if (stageEl && data.byStage && data.byStage.length) {
     return `${i + 1}位　${row.stage}<br>勝率 ${wr}%（${row.total}試合）`;
   }).join("<br>");
 }
+
+    const jobEl = document.getElementById("topJobBody");
+if (jobEl && data.byJob && data.byJob.length) {
+  const ranking = data.byJob
+    .slice()
+    .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+    .slice(0, 3);
+
+  jobEl.innerHTML = ranking.map((row, i) => {
+    const jobJp = JOB_NAME_JP[row.job] ?? row.job;
+    const wr = ((row.winRate ?? 0) * 100).toFixed(1);
+    return `${i + 1}位　${jobJp}<br>勝率 ${wr}%（${row.total}試合）`;
+  }).join("<br>");
+}
   };
 
   window.handleUsersJsonp = (data) => {
