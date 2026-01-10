@@ -223,7 +223,7 @@ if (stageEl && data.byStage && data.byStage.length) {
 
   stageEl.innerHTML = ranking.map((row, i) => {
     const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-    return `${i + 1}位　${row.stage}<br>勝率 ${wr}%（${row.total}試合）`;
+    return `${i + 1}位　${row.stage} 勝率 ${wr}%（${row.total}試合）`;
   }).join("<br>");
 }
 
@@ -237,7 +237,7 @@ if (jobEl && data.byJob && data.byJob.length) {
   jobEl.innerHTML = ranking.map((row, i) => {
     const jobJp = JOB_NAME_JP[row.job] ?? row.job;
     const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-    return `${i + 1}位　${jobJp}<br>勝率 ${wr}%（${row.total}試合）`;
+    return `${i + 1}位　${jobJp} 勝率 ${wr}%（${row.total}試合）`;
   }).join("<br>");
 }
     
@@ -250,7 +250,7 @@ if (hourEl && data.byHour && data.byHour.length) {
 
   hourEl.innerHTML = ranking.map((row, i) => {
     const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-    return `${i + 1}位　${formatHourRange(row.hour)}<br>勝率 ${wr}%（${row.total}試合）`;
+    return `${i + 1}位　${formatHourRange(row.hour)} 勝率 ${wr}%（${row.total}試合）`;
   }).join("<br>");
 }
   };
