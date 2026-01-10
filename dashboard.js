@@ -228,6 +228,19 @@ if (jobEl && data.byJob && data.byJob.length) {
     return `${i + 1}位　${jobJp}<br>勝率 ${wr}%（${row.total}試合）`;
   }).join("<br>");
 }
+    
+const hourEl = document.getElementById("topHourBody");
+if (hourEl && data.byHour && data.byHour.length) {
+  const ranking = data.byHour
+    .slice()
+    .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+    .slice(0, 3);
+
+  hourEl.innerHTML = ranking.map((row, i) => {
+    const wr = ((row.winRate ?? 0) * 100).toFixed(1);
+    return `${i + 1}位　${row.hour}時台<br>勝率 ${wr}%（${row.total}試合）`;
+  }).join("<br>");
+}
   };
 
   window.handleUsersJsonp = (data) => {
