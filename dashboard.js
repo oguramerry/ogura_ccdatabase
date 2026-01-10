@@ -38,6 +38,18 @@ function formatCharacterName(name) {
   return name.replace(/([a-z])([A-Z])/g, "$1 $2");
 }
 
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+function formatHourRange(hour) {
+  const h = Number(hour);
+  if (!Number.isFinite(h)) return String(hour ?? "");
+  const start = `${pad2(h)}:00`;
+  const end = `${pad2(h)}:59`;
+  return `${start}～${end}`;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   let statsData = null;
   const input = document.getElementById("userInput");
@@ -160,7 +172,7 @@ else if (activeTab === "time") {
       <p class="stat-body">
         ${ranking.map((row, i) => {
           const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-          return `${i + 1}位：${row.hour}時台（${wr}% / ${row.total}試合）`;
+          return `${i + 1}位：${formatHourRange(row.hour)}（${wr}% / ${row.total}試合）`;
         }).join("<br>")}
       </p>
     </div>
@@ -238,7 +250,7 @@ if (hourEl && data.byHour && data.byHour.length) {
 
   hourEl.innerHTML = ranking.map((row, i) => {
     const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-    return `${i + 1}位　${row.hour}時台<br>勝率 ${wr}%（${row.total}試合）`;
+    return `${i + 1}位　${formatHourRange(row.hour)}<br>勝率 ${wr}%（${row.total}試合）`;
   }).join("<br>");
 }
   };
