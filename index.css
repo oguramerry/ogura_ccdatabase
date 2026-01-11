@@ -4,6 +4,10 @@ flex-direction: column;
 align-items: center;
 }
 
+h1, p {
+margin: 0;
+}
+
 body {
 background-image: url("./images/bg_sky_shiwamoco");
 background-size: 60px 60px;
