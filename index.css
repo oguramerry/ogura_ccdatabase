@@ -10,3 +10,12 @@ background-size: 60px 60px;
 background-repeat: repeat;
 background-position: top left;
 }
+
+.title-image {
+width: 400px; /* 画像の横幅 /
+height: 120px; / 画像の高さ */
+background-image: url("./images/title.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
