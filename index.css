@@ -1,7 +1,11 @@
 
 body {
+<div class="container">
+  
 background-image: url("./images/bg_sky_shiwamoco");
 background-size: 10px 10px;
 background-repeat: repeat;
 background-position: top left;
+
+</div>
 }
