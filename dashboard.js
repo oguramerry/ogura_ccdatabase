@@ -2,9 +2,8 @@
 
 // match-stats-api
 const GAS_BASE =
-  "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
-   
-console.log("mode: jsonp only");
+  "https://script.google.com/macros/s/"+
+  "AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
 
 const JOB_NAME_JP = {
   "PLD": "ナイト",
@@ -29,20 +28,19 @@ const JOB_NAME_JP = {
   "RDM": "赤魔道士",
 };
 
+//　名前変換
 function formatCharacterName(name) {
   if (!name) return name;
-
   // すでに半角スペースがあるならそのまま
   if (name.includes(" ")) return name;
-
   // OguraChan -> Ogura Chan みたいに分割
   return name.replace(/([a-z])([A-Z])/g, "$1 $2");
 }
 
+//時間帯を05:00~05:59で整える
 function pad2(n) {
   return String(n).padStart(2, "0");
 }
-
 function formatHourRange(hour) {
   const h = Number(hour);
   if (!Number.isFinite(h)) return String(hour ?? "");
@@ -51,25 +49,33 @@ function formatHourRange(hour) {
   return `${start}～${end}`;
 }
 
+//画面が読み込まれたら開始
 document.addEventListener("DOMContentLoaded", () => {
   let statsData = null;
+  // キャラ名入力欄
   const input = document.getElementById("userInput");
+  //　タブボタン群
   const tabs = document.getElementById("tabButtons");
+  //　現在表示中のタブ
   let activeTab = "main";
+  //htmlのid panelInnerを掴む（タブ内書き換え表示）
   const panelInner = document.getElementById("panelInner");
+
+  //　-------------------------------render開始
   const render = () => {
     if (!panelInner) return;
     
+//statsDataが空のときは何もしない    
 if (!statsData) {
   return;
 }
 
-    
-    if (activeTab === "main") {
+if (activeTab === "main") {
   const m = statsData.meta || {};
   const winRateText =
     m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-";
-
+  
+//パネルの中を消して新しい内容を入れる
   panelInner.innerHTML = `
     <div class="stat-card">
     <p class="stat-title">サマリ</p>
@@ -179,7 +185,8 @@ else if (activeTab === "time") {
     </div>
   `;
 }
-  };
+  };　
+  // -------------------------------render終わり
   
   const setActiveTab = (tab) => {
       activeTab = tab;
@@ -214,7 +221,7 @@ else if (activeTab === "time") {
         `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
 
-  
+
     const stageEl = document.getElementById("topStageBody");
 if (stageEl && data.byStage && data.byStage.length) {
   const ranking = data.byStage
@@ -256,6 +263,9 @@ if (hourEl && data.byHour && data.byHour.length) {
 }
   };
 
+
+  
+  //gasから帰ってきたユーザ名候補をinputboxの候補リストに入れる
   window.handleUsersJsonp = (data) => {
     const list = document.getElementById("userList");
     if (!list) return;
@@ -269,6 +279,7 @@ if (hourEl && data.byHour && data.byHour.length) {
     }
   };
 
+//ユーザ名候補を取りに行く
 function fetchUsers(qText) {
   const q = encodeURIComponent(String(qText || "").replace(/\s+/g, ""));
   const oldUsers = document.getElementById("jsonpUsers");
@@ -283,7 +294,8 @@ function fetchUsers(qText) {
     + "&_=" + Date.now();
   document.body.appendChild(su);
 }
-  
+
+  //キャラ名選択後にgasにjsonpで取りに行く
   input.addEventListener("input", () => {
     clearTimeout(timer);
     
