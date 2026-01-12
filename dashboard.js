@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const panelInner = document.getElementById("panelInner");
 
   //　-------------------------------render開始
+  //　現在のactivetabに応じてpanelInnerを描画
+  //　未取得時は何も表示しない
   const render = () => {
     if (!panelInner) return;
     
@@ -69,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
 if (!statsData) {
   return;
 }
-
+//　メインサマリ（試合数・勝率）
 if (activeTab === "main") {
   const m = statsData.meta || {};
   const winRateText =
@@ -86,7 +88,7 @@ if (activeTab === "main") {
     </div>
   `;
 }
-
+//ジョブ別　勝率ランキング
 else if (activeTab === "job") {
   const map = statsData.byJob;
   if (!map) {
@@ -110,7 +112,7 @@ const ranking = map
     </div>
   `;
 }
-
+//　ステージ別　勝率ランキング
 else if (activeTab === "stage") {
   const map = statsData.byStage;
   if (!map) {
@@ -135,7 +137,8 @@ const ranking = map
     </div>
   `;
 }
-
+  
+//　ジョブ×ステージ　勝率ランキング
 else if (activeTab === "jobStage") {
   const arr = statsData.byStageJob;
   if (!arr || !arr.length) {
@@ -161,6 +164,8 @@ else if (activeTab === "jobStage") {
     </div>
   `;
 }
+
+//　時間帯別　勝率ランキング
 else if (activeTab === "time") {
   const arr = statsData.byHour;
   if (!arr || !arr.length) {
@@ -187,7 +192,10 @@ else if (activeTab === "time") {
 }
   };　
   // -------------------------------render終わり
-  
+
+
+  //　タブ切り替え→再描画
+  //　タブがクリックされたらactivetabを切り替え
   const setActiveTab = (tab) => {
       activeTab = tab;
       console.log("tab:", activeTab);
@@ -206,21 +214,25 @@ else if (activeTab === "time") {
   }
 
   let timer = null;
-  
+
+  //　gasのaction=statsから返ってきた戦績データ受け取り
+  //　.statsDataに保存
   window.handleStatsJsonp = (data) => {
     console.log("handleStatsJsonp called", data);
     statsData = data;
     console.log("byStage sample", statsData.byStage?.[0]);
+    //　アクティブタブ再描画
     render();
+    
     const el = document.getElementById("result");
-    if (!el) return;
-    const m = data.meta;
+    if (!el) return;　//resultがhtmlになかったら終了
+    
+    const m = data.meta;　//　全体サマリをmとして宣言
     const resultEl = document.getElementById("result");
-    if (resultEl) {
+    if (resultEl) {　　//　resultがある場合だけ処理
       resultEl.textContent =
         `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
-
 
     const stageEl = document.getElementById("topStageBody");
 if (stageEl && data.byStage && data.byStage.length) {
