@@ -27,7 +27,6 @@ background-position: top left;
 /* フッター */
 footer {
   display: flex;
-  position: fixed; /*　画面に固定　*/
   bottom: 0;
   color: #ffffff;
   align-items: center;
