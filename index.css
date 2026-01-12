@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
 /* 中央寄せ */
 .container {
 display: flex;
@@ -17,6 +19,9 @@ background-position: top left;
 .title img{
   width: 20vw;　　　　/* 画面の横に対してx% */
   height: auto;
+}
+.please {
+  font-family: "Kiwi Maru", serif;
 }
 
 .daemon img{
