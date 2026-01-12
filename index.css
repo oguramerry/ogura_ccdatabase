@@ -19,6 +19,11 @@ background-position: top left;
   height: auto;
 }
 
+.daemon img{
+  wigth: 10vw;
+  height: atuo;
+}
+
 /* フッター */
 footer {
   color: #8fbae0;
