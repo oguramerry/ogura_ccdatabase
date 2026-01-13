@@ -51,15 +51,13 @@ function formatHourRange(hour) {
 
 //画面が読み込まれたら開始
 document.addEventListener("DOMContentLoaded", () => {
+  
   let statsData = null;
-  // キャラ名入力欄
-  const input = document.getElementById("userInput");
-  //　タブボタン群
-  const tabs = document.getElementById("tabButtons");
-  //　現在表示中のタブ
-  let activeTab = "main";
-  //htmlのid panelInnerを掴む（タブ内書き換え表示）
-  const panelInner = document.getElementById("panelInner");
+  let activeTab = "main";　//　現在表示中のタブ
+ 
+  const input = document.getElementById("userInput"); // キャラ名入力欄
+  const tabs = document.getElementById("tabButtons");  //　タブボタン群
+  const panelInner = document.getElementById("panelInner"); //htmlのid panelInnerを掴む（タブ内書き換え表示）
 
   //　-------------------------------render開始
   //　現在のactivetabに応じてpanelInnerを描画
