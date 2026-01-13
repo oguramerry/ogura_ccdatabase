@@ -193,7 +193,23 @@ else if (activeTab === "time") {
   };　
   // -------------------------------render終わり
 
+const historyBtn = document.getElementById("fetchHistoryBtn");
+if (historyBtn) {
+  historyBtn.addEventListener("click", () => {
+    const user = document.getElementById("userInput")?.value?.trim();
+    const date = document.getElementById("dateInput")?.value?.trim();
 
+    if (!user || !date) {
+      alert("ユーザー名と日付を入力してね");
+      return;
+    }
+
+    fetchMatchHistory(user, date);
+  });
+}
+
+
+  
   //　タブ切り替え→再描画
   //　タブがクリックされたらactivetabを切り替え
   const setActiveTab = (tab) => {
@@ -355,6 +371,22 @@ const points = data.points;
   });
 };
 
+function fetchMatchHistory(user, dateStr) {
+  const old = document.getElementById("jsonpHistory");
+  if (old) old.remove();
+
+  const script = document.createElement("script");
+  script.id = "jsonpHistory";
+  script.src = GAS_BASE
+    + "?action=matchhistory"
+    + "&user=" + encodeURIComponent(user)
+    + "&date=" + encodeURIComponent(dateStr)
+    + "&callback=handleMatchHistoryJsonp"
+    + "&_=" + Date.now();
+  document.body.appendChild(script);
+}
+
+  
   
 //ユーザ名候補を取りに行く
 function fetchUsers(qText) {
