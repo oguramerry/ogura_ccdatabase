@@ -274,8 +274,6 @@ if (hourEl && data.byHour && data.byHour.length) {
   }).join("<br>");
 }
   };
-
-
   
   //gasから帰ってきたユーザ名候補をinputboxの候補リストに入れる
   window.handleUsersJsonp = (data) => {
@@ -291,6 +289,26 @@ if (hourEl && data.byHour && data.byHour.length) {
     }
   };
 
+// GAS matchHistory の返りを受け取る
+window.handleMatchHistoryJsonp = (data) => {
+  console.log("📊 match history data:", data);
+
+  const el = document.getElementById("matchHistoryResult");
+  if (!el) return;
+
+  if (data.error) {
+    el.textContent = "エラー：" + data.error;
+    return;
+  }
+
+  const lines = data.points.map(p =>
+    `【${p.time}】 ${p.result === 1 ? "勝ち" : "負け"} / 累積 ${p.sum}`
+  );
+
+  el.innerHTML = lines.join("<br>");
+};
+
+  
 //ユーザ名候補を取りに行く
 function fetchUsers(qText) {
   const q = encodeURIComponent(String(qText || "").replace(/\s+/g, ""));
