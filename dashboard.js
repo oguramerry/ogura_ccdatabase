@@ -293,19 +293,66 @@ if (hourEl && data.byHour && data.byHour.length) {
 window.handleMatchHistoryJsonp = (data) => {
   console.log("📊 match history data:", data);
 
-  const el = document.getElementById("matchHistoryResult");
-  if (!el) return;
+const points = data.points;
+  if (!points || !points.length) return;
 
-  if (data.error) {
-    el.textContent = "エラー：" + data.error;
-    return;
-  }
+  const chartData = points.map((p, i) => ({
+    x: i,
+    y: p.sum,
+    time: p.time,
+    slot: p.slot
+  }));
 
-  const lines = data.points.map(p =>
-    `【${p.time}】 ${p.result === 1 ? "勝ち" : "負け"} / 累積 ${p.sum}`
-  );
+  const ctx = document.getElementById("matchChart").getContext("2d");
 
-  el.innerHTML = lines.join("<br>");
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      datasets: [{
+        data: chartData,
+        parsing: false, // xとyを自動で解釈しない（そのまま使う）
+        borderWidth: 2,
+        pointRadius: 4,
+        pointHoverRadius: 6,
+        tension: 0.2,
+        borderColor: "#4e79a7"
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        x: {
+          type: "linear",
+          ticks: {
+            callback: function (value) {
+              const i = Math.floor(value);
+              const current = points[i];
+              const prev = points[i - 1];
+              if (!current) return "";
+              if (!prev || current.slot !== prev.slot) return current.slot;
+              return "";
+            }
+          }
+        },
+        y: {
+          beginAtZero: true
+        }
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            title: (items) => {
+              const raw = items[0].raw;
+              return raw ? raw.time : "";
+            },
+            label: (item) => {
+              return `累積: ${item.raw.y}`;
+            }
+          }
+        }
+      }
+    }
+  });
 };
 
   
