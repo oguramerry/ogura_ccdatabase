@@ -17,64 +17,66 @@
         <div id="highlight">
           <div class="search-box">
             <span class="search-label">user</span>
-          <input
-            id="userInput"
-            list="userList"
-            type="text"
-            placeholder="ユーザー名を入力…"
-            class="search-input"
-          />
+            <input
+              id="userInput"
+              list="userList" 
+              type="text"
+              placeholder="ユーザー名を入力…"
+              class="search-input"
+            />
             <datalist id="userList"></datalist>
+          </div>
         </div>
-      </div>
         
-<!-- TOP3 -->
-<div class="stats-grid">
-  <div id="topStage" class="stat-card">
-    <p class="stat-title">おすすめステージ top3</p>
-    <p id="topStageBody" class="stat-body">
-            1位　ステージA<br>
-            2位　ステージB<br>
-            3位　ステージC
-    </p>
-  </div>
+        <div class="stats-grid">
+          <div id="topStage" class="stat-card">
+            <p class="stat-title">おすすめステージ top3</p>
+            <p id="topStageBody" class="stat-body">
+              1位　ステージA<br>
+              2位　ステージB<br>
+              3位　ステージC
+            </p>
+          </div>
 
-  <div id="topJob" class="stat-card">
-    <p class="stat-title">おすすめジョブ top3</p>
-    <p id="topJobBody" class="stat-body">
-            1位　ジョブA<br>
-            2位　ジョブB<br>
-            3位　ジョブC
-    </p>
-  </div>
+          <div id="topJob" class="stat-card">
+            <p class="stat-title">おすすめジョブ top3</p>
+            <p id="topJobBody" class="stat-body">
+              1位　ジョブA<br>
+              2位　ジョブB<br>
+              3位　ジョブC
+            </p>
+          </div>
 
-  <div id="topHour" class="stat-card">
-    <p class="stat-title">おすすめ時間帯 top3</p>
-    <p id="topHourBody" class="stat-body">
-            1位　00:00～00:00<br>
-            2位　00:00～00:00<br>
-            3位　00:00～00:00
-    </p>
-  </div>
-</div>
+          <div id="topHour" class="stat-card">
+            <p class="stat-title">おすすめ時間帯 top3</p>
+            <p id="topHourBody" class="stat-body">
+              1位　00:00～00:00<br>
+              2位　00:00～00:00<br>
+              3位　00:00～00:00
+            </p>
+          </div>
+        </div>
 
-      <div id="tabButtons">
-        <button type="button" data-tab="main">main</button>
-        <button type="button" data-tab="job">job</button>
-        <button type="button" data-tab="stage">stage</button>
-        <button type="button" data-tab="jobStage">job*stage</button>
-        <button type="button" data-tab="time">🕒</button>
-      </div>
+        <div class="stat-card" style="margin-top: 1rem;">
+          <p class="stat-title">レート推移</p>
+          <div style="position: relative; width:100%; height:300px;">
+             <canvas id="matchChart"></canvas>
+          </div>
+        </div>
 
-<!-- active tabの中身 -->
-<div id="panelInner"></div>
+        <div id="tabButtons">
+          <button type="button" data-tab="main">main</button>
+          <button type="button" data-tab="job">job</button>
+          <button type="button" data-tab="stage">stage</button>
+          <button type="button" data-tab="jobStage">job*stage</button>
+          <button type="button" data-tab="time">🕒</button>
+        </div>
 
-      <p class="back-link">
-        <a href="./index.html">トップへ戻る</a>
-      </p>
-    </div>
-  </div>
-  <script src="dashboard.js"></script>
-  </div>
+        <div id="panelInner"></div>
+
+        <p class="back-link">
+          <a href="./index.html">トップへ戻る</a>
+        </p>
+      </div> </div> </div> <script src="dashboard.js"></script>
 </body>
 </html>
