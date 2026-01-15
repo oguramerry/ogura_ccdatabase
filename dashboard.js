@@ -403,6 +403,8 @@ function fetchUsers(qText) {
       s.id = "jsonpStats";
       s.src = GAS_BASE + "?action=stats&user=" + encodeURIComponent(userForApi) + "&callback=handleStatsJsonp&_=" + Date.now();
       document.body.appendChild(s);
+      fetchMatchHistory(userForApi, "");
+      
     }, 500);
   });
   fetchUsers("");
