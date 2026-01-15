@@ -191,23 +191,7 @@ else if (activeTab === "time") {
   };　
   // -------------------------------render終わり
 
-const historyBtn = document.getElementById("fetchHistoryBtn");
-if (historyBtn) {
-  historyBtn.addEventListener("click", () => {
-    const user = document.getElementById("userInput")?.value?.trim();
-    const date = document.getElementById("dateInput")?.value?.trim();
 
-    if (!user || !date) {
-      alert("ユーザー名と日付を入力してね");
-      return;
-    }
-
-    fetchMatchHistory(user, date);
-  });
-}
-
-
-  
   //　タブ切り替え→再描画
   //　タブがクリックされたらactivetabを切り替え
   const setActiveTab = (tab) => {
