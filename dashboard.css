@@ -28,18 +28,12 @@ align-items: center;
   padding: 18px;
 }
 
-/* リンクの下線デザイン */
-a {
-  color: #1f2937;
-  text-decoration: none;
-  border-bottom: 1px dashed #8bd0ff;
-}
-
 /* 各パーツのスタイル */
 .page-title {
   margin: 0 0 12px;
   font-size: 18px;
 }
+
 
 /* ハイライトエリア */
 #highlight {
@@ -124,4 +118,12 @@ a {
 
 .back-link {
   margin: 14px 0 0;
+}
+
+
+/* リンクの下線デザイン */
+a {
+  color: #1f2937;
+  text-decoration: none;
+  border-bottom: 1px dashed #8bd0ff;
 }
