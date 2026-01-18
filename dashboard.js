@@ -174,6 +174,7 @@ else if (activeTab === "time") {
   }
 
   const ranking = arr
+    .filter(row=>(row.total??0)>=5)
     .slice()
     .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
     .slice(0, 5);
