@@ -85,6 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!input.value.trim()) return;
     const userForApi = input.value.trim().replace(/\s+/g, "");
     if (!userForApi) return;
+    
+    if (!availableDates.includes(currentDate)) {
+      console.log("この日はデータなし");
+      return;
+    }
+    
     fetchMatchHistory(userForApi, currentDate);
   });
 }
