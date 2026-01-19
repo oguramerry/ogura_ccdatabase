@@ -339,7 +339,14 @@ window.handleMatchHistoryJsonp = (data) => {
   console.log("📊 match history data:", data);
 
 const points = data.points;
-  if (!points || !points.length) return;
+  
+if (!points || !points.length) {
+  if (matchChartInstance) {
+    matchChartInstance.data.datasets[0].data = [];
+    matchChartInstance.update();
+  }
+  return;
+}
 
   const chartData = points.map((p, i) => ({
     x: i,
@@ -350,11 +357,6 @@ const points = data.points;
   }));
 
 const ctx = document.getElementById("matchChart").getContext("2d");
-
-// 前のグラフがあったら消す
-if (matchChartInstance) {
-  matchChartInstance.destroy();
-}
 
 matchChartInstance = new Chart(ctx, {
   type: "line",
