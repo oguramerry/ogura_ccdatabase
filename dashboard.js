@@ -132,6 +132,7 @@ datasets: [{
   });
 }
 
+const now = new Date();
 
 // 選択中の日付（初期は今日・JST）
 let currentDate = (() => {
@@ -512,7 +513,6 @@ for (let d = 1; d <= total; d++) {
   cell.addEventListener("click", () => {
     currentDate = cell.dataset.date;
     applyCalendarColors();
-    datePicker.value = currentDate;
     if (!currentUserForApi) return;
     
     if (availableDates.includes(currentDate)) {
@@ -533,7 +533,7 @@ function applyCalendarColors() {
 const cells = document.querySelectorAll(".calendar-cell");
 
 const today = (() => {
-const now = new Date();
+
 return (
 now.getFullYear() + "-" +
 String(now.getMonth() + 1).padStart(2, "0") + "-" +
@@ -574,8 +574,6 @@ cells.forEach(cell => {
 });
 }  
 
-// 今月表示（JST）
-const now = new Date();
 buildCalendar(now.getFullYear(), now.getMonth());
   applyCalendarColors();
   
