@@ -455,15 +455,6 @@ const ctx = document.getElementById("matchChart").getContext("2d");
 matchChartInstance.data.datasets[0].data = chartData;
   
 matchChartInstance.update();
-
-const cell = document.querySelector(
-  `.calendar-cell[data-date="${data.date}"]`
-);
-if (cell && points && points.length) {
-  const last = points[points.length - 1];
-  cell.classList.remove("win", "loss");
-  cell.classList.add(last.result > 0 ? "win" : "loss");
-}
 };
 
 let availableDates = [];
