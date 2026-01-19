@@ -150,3 +150,24 @@ a {
   text-decoration: none;
   border-bottom: 1px dashed #8bd0ff;
 }
+
+/* カレンダー配色 */
+.calendar-cell.today {
+  outline: 2px solid #8bd0ff;
+}
+
+.calendar-cell.selected {
+  background: #e6f4ff;
+}
+
+.calendar-cell.win {
+  background: #e8f6fb;
+}
+
+.calendar-cell.loss {
+  background: #fde8ef;
+}
+
+.calendar-cell.nodata {
+  color: #b0b8c0;
+}
