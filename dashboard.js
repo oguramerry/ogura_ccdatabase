@@ -163,6 +163,7 @@ document.getElementById("calPrev")?.addEventListener("click", () => {
     viewYear--;
   }
   buildCalendar(viewYear, viewMonth);
+  Object.keys(resultByDate).forEach(k => delete resultByDate[k]);
   applyCalendarColors();
 });
 
@@ -173,6 +174,7 @@ document.getElementById("calNext")?.addEventListener("click", () => {
     viewYear++;
   }
   buildCalendar(viewYear, viewMonth);
+  Object.keys(resultByDate).forEach(k => delete resultByDate[k]);
   applyCalendarColors();
 });
   
@@ -414,6 +416,12 @@ window.handleMatchHistoryJsonp = (data) => {
   console.log("📊 match history data:", data);
 
 const points = data.points;
+  if (points && points.length) {
+  const last = points[points.length - 1];
+  resultByDate[data.date] = last.result;
+}
+
+  
 const chartData = points.map((p, i) => ({
     x: i,
     y: p.sum,
@@ -428,6 +436,8 @@ const ctx = document.getElementById("matchChart").getContext("2d");
 matchChartInstance.data.datasets[0].data = chartData;
   
 matchChartInstance.update();
+  applyCalendarColors();
+
 };
 
 let availableDates = [];
@@ -440,6 +450,10 @@ window.handleAvailableDatesJsonp = (data) => {
   availableDates = data.dates || [];
   buildCalendar(now.getFullYear(), now.getMonth());
   applyCalendarColors();
+  if (availableDates.includes(currentDate)) {
+  fetchMatchHistory(currentUserForApi, currentDate);
+}
+
 };
 
   
@@ -564,12 +578,6 @@ cells.forEach(cell => {
 
   if (!availableDates.includes(d)) {
     cell.classList.add("nodata");
-  }
-
-  if (window.resultByDate && window.resultByDate[d]) {
-  cell.classList.add(
-    window.resultByDate[d] > 0 ? "win" : "loss"
-  );
   }
 });
 }  
