@@ -441,16 +441,7 @@ window.handleMatchHistoryJsonp = (data) => {
   console.log("📊 match history data:", data);
 
 const points = data.points;
-  
-  if (!window.resultByDate) window.resultByDate = {};
-  if (points && points.length) {
-    const last = points[points.length - 1];
-    window.resultByDate[data.date] = last.result;
-  }
-
-
-
-  const chartData = points.map((p, i) => ({
+const chartData = points.map((p, i) => ({
     x: i,
     y: p.sum,
     result: p.result, // 勝ち=1 / 負け=-1
@@ -473,11 +464,6 @@ if (cell && points && points.length) {
   cell.classList.remove("win", "loss");
   cell.classList.add(last.result > 0 ? "win" : "loss");
 }
-  if (points && points.length) {
-  const last = points[points.length - 1];
-  resultByDate[data.date] = last.result;
-}
-
 };
 
 let availableDates = [];
@@ -615,6 +601,12 @@ cells.forEach(cell => {
 
   if (!availableDates.includes(d)) {
     cell.classList.add("nodata");
+  }
+
+  if (window.resultByDate && window.resultByDate[d]) {
+  cell.classList.add(
+    window.resultByDate[d] > 0 ? "win" : "loss"
+  );
   }
 });
 }  
