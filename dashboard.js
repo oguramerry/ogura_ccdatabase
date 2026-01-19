@@ -1,4 +1,7 @@
 // dashboard.js
+window.testAvailableDates = (data) => {
+  console.log("availableDates:", data);
+};
 
 // match-stats-api
 const GAS_BASE =
