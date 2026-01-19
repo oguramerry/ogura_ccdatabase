@@ -188,6 +188,7 @@ document.getElementById("calPrev")?.addEventListener("click", () => {
     viewYear--;
   }
   buildCalendar(viewYear, viewMonth);
+  datePicker.value = currentDate;
   applyCalendarColors();
 });
 
@@ -198,6 +199,7 @@ document.getElementById("calNext")?.addEventListener("click", () => {
     viewYear++;
   }
   buildCalendar(viewYear, viewMonth);
+  datePicker.value = currentDate;
   applyCalendarColors();
 });
   
@@ -439,6 +441,13 @@ window.handleMatchHistoryJsonp = (data) => {
   console.log("📊 match history data:", data);
 
 const points = data.points;
+  
+  if (!window.resultByDate) window.resultByDate = {};
+  if (points && points.length) {
+    const last = points[points.length - 1];
+    window.resultByDate[data.date] = last.result;
+  }
+
 
 
   const chartData = points.map((p, i) => ({
@@ -453,6 +462,7 @@ const points = data.points;
 const ctx = document.getElementById("matchChart").getContext("2d");
 
 matchChartInstance.data.datasets[0].data = chartData;
+  
 matchChartInstance.update();
 
 const cell = document.querySelector(
@@ -463,10 +473,17 @@ if (cell && points && points.length) {
   cell.classList.remove("win", "loss");
   cell.classList.add(last.result > 0 ? "win" : "loss");
 }
+  if (points && points.length) {
+  const last = points[points.length - 1];
+  resultByDate[data.date] = last.result;
+}
+
 };
 
 let availableDates = [];
-  let currentUserForApi = "";
+let currentUserForApi = "";
+
+const resultByDate = {};
 
 window.handleAvailableDatesJsonp = (data) => {
   console.log("availableDates jsonp:", data);
@@ -579,7 +596,14 @@ cells.forEach(cell => {
   const d = cell.dataset.date;
   if (!d) return;
 
-  cell.classList.remove("today", "selected", "nodata");
+  cell.classList.remove("today", "selected", "nodata", "win", "loss");
+  const r = resultByDate[d];
+  
+  if (r === 1) {
+    cell.classList.add("win");
+  } else if (r === -1) {
+    cell.classList.add("loss");
+  }
 
   if (d === currentDate) {
     cell.classList.add("selected");
