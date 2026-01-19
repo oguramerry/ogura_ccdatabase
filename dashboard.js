@@ -420,8 +420,7 @@ y: {
       return 1;
     }
   }
-}
-      },
+},
       plugins: {
         legend:{
           display: false
