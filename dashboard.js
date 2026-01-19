@@ -58,6 +58,9 @@ let currentDate = (() => {
   return `${y}-${m}-${d}`;
 })();
 
+const datePicker = document.getElementById("datePicker");
+datePicker.value = currentDate;
+
 
 //画面が読み込まれたら開始
 document.addEventListener("DOMContentLoaded", () => {
@@ -65,10 +68,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("userInput"); // キャラ名入力欄
   const tabs = document.getElementById("tabButtons");  //　タブボタン群
   const panelInner = document.getElementById("panelInner"); //htmlのid panelInnerを掴む（タブ内書き換え表示）
+  const datePicker = document.getElementById("datePicker");　//カレンダー変更
   
   let statsData = null;
   let activeTab = "main";　//　現在表示中のタブ
- 
+
+  //カレンダー取得
+  if (datePicker) {
+  datePicker.value = currentDate;
+
+  datePicker.addEventListener("change", () => {
+    currentDate = datePicker.value;
+    if (!input.value.trim()) return;
+    const userForApi = input.value.trim().replace(/\s+/g, "");
+    if (!userForApi) return;
+    fetchMatchHistory(userForApi, currentDate);
+  });
+}
+  
   //　-------------------------------render開始
   //　現在のactivetabに応じてpanelInnerを描画
   //　未取得時は何も表示しない
@@ -96,6 +113,7 @@ if (activeTab === "main") {
     </div>
   `;
 }
+  
 //ジョブ別　勝率ランキング
 else if (activeTab === "job") {
   const map = statsData.byJob;
