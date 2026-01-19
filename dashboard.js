@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("この日はデータなし");
 
       if (matchChartInstance) {
-        matchChartInstance.destroy();
-        matchChartInstance = null;
+        matchChartInstance.data.datasets[0].data = [];
+        matchChartInstance.update();
       }
       return;
     }
