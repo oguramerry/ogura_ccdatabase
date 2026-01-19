@@ -350,8 +350,8 @@ const points = data.points;
         // 線の色を区間ごとに切り替え
         segment: {
           borderColor: ctx => {
-            const y0 = ctx.p0.parsed.y;
-            const y1 = ctx.p1.parsed.y;
+            const y0 = ctx.p0.raw.y;
+            const y1 = ctx.p1.raw.y;
             return (y0 >= 0 && y1 >= 0) ? "#9fd9e8" : "#f2a7bf";
           }
         },          
