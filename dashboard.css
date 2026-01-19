@@ -125,6 +125,10 @@ align-items: center;
   grid-template-columns: repeat(7, 1fr);
   gap: 4px;
   max-width: 420px;
+  border: 1px solid #cfeaff;
+  border-radius: 12px;
+  padding: 6px;
+  background: #ffffff;
 }
 
 .calendar-head {
@@ -141,6 +145,7 @@ align-items: center;
   justify-content: center;
   font-size: 14px;
   cursor: default;
+  border: 1px solid #e6eef5;
 }
 
 
@@ -157,7 +162,8 @@ a {
 }
 
 .calendar-cell.selected {
-  background: #e6f4ff;
+background: transparent;
+outline: 2px solid #4e79a7;
 }
 
 .calendar-cell.win {
