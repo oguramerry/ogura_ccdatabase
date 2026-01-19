@@ -541,6 +541,7 @@ for (let d = 1; d <= total; d++) {
     if (!currentUserForApi) return;
     
     if (availableDates.includes(currentDate)) {
+      silentMode = false; 
       fetchMatchHistory(currentUserForApi, currentDate);
     } else {
       if (matchChartInstance) {
