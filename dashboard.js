@@ -66,15 +66,36 @@ function ensureEmptyChart() {
   matchChartInstance = new Chart(ctx, {
     type: "line",
     data: {
-      datasets: [{
-        label: "勝敗グラフ",
-        data: [], // ← 空
-        parsing: false,
-        borderWidth: 2,
-        pointRadius: 4,
-        tension: 0.5,
-        borderColor: "#4e79a7"
-      }]
+datasets: [{
+  label: "勝敗グラフ",
+  data: [],
+  parsing: false,
+  borderWidth: 2,
+  pointRadius: 4,
+  pointHoverRadius: 6,
+  tension: 0.5,
+  borderColor: "#4e79a7",
+
+  segment: {
+    borderColor: ctx => {
+      const y0 = ctx.p0?.raw?.y;
+      const y1 = ctx.p1?.raw?.y;
+      if (y0 == null || y1 == null) return "#4e79a7";
+      return (y0 >= 0 && y1 >= 0)
+        ? "#9fd9e8"
+        : "#f2a7bf";
+    }
+  },
+
+  pointBackgroundColor: ctx => {
+    const r = ctx.raw?.result;
+    return r > 0 ? "#b8e6f0" : "#f6c1d1";
+  },
+  pointBorderColor: ctx => {
+    const r = ctx.raw?.result;
+    return r > 0 ? "#7cc9dd" : "#e79ab0";
+  }
+}]
     },
     options: {
       responsive: true,
