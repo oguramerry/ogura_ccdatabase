@@ -421,6 +421,7 @@ y: {
     }
   }
 },
+      },
       plugins: {
         legend:{
           display: false
