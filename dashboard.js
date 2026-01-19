@@ -408,37 +408,44 @@ matchChartInstance = new Chart(ctx, {
         },
 y: {
   beginAtZero: true,
-  grid: {
-    color: (ctx) => {
-      // y=0 の線だけ濃く
-      if (ctx.tick && ctx.tick.value === 0) {
-        return "#999999"; // 少し濃いグレー
+  ticks: {
+    callback: (value) => {
+      //整数だけ表示
+      if (Number.isInteger(value)) {
+        return value;
       }
-      return "#e6e6e6"; // それ以外は薄いグレー
     },
-    lineWidth: (ctx) => {
-      if (ctx.tick && ctx.tick.value === 0) {
-        return 2; // 0 の線だけ少し太く
-      }
-      return 1;
-    }
-  }
-},
+    grid: {
+      color: (ctx) => {
+        // y=0 の線だけ濃く
+        if (ctx.tick && ctx.tick.value === 0) {
+          return "#999999"; // 少し濃いグレー
+        }
+        return "#e6e6e6"; // それ以外は薄いグレー
       },
-      plugins: {
-        legend:{
-          display: false
-        },
-        tooltip: {
-          callbacks: {
-            title: (items) => {
-              const raw = items[0].raw;
-              if (!raw) return "";
+      lineWidth: (ctx) => {
+        if (ctx.tick && ctx.tick.value === 0) {
+          return 2; // 0 の線だけ少し太く
+        }
+        return 1;
+      }
+    }
+  },
+},
+        plugins: {
+          legend:{
+            display: false
+          },
+          tooltip: {
+            callbacks: {
+              title: (items) => {
+                const raw = items[0].raw;
+                if (!raw) return "";
               
-              return `${raw.date} ${raw.time}`;
-            },
-            label: (item) => {
-              return `累積: ${item.raw.y}`;
+                return `${raw.date} ${raw.time}`;
+              },
+              label: (item) => {
+                return `累積: ${item.raw.y}`;
             }
           }
         }
