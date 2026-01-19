@@ -441,6 +441,7 @@ matchChartInstance.update();
 };
 
 let availableDates = [];
+  let currentUserForApi = "";
 
 window.handleAvailableDatesJsonp = (data) => {
   console.log("availableDates jsonp:", data);
@@ -583,6 +584,7 @@ function fetchUsers(qText) {
       fetchUsers(user);
       
       const userForApi = user.replace(/\s+/g, ""); // スペース消す
+      currentUserForApi = userForApi;
       if (!userForApi) return;
       
       ensureEmptyChart();
