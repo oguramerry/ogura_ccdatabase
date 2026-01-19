@@ -459,7 +459,12 @@ window.handleAvailableDatesJsonp = (data) => {
   if (availableDates.includes(currentDate)) {
   fetchMatchHistory(currentUserForApi, currentDate);
 }
+  // 月内の勝敗を静かに取得（色付け用）
+silentMode = true;
 
+for (const d of availableDates) {
+  fetchMatchHistory(currentUserForApi, d);
+}
 };
 
   
