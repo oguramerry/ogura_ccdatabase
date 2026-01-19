@@ -420,6 +420,11 @@ const points = data.points;
   const last = points[points.length - 1];
   resultByDate[data.date] = last.result;
 }
+  if (silentMode) {
+  applyCalendarColors();
+  return;
+}
+
 
   
 const chartData = points.map((p, i) => ({
@@ -442,6 +447,7 @@ matchChartInstance.update();
 
 let availableDates = [];
 let currentUserForApi = "";
+let silentMode = false;
 
 const resultByDate = {};
 
