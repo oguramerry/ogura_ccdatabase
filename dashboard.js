@@ -445,6 +445,7 @@ let availableDates = [];
 window.handleAvailableDatesJsonp = (data) => {
   console.log("availableDates jsonp:", data);
   availableDates = data.dates || [];
+  applyCalendarColors();
 };
   
 
@@ -513,10 +514,44 @@ for (let d = 1; d <= total; d++) {
     String(d).padStart(2, "0");
 
   cell.dataset.date = dateStr;
+  
+  cell.addEventListener("click", () => {
+    currentDate = cell.dataset.date;
+    applyCalendarColors();
+});
 
   cal.appendChild(cell);
 }
 }
+
+function applyCalendarColors() {
+const cells = document.querySelectorAll(".calendar-cell");
+
+const today = (() => {
+const now = new Date();
+return (
+now.getFullYear() + "-" +
+String(now.getMonth() + 1).padStart(2, "0") + "-" +
+String(now.getDate()).padStart(2, "0")
+);
+})();
+
+cells.forEach(cell => {
+const d = cell.dataset.date;
+if (!d) return;  
+
+cell.classList.remove("win","loss","nodata","today");
+
+if (d === today) {
+  cell.classList.add("today");
+  return;
+}
+
+if (!availableDates.includes(d)) {
+  cell.classList.add("nodata");
+}
+});
+}  
 
 // 今月表示（JST）
 const now = new Date();
