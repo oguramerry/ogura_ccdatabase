@@ -344,8 +344,26 @@ const points = data.points;
         borderWidth: 2,
         pointRadius: 4,
         pointHoverRadius: 6,
-        tension: 0.2,
+        tension: 0.5,
         borderColor: "#4e79a7"
+
+        // 線の色を区間ごとに切り替え
+        segment: {
+          borderColor: ctx => {
+            const y0 = ctx.p0.parsed.y;
+            const y1 = ctx.p1.parsed.y;
+            return (y0 >= 0 && y1 >= 0) ? "#9fd9e8" : "#f2a7bf";
+          }
+        },          
+
+        //ポイントの装飾   あとでアイコンつくるかも
+        pointBackgroundColor: chartData.map(p =>
+          p.y >= 0 ? "#b8e6f0" : "#f6c1d1"
+        ),
+        pointBorderColor: chartData.map(p =>
+          p.y >= 0 ? "#7cc9dd" : "#e79ab0"
+        ),
+          
       }]
     },
     options: {
