@@ -49,6 +49,16 @@ function formatHourRange(hour) {
   return `${start}～${end}`;
 }
 
+// 選択中の日付（初期は今日・JST）
+let currentDate = (() => {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+})();
+
+
 //画面が読み込まれたら開始
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -365,7 +375,7 @@ function fetchMatchHistory(user, dateStr) {
   script.src = GAS_BASE
     + "?action=matchhistory"
     + "&user=" + encodeURIComponent(user)
-    + "&date=" + encodeURIComponent(dateStr)
+    + "&date=" + encodeURIComponent(dateStr)　//curentDate入れる
     + "&callback=handleMatchHistoryJsonp"
     + "&_=" + Date.now();
   document.body.appendChild(script);
