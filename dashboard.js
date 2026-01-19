@@ -541,6 +541,8 @@ for (let d = 1; d <= total; d++) {
   cell.dataset.date = dateStr;
   
   cell.addEventListener("click", () => {
+    if (!availableDates.includes(cell.dataset.date)) return;
+    
     currentDate = cell.dataset.date;
     applyCalendarColors();
     if (!currentUserForApi) return;
