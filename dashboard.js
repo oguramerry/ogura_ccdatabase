@@ -408,6 +408,14 @@ const points = data.points;
   });
 };
 
+let availableDates = [];
+
+window.handleAvailableDatesJsonp = (data) => {
+  console.log("availableDates jsonp:", data);
+  availableDates = data.dates || [];
+};
+  
+
 function fetchMatchHistory(user, dateStr) {
   const old = document.getElementById("jsonpHistory");
   if (old) old.remove();
@@ -423,6 +431,20 @@ function fetchMatchHistory(user, dateStr) {
   document.body.appendChild(script);
 }
 
+function fetchAvailableDates(user) {
+  const old = document.getElementById("jsonpAvailableDates");
+  if (old) old.remove();
+
+  const s = document.createElement("script");
+  s.id = "jsonpAvailableDates";
+  s.src = GAS_BASE
+    + "?action=availabledates"
+    + "&user=" + encodeURIComponent(user)
+    + "&callback=handleAvailableDatesJsonp"
+    + "&_=" + Date.now();
+  document.body.appendChild(s);
+}
+  
   
   
 //ユーザ名候補を取りに行く
@@ -458,6 +480,7 @@ function fetchUsers(qText) {
       s.id = "jsonpStats";
       s.src = GAS_BASE + "?action=stats&user=" + encodeURIComponent(userForApi) + "&callback=handleStatsJsonp&_=" + Date.now();
       document.body.appendChild(s);
+      fetchAvailableDates(userForApi);
       fetchMatchHistory(userForApi, currentDate);
       
     }, 500);
