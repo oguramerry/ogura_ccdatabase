@@ -417,8 +417,10 @@ window.handleMatchHistoryJsonp = (data) => {
 
 const points = data.points;
   if (points && points.length) {
-  const last = points[points.length - 1];
-  resultByDate[data.date] = last.result;
+const last = points[points.length - 1];
+// 最終到達点が 0 より大きいか小さいかで判定
+resultByDate[data.date] = last.sum >= 0 ? 1 : -1;
+
 }
   if (silentMode) {
   applyCalendarColors();
