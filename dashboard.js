@@ -142,9 +142,6 @@ let currentDate = (() => {
   return `${y}-${m}-${d}`;
 })();
 
-const datePicker = document.getElementById("datePicker");
-datePicker.value = currentDate;
-
 
 //画面が読み込まれたら開始
 document.addEventListener("DOMContentLoaded", () => {
