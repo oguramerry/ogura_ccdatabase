@@ -149,37 +149,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("userInput"); // キャラ名入力欄
   const tabs = document.getElementById("tabButtons");  //　タブボタン群
   const panelInner = document.getElementById("panelInner"); //htmlのid panelInnerを掴む（タブ内書き換え表示）
-  const datePicker = document.getElementById("datePicker");　//カレンダー変更
   
   let statsData = null;
   let activeTab = "main";　//　現在表示中のタブ
   let viewYear = now.getFullYear();
   let viewMonth = now.getMonth();
-
-  //カレンダー取得
-  if (datePicker) {
-  datePicker.value = currentDate;
-
-  datePicker.addEventListener("change", () => {
-    currentDate = datePicker.value;
-    applyCalendarColors();
-    if (!input.value.trim()) return;
-    const userForApi = input.value.trim().replace(/\s+/g, "");
-    if (!userForApi) return;
-    
-    if (!availableDates.includes(currentDate)) {
-      console.log("この日はデータなし");
-
-      if (matchChartInstance) {
-        matchChartInstance.data.datasets[0].data = [];
-        matchChartInstance.update();
-      }
-      return;
-    }
-    
-    fetchMatchHistory(currentUserForApi, currentDate);
-  });
-}
 
 document.getElementById("calPrev")?.addEventListener("click", () => {
   viewMonth--;
