@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
     
-    fetchMatchHistory(userForApi, currentDate);
+    fetchMatchHistory(currentUserForApi, currentDate);
   });
 }
   
@@ -416,14 +416,7 @@ window.handleMatchHistoryJsonp = (data) => {
   console.log("📊 match history data:", data);
 
 const points = data.points;
-  
-if (!points || !points.length) {
-  if (matchChartInstance) {
-    matchChartInstance.data.datasets[0].data = [];
-    matchChartInstance.update();
-  }
-  return;
-}
+
 
   const chartData = points.map((p, i) => ({
     x: i,
@@ -439,6 +432,14 @@ const ctx = document.getElementById("matchChart").getContext("2d");
 matchChartInstance.data.datasets[0].data = chartData;
 matchChartInstance.update();
 
+const cell = document.querySelector(
+  `.calendar-cell[data-date="${data.date}"]`
+);
+if (cell && points && points.length) {
+  const last = points[points.length - 1];
+  cell.classList.remove("win", "loss");
+  cell.classList.add(last.result > 0 ? "win" : "loss");
+}
 };
 
 let availableDates = [];
@@ -448,6 +449,7 @@ window.handleAvailableDatesJsonp = (data) => {
   console.log("availableDates jsonp:", data);
   availableDates = data.dates || [];
   applyCalendarColors();
+  buildCalendar(now.getFullYear(), now.getMonth());
 };
   
 
@@ -521,7 +523,8 @@ for (let d = 1; d <= total; d++) {
     currentDate = cell.dataset.date;
     applyCalendarColors();
     datePicker.value = currentDate;
-
+    if (!currentUserForApi) return;
+    
     if (availableDates.includes(currentDate)) {
       fetchMatchHistory(currentUserForApi, currentDate);
     } else {
@@ -558,6 +561,10 @@ cell.classList.remove("win","loss","nodata","today");
     cell.classList.add("selected");
   }
   
+  if (availableDates.includes(d)) {
+    cell.classList.remove("nodata");
+  }
+  
   if (d === today) {
     cell.classList.add("today");
     return;
@@ -572,7 +579,7 @@ cell.classList.remove("win","loss","nodata","today");
 // 今月表示（JST）
 const now = new Date();
 buildCalendar(now.getFullYear(), now.getMonth());
-  
+  applyCalendarColors();
   
 //ユーザ名候補を取りに行く
 function fetchUsers(qText) {
