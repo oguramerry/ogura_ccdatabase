@@ -153,6 +153,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
   let statsData = null;
   let activeTab = "main";　//　現在表示中のタブ
+  let viewYear = now.getFullYear();
+  let viewMonth = now.getMonth();
 
   //カレンダー取得
   if (datePicker) {
@@ -178,6 +180,27 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchMatchHistory(currentUserForApi, currentDate);
   });
 }
+
+document.getElementById("calPrev")?.addEventListener("click", () => {
+  viewMonth--;
+  if (viewMonth < 0) {
+    viewMonth = 11;
+    viewYear--;
+  }
+  buildCalendar(viewYear, viewMonth);
+  applyCalendarColors();
+});
+
+document.getElementById("calNext")?.addEventListener("click", () => {
+  viewMonth++;
+  if (viewMonth > 11) {
+    viewMonth = 0;
+    viewYear++;
+  }
+  buildCalendar(viewYear, viewMonth);
+  applyCalendarColors();
+});
+  
   
   //　-------------------------------render開始
   //　現在のactivetabに応じてpanelInnerを描画
@@ -448,9 +471,10 @@ let availableDates = [];
 window.handleAvailableDatesJsonp = (data) => {
   console.log("availableDates jsonp:", data);
   availableDates = data.dates || [];
-  applyCalendarColors();
   buildCalendar(now.getFullYear(), now.getMonth());
+  applyCalendarColors();
 };
+
   
 
 function fetchMatchHistory(user, dateStr) {
@@ -552,22 +576,17 @@ String(now.getDate()).padStart(2, "0")
 })();
 
 cells.forEach(cell => {
-const d = cell.dataset.date;
-if (!d) return;  
+  const d = cell.dataset.date;
+  if (!d) return;
 
-cell.classList.remove("win","loss","nodata","today");
+  cell.classList.remove("today", "selected", "nodata");
 
   if (d === currentDate) {
     cell.classList.add("selected");
   }
-  
-  if (availableDates.includes(d)) {
-    cell.classList.remove("nodata");
-  }
-  
+
   if (d === today) {
     cell.classList.add("today");
-    return;
   }
 
   if (!availableDates.includes(d)) {
