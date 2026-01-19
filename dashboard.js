@@ -90,6 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (!availableDates.includes(currentDate)) {
       console.log("この日はデータなし");
+
+      if (matchChartInstance) {
+        matchChartInstance.destroy();
+        matchChartInstance = null;
+      }
       return;
     }
     
@@ -398,9 +403,24 @@ matchChartInstance = new Chart(ctx, {
             }
           }
         },
-        y: {
-          beginAtZero: true
-        }
+y: {
+  beginAtZero: true,
+  grid: {
+    color: (ctx) => {
+      // y=0 の線だけ濃く
+      if (ctx.tick && ctx.tick.value === 0) {
+        return "#999999"; // 少し濃いグレー
+      }
+      return "#e6e6e6"; // それ以外は薄いグレー
+    },
+    lineWidth: (ctx) => {
+      if (ctx.tick && ctx.tick.value === 0) {
+        return 2; // 0 の線だけ少し太く
+      }
+      return 1;
+    }
+  }
+}
       },
       plugins: {
         legend:{
