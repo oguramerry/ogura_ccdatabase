@@ -54,6 +54,64 @@ function formatHourRange(hour) {
   return `${start}～${end}`;
 }
 
+function ensureEmptyChart() {
+  const canvas = document.getElementById("matchChart");
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+
+  // すでに Chart があれば何もしない
+  if (matchChartInstance) return;
+
+  matchChartInstance = new Chart(ctx, {
+    type: "line",
+    data: {
+      datasets: [{
+        label: "勝敗グラフ",
+        data: [], // ← 空
+        parsing: false,
+        borderWidth: 2,
+        pointRadius: 4,
+        tension: 0.5,
+        borderColor: "#4e79a7"
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        x: {
+          type: "linear",
+          ticks: {
+            stepSize: 1,
+            callback: (v) => {
+              const i = Math.round(v);
+              if (i < 0) return "";
+              return `${i + 1}`;
+            }
+          }
+        },
+        y: {
+          beginAtZero: true,
+          ticks: {
+            callback: (value) =>
+              Number.isInteger(value) ? value : ""
+          },
+          grid: {
+            color: (ctx) =>
+              ctx.tick?.value === 0 ? "#999999" : "#e6e6e6",
+            lineWidth: (ctx) =>
+              ctx.tick?.value === 0 ? 2 : 1
+          }
+        }
+      },
+      plugins: {
+        legend: { display: false }
+      }
+    }
+  });
+}
+
+
 // 選択中の日付（初期は今日・JST）
 let currentDate = (() => {
   const now = new Date();
@@ -353,105 +411,15 @@ if (!points || !points.length) {
     y: p.sum,
     result: p.result, // 勝ち=1 / 負け=-1
     time: p.time,
-    slot: p.slot
-    date: chartDate
+    slot: p.slot,
+    date: data.date
   }));
 
 const ctx = document.getElementById("matchChart").getContext("2d");
 
-matchChartInstance = new Chart(ctx, {
-  type: "line",
-  data: {
+matchChartInstance.data.datasets[0].data = chartData;
+matchChartInstance.update();
 
-      datasets: [{
-        label: "勝敗グラフ",
-        data: chartData,
-        parsing: false, // xとyを自動で解釈しない（そのまま使う）
-        borderWidth: 2,
-        pointRadius: 4,
-        pointHoverRadius: 6,
-        tension: 0.5,
-        borderColor: "#4e79a7",
-
-        // 線の色を区間ごとに切り替え
-        segment: {
-          borderColor: ctx => {
-            const y0 = ctx.p0.raw.y;
-            const y1 = ctx.p1.raw.y;
-            return (y0 >= 0 && y1 >= 0) ? "#9fd9e8" : "#f2a7bf";
-          }
-        },          
-
-        //ポイントの装飾   あとでアイコンつくるかも
-        pointBackgroundColor: chartData.map(p =>
-          p.result > 0 ? "#b8e6f0" : "#f6c1d1"
-        ),
-        pointBorderColor: chartData.map(p =>
-          p.result > 0 ? "#7cc9dd" : "#e79ab0"
-        ),
-          
-      }]
-    },
-    options: {
-      responsive: true,
-      scales: {
-        x: {
-          type: "linear",
-          ticks: {
-            stepSize: 1,
-            callback: function (value) {
-              const i = Math.round(value);
-              if (i < 0) return "";
-              return `${i + 1}`;
-            }
-          }
-        },
-y: {
-  beginAtZero: true,
-  ticks: {
-    callback: (value) => {
-      //整数だけ表示
-      if (Number.isInteger(value)) {
-        return value;
-      }
-    },
-    grid: {
-      color: (ctx) => {
-        // y=0 の線だけ濃く
-        if (ctx.tick && ctx.tick.value === 0) {
-          return "#999999"; // 少し濃いグレー
-        }
-        return "#e6e6e6"; // それ以外は薄いグレー
-      },
-      lineWidth: (ctx) => {
-        if (ctx.tick && ctx.tick.value === 0) {
-          return 2; // 0 の線だけ少し太く
-        }
-        return 1;
-      }
-    }
-  },
-},
-        plugins: {
-          legend:{
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              title: (items) => {
-                const raw = items[0].raw;
-                if (!raw) return "";
-              
-                return `${raw.date} ${raw.time}`;
-              },
-              label: (item) => {
-                return `累積: ${item.raw.y}`;
-            }
-          }
-        }
-      }
-    }
-  });
 };
 
 let availableDates = [];
@@ -516,8 +484,11 @@ function fetchUsers(qText) {
     timer = setTimeout(() => {
       const user = input.value.trim();
       fetchUsers(user);
+      
       const userForApi = user.replace(/\s+/g, ""); // スペース消す
       if (!userForApi) return;
+      
+      ensureEmptyChart();
 
       const old = document.getElementById("jsonpStats");
       if (old) old.remove();
@@ -531,10 +502,11 @@ function fetchUsers(qText) {
         fetchMatchHistory(userForApi, currentDate);
       } else {
         if (matchChartInstance) {
-          matchChartInstance.destroy();
-          matchChartInstance = null;
+          matchChartInstance.data.datasets[0].data = [];
+          matchChartInstance.update();
         }
       }
+
     }, 500);
   });
   fetchUsers("");
