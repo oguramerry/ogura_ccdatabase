@@ -162,7 +162,6 @@ document.getElementById("calPrev")?.addEventListener("click", () => {
     viewYear--;
   }
   buildCalendar(viewYear, viewMonth);
-  datePicker.value = currentDate;
   applyCalendarColors();
 });
 
@@ -173,7 +172,6 @@ document.getElementById("calNext")?.addEventListener("click", () => {
     viewYear++;
   }
   buildCalendar(viewYear, viewMonth);
-  datePicker.value = currentDate;
   applyCalendarColors();
 });
   
