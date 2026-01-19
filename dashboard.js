@@ -345,7 +345,7 @@ const points = data.points;
         pointRadius: 4,
         pointHoverRadius: 6,
         tension: 0.5,
-        borderColor: "#4e79a7"
+        borderColor: "#4e79a7",
 
         // 線の色を区間ごとに切り替え
         segment: {
