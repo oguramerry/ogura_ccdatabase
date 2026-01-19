@@ -502,12 +502,20 @@ function buildCalendar(year, month) {
   }
 
   // 日付
-  for (let d = 1; d <= total; d++) {
-    const cell = document.createElement("div");
-    cell.className = "calendar-cell";
-    cell.textContent = d;
-    cal.appendChild(cell);
-  }
+for (let d = 1; d <= total; d++) {
+  const cell = document.createElement("div");
+  cell.className = "calendar-cell";
+  cell.textContent = d;
+
+  const dateStr =
+    year + "-" +
+    String(month + 1).padStart(2, "0") + "-" +
+    String(d).padStart(2, "0");
+
+  cell.dataset.date = dateStr;
+
+  cal.appendChild(cell);
+}
 }
 
 // 今月表示（JST）
