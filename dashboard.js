@@ -519,8 +519,18 @@ for (let d = 1; d <= total; d++) {
   cell.addEventListener("click", () => {
     currentDate = cell.dataset.date;
     applyCalendarColors();
-});
+    datePicker.value = currentDate;
 
+    if (availableDates.includes(currentDate)) {
+      fetchMatchHistory(currentUserForApi, currentDate);
+    } else {
+      if (matchChartInstance) {
+        matchChartInstance.data.datasets[0].data = [];
+        matchChartInstance.update();
+      }
+    }
+  });
+  
   cal.appendChild(cell);
 }
 }
@@ -543,14 +553,18 @@ if (!d) return;
 
 cell.classList.remove("win","loss","nodata","today");
 
-if (d === today) {
-  cell.classList.add("today");
-  return;
-}
+  if (d === currentDate) {
+    cell.classList.add("selected");
+  }
+  
+  if (d === today) {
+    cell.classList.add("today");
+    return;
+  }
 
-if (!availableDates.includes(d)) {
-  cell.classList.add("nodata");
-}
+  if (!availableDates.includes(d)) {
+    cell.classList.add("nodata");
+  }
 });
 }  
 
