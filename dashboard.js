@@ -354,6 +354,7 @@ if (!points || !points.length) {
     result: p.result, // 勝ち=1 / 負け=-1
     time: p.time,
     slot: p.slot
+    date: chartDate
   }));
 
 const ctx = document.getElementById("matchChart").getContext("2d");
@@ -432,7 +433,9 @@ y: {
           callbacks: {
             title: (items) => {
               const raw = items[0].raw;
-              return raw ? raw.time : "";
+              if (!raw) return "";
+              
+              return `${raw.date} ${raw.time}`;
             },
             label: (item) => {
               return `累積: ${item.raw.y}`;
