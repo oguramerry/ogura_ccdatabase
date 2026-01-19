@@ -338,6 +338,7 @@ const points = data.points;
     type: "line",
     data: {
       datasets: [{
+        label: "勝敗グラフ",
         data: chartData,
         parsing: false, // xとyを自動で解釈しない（そのまま使う）
         borderWidth: 2,
@@ -353,13 +354,12 @@ const points = data.points;
         x: {
           type: "linear",
           ticks: {
+            stepSize: 1,
             callback: function (value) {
-              const i = Math.floor(value);
-              const current = points[i];
-              const prev = points[i - 1];
-              if (!current) return "";
-              if (!prev || current.slot !== prev.slot) return current.slot;
-              return "";
+              const i = Math.round(value);
+              const p = points[i];
+              if (!p) return "";
+              return p.slot;
             }
           }
         },
