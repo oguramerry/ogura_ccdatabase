@@ -171,3 +171,21 @@ a {
 .calendar-cell.nodata {
   color: #b0b8c0;
 }
+
+/* 選択中は最優先で見せる */
+.calendar-cell.selected {
+  background: #e6f4ff;
+}
+
+/* today は枠だけにする */
+.calendar-cell.today {
+  background: transparent;
+  outline: 2px solid #8bd0ff;
+}
+
+/* データなしは他より弱く */
+.calendar-cell.nodata {
+  background: transparent;
+  color: #b0b8c0;
+}
+
