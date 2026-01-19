@@ -42,8 +42,6 @@ align-items: center;
   border-radius: 20px;
   background: #ffffff;
   border: 1px solid #cfeaff;
-  /* スクロール固定 */
-  position: sticky;
   top: 12px;
   z-index: 10;
 }
