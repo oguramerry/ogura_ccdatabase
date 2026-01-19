@@ -479,7 +479,43 @@ function fetchAvailableDates(user) {
     + "&_=" + Date.now();
   document.body.appendChild(s);
 }
-  
+
+//カレンダー生成
+function buildCalendar(year, month) {
+  const cal = document.getElementById("calendar");
+  if (!cal) return;
+  cal.innerHTML = "";
+
+  const week = ["日","月","火","水","木","金","土"];
+  week.forEach(w => {
+    const h = document.createElement("div");
+    h.className = "calendar-head";
+    h.textContent = w;
+    cal.appendChild(h);
+  });
+
+  const first = new Date(year, month, 1);
+  const last = new Date(year, month + 1, 0);
+  const startDay = first.getDay();
+  const total = last.getDate();
+
+  // 前の空白
+  for (let i = 0; i < startDay; i++) {
+    cal.appendChild(document.createElement("div"));
+  }
+
+  // 日付
+  for (let d = 1; d <= total; d++) {
+    const cell = document.createElement("div");
+    cell.className = "calendar-cell";
+    cell.textContent = d;
+    cal.appendChild(cell);
+  }
+}
+
+// 今月表示（JST）
+const now = new Date();
+buildCalendar(now.getFullYear(), now.getMonth());
   
   
 //ユーザ名候補を取りに行く
