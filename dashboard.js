@@ -328,6 +328,7 @@ const points = data.points;
   const chartData = points.map((p, i) => ({
     x: i,
     y: p.sum,
+    result: p.result, // 勝ち=1 / 負け=-1
     time: p.time,
     slot: p.slot
   }));
@@ -358,10 +359,10 @@ const points = data.points;
 
         //ポイントの装飾   あとでアイコンつくるかも
         pointBackgroundColor: chartData.map(p =>
-          p.y >= 0 ? "#b8e6f0" : "#f6c1d1"
+          p.result > 0 ? "#b8e6f0" : "#f6c1d1"
         ),
         pointBorderColor: chartData.map(p =>
-          p.y >= 0 ? "#7cc9dd" : "#e79ab0"
+          p.result > 0 ? "#7cc9dd" : "#e79ab0"
         ),
           
       }]
@@ -376,7 +377,7 @@ const points = data.points;
             callback: function (value) {
               const i = Math.round(value);
               if (i < 0) return "";
-              return `${i + 1}試合目`;
+              return `${i + 1}`;
             }
           }
         },
@@ -385,6 +386,9 @@ const points = data.points;
         }
       },
       plugins: {
+        legend:{
+          display: false
+        },
         tooltip: {
           callbacks: {
             title: (items) => {
