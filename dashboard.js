@@ -357,9 +357,8 @@ const points = data.points;
             stepSize: 1,
             callback: function (value) {
               const i = Math.round(value);
-              const p = points[i];
-              if (!p) return "";
-              return p.slot;
+              if (i < 0) return "";
+              return `${i + 1}試合目`;
             }
           }
         },
