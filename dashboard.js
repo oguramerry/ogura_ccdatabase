@@ -31,6 +31,8 @@ const JOB_NAME_JP = {
   "RDM": "赤魔道士",
 };
 
+let matchChartInstance = null;
+
 //　名前変換
 function formatCharacterName(name) {
   if (!name) return name;
@@ -342,11 +344,17 @@ const points = data.points;
     slot: p.slot
   }));
 
-  const ctx = document.getElementById("matchChart").getContext("2d");
+const ctx = document.getElementById("matchChart").getContext("2d");
 
-  new Chart(ctx, {
-    type: "line",
-    data: {
+// 前のグラフがあったら消す
+if (matchChartInstance) {
+  matchChartInstance.destroy();
+}
+
+matchChartInstance = new Chart(ctx, {
+  type: "line",
+  data: {
+
       datasets: [{
         label: "勝敗グラフ",
         data: chartData,
