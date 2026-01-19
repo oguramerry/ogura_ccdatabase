@@ -479,7 +479,7 @@ function fetchMatchHistory(user, dateStr) {
 
 
   const script = document.createElement("script");
-  script.id = "jsonpHistory";
+  script.id = "jsonpHistory_" + dateStr;
   script.src = GAS_BASE
     + "?action=matchhistory"
     + "&user=" + encodeURIComponent(user)
