@@ -160,6 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   datePicker.addEventListener("change", () => {
     currentDate = datePicker.value;
+    applyCalendarColors();
     if (!input.value.trim()) return;
     const userForApi = input.value.trim().replace(/\s+/g, "");
     if (!userForApi) return;
