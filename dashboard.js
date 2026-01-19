@@ -515,8 +515,14 @@ function fetchUsers(qText) {
       s.src = GAS_BASE + "?action=stats&user=" + encodeURIComponent(userForApi) + "&callback=handleStatsJsonp&_=" + Date.now();
       document.body.appendChild(s);
       fetchAvailableDates(userForApi);
-      fetchMatchHistory(userForApi, currentDate);
-      
+      if (availableDates.includes(currentDate)) {
+        fetchMatchHistory(userForApi, currentDate);
+      } else {
+        if (matchChartInstance) {
+          matchChartInstance.destroy();
+          matchChartInstance = null;
+        }
+      }
     }, 500);
   });
   fetchUsers("");
