@@ -472,8 +472,11 @@ for (const d of availableDates) {
   
 
 function fetchMatchHistory(user, dateStr) {
-  const old = document.getElementById("jsonpHistory");
-  if (old) old.remove();
+  if (!silentMode) {
+    const old = document.getElementById("jsonpHistory");
+    if (old) old.remove();
+  }
+
 
   const script = document.createElement("script");
   script.id = "jsonpHistory";
