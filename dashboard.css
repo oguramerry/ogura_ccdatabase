@@ -291,3 +291,82 @@ a {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+
+
+/* --- ジョブタブ用スタイル --- */
+
+/* ロールごとの折りたたみ枠 */
+.role-details {
+  margin-bottom: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* クリックするバーの部分 */
+.role-summary {
+  background-color: #f9fafb;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none; /* 三角マークを消す(一部ブラウザ用) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 開閉の三角マークを自作 */
+.role-summary::after {
+  content: "▼";
+  font-size: 12px;
+  color: #9ca3af;
+  transition: transform 0.2s;
+}
+.role-details[open] .role-summary::after {
+  transform: rotate(180deg);
+}
+
+/* 中身のグリッド表示 */
+.job-grid-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* 幅に合わせて自動折り返し */
+  gap: 8px;
+  background: #fff;
+}
+
+/* ジョブカード単体 */
+.job-card-item {
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* ジョブアイコン画像 */
+.job-icon-img {
+  width: 40px;  /* アイコンの大きさ */
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 2px;
+}
+
+/* ジョブ名 */
+.job-name-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #374151;
+}
+
+/* 勝率などの数値 */
+.job-stat-label {
+  font-size: 11px;
+  color: #6b7280;
+}
