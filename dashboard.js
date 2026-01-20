@@ -209,6 +209,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // --- 関数定義 ---
 
+// ensureEmptyChart 関数の中身を修正
+
 function ensureEmptyChart() {
   const canvas = document.getElementById("matchChart");
   if (!canvas) return;
@@ -220,11 +222,15 @@ function ensureEmptyChart() {
     data: {
       datasets: [{
         label: "勝敗グラフ", data: [], parsing: false, borderWidth: 2,
-        pointRadius: 4, pointHoverRadius: 6, tension: 0.5, borderColor: "#8297B2",
+        // 開始地点のドットだけ非表示
+        pointRadius: ctx => ctx.raw?.isStart ? 0 : 4,
+        pointHitRadius: ctx => ctx.raw?.isStart ? 0 : 10,
+        pointHoverRadius: 6, tension: 0.5, borderColor: "#8297B2",
         segment: {
           borderColor: ctx => {
             const y0 = ctx.p0?.raw?.y;
             const y1 = ctx.p1?.raw?.y;
+            // 0以上のエリアはパステルブルー、それ以外はピンク
             return (y0 >= 0 && y1 >= 0) ? "#e7f3ff" : "#fff0f3";
           }
         },
@@ -236,22 +242,28 @@ function ensureEmptyChart() {
       responsive: true,
       maintainAspectRatio: false,
       scales: {
-       x: { type: "linear", ticks: { stepSize: 1, callback: (v) => Math.round(v) + 1 } },
-       y: {
-        beginAtZero: true,
-        ticks: {
-          stepSize: 1, // これを追加！目盛りを1刻みに固定するよ
-          callback: (value) => {
-            // 整数（1, 0, -1...）のときだけ文字を出す設定
-            return Number.isInteger(value) ? value : "";
+        x: {
+          type: "linear",
+          ticks: {
+            stepSize: 1,
+            callback: (v) => {
+              const i = Math.round(v);
+              if (i === 0) return "0"; 
+              return i;
+            }
           }
         },
-        grid: {
-          // 0の線（真ん中の線）だけ少し濃い色にするおしゃれ設定
-          color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9",
-          lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1
+        y: {
+          beginAtZero: true,
+          ticks: {
+            stepSize: 1, // 1刻みに固定して0.2とか出ないようにする
+            callback: (value) => Number.isInteger(value) ? value : ""
+          },
+          grid: {
+            color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9",
+            lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1
+          }
         }
-      }
       },
       plugins: { legend: { display: false } }
     }
