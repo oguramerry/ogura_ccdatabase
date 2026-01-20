@@ -145,9 +145,24 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (data.date !== currentDate) return;
     const points = data.points || [];
-    const chartData = points.map((p, i) => ({
-      x: i, y: p.sum, result: p.result, time: p.time, slot: p.slot, date: data.date
-    }));
+
+    // 0スタートの地点を先頭に追加
+    const chartData = [];
+    if (points.length > 0) {
+      // 最初の地点（isStartフラグ）
+      chartData.push({ x: 0, y: 0, isStart: true });
+      
+      points.forEach((p, i) => {
+        chartData.push({
+          x: i + 1, // 試合は1番目から始まる
+          y: p.sum,
+          result: p.result,
+          time: p.time,
+          slot: p.slot,
+          date: data.date
+        });
+      });
+    }
 
     const ctx = document.getElementById("matchChart").getContext("2d");
     matchChartInstance.data.datasets[0].data = chartData;
