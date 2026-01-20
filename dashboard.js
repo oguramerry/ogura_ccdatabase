@@ -456,18 +456,23 @@ const resultByDate = {};
 window.handleAvailableDatesJsonp = (data) => {
   console.log("availableDates jsonp:", data);
   availableDates = data.dates || [];
-  buildCalendar(now.getFullYear(), now.getMonth());
-  applyCalendarColors();
-  if (availableDates.includes(currentDate)) {
-  fetchMatchHistory(currentUserForApi, currentDate);
-}
-  // 月内の勝敗を静かに取得（色付け用）
-silentMode = true;
 
-for (const d of availableDates) {
-  fetchMatchHistory(currentUserForApi, d);
-}
+  buildCalendar(now.getFullYear(), now.getMonth());
+
+  // 月内の勝敗を静かに取得（色付け用）
+  silentMode = true;
+  for (const d of availableDates) {
+    fetchMatchHistory(currentUserForApi, d);
+  }
+  silentMode = false;
+
+  applyCalendarColors();
+
+  if (availableDates.includes(currentDate)) {
+    fetchMatchHistory(currentUserForApi, currentDate);
+  }
 };
+
 
   
 
