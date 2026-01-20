@@ -245,3 +245,41 @@ a {
   outline-offset: -2px;
   z-index: 2;
 }
+
+/* アコーディオン（折りたたみ）設定 */
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between; /* タイトルと矢印を左右に配置 */
+  align-items: center;
+  cursor: pointer; /* クリックできる指マークにする */
+  padding-bottom: 4px;
+}
+
+.toggle-icon {
+  font-size: 14px;
+  color: #6b7280;
+  transition: transform 0.3s ease; /* くるっと回るアニメーション */
+}
+
+/* 開いているときは矢印をひっくり返す */
+.accordion-header.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  /* 開いているときの状態（デフォルト） */
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+/* 閉じているときは非表示 */
+.accordion-body.closed {
+  display: none;
+}
+
+/* ふわっと表示させるアニメーション */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
