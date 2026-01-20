@@ -411,91 +411,86 @@ if (hourEl && data.byHour && data.byHour.length) {
     }
   };
 
-// GAS matchHistory の返りを受け取る
 window.handleMatchHistoryJsonp = (data) => {
   console.log("📊 match history data:", data);
 
-const points = data.points;
-  if (points && points.length) {
-const last = points[points.length - 1];
-// 最終到達点が 0 より大きいか小さいかで判定
-resultByDate[data.date] = last.sum >= 0 ? 1 : -1;
+  // 選択中の日付じゃないデータが遅れて届いた場合は無視
+  if (data.date !== currentDate) {
+    return;
+  }
 
-}
-// silent 取得は「色塗り用」だけ
-if (silentMode) {
-  applyCalendarColors();
-  return;
-}
-
-// 選択中の日付じゃないデータはグラフに使わない
-if (data.date !== currentDate) {
-  return;
-}
-
-
-
+  const points = data.points || [];
   
-const chartData = points.map((p, i) => ({
+  // チャート用データ作成
+  const chartData = points.map((p, i) => ({
     x: i,
     y: p.sum,
-    result: p.result, // 勝ち=1 / 負け=-1
+    result: p.result, 
     time: p.time,
     slot: p.slot,
     date: data.date
   }));
 
-const ctx = document.getElementById("matchChart").getContext("2d");
-
-matchChartInstance.data.datasets[0].data = chartData;
+  const ctx = document.getElementById("matchChart").getContext("2d");
+  // データセット更新
+  matchChartInstance.data.datasets[0].data = chartData;
+  matchChartInstance.update();
   
-matchChartInstance.update();
-  applyCalendarColors();
-
+  // ※ここでの applyCalendarColors() 呼び出しは不要になったので削除
 };
 
 let availableDates = [];
 let currentUserForApi = "";
-let silentMode = false;
 
-const resultByDate = {};
+let resultByDate = {};
 
 window.handleAvailableDatesJsonp = (data) => {
   console.log("availableDates jsonp:", data);
-  availableDates = data.dates || [];
+  
+  // 初期化
+  availableDates = [];
+  // resultByDateをリセット
+  const keys = Object.keys(resultByDate);
+  for(const k of keys) delete resultByDate[k];
 
+  // GASから返ってきた { date, status } のリストを使う
+  const results = data.results || []; 
+
+  results.forEach(item => {
+    availableDates.push(item.date);        // クリック判定用
+    resultByDate[item.date] = item.status; // 色塗り用 (1, -1, 0)
+  });
+
+  // カレンダー再構築 & 色塗り
   buildCalendar(now.getFullYear(), now.getMonth());
-
-  // 月内の勝敗を静かに取得（色付け用）
-  silentMode = true;
-  for (const d of availableDates) {
-    fetchMatchHistory(currentUserForApi, d);
-  }
-  silentMode = false;
-
   applyCalendarColors();
 
+  // 現在選択中の日付がデータにあれば、その日のグラフを取得
   if (availableDates.includes(currentDate)) {
     fetchMatchHistory(currentUserForApi, currentDate);
+  } else {
+     // データがない日を選んでいた場合はグラフを空にする
+     if (matchChartInstance) {
+       matchChartInstance.data.datasets[0].data = [];
+       matchChartInstance.update();
+     }
   }
 };
-
 
   
 
 function fetchMatchHistory(user, dateStr) {
-  if (!silentMode) {
-    const old = document.getElementById("jsonpHistory");
-    if (old) old.remove();
-  }
+  // 古いスクリプトタグを消す
+  const old = document.getElementById("jsonpHistory");
+  if (old) old.remove();
 
-
+  // グラフ用データを取得する
   const script = document.createElement("script");
-  script.id = "jsonpHistory_" + dateStr;
+  script.id = "jsonpHistory"; // IDを固定にして管理しやすく
   script.src = GAS_BASE
     + "?action=matchhistory"
     + "&user=" + encodeURIComponent(user)
-    + "&date=" + encodeURIComponent(dateStr)　//curentDate入れる
+    + "&date=" + encodeURIComponent(dateStr)
     + "&callback=handleMatchHistoryJsonp"
     + "&_=" + Date.now();
   document.body.appendChild(script);
@@ -575,43 +570,50 @@ for (let d = 1; d <= total; d++) {
 }
 
 function applyCalendarColors() {
-const cells = document.querySelectorAll(".calendar-cell");
+  const cells = document.querySelectorAll(".calendar-cell");
 
-const today = (() => {
+  const today = (() => {
+    const now = new Date();
+    return (
+      now.getFullYear() + "-" +
+      String(now.getMonth() + 1).padStart(2, "0") + "-" +
+      String(now.getDate()).padStart(2, "0")
+    );
+  })();
 
-return (
-now.getFullYear() + "-" +
-String(now.getMonth() + 1).padStart(2, "0") + "-" +
-String(now.getDate()).padStart(2, "0")
-);
-})();
+  cells.forEach(cell => {
+    const d = cell.dataset.date;
+    if (!d) return;
 
-cells.forEach(cell => {
-  const d = cell.dataset.date;
-  if (!d) return;
+    // クラスを一旦リセット
+    cell.classList.remove("today", "selected", "nodata", "win", "loss", "draw");
 
-  cell.classList.remove("today", "selected", "nodata", "win", "loss");
-  const r = resultByDate[d];
-  
-  if (r === 1) {
-    cell.classList.add("win");
-  } else if (r === -1) {
-    cell.classList.add("loss");
-  }
+    // データがある日の処理
+    if (availableDates.includes(d)) {
+      const r = resultByDate[d];
+      if (r === 1) {
+        cell.classList.add("win");   // 勝ち
+      } else if (r === -1) {
+        cell.classList.add("loss");  // 負け
+      } else {
+        cell.classList.add("draw");  // 0 (引き分け/プラマイゼロ)
+      }
+    } else {
+      // データがない日
+      cell.classList.add("nodata");
+    }
 
-  if (d === currentDate) {
-    cell.classList.add("selected");
-  }
+    // 今日の日付なら
+    if (d === today) {
+      cell.classList.add("today");
+    }
 
-  if (d === today) {
-    cell.classList.add("today");
-  }
-
-  if (!availableDates.includes(d)) {
-    cell.classList.add("nodata");
-  }
-});
-}  
+    // 選択中の日付なら
+    if (d === currentDate) {
+      cell.classList.add("selected");
+    }
+  });
+}
 
 buildCalendar(now.getFullYear(), now.getMonth());
   applyCalendarColors();
