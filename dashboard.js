@@ -106,7 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // おすすめステージ
     const stageEl = document.getElementById("topStageBody");
     if (stageEl && data.byStage && data.byStage.length) {
-      const ranking = data.byStage.slice().sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0)).slice(0, 3);
+      const ranking = data.byStage
+        .filter(row => (row.total ?? 0) >= 5)
+        .slice()
+        .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+        .slice(0, 3);
       stageEl.innerHTML = ranking.map((row, i) =>
         `${i + 1}位　${row.stage} 勝率 ${((row.winRate ?? 0) * 100).toFixed(1)}%（${row.total}試合）`
       ).join("<br>");
@@ -115,7 +119,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // おすすめジョブ
     const jobEl = document.getElementById("topJobBody");
     if (jobEl && data.byJob && data.byJob.length) {
-      const ranking = data.byJob.slice().sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0)).slice(0, 3);
+      const ranking = data.byJob.slice()
+        .filter(row => (row.total ?? 0) >= 5)
+        .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+        .slice(0, 3);
       jobEl.innerHTML = ranking.map((row, i) =>
         `${i + 1}位　${JOB_NAME_JP[row.job] ?? row.job} 勝率 ${((row.winRate ?? 0) * 100).toFixed(1)}%（${row.total}試合）`
       ).join("<br>");
@@ -124,7 +131,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // おすすめ時間
     const hourEl = document.getElementById("topHourBody");
     if (hourEl && data.byHour && data.byHour.length) {
-      const ranking = data.byHour.slice().sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0)).slice(0, 3);
+      const ranking = data.byHour
+        .filter(row => (row.total ?? 0) >= 5)
+        .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+        .slice(0, 3);
       hourEl.innerHTML = ranking.map((row, i) =>
         `${i + 1}位　${formatHourRange(row.hour)} 勝率 ${((row.winRate ?? 0) * 100).toFixed(1)}%（${row.total}試合）`
       ).join("<br>");
