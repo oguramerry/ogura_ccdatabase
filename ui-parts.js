@@ -8,7 +8,7 @@ const JOB_NAME_JP = {
   "MNK": "モンク", "DRG": "竜騎士", "NIN": "忍者", "SAM": "侍",
   "RPR": "リーパー", "VPR":"ヴァイパー",
   "BRD": "吟遊詩人", "MCH": "機工士", "DNC": "踊り子",
-  "BLM": "黒魔道士", "SMN": "召喚士", "RDM": "赤魔道士",
+  "BLM": "黒魔道士", "SMN": "召喚士", "RDM": "赤魔道士","PCT": "ピクトマンサー",
 };
 
 // 名前変換 (OguraChan -> Ogura Chan)
