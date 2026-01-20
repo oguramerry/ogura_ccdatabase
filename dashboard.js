@@ -422,10 +422,17 @@ const last = points[points.length - 1];
 resultByDate[data.date] = last.sum >= 0 ? 1 : -1;
 
 }
-  if (silentMode) {
+// silent 取得は「色塗り用」だけ
+if (silentMode) {
   applyCalendarColors();
   return;
 }
+
+// 選択中の日付じゃないデータはグラフに使わない
+if (data.date !== currentDate) {
+  return;
+}
+
 
 
   
