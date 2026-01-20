@@ -156,6 +156,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ■ API: MatchHistory受信 (グラフ)
   window.handleMatchHistoryJsonp = (data) => {
+    const loader = document.getElementById("chartLoading");
+    if (loader) loader.classList.remove("active");
+    
     if (data.date !== currentDate) return;
     const points = data.points || [];
     const chartData = points.map((p, i) => ({
@@ -252,6 +255,9 @@ function ensureEmptyChart() {
 }
 
 function fetchMatchHistory(user, dateStr) {
+  const loader = document.getElementById("chartLoading");
+  if (loader) loader.classList.add("active");
+  
   const old = document.getElementById("jsonpHistory");
   if (old) old.remove();
   const script = document.createElement("script");
