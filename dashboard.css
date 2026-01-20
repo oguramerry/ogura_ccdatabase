@@ -125,6 +125,7 @@ align-items: center;
 .calendar-head {
   font-family: "Darumadrop One", cursive;
   letter-spacing: 0.5px; /* 文字同士がくっつきやすいので少し隙間をあける */
+  
 }
 
 #calendar {
@@ -141,11 +142,13 @@ align-items: center;
 
 .calendar-head {
   text-align: center;
-  font-size: 10px;       /* 12pxから少し小さく */
-  font-weight: bold;     /* 少し太く */
-  color: #a0a0a0;        /* グレーを少し薄く */
-  letter-spacing: 1px;   /* 文字の間隔を少し広げる */
-  padding-bottom: 4px;   /* 下に少し余白 */
+  font-size: 10px;        /* 今のサイズを維持 */
+  font-weight: bold;      /* 今の太さを維持 */
+  letter-spacing: 1px;    /* 今の間隔を維持 */
+  background-color: #9ca3af; 
+  color: #ffffff;
+  padding: 6px 0;
+  border: 0.5px solid #d1d5db;
 }
 
 /* カレンダーのマス目設定 */
