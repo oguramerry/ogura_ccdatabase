@@ -15,17 +15,22 @@
         <p class="page-title">こんくりラボ</p>
 
         <div id="highlight">
-          <div class="search-box">
-            <span class="search-label">user</span>
-            <input
-              id="userInput"
-              list="userList" 
-              type="text"
-              placeholder="ユーザー名を入力…"
-              class="search-input"
-            />
-            <datalist id="userList"></datalist>
-          </div>
+<div class="search-box">
+  <span class="search-label">user</span>
+  <input
+    id="userInput"
+    list="userList" 
+    type="text"
+    placeholder="ユーザー名を入力…"
+    class="search-input"
+  />
+  <datalist id="userList"></datalist>
+  
+  <button id="refreshBtn" class="refresh-button" title="最新の情報に更新">
+    <span class="refresh-icon">↻</span>
+  </button>
+</div>
+          
         </div>
         
         <div class="stats-grid">
