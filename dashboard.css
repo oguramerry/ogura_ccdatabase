@@ -80,6 +80,31 @@ body {
   width: 100%;
 }
 
+/*　更新ボタン　*/
+
+.refresh-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  color: var(--accent-blue-gray); /* ブルーグレー */
+}
+
+.refresh-button:hover {
+  transform: rotate(180deg); /* ホバーするとくるっと回る */
+}
+
+.refresh-icon {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
 /* おすすめTop3のグリッド */
 .stats-grid {
   display: grid;
