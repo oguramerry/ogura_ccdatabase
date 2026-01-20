@@ -331,7 +331,7 @@ a {
 .job-grid-container {
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* 幅に合わせて自動折り返し */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 幅に合わせて自動折り返し */
   gap: 8px;
   background: #fff;
 }
