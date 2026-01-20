@@ -1,5 +1,5 @@
 /* フォント読み込み (必ず1行目) */
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kiwi+Maru&display=swap');
 
 /* 全体の基本設定 */
 body {
@@ -120,6 +120,13 @@ align-items: center;
 
 
 /*　カレンダー　*/
+.cal-date,
+.cal-score,
+.calendar-head {
+  font-family: "Darumadrop One", cursive;
+  letter-spacing: 0.5px; /* 文字同士がくっつきやすいので少し隙間をあける */
+}
+
 #calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
