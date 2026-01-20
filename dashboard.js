@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   window.handleMatchHistoryJsonp = (data) => {
+    console.log("届いたデータの中身:", data);
     const loader = document.getElementById("chartLoading");
     if (loader) loader.classList.remove("active");
     if (data.date !== currentDate) return;
