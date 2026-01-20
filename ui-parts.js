@@ -11,6 +11,17 @@ const JOB_NAME_JP = {
   "BLM": "黒魔道士", "SMN": "召喚士", "RDM": "赤魔道士", "PCT": "ピクトマンサー",
 };
 
+
+const STAGE_NAME_JP = {
+  "Palaistra": "パライストラ",
+  "Volcanic Heart": "ヴォルカニック・ハート",
+  "Clockwork Castletown": "東方絡繰御殿",
+  "Bayside Battleground": "ベイサイド・バトルグラウンド",
+  "Cloud Nine": "クラウドナイン",
+  "Red Sands": "レッド・サンズ"
+,
+};
+
 // 名前変換 (OguraChan -> Ogura Chan)
 function formatCharacterName(name) {
   if (!name) return name;
