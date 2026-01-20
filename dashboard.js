@@ -269,23 +269,25 @@ function ensureEmptyChart() {
           displayColors: false,
           callbacks: {
             title: () => "",
-            label: (ctx) => {
-              const d = ctx.raw;
-              if (d.isStart) return "スタート";
-              
-              const score = d.result > 0 ? `+${d.result}` : d.result;
-              const jobName = (d.job && JOB_NAME_JP[d.job]) ? JOB_NAME_JP[d.job] : (d.job || "なし");
-              const stageName = d.stage || "なし";
-              
-              // 2026-01-20 -> 26-01-20
-              const yyDate = d.date ? d.date.slice(2) : "";
-              
-              return [
-                `試合日時: ${yyDate} ${d.time} (${score})`,
-                `使用ジョブ: ${jobName}`,
-                `ステージ: ${stageName}`
-              ];
-            }
+            
+label: (ctx) => {
+  const d = ctx.raw;
+  if (d.isStart) return "スタート";
+  
+  const score = d.result > 0 ? `+${d.result}` : d.result;
+  
+  // PDFの英語名 を日本語に変換
+  const jobName = (d.job && JOB_NAME_JP[d.job]) ? JOB_NAME_JP[d.job] : (d.job || "なし");
+  const stageName = (d.stage && STAGE_NAME_JP[d.stage]) ? STAGE_NAME_JP[d.stage] : (d.stage || "なし");
+  
+  const yyDate = d.date ? d.date.slice(2) : "";
+  
+  return [
+    `試合日時: ${yyDate} ${d.time} (${score})`,
+    `使用ジョブ: ${jobName}`,
+    `ステージ: ${stageName}`
+  ];
+}
           }
         }
       }
