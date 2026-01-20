@@ -217,14 +217,16 @@ function ensureEmptyChart() {
         parsing: false,
         borderWidth: 2,
         
-        pointRadius: ctx => ctx.raw?.isStart ? 0 : 3.5, 
-        pointHitRadius: 10,
-        pointHoverRadius: 5,
+        // ポイントを5pxに戻して丸さを強調、hover時は少し大きく
+        pointRadius: ctx => ctx.raw?.isStart ? 0 : 5, 
+        pointHoverRadius: 7,
         
+        // 
+        pointBorderWidth: 0, 
+
         borderColor: "#8297B2",
 
         
-        // 勝ち：#a5c9ed (淡い青) / 負け：#f2c2d4 (淡いピンク)
         pointBackgroundColor: ctx => (ctx.raw?.result > 0) ? "#a5c9ed" : "#f2c2d4",
         pointBorderColor: ctx => (ctx.raw?.result > 0) ? "#a5c9ed" : "#f2c2d4",
         
@@ -234,7 +236,8 @@ function ensureEmptyChart() {
             const y1 = ctx.p1?.raw?.y;
             return (y0 >= 0 && y1 >= 0) ? "#b8d9f7" : "#f7d7e3";
           }
-        }
+        },
+        tension: 0.4 
       }]
     },
     options: {
@@ -246,26 +249,26 @@ function ensureEmptyChart() {
       },
       plugins: {
         legend: { display: false },
-        
-        // ▼ ツールチップカスタマイズ
         tooltip: {
           enabled: true,
-          backgroundColor: "rgba(255, 255, 255, 0.9)", // 背景を白っぽく
+          backgroundColor: "rgba(255, 255, 255, 0.95)", // ほぼ白
           titleColor: "#4a5568",
           bodyColor: "#4a5568",
+          bodyFont: { family: "Kiwi Maru", size: 12 },
           borderColor: "#d1dce8",
           borderWidth: 1,
-          padding: 10,
-          displayColors: false, // 横の四角い色を消す
+          padding: 12,
+          cornerRadius: 12, 
+          displayColors: false,
           callbacks: {
-            title: () => "", // タイトル（一番上の行）は空にする
+            title: () => "",
             label: (ctx) => {
               const d = ctx.raw;
               if (d.isStart) return "スタート";
               
               const score = d.result > 0 ? `+${d.result}` : d.result;
-              const jobName = JOB_NAME_JP[d.job] ?? d.job ?? "不明";
-              const stageName = d.stage ?? "不明";
+              const jobName = JOB_NAME_JP[d.job] ?? d.job ?? "なし";
+              const stageName = d.stage ?? "なし";
               
               return [
                 `試合日時: ${d.time} (${score})`,
