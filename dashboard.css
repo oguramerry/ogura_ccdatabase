@@ -157,41 +157,52 @@ a {
 }
 
 /* カレンダー配色 */
-.calendar-cell.today {
-  outline: 2px solid #8bd0ff;
+
+/* 基本セル設定 */
+.calendar-cell {
+  position: relative; /* 枠線調整用 */
+  color: #333; /* 基本文字色 */
+  background: transparent;
+  transition: all 0.2s;
+  font-weight: 500;
 }
 
-.calendar-cell.selected {
-background: transparent;
-outline: 2px solid #4e79a7;
-}
-
+/* 1. 勝った日：パステルブルー背景 */
 .calendar-cell.win {
   background: #e8f6fb;
+  color: #1f2937;
 }
 
+/* 2. 負けた日：パステルピンク背景 */
 .calendar-cell.loss {
   background: #fde8ef;
+  color: #1f2937;
 }
 
+/* 3. 0の日（引き分け）：ライトグレー背景 */
+.calendar-cell.draw {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+/* 4. データがない日：文字をグレーアウト & クリック無効 */
 .calendar-cell.nodata {
-  color: #b0b8c0;
+  background: transparent;
+  color: #d1d5db; /* 薄いグレー */
+  pointer-events: none; /* クリックできないようにする */
 }
 
-/* 選択中は最優先で見せる */
-.calendar-cell.selected {
-  background: #e6f4ff;
-}
-
-/* today は枠だけにする */
+/* 5. 今日の日付：文字の色を濃い青にして強調 */
 .calendar-cell.today {
-  background: transparent;
-  outline: 2px solid #8bd0ff;
+  color: #2c5885 !important; 
+  font-weight: 900; /* 太字 */
 }
 
-/* データなしは他より弱く */
-.calendar-cell.nodata {
-  background: transparent;
-  color: #b0b8c0;
+/* 6. 選択中のセル：背景は変えず、青い枠線で囲む */
+.calendar-cell.selected {
+  outline: 2px solid #4e79a7; 
+  outline-offset: -2px; /* 内側に枠をつけるのではみ出さない */
+  z-index: 2; /* 隣のセルより手前に表示 */
 }
+
 
