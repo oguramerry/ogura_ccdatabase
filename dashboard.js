@@ -399,3 +399,30 @@ if(input){
     }, 500);
     });
 }
+
+document.getElementById("refreshBtn")?.addEventListener("click", () => {
+  const user = document.getElementById("userInput").value.trim();
+  const userForApi = user.replace(/\s+/g, "");
+  
+  if (!userForApi) return; // 名前が空っぽなら何もしない
+
+  // ローディングを表示
+  const loader = document.getElementById("chartLoading");
+  if (loader) loader.classList.add("active");
+
+  // 最新の統計(stats)を取得
+  const oldStats = document.getElementById("jsonpStats");
+  if (oldStats) oldStats.remove();
+  const s = document.createElement("script");
+  s.id = "jsonpStats";
+  s.src = GAS_BASE + "?action=stats&user=" + encodeURIComponent(userForApi) + "&callback=handleStatsJsonp&_=" + Date.now();
+  document.body.appendChild(s);
+
+  // 最新のカレンダー(availabledates)を取得
+  fetchAvailableDates(userForApi);
+
+  // 今表示してる日付のグラフも更新
+  fetchMatchHistory(userForApi, currentDate);
+  
+  console.log("情報を更新");
+});
