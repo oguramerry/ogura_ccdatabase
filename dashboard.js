@@ -447,36 +447,34 @@ let resultByDate = {};
 window.handleAvailableDatesJsonp = (data) => {
   console.log("availableDates jsonp:", data);
   
-  // 初期化
   availableDates = [];
-  // resultByDateをリセット
+  // リセット
   const keys = Object.keys(resultByDate);
   for(const k of keys) delete resultByDate[k];
 
-  // GASから返ってきた { date, status } のリストを使う
   const results = data.results || []; 
 
   results.forEach(item => {
-    availableDates.push(item.date);        // クリック判定用
-    resultByDate[item.date] = item.status; // 色塗り用 (1, -1, 0)
+    availableDates.push(item.date);
+    // ★修正：statusだけでなくscoreも保存する
+    resultByDate[item.date] = { 
+      status: item.status, 
+      score: item.score 
+    }; 
   });
 
-  // カレンダー再構築 & 色塗り
   buildCalendar(now.getFullYear(), now.getMonth());
   applyCalendarColors();
 
-  // 現在選択中の日付がデータにあれば、その日のグラフを取得
   if (availableDates.includes(currentDate)) {
     fetchMatchHistory(currentUserForApi, currentDate);
   } else {
-     // データがない日を選んでいた場合はグラフを空にする
      if (matchChartInstance) {
        matchChartInstance.data.datasets[0].data = [];
        matchChartInstance.update();
      }
   }
 };
-
   
 
 function fetchMatchHistory(user, dateStr) {
@@ -585,33 +583,45 @@ function applyCalendarColors() {
     const d = cell.dataset.date;
     if (!d) return;
 
-    // クラスを一旦リセット
+    // 一旦クラスを整理
     cell.classList.remove("today", "selected", "nodata", "win", "loss", "draw");
+    
+    // 日付の数字（日）だけ取り出す
+    const dayNum = parseInt(d.split("-")[2], 10);
+    
+    // 基本のHTML（日付のみ）
+    let innerHTML = `<span class="cal-date">${dayNum}</span>`;
 
-    // データがある日の処理
     if (availableDates.includes(d)) {
-      const r = resultByDate[d];
-      if (r === 1) {
-        cell.classList.add("win");   // 勝ち
-      } else if (r === -1) {
-        cell.classList.add("loss");  // 負け
-      } else {
-        cell.classList.add("draw");  // 0 (引き分け/プラマイゼロ)
-      }
+      const data = resultByDate[d]; // { status, score }
+      const r = data.status;
+      const s = data.score;
+      
+      // クラス付与
+      if (r === 1) cell.classList.add("win");
+      else if (r === -1) cell.classList.add("loss");
+      else cell.classList.add("draw");
+
+      // ★スコア表示用のHTMLを作成
+      // プラスなら「+」をつける
+      const sign = s > 0 ? "+" : "";
+      const scoreText = `${sign}${s}`;
+      
+      // 色分け用クラス：勝ちは text-win, 負けは text-loss
+      const textClass = r === 1 ? "text-win" : (r === -1 ? "text-loss" : "text-draw");
+      
+      innerHTML += `<span class="cal-score ${textClass}">${scoreText}</span>`;
     } else {
-      // データがない日
       cell.classList.add("nodata");
+      // データなしの日はスペースを確保するか、何も表示しないか
+      // レイアウト崩れ防止で空の要素を入れてもOKですが、今回はなしで
     }
 
-    // 今日の日付なら
-    if (d === today) {
-      cell.classList.add("today");
-    }
+    // HTMLをセット
+    cell.innerHTML = innerHTML;
 
-    // 選択中の日付なら
-    if (d === currentDate) {
-      cell.classList.add("selected");
-    }
+    if (d === today) cell.classList.add("today");
+    if (d === currentDate) cell.classList.add("selected");
   });
 }
 
