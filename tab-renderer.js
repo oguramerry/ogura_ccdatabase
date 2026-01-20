@@ -17,7 +17,7 @@ window.TabRenderer = {
     `;
   },
 
-  // ■ Jobタブ: ロール別折りたたみ表示
+// ■ Jobタブ: ロール別表示（全ジョブ表示版）
   job: (statsData) => {
     const map = statsData.byJob;
     if (!map) return "job 集計なし";
@@ -29,7 +29,6 @@ window.TabRenderer = {
 
     let html = "";
 
-    // 定義したロール順にループ
     Object.keys(JOB_ROLES).forEach(roleKey => {
       const jobsInRole = JOB_ROLES[roleKey];
       const roleName = ROLE_NAME_JP[roleKey];
@@ -37,22 +36,23 @@ window.TabRenderer = {
       let cardsHtml = "";
       
       jobsInRole.forEach(job => {
-        const data = jobStats[job];
-        // データがある(total > 0)場合のみ表示
-        if (data && data.total > 0) {
-          const jobName = JOB_NAME_JP[job] ?? job;
-          const winRate = ((data.winRate ?? 0) * 100).toFixed(1);
-          
-          const iconPath = `images/JOB/${job}.png`; 
+        // データが存在しない場合は、初期値（0試合 / 0%）を使用する
+        const data = jobStats[job] || { total: 0, winRate: 0 };
+        
+        const jobName = JOB_NAME_JP[job] ?? job;
+        const winRate = ((data.winRate ?? 0) * 100).toFixed(1);
+        const iconPath = `images/JOB/${job}.png`; 
 
-          cardsHtml += `
-            <div class="job-card-item">
-              <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
-              <span class="job-name-label">${jobName}</span>
-              <span class="job-stat-label">${winRate}% / ${data.total}試合</span>
-            </div>
-          `;
-        }
+        // 試合数が0のジョブを少し薄く表示したい場合は、クラスを追加して制御
+        const emptyClass = data.total === 0 ? "job-card-empty" : "";
+
+        cardsHtml += `
+          <div class="job-card-item ${emptyClass}">
+            <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
+            <span class="job-name-label">${jobName}</span>
+            <span class="job-stat-label">${winRate}% / ${data.total}試合</span>
+          </div>
+        `;
       });
 
       if (cardsHtml) {
@@ -67,8 +67,7 @@ window.TabRenderer = {
       }
     });
 
-    if (!html) return "<div class='stat-card'><p class='stat-body'>データがありません</p></div>";
-    return html;
+    return html || "<div class='stat-card'><p class='stat-body'>表示可能なジョブがありません</p></div>";
   },
 
   // ■ Stageタブ
