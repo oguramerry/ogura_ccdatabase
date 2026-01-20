@@ -148,14 +148,17 @@ align-items: center;
   padding-bottom: 4px;   /* 下に少し余白 */
 }
 
+/* カレンダーのマス目設定 */
 .calendar-cell {
   position: relative;
   display: flex;
   flex-direction: column; 
   align-items: center;
-  justify-content: center;
-  gap: 4px;
-  height: 40px; 
+  justify-content: flex-start;
+  padding-top: 3px; 
+  gap: 1px; 
+  height: 35px; 
+  
   color: #333;
   background: transparent;
   transition: all 0.2s;
