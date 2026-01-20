@@ -136,7 +136,7 @@ body {
   margin: 0;
   font-size: 13px;
   color: var(--text-main);
-  line-height: 1.8;
+  line-height: 1.2;
 }
 
 /* --- カレンダー --- */
@@ -295,7 +295,7 @@ body {
 
 .job-card-item {
   /* 1つのカードの大きさを固定して横に並びやすくする */
-  flex: 0 0 135px; 
+  flex: 0 0 140px; 
   border: 1px solid #f1f5f9;
   border-radius: 12px;
   background: #fff;
@@ -307,6 +307,7 @@ body {
   gap: 8px;
   text-align: left;
   justify-content: flex-start;
+  
 }
 
 
@@ -333,13 +334,24 @@ body {
   font-weight: bold;
   display: block;
   line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;    
+  text-overflow: ellipsis;
 }
+
 .job-stat-label {
   font-size: 9px;
   color: var(--text-sub);
   display: block;
   line-height: 1.2;
   white-space: nowrap;
+}
+
+.job-text-meta {
+  display: flex;
+  flex-direction: column; /* 上下に並べる */
+  justify-content: center;
+  overflow: hidden;       /* はみ出し防止 */
 }
 
 /* アコーディオン */
