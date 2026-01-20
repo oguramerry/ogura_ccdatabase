@@ -133,8 +133,9 @@ document.addEventListener("DOMContentLoaded", () => {
           x: i + 1,
           y: p.sum,
           result: p.result,
-          time: p.time,
-          slot: p.slot,
+          time: p.time, // 試合時刻
+          job: p.job,   // ジョブを追加
+          stage: p.stage, // ステージを追加
           date: data.date
         });
       });
@@ -197,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
       s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
       document.body.appendChild(s);
       fetchAvailableDates(currentUserForApi);
-    }, 500); // 0.5秒間入力が止まったら通信するよ
+    }, 500); // 0.5秒間入力が止まったら通信
   });
 });
 
@@ -210,58 +211,71 @@ function ensureEmptyChart() {
   matchChartInstance = new Chart(ctx, {
     type: "line",
     data: {
-datasets: [{
-  label: "勝敗グラフ",
-  data: [],
-  parsing: false,
-  borderWidth: 3, 
-  pointRadius: ctx => ctx.raw?.isStart ? 0 : 5,
-  pointHitRadius: ctx => ctx.raw?.isStart ? 0 : 10,
-  pointHoverRadius: 7,
-  tension: 0.5,
-  borderColor: "#8297B2",
-  pointBackgroundColor: ctx => (ctx.raw?.result > 0) ? "#6b8fb3" : "#d68fa8",
-  pointBorderColor: ctx => (ctx.raw?.result > 0) ? "#6b8fb3" : "#d68fa8",
-  
-  segment: {
-    borderColor: ctx => {
-      const y0 = ctx.p0?.raw?.y;
-      const y1 = ctx.p1?.raw?.y;
-      
-      // 0以上のエリアは濃いパステルブルー、それ以外は濃いピンク
-      return (y0 >= 0 && y1 >= 0) ? "#6b8fb3" : "#d68fa8";
-    }
-  }
-}]
+      datasets: [{
+        label: "勝敗グラフ",
+        data: [],
+        parsing: false,
+        borderWidth: 2,
+        
+        pointRadius: ctx => ctx.raw?.isStart ? 0 : 3.5, 
+        pointHitRadius: 10,
+        pointHoverRadius: 5,
+        
+        borderColor: "#8297B2",
+
+        
+        // 勝ち：#a5c9ed (淡い青) / 負け：#f2c2d4 (淡いピンク)
+        pointBackgroundColor: ctx => (ctx.raw?.result > 0) ? "#a5c9ed" : "#f2c2d4",
+        pointBorderColor: ctx => (ctx.raw?.result > 0) ? "#a5c9ed" : "#f2c2d4",
+        
+        segment: {
+          borderColor: ctx => {
+            const y0 = ctx.p0?.raw?.y;
+            const y1 = ctx.p1?.raw?.y;
+            return (y0 >= 0 && y1 >= 0) ? "#b8d9f7" : "#f7d7e3";
+          }
+        }
+      }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
       scales: {
-        x: {
-          type: "linear",
-          ticks: {
-            stepSize: 1,
-            callback: (v) => {
-              const i = Math.round(v);
-              if (i === 0) return "0"; 
-              return i;
+        x: { type: "linear", ticks: { stepSize: 1 } },
+        y: { beginAtZero: true, ticks: { stepSize: 1 } }
+      },
+      plugins: {
+        legend: { display: false },
+        
+        // ▼ ツールチップカスタマイズ
+        tooltip: {
+          enabled: true,
+          backgroundColor: "rgba(255, 255, 255, 0.9)", // 背景を白っぽく
+          titleColor: "#4a5568",
+          bodyColor: "#4a5568",
+          borderColor: "#d1dce8",
+          borderWidth: 1,
+          padding: 10,
+          displayColors: false, // 横の四角い色を消す
+          callbacks: {
+            title: () => "", // タイトル（一番上の行）は空にする
+            label: (ctx) => {
+              const d = ctx.raw;
+              if (d.isStart) return "スタート";
+              
+              const score = d.result > 0 ? `+${d.result}` : d.result;
+              const jobName = JOB_NAME_JP[d.job] ?? d.job ?? "不明";
+              const stageName = d.stage ?? "不明";
+              
+              return [
+                `試合日時: ${d.time} (${score})`,
+                `使用ジョブ: ${jobName}`,
+                `ステージ: ${stageName}`
+              ];
             }
           }
-        },
-        y: {
-          beginAtZero: true,
-          ticks: {
-            stepSize: 1,
-            callback: (value) => Number.isInteger(value) ? value : ""
-          },
-          grid: {
-            color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9",
-            lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1
-          }
         }
-      },
-      plugins: { legend: { display: false } }
+      }
     }
   });
 }
