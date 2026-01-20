@@ -128,14 +128,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const chartData = [];
     if (points.length > 0) {
       chartData.push({ x: 0, y: 0, isStart: true });
+      
       points.forEach((p, i) => {
         chartData.push({
           x: i + 1,
           y: p.sum,
           result: p.result,
           time: p.time,
-          job: p.job,   
-          stage: p.stage, 
+          job: p.job || p.Job || "",   
+          stage: p.stage || p.Stage || "",
           date: data.date
         });
       });
