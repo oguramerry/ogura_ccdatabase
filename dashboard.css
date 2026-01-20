@@ -329,9 +329,26 @@ body {
 
 /* アコーディオン */
 .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
   padding: 10px 0;
   border-bottom: 1px dashed var(--border-color);
   margin-bottom: 10px;
+}
+.toggle-icon {
+  font-size: 14px;
+  color: var(--text-sub);
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-body.closed {
+  display: none;
 }
 
 /* --- グラフ読み込み中の設定 --- */
