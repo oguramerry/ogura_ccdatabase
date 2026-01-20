@@ -20,28 +20,67 @@ window.TabRenderer = {
     `;
   },
 
-  // ■ Jobタブ: 勝率ランキングなど
+
+  // ■ Jobタブ: ロール別折りたたみ表示
   job: (statsData) => {
     const map = statsData.byJob;
     if (!map) return "job 集計なし";
 
-    // 5戦以上したジョブを勝率順に
-    const ranking = map
-      .filter(row => (row.total ?? 0) >= 5)
-      .slice()
-      .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-      .slice(0, 5);
+    // データを探しやすいように { "PLD": {winRate:..., total:...}, ... } の形に変換
+    const jobStats = {};
+    map.forEach(row => {
+      jobStats[row.job] = row;
+    });
 
-    const listHtml = ranking.map((row, i) =>
-      `${i + 1}位：${JOB_NAME_JP[row.job] ?? row.job}（${((row.winRate ?? 0) * 100).toFixed(1)}% / ${row.total}試合）`
-    ).join("<br>");
+    let html = "";
 
-    return `
-      <div class="stat-card">
-        <p class="stat-title">ジョブ top5（勝率）</p>
-        <p class="stat-body">${listHtml}</p>
-      </div>
-      `;
+    // 定義したロール順(TANK, HEALER...)にループ
+    // ※JOB_ROLESはui-parts.jsで定義済み
+    Object.keys(JOB_ROLES).forEach(roleKey => {
+      const jobsInRole = JOB_ROLES[roleKey];
+      const roleName = ROLE_NAME_JP[roleKey];
+
+      // このロールに含まれるジョブのカードHTMLを作る
+      let cardsHtml = "";
+      
+      jobsInRole.forEach(job => {
+        const data = jobStats[job];
+        // データがないジョブも表示するなら if (data) のチェックを外す
+        // 今回は「データがある場合のみ」表示
+        if (data && data.total > 0) {
+          const jobName = JOB_NAME_JP[job] ?? job;
+          const winRate = ((data.winRate ?? 0) * 100).toFixed(1);
+          
+          
+          // 例: imgフォルダにある場合 -> src="img/${job}.png"
+          const iconPath = `images/JOB/${job}.png`; 
+
+          cardsHtml += `
+            <div class="job-card-item">
+              <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
+              <span class="job-name-label">${jobName}</span>
+              <span class="job-stat-label">${winRate}% / ${data.total}試合</span>
+            </div>
+          `;
+        }
+      });
+
+      // そのロールに1つでもデータがあれば、アコーディオンを追加
+      if (cardsHtml) {
+        html += `
+          <details class="role-details" open>
+            <summary class="role-summary">${roleName}</summary>
+            <div class="job-grid-container">
+              ${cardsHtml}
+            </div>
+          </details>
+        `;
+      }
+    });
+
+    if (!html) return "<div class='stat-card'><p class='stat-body'>データがありません</p></div>";
+
+    return html;
   },
 
   // ■ Stageタブ
