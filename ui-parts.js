@@ -8,7 +8,7 @@ const JOB_NAME_JP = {
   "MNK": "モンク", "DRG": "竜騎士", "NIN": "忍者", "SAM": "侍",
   "RPR": "リーパー", "VPR":"ヴァイパー",
   "BRD": "吟遊詩人", "MCH": "機工士", "DNC": "踊り子",
-  "BLM": "黒魔道士", "SMN": "召喚士", "RDM": "赤魔道士","PCT": "ピクトマンサー",
+  "BLM": "黒魔道士", "SMN": "召喚士", "RDM": "赤魔道士", "PCT": "ピクトマンサー",
 };
 
 // 名前変換 (OguraChan -> Ogura Chan)
@@ -30,3 +30,23 @@ function formatHourRange(hour) {
   const end = `${pad2(h)}:59`;
   return `${start}～${end}`;
 }
+
+// ui-parts.js の一番下に追加
+
+// ロール定義
+const JOB_ROLES = {
+  "TANK":   ["PLD","WAR","DRK","GNB"],
+  "HEALER": ["WHM","SCH","AST","SGE"],
+  "MELEE":  ["MNK","DRG","NIN","SAM","RPR","VPR"],
+  "RANGE":  ["BRD","MCH","DNC"],
+  "CASTER": ["BLM","SMN","RDM","PCT"]
+};
+
+// 日本語のロール名
+const ROLE_NAME_JP = {
+  "TANK": "タンク",
+  "HEALER": "ヒーラー",
+  "MELEE": "メレー",
+  "RANGE": "レンジ",
+  "CASTER": "キャスター"
+};
