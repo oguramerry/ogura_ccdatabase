@@ -514,7 +514,7 @@ function buildCalendar(year, month) {
   if (!cal) return;
   cal.innerHTML = "";
 
-  const week = ["日","月","火","水","木","金","土"];
+  const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   week.forEach(w => {
     const h = document.createElement("div");
     h.className = "calendar-head";
