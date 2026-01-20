@@ -210,26 +210,29 @@ function ensureEmptyChart() {
   matchChartInstance = new Chart(ctx, {
     type: "line",
     data: {
-      datasets: [{
-        label: "勝敗グラフ",
-        data: [],
-        parsing: false,
-        borderWidth: 2,
-        pointRadius: ctx => ctx.raw?.isStart ? 0 : 5, 
-        pointHitRadius: ctx => ctx.raw?.isStart ? 0 : 10,
-        pointHoverRadius: 7,
-        tension: 0.5,
-        borderColor: "#8297B2",
-        pointBackgroundColor: ctx => (ctx.raw?.result > 0) ? "#6b8fb3" : "#d68fa8",
-        pointBorderColor: ctx => (ctx.raw?.result > 0) ? "#6b8fb3" : "#d68fa8",
-        segment: {
-          borderColor: ctx => {
-            const y0 = ctx.p0?.raw?.y;
-            const y1 = ctx.p1?.raw?.y;
-            return (y0 >= 0 && y1 >= 0) ? "#e7f3ff" : "#fff0f3";
-          }
-        }
-      }]
+datasets: [{
+  label: "勝敗グラフ",
+  data: [],
+  parsing: false,
+  borderWidth: 3, 
+  pointRadius: ctx => ctx.raw?.isStart ? 0 : 5,
+  pointHitRadius: ctx => ctx.raw?.isStart ? 0 : 10,
+  pointHoverRadius: 7,
+  tension: 0.5,
+  borderColor: "#8297B2",
+  pointBackgroundColor: ctx => (ctx.raw?.result > 0) ? "#6b8fb3" : "#d68fa8",
+  pointBorderColor: ctx => (ctx.raw?.result > 0) ? "#6b8fb3" : "#d68fa8",
+  
+  segment: {
+    borderColor: ctx => {
+      const y0 = ctx.p0?.raw?.y;
+      const y1 = ctx.p1?.raw?.y;
+      
+      // 0以上のエリアは濃いパステルブルー、それ以外は濃いピンク
+      return (y0 >= 0 && y1 >= 0) ? "#6b8fb3" : "#d68fa8";
+    }
+  }
+}]
     },
     options: {
       responsive: true,
