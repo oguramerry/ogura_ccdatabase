@@ -46,13 +46,16 @@ window.TabRenderer = {
         // 試合数が0のジョブを少し薄く表示したい場合は、クラスを追加して制御
         const emptyClass = data.total === 0 ? "job-card-empty" : "";
 
-        cardsHtml += `
-          <div class="job-card-item ${emptyClass}">
-            <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
-            <span class="job-name-label">${jobName}</span>
-            <span class="job-stat-label">${winRate}% / ${data.total}試合</span>
-          </div>
-        `;
+
+cardsHtml += `
+  <div class="job-card-item ${emptyClass}">
+    <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
+    <div class="job-text-meta">
+      <span class="job-name-label">${jobName}</span>
+      <span class="job-stat-label">${winRate}% / ${data.total}試合</span>
+    </div>
+  </div>
+`;
       });
 
       if (cardsHtml) {
