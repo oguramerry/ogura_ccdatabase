@@ -22,6 +22,10 @@ let availableDates = [];
 let currentUserForApi = "";
 let resultByDate = {}; // 色塗り用データ
 
+// 表示中の年月（カレンダー切り替え用）
+let viewYear = now.getFullYear();
+let viewMonth = now.getMonth();
+
 // 画面読み込み開始
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("userInput");
@@ -30,52 +34,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let statsData = null;
   let activeTab = "main";
-  let viewYear = now.getFullYear();
-  let viewMonth = now.getMonth();
 
-  // カレンダー前月・翌月ボタン
+  // ■ カレンダー表示更新関数
+  const updateCalendarDisplay = () => {
+    const titleEl = document.getElementById("calTitle");
+    if (titleEl) {
+      titleEl.textContent = `${viewYear}年 ${viewMonth + 1}月`;
+    }
+    buildCalendar(viewYear, viewMonth);
+    applyCalendarColors();
+  };
+
+  // ■ カレンダー前月ボタン
   document.getElementById("calPrev")?.addEventListener("click", () => {
     viewMonth--;
     if (viewMonth < 0) {
       viewMonth = 11;
       viewYear--;
     }
-    buildCalendar(viewYear, viewMonth);
-    // カレンダーめくったら色は一旦消す（再取得はしない）
-    // ※もし月をまたいで色を残したいならここは調整可能
-    applyCalendarColors(); 
+    updateCalendarDisplay();
   });
 
+  // ■ カレンダー翌月ボタン
   document.getElementById("calNext")?.addEventListener("click", () => {
     viewMonth++;
     if (viewMonth > 11) {
       viewMonth = 0;
       viewYear++;
     }
-    buildCalendar(viewYear, viewMonth);
-    applyCalendarColors();
+    updateCalendarDisplay();
   });
-
 
   // ■ render関数 (TabRendererにお任せ！)
   const render = () => {
     if (!panelInner || !statsData) return;
 
     let html = "";
-    // TabRendererに同名の関数(main, job等)があれば実行してHTMLをもらう
     if (window.TabRenderer && window.TabRenderer[activeTab]) {
       html = window.TabRenderer[activeTab](statsData);
     } else {
       html = "表示エラー: Rendererが見つかりません";
     }
-    
     panelInner.innerHTML = html;
   };
 
   // タブ切り替え
   const setActiveTab = (tab) => {
     activeTab = tab;
-    console.log("tab:", activeTab);
     render();
   };
 
@@ -87,13 +92,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  let timer = null;
-
   // ■ API: Stats受信
   window.handleStatsJsonp = (data) => {
-    console.log("handleStatsJsonp called", data);
     statsData = data;
-    render(); // 描画実行
+    render();
 
     // 上部のハイライトエリア更新
     const m = data.meta;
@@ -103,40 +105,22 @@ document.addEventListener("DOMContentLoaded", () => {
         `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
 
-    // おすすめステージ
-    const stageEl = document.getElementById("topStageBody");
-    if (stageEl && data.byStage && data.byStage.length) {
-      const ranking = data.byStage
-        .filter(row => (row.total ?? 0) >= 5)
-        .slice()
-        .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-        .slice(0, 3);
-      stageEl.innerHTML = ranking.map((row, i) =>
-        `${i + 1}位　${row.stage} 勝率 ${((row.winRate ?? 0) * 100).toFixed(1)}%（${row.total}試合）`
-      ).join("<br>");
-    }
+    // おすすめエリア更新 (Stage, Job, Hour)
+    updateTopRanking("topStageBody", data.byStage, (row) => `${row.stage}`);
+    updateTopRanking("topJobBody", data.byJob, (row) => `${JOB_NAME_JP[row.job] ?? row.job}`);
+    updateTopRanking("topHourBody", data.byHour, (row) => `${formatHourRange(row.hour)}`);
+  };
 
-    // おすすめジョブ
-    const jobEl = document.getElementById("topJobBody");
-    if (jobEl && data.byJob && data.byJob.length) {
-      const ranking = data.byJob.slice()
+  // ランキング更新用ヘルパー
+  const updateTopRanking = (id, dataList, nameFn) => {
+    const el = document.getElementById(id);
+    if (el && dataList && dataList.length) {
+      const ranking = dataList
         .filter(row => (row.total ?? 0) >= 5)
         .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
         .slice(0, 3);
-      jobEl.innerHTML = ranking.map((row, i) =>
-        `${i + 1}位　${JOB_NAME_JP[row.job] ?? row.job} 勝率 ${((row.winRate ?? 0) * 100).toFixed(1)}%（${row.total}試合）`
-      ).join("<br>");
-    }
-
-    // おすすめ時間
-    const hourEl = document.getElementById("topHourBody");
-    if (hourEl && data.byHour && data.byHour.length) {
-      const ranking = data.byHour
-        .filter(row => (row.total ?? 0) >= 5)
-        .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-        .slice(0, 3);
-      hourEl.innerHTML = ranking.map((row, i) =>
-        `${i + 1}位　${formatHourRange(row.hour)} 勝率 ${((row.winRate ?? 0) * 100).toFixed(1)}%（${row.total}試合）`
+      el.innerHTML = ranking.map((row, i) =>
+        `${i + 1}位 ${nameFn(row)} 勝率 ${((row.winRate ?? 0) * 100).toFixed(1)}%（${row.total}試合）`
       ).join("<br>");
     }
   };
@@ -182,16 +166,13 @@ document.addEventListener("DOMContentLoaded", () => {
       resultByDate[item.date] = { status: item.status, score: item.score };
     });
 
-    buildCalendar(now.getFullYear(), now.getMonth());
-    applyCalendarColors();
+    updateCalendarDisplay();
 
     if (availableDates.includes(currentDate)) {
       fetchMatchHistory(currentUserForApi, currentDate);
-    } else {
-      if (matchChartInstance) {
-        matchChartInstance.data.datasets[0].data = [];
-        matchChartInstance.update();
-      }
+    } else if (matchChartInstance) {
+      matchChartInstance.data.datasets[0].data = [];
+      matchChartInstance.update();
     }
   };
 
@@ -207,10 +188,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 初期ロード
+  updateCalendarDisplay();
   fetchUsers("");
 });
 
-// --- 以下、関数定義 ---
+// --- 関数定義 ---
 
 function ensureEmptyChart() {
   const canvas = document.getElementById("matchChart");
@@ -223,31 +205,24 @@ function ensureEmptyChart() {
     data: {
       datasets: [{
         label: "勝敗グラフ", data: [], parsing: false, borderWidth: 2,
-        pointRadius: 4, pointHoverRadius: 6, tension: 0.5, borderColor: "#4e79a7",
+        pointRadius: 4, pointHoverRadius: 6, tension: 0.5, borderColor: "#8297B2",
         segment: {
           borderColor: ctx => {
             const y0 = ctx.p0?.raw?.y;
             const y1 = ctx.p1?.raw?.y;
-            if (y0 == null || y1 == null) return "#4e79a7";
-            return (y0 >= 0 && y1 >= 0) ? "#9fd9e8" : "#f2a7bf";
+            return (y0 >= 0 && y1 >= 0) ? "#e7f3ff" : "#fff0f3";
           }
         },
-        pointBackgroundColor: ctx => { return (ctx.raw?.result > 0) ? "#b8e6f0" : "#f6c1d1"; },
-        pointBorderColor: ctx => { return (ctx.raw?.result > 0) ? "#7cc9dd" : "#e79ab0"; }
+        pointBackgroundColor: ctx => (ctx.raw?.result > 0) ? "#e7f3ff" : "#fff0f3",
+        pointBorderColor: ctx => (ctx.raw?.result > 0) ? "#6b8fb3" : "#d68fa8"
       }]
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       scales: {
-        x: {
-          type: "linear",
-          ticks: { stepSize: 1, callback: (v) => { const i = Math.round(v); return (i < 0) ? "" : `${i + 1}`; } }
-        },
-        y: {
-          beginAtZero: true,
-          ticks: { callback: (value) => Number.isInteger(value) ? value : "" },
-          grid: { color: (ctx) => ctx.tick?.value === 0 ? "#999999" : "#e6e6e6", lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1 }
-        }
+        x: { type: "linear", ticks: { stepSize: 1, callback: (v) => Math.round(v) + 1 } },
+        y: { beginAtZero: true, grid: { color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9" } }
       },
       plugins: { legend: { display: false } }
     }
@@ -257,12 +232,11 @@ function ensureEmptyChart() {
 function fetchMatchHistory(user, dateStr) {
   const loader = document.getElementById("chartLoading");
   if (loader) loader.classList.add("active");
-  
   const old = document.getElementById("jsonpHistory");
   if (old) old.remove();
   const script = document.createElement("script");
   script.id = "jsonpHistory";
-  script.src = GAS_BASE + "?action=matchhistory" + "&user=" + encodeURIComponent(user) + "&date=" + encodeURIComponent(dateStr) + "&callback=handleMatchHistoryJsonp" + "&_=" + Date.now();
+  script.src = `${GAS_BASE}?action=matchhistory&user=${encodeURIComponent(user)}&date=${encodeURIComponent(dateStr)}&callback=handleMatchHistoryJsonp&_=${Date.now()}`;
   document.body.appendChild(script);
 }
 
@@ -271,7 +245,7 @@ function fetchAvailableDates(user) {
   if (old) old.remove();
   const s = document.createElement("script");
   s.id = "jsonpAvailableDates";
-  s.src = GAS_BASE + "?action=availabledates" + "&user=" + encodeURIComponent(user) + "&callback=handleAvailableDatesJsonp" + "&_=" + Date.now();
+  s.src = `${GAS_BASE}?action=availabledates&user=${encodeURIComponent(user)}&callback=handleAvailableDatesJsonp&_=${Date.now()}`;
   document.body.appendChild(s);
 }
 
@@ -281,7 +255,7 @@ function fetchUsers(qText) {
   if (oldUsers) oldUsers.remove();
   const su = document.createElement("script");
   su.id = "jsonpUsers";
-  su.src = GAS_BASE + "?action=users" + "&q=" + q + "&callback=handleUsersJsonp" + "&_=" + Date.now();
+  su.src = `${GAS_BASE}?action=users&q=${q}&callback=handleUsersJsonp&_=${Date.now()}`;
   document.body.appendChild(su);
 }
 
@@ -308,8 +282,7 @@ function buildCalendar(year, month) {
   for (let d = 1; d <= total; d++) {
     const cell = document.createElement("div");
     cell.className = "calendar-cell";
-    cell.textContent = d;
-    const dateStr = year + "-" + String(month + 1).padStart(2, "0") + "-" + String(d).padStart(2, "0");
+    const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
     cell.dataset.date = dateStr;
 
     cell.addEventListener("click", () => {
@@ -317,14 +290,7 @@ function buildCalendar(year, month) {
       currentDate = cell.dataset.date;
       applyCalendarColors();
       if (!currentUserForApi) return;
-      if (availableDates.includes(currentDate)) {
-        fetchMatchHistory(currentUserForApi, currentDate);
-      } else {
-        if (matchChartInstance) {
-          matchChartInstance.data.datasets[0].data = [];
-          matchChartInstance.update();
-        }
-      }
+      fetchMatchHistory(currentUserForApi, currentDate);
     });
     cal.appendChild(cell);
   }
@@ -334,7 +300,7 @@ function applyCalendarColors() {
   const cells = document.querySelectorAll(".calendar-cell");
   const today = (() => {
     const now = new Date();
-    return now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, "0") + "-" + String(now.getDate()).padStart(2, "0");
+    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
   })();
 
   cells.forEach(cell => {
@@ -347,15 +313,12 @@ function applyCalendarColors() {
 
     if (availableDates.includes(d)) {
       const data = resultByDate[d];
-      const r = data.status;
-      const s = data.score;
-      if (r === 1) cell.classList.add("win");
-      else if (r === -1) cell.classList.add("loss");
+      if (data.status === 1) cell.classList.add("win");
+      else if (data.status === -1) cell.classList.add("loss");
       else cell.classList.add("draw");
 
-      const sign = s > 0 ? "+" : "";
-      const scoreText = `${sign}${s}`;
-      const textClass = r === 1 ? "text-win" : (r === -1 ? "text-loss" : "text-draw");
+      const scoreText = `${data.score > 0 ? "+" : ""}${data.score}`;
+      const textClass = data.status === 1 ? "text-win" : (data.status === -1 ? "text-loss" : "text-draw");
       innerHTML += `<span class="cal-score ${textClass}">${scoreText}</span>`;
     } else {
       cell.classList.add("nodata");
@@ -366,63 +329,39 @@ function applyCalendarColors() {
   });
 }
 
-// ユーザー入力の監視
-const input = document.getElementById("userInput");
-if(input){
-    let timer = null;
-    input.addEventListener("input", () => {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-        const user = input.value.trim();
-        fetchUsers(user);
-        const userForApi = user.replace(/\s+/g, "");
-        currentUserForApi = userForApi;
-        if (!userForApi) return;
-        ensureEmptyChart();
-        
-        const old = document.getElementById("jsonpStats");
-        if (old) old.remove();
-        const s = document.createElement("script");
-        s.id = "jsonpStats";
-        s.src = GAS_BASE + "?action=stats&user=" + encodeURIComponent(userForApi) + "&callback=handleStatsJsonp&_=" + Date.now();
-        document.body.appendChild(s);
-
-        fetchAvailableDates(userForApi);
-        if (availableDates.includes(currentDate)) {
-            fetchMatchHistory(userForApi, currentDate);
-        } else {
-            if (matchChartInstance) {
-                matchChartInstance.data.datasets[0].data = [];
-                matchChartInstance.update();
-            }
-        }
-    }, 500);
-    });
-}
+// ユーザー入力・更新ボタン監視
+document.addEventListener("input", (e) => {
+  if (e.target.id === "userInput") {
+    const user = e.target.value.trim();
+    fetchUsers(user);
+    currentUserForApi = user.replace(/\s+/g, "");
+    if (!currentUserForApi) return;
+    ensureEmptyChart();
+    
+    // StatsとAvailableDatesを取得
+    const old = document.getElementById("jsonpStats");
+    if (old) old.remove();
+    const s = document.createElement("script");
+    s.id = "jsonpStats";
+    s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
+    document.body.appendChild(s);
+    fetchAvailableDates(currentUserForApi);
+  }
+});
 
 document.getElementById("refreshBtn")?.addEventListener("click", () => {
-  const user = document.getElementById("userInput").value.trim();
-  const userForApi = user.replace(/\s+/g, "");
-  
-  if (!userForApi) return; // 名前が空っぽなら何もしない
-
-  // ローディングを表示
+  if (!currentUserForApi) return;
   const loader = document.getElementById("chartLoading");
   if (loader) loader.classList.add("active");
 
-  // 最新の統計(stats)を取得
+  // 全情報を再取得
   const oldStats = document.getElementById("jsonpStats");
   if (oldStats) oldStats.remove();
   const s = document.createElement("script");
   s.id = "jsonpStats";
-  s.src = GAS_BASE + "?action=stats&user=" + encodeURIComponent(userForApi) + "&callback=handleStatsJsonp&_=" + Date.now();
+  s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
   document.body.appendChild(s);
 
-  // 最新のカレンダー(availabledates)を取得
-  fetchAvailableDates(userForApi);
-
-  // 今表示してる日付のグラフも更新
-  fetchMatchHistory(userForApi, currentDate);
-  
-  console.log("情報を更新");
+  fetchAvailableDates(currentUserForApi);
+  fetchMatchHistory(currentUserForApi, currentDate);
 });
