@@ -156,53 +156,82 @@ a {
   border-bottom: 1px dashed #8bd0ff;
 }
 
-/* カレンダー配色 */
+/* カレンダー配色 & レイアウト */
 
-/* 基本セル設定 */
 .calendar-cell {
-  position: relative; /* 枠線調整用 */
-  color: #333; /* 基本文字色 */
+  position: relative;
+  /* 上下並びにする設定 */
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    /* 左右中央 */
+  justify-content: center; /* 上下中央（または flex-start で上詰め） */
+  gap: 2px; /* 日付とスコアの間隔 */
+  
+  color: #333;
   background: transparent;
   transition: all 0.2s;
   font-weight: 500;
+  line-height: 1.1;
 }
 
-/* 1. 勝った日：パステルブルー背景 */
+/* 日付の数字 */
+.cal-date {
+  font-size: 14px;
+}
+
+/* スコアの数字 */
+.cal-score {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* スコアの色設定 */
+/* 勝ち：背景(#e8f6fb)より少し濃いブルー */
+.cal-score.text-win {
+  color: #4e79a7; 
+}
+/* 負け：背景(#fde8ef)より少し濃いピンク/赤 */
+.cal-score.text-loss {
+  color: #d65f8e; 
+}
+/* 引き分け：グレー */
+.cal-score.text-draw {
+  color: #6b7280;
+}
+
+
+/* --- 以下は背景色の設定 --- */
+
 .calendar-cell.win {
   background: #e8f6fb;
-  color: #1f2937;
 }
-
-/* 2. 負けた日：パステルピンク背景 */
 .calendar-cell.loss {
   background: #fde8ef;
-  color: #1f2937;
 }
-
-/* 3. 0の日（引き分け）：ライトグレー背景 */
 .calendar-cell.draw {
   background: #f3f4f6;
-  color: #1f2937;
 }
 
-/* 4. データがない日：文字をグレーアウト & クリック無効 */
+/* データなし */
 .calendar-cell.nodata {
   background: transparent;
-  color: #d1d5db; /* 薄いグレー */
-  pointer-events: none; /* クリックできないようにする */
+  color: #d1d5db;
+  pointer-events: none;
+}
+.calendar-cell.nodata .cal-date {
+  color: #d1d5db;
 }
 
-/* 5. 今日の日付：文字の色を濃い青にして強調 */
-.calendar-cell.today {
-  color: #2c5885 !important; 
-  font-weight: 900; /* 太字 */
+/* 今日の日付 */
+.calendar-cell.today .cal-date {
+  color: #2c5885; /* 濃い青 */
+  font-weight: 900;
+  text-decoration: underline; /* わかりやすく下線などを入れてもよし */
 }
 
-/* 6. 選択中のセル：背景は変えず、青い枠線で囲む */
+/* 選択中の枠 */
 .calendar-cell.selected {
   outline: 2px solid #4e79a7; 
-  outline-offset: -2px; /* 内側に枠をつけるのではみ出さない */
-  z-index: 2; /* 隣のセルより手前に表示 */
+  outline-offset: -2px;
+  z-index: 2;
 }
-
-
