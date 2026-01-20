@@ -553,7 +553,6 @@ for (let d = 1; d <= total; d++) {
     if (!currentUserForApi) return;
     
     if (availableDates.includes(currentDate)) {
-      silentMode = false; 
       fetchMatchHistory(currentUserForApi, currentDate);
     } else {
       if (matchChartInstance) {
@@ -677,5 +676,20 @@ function fetchUsers(qText) {
 
     }, 500);
   });
+  
+  const toggle = document.getElementById("graphToggle");
+  const content = document.getElementById("graphContent");
+
+  if (toggle && content) {
+    // 最初は開いている状態にする
+    toggle.classList.add("active");
+
+    toggle.addEventListener("click", () => {
+      // 矢印の向きを変えるクラス
+      toggle.classList.toggle("active");
+      // 中身の表示/非表示を切り替えるクラス
+      content.classList.toggle("closed");
+    });
+  }
   fetchUsers("");
 });
