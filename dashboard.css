@@ -1,66 +1,74 @@
-/* フォント読み込み (必ず1行目) */
-@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kiwi+Maru&display=swap');
+/* フォント読み込み */
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kiwi+Maru:wght@400;500&display=swap');
+
+/* カラー変数 */
+:root {
+  --base-bg: #f8fafc;           /* 全体の背景（ごく薄いブルーグレー） */
+  --card-bg: #ffffff;           /* カードの背景 */
+  --border-color: #d1dce8;      /* 枠線の色（落ち着いたブルーグレー） */
+  --text-main: #4a5568;         /* メインの文字色 */
+  --text-sub: #94a3b8;          /* 補足の文字色 */
+  --accent-blue-gray: #8297B2;  /* 曜日の背景色など */
+  
+  /* パステル配色 */
+  --pastel-win-bg: #e7f3ff;     /* 勝ち背景：パステルブルー */
+  --pastel-win-text: #6b8fb3;   /* 勝ち文字色 */
+  --pastel-loss-bg: #fff0f3;    /* 負け背景：パステルピンク */
+  --pastel-loss-text: #d68fa8;  /* 負け文字色 */
+  --pastel-draw-bg: #f1f5f9;    /* 引き分け背景 */
+  --pastel-draw-text: #94a3b8;  /* 引き分け文字色 */
+}
 
 /* 全体の基本設定 */
 body {
   margin: 0;
   font-family: "Kiwi Maru", serif;
-  background: #f6fbff;
-}
-
-/* 中央寄せ */
-.container {
-display: flex;
-flex-direction: column;
-align-items: center;
+  background: var(--base-bg);
+  color: var(--text-main);
+  line-height: 1.6;
 }
 
 .wrap {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 24px 16px;
 }
 
 .card {
-  background: #fff;
-  border: 1px solid #cfeaff;
-  border-radius: 20px;
-  padding: 18px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(209, 220, 232, 0.3); /* 薄い影で可愛く */
 }
 
-/* 各パーツのスタイル */
+/* タイトル */
 .page-title {
-  margin: 0 0 12px;
-  font-size: 18px;
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-family: "Darumadrop One", cursive;
+  color: var(--accent-blue-gray);
+  letter-spacing: 1px;
 }
 
-
-/* ハイライトエリア */
+/* 検索ボックス（ハイライトエリア） */
 #highlight {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   padding: 16px;
   border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid #cfeaff;
-  top: 12px;
-  z-index: 10;
+  background: var(--base-bg);
+  border: 1.5px dashed var(--border-color); /* ダッシュ線で手帳感 */
 }
 
 .search-box {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 14px;
-  border: 1px solid #cfeaff;
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
   border-radius: 999px;
-  background: #f6fbff;
-  max-width: 360px;
-  margin-bottom: 8px; /* 下のテキストとの余白 */
-}
-
-.search-label {
-  font-size: 12px;
-  color: #6b7280;
+  background: #fff;
+  max-width: 300px;
 }
 
 .search-input {
@@ -68,361 +76,164 @@ align-items: center;
   outline: none;
   background: transparent;
   font-size: 14px;
-  flex: 1;
+  font-family: "Kiwi Maru", serif;
+  width: 100%;
 }
 
-.highlight-label {
-  margin: 0 0 8px;
-  font-size: 14px;
-  color: #6b7280;
-}
-
-.highlight-stats {
-  margin: 0;
-  font-size: 16px;
-}
-
-/* 3カラムグリッドレイアウト */
+/* おすすめTop3のグリッド */
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 12px;
   margin-top: 16px;
 }
 
-/* グリッド内の各カード共通設定 */
 .stat-card {
-  padding: 14px;
-  border-radius: 16px;
-  border: 1px solid #cfeaff;
-  background: #ffffff;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  transition: transform 0.2s;
 }
 
 .stat-title {
-  margin: 0 0 6px;
-  font-size: 13px;
-  color: #6b7280;
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--accent-blue-gray);
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .stat-body {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
+  color: var(--text-main);
+  line-height: 1.8;
 }
 
-.result-area {
-  margin-top: 16px;
-  font-size: 14px;
-}
-
-.back-link {
-  margin: 14px 0 0;
-}
-
-
-/*　カレンダー　*/
-.cal-date,
-.cal-score,
-.calendar-head {
-  font-family: "Darumadrop One", cursive;
-  letter-spacing: 0.5px; /* 文字同士がくっつきやすいので少し隙間をあける */
-  
-}
-
+/* --- カレンダー --- */
 #calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0px; /* 隙間をなくして線で区切る準備 */
+  gap: 0;
   max-width: 320px;
-  margin: 0 auto;
-  border: 1px solid #d1d5db; /* カレンダーの外枠 */
-  border-radius: 10px;
+  margin: 16px auto;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
   overflow: hidden;
-  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .calendar-head {
   text-align: center;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  background-color: #8297B2; /* グレー背景 */
-  color: #ffffff;            /* 文字は白 */
-  padding: 6px 0;
-  /* 曜日の間だけに縦線を入れる（最後以外） */
-  border-right: 0.5px solid rgba(255, 255, 255, 0.3); 
-}
-.calendar-head:last-child {
-  border-right: none;
-}
-
-.calendar-cell {
-  position: relative;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 3px; 
-  gap: 1px; 
-  height: 35px; 
-  border: 0.5px solid #e5e7eb;
-  
-  color: #333;
-  background: transparent;
-  transition: all 0.2s;
-  font-weight: 500;
-  line-height: 1;
-}
-
-
-/* リンクの下線デザイン */
-a {
-  color: #1f2937;
-  text-decoration: none;
-  border-bottom: 1px dashed #8bd0ff;
-}
-
-/* カレンダー配色 & レイアウト */
-
-.calendar-cell {
-  position: relative;
-  /* 上下並びにする設定 */
-  display: flex;
-  flex-direction: column; 
-  align-items: center;    /* 左右中央 */
-  justify-content: center; /* 上下中央（または flex-start で上詰め） */
-  gap: 6px; /* 日付とスコアの間隔 */
-
-  color: #333;
-  background: transparent;
-  transition: all 0.2s;
-  font-weight: 500;
-  line-height: 1.1;
-}
-
-/* 日付の数字 */
-.cal-date {
-  font-size: 14px;
-  color: #9ca3af;
-}
-
-/* スコアの数字 */
-.cal-score {
-  font-size: 9px;
-  font-weight: bold;
-  margin-top: -2px; /* マイナスにすればするほど上 */
-}
-
-/* スコアの色設定 */
-/* 勝ち：背景(#e8f6fb)より少し濃いブルー */
-.cal-score.text-win {
-  color: #4e79a7; 
-}
-/* 負け：背景(#fde8ef)より少し濃いピンク/赤 */
-.cal-score.text-loss {
-  color: #d65f8e; 
-}
-/* 引き分け：グレー */
-.cal-score.text-draw {
-  color: #6b7280;
-}
-
-/* --- 背景色の設定 --- */
-
-.calendar-cell.win {
-  background: #e8f6fb;
-}
-.calendar-cell.loss {
-  background: #fde8ef;
-}
-.calendar-cell.draw {
-  background: #f3f4f6;
-}
-
-/* データなし */
-.calendar-cell.nodata {
-  background: transparent;
-  color: #d1d5db;
-  pointer-events: none;
-}
-.calendar-cell.nodata .cal-date {
-  color: #d1d5db;
-}
-
-/* 今日の日付 */
-.calendar-cell.today .cal-date {
-  color: #7d7d7d; /* 濃い青 */
-  font-weight: 900;
-}
-
-/* 選択中の枠 */
-.calendar-cell.selected {
-  outline: 2px solid #4e79a7; 
-  outline-offset: -2px;
-  z-index: 2;
-}
-
-/* アコーディオン（折りたたみ）設定 */
-
-.accordion-header {
-  display: flex;
-  justify-content: space-between; /* タイトルと矢印を左右に配置 */
-  align-items: center;
-  cursor: pointer; /* クリックできる指マークにする */
-  padding-bottom: 4px;
-}
-
-.toggle-icon {
-  font-size: 14px;
-  color: #6b7280;
-  transition: transform 0.3s ease; /* くるっと回るアニメーション */
-}
-
-/* 開いているときは矢印をひっくり返す */
-.accordion-header.active .toggle-icon {
-  transform: rotate(180deg);
-}
-
-.accordion-body {
-  /* 開いているときの状態（デフォルト） */
-  display: block;
-  animation: fadeIn 0.5s;
-}
-
-/* 閉じているときは非表示 */
-.accordion-body.closed {
-  display: none;
-}
-
-/* ふわっと表示させるアニメーション */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-
-
-/* --- ジョブタブ用スタイル --- */
-
-/* ロールごとの折りたたみ枠 */
-.role-details {
-  margin-bottom: 8px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #fff;
-}
-
-/* クリックするバーの部分 */
-.role-summary {
-  background-color: #f9fafb;
-  padding: 10px 15px;
-  font-weight: bold;
-  cursor: pointer;
-  list-style: none; /* 三角マークを消す(一部ブラウザ用) */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-/* 開閉の三角マークを自作 */
-.role-summary::after {
-  content: "▼";
-  font-size: 12px;
-  color: #9ca3af;
-  transition: transform 0.2s;
-}
-.role-details[open] .role-summary::after {
-  transform: rotate(180deg);
-}
-
-/* 中身のグリッド表示 */
-.job-grid-container {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 幅に合わせて自動折り返し */
-  gap: 8px;
-  background: #fff;
-}
-
-/* ジョブカード単体 */
-.job-card-item {
-  border: 1px solid #f0f0f0;
-  border-radius: 6px;
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-}
-
-/* ジョブアイコン画像 */
-.job-icon-img {
-  width: 40px;  /* アイコンの大きさ */
-  height: 40px;
-  object-fit: contain;
-  margin-bottom: 2px;
-}
-
-/* ジョブ名 */
-.job-name-label {
-  font-size: 12px;
-  font-weight: bold;
-  color: #374151;
-}
-
-/* 勝率などの数値 */
-.job-stat-label {
+  font-family: "Darumadrop One", cursive;
   font-size: 11px;
-  color: #6b7280;
+  background-color: var(--accent-blue-gray);
+  color: #ffffff;
+  padding: 8px 0;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 
-
-/* グラフ読み込み中のくるくる */
-.loading-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.8); /* 背景を少し白く透けさせる */
+.calendar-cell {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 10;
-  
-  /* 最初は隠しておく */
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
+  height: 42px; /* 少し高さを出した方が数字が綺麗に見えます */
+  border: 0.5px solid #edf2f7;
+  background: #fff;
+  cursor: pointer;
 }
 
-/* activeクラスがついたら表示 */
-.loading-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
+.cal-date {
+  font-family: "Darumadrop One", cursive;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1;
 }
 
-/* くるくる回るアニメーション */
-.spinner {
-  width: 30px;
-  height: 30px;
-  border: 4px solid #cfeaff;
-  border-top: 4px solid #3b82f6;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-bottom: 8px;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.loading-text {
-  font-size: 12px;
-  color: #6b7280;
+.cal-score {
+  font-family: "Darumadrop One", cursive;
+  font-size: 10px;
   font-weight: bold;
+  margin-top: -2px; /* 1px 上げました */
+}
+
+/* カレンダー勝敗色 */
+.calendar-cell.win  { background-color: var(--pastel-win-bg); }
+.calendar-cell.loss { background-color: var(--pastel-loss-bg); }
+.calendar-cell.draw { background-color: var(--pastel-draw-bg); }
+
+.cal-score.text-win  { color: var(--pastel-win-text); }
+.cal-score.text-loss { color: var(--pastel-loss-text); }
+.cal-score.text-draw { color: var(--pastel-draw-text); }
+
+.calendar-cell.today .cal-date {
+  color: var(--accent-blue-gray);
+  border-bottom: 2px solid var(--accent-blue-gray);
+}
+
+.calendar-cell.selected {
+  outline: 2px solid var(--accent-blue-gray);
+  outline-offset: -2px;
+  z-index: 5;
+}
+
+/* タブボタン */
+#tabButtons {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+#tabButtons button {
+  font-family: "Kiwi Maru", serif;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  padding: 6px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-sub);
+  transition: all 0.2s;
+}
+
+#tabButtons button:hover {
+  background: var(--base-bg);
+}
+
+/* ジョブカード */
+.role-details {
+  margin-top: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.role-summary {
+  background-color: var(--base-bg);
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--accent-blue-gray);
+}
+
+.job-card-item {
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+/* アコーディオン */
+.accordion-header {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border-color);
+  margin-bottom: 10px;
 }
