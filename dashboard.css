@@ -285,7 +285,6 @@ body {
   cursor: pointer;
 }
 
-/* ↓ ここが抜けていたよ！カードを横に並べる魔法の設定 ↓ */
 .job-grid-container {
   padding: 12px;
   display: flex;         /* 横に並べるよ */
@@ -295,7 +294,7 @@ body {
 }
 
 .job-card-item {
-  /* 1つのカードの大きさを固定して横に並びやすくするよ */
+  /* 1つのカードの大きさを固定して横に並びやすくする */
   flex: 0 0 100px; 
   
   border: 1px solid #f1f5f9;
@@ -308,6 +307,17 @@ body {
   align-items: center;
   gap: 4px;
   text-align: center;
+}
+
+
+.job-card-empty {
+  opacity: 0.5; /* 少し透明にする */
+  background-color: #fcfcfc; /* 背景をさらに薄くする */
+  border-style: dotted; /* 枠線を点線にする */
+}
+
+.job-card-empty .job-icon-img {
+  filter: grayscale(100%); /* アイコンを白黒にする */
 }
 
 /* ジョブアイコン画像 */
