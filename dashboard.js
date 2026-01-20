@@ -221,8 +221,22 @@ function ensureEmptyChart() {
       responsive: true,
       maintainAspectRatio: false,
       scales: {
-        x: { type: "linear", ticks: { stepSize: 1, callback: (v) => Math.round(v) + 1 } },
-        y: { beginAtZero: true, grid: { color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9" } }
+       x: { type: "linear", ticks: { stepSize: 1, callback: (v) => Math.round(v) + 1 } },
+       y: {
+        beginAtZero: true,
+        ticks: {
+          stepSize: 1, // これを追加！目盛りを1刻みに固定するよ
+          callback: (value) => {
+            // 整数（1, 0, -1...）のときだけ文字を出す設定
+            return Number.isInteger(value) ? value : "";
+          }
+        },
+        grid: {
+          // 0の線（真ん中の線）だけ少し濃い色にするおしゃれ設定
+          color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9",
+          lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1
+        }
+      }
       },
       plugins: { legend: { display: false } }
     }
