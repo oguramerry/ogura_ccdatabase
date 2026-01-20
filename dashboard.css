@@ -209,6 +209,7 @@ a {
 .cal-score {
   font-size: 9px;
   font-weight: bold;
+  margin-top: -2px; /* マイナスにすればするほど上 */
 }
 
 /* スコアの色設定 */
