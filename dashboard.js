@@ -133,15 +133,14 @@ document.addEventListener("DOMContentLoaded", () => {
           x: i + 1,
           y: p.sum,
           result: p.result,
-          time: p.time, // 試合時刻
-          job: p.job,   // ジョブを追加
-          stage: p.stage, // ステージを追加
+          time: p.time,
+          job: p.job,   
+          stage: p.stage, 
           date: data.date
         });
       });
     }
 
-    // グラフが初期化されているか確認
     ensureEmptyChart();
 
     const ctx = document.getElementById("matchChart").getContext("2d");
@@ -180,7 +179,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCalendarDisplay();
   fetchUsers("");
 
-  // 入力監視（タイマー付き）
   let inputTimer = null;
   input?.addEventListener("input", (e) => {
     clearTimeout(inputTimer);
@@ -198,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
       s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
       document.body.appendChild(s);
       fetchAvailableDates(currentUserForApi);
-    }, 500); // 0.5秒間入力が止まったら通信
+    }, 500); 
   });
 });
 
@@ -216,17 +214,11 @@ function ensureEmptyChart() {
         data: [],
         parsing: false,
         borderWidth: 2,
-        
-        // ポイントを5pxに戻して丸さを強調、hover時は少し大きく
         pointRadius: ctx => ctx.raw?.isStart ? 0 : 5, 
         pointHoverRadius: 7,
-        
-        // 
         pointBorderWidth: 0, 
 
         borderColor: "#8297B2",
-
-        
         pointBackgroundColor: ctx => (ctx.raw?.result > 0) ? "#a5c9ed" : "#f2c2d4",
         pointBorderColor: ctx => (ctx.raw?.result > 0) ? "#a5c9ed" : "#f2c2d4",
         
@@ -245,13 +237,26 @@ function ensureEmptyChart() {
       maintainAspectRatio: false,
       scales: {
         x: { type: "linear", ticks: { stepSize: 1 } },
-        y: { beginAtZero: true, ticks: { stepSize: 1 } }
+       // ensureEmptyChart 内の scales.y を修正
+        y: {
+          beginAtZero: true,
+          ticks: {
+            stepSize: 1,
+            callback: (value) => Number.isInteger(value) ? value : ""
+          },
+  
+          grid: {
+            color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9",
+            lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1
+          }
+        }
       },
+      
       plugins: {
         legend: { display: false },
         tooltip: {
           enabled: true,
-          backgroundColor: "rgba(255, 255, 255, 0.95)", // ほぼ白
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
           titleColor: "#4a5568",
           bodyColor: "#4a5568",
           bodyFont: { family: "Kiwi Maru", size: 12 },
@@ -267,11 +272,14 @@ function ensureEmptyChart() {
               if (d.isStart) return "スタート";
               
               const score = d.result > 0 ? `+${d.result}` : d.result;
-              const jobName = JOB_NAME_JP[d.job] ?? d.job ?? "なし";
-              const stageName = d.stage ?? "なし";
+              const jobName = (d.job && JOB_NAME_JP[d.job]) ? JOB_NAME_JP[d.job] : (d.job || "なし");
+              const stageName = d.stage || "なし";
+              
+              // 2026-01-20 -> 26-01-20
+              const yyDate = d.date ? d.date.slice(2) : "";
               
               return [
-                `試合日時: ${d.time} (${score})`,
+                `試合日時: ${yyDate} ${d.time} (${score})`,
                 `使用ジョブ: ${jobName}`,
                 `ステージ: ${stageName}`
               ];
