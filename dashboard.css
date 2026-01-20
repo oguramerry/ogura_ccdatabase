@@ -281,14 +281,49 @@ body {
   font-weight: bold;
   font-size: 14px;
   color: var(--accent-blue-gray);
+  cursor: pointer;
+}
+
+/* ↓ ここが抜けていたよ！カードを横に並べる魔法の設定 ↓ */
+.job-grid-container {
+  padding: 12px;
+  display: flex;         /* 横に並べるよ */
+  flex-wrap: wrap;       /* 端まで行ったら折り返すよ */
+  gap: 10px;             /* カード同士の隙間 */
+  background: #fff;
 }
 
 .job-card-item {
+  /* 1つのカードの大きさを固定して横に並びやすくするよ */
+  flex: 0 0 100px; 
+  
   border: 1px solid #f1f5f9;
   border-radius: 12px;
   background: #fff;
   padding: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+/* ジョブアイコン画像 */
+.job-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* ジョブ名と勝率 */
+.job-name-label {
+  font-size: 11px;
+  font-weight: bold;
+}
+.job-stat-label {
+  font-size: 10px;
+  color: var(--text-sub);
 }
 
 /* アコーディオン */
