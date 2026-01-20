@@ -227,9 +227,8 @@ a {
 
 /* 今日の日付 */
 .calendar-cell.today .cal-date {
-  color: #2c5885; /* 濃い青 */
+  color: #7d7d7d; /* 濃い青 */
   font-weight: 900;
-  text-decoration: underline; /* わかりやすく下線などを入れてもよし */
 }
 
 /* 選択中の枠 */
