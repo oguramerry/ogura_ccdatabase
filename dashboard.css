@@ -1,5 +1,5 @@
 /* フォント読み込み */
-@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kiwi+Maru:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kiwi+Maru:wght@400;500&family=Yomogi&display=swap');
 
 /* カラー変数 */
 :root {
@@ -158,8 +158,7 @@ body {
 .cal-score {
   font-family: "Darumadrop One", cursive;
   font-size: 10px;
-  font-weight: bold;
-  margin-top: -2px; /* 1px 上げました */
+  margin-top: -1px; 
 }
 
 /* カレンダー勝敗色 */
