@@ -131,27 +131,30 @@ align-items: center;
 #calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
+  gap: 0px; /* 隙間をなくして線で区切る準備 */
   max-width: 320px;
   margin: 0 auto;
-  border: 1px solid #cfeaff;
-  border-radius: 12px;
-  padding: 6px;
+  border: 1px solid #d1d5db; /* カレンダーの外枠 */
+  border-radius: 10px;
+  overflow: hidden;
   background: #ffffff;
 }
 
 .calendar-head {
   text-align: center;
-  font-size: 10px;        /* 今のサイズを維持 */
-  font-weight: bold;      /* 今の太さを維持 */
-  letter-spacing: 1px;    /* 今の間隔を維持 */
-  background-color: #9ca3af; 
-  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #9ca3af; /* グレー背景 */
+  color: #ffffff;            /* 文字は白 */
   padding: 6px 0;
-  border: 0.5px solid #d1d5db;
+  /* 曜日の間だけに縦線を入れる（最後以外） */
+  border-right: 0.5px solid rgba(255, 255, 255, 0.3); 
+}
+.calendar-head:last-child {
+  border-right: none;
 }
 
-/* カレンダーのマス目設定 */
 .calendar-cell {
   position: relative;
   display: flex;
@@ -161,6 +164,7 @@ align-items: center;
   padding-top: 3px; 
   gap: 1px; 
   height: 35px; 
+  border: 0.5px solid #e5e7eb;
   
   color: #333;
   background: transparent;
