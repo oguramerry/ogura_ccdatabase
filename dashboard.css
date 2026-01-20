@@ -145,7 +145,7 @@ align-items: center;
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 1px;
-  background-color: #9ca3af; /* グレー背景 */
+  background-color: #8297B2; /* グレー背景 */
   color: #ffffff;            /* 文字は白 */
   padding: 6px 0;
   /* 曜日の間だけに縦線を入れる（最後以外） */
@@ -225,8 +225,7 @@ a {
   color: #6b7280;
 }
 
-
-/* --- 以下は背景色の設定 --- */
+/* --- 背景色の設定 --- */
 
 .calendar-cell.win {
   background: #e8f6fb;
