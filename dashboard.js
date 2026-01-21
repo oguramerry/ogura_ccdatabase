@@ -94,9 +94,126 @@ clearBtn.addEventListener("click", () => {
     panelInner.innerHTML = html;
   };
 
-  const setActiveTab = (tab) => {
+let setActiveTab = (tab) => {
     activeTab = tab;
     render();
+
+    // 🕒タブが選ばれた時の処理
+    if (tab === "time" && statsData) {
+      // 最初に「全体(all)」のグラフを描画
+      setTimeout(() => {
+        renderTimeChart(statsData.byHour);
+        setupDayFilter();
+      }, 0);
+    }
+  };
+
+  const setupDayFilter = () => {
+    const container = document.querySelector(".day-tags");
+    if (!container) return;
+
+    container.addEventListener("click", (e) => {
+      const tag = e.target.closest(".day-tag");
+      if (!tag) return;
+
+      document.querySelectorAll(".day-tag").forEach(t => t.classList.remove("active"));
+      tag.classList.add("active");
+
+      const selectedDay = tag.dataset.day; // "all" か "0"〜"6"
+
+      if (selectedDay === "all") {
+        renderTimeChart(statsData.byHour);
+      } else {
+        // GAS側から届く statsData.byDayHour (曜日別・時間別データ) をフィルタリング
+        // ※まだデータがない場合は全体を表示
+        const filtered = (statsData.byDayHour || []).filter(row => String(row.day) === selectedDay);
+        renderTimeChart(filtered);
+      }
+    });
+  };
+
+  // 🕒タブ専用のチャート描画関数
+  let timeChartInstance = null;
+
+  const renderTimeChart = (targetData) => {
+    const canvas = document.getElementById("timeWinRateChart");
+    
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+
+    // 0〜23時の空データを作成
+    const labels = Array.from({length: 24}, (_, i) => `${i}時`);
+    const winRates = Array.from({length: 24}, () => 0);
+    const totals = Array.from({length: 24}, () => 0);
+
+    // データをマッピング
+    targetData.forEach(row => {
+      if (row.hour !== undefined) {
+        winRates[row.hour] = (row.winRate || 0) * 100;
+        totals[row.hour] = row.total || 0;
+      }
+    });
+
+    if (timeChartInstance) timeChartInstance.destroy();
+
+    timeChartInstance = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: labels,
+        datasets: [{
+          data: winRates,
+          
+          backgroundColor: ctx => {
+            const val = ctx.raw; // 勝率(%)
+            const total = totals[ctx.dataIndex];
+            
+            if (total === 0 || val === 0) return "rgba(0,0,0,0)"; // 試合なし or 勝率0
+            
+            if (val > 50) {
+              // 50%より高い：水色（100%に近いほど濃い）
+              const alpha = 0.2 + ((val - 50) / 50) * 0.8;
+              return `rgba(165, 201, 237, ${alpha})`; // --pastel-win-textに近い水色
+            } else if (val < 50) {
+              // 50%より低い：ピンク（0%に近いほど濃い）
+              const alpha = 0.2 + ((50 - val) / 50) * 0.8;
+              return `rgba(242, 194, 212, ${alpha})`; // --pastel-loss-textに近いピンク
+            }
+            return "rgba(200, 200, 200, 0.2)"; // ちょうど50%
+          },
+          
+          borderRadius: 6,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { min: 0, max: 100, ticks: { callback: v => v + "%" } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+  };
+
+  // タブ切り替え時のフックを修正（setActiveTab 内に追記、あるいは呼び出し後）
+  const originalSetActiveTab = setActiveTab;
+  setActiveTab = (tab) => {
+    originalSetActiveTab(tab);
+    if (tab === "time" && statsData) {
+      renderTimeChart(statsData.byHour);
+      // 曜日タグのクリックイベント登録
+      document.querySelector(".day-tags")?.addEventListener("click", (e) => {
+        const tag = e.target.closest(".day-tag");
+        if (!tag) return;
+        document.querySelectorAll(".day-tag").forEach(t => t.classList.remove("active"));
+        tag.classList.add("active");
+        
+        // ※ ここで曜日ごとのデータフィルタリング
+        // 現在の statsData.byHour が全体のため、一旦全体を再描画
+        renderTimeChart(statsData.byHour); 
+      });
+    }
   };
 
   if (tabs) {
