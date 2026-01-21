@@ -332,7 +332,7 @@ function buildCalendar(year, month) {
   const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   week.forEach(w => {
     const h = document.createElement("div");
-    h.className = "calendar-head";
+    h.className = `calendar-head day-${i}`;
     h.textContent = w;
     cal.appendChild(h);
   });
