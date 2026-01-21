@@ -16,15 +16,28 @@
         <p class="page-title">こんくりラボ</p>
 
         <div id="highlight">
-          <div class="search-box">
-            <span class="search-label">user</span>
-            <input id="userInput" list="userList" type="text" placeholder="ユーザー名を入力…" class="search-input" />
-            <button id="clearInput" class="clear-button" title="入力をクリア">×</button>
-            <datalist id="userList"></datalist>
-            <button id="refreshBtn" class="refresh-button" title="最新の情報に更新">
-              <span class="refresh-icon">↻</span>
-            </button>
-          </div>
+<div class="search-box">
+  <span class="search-label">user</span>
+  <input
+    id="userInput"
+    list="userList" 
+    type="text"
+    placeholder="ユーザー名を入力…"
+    class="search-input"
+  />
+  <button 
+    id="clearInput" 
+    class="clear-button" 
+    title="入力をクリア">×
+  </button>
+  
+  <datalist id="userList"></datalist>
+  
+  <button id="refreshBtn" class="refresh-button" title="最新の情報に更新">
+    <span class="refresh-icon">↻</span>
+  </button>
+</div>
+          
         </div>
         
         <div class="stats-grid">
@@ -56,28 +69,31 @@
           </div>
         </div>
 
-        <div class="stat-card" style="margin-top: 1rem;">
+<div class="stat-card" style="margin-top: 1rem;">
           <div class="accordion-header" id="graphToggle">
              <p class="stat-title">かちまけグラフ</p>
              <span class="toggle-icon">▼</span>
           </div>
 
-          <div id="graphContent" class="accordion-body">
-            <div class="calendar-nav">
-              <button id="calPrev">＜</button>
-              <span id="calTitle"></span>
-              <button id="calNext">＞</button>
-            </div>
-            
-            <div id="calendar"></div>
-            
-            <div style="position: relative; width: 100%; max-width: 600px; height: 300px; margin: 20px auto 0;">
-                <div id="chartLoading" class="loading-overlay">
-                  <img src="images/gif/LOAD.gif" class="loading-gif" alt="読み込み中">
-                </div>
-                <canvas id="matchChart"></canvas>
-            </div>
-          </div>
+<div id="graphContent" class="accordion-body">
+  <div class="calendar-nav">
+    <button id="calPrev" class="cal-nav-btn">＜</button>
+    <div id="calTitle" class="cal-title">2024年 12月</div>
+    <button id="calNext" class="cal-nav-btn">＞</button>
+  </div>
+  
+  <div id="calendar"></div>
+  
+  <div style="position: relative; width: 100%; max-width: 600px; height: 300px; margin: 20px auto 0;">
+      
+      <div id="chartLoading" class="loading-overlay">
+        <img src="images/gif/LOAD.gif" class="loading-gif" alt="読み込み中">
+      </div>
+
+      <canvas id="matchChart"></canvas>
+  </div>
+</div>
+  
         </div>
 
         <div id="tabButtons">
@@ -96,8 +112,8 @@
       </div> 
     </div> 
   </div> 
-  <script src="ui-parts.js?v=7"></script>
-  <script src="tab-renderer.js?v=7"></script>
-  <script src="dashboard.js?v=7"></script>
-</body>
+<script src="ui-parts.js?v=7"></script>
+        <script src="tab-renderer.js?v=7"></script>
+        <script src="dashboard.js?v=7"></script>
+    </body>
 </html>
