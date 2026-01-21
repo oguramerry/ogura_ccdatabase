@@ -307,3 +307,116 @@ body {
   color: #fff !important;
   border-color: var(--accent-blue-gray) !important;
 }
+
+/* --- ページ全体の微調整 --- */
+.page-title {
+  font-family: "Darumadrop One", cursive;
+  font-size: 24px;
+  color: var(--accent-blue-gray);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* --- ランキングエリアを横に並べる --- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--accent-blue-gray);
+  margin-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 4px;
+}
+
+.stat-body {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+/* --- アコーディオン（かちまけグラフ）のデザイン --- */
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.toggle-icon {
+  color: var(--text-sub);
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.accordion-body.closed {
+  display: none;
+}
+
+/* --- タブボタンのデザイン --- */
+#tabButtons {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+#tabButtons button {
+  flex: 1;
+  white-space: nowrap;
+  padding: 10px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text-sub);
+  font-family: "Darumadrop One", cursive;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#tabButtons button:hover {
+  background: var(--base-bg);
+}
+
+#tabButtons button.active {
+  background: var(--accent-blue-gray);
+  color: #fff;
+  border-color: var(--accent-blue-gray);
+  box-shadow: 0 4px 10px rgba(130, 151, 178, 0.3);
+}
+
+/* --- 更新ボタン（↻）の回転アニメーション --- */
+.refresh-button {
+  background: none;
+  border: none;
+  color: var(--accent-blue-gray);
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.refresh-button:hover {
+  transform: rotate(180deg);
+}
