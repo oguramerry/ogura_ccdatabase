@@ -67,9 +67,29 @@ body {
 }
 
 /* 土曜日の文字色（タンクの青とおそろい） */
-.calendar-head.day-6 { color: #7b99b9; }
+.calendar-head.day-6 {
+  color: var(--pastel-win-bg) !important; /* #e7f3ff */ 
+}
 /* 日曜日の文字色（DPSのピンクとおそろい） */
-.calendar-head.day-0 { color: #ce97a8; }
+.calendar-head.day-0 {
+  color: var(--pastel-loss-bg) !important; /* #fff0f3 */
+}
+
+/* データがない日 */
+.cal-date {
+  font-family: "Darumadrop One", cursive;
+  font-size: 14px;
+  color: #cbd5e1; /* 薄いグレー */
+  line-height: 1;
+}
+
+/* データがある日 */
+.calendar-cell.win .cal-date,
+.calendar-cell.loss .cal-date,
+.calendar-cell.draw .cal-date {
+  color: var(--text-main) !important; 
+  font-weight: bold; 
+}
 
 /* 日付1つずつのマス目 */
 .calendar-cell {
