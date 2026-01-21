@@ -1,8 +1,7 @@
 // dashboard.js
 
 const GAS_BASE =
-  "https://script.google.com/macros/s/" +
-  "AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
+  "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
 
 let matchChartInstance = null;
 const now = new Date();
@@ -96,14 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let setActiveTab = (tab) => {
     activeTab = tab;
-// HTML上の全ボタンから active クラスを消す
-  document.querySelectorAll("#tabButtons button").forEach(btn => {
-    btn.classList.remove("active");
-  });
-  // 今押したボタンだけに active クラスをつける
-  document.querySelector(`button[data-tab="${tab}"]`)?.classList.add("active");
-
-    
     render();
 
     // 🕒タブ（時間帯統計）が選ばれた時の処理
@@ -262,7 +253,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   window.handleMatchHistoryJsonp = (data) => {
-    console.log("届いたデータの中身:", data);
     const loader = document.getElementById("chartLoading");
     if (loader) loader.classList.remove("active");
     if (data.date !== currentDate) return;
@@ -271,7 +261,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const chartData = [];
     if (points.length > 0) {
       chartData.push({ x: 0, y: 0, isStart: true });
-      
       points.forEach((p, i) => {
         chartData.push({
           x: i + 1,
@@ -286,7 +275,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     ensureEmptyChart();
-
     const ctx = document.getElementById("matchChart").getContext("2d");
     matchChartInstance.data.datasets[0].data = chartData;
     matchChartInstance.update();
@@ -360,19 +348,8 @@ function ensureEmptyChart() {
         borderWidth: 2,
         pointRadius: ctx => ctx.raw?.isStart ? 0 : 5, 
         pointHoverRadius: 7,
-        pointBorderWidth: 0, 
-
         borderColor: "#8297B2",
         pointBackgroundColor: ctx => (ctx.raw?.result > 0) ? "#a5c9ed" : "#f2c2d4",
-        pointBorderColor: ctx => (ctx.raw?.result > 0) ? "#a5c9ed" : "#f2c2d4",
-        
-        segment: {
-          borderColor: ctx => {
-            const y0 = ctx.p0?.raw?.y;
-            const y1 = ctx.p1?.raw?.y;
-            return (y0 >= 0 && y1 >= 0) ? "#b8d9f7" : "#f7d7e3";
-          }
-        },
         tension: 0.4 
       }]
     },
@@ -381,55 +358,27 @@ function ensureEmptyChart() {
       maintainAspectRatio: false,
       scales: {
         x: { type: "linear", ticks: { stepSize: 1 } },
-       // ensureEmptyChart 内の scales.y を修正
         y: {
           beginAtZero: true,
-          ticks: {
-            stepSize: 1,
-            callback: (value) => Number.isInteger(value) ? value : ""
-          },
- 
+          ticks: { stepSize: 1, callback: (value) => Number.isInteger(value) ? value : "" },
           grid: {
             color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9",
             lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1
           }
         }
       },
-      
       plugins: {
         legend: { display: false },
         tooltip: {
           enabled: true,
-          backgroundColor: "rgba(255, 255, 255, 0.95)",
-          titleColor: "#4a5568",
-          bodyColor: "#4a5568",
-          bodyFont: { family: "Kiwi Maru", size: 12 },
-          borderColor: "#d1dce8",
-          borderWidth: 1,
-          padding: 12,
-          cornerRadius: 12, 
-          displayColors: false,
           callbacks: {
             title: () => "",
-            
-label: (ctx) => {
-  const d = ctx.raw;
-  if (d.isStart) return "スタート";
-  
-  const score = d.y > 0 ? `+${d.y}` : d.y;
-  
-  // PDFの英語名 を日本語に変換
-  const jobName = (d.job && JOB_NAME_JP[d.job]) ? JOB_NAME_JP[d.job] : (d.job || "なし");
-  const stageName = (d.stage && STAGE_NAME_JP[d.stage]) ? STAGE_NAME_JP[d.stage] : (d.stage || "なし");
-  
-  const yyDate = d.date ? d.date.slice(2) : "";
-  
-  return [
-    `試合日時: ${yyDate} ${d.time} (${score})`,
-    `使用ジョブ: ${jobName}`,
-    `ステージ: ${stageName}`
-  ];
-}
+            label: (ctx) => {
+              const d = ctx.raw;
+              if (d.isStart) return "スタート";
+              const score = d.y > 0 ? `+${d.y}` : d.y;
+              return [`日時: ${d.time} (${score})`, `ジョブ: ${d.job}`, `ステージ: ${d.stage}`];
+            }
           }
         }
       }
@@ -484,14 +433,12 @@ function buildCalendar(year, month) {
   const startDay = first.getDay();
   const total = last.getDate();
 
-  // ★ 前の空きセル：クラスを追加
   for (let i = 0; i < startDay; i++) {
     const empty = document.createElement("div");
-    empty.className = "calendar-cell empty"; // emptyクラスを付与
+    empty.className = "calendar-cell empty"; 
     cal.appendChild(empty);
   }
 
-  // 日付セル
   for (let d = 1; d <= total; d++) {
     const cell = document.createElement("div");
     cell.className = "calendar-cell";
@@ -505,15 +452,6 @@ function buildCalendar(year, month) {
       fetchMatchHistory(currentUserForApi, currentDate);
     });
     cal.appendChild(cell);
-  }
-
-  // ★ 追加：後ろの空きセル（カレンダーの最後を埋める）
-  const totalCellsSoFar = startDay + total;
-  const remainingCells = (7 - (totalCellsSoFar % 7)) % 7;
-  for (let i = 0; i < remainingCells; i++) {
-    const empty = document.createElement("div");
-    empty.className = "calendar-cell empty"; // emptyクラスを付与
-    cal.appendChild(empty);
   }
 }
 
@@ -535,10 +473,7 @@ function applyCalendarColors() {
       else if (data.status === -1) cell.classList.add("loss");
       else cell.classList.add("draw");
       const scoreText = `${data.score > 0 ? "+" : ""}${data.score}`;
-      const textClass = data.status === 1 ? "text-win" : (data.status === -1 ? "text-loss" : "text-draw");
-      innerHTML += `<span class="cal-score ${textClass}">${scoreText}</span>`;
-    } else {
-      cell.classList.add("nodata");
+      innerHTML += `<span class="cal-score">${scoreText}</span>`;
     }
     cell.innerHTML = innerHTML;
     if (d === today) cell.classList.add("today");
@@ -548,14 +483,6 @@ function applyCalendarColors() {
 
 document.getElementById("refreshBtn")?.addEventListener("click", () => {
   if (!currentUserForApi) return;
-  const loader = document.getElementById("chartLoading");
-  if (loader) loader.classList.add("active");
-  const oldStats = document.getElementById("jsonpStats");
-  if (oldStats) oldStats.remove();
-  const s = document.createElement("script");
-  s.id = "jsonpStats";
-  s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
-  document.body.appendChild(s);
   fetchAvailableDates(currentUserForApi);
   fetchMatchHistory(currentUserForApi, currentDate);
 });
