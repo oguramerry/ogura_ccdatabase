@@ -162,6 +162,16 @@ body {
   border-right: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 
+/* 土曜日 (day-6) をパステルブルーに */
+.calendar-head.day-6 {
+  color: #7b99b9; /* タンクの文字色とおそろい */
+}
+
+/* 日曜日 (day-0) をパステルピンクに */
+.calendar-head.day-0 {
+  color: #ce97a8; /* DPSの文字色とおそろい */
+}
+
 .calendar-cell {
   position: relative;
   display: flex;
