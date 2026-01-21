@@ -330,7 +330,7 @@ function buildCalendar(year, month) {
   if (!cal) return;
   cal.innerHTML = "";
   const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  week.forEach(w,i) => {
+  week.forEach((w,i) => {
     const h = document.createElement("div");
     h.className = `calendar-head day-${i}`;
     h.textContent = w;
