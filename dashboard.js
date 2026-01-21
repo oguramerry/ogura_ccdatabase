@@ -93,15 +93,15 @@ document.addEventListener("DOMContentLoaded", () => {
     panelInner.innerHTML = html;
   };
 
+  // タブ切り替え：17:00時点のシンプルさに🕒機能を統合
   let setActiveTab = (tab) => {
     activeTab = tab;
     render();
 
-    // 🕒タブ（時間帯統計）が選ばれた時の処理
+    // 🕒タブが選ばれた時のグラフ描画処理
     if (tab === "time" && statsData) {
-      // 描画を確実にするため、HTMLが生成されるのを一瞬待つ
       setTimeout(() => {
-        renderTimeChart(statsData.byHour); // 最初は全体(byHour)を表示
+        renderTimeChart(statsData.byHour); 
         setupDayFilter();
       }, 0);
     }
@@ -111,7 +111,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".day-tags");
     if (!container) return;
 
-    // 以前のイベントリスナーを消すため、クローンを作って差し替える（重複登録防止）
     const newContainer = container.cloneNode(true);
     container.parentNode.replaceChild(newContainer, container);
 
@@ -122,12 +121,11 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".day-tag").forEach(t => t.classList.remove("active"));
       tag.classList.add("active");
 
-      const selectedDay = tag.dataset.day; // HTML側で data-day="0" 等が入っている想定
+      const selectedDay = tag.dataset.day;
 
       if (selectedDay === "all") {
         renderTimeChart(statsData.byHour);
       } else {
-        // GAS側から届く statsData.byDayHour (曜日別・時間別データ) をフィルタリング
         const filtered = (statsData.byDayHour || []).filter(row => String(row.day) === selectedDay);
         renderTimeChart(filtered);
       }
@@ -136,19 +134,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 🕒タブ専用のチャート描画関数
   let timeChartInstance = null;
-
   const renderTimeChart = (targetData) => {
     const canvas = document.getElementById("timeWinRateChart");
-    
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
 
-    // 0〜23時の空データを作成
     const labels = Array.from({length: 24}, (_, i) => `${i}時`);
     const winRates = Array.from({length: 24}, () => 0);
     const totals = Array.from({length: 24}, () => 0);
 
-    // データをマッピング
     targetData.forEach(row => {
       if (row.hour !== undefined) {
         winRates[row.hour] = (row.winRate || 0) * 100;
@@ -164,25 +158,12 @@ document.addEventListener("DOMContentLoaded", () => {
         labels: labels,
         datasets: [{
           data: winRates,
-          
           backgroundColor: ctx => {
-            const val = ctx.raw; // 勝率(%)
+            const val = ctx.raw;
             const total = totals[ctx.dataIndex];
-            
-            if (total === 0) return "rgba(0,0,0,0)"; // 試合なしは透明
-            
-            if (val > 50) {
-              // 50%より高い：水色（100%に近いほど濃い）
-              const alpha = 0.2 + ((val - 50) / 50) * 0.8;
-              return `rgba(165, 201, 237, ${alpha})`; // --pastel-win-textに近い水色
-            } else if (val < 50) {
-              // 50%より低い：ピンク（0%に近いほど濃い）
-              const alpha = 0.2 + ((50 - val) / 50) * 0.8;
-              return `rgba(242, 194, 212, ${alpha})`; // --pastel-loss-textに近いピンク
-            }
-            return "rgba(200, 200, 200, 0.2)"; // ちょうど50%
+            if (total === 0) return "rgba(0,0,0,0)";
+            return val > 50 ? "rgba(165, 201, 237, 0.8)" : "rgba(242, 194, 212, 0.8)";
           },
-          
           borderRadius: 6,
         }]
       },
@@ -222,6 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
       resultEl.textContent =
         `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
+    // おすすめランキングを更新
     updateTopRanking("topStageBody", data.byStage, (row) => `${row.stage}`);
     updateTopRanking("topJobBody", data.byJob, (row) => `${JOB_NAME_JP[row.job] ?? row.job}`);
     updateTopRanking("topHourBody", data.byHour, (row) => `${formatHourRange(row.hour)}`);
