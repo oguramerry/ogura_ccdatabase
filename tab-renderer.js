@@ -66,9 +66,14 @@ cardsHtml += `
   `;
 });
 
+// tab-renderer.js の job 関数内の修正（後半部分）
+
       if (cardsHtml) {
+        // ★ roleKey（TANK, HEALER等）を小文字にしてクラス名に追加
+        const roleClass = `role-${roleKey.toLowerCase()}`; 
+
         html += `
-          <details class="role-details" open>
+          <details class="role-details ${roleClass}" open>
             <summary class="role-summary">${roleName}</summary>
             <div class="job-grid-container">
               ${cardsHtml}
