@@ -1,4 +1,3 @@
-<!-- dashboard.html -->
 <!doctype html>
 <html lang="ja">
 <head>
@@ -86,22 +85,24 @@
   <div id="calendar"></div>
   
   <div style="position: relative; width: 100%; max-width: 600px; height: 300px; margin: 20px auto 0;">
-    <div id="chartLoading" class="loading-overlay">
-      <img src="images/gif/LOAD.gif" class="loading-gif" alt="読み込み中">
-    </div>
-    <canvas id="matchChart"></canvas>
+      
+      <div id="chartLoading" class="loading-overlay">
+        <img src="images/gif/LOAD.gif" class="loading-gif" alt="読み込み中">
+      </div>
+
+      <canvas id="matchChart"></canvas>
   </div>
 </div>
   
         </div>
 
-<div id="tabButtons">
-  <button type="button" data-tab="main" class="active">main</button>
-  <button type="button" data-tab="job">job</button>
-  <button type="button" data-tab="stage">stage</button>
-  <button type="button" data-tab="jobStage">job*stage</button>
-  <button type="button" data-tab="time">🕒</button>
-</div>
+        <div id="tabButtons">
+          <button type="button" data-tab="main">main</button>
+          <button type="button" data-tab="job">job</button>
+          <button type="button" data-tab="stage">stage</button>
+          <button type="button" data-tab="jobStage">job*stage</button>
+          <button type="button" data-tab="time">🕒</button>
+        </div>
 
         <div id="panelInner"></div>
 
