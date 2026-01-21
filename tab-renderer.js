@@ -43,16 +43,20 @@ window.TabRenderer = {
         const emptyClass = data.total === 0 ? "job-card-empty" : "";
 
         let winRateClass = "";
+        let winRateBgClass = "";
+        
         if (data.total > 0) { // 試合がある場合のみ判定
           if (data.winRate > 0.5) {
             winRateClass = "text-win-color";  // 50%より大きい
+            winRateBgClass = "bg-win-color";
           } else if (data.winRate < 0.5) {
             winRateClass = "text-loss-color"; // 50%より小さい
+            winRateBgClass = "bg-loss-color";
           }
         }
 
 cardsHtml += `
-    <div class="job-card-item ${emptyClass}">
+    <div class="job-card-item ${emptyClass} ${winRateBgClass}">
       <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
       <div class="job-text-meta">
         <span class="job-name-label">${jobName}</span>
