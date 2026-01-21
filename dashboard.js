@@ -336,11 +336,20 @@ function buildCalendar(year, month) {
     h.textContent = w;
     cal.appendChild(h);
   });
+
   const first = new Date(year, month, 1);
   const last = new Date(year, month + 1, 0);
   const startDay = first.getDay();
   const total = last.getDate();
-  for (let i = 0; i < startDay; i++) cal.appendChild(document.createElement("div"));
+
+  // ★ 前の空きセル：クラスを追加
+  for (let i = 0; i < startDay; i++) {
+    const empty = document.createElement("div");
+    empty.className = "calendar-cell empty"; // emptyクラスを付与
+    cal.appendChild(empty);
+  }
+
+  // 日付セル
   for (let d = 1; d <= total; d++) {
     const cell = document.createElement("div");
     cell.className = "calendar-cell";
@@ -354,6 +363,15 @@ function buildCalendar(year, month) {
       fetchMatchHistory(currentUserForApi, currentDate);
     });
     cal.appendChild(cell);
+  }
+
+  // ★ 追加：後ろの空きセル（カレンダーの最後を埋める）
+  const totalCellsSoFar = startDay + total;
+  const remainingCells = (7 - (totalCellsSoFar % 7)) % 7;
+  for (let i = 0; i < remainingCells; i++) {
+    const empty = document.createElement("div");
+    empty.className = "calendar-cell empty"; // emptyクラスを付与
+    cal.appendChild(empty);
   }
 }
 
