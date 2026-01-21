@@ -432,3 +432,12 @@ body {
   height: auto;
 }
 
+/* リンクの下線を消す */
+.back-link a {
+  text-decoration: none;    /* 下線を消す */
+  color: var(--text-sub);   /* 他の補足文字と同じ色にする */
+  font-size: 13px;
+}
+
+
+
