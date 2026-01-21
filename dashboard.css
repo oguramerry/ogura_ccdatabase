@@ -2,33 +2,40 @@
 /* フォント読み込み */
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kiwi+Maru:wght@400;500&family=Yomogi&display=swap');
 
-/* カラー変数 */
+/* --- 1. 基本設定：色やフォントをまとめて決める場所 --- */
 :root {
-  --base-bg: #f8fafc;            /* 全体の背景（ごく薄いブルーグレー） */
-  --card-bg: #ffffff;            /* カードの背景 */
-  --border-color: #d1dce8;      /* 枠線の色（落ち着いたブルーグレー） */
-  --text-main: #4a5568;         /* メインの文字色 */
-  --text-sub: #94a3b8;          /* 補足の文字色 */
-  --accent-blue-gray: #8297B2;  /* 曜日の背景色など */
+  /* サイト全体の背景色 */
+  --base-bg: #f8fafc;
+  /* カード（箱）の背景色 */
+  --card-bg: #ffffff;
+  /* 枠線の色（薄いくすみブルー） */
+  --border-color: #d1dce8;
+  /* メインの文字色（少し落ち着いたグレー） */
+  --text-main: #4a5568;
+  /* 補足や説明の文字色（薄いグレー） */
+  --text-sub: #94a3b8;
+  /* 曜日の背景やアクセントに使うブルーグレー */
+  --accent-blue-gray: #8297B2;
   
-  /* パステル配色 */
-  --pastel-win-bg: #e7f3ff;     /* 勝ち背景：パステルブルー */
-  --pastel-win-text: #6b8fb3;   /* 勝ち文字色 */
-  --pastel-loss-bg: #fff0f3;    /* 負け背景：パステルピンク */
-  --pastel-loss-text: #d68fa8;  /* 負け文字色 */
+  /* パステルカラー：変えると勝敗の色が変わる */
+  --pastel-win-bg: #e7f3ff;   /* 勝ちの背景：空色 */
+  --pastel-win-text: #6b8fb3; /* 勝ちの文字：濃い空色 */
+  --pastel-loss-bg: #fff0f3;  /* 負けの背景：いちごミルク色 */
+  --pastel-loss-text: #d68fa8; /* 負けの文字：濃いいちご色 */
   --pastel-draw-bg: #f1f5f9;    /* 引き分け背景 */
   --pastel-draw-text: #94a3b8;  /* 引き分け文字色 */
 }
 
-/* 全体の基本設定 */
+/* --- 2. ページ全体のデザイン --- */
 body {
   margin: 0;
-  font-family: "Kiwi Maru", serif;
+  font-family: "Kiwi Maru", serif; 
   background: var(--base-bg);
   color: var(--text-main);
   line-height: 1.6;
 }
 
+/* ページ全体の横幅を決める場所 */
 .wrap {
   max-width: 900px; /* 大きくすると横に広がる */
   margin: 0 auto;
@@ -44,34 +51,24 @@ body {
   box-shadow: 0 4px 12px rgba(209, 220, 232, 0.3); /* ふわっとした影 */
 }
 
-/* タイトル */
-.page-title {
-  margin: 0 0 16px;
-  font-size: 20px;
-  font-family: "Darumadrop One", cursive;
-  color: var(--accent-blue-gray);
-  letter-spacing: 1px;
-}
-
-/* 検索ボックス（ハイライトエリア） */
+/* 検索ボックス（ハイライトエリア）の調整 */
 #highlight {
   margin-bottom: 20px;
   padding: 16px;
   border-radius: 20px;
   background: var(--base-bg);
-  border: 1.5px dashed var(--border-color); /* ダッシュ線で手帳感 */
+  border: 1.5px dashed var(--border-color);
 }
 
-/* 検索ボックスのレイアウト修正（ここだけ調整しました） */
 .search-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: flex;         /* 横に並べる設定 */
+  align-items: center;   /* 上下中央に揃える */
+  gap: 10px;             /* 要素同士の隙間を調整 */
   padding: 8px 16px;
   border: 1px solid var(--border-color);
   border-radius: 999px;
   background: #fff;
-  max-width: 450px; /* 要素が増えたので幅を広げました */
+  max-width: 450px;     
   margin: 0 auto;
 }
 
@@ -83,7 +80,7 @@ body {
 }
 
 .search-input {
-  flex: 1; /* 入力欄が伸び縮みするようにしました */
+  flex: 1;               /* ★他のボタンと重ならないように伸びる設定 */
   border: none;
   outline: none;
   background: transparent;
@@ -92,91 +89,18 @@ body {
   min-width: 0;
 }
 
-/* --- クリアボタンのデザイン --- */
-.clear-button {
-  background: none;             /* 背景をなしにする */
-  border: none;                 /* 枠線をなしにする */
-  color: var(--text-sub);       /* 文字の色（薄いグレー） */
-  cursor: pointer;              /* マウスを乗せたときに指の形にする */
-  font-size: 20px;              /* バツ印の大きさ */
-  padding: 0 8px;               /* 押しやすいように左右に余白を作る */
-  line-height: 1;               /* 高さをバツ印に合わせる */
-  display: none;                /* 最初は隠しておく（JSで文字があるときだけ出す） */
-}
-
-/* マウスを乗せたときの色（アクセントカラー） */
-.clear-button:hover {
-  color: var(--accent-blue-gray);
-}
-
-/*　更新ボタン　*/
-.refresh-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-  color: var(--accent-blue-gray); /* ブルーグレー */
-}
-
-.refresh-button:hover {
-  transform: rotate(180deg); /* ホバーするとくるっと回る */
-}
-
-.refresh-icon {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* おすすめTop3のグリッド */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.stat-card {
-  padding: 16px;
-  border-radius: 18px;
-  border: 1px solid var(--border-color);
-  background: #fff;
-  transition: transform 0.2s;
-}
-
-.stat-title {
-  margin: 0 0 8px;
-  font-size: 12px;
-  font-weight: bold;
-  color: var(--accent-blue-gray);
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.stat-body {
-  margin: 0;
-  font-size: 13px;
-  color: var(--text-main);
-  line-height: 1.2;
-}
-
-/* --- カレンダー --- */
+/* --- 3. カレンダーのデザイン --- */
 #calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr); /* 7列（1週間）に並べる */
-  gap: 0;
   max-width: 320px;
   margin: 16px auto;
   border: 1px solid var(--border-color);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+/* 曜日のヘッダー（Sun, Mon...） */
 .calendar-head {
   text-align: center;
   font-family: "Darumadrop One", cursive;
@@ -184,7 +108,6 @@ body {
   background-color: var(--accent-blue-gray);
   color: #ffffff;
   padding: 8px 0;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 
 /* 土曜日の文字色（タンクの青とおそろい） */
@@ -223,114 +146,53 @@ body {
   justify-content: center;
 }
 
-.calendar-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 320px;
-  margin: 0 auto 8px; /* カレンダーとの隙間 */
-  padding: 0 4px;
-}
-
-.cal-title {
-  font-family: "Darumadrop One", cursive;
-  font-size: 16px;
-  color: var(--accent-blue-gray);
-  letter-spacing: 1px;
-}
-
-.cal-nav-btn {
-  background: none;
-  border: 1px solid var(--border-color);
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  color: var(--accent-blue-gray);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  transition: all 0.2s;
-}
-
-.cal-nav-btn:hover {
-  background-color: var(--base-bg);
-  border-color: var(--accent-blue-gray);
-}
-
-.cal-score {
-  font-family: "Darumadrop One", cursive;
-  font-size: 10px;
-  margin-top: -1px; 
-}
-
-/* カレンダー勝敗色 */
-.calendar-cell.win  { background-color: var(--pastel-win-bg); }
-.calendar-cell.loss { background-color: var(--pastel-loss-bg); }
-.calendar-cell.draw { background-color: var(--pastel-draw-bg); }
-
-.cal-score.text-win  { color: var(--pastel-win-text); }
-.cal-score.text-loss { color: var(--pastel-loss-text); }
-.cal-score.text-draw { color: var(--pastel-draw-text); }
-
-.calendar-cell.today .cal-date {
-  color: var(--accent-blue-gray);
-  border-bottom: 2px solid var(--accent-blue-gray);
-}
-
-.calendar-cell.selected {
-  outline: 2px solid var(--accent-blue-gray);
-  outline-offset: -2px;
-  z-index: 5;
-}
-
 /* 日付がない空っぽのマス */
 .calendar-cell.empty {
   background-color: #fafbfd;
   cursor: default;
 }
 
-/* タブボタン */
-#tabButtons {
-  display: flex;
-  gap: 4px;
-  margin-top: 12px;
-  flex-wrap: wrap;
+/* --- クリアボタンのデザイン --- */
+.clear-button {
+  background: none;             /* 背景をなしにする */
+  border: none;                 /* 枠線をなしにする */
+  color: var(--text-sub);       /* 文字の色（薄いグレー） */
+  cursor: pointer;              /* マウスを乗せたときに指の形にする */
+  font-size: 20px;              /* バツ印の大きさ */
+  padding: 0 8px;               /* 押しやすいように左右に余白を作る */
+  line-height: 1;               /* 高さをバツ印に合わせる */
+  display: none;                /* 最初は隠しておく（JSで文字があるときだけ出す） */
 }
 
-#tabButtons button {
-  font-family: "Kiwi Maru", serif;
-  background: #fff;
-  border: 1px solid var(--border-color);
-  padding: 4px 12px;
-  border-radius: 999px;
+/* マウスを乗せたときの色（アクセントカラー） */
+.clear-button:hover {
+  color: var(--accent-blue-gray);
+}
+
+/* 更新ボタン */
+.refresh-button {
+  background: none;
+  border: none;
   cursor: pointer;
-  font-size: 12px;
-  color: var(--text-sub);
-  transition: all 0.2s;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  color: var(--accent-blue-gray);
+  transition: transform 0.3s ease;
+}
+.refresh-button:hover {
+  transform: rotate(180deg);
 }
 
-#tabButtons button:hover {
-  background: var(--base-bg);
-}
+/* --- 4. ジョブタブ（見出しとカード） --- */
 
-/* ジョブカード */
+/* ロールごとの外枠（タンク、ヒーラーなど） */
 .role-details {
-  margin-top: 8px; 
+  margin-top: 8px;
   border: 1px solid var(--border-color);
   border-radius: 16px;
   background: #fff;
   overflow: hidden;
-}
-
-.role-summary {
-  background-color: var(--base-bg);
-  padding: 6px 12px; /* 12px 16pxから縮小 */
-  font-weight: bold;
-  font-size: 13px;   /* 14pxから微調整 */
-  color: var(--accent-blue-gray);
-  cursor: pointer;
 }
 
 /* ロール別の見出し色 */
@@ -340,16 +202,20 @@ body {
 .role-range .role-summary,
 .role-caster .role-summary { background-color: #fff0f3 !important; color: #ce97a8 !important; }
 
-/* 枠線の色*/
-.role-tank { border-color: #d0e4ff; }
-.role-healer { border-color: #d2eadd; }
-.role-melee, .role-range, .role-caster { border-color: #ffe0e8; }
+/* 見出しの文字の大きさや余白 */
+.role-summary {
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
 
+/* ジョブカードが並ぶ白いエリア */
 .job-grid-container {
-  padding: 8px;      /* 12pxから縮小 */
-  display: flex;     
-  flex-wrap: wrap;   
-  gap: 6px;          /* 10pxから短縮 */
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* カード同士の隙間 */
   background: #fff !important;
 }
 
@@ -358,32 +224,10 @@ body {
   flex: 0 0 140px; /* カードの横幅 */
   border: 1px solid #f1f5f9;
   border-radius: 12px;
-  background: #fff;
   padding: 4px 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 8px;
-  text-align: left;
-  justify-content: flex-start;
-}
-
-.job-card-empty {
-  opacity: 0.5; /* 少し透明にする */
-  background-color: #fcfcfc; /* 背景をさらに薄くする */
-  border-style: dotted; /* 枠線を点線にする */
-}
-
-.job-card-empty .job-icon-img {
-  filter: grayscale(100%); /* アイコンを白黒にする */
-}
-
-/* ジョブアイコン画像 */
-.job-icon-img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
 }
 
 /* ジョブ名と勝率のテキスト */
@@ -394,68 +238,15 @@ body {
   white-space: nowrap; /* 折り返しを禁止 */
 }
 
-.job-text-meta {
-  display: flex;
-  flex-direction: column; /* 上下に並べる */
-  justify-content: center;
-  overflow: hidden;       /* はみ出し防止 */
-}
-
-/* 勝率が高い時（パステルブルー） */
-.text-win-color {
-  color: var(--pastel-win-text) !important;
-}
-
-/* 勝率が低い時（パステルピンク） */
-.text-loss-color {
-  color: var(--pastel-loss-text) !important;
-}
-
-/* 勝率が高い時の背景（パステルブルー） */
-.bg-win-color {
-  background-color: var(--pastel-win-bg) !important;
-  border-color: #d0e4ff !important; 
-}
-
-/* 勝率が低い時の背景（パステルピンク） */
-.bg-loss-color {
-  background-color: var(--pastel-loss-bg) !important;
-  border-color: #ffe0e8 !important; 
-}
-
-/* アコーディオン */
-.accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  padding: 10px 0;
-  border-bottom: 1px dashed var(--border-color);
-  margin-bottom: 10px;
-}
-.toggle-icon {
-  font-size: 14px;
-  color: var(--text-sub);
-  transition: transform 0.3s ease;
-}
-
-.accordion-header.active .toggle-icon {
-  transform: rotate(180deg);
-}
-
-.accordion-body.closed {
-  display: none;
-}
-
-/* --- グラフ読み込み中の設定 --- */
+/* --- 5. 読み込み中のGIF --- */
 .loading-overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(255, 255, 255, 0.8);
   display: none;
-  align-items: center;
-  justify-content: center;
+  align-items: center;      /* 真ん中に寄せる */
+  justify-content: center;   /* 真ん中に寄せる */
   z-index: 10;
 }
 
