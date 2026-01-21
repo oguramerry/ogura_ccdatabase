@@ -98,11 +98,11 @@ let setActiveTab = (tab) => {
     activeTab = tab;
     render();
 
-    // 🕒タブが選ばれた時の処理
+// 🕒タブ（時間帯統計）が選ばれた時の処理
     if (tab === "time" && statsData) {
-      // 最初に「全体(all)」のグラフを描画
+      // 描画を確実にするため、HTMLが生成されるのを一瞬待つ
       setTimeout(() => {
-        renderTimeChart(statsData.byHour);
+        renderTimeChart(statsData.byHour); // 最初は全体(byHour)を表示
         setupDayFilter();
       }, 0);
     }
@@ -112,14 +112,18 @@ let setActiveTab = (tab) => {
     const container = document.querySelector(".day-tags");
     if (!container) return;
 
-    container.addEventListener("click", (e) => {
+    // 以前のイベントリスナーを消すため、クローンを作って差し替える（重複登録防止）
+    const newContainer = container.cloneNode(true);
+    container.parentNode.replaceChild(newContainer, container);
+
+    newContainer.addEventListener("click", (e) => {
       const tag = e.target.closest(".day-tag");
       if (!tag) return;
 
       document.querySelectorAll(".day-tag").forEach(t => t.classList.remove("active"));
       tag.classList.add("active");
 
-      const selectedDay = tag.dataset.day; // "all" か "0"〜"6"
+      const selectedDay = tag.dataset.day; // HTML側で data-day="0" 等が入っている想定
 
       if (selectedDay === "all") {
         renderTimeChart(statsData.byHour);
@@ -167,7 +171,7 @@ let setActiveTab = (tab) => {
             const val = ctx.raw; // 勝率(%)
             const total = totals[ctx.dataIndex];
             
-            if (total === 0 || val === 0) return "rgba(0,0,0,0)"; // 試合なし or 勝率0
+            if (total === 0) return "rgba(0,0,0,0)"; // 試合なしは透明
             
             if (val > 50) {
               // 50%より高い：水色（100%に近いほど濃い）
@@ -187,7 +191,14 @@ let setActiveTab = (tab) => {
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `勝率: ${ctx.raw.toFixed(1)}% (${totals[ctx.dataIndex]}試合)`
+            }
+          }
+        },
         scales: {
           y: { min: 0, max: 100, ticks: { callback: v => v + "%" } },
           x: { grid: { display: false } }
