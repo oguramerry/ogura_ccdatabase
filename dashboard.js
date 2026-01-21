@@ -274,7 +274,7 @@ label: (ctx) => {
   const d = ctx.raw;
   if (d.isStart) return "スタート";
   
-  const score = d.result > 0 ? `+${d.result}` : d.result;
+  const score = d.y > 0 ? `+${d.y}` : d.y;
   
   // PDFの英語名 を日本語に変換
   const jobName = (d.job && JOB_NAME_JP[d.job]) ? JOB_NAME_JP[d.job] : (d.job || "なし");
