@@ -77,21 +77,19 @@
           </div>
 
 <div id="graphContent" class="accordion-body">
-  <div class="calendar-nav">
-    <button id="calPrev" class="cal-nav-btn">＜</button>
-    <div id="calTitle" class="cal-title">2024年 12月</div>
-    <button id="calNext" class="cal-nav-btn">＞</button>
+  <div>
+    <button id="calPrev">＜</button>
+    <span id="calTitle"></span>
+    <button id="calNext">＞</button>
   </div>
   
   <div id="calendar"></div>
   
   <div style="position: relative; width: 100%; max-width: 600px; height: 300px; margin: 20px auto 0;">
-      
-      <div id="chartLoading" class="loading-overlay">
-        <img src="images/gif/LOAD.gif" class="loading-gif" alt="読み込み中">
-      </div>
-
-      <canvas id="matchChart"></canvas>
+    <div id="chartLoading" class="loading-overlay">
+      <img src="images/gif/LOAD.gif" class="loading-gif" alt="読み込み中">
+    </div>
+    <canvas id="matchChart"></canvas>
   </div>
 </div>
   
