@@ -207,25 +207,7 @@ let setActiveTab = (tab) => {
     });
   };
 
-  // タブ切り替え時のフックを修正（setActiveTab 内に追記、あるいは呼び出し後）
-  const originalSetActiveTab = setActiveTab;
-  setActiveTab = (tab) => {
-    originalSetActiveTab(tab);
-    if (tab === "time" && statsData) {
-      renderTimeChart(statsData.byHour);
-      // 曜日タグのクリックイベント登録
-      document.querySelector(".day-tags")?.addEventListener("click", (e) => {
-        const tag = e.target.closest(".day-tag");
-        if (!tag) return;
-        document.querySelectorAll(".day-tag").forEach(t => t.classList.remove("active"));
-        tag.classList.add("active");
-        
-        // ※ ここで曜日ごとのデータフィルタリング
-        // 現在の statsData.byHour が全体のため、一旦全体を再描画
-        renderTimeChart(statsData.byHour); 
-      });
-    }
-  };
+
 
   if (tabs) {
     tabs.addEventListener("click", (e) => {
