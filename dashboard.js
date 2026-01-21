@@ -96,6 +96,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let setActiveTab = (tab) => {
     activeTab = tab;
+// HTML上の全ボタンから active クラスを消す
+  document.querySelectorAll("#tabButtons button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+  // 今押したボタンだけに active クラスをつける
+  document.querySelector(`button[data-tab="${tab}"]`)?.classList.add("active");
+
+    
     render();
 
     // 🕒タブ（時間帯統計）が選ばれた時の処理
