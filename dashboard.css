@@ -310,7 +310,6 @@ body {
   
 }
 
-
 .job-card-empty {
   opacity: 0.5; /* 少し透明にする */
   background-color: #fcfcfc; /* 背景をさらに薄くする */
@@ -353,6 +352,16 @@ body {
   flex-direction: column; /* 上下に並べる */
   justify-content: center;
   overflow: hidden;       /* はみ出し防止 */
+}
+
+/* 勝率が高い時（パステルブルー） */
+.text-win-color {
+  color: var(--pastel-win-text) !important;
+}
+
+/* 勝率が低い時（パステルピンク） */
+.text-loss-color {
+  color: var(--pastel-loss-text) !important;
 }
 
 /* アコーディオン */
