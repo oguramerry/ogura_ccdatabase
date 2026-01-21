@@ -364,6 +364,18 @@ body {
   color: var(--pastel-loss-text) !important;
 }
 
+/* 勝率が高い時の背景（パステルブルー） */
+.bg-win-color {
+  background-color: var(--pastel-win-bg) !important;
+  border-color: #d0e4ff !important; 
+}
+
+/* 勝率が低い時の背景（パステルピンク） */
+.bg-loss-color {
+  background-color: var(--pastel-loss-bg) !important;
+  border-color: #ffe0e8 !important; 
+}
+
 /* アコーディオン */
 .accordion-header {
   display: flex;
