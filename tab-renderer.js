@@ -137,25 +137,32 @@ cardsHtml += `
 
   // ■ Timeタブ
   time: (statsData) => {
-    const arr = statsData.byHour;
-    if (!arr || !arr.length) return "時間帯 集計なし";
-
-    const ranking = arr
-      .filter(row => (row.total ?? 0) >= 5)
-      .slice()
-      .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-      .slice(0, 5);
-
-    const listHtml = ranking.map((row, i) => {
-      const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-      return `${i + 1}位：${formatHourRange(row.hour)}（${wr}% / ${row.total}試合）`;
-    }).join("<br>");
+    // 曜日の配列（タグ生成用）
+    const days = ["All", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    
+    // 曜日タグのHTML
+    const tagsHtml = days.map((day, i) => `
+      <span class="day-tag" data-day-index="${i === 0 ? 'all' : i - 1}">${day}</span>
+    `).join("");
 
     return `
       <div class="stat-card">
-        <p class="stat-title">時間帯 top5（勝率）</p>
-        <p class="stat-body">${listHtml}</p>
+        <p class="stat-title">時間帯別勝率（累計）</p>
+        <div class="time-chart-container">
+          <canvas id="timeWinRateChart"></canvas>
+        </div>
       </div>
+      
+      <div class="day-filter-container">
+        <p class="stat-sub-title">曜日別フィルタ</p>
+        <div class="day-tags">
+          ${tagsHtml}
+        </div>
+      </div>
+
+      <div id="timeDetailArea">
+        </div>
     `;
   }
+  
 };
