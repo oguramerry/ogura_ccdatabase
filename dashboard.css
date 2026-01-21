@@ -290,6 +290,33 @@ body {
   font-size: 13px;   /* 14pxから微調整 */
   color: var(--accent-blue-gray);
   cursor: pointer;
+
+  /* --- ロール別のパステルカラー設定 --- */
+
+/* タンク：パステルブルー */
+.role-tank .role-summary {
+  background-color: #e7f3ff;
+  color: #7b99b9;
+}
+
+/* ヒーラー：パステルグリーン */
+.role-healer .role-summary {
+  background-color: #e9f7ef;
+  color: #89b99d;
+}
+
+/* DPS：パステルピンク */
+.role-melee .role-summary,
+.role-range .role-summary,
+.role-caster .role-summary {
+  background-color: #fff0f3;
+  color: #ce97a8;
+}
+
+/* 枠線の色*/
+.role-tank { border-color: #d0e4ff; }
+.role-healer { border-color: #d2eadd; }
+.role-melee, .role-range, .role-caster { border-color: #ffe0e8; }
 }
 
 .job-grid-container {
