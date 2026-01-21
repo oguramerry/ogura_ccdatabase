@@ -159,6 +159,31 @@ body {
   justify-content: center;
 }
 
+/* カレンダーの月切り替え：17:00時点の横並びデザインを復元 */
+.calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#calPrev, #calNext {
+  padding: 4px 8px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  border-radius: 4px; /* 四角に近い元のデザイン */
+  font-family: inherit;
+  color: var(--text-main);
+}
+
+#calTitle {
+  font-family: "Kiwi Maru", serif;
+  font-size: 16px;
+  color: var(--text-main);
+}
+
 /* --- クリアボタンのデザイン --- */
 .clear-button {
   background: none;
