@@ -139,29 +139,35 @@ cardsHtml += `
   time: (statsData) => {
     // 曜日の配列（タグ生成用）
     const days = ["All", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    
-    // 曜日タグのHTML
-    const tagsHtml = days.map((day, i) => `
-      <span class="day-tag" data-day-index="${i === 0 ? 'all' : i - 1}">${day}</span>
-    `).join("");
 
-    return `
+    // 曜日タグの生成（All=all, Sun=0, Mon=1... という値をdata属性に持たせる）
+    const tagsHtml = days.map((day, i) => {
+      const dayValue = day === "All" ? "all" : (i - 1);
+      const activeClass = day === "All" ? 'active' : '';
+      return `<span class="day-tag ${activeClass}" data-day="${dayValue}">${day}</span>`;
+    }).join("");
+
+return `
       <div class="stat-card">
-        <p class="stat-title">時間帯別勝率（累計）</p>
-        <div class="time-chart-container">
+        <p class="stat-title">🕒 時間帯別勝率チャート</p>
+        <div class="time-chart-wrapper">
           <canvas id="timeWinRateChart"></canvas>
         </div>
       </div>
-      
-      <div class="day-filter-container">
-        <p class="stat-sub-title">曜日別フィルタ</p>
+   
+<div class="filter-section">
+        <p class="stat-title">曜日フィルタ</p>
         <div class="day-tags">
           ${tagsHtml}
         </div>
       </div>
 
-      <div id="timeDetailArea">
-        </div>
+      <div id="timeDetailArea" class="stat-card" style="margin-top: 12px;">
+        <p class="stat-title">ランキング詳細</p>
+        <p id="timeDetailBody" class="stat-body">
+          ${statsData.meta?.total ? 'グラフの棒をタップするか、曜日を選んでみてね' : 'データがありません'}
+        </p>
+      </div>
     `;
   }
   
