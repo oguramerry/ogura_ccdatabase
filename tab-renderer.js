@@ -36,27 +36,31 @@ window.TabRenderer = {
       let cardsHtml = "";
       
       jobsInRole.forEach(job => {
-        // データが存在しない場合は、初期値（0試合 / 0%）を使用する
         const data = jobStats[job] || { total: 0, winRate: 0 };
-        
         const jobName = JOB_NAME_JP[job] ?? job;
         const winRate = ((data.winRate ?? 0) * 100).toFixed(1);
         const iconPath = `images/JOB/${job}.png`; 
-
-        // 試合数が0のジョブを少し薄く表示したい場合は、クラスを追加して制御
         const emptyClass = data.total === 0 ? "job-card-empty" : "";
 
+        let winRateClass = "";
+        if (data.total > 0) { // 試合がある場合のみ判定
+          if (data.winRate > 0.5) {
+            winRateClass = "text-win-color";  // 50%より大きい
+          } else if (data.winRate < 0.5) {
+            winRateClass = "text-loss-color"; // 50%より小さい
+          }
+        }
 
 cardsHtml += `
-  <div class="job-card-item ${emptyClass}">
-    <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
-    <div class="job-text-meta">
-      <span class="job-name-label">${jobName}</span>
-      <span class="job-stat-label">${winRate}% / ${data.total}試合</span>
+    <div class="job-card-item ${emptyClass}">
+      <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
+      <div class="job-text-meta">
+        <span class="job-name-label">${jobName}</span>
+        <span class="job-stat-label ${winRateClass}">${winRate}% / ${data.total}試合</span>
+      </div>
     </div>
-  </div>
-`;
-      });
+  `;
+});
 
       if (cardsHtml) {
         html += `
