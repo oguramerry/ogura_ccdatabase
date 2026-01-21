@@ -88,6 +88,23 @@ body {
   cursor: default;
 }
 
+/* --- クリアボタンのデザイン --- */
+.clear-button {
+  background: none;             /* 背景をなしにする */
+  border: none;                 /* 枠線をなしにする */
+  color: var(--text-sub);       /* 文字の色（薄いグレー） */
+  cursor: pointer;              /* マウスを乗せたときに指の形にする */
+  font-size: 20px;              /* バツ印の大きさ */
+  padding: 0 8px;               /* 押しやすいように左右に余白を作る */
+  line-height: 1;               /* 高さをバツ印に合わせる */
+  display: none;                /* 最初は隠しておく（JSで文字があるときだけ出す） */
+}
+
+/* マウスを乗せたときの色（アクセントカラー） */
+.clear-button:hover {
+  color: var(--accent-blue-gray);
+}
+
 /* --- 4. ジョブタブ（見出しとカード） --- */
 
 /* ロールごとの外枠（タンク、ヒーラーなど） */
