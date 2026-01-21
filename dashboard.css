@@ -293,48 +293,51 @@ body {
   overflow: hidden;
 }
 
+/* --- ロール別の基本設定 --- */
+
 .role-summary {
   background-color: var(--base-bg);
-  padding: 6px 12px; /* 12px 16pxから縮小 */
+  padding: 6px 12px;
   font-weight: bold;
-  font-size: 13px;   /* 14pxから微調整 */
+  font-size: 13px;
   color: var(--accent-blue-gray);
   cursor: pointer;
+}
 
-  /* --- ロール別のパステルカラー設定 --- */
+/* --- ロール別のパステルカラー設定（必ず { } の外に出します） --- */
 
 /* タンク：パステルブルー */
 .role-tank .role-summary {
-  background-color: #e7f3ff;
-  color: #7b99b9;
+  background-color: #e7f3ff !important;
+  color: #7b99b9 !important;
 }
 
 /* ヒーラー：パステルグリーン */
 .role-healer .role-summary {
-  background-color: #e9f7ef;
-  color: #89b99d;
+  background-color: #e9f7ef !important;
+  color: #89b99d !important;
 }
 
 /* DPS：パステルピンク */
 .role-melee .role-summary,
 .role-range .role-summary,
 .role-caster .role-summary {
-  background-color: #fff0f3;
-  color: #ce97a8;
+  background-color: #fff0f3 !important;
+  color: #ce97a8 !important;
 }
 
-/* 枠線の色*/
-.role-tank { border-color: #d0e4ff; }
-.role-healer { border-color: #d2eadd; }
-.role-melee, .role-range, .role-caster { border-color: #ffe0e8; }
-}
+/* 枠線の色（detailsタグ自体に色をつける） */
+.role-tank { border-color: #d0e4ff !important; }
+.role-healer { border-color: #d2eadd !important; }
+.role-melee, .role-range, .role-caster { border-color: #ffe0e8 !important; }
 
+/* カードが並ぶ場所は白のまま固定 */
 .job-grid-container {
-  padding: 8px;      /* 12pxから縮小 */
-  display: flex;     
-  flex-wrap: wrap;   
-  gap: 6px;          /* 10pxから短縮 */
-  background: #fff;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: #fff !important; /* ここを白に固定 */
 }
 
 .job-card-item {
