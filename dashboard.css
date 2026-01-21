@@ -4,19 +4,26 @@
 
 /* --- 1. 基本設定：色やフォントをまとめて決める場所 --- */
 :root {
+  /* サイト全体の背景色 */
   --base-bg: #f8fafc;
+  /* カード（箱）の背景色 */
   --card-bg: #ffffff;
+  /* 枠線の色（薄いくすみブルー） */
   --border-color: #d1dce8;
+  /* メインの文字色（少し落ち着いたグレー） */
   --text-main: #4a5568;
+  /* 補足や説明の文字色（薄いグレー） */
   --text-sub: #94a3b8;
+  /* 曜日の背景やアクセントに使うブルーグレー */
   --accent-blue-gray: #8297B2;
   
-  --pastel-win-bg: #e7f3ff;
-  --pastel-win-text: #6b8fb3;
-  --pastel-loss-bg: #fff0f3;
-  --pastel-loss-text: #d68fa8;
-  --pastel-draw-bg: #f1f5f9;
-  --pastel-draw-text: #94a3b8;
+  /* パステルカラー：変えると勝敗の色が変わる */
+  --pastel-win-bg: #e7f3ff;   /* 勝ちの背景：空色 */
+  --pastel-win-text: #6b8fb3; /* 勝ちの文字：濃い空色 */
+  --pastel-loss-bg: #fff0f3;  /* 負けの背景：いちごミルク色 */
+  --pastel-loss-text: #d68fa8; /* 負けの文字：濃いいちご色 */
+  --pastel-draw-bg: #f1f5f9;    /* 引き分け背景 */
+  --pastel-draw-text: #94a3b8;  /* 引き分け文字色 */
 }
 
 /* --- 2. ページ全体のデザイン --- */
@@ -28,27 +35,23 @@ body {
   line-height: 1.6;
 }
 
+/* ページ全体の横幅を決める場所 */
 .wrap {
-  max-width: 900px;
+  max-width: 900px; /* 大きくすると横に広がる */
   margin: 0 auto;
   padding: 24px 16px;
 }
 
+/* 白いカード（箱）のデザイン：丸みや影をいじるならここ */
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 24px;
+  border-radius: 24px; /* 2大きくするともっと丸くなる */
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(209, 220, 232, 0.3);
+  box-shadow: 0 4px 12px rgba(209, 220, 232, 0.3); /* ふわっとした影 */
 }
 
-.page-title {
-  font-family: "Darumadrop One", cursive;
-  font-size: 24px;
-  color: var(--accent-blue-gray);
-  margin-bottom: 20px;
-}
-
+/* 検索ボックス（ハイライトエリア）の調整 */
 #highlight {
   margin-bottom: 20px;
   padding: 16px;
@@ -58,75 +61,38 @@ body {
 }
 
 .search-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: flex;         /* 横に並べる設定 */
+  align-items: center;   /* 上下中央に揃える */
+  gap: 10px;             /* 要素同士の隙間を調整 */
   padding: 8px 16px;
   border: 1px solid var(--border-color);
   border-radius: 999px;
   background: #fff;
-  max-width: 450px;
+  max-width: 450px;     
   margin: 0 auto;
 }
 
-/* おすすめランキング：17:00時点の横並び設定を復元 */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.stat-card {
-  background: #fff;
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 16px;
-}
-
-.stat-title {
-  font-size: 13px;
-  font-weight: bold;
+.search-label {
+  font-family: "Darumadrop One", cursive;
+  font-size: 12px;
   color: var(--accent-blue-gray);
-  margin-bottom: 8px;
-  border-bottom: 1px dashed var(--border-color);
-  padding-bottom: 4px;
+  text-transform: uppercase;
 }
 
-.stat-body {
-  font-size: 13px;
-  line-height: 1.8;
-  color: var(--text-main);
-}
-
-/* カレンダー周辺：月切り替えの横並びデザイン */
-.calendar-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 12px;
-}
-
-#calPrev, #calNext {
-  padding: 4px 10px;
-  cursor: pointer;
-  border: 1px solid var(--border-color);
-  background: #fff;
-  border-radius: 6px;
-  color: var(--text-main);
-}
-
-#calTitle {
+.search-input {
+  flex: 1;               /* ★他のボタンと重ならないように伸びる設定 */
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
   font-family: "Kiwi Maru", serif;
-  font-size: 16px;
-  color: var(--text-main);
+  min-width: 0;
 }
 
-/* カレンダー本体：文字重なりを解消 */
+/* --- 3. カレンダーのデザイン --- */
 #calendar {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr); /* 7列（1週間）に並べる */
   max-width: 320px;
   margin: 16px auto;
   border: 1px solid var(--border-color);
@@ -134,20 +100,259 @@ body {
   overflow: hidden;
 }
 
+/* 曜日のヘッダー（Sun, Mon...） */
+.calendar-head {
+  text-align: center;
+  font-family: "Darumadrop One", cursive;
+  font-size: 11px;
+  background-color: var(--accent-blue-gray);
+  color: #ffffff;
+  padding: 8px 0;
+}
+
+/* 土曜日の文字色（タンクの青とおそろい） */
+.calendar-head.day-6 {
+  color: var(--pastel-win-bg) !important; /* #e7f3ff */ 
+}
+/* 日曜日の文字色（DPSのピンクとおそろい） */
+.calendar-head.day-0 {
+  color: var(--pastel-loss-bg) !important; /* #fff0f3 */
+}
+
+/* データがない日 */
+.cal-date {
+  font-family: "Darumadrop One", cursive;
+  font-size: 14px;
+  color: #cbd5e1; /* 薄いグレー */
+  line-height: 1;
+}
+
+/* データがある日 */
+.calendar-cell.win .cal-date,
+.calendar-cell.loss .cal-date,
+.calendar-cell.draw .cal-date {
+  color: var(--text-main) !important; 
+  font-weight: bold; 
+}
+
+/* 日付1つずつのマス目 */
 .calendar-cell {
-  height: 56px; /* 高さを広げて重なり防止 */
+  height: 42px;
   border: 0.5px solid #edf2f7;
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.cal-date { font-family: "Darumadrop One", cursive; font-size: 14px; }
-.cal-score { font-size: 11px; margin-top: 4px; }
+/* 日付がない空っぽのマス */
+.calendar-cell.empty {
+  background-color: #fafbfd;
+  cursor: default;
+}
 
-/* 🕒タブ用の最小設定 */
-.time-chart-wrapper { width: 100%; height: 250px; margin: 10px 0; }
-.day-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-.day-tag { cursor: pointer; padding: 2px 8px; background: #fff; font-size: 13px; border: 1px solid var(--border-color); }
-.day-tag.active { background: var(--accent-blue-gray) !important; color: #fff !important; }
+/* --- クリアボタンのデザイン --- */
+.clear-button {
+  background: none;             /* 背景をなしにする */
+  border: none;                 /* 枠線をなしにする */
+  color: var(--text-sub);       /* 文字の色（薄いグレー） */
+  cursor: pointer;              /* マウスを乗せたときに指の形にする */
+  font-size: 20px;              /* バツ印の大きさ */
+  padding: 0 8px;               /* 押しやすいように左右に余白を作る */
+  line-height: 1;               /* 高さをバツ印に合わせる */
+  display: none;                /* 最初は隠しておく（JSで文字があるときだけ出す） */
+}
+
+/* マウスを乗せたときの色（アクセントカラー） */
+.clear-button:hover {
+  color: var(--accent-blue-gray);
+}
+
+/* 更新ボタン */
+.refresh-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  color: var(--accent-blue-gray);
+  transition: transform 0.3s ease;
+}
+.refresh-button:hover {
+  transform: rotate(180deg);
+}
+
+/* --- 4. ジョブタブ（見出しとカード） --- */
+
+/* ロールごとの外枠（タンク、ヒーラーなど） */
+.role-details {
+  margin-top: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* ロール別の見出し色 */
+.role-tank .role-summary   { background-color: #e7f3ff !important; color: #7b99b9 !important; }
+.role-healer .role-summary { background-color: #e9f7ef !important; color: #89b99d !important; }
+.role-melee .role-summary,
+.role-range .role-summary,
+.role-caster .role-summary { background-color: #fff0f3 !important; color: #ce97a8 !important; }
+
+/* 見出しの文字の大きさや余白 */
+.role-summary {
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ジョブカードが並ぶ白いエリア */
+.job-grid-container {
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* カード同士の隙間 */
+  background: #fff !important;
+}
+
+/* ジョブカード1枚のデザイン*/
+.job-card-item {
+  flex: 0 0 140px; /* カードの横幅 */
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ジョブ名と勝率のテキスト */
+.job-name-label, .job-stat-label {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1.2;
+  white-space: nowrap; /* 折り返しを禁止 */
+}
+
+/* --- 5. 読み込み中のGIF --- */
+.loading-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+  align-items: center;      /* 真ん中に寄せる */
+  justify-content: center;   /* 真ん中に寄せる */
+  z-index: 10;
+}
+
+/* activeクラスがついた時だけ表示する */
+.loading-overlay.active { display: flex; }
+
+/* GIFの大きさ：大きくしたいときはここをいじる */
+.loading-gif {
+  width: 120px;
+  height: auto;
+}
+
+/* --- 6. その他：リンクなど --- */
+.back-link a {
+  text-decoration: none; /* 下線を消す設定 */
+  color: var(--text-sub);
+  font-size: 13px;
+}
+
+/* 曜日タグのコンテナ */
+.day-filter-container {
+  margin-top: 16px;
+  padding: 12px;
+}
+
+.stat-sub-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--accent-blue-gray);
+  margin-bottom: 8px;
+}
+
+/* 曜日タグのデザイン */
+.day-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.day-tag {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--text-sub);
+}
+
+.day-tag:hover {
+  background: var(--base-bg);
+}
+
+/* 選ばれている曜日の色（ブルーグレー） */
+.day-tag.active {
+  background: var(--accent-blue-gray);
+  color: #fff;
+  border-color: var(--accent-blue-gray);
+}
+
+/* 時間帯チャートのコンテナ */
+.time-chart-container {
+  width: 100%;
+  height: 250px;
+  margin-top: 10px;
+}
+
+/* --- 7. 🕒タブ：時間帯別チャートとフィルタ --- */
+
+.time-chart-wrapper {
+  width: 100%;
+  height: 250px;
+  margin: 10px 0;
+}
+
+.filter-section {
+  margin-top: 16px;
+  padding: 0 4px;
+}
+
+.day-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.day-tag {
+  font-family: "Darumadrop One", cursive;
+  font-size: 13px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  cursor: pointer;
+  color: var(--text-sub);
+  transition: all 0.2s;
+}
+
+.day-tag:hover {
+  background: var(--base-bg);
+}
+
+.day-tag.active {
+  background: var(--accent-blue-gray) !important;
+  color: #fff !important;
+  border-color: var(--accent-blue-gray) !important;
+}
