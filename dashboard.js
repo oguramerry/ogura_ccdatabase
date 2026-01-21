@@ -24,10 +24,37 @@ let viewMonth = now.getMonth();
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("userInput");
   const tabs = document.getElementById("tabButtons");
+  const clearBtn = document.getElementById("clearInput");
   const panelInner = document.getElementById("panelInner");
 
   let statsData = null;
   let activeTab = "main";
+
+  input?.addEventListener("input", () => {
+  if (input.value.length > 0) {
+    clearBtn.style.display = "block";
+  } else {
+    clearBtn.style.display = "none";
+  }
+});
+
+  // クリアボタンが押された時の処理
+clearBtn.addEventListener("click", () => {
+  input.value = "";              // 入力を空にする
+  currentUserForApi = "";        // API用のユーザー名を空にする
+  clearBtn.style.display = "none"; // ボタンを隠す
+  
+  // 画面の表示をリセットする
+  if (matchChartInstance) {
+    matchChartInstance.data.datasets[0].data = [];
+    matchChartInstance.update(); // グラフを空にする
+  }
+  
+  const resultEl = document.getElementById("result");
+  if (resultEl) resultEl.textContent = "試合数 - / 勝率 -"; // サマリをリセット
+  
+  input.focus(); // すぐに再入力できるようにカーソルを合わせる
+});
 
   const updateCalendarDisplay = () => {
     const titleEl = document.getElementById("calTitle");
