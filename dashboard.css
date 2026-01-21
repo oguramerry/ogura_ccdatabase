@@ -243,6 +243,13 @@ body {
   z-index: 5;
 }
 
+/* カレンダーの空きセルの設定 */
+.calendar-cell.empty {
+  background-color: #fafbfd; /* 格子（#edf2f7）より少しだけ明るいグレー */
+  border: 0.5px solid #edf2f7; /* 他のセルと共通の格子 */
+  cursor: default; /* クリックできないのでカーソルを戻す */
+}
+
 /* タブボタン */
 #tabButtons {
   display: flex;
