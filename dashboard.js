@@ -12,7 +12,6 @@ const CC_CONFIG = {
   CYCLE_MS: 90 * 60 * 1000,
   
   // 計算用ローテーション順 (基準日のマップから開始)
-  // ※tab-renderer.jsの表示順とは独立して、正しい順序で計算
   ROTATION: [
     "Clockwork Castletown",
     "Bayside Battleground", 
@@ -23,12 +22,12 @@ const CC_CONFIG = {
   ]
 };
 
-const GAS_BASE =
-  "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
+const GAS_BASE = "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
 
 let matchChartInstance = null;
 const now = new Date();
 
+// 今日の日付 (YYYY-MM-DD)
 let currentDate = (() => {
   const now = new Date();
   const y = now.getFullYear();
@@ -48,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.getElementById("tabButtons");
   const clearBtn = document.getElementById("clearInput");
   const panelInner = document.getElementById("panelInner");
-  updateMapHighlight();
 
   let statsData = null;
   let activeTab = "main";
@@ -176,6 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       resultEl.textContent =
         `試合数 ${m.total} / 勝率 ${m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-"}`;
     }
+    // ランキング更新：ジョブ名は ui-parts.js の JOB_NAME_JP を使う
     updateTopRanking("topStageBody", data.byStage, (row) => `${row.stage}`);
     updateTopRanking("topJobBody", data.byJob, (row) => `${JOB_NAME_JP[row.job] ?? row.job}`);
     updateTopRanking("topHourBody", data.byHour, (row) => `${formatHourRange(row.hour)}`);
@@ -282,9 +281,13 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchAvailableDates(currentUserForApi);
     fetchMatchHistory(currentUserForApi, currentDate);
   });
+  
+  // マップ強調表示の開始
+  updateMapHighlight();
 });
 
 // --- 以下、関数定義 ---
+
 // --- マップスケジュール計算 ---
 function getMapSchedule() {
   const now = new Date().getTime();
@@ -315,7 +318,7 @@ function updateMapHighlight() {
     if (badgeArea) badgeArea.innerHTML = ""; 
   });
 
-  // ■ ID生成ヘルパー (仕様: 空白削除)
+  // ID生成ヘルパー (仕様: 空白削除)
   const toId = (key) => "stage-card-" + key.replace(/\s+/g, "");
 
   // 2. 現在のマップを強調
@@ -416,29 +419,22 @@ function ensureEmptyChart() {
               const jobName = (d.job && JOB_NAME_JP[d.job]) ? JOB_NAME_JP[d.job] : (d.job || "なし");
               const stageName = (d.stage && STAGE_NAME_JP[d.stage]) ? STAGE_NAME_JP[d.stage] : (d.stage || "なし");
 
-              // --- ★修正箇所：日付の補正処理 ---
-              let displayDate = d.date; // ベースの日付 (YYYY-MM-DD)
-              
+              // --- 日付の補正処理 ---
+              let displayDate = d.date; 
               if (d.date && d.time) {
                 const hour = parseInt(d.time.split(":")[0], 10);
-                
-                // 0時～5時の間なら、日付を翌日に進める
                 if (hour < 5) {
                   const parts = d.date.split("-");
-                  // ローカルタイムで計算するために年・月・日でDate作成
                   const dt = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
-                  dt.setDate(dt.getDate() + 1); // 1日足す
-
+                  dt.setDate(dt.getDate() + 1); 
                   const y = dt.getFullYear();
                   const m = String(dt.getMonth() + 1).padStart(2, "0");
                   const day = String(dt.getDate()).padStart(2, "0");
                   displayDate = `${y}-${m}-${day}`;
                 }
               }
-
-              const yyDate = displayDate ? displayDate.slice(2) : ""; // YY-MM-DD形式へ
-              // -------------------------------
-
+              const yyDate = displayDate ? displayDate.slice(2) : ""; 
+              
               return [
                 `試合日時: ${yyDate} ${d.time} (${score})`,
                 `使用ジョブ: ${jobName}`,
