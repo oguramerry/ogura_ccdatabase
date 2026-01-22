@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.getElementById("tabButtons");
   const clearBtn = document.getElementById("clearInput");
   const panelInner = document.getElementById("panelInner");
+  updateMapHighlight();
 
   let statsData = null;
   let activeTab = "main";
@@ -342,12 +343,6 @@ function updateMapHighlight() {
     setTimeout(updateMapHighlight, 1000);
   }
 }
-
-// 初期化時に実行
-document.addEventListener("DOMContentLoaded", () => {
-  // ...既存の処理...
-  updateMapHighlight(); // ★追加
-});
 
 function ensureEmptyChart() {
   const canvas = document.getElementById("matchChart");
