@@ -361,8 +361,8 @@ function updateMapHighlight() {
   });
 
   // 次回ローテーションの2秒後に自動更新を予約
-  const delay = schedule.nextSwitchTime - Date.now() + 2000;
-  setTimeout(updateMapHighlight, delay > 0 ? delay : 1000);
+const delay = Math.max(0, schedule.nextSwitchTime - Date.now());
+setTimeout(updateMapHighlight, delay);
 }
 
 function ensureEmptyChart() {
