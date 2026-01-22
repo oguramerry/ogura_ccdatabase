@@ -140,20 +140,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- タブ制御 ---
-  const render = () => {
-    if (!panelInner || !statsData) return;
-    let html = "";
-    if (window.TabRenderer && window.TabRenderer[activeTab]) {
-      html = window.TabRenderer[activeTab](statsData);
-    } else {
-      html = "表示エラー: Rendererが見つかりません";
-    }
-    panelInner.innerHTML = html;
-    
-    if (activeTab === "stage") {
-updateMapHighlight();
-}
-  };
+const render = () => {
+  if (!panelInner || !statsData) return;
+  let html = "";
+  if (window.TabRenderer && window.TabRenderer[activeTab]) {
+    html = window.TabRenderer[activeTab](statsData);
+  }
+  panelInner.innerHTML = html;
+
+  // ★Stageタブの時だけ強調表示とタイマーを開始する
+  if (activeTab === "stage") {
+    updateMapHighlight();
+  }
+};
 
   const setActiveTab = (tab) => {
     activeTab = tab;
@@ -314,41 +313,37 @@ function getMapSchedule() {
 // --- 画面の強調表示更新 ---
 function updateMapHighlight() {
   const schedule = getMapSchedule();
-  
-  // 1. 既存の強調をリセット
-  document.querySelectorAll('.stage-card-item').forEach(el => {
-    el.classList.remove('current-map', 'next-map');
-    const badgeArea = el.querySelector('.stage-badge-area');
-    if (badgeArea) badgeArea.innerHTML = ""; 
-  });
+  const nextTimes = getAllStageNextTimes();
 
-  // ID生成ヘルパー (仕様: 空白削除)
   const toId = (key) => "stage-card-" + key.replace(/\s+/g, "");
 
-  // 2. 現在のマップを強調
-  const currentEl = document.getElementById(toId(schedule.currentKey));
-  if (currentEl) {
-    currentEl.classList.add('current-map');
-    const badge = currentEl.querySelector('.stage-badge-area');
-    if (badge) badge.innerHTML = `<span class="badge-now">NOW PLAYING</span>`;
-  }
+  // 全カードをループして表示を更新
+  nextTimes.forEach(item => {
+    const el = document.getElementById(toId(item.key));
+    if (!el) return;
 
-  // 3. 次のマップを強調
-  const nextEl = document.getElementById(toId(schedule.nextKey));
-  if (nextEl) {
-    nextEl.classList.add('next-map');
-    const badge = nextEl.querySelector('.stage-badge-area');
-    if (badge) badge.innerHTML = `<span class="badge-next">NEXT</span>`;
-  }
+    // 1. 時間の更新
+    const timeEl = el.querySelector('.stage-next-start');
+    if (timeEl) timeEl.textContent = item.timeStr;
 
-  // 4. タイマーセット (ズレ防止で+2秒)
-  const delay = schedule.nextSwitchTime - new Date().getTime() + 2000;
-  if (delay > 0) {
-    setTimeout(updateMapHighlight, delay);
-    console.log(`次のマップ更新まで: ${Math.floor(delay / 60000)}分`);
-  } else {
-    setTimeout(updateMapHighlight, 1000);
-  }
+    // 2. クラスとバッジのリセット
+    el.classList.remove('current-map', 'next-map');
+    const badgeArea = el.querySelector('.stage-badge-area');
+    if (badgeArea) badgeArea.innerHTML = "";
+
+    // 3. 「現在」と「次」の強調
+    if (item.key === schedule.currentKey) {
+      el.classList.add('current-map');
+      if (badgeArea) badgeArea.innerHTML = `<span class="badge-now">NOW</span>`;
+    } else if (item.key === schedule.nextKey) {
+      el.classList.add('next-map');
+      if (badgeArea) badgeArea.innerHTML = `<span class="badge-next">NEXT</span>`;
+    }
+  });
+
+  // 次回ローテーションの2秒後に自動更新を予約
+  const delay = schedule.nextSwitchTime - Date.now() + 2000;
+  setTimeout(updateMapHighlight, delay > 0 ? delay : 1000);
 }
 
 function ensureEmptyChart() {
@@ -555,5 +550,24 @@ function applyCalendarColors() {
     cell.innerHTML = innerHTML;
     if (d === today) cell.classList.add("today");
     if (d === currentDate) cell.classList.add("selected");
+  });
+}
+
+function getAllStageNextTimes() {
+  const nowMs = Date.now();
+  const diff = nowMs - CC_CONFIG.ANCHOR_EPOCH;
+  const currentSlotCount = Math.floor(diff / CC_CONFIG.CYCLE_MS);
+  const currentSlotStartTime = CC_CONFIG.ANCHOR_EPOCH + (currentSlotCount * CC_CONFIG.CYCLE_MS);
+  const currentIdx = currentSlotCount % CC_CONFIG.ROTATION.length;
+
+  return CC_CONFIG.ROTATION.map((key, i) => {
+    // 現在のマップから見て、そのマップが何スロット後かを算出
+    let offset = (i - currentIdx + CC_CONFIG.ROTATION.length) % CC_CONFIG.ROTATION.length;
+    const targetStartTime = currentSlotStartTime + (offset * CC_CONFIG.CYCLE_MS);
+    const d = new Date(targetStartTime);
+    return {
+      key: key,
+      timeStr: `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+    };
   });
 }
