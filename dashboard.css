@@ -561,16 +561,80 @@ body {
   border-radius: 4px;
 }
 
+
+/* ステージ選択リボン（横スクロール可能） */
+.stage-selector-ribbon {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.stage-selector-ribbon::-webkit-scrollbar {
+  display: none;
+}
+
+/* リボン内のボタン */
+.stage-ribbon-btn {
+  white-space: nowrap;
+  font-family: "Kiwi Maru", serif;
+  background: #fff;
+  border: 1px solid var(--border-color); /* ★枠線の色を変えるならここ */
+  padding: 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--text-sub);
+  transition: all 0.2s;
+}
+
+/* 選択されている時のボタン */
+.stage-ribbon-btn.active {
+  background: var(--accent-blue-gray); /* ★選択中の背景色を変えるならここ */
+  color: #fff; /* ★選択中の文字色を変えるならここ */
+  border-color: var(--accent-blue-gray);
+}
+
+/* --- ステージ別・ボタンの色設定（目印！） --- */
+
+/* パライストラ (青系とか) */
+.stage-ribbon-btn.btn-Palaistra.active {
+  background-color: #8297B2; /* ★好きな色に */
+  border-color: #8297B2;
+}
+
+/* ヴォルカニック・ハート (赤系とか) */
+.stage-ribbon-btn.btn-VolcanicHeart.active {
+  background-color: #e57373; /* ★好きな色に */
+  border-color: #e57373;
+}
+
+/* 東方絡繰御殿 (紫系とか) */
+.stage-ribbon-btn.btn-ClockworkCastletown.active {
+  background-color: #a1887f;
+  border-color: #a1887f;
+}
+
+/* ベイサイド・バトルグラウンド */
+.stage-ribbon-btn.btn-BaysideBattleground.active {
+  background-color: #4db6ac;
+}
+
+/* クラウドナイン */
+.stage-ribbon-btn.btn-CloudNine.active {
+  background-color: #64b5f6;
+}
+
+/* レッド・サンズ */
+.stage-ribbon-btn.btn-RedSands.active {
+  background-color: #ffb74d;
+}
+
 @keyframes pulse-border {
   0% { box-shadow: 0 0 0 0 rgba(148, 163, 184, 0.4); }
   70% { box-shadow: 0 0 0 4px rgba(148, 163, 184, 0); }
   100% { box-shadow: 0 0 0 0 rgba(148, 163, 184, 0); }
-}
-
-/* 勝率による背景色 (tab-rendererで指定) */
-.bg-win-color {
-  background-color: var(--pastel-win-bg) !important;
-}
-.bg-loss-color {
-  background-color: var(--pastel-loss-bg) !important;
 }
