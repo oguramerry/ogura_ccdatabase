@@ -126,40 +126,20 @@ stage: (statsData) => {
     </div>
   `;
 },
-
 // ■ Job × Stageタブ（リボン切り替え版）
 jobStage: (statsData) => {
- 
-  const STAGES = [
-    "Palaistra", 
-    "Volcanic Heart", 
-    "Clockwork Castletown", 
-    "Bayside Battleground", 
-    "Cloud Nine", 
-    "Red Sands"
-  ];
-  const STAGE_NAME_MAP = {
-    "Palaistra": "パライストラ", 
-    "Volcanic Heart": "ヴォルカニック・ハート", 
-    "Clockwork Castletown": "東方絡繰御殿",
-    "Bayside Battleground": "ベイサイド・バトルグラウンド", 
-    "Cloud Nine": "クラウドナイン", 
-    "Red Sands": "レッド・サンズ"
-  };
-
-  // ステージ選択リボンの作成
-let ribbonHtml = STAGES.map(key => {
-    // 空白を抜いた名前（Palaistra, VolcanicHeartなど）をクラス名にする
+  const STAGES = ["Palaistra", "Volcanic Heart", "Clockwork Castletown", "Bayside Battleground", "Cloud Nine", "Red Sands"];
+  
+  // ★ ui-parts.js の STAGE_NAME_JP を使うように統一
+  let ribbonHtml = STAGES.map(key => {
     const safeId = key.replace(/\s+/g, ""); 
-    return `<button class="stage-ribbon-btn btn-${safeId}" data-stage-jp="${STAGE_NAME_MAP[key]}">${STAGE_NAME_MAP[key]}</button>`;
+    return `<button class="stage-ribbon-btn btn-${safeId}" data-stage-jp="${STAGE_NAME_JP[key]}">${STAGE_NAME_JP[key]}</button>`;
   }).join("");
 
   return `
     <div class="stat-card">
       <p class="stat-title">ステージ別詳細</p>
-      <div class="stage-selector-ribbon">
-        ${ribbonHtml}
-      </div>
+      <div class="stage-selector-ribbon">${ribbonHtml}</div>
       <div id="job-stage-detail-container"></div>
     </div>
   `;
