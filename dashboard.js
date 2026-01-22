@@ -1,5 +1,28 @@
 // dashboard.js
 
+// ==========================================
+// ■ マップローテーション設定 (CC_CONFIG)
+//   将来仕様が変わったらここを直すだけ！
+// ==========================================
+const CC_CONFIG = {
+  // 基準日: 2026年1月20日 16:00:00 JST (東方絡繰御殿 開始時刻)
+  ANCHOR_EPOCH: 1768978800000, 
+  
+  // 1サイクルの時間 (90分)
+  CYCLE_MS: 90 * 60 * 1000,
+  
+  // 計算用ローテーション順 (基準日のマップから開始)
+  // ※tab-renderer.jsの表示順とは独立して、正しい順序で計算
+  ROTATION: [
+    "Clockwork Castletown",
+    "Bayside Battleground", 
+    "Cloud Nine", 
+    "Red Sands", 
+    "Palaistra", 
+    "Volcanic Heart"
+  ]
+};
+
 const GAS_BASE =
   "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
 
@@ -261,6 +284,70 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // --- 以下、関数定義 ---
+// --- マップスケジュール計算 ---
+function getMapSchedule() {
+  const now = new Date().getTime();
+  let diff = now - CC_CONFIG.ANCHOR_EPOCH;
+  
+  const totalDuration = CC_CONFIG.CYCLE_MS * CC_CONFIG.ROTATION.length;
+  while (diff < 0) diff += totalDuration;
+
+  const totalSlots = Math.floor(diff / CC_CONFIG.CYCLE_MS);
+  const currentIdx = totalSlots % CC_CONFIG.ROTATION.length;
+  const nextIdx = (currentIdx + 1) % CC_CONFIG.ROTATION.length;
+
+  return {
+    currentKey: CC_CONFIG.ROTATION[currentIdx],
+    nextKey: CC_CONFIG.ROTATION[nextIdx],
+    nextSwitchTime: CC_CONFIG.ANCHOR_EPOCH + ((totalSlots + 1) * CC_CONFIG.CYCLE_MS)
+  };
+}
+
+// --- 画面の強調表示更新 ---
+function updateMapHighlight() {
+  const schedule = getMapSchedule();
+  
+  // 1. 既存の強調をリセット
+  document.querySelectorAll('.stage-card-item').forEach(el => {
+    el.classList.remove('current-map', 'next-map');
+    const badgeArea = el.querySelector('.stage-badge-area');
+    if (badgeArea) badgeArea.innerHTML = ""; 
+  });
+
+  // ■ ID生成ヘルパー (仕様: 空白削除)
+  const toId = (key) => "stage-card-" + key.replace(/\s+/g, "");
+
+  // 2. 現在のマップを強調
+  const currentEl = document.getElementById(toId(schedule.currentKey));
+  if (currentEl) {
+    currentEl.classList.add('current-map');
+    const badge = currentEl.querySelector('.stage-badge-area');
+    if (badge) badge.innerHTML = `<span class="badge-now">NOW PLAYING</span>`;
+  }
+
+  // 3. 次のマップを強調
+  const nextEl = document.getElementById(toId(schedule.nextKey));
+  if (nextEl) {
+    nextEl.classList.add('next-map');
+    const badge = nextEl.querySelector('.stage-badge-area');
+    if (badge) badge.innerHTML = `<span class="badge-next">NEXT</span>`;
+  }
+
+  // 4. タイマーセット (ズレ防止で+2秒)
+  const delay = schedule.nextSwitchTime - new Date().getTime() + 2000;
+  if (delay > 0) {
+    setTimeout(updateMapHighlight, delay);
+    console.log(`次のマップ更新まで: ${Math.floor(delay / 60000)}分`);
+  } else {
+    setTimeout(updateMapHighlight, 1000);
+  }
+}
+
+// 初期化時に実行
+document.addEventListener("DOMContentLoaded", () => {
+  // ...既存の処理...
+  updateMapHighlight(); // ★追加
+});
 
 function ensureEmptyChart() {
   const canvas = document.getElementById("matchChart");
