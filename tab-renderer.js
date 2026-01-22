@@ -32,6 +32,7 @@ window.TabRenderer = {
     Object.keys(JOB_ROLES).forEach(roleKey => {
       const jobsInRole = JOB_ROLES[roleKey];
       const roleName = ROLE_NAME_JP[roleKey];
+      const roleClass = "role-" + roleKey.toLowerCase();
 
       let cardsHtml = "";
       
@@ -69,7 +70,7 @@ cardsHtml += `
       if (cardsHtml) {
         html += `
           <details class="role-details" open>
-            <summary class="role-summary">${roleName}</summary>
+            <summary class="role-summary ${roleClass}">${roleName}</summary>
             <div class="job-grid-container">
               ${cardsHtml}
             </div>
