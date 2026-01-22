@@ -561,6 +561,43 @@ body {
   border-radius: 4px;
 }
 
+
+/* ステージ選択リボン（横スクロール可能） */
+.stage-selector-ribbon {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.stage-selector-ribbon::-webkit-scrollbar {
+  display: none;
+}
+
+/* リボン内のボタン */
+.stage-ribbon-btn {
+  white-space: nowrap;
+  font-family: "Kiwi Maru", serif;
+  background: #fff;
+  border: 1px solid var(--border-color); /* ★枠線の色を変えるならここ */
+  padding: 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--text-sub);
+  transition: all 0.2s;
+}
+
+/* 選択されている時のボタン */
+.stage-ribbon-btn.active {
+  background: var(--accent-blue-gray); /* ★選択中の背景色を変えるならここ */
+  color: #fff; /* ★選択中の文字色を変えるならここ */
+  border-color: var(--accent-blue-gray);
+}
+
 @keyframes pulse-border {
   0% { box-shadow: 0 0 0 0 rgba(148, 163, 184, 0.4); }
   70% { box-shadow: 0 0 0 4px rgba(148, 163, 184, 0); }
