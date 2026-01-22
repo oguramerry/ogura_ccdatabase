@@ -331,11 +331,31 @@ function ensureEmptyChart() {
               if (d.isStart) return "スタート";
 
               const score = d.y > 0 ? `+${d.y}` : d.y;
-
               const jobName = (d.job && JOB_NAME_JP[d.job]) ? JOB_NAME_JP[d.job] : (d.job || "なし");
               const stageName = (d.stage && STAGE_NAME_JP[d.stage]) ? STAGE_NAME_JP[d.stage] : (d.stage || "なし");
 
-              const yyDate = d.date ? d.date.slice(2) : "";
+              // --- ★修正箇所：日付の補正処理 ---
+              let displayDate = d.date; // ベースの日付 (YYYY-MM-DD)
+              
+              if (d.date && d.time) {
+                const hour = parseInt(d.time.split(":")[0], 10);
+                
+                // 0時～5時の間なら、日付を翌日に進める
+                if (hour < 5) {
+                  const parts = d.date.split("-");
+                  // ローカルタイムで計算するために年・月・日でDate作成
+                  const dt = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+                  dt.setDate(dt.getDate() + 1); // 1日足す
+
+                  const y = dt.getFullYear();
+                  const m = String(dt.getMonth() + 1).padStart(2, "0");
+                  const day = String(dt.getDate()).padStart(2, "0");
+                  displayDate = `${y}-${m}-${day}`;
+                }
+              }
+
+              const yyDate = displayDate ? displayDate.slice(2) : ""; // YY-MM-DD形式へ
+              // -------------------------------
 
               return [
                 `試合日時: ${yyDate} ${d.time} (${score})`,
