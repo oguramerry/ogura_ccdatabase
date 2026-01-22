@@ -306,9 +306,6 @@ const render = () => {
     fetchAvailableDates(currentUserForApi);
     fetchMatchHistory(currentUserForApi, currentDate);
   });
-  
-  // マップ強調表示の開始
-  updateMapHighlight();
 });
 
 // --- 以下、関数定義 ---
