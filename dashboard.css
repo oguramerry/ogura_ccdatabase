@@ -461,3 +461,100 @@ body {
   background-color: #ffb7b2 !important; /* ★DPS */
   color: #333 !important;
 }
+
+/* --- Jobタブ用：ui-parts.jsの "RANGE" に対応する保険 --- */
+.role-range {
+  background-color: #ffb7b2 !important;
+  color: #333 !important;
+}
+
+/* --- ステージカードのスタイル --- */
+.stage-grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* スマホなら1列 */
+  gap: 8px;
+}
+/* PCなどの広い画面なら2列にする場合 */
+@media (min-width: 600px) {
+  .stage-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.stage-card-item {
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.stage-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-name-text {
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+}
+
+.stage-stat-text {
+  font-size: 11px;
+  color: #666;
+}
+
+/* バッジエリア */
+.stage-badge-area {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "Darumadrop One", cursive;
+}
+
+/* --- 動的スタイル（これが今の時間に合わせて動くやつ！） --- */
+
+/* 現在開催中 (太枠 + 少し浮き出る) */
+.current-map {
+  border: 2px solid #8297B2 !important; /* アクセントカラー */
+  background-color: #f8fafc;
+  box-shadow: 0 4px 12px rgba(130, 151, 178, 0.2);
+  transform: scale(1.02);
+}
+
+.badge-now {
+  background: #8297B2;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* 次回開催 (点滅アニメーション) */
+.next-map {
+  border: 1px dashed #cbd5e1;
+  animation: pulse-border 2s infinite;
+}
+
+.badge-next {
+  color: #94a3b8;
+  border: 1px solid #94a3b8;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+@keyframes pulse-border {
+  0% { box-shadow: 0 0 0 0 rgba(148, 163, 184, 0.4); }
+  70% { box-shadow: 0 0 0 4px rgba(148, 163, 184, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(148, 163, 184, 0); }
+}
+
+/* 勝率による背景色 (tab-rendererで指定) */
+.bg-win-color {
+  background-color: var(--pastel-win-bg) !important;
+}
+.bg-loss-color {
+  background-color: var(--pastel-loss-bg) !important;
+}
