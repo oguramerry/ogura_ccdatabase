@@ -431,3 +431,33 @@ body {
   width: 120px;     
   height: auto;
 }
+
+/* --- JOBタブ：ロール別見出し（帯）の色設定 --- */
+
+/* 以下の色コードを書き換えることで背景色を変更できる。
+  文字色を変えたい場合は color: #xxxxxx; を追加。
+*/
+
+/* ■ タンク (Tank) -> パステルブルー */
+.role-tank {
+  background-color: #a2cffe !important; /* ★タンク */
+  color: #333 !important; /* 文字色（必要なら変更） */
+}
+
+/* ■ ヒーラー (Healer) -> パステルライムグリーン */
+.role-healer {
+  background-color: #b0f2c2 !important; /* ★ヒーラー */
+  color: #333 !important;
+}
+
+/* ■ DPS (メレー・レンジ・キャスター) -> パステルピンク */
+/* データ上のキー名に合わせて複数指定 */
+.role-dps, 
+.role-melee, 
+.role-ranged, 
+.role-physical_ranged, 
+.role-caster, 
+.role-magical_ranged {
+  background-color: #ffb7b2 !important; /* ★DPS */
+  color: #333 !important;
+}
