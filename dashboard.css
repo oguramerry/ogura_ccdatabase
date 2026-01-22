@@ -638,11 +638,3 @@ body {
   70% { box-shadow: 0 0 0 4px rgba(148, 163, 184, 0); }
   100% { box-shadow: 0 0 0 0 rgba(148, 163, 184, 0); }
 }
-
-/* 勝率による背景色 (tab-rendererで指定) */
-.bg-win-color {
-  background-color: var(--pastel-win-bg) !important;
-}
-.bg-loss-color {
-  background-color: var(--pastel-loss-bg) !important;
-}
