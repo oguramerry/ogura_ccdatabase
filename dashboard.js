@@ -580,13 +580,23 @@ function getAllStageNextTimes() {
   const currentIdx = currentSlotCount % CC_CONFIG.ROTATION.length;
 
   return CC_CONFIG.ROTATION.map((key, i) => {
-    // 現在のマップから見て、そのマップが何スロット後かを算出
+    // 現在のマップから見て、何スロット後かを算出
     let offset = (i - currentIdx + CC_CONFIG.ROTATION.length) % CC_CONFIG.ROTATION.length;
+    
+    // そのスロットの開始と終了を計算
     const targetStartTime = currentSlotStartTime + (offset * CC_CONFIG.CYCLE_MS);
-    const d = new Date(targetStartTime);
+    const targetEndTime = targetStartTime + CC_CONFIG.CYCLE_MS;
+    
+    const dStart = new Date(targetStartTime);
+    const dEnd = new Date(targetEndTime);
+    
+    // HH:mm 形式に整える
+    const startStr = `${String(dStart.getHours()).padStart(2, '0')}:${String(dStart.getMinutes()).padStart(2, '0')}`;
+    const endStr = `${String(dEnd.getHours()).padStart(2, '0')}:${String(dEnd.getMinutes()).padStart(2, '0')}`;
+    
     return {
       key: key,
-      timeStr: `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+      timeStr: `${startStr}～${endStr}` // 余計な文字なし！ちーちゃん専用のシンプル表示
     };
   });
 }
