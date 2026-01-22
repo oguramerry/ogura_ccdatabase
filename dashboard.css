@@ -506,6 +506,19 @@ body {
   color: #333;
 }
 
+.stage-name-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.stage-next-start {
+  font-size: 11px;
+  color: #94a3b8; /* 薄いグレー（--text-sub） */
+  font-weight: normal;
+  font-family: 'Darumadrop One', cursive; /* 数字を手帳っぽく可愛く */
+}
+
 .stage-stat-text {
   font-size: 11px;
   color: #666;
