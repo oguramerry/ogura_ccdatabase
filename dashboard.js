@@ -19,6 +19,7 @@ ROTATION: [
 "Clockwork Castletown",
 "Bayside Battleground"
 ]
+  };
 
 const GAS_BASE = "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
 
@@ -594,7 +595,7 @@ function getAllStageNextTimes() {
     
     return {
       key: key,
-      timeStr: `${startStr}～${endStr}` // 余計な文字なし！ちーちゃん専用のシンプル表示
+      timeStr: `${startStr}～${endStr}` //
     };
   });
 }
