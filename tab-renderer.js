@@ -148,8 +148,10 @@ jobStage: (statsData) => {
   };
 
   // ステージ選択リボンの作成
-  let ribbonHtml = STAGES.map(key => {
-    return `<button class="stage-ribbon-btn" data-stage-jp="${STAGE_NAME_MAP[key]}">${STAGE_NAME_MAP[key]}</button>`;
+let ribbonHtml = STAGES.map(key => {
+    // 空白を抜いた名前（Palaistra, VolcanicHeartなど）をクラス名にする
+    const safeId = key.replace(/\s+/g, ""); 
+    return `<button class="stage-ribbon-btn btn-${safeId}" data-stage-jp="${STAGE_NAME_MAP[key]}">${STAGE_NAME_MAP[key]}</button>`;
   }).join("");
 
   return `
