@@ -5,22 +5,20 @@
 //   将来仕様が変わったらここを直すだけ！
 // ==========================================
 const CC_CONFIG = {
-  // 基準日: 2026年1月20日 16:00:00 JST (東方絡繰御殿 開始時刻)
-  ANCHOR_EPOCH: 1768892400000, 
+  ANCHOR_EPOCH: 1769094000000, 
   
   // 1サイクルの時間 (90分)
   CYCLE_MS: 90 * 60 * 1000,
   
   // 計算用ローテーション順 (基準日のマップから開始)
-  ROTATION: [
-    "Clockwork Castletown",
-    "Bayside Battleground", 
-    "Cloud Nine", 
-    "Red Sands", 
-    "Palaistra", 
-    "Volcanic Heart"
-  ]
-};
+ROTATION: [
+"Cloud Nine",
+"Red Sands",
+"Palaistra",
+"Volcanic Heart",
+"Clockwork Castletown",
+"Bayside Battleground"
+]
 
 const GAS_BASE = "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
 
@@ -361,8 +359,8 @@ function updateMapHighlight() {
   });
 
   // 次回ローテーションの2秒後に自動更新を予約
-  const delay = schedule.nextSwitchTime - Date.now() + 2000;
-  setTimeout(updateMapHighlight, delay > 0 ? delay : 1000);
+const delay = Math.max(0, schedule.nextSwitchTime - Date.now());
+setTimeout(updateMapHighlight, delay);
 }
 
 function ensureEmptyChart() {
