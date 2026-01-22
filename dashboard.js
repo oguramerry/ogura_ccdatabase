@@ -149,6 +149,10 @@ document.addEventListener("DOMContentLoaded", () => {
       html = "表示エラー: Rendererが見つかりません";
     }
     panelInner.innerHTML = html;
+    
+    if (activeTab === "stage") {
+updateMapHighlight();
+}
   };
 
   const setActiveTab = (tab) => {
