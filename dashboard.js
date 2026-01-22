@@ -148,6 +148,28 @@ const render = () => {
   }
   panelInner.innerHTML = html;
 
+  // Job*Stageタブの時だけの特別処理
+  if (activeTab === "jobStage") {
+    const ribbon = panelInner.querySelector('.stage-selector-ribbon');
+    const container = document.getElementById('job-stage-detail-container');
+    
+    ribbon?.addEventListener('click', (e) => {
+      const btn = e.target.closest('.stage-ribbon-btn');
+      if (!btn) return;
+
+      // ボタンの見た目（active）を切り替え
+      ribbon.querySelectorAll('.stage-ribbon-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // 中身のグリッドを生成して表示
+      const stageJp = btn.dataset.stageJp;
+      container.innerHTML = window.TabRenderer.renderJobStageGrid(stageJp, statsData);
+    });
+
+    // 最初にパライストラを選択状態にする
+    ribbon?.querySelector('.stage-ribbon-btn')?.click();
+  }
+
   // ★Stageタブの時だけ強調表示とタイマーを開始する
   if (activeTab === "stage") {
     updateMapHighlight();
