@@ -83,71 +83,50 @@ cardsHtml += `
   },
 
 // ■ Stageタブ
-  stage: (statsData) => {
-    // 1. 表示順の定義
-    const STAGE_ORDER = [
-      "Palaistra", 
-      "Volcanic Heart",
-      "Clockwork Castletown",
-      "Bayside Battleground", 
-      "Cloud Nine", 
-      "Red Sands"
-    ];
+// ■ Stageタブ
+stage: (statsData) => {
+  const STAGE_ORDER = ["Palaistra", "Volcanic Heart", "Clockwork Castletown", "Bayside Battleground", "Cloud Nine", "Red Sands"];
+  const STAGE_NAME_MAP = {
+    "Palaistra": "パライストラ", "Volcanic Heart": "ヴォルカニック・ハート", "Clockwork Castletown": "東方絡繰御殿",
+    "Bayside Battleground": "ベイサイド・バトルグラウンド", "Cloud Nine": "クラウドナイン", "Red Sands": "レッド・サンズ"
+  };
 
-    // 2. 表示名とデータ検索用の日本語マッピング
-    const STAGE_NAME_MAP = {
-      "Palaistra": "パライストラ",
-      "Volcanic Heart": "ヴォルカニック・ハート",
-      "Clockwork Castletown": "東方絡繰御殿",
-      "Bayside Battleground": "ベイサイド・バトルグラウンド",
-      "Cloud Nine": "クラウドナイン",
-      "Red Sands": "レッド・サンズ"
-    };
+  let html = "";
+  const mapStats = statsData.byStage || [];
 
-    let html = "";
-    const mapStats = statsData.byStage || [];
+  STAGE_ORDER.forEach(engKey => {
+    const jpName = STAGE_NAME_MAP[engKey];
+    const row = mapStats.find(r => r.stage === jpName) || { total: 0, winRate: 0 };
+    const winRate = row.total > 0 ? (row.winRate * 100).toFixed(1) : "-";
+    
+    // 勝率による背景色のクラス
+    let colorClass = "";
+    if (row.total > 0) {
+      colorClass = row.winRate > 0.5 ? "bg-win-color" : (row.winRate < 0.5 ? "bg-loss-color" : "");
+    }
+    
+    const safeId = engKey.replace(/\s+/g, "");
 
-    // 3. 固定順でループしてカードを作成
-    STAGE_ORDER.forEach(engKey => {
-      const jpName = STAGE_NAME_MAP[engKey];
-      
-      // 統計データから該当ステージを探す（日本語名で検索）
-      const row = mapStats.find(r => r.stage === jpName) || { total: 0, winRate: 0 };
-      
-      // 勝率計算
-      const winRate = row.total > 0 ? (row.winRate * 100).toFixed(1) : "-";
-      
-      // 色クラスの決定
-      let colorClass = "";
-      if (row.total > 0) {
-        if (row.winRate > 0.5) colorClass = "bg-win-color";
-        else if (row.winRate < 0.5) colorClass = "bg-loss-color";
-      }
-
-      // ■ ID仕様: 英語名の空白を除去してIDにする (例: "Red Sands" -> "RedSands")
-      // ※ dashboard.js 側でも同じロジックでIDを探す
-      const safeId = engKey.replace(/\s+/g, "");
-
-      html += `
-        <div id="stage-card-${safeId}" class="stage-card-item ${colorClass}">
-          <div class="stage-info">
+    html += `
+      <div id="stage-card-${safeId}" class="stage-card-item ${colorClass}">
+        <div class="stage-info">
+          <div class="stage-name-row">
             <span class="stage-name-text">${jpName}</span>
-            <span class="stage-stat-text">${winRate}% / ${row.total}試合</span>
-          </div>
-          <div class="stage-badge-area"></div>
+            <span class="stage-next-start"></span> </div>
+          <span class="stage-stat-text">${winRate}% / ${row.total}試合</span>
         </div>
-      `;
-    });
-
-    return `
-      <div class="stat-card">
-        <p class="stat-title">ステージリスト</p>
-        <div class="stage-grid-container">
-          ${html}
-        </div>
+        <div class="stage-badge-area"></div>
       </div>
     `;
-  },
+  });
+
+  return `
+    <div class="stat-card">
+      <p class="stat-title">ステージリスト</p>
+      <div class="stage-grid-container">${html}</div>
+    </div>
+  `;
+},
 
   // ■ Job × Stageタブ
   jobStage: (statsData) => {
