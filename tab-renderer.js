@@ -209,7 +209,7 @@ renderJobStageGrid: (stageJpName, statsData) => {
     `;
   });
   return html;
-}
+},
 
   // ■ Timeタブ
   time: (statsData) => {
