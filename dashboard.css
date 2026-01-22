@@ -471,9 +471,12 @@ body {
 /* --- ステージカードのスタイル --- */
 .stage-grid-container {
   display: grid;
-  grid-template-columns: 1fr; /* スマホなら1列 */
+  grid-template-columns: 1fr 1fr;    /* 2列の指定はそのまま */
+  grid-template-rows: repeat(3, 1fr); /* ★ 3行で折り返すように指定 */
+  grid-auto-flow: column;           /* ★ 縦方向に埋めていく設定 */
   gap: 8px;
 }
+
 /* PCなどの広い画面なら2列にする場合 */
 @media (min-width: 600px) {
   .stage-grid-container {
