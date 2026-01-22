@@ -11,15 +11,14 @@ const CC_CONFIG = {
   CYCLE_MS: 90 * 60 * 1000,
   
   // 計算用ローテーション順 (基準日のマップから開始)
-  ROTATION: [
-    "Clockwork Castletown",
-    "Bayside Battleground", 
-    "Cloud Nine", 
-    "Red Sands", 
-    "Palaistra", 
-    "Volcanic Heart"
-  ]
-};
+ROTATION: [
+"Cloud Nine",
+"Red Sands",
+"Palaistra",
+"Volcanic Heart",
+"Clockwork Castletown",
+"Bayside Battleground"
+]
 
 const GAS_BASE = "https://script.google.com/macros/s/AKfycbzC2xkZsjdr4amOc3cc0xvFLubZOfsi3G7Aw5uiqklXDJWnRKUeu6z0cwK7d144Jdi83w/exec";
 
