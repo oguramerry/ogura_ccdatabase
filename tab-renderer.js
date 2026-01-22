@@ -83,7 +83,6 @@ cardsHtml += `
   },
 
 // ■ Stageタブ
-// ■ Stageタブ
 stage: (statsData) => {
   const STAGE_ORDER = ["Palaistra", "Volcanic Heart", "Clockwork Castletown", "Bayside Battleground", "Cloud Nine", "Red Sands"];
   const STAGE_NAME_MAP = {
@@ -128,30 +127,87 @@ stage: (statsData) => {
   `;
 },
 
-  // ■ Job × Stageタブ
-  jobStage: (statsData) => {
-    const arr = statsData.byStageJob;
-    if (!arr || !arr.length) return "job*stage 集計なし";
+// ■ Job × Stageタブ（リボン切り替え版）
+jobStage: (statsData) => {
+ 
+  const STAGES = [
+    "Palaistra", 
+    "Volcanic Heart", 
+    "Clockwork Castletown", 
+    "Bayside Battleground", 
+    "Cloud Nine", 
+    "Red Sands"
+  ];
+  const STAGE_NAME_MAP = {
+    "Palaistra": "パライストラ", 
+    "Volcanic Heart": "ヴォルカニック・ハート", 
+    "Clockwork Castletown": "東方絡繰御殿",
+    "Bayside Battleground": "ベイサイド・バトルグラウンド", 
+    "Cloud Nine": "クラウドナイン", 
+    "Red Sands": "レッド・サンズ"
+  };
 
-    const ranking = arr
-      .filter(row => (row.total ?? 0) >= 5)
-      .slice()
-      .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-      .slice(0, 10);
+  // ステージ選択リボンの作成
+  let ribbonHtml = STAGES.map(key => {
+    return `<button class="stage-ribbon-btn" data-stage-jp="${STAGE_NAME_MAP[key]}">${STAGE_NAME_MAP[key]}</button>`;
+  }).join("");
 
-    const listHtml = ranking.map((row, i) => {
-      const jobJp = JOB_NAME_JP[row.job] ?? row.job;
-      const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-      return `${i + 1}位：${jobJp} × ${row.stage}（${wr}% / ${row.total}試合）`;
-    }).join("<br>");
+  return `
+    <div class="stat-card">
+      <p class="stat-title">ステージ別詳細</p>
+      <div class="stage-selector-ribbon">
+        ${ribbonHtml}
+      </div>
+      <div id="job-stage-detail-container"></div>
+    </div>
+  `;
+},
 
-    return `
-      <div class="stat-card">
-        <p class="stat-title">ジョブ × ステージ top10（勝率）</p>
-        <p class="stat-body">${listHtml}</p>
+// ★ ジョブグリッドを生成するヘルパー（Jobタブのロジックを再利用）
+renderJobStageGrid: (stageJpName, statsData) => {
+  const allData = statsData.byStageJob || [];
+  const stageData = allData.filter(r => r.stage === stageJpName);
+
+  let html = "";
+  Object.keys(JOB_ROLES).forEach(roleKey => {
+    const jobsInRole = JOB_ROLES[roleKey];
+    const roleName = ROLE_NAME_JP[roleKey];
+    let cardsHtml = "";
+
+    jobsInRole.forEach(job => {
+      const data = stageData.find(r => r.job === job) || { total: 0, winRate: 0 };
+      const jobName = JOB_NAME_JP[job] ?? job;
+      const winRate = ((data.winRate ?? 0) * 100).toFixed(1);
+      const iconPath = `images/JOB/${job}.png`;
+      const emptyClass = data.total === 0 ? "job-card-empty" : "";
+
+      let winRateClass = "";
+      let winRateBgClass = "";
+      if (data.total > 0) {
+        if (data.winRate > 0.5) { winRateClass = "text-win-color"; winRateBgClass = "bg-win-color"; }
+        else if (data.winRate < 0.5) { winRateClass = "text-loss-color"; winRateBgClass = "bg-loss-color"; }
+      }
+
+      cardsHtml += `
+        <div class="job-card-item ${emptyClass} ${winRateBgClass}">
+          <img src="${iconPath}" class="job-icon-img" alt="${job}" onerror="this.style.display='none'">
+          <div class="job-text-meta">
+            <span class="job-name-label">${jobName}</span>
+            <span class="job-stat-label ${winRateClass}">${winRate}% / ${data.total}試合</span>
+          </div>
+        </div>
+      `;
+    });
+
+    html += `
+      <p class="stat-title" style="margin-top:12px; font-size:11px;">${roleName}</p>
+      <div class="job-grid-container" style="padding:4px;">
+        ${cardsHtml}
       </div>
     `;
-  },
+  });
+  return html;
+}
 
   // ■ Timeタブ
   time: (statsData) => {
