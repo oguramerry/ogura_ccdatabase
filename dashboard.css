@@ -603,7 +603,7 @@ body {
 /* パライストラ (青系とか) */
 .stage-ribbon-btn.btn-Palaistra.active {
   background-color: #8297B2; /* ★好きな色に */
-  border-color: #8297B2;
+  border-color: #afeeee;
 }
 
 /* ヴォルカニック・ハート (赤系とか) */
@@ -615,12 +615,12 @@ body {
 /* 東方絡繰御殿 (紫系とか) */
 .stage-ribbon-btn.btn-ClockworkCastletown.active {
   background-color: #a1887f;
-  border-color: #a1887f;
+  border-color: #dda0dd;
 }
 
 /* ベイサイド・バトルグラウンド */
 .stage-ribbon-btn.btn-BaysideBattleground.active {
-  background-color: #4db6ac;
+  background-color: #7fffd4;
 }
 
 /* クラウドナイン */
@@ -630,7 +630,7 @@ body {
 
 /* レッド・サンズ */
 .stage-ribbon-btn.btn-RedSands.active {
-  background-color: #ffb74d;
+  background-color: #deb887;
 }
 
 @keyframes pulse-border {
