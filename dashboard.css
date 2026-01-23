@@ -604,18 +604,19 @@ body {
 .stage-ribbon-btn.btn-Palaistra.active {
   background-color: #8297B2; /* ★好きな色に */
   /*border-color: #afeeee;*/
+  /*color: #8297B2;*/
 }
 
 /* ヴォルカニック・ハート (赤系とか) */
 .stage-ribbon-btn.btn-VolcanicHeart.active {
   background-color: #e57373; /* ★好きな色に */
-  /*border-color: #e57373;*/
+ 
 }
 
 /* 東方絡繰御殿 (紫系とか) */
 .stage-ribbon-btn.btn-ClockworkCastletown.active {
   background-color: #dda0dd;
-  /*border-color: #dda0dd;*/
+  
 }
 
 /* ベイサイド・バトルグラウンド */
@@ -632,6 +633,45 @@ body {
 .stage-ribbon-btn.btn-RedSands.active {
   background-color: #deb887;
 }
+
+/* ジョブステージタブ　ホバー演出 */
+
+/* パライストラ */
+.stage-ribbon-btn.btn-Palaistra:hover {
+  background-color: inherit;
+  /*border-color: #afeeee;*/
+  /*color: #8297B2;*/
+}
+
+/* ヴォルカニック・ハート  */
+.stage-ribbon-btn.btn-VolcanicHeart:hover {
+  background-color: inherit; /* active保険　*/
+ 
+}
+
+/* 東方絡繰御殿 */
+.stage-ribbon-btn.btn-ClockworkCastletown:hover {
+  background-color: inherit;
+  
+}
+
+/* ベイサイド・バトルグラウンド */
+.stage-ribbon-btn.btn-BaysideBattleground:hover {
+  background-color: inherit;
+}
+
+/* クラウドナイン */
+.stage-ribbon-btn.btn-CloudNine:hover {
+  background-color: inherit;
+}
+
+/* レッド・サンズ */
+.stage-ribbon-btn.btn-RedSands:hover{
+  background-color: inherit;
+}
+
+
+
 
 @keyframes pulse-border {
   0% { box-shadow: 0 0 0 0 rgba(148, 163, 184, 0.4); }
