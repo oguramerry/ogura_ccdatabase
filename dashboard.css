@@ -603,19 +603,19 @@ body {
 /* パライストラ (青系とか) */
 .stage-ribbon-btn.btn-Palaistra.active {
   background-color: #8297B2; /* ★好きな色に */
-  border-color: #afeeee;
+  /*border-color: #afeeee;*/
 }
 
 /* ヴォルカニック・ハート (赤系とか) */
 .stage-ribbon-btn.btn-VolcanicHeart.active {
   background-color: #e57373; /* ★好きな色に */
-  border-color: #e57373;
+  /*border-color: #e57373;*/
 }
 
 /* 東方絡繰御殿 (紫系とか) */
 .stage-ribbon-btn.btn-ClockworkCastletown.active {
-  background-color: #a1887f;
-  border-color: #dda0dd;
+  background-color: ##dda0dd;
+  /*border-color: #dda0dd;*/
 }
 
 /* ベイサイド・バトルグラウンド */
