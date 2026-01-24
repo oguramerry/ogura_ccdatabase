@@ -639,6 +639,7 @@ function drawTimeChart(statsData, weekday = "all") {
 
   const ctx = canvas.getContext("2d");
 
+  //timeのデザイン
   window.timeChartInstance = new Chart(ctx, {
     type: "bar",
     data: {
@@ -651,20 +652,25 @@ function drawTimeChart(statsData, weekday = "all") {
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      scales: {
-        x: {
-          ticks: {
-            callback: (v) => (v === 23 ? "23–24" : v)
-          }
-        },
-        y: {
-          min: 0,
-          max: 100,
-          ticks: {
-            callback: v => v + "%"
-          }
-        }
-      }
+scales: {
+  x: {
+    type: "linear",
+    min: 0,
+    max: 24,
+    ticks: {
+      stepSize: 1,
+      callback: (v) => Number.isInteger(v) ? v : ""
+    }
+  },
+  y: {
+    min: 0,
+    max: 100,
+    ticks: {
+      callback: v => v + "%"
+    }
+  }
+}
+
     }
   });
 }
