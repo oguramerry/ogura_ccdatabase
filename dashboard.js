@@ -61,15 +61,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const user = val.trim();
     currentUserForApi = user.replace(/\s+/g, "");
 
-    // 1. クリアボタンの表示/非表示制御（即時反映）
+    // 1. クリアボタンの表示/非表示（即時反映）
     if (clearBtn) {
       clearBtn.style.display = val.length > 0 ? "block" : "none";
     }
 
-    // 2. 入力が空になった場合の処理（即時反映）
+    // 進行中のタイマーがあれば一旦止める
+    clearTimeout(inputTimer);
+
+    // 2. 入力が「空」になった場合：特急券で即実行！
     if (!currentUserForApi) {
-      clearTimeout(inputTimer); // 進行中の検索をキャンセル
-      
+      // 即座に全ユーザーリストを取得し直す（これでプルダウンが復活する）
+      fetchUsers(""); 
+
+      // グラフや表示も即座にリセット
       if (matchChartInstance) {
         matchChartInstance.data.datasets[0].data = [];
         matchChartInstance.update();
@@ -77,15 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const resultEl = document.getElementById("result");
       if (resultEl) resultEl.textContent = "試合数 - / 勝率 -";
       
-      // ユーザーリストの候補も消しておく
-      const list = document.getElementById("userList");
-      if (list) list.innerHTML = "";
-      
-      return;
+      return; // ここで処理を終える
     }
 
-    // 3. 検索の実行（少しだけ待ってから実行）
-    clearTimeout(inputTimer);
+    // 3. 文字が入っている場合：0.3秒待ってから検索（タイマーを使用）
     inputTimer = setTimeout(() => {
       fetchUsers(user);
       
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(s);
 
       fetchAvailableDates(currentUserForApi);
-    }, 300); // 500msから300msに短縮してレスポンス向上
+    }, 300); 
   });
 
   // --- クリアボタンクリック時の動作 ---
