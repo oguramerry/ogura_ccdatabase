@@ -147,6 +147,10 @@ const render = () => {
   }
   panelInner.innerHTML = html;
 
+    if (activeTab === "time") {
+    drawTimeChart(statsData);
+  }
+
   // Job*Stageタブの時だけの特別処理
   if (activeTab === "jobStage") {
     const ribbon = panelInner.querySelector('.stage-selector-ribbon');
@@ -169,6 +173,8 @@ const render = () => {
     ribbon?.querySelector('.stage-ribbon-btn')?.click();
   }
 
+
+  
   // ★Stageタブの時だけ強調表示とタイマーを開始する
   if (activeTab === "stage") {
     updateMapHighlight();
@@ -185,6 +191,7 @@ const render = () => {
       const btn = e.target.closest("button[data-tab]");
       if (!btn) return;
       setActiveTab(btn.dataset.tab);
+  
     });
   }
 
@@ -599,3 +606,58 @@ function getAllStageNextTimes() {
     };
   });
 }
+
+function drawTimeChart(statsData) {
+  const canvas = document.getElementById("time-chart");
+  if (!canvas) return;
+
+  const arr = statsData.byHour;
+  if (!arr || !arr.length) return;
+
+  // 既存チャートがあれば破棄
+  if (window.timeChartInstance) {
+    window.timeChartInstance.destroy();
+  }
+
+  // 0〜23 時間分の勝率配列
+  const winRates = Array(24).fill(null);
+  for (const r of arr) {
+    if (r.hour >= 0 && r.hour <= 23) {
+      winRates[r.hour] = r.winRate != null ? r.winRate * 100 : null;
+    }
+  }
+
+  const ctx = canvas.getContext("2d");
+
+  window.timeChartInstance = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: [...Array(24)].map((_, i) => i),
+      datasets: [
+        {
+          label: "勝率",
+          data: winRates
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          ticks: {
+            callback: (value) => (value === 23 ? "23–24" : value)
+          }
+        },
+        y: {
+          min: 0,
+          max: 100,
+          ticks: {
+            callback: (v) => v + "%"
+          }
+        }
+      }
+    }
+  });
+}
+
