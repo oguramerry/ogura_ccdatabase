@@ -643,35 +643,33 @@ function drawTimeChart(statsData, weekday = "all") {
   window.timeChartInstance = new Chart(ctx, {
     type: "bar",
     data: {
-      labels: [...Array(24)].map((_, i) => i),
+      labels: [...Array(25)].map((_, i) => i),
       datasets: [{
         label: "勝率",
         data: winRates
       }]
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-scales: {
-  x: {
-    type: "linear",
-    min: 0,
-    max: 24,
-    ticks: {
-      stepSize: 1,
-      callback: (v) => Number.isInteger(v) ? v : ""
-    }
-  },
-  y: {
-    min: 0,
-    max: 100,
-    ticks: {
-      callback: v => v + "%"
+options: {
+  responsive: true,
+  maintainAspectRatio: true,
+  scales: {
+x: {
+  type: "category",
+  offset: false,
+  ticks: {
+    callback: (v) => v
+  }
+}
+,
+    y: {
+      min: 0,
+      max: 100,
+      ticks: {
+        callback: v => v + "%"
+      }
     }
   }
 }
-
-    }
   });
 }
 
