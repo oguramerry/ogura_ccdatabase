@@ -678,6 +678,9 @@ options: {
 }
 
 function drawXAxisLabels(chart) {
+  // ★ 修正箇所：chart.scales.x が存在するかチェックする
+  if (!chart || !chart.scales || !chart.scales.x) return;
+
   const ctx = chart.ctx;
   const xScale = chart.scales.x;
   const y = xScale.bottom + 14;
@@ -690,12 +693,20 @@ function drawXAxisLabels(chart) {
 
   for (let i = 0; i <= 23; i++) {
     const x = xScale.getPixelForValue(i);
-    ctx.fillText(i, x, y);
+    // xが取得できない場合（スケール外など）の考慮
+    if (x !== undefined) {
+      ctx.fillText(i, x, y);
+    }
   }
 
   // 最後の 24
-  const x24 = xScale.getPixelForValue(23) + (xScale.getPixelForValue(23) - xScale.getPixelForValue(22));
-  ctx.fillText(24, x24, y);
+  const lastIdx = 23;
+  const x23 = xScale.getPixelForValue(lastIdx);
+  const x22 = xScale.getPixelForValue(lastIdx - 1);
+  if (x23 !== undefined && x22 !== undefined) {
+    const x24 = x23 + (x23 - x22);
+    ctx.fillText(24, x24, y);
+  }
 
   ctx.restore();
 }
