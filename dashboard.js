@@ -639,38 +639,47 @@ function drawTimeChart(statsData, weekday = "all") {
 
   const ctx = canvas.getContext("2d");
 
-  //timeのデザイン
+  // hour(0-23) を「区間の中心」に寄せる：0.5, 1.5, ... 23.5
+  const points = [];
+  for (let h = 0; h < 24; h++) {
+    const v = winRates[h];
+    if (v == null) continue;
+    points.push({ x: h + 0.5, y: v });
+  }
+
   window.timeChartInstance = new Chart(ctx, {
     type: "bar",
     data: {
-      labels: [...Array(25)].map((_, i) => i),
       datasets: [{
         label: "勝率",
-        data: winRates
+        data: points,
+        parsing: false
       }]
     },
-options: {
-  responsive: true,
-  maintainAspectRatio: true,
-  scales: {
-x: {
-  type: "category",
-  offset: false,
-  ticks: {
-    callback: (v) => v
-  }
-}
-,
-    y: {
-      min: 0,
-      max: 100,
-      ticks: {
-        callback: v => v + "%"
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      scales: {
+        x: {
+          type: "linear",
+          min: 0,
+          max: 24,
+          ticks: {
+            stepSize: 1,
+            callback: (v) => Number.isInteger(v) ? v : ""
+          }
+        },
+        y: {
+          min: 0,
+          max: 100,
+          ticks: {
+            callback: v => v + "%"
+          }
+        }
       }
     }
-  }
-}
   });
+
 }
 
 
