@@ -591,6 +591,7 @@ body {
   border-bottom: 1px dashed var(--border-color);
   -ms-overflow-style: none;
   scrollbar-width: none;
+  color:#fff;
 }
 .stage-selector-ribbon::-webkit-scrollbar {
   display: none;
@@ -652,47 +653,47 @@ body {
   background-color: #deb887;
 }
 
+
+
 /* ジョブステージタブ　ホバー演出 */
 
 /* パライストラ */
 .stage-ribbon-btn.btn-Palaistra:hover {
   background-color: #8297B2;
-  color: #fff;
+  
 }
 
 /* ヴォルカニック・ハート  */
 .stage-ribbon-btn.btn-VolcanicHeart:hover {
   background-color: #e57373; 
-  color: #fff;
+ 
  
 }
 
 /* 東方絡繰御殿 */
 .stage-ribbon-btn.btn-ClockworkCastletown:hover {
   background-color: #dda0dd;
-  color: #fff;
+  
   
 }
 
 /* ベイサイド・バトルグラウンド */
 .stage-ribbon-btn.btn-BaysideBattleground:hover {
   background-color: #7fffd4; 
-  color: #94a3b8;
+ 
 }
 
 /* クラウドナイン */
 .stage-ribbon-btn.btn-CloudNine:hover {
   background-color: #64b5f6;
-  color: #94a3b8;
+ 
 }
 
 /* レッド・サンズ */
 .stage-ribbon-btn.btn-RedSands:hover{
   background-color: #deb887;  
-  color: #94a3b8;
+
 }
-
-
 
 
 @keyframes pulse-border {

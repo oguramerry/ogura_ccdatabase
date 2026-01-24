@@ -658,6 +658,12 @@ window.timeChartInstance = new Chart(ctx, {
 options: {
   responsive: true,
   maintainAspectRatio: true,
+  layout: {
+      padding: {
+        bottom: 30  // 下に30px分の余白を強制的に確保する
+      }
+    },
+  
   plugins: {
     legend: { display: false }
   },
