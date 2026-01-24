@@ -192,26 +192,52 @@ renderJobStageGrid: (stageJpName, statsData) => {
 },
 
   // ■ Timeタブ
-  time: (statsData) => {
-    const arr = statsData.byHour;
-    if (!arr || !arr.length) return "時間帯 集計なし";
-
-    const ranking = arr
-      .filter(row => (row.total ?? 0) >= 5)
-      .slice()
-      .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
-      .slice(0, 5);
-
-    const listHtml = ranking.map((row, i) => {
-      const wr = ((row.winRate ?? 0) * 100).toFixed(1);
-      return `${i + 1}位：${formatHourRange(row.hour)}（${wr}% / ${row.total}試合）`;
-    }).join("<br>");
-
-    return `
-      <div class="stat-card">
-        <p class="stat-title">時間帯 top5（勝率）</p>
-        <p class="stat-body">${listHtml}</p>
-      </div>
-    `;
+time: (statsData) => {
+  const panelInner = document.getElementById("panel-inner");
+  const arr = statsData.byHour;
+  if (!arr || !arr.length) {
+    panelInner.textContent = "時間帯 集計なし";
+    return;
   }
+
+  // 0〜23 の勝率を並べる（存在しない時間は null）
+  const winRates = Array(24).fill(null);
+  for (const r of arr) {
+    if (r.hour >= 0 && r.hour <= 23) {
+      winRates[r.hour] = r.winRate != null ? r.winRate * 100 : null;
+    }
+  }
+
+  // canvas を生成
+  panelInner.innerHTML = `<canvas id="time-chart"></canvas>`;
+  const ctx = document.getElementById("time-chart");
+
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: [...Array(24)].map((_, i) => i),
+      datasets: [{
+        label: "勝率",
+        data: winRates
+      }]
+    },
+    options: {
+      scales: {
+        x: {
+          ticks: {
+            callback: (value) => value === 23 ? "23–24" : value
+          }
+        },
+        y: {
+          min: 0,
+          max: 100,
+          ticks: {
+            callback: (v) => v + "%"
+          }
+        }
+      }
+    }
+  });
+}
+  
 };
