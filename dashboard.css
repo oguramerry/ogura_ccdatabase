@@ -288,7 +288,8 @@ body {
 }
 
 #tabButtons button:hover {
-  background: var(--base-bg);
+  background: #8297B2;
+  color: #fff;
 }
 
 /* ジョブカード */
