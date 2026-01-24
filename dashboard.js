@@ -644,16 +644,26 @@ function drawTimeChart(statsData, weekday = "all") {
     }
   }
 
+const EPS = 1e-9;
+const barColors = winRates.map(v => {
+  if (v == null) return "rgba(0,0,0,0)";
+  if (v > 50 + EPS) return "#7dd3fc"; // 50より上
+  if (v < 50 - EPS) return "#fca5a5"; // 50より下
+  return "#cccbc8";                  // 50ぴったり
+});
+  
+
 const ctx = canvas.getContext("2d");
 
 window.timeChartInstance = new Chart(ctx, {
   type: "bar",
   data: {
     labels: [...Array(24)].map((_, i) => i),
-    datasets: [{
-      label: "勝率",
-      data: winRates
-    }]
+datasets: [{
+  label: "勝率",
+  data: winRates,
+  backgroundColor: barColors
+}]
   },
 options: {
   responsive: true,
