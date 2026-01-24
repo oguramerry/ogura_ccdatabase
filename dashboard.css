@@ -580,6 +580,7 @@ body {
 
 
 /* ステージ選択リボン（横スクロール可能） */
+/* ここがhover時にinheritされる */
 .stage-selector-ribbon {
   display: flex;
   gap: 6px;
@@ -617,20 +618,20 @@ body {
 
 /* --- ステージ別・ボタンの色設定（目印！） --- */
 
-/* パライストラ (青系とか) */
+/* パライストラ*/
 .stage-ribbon-btn.btn-Palaistra.active {
-  background-color: #8297B2; /* ★好きな色に */
+  background-color: #8297B2; 
   /*border-color: #afeeee;*/
   /*color: #8297B2;*/
 }
 
-/* ヴォルカニック・ハート (赤系とか) */
+/* ヴォルカニック・ハート */
 .stage-ribbon-btn.btn-VolcanicHeart.active {
-  background-color: #e57373; /* ★好きな色に */
+  background-color: #e57373; 
  
 }
 
-/* 東方絡繰御殿 (紫系とか) */
+/* 東方絡繰御殿*/
 .stage-ribbon-btn.btn-ClockworkCastletown.active {
   background-color: #dda0dd;
   
@@ -655,36 +656,36 @@ body {
 
 /* パライストラ */
 .stage-ribbon-btn.btn-Palaistra:hover {
-  background-color: inherit;
+  background-color: #8297B2;
   /*border-color: #afeeee;*/
   /*color: #8297B2;*/
 }
 
 /* ヴォルカニック・ハート  */
 .stage-ribbon-btn.btn-VolcanicHeart:hover {
-  background-color: inherit; /* active保険　*/
+  background-color: #e57373; 
  
 }
 
 /* 東方絡繰御殿 */
 .stage-ribbon-btn.btn-ClockworkCastletown:hover {
-  background-color: inherit;
+  background-color: #dda0dd;
   
 }
 
 /* ベイサイド・バトルグラウンド */
 .stage-ribbon-btn.btn-BaysideBattleground:hover {
-  background-color: inherit;
+  background-color: #7fffd4;
 }
 
 /* クラウドナイン */
 .stage-ribbon-btn.btn-CloudNine:hover {
-  background-color: inherit;
+  background-color: #64b5f6;
 }
 
 /* レッド・サンズ */
 .stage-ribbon-btn.btn-RedSands:hover{
-  background-color: inherit;
+  background-color: #deb887;
 }
 
 
