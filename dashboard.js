@@ -654,7 +654,7 @@ window.timeChartInstance = new Chart(ctx, {
     scales: {
       x: {
         type: "category",
-        offset: true   // ← これが「メモリとメモリの間」に立てる正体
+        offset: false  
       },
       y: {
         min: 0,
