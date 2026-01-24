@@ -612,7 +612,7 @@ body {
 /* 選択されている時のボタン */
 .stage-ribbon-btn.active {
   background: var(--accent-blue-gray); 
-  color: #94a3b8;
+  color: #fff;
   border-color: var(--accent-blue-gray);
 }
 
@@ -621,8 +621,7 @@ body {
 /* パライストラ*/
 .stage-ribbon-btn.btn-Palaistra.active {
   background-color: #8297B2; 
-  /*border-color: #afeeee;*/
-  /*color: #8297B2;*/
+
 }
 
 /* ヴォルカニック・ハート */
@@ -657,21 +656,20 @@ body {
 /* パライストラ */
 .stage-ribbon-btn.btn-Palaistra:hover {
   background-color: #8297B2;
-  /*border-color: #afeeee;*/
-  color: #94a3b8;
+  color: #fff;
 }
 
 /* ヴォルカニック・ハート  */
 .stage-ribbon-btn.btn-VolcanicHeart:hover {
   background-color: #e57373; 
-  color: #94a3b8;
+  color: #fff;
  
 }
 
 /* 東方絡繰御殿 */
 .stage-ribbon-btn.btn-ClockworkCastletown:hover {
   background-color: #dda0dd;
-  color: #94a3b8;
+  color: #fff;
   
 }
 
