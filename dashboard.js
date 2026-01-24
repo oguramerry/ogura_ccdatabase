@@ -648,24 +648,58 @@ window.timeChartInstance = new Chart(ctx, {
       data: winRates
     }]
   },
-  options: {
-    responsive: true,
-    maintainAspectRatio: true,
-    scales: {
-      x: {
-        type: "category",
-        offset: false  
-      },
-      y: {
-        min: 0,
-        max: 100,
-        ticks: {
-          callback: v => v + "%"
-        }
+options: {
+  responsive: true,
+  maintainAspectRatio: true,
+  animation: false,
+  plugins: {
+    legend: { display: false }
+  },
+  scales: {
+    x: {
+      type: "category",
+      ticks: { display: false }
+    },
+    y: {
+      min: 0,
+      max: 100,
+      ticks: {
+        callback: v => v + "%"
       }
     }
+  },
+
+  onResize: (chart) => drawXAxisLabels(chart),
+  animation: {
+    onComplete: (ctx) => drawXAxisLabels(ctx.chart)
   }
+}
+
 });
 }
+
+function drawXAxisLabels(chart) {
+  const ctx = chart.ctx;
+  const xScale = chart.scales.x;
+  const y = xScale.bottom + 14;
+
+  ctx.save();
+  ctx.fillStyle = "#6b7280"; // 既存の軸色に合わせて調整
+  ctx.textAlign = "center";
+  ctx.textBaseline = "top";
+  ctx.font = "12px sans-serif";
+
+  for (let i = 0; i <= 23; i++) {
+    const x = xScale.getPixelForValue(i);
+    ctx.fillText(i, x, y);
+  }
+
+  // 最後の 24
+  const x24 = xScale.getPixelForValue(23) + (xScale.getPixelForValue(23) - xScale.getPixelForValue(22));
+  ctx.fillText(24, x24, y);
+
+  ctx.restore();
+}
+
 
 
