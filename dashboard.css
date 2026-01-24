@@ -81,6 +81,23 @@ body {
   width: 100%;
 }
 
+/* クリアボタン */
+.clear-button {
+  background: none;
+  border: none;
+  color: var(--text-sub);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 4px;
+  line-height: 1;
+  display: none; /* 初期状態は非表示（JSで制御） */
+  transition: color 0.2s;
+}
+
+.clear-button:hover {
+  color: var(--text-main);
+}
+
 /*　更新ボタン　*/
 
 .refresh-button {
