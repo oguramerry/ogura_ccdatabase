@@ -193,51 +193,17 @@ renderJobStageGrid: (stageJpName, statsData) => {
 
   // ■ Timeタブ
 time: (statsData) => {
-  const panelInner = document.getElementById("panel-inner");
   const arr = statsData.byHour;
   if (!arr || !arr.length) {
-    panelInner.textContent = "時間帯 集計なし";
-    return;
+    return "時間帯 集計なし";
   }
 
-  // 0〜23 の勝率を並べる（存在しない時間は null）
-  const winRates = Array(24).fill(null);
-  for (const r of arr) {
-    if (r.hour >= 0 && r.hour <= 23) {
-      winRates[r.hour] = r.winRate != null ? r.winRate * 100 : null;
-    }
-  }
-
-  // canvas を生成
-  panelInner.innerHTML = `<canvas id="time-chart"></canvas>`;
-  const ctx = document.getElementById("time-chart");
-
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: [...Array(24)].map((_, i) => i),
-      datasets: [{
-        label: "勝率",
-        data: winRates
-      }]
-    },
-    options: {
-      scales: {
-        x: {
-          ticks: {
-            callback: (value) => value === 23 ? "23–24" : value
-          }
-        },
-        y: {
-          min: 0,
-          max: 100,
-          ticks: {
-            callback: (v) => v + "%"
-          }
-        }
-      }
-    }
-  });
+  return `
+    <div class="stat-card">
+      <canvas id="time-chart"></canvas>
+    </div>
+  `;
 }
+
   
 };
