@@ -200,10 +200,21 @@ time: (statsData) => {
 
   return `
     <div class="stat-card">
+      <div class="time-filter">
+        <button data-wd="all" class="active">all</button>
+        <button data-wd="sun">sun</button>
+        <button data-wd="mon">mon</button>
+        <button data-wd="tue">tue</button>
+        <button data-wd="wed">wed</button>
+        <button data-wd="thu">thu</button>
+        <button data-wd="fri">fri</button>
+        <button data-wd="sat">sat</button>
+      </div>
       <canvas id="time-chart"></canvas>
     </div>
   `;
 }
+
 
   
 };
