@@ -417,10 +417,11 @@ function ensureEmptyChart() {
         x: { type: "linear", ticks: { stepSize: 1 } },
         y: {
           beginAtZero: true,
-          ticks: {
-            stepSize: 1,
-            callback: (value) => Number.isInteger(value) ? value : ""
-          },
+ticks: {
+  stepSize: 50,
+  callback: (v) => (v === 0 || v === 50 || v === 100 ? v + "%" : "")
+}
+,
           grid: {
             color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9",
             lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1
@@ -630,8 +631,27 @@ function drawTimeChart(statsData, weekday = "all") {
   if (weekday === "all") {
     src = statsData.byHour || [];
   } else {
-    src = (statsData.byHourWeekday || []).filter(r => r.weekday === weekday);
+    const WD_NUM = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
+
+    src = (statsData.byHourWeekday || []).filter(r => {
+      const rw = r.weekday;
+      if (rw == null) return false;
+
+      // 文字列: "sun" / "Sun" / "SUN" みたいなのを吸収
+      if (typeof rw === "string") {
+        return rw.trim().toLowerCase() === weekday;
+      }
+
+      // 数字: 0-6 の曜日（sun=0想定）を吸収
+      if (typeof rw === "number") {
+        return rw === WD_NUM[weekday];
+      }
+
+      // 念のため
+      return String(rw).trim().toLowerCase() === weekday;
+    });
   }
+
 
   if (window.timeChartInstance) {
     window.timeChartInstance.destroy();
