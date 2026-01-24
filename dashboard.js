@@ -631,87 +631,87 @@ function drawTimeChart(statsData, weekday = "all") {
   if (weekday === "all") {
     src = statsData.byHour || [];
   } else {
-    const WD_NUM = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
-
-    src = (statsData.byHourWeekday || []).filter(r => {
-      const rw = r.weekday;
-      if (rw == null) return false;
-
-      // 文字列: "sun" / "Sun" / "SUN" みたいなのを吸収
-      if (typeof rw === "string") {
-        return rw.trim().toLowerCase() === weekday;
-      }
-
-      // 数字: 0-6 の曜日（sun=0想定）を吸収
-      if (typeof rw === "number") {
-        return rw === WD_NUM[weekday];
-      }
-
-      // 念のため
-      return String(rw).trim().toLowerCase() === weekday;
-    });
+    src = (statsData.byHourWeekday || []).filter(r => r.weekday === weekday);
   }
-
 
   if (window.timeChartInstance) {
     window.timeChartInstance.destroy();
   }
 
   const winRates = Array(24).fill(null);
+  const gameCounts = Array(24).fill(0);
+
   for (const r of src) {
     if (r.hour >= 0 && r.hour <= 23) {
       winRates[r.hour] = r.winRate != null ? r.winRate * 100 : null;
+
+      const t =
+        r.total ?? r.matches ?? r.count ?? r.n ?? r.games ?? r.gameCount ?? 0;
+      const n = typeof t === "number" ? t : Number(t) || 0;
+      gameCounts[r.hour] = n;
     }
   }
 
-const EPS = 1e-9;
-const barColors = winRates.map(v => {
-  if (v == null) return "rgba(0,0,0,0)";
-  if (v > 50 + EPS) return "#7dd3fc"; // 50より上
-  if (v < 50 - EPS) return "#fca5a5"; // 50より下
-  return "#cccbc8";                  // 50ぴったり
-});
-  
+  const ctx = canvas.getContext("2d");
 
-const ctx = canvas.getContext("2d");
-
-window.timeChartInstance = new Chart(ctx, {
-  type: "bar",
-  data: {
-    labels: [...Array(24)].map((_, i) => i),
-datasets: [{
-  label: "勝率",
-  data: winRates,
-  backgroundColor: barColors
-}]
-  },
-options: {
-  responsive: true,
-  maintainAspectRatio: true,
-  plugins: {
-    legend: { display: false }
-  },
-  scales: {
-    x: {
-      type: "category",
-      ticks: {
-        display: true,
-        autoSkip: false,
-        maxRotation: 0,
-        minRotation: 0
-      }
+  window.timeChartInstance = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: [...Array(24)].map((_, i) => i),
+      datasets: [{
+        label: "勝率",
+        data: winRates
+      }]
     },
-    y: {
-      min: 0,
-      max: 100,
-      ticks: {
-        callback: v => v + "%"
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          displayColors: false,
+          callbacks: {
+            title: (items) => {
+              const h = items?.[0]?.dataIndex ?? 0;
+              const pad2 = (n) => String(n).padStart(2, "0");
+              return `■.${pad2(h)}:00～${pad2(h)}:59`;
+            },
+            label: (item) => {
+              const h = item?.dataIndex ?? 0;
+              const count = gameCounts[h] ?? 0;
+              const v = item?.parsed?.y;
+              const rateText =
+                (v == null || !Number.isFinite(v)) ? "-" : (v.toFixed(1) + "%");
+              return [
+                `■.試合数:${count}`,
+                `■.勝率:${rateText}`
+              ];
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: "category",
+          ticks: { display: false }
+        },
+        y: {
+          min: 0,
+          max: 100,
+          ticks: {
+            callback: v => v + "%"
+          }
+        }
+      },
+      onResize: (chart) => drawXAxisLabels(chart),
+      animation: {
+        duration: 0,
+        onComplete: (ctx) => drawXAxisLabels(ctx.chart)
       }
     }
-  }
+  });
 }
-});
-}
+
 
 function drawXAxisLabels(chart) {
   // ★ 修正箇所：chart.scales.x が存在するかチェックする
