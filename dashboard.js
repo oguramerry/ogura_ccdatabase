@@ -627,11 +627,32 @@ function drawTimeChart(statsData, weekday = "all") {
     btn.onclick = () => drawTimeChart(statsData, btn.dataset.wd);
   });
 
+  const WD = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+  const normalizeWday = (w) => {
+    if (w == null) return "";
+    const s = String(w).trim().toLowerCase();
+    if (!s) return "";
+
+    // 0-6 の数字対応（0=sun想定）
+    if (/^\d+$/.test(s)) return WD[Number(s)] ?? "";
+
+    // "Sun" / "Sunday" / "sun" みたいなの対応
+    const s3 = s.slice(0, 3);
+    if (WD.includes(s3)) return s3;
+
+    // もし日本語が来ても一応拾う
+    const jp = { "日": "sun", "月": "mon", "火": "tue", "水": "wed", "木": "thu", "金": "fri", "土": "sat" };
+    if (jp[s]) return jp[s];
+
+    return s;
+  };
+
   let src = [];
   if (weekday === "all") {
     src = statsData.byHour || [];
   } else {
-    src = (statsData.byHourWeekday || []).filter(r => r.weekday === weekday);
+    const target = String(weekday).toLowerCase();
+    src = (statsData.byHourWeekday || []).filter(r => normalizeWday(r.weekday) === target);
   }
 
   if (window.timeChartInstance) {
@@ -645,8 +666,7 @@ function drawTimeChart(statsData, weekday = "all") {
     if (r.hour >= 0 && r.hour <= 23) {
       winRates[r.hour] = r.winRate != null ? r.winRate * 100 : null;
 
-      const t =
-        r.total ?? r.matches ?? r.count ?? r.n ?? r.games ?? r.gameCount ?? 0;
+      const t = r.total ?? r.matches ?? r.count ?? r.n ?? r.games ?? r.gameCount ?? 0;
       const n = typeof t === "number" ? t : Number(t) || 0;
       gameCounts[r.hour] = n;
     }
@@ -680,8 +700,7 @@ function drawTimeChart(statsData, weekday = "all") {
               const h = item?.dataIndex ?? 0;
               const count = gameCounts[h] ?? 0;
               const v = item?.parsed?.y;
-              const rateText =
-                (v == null || !Number.isFinite(v)) ? "-" : (v.toFixed(1) + "%");
+              const rateText = (v == null || !Number.isFinite(v)) ? "-" : (v.toFixed(1) + "%");
               return [
                 `■.試合数:${count}`,
                 `■.勝率:${rateText}`
@@ -693,20 +712,21 @@ function drawTimeChart(statsData, weekday = "all") {
       scales: {
         x: {
           type: "category",
-          ticks: { display: false }
+          ticks: {
+            display: true,
+            autoSkip: false,
+            maxRotation: 0,
+            minRotation: 0
+          }
         },
         y: {
           min: 0,
           max: 100,
           ticks: {
-            callback: v => v + "%"
+            stepSize: 50,
+            callback: (v) => v + "%"
           }
         }
-      },
-      onResize: (chart) => drawXAxisLabels(chart),
-      animation: {
-        duration: 0,
-        onComplete: (ctx) => drawXAxisLabels(ctx.chart)
       }
     }
   });
