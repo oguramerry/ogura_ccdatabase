@@ -660,39 +660,37 @@ body {
 /* パライストラ */
 .stage-ribbon-btn.btn-Palaistra:hover {
   background-color: #8297B2;
-  
+  color: inherit;
 }
 
 /* ヴォルカニック・ハート  */
 .stage-ribbon-btn.btn-VolcanicHeart:hover {
-  background-color: #e57373; 
- 
- 
+  background-color: #e57373;
+  color: inherit; 
 }
 
 /* 東方絡繰御殿 */
 .stage-ribbon-btn.btn-ClockworkCastletown:hover {
-  background-color: #dda0dd;
-  
-  
+  background-color: #dda0dd;  
+  color: inherit;
 }
 
 /* ベイサイド・バトルグラウンド */
 .stage-ribbon-btn.btn-BaysideBattleground:hover {
   background-color: #7fffd4; 
- 
+  color: inherit;
 }
 
 /* クラウドナイン */
 .stage-ribbon-btn.btn-CloudNine:hover {
   background-color: #64b5f6;
- 
+  color: inherit;
 }
 
 /* レッド・サンズ */
 .stage-ribbon-btn.btn-RedSands:hover{
-  background-color: #deb887;  
-
+  background-color: #deb887; 
+  color: inherit;
 }
 
 
