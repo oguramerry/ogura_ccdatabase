@@ -651,7 +651,9 @@ window.timeChartInstance = new Chart(ctx, {
 options: {
   responsive: true,
   maintainAspectRatio: true,
-  animation: false,
+  animation: {
+    onComplete: (ctx) => drawXAxisLabels(ctx.chart)
+  },
   plugins: {
     legend: { display: false }
   },
@@ -668,12 +670,9 @@ options: {
       }
     }
   },
-
-  onResize: (chart) => drawXAxisLabels(chart),
-  animation: {
-    onComplete: (ctx) => drawXAxisLabels(ctx.chart)
-  }
+  onResize: (chart) => drawXAxisLabels(chart)
 }
+
 
 });
 }
