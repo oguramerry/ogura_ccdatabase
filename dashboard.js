@@ -658,19 +658,18 @@ window.timeChartInstance = new Chart(ctx, {
 options: {
   responsive: true,
   maintainAspectRatio: true,
-  layout: {
-      padding: {
-        bottom: 30  // 下に30px分の余白を強制的に確保する
-      }
-    },
-  
   plugins: {
     legend: { display: false }
   },
   scales: {
     x: {
       type: "category",
-      ticks: { display: false }
+      ticks: {
+        display: true,
+        autoSkip: false,
+        maxRotation: 0,
+        minRotation: 0
+      }
     },
     y: {
       min: 0,
@@ -679,15 +678,8 @@ options: {
         callback: v => v + "%"
       }
     }
-  },
-
-  onResize: (chart) => drawXAxisLabels(chart),
-  animation: {
-    duration: 0,
-    onComplete: (ctx) => drawXAxisLabels(ctx.chart)
   }
 }
-
 });
 }
 
