@@ -595,7 +595,7 @@ body {
   display: none;
 }
 
-/* リボン内のボタン */
+/* ボタンの基本見た目（マウスをのせてないとき） */
 .stage-ribbon-btn {
   white-space: nowrap;
   font-family: "Kiwi Maru", serif;
@@ -605,14 +605,14 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-size: 11px;
-  color: var(--text-sub);
+  color: #94a3b8;
   transition: all 0.2s;
 }
 
 /* 選択されている時のボタン */
 .stage-ribbon-btn.active {
-  background: var(--accent-blue-gray); /* ★選択中の背景色を変えるならここ */
-  color: #fff; /* ★選択中の文字色を変えるならここ */
+  background: var(--accent-blue-gray); 
+  color: #94a3b8;
   border-color: var(--accent-blue-gray);
 }
 
@@ -658,34 +658,39 @@ body {
 .stage-ribbon-btn.btn-Palaistra:hover {
   background-color: #8297B2;
   /*border-color: #afeeee;*/
-  /*color: #8297B2;*/
+  color: #94a3b8;
 }
 
 /* ヴォルカニック・ハート  */
 .stage-ribbon-btn.btn-VolcanicHeart:hover {
   background-color: #e57373; 
+  color: #94a3b8;
  
 }
 
 /* 東方絡繰御殿 */
 .stage-ribbon-btn.btn-ClockworkCastletown:hover {
   background-color: #dda0dd;
+  color: #94a3b8;
   
 }
 
 /* ベイサイド・バトルグラウンド */
 .stage-ribbon-btn.btn-BaysideBattleground:hover {
-  background-color: #7fffd4;
+  background-color: #7fffd4; 
+  color: #94a3b8;
 }
 
 /* クラウドナイン */
 .stage-ribbon-btn.btn-CloudNine:hover {
   background-color: #64b5f6;
+  color: #94a3b8;
 }
 
 /* レッド・サンズ */
 .stage-ribbon-btn.btn-RedSands:hover{
-  background-color: #deb887;
+  background-color: #deb887;  
+  color: #94a3b8;
 }
 
 
