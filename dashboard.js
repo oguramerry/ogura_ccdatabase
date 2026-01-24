@@ -54,33 +54,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let inputTimer = null;
 
-  // --- inputイベント ---
+ 
+// --- inputイベント ---
   input?.addEventListener("input", (e) => {
     const val = e.target.value;
+    const user = val.trim();
+    currentUserForApi = user.replace(/\s+/g, "");
 
-    // 1. クリアボタンの表示/非表示制御
+    // 1. クリアボタンの表示/非表示制御（即時反映）
     if (clearBtn) {
       clearBtn.style.display = val.length > 0 ? "block" : "none";
     }
 
-    // 2. 検索のデバウンス処理
+    // 2. 入力が空になった場合の処理（即時反映）
+    if (!currentUserForApi) {
+      clearTimeout(inputTimer); // 進行中の検索をキャンセル
+      
+      if (matchChartInstance) {
+        matchChartInstance.data.datasets[0].data = [];
+        matchChartInstance.update();
+      }
+      const resultEl = document.getElementById("result");
+      if (resultEl) resultEl.textContent = "試合数 - / 勝率 -";
+      
+      // ユーザーリストの候補も消しておく
+      const list = document.getElementById("userList");
+      if (list) list.innerHTML = "";
+      
+      return;
+    }
+
+    // 3. 検索の実行（少しだけ待ってから実行）
     clearTimeout(inputTimer);
     inputTimer = setTimeout(() => {
-      const user = val.trim();
       fetchUsers(user);
-      currentUserForApi = user.replace(/\s+/g, "");
-
-      // 入力が空になった場合のクリア処理
-      if (!currentUserForApi) {
-        if (matchChartInstance) {
-          matchChartInstance.data.datasets[0].data = [];
-          matchChartInstance.update();
-        }
-        const resultEl = document.getElementById("result");
-        if (resultEl) resultEl.textContent = "試合数 - / 勝率 -";
-        return;
-      }
-
+      
       ensureEmptyChart();
 
       // 統計情報の取得（JSONP）
@@ -92,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(s);
 
       fetchAvailableDates(currentUserForApi);
-    }, 500);
+    }, 300); // 500msから300msに短縮してレスポンス向上
   });
 
   // --- クリアボタンクリック時の動作 ---
