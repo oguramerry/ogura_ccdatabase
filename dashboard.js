@@ -607,21 +607,31 @@ function getAllStageNextTimes() {
   });
 }
 
-function drawTimeChart(statsData) {
+
+function drawTimeChart(statsData, weekday = "all") {
   const canvas = document.getElementById("time-chart");
   if (!canvas) return;
 
-  const arr = statsData.byHour;
-  if (!arr || !arr.length) return;
+  // フィルタボタン
+  const buttons = document.querySelectorAll(".time-filter button");
+  buttons.forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.wd === weekday);
+    btn.onclick = () => drawTimeChart(statsData, btn.dataset.wd);
+  });
 
-  // 既存チャートがあれば破棄
+  let src = [];
+  if (weekday === "all") {
+    src = statsData.byHour || [];
+  } else {
+    src = (statsData.byHourWeekday || []).filter(r => r.weekday === weekday);
+  }
+
   if (window.timeChartInstance) {
     window.timeChartInstance.destroy();
   }
 
-  // 0〜23 時間分の勝率配列
   const winRates = Array(24).fill(null);
-  for (const r of arr) {
+  for (const r of src) {
     if (r.hour >= 0 && r.hour <= 23) {
       winRates[r.hour] = r.winRate != null ? r.winRate * 100 : null;
     }
@@ -633,12 +643,10 @@ function drawTimeChart(statsData) {
     type: "bar",
     data: {
       labels: [...Array(24)].map((_, i) => i),
-      datasets: [
-        {
-          label: "勝率",
-          data: winRates
-        }
-      ]
+      datasets: [{
+        label: "勝率",
+        data: winRates
+      }]
     },
     options: {
       responsive: true,
@@ -646,18 +654,19 @@ function drawTimeChart(statsData) {
       scales: {
         x: {
           ticks: {
-            callback: (value) => (value === 23 ? "23–24" : value)
+            callback: (v) => (v === 23 ? "23–24" : v)
           }
         },
         y: {
           min: 0,
           max: 100,
           ticks: {
-            callback: (v) => v + "%"
+            callback: v => v + "%"
           }
         }
       }
     }
   });
 }
+
 
