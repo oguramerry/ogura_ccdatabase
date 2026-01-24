@@ -28,7 +28,6 @@ const now = new Date();
 
 // 今日の日付 (YYYY-MM-DD)
 let currentDate = (() => {
-  const now = new Date();
   const y = now.getFullYear();
   const m = String(now.getMonth() + 1).padStart(2, "0");
   const d = String(now.getDate()).padStart(2, "0");
@@ -318,8 +317,8 @@ const render = () => {
 
 // --- マップスケジュール計算 ---
 function getMapSchedule() {
-  const now = new Date().getTime();
-  let diff = now - CC_CONFIG.ANCHOR_EPOCH;
+  const nowMs = new Date().getTime();
+  let diff = nowMs - CC_CONFIG.ANCHOR_EPOCH;
   
   const totalDuration = CC_CONFIG.CYCLE_MS * CC_CONFIG.ROTATION.length;
   while (diff < 0) diff += totalDuration;
@@ -552,8 +551,8 @@ function buildCalendar(year, month) {
 function applyCalendarColors() {
   const cells = document.querySelectorAll(".calendar-cell");
   const today = (() => {
-    const now = new Date();
-    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+    const t = new Date();
+    return `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, "0")}-${String(t.getDate()).padStart(2, "0")}`;
   })();
   cells.forEach(cell => {
     const d = cell.dataset.date;
@@ -602,7 +601,7 @@ function getAllStageNextTimes() {
     
     return {
       key: key,
-      timeStr: `${startStr}～${endStr}` //
+      timeStr: `${startStr}～${endStr}`
     };
   });
 }
@@ -651,9 +650,6 @@ window.timeChartInstance = new Chart(ctx, {
 options: {
   responsive: true,
   maintainAspectRatio: true,
-  animation: {
-    onComplete: (ctx) => drawXAxisLabels(ctx.chart)
-  },
   plugins: {
     legend: { display: false }
   },
@@ -670,9 +666,13 @@ options: {
       }
     }
   },
-  onResize: (chart) => drawXAxisLabels(chart)
-}
 
+  onResize: (chart) => drawXAxisLabels(chart),
+  animation: {
+    duration: 0,
+    onComplete: (ctx) => drawXAxisLabels(ctx.chart)
+  }
+}
 
 });
 }
@@ -699,6 +699,3 @@ function drawXAxisLabels(chart) {
 
   ctx.restore();
 }
-
-
-
