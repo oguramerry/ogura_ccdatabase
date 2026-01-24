@@ -678,10 +678,16 @@ function drawTimeChart(statsData, weekday = "all") {
     type: "bar",
     data: {
       labels: [...Array(24)].map((_, i) => i),
-      datasets: [{
-        label: "勝率",
-        data: winRates
-      }]
+datasets: [{
+  label: "勝率",
+  data: winRates,
+  backgroundColor: (ctx) => {
+    const v = ctx.raw;
+    if (v == null || !Number.isFinite(v)) return "rgba(0,0,0,0)"; // データなしは透明
+    if (v === 50) return "#cbd5e1"; // 50ぴったり
+    return v > 50 ? "#a5c9ed" : "#f2c2d4"; // 50より上 / 下
+  }
+}]
     },
     options: {
       responsive: true,
