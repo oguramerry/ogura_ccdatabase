@@ -681,12 +681,13 @@ function drawTimeChart(statsData, weekday = "all") {
   }
 
   const ctx = canvas.getContext("2d");
-
+const nowHour = new Date().getHours();
+  
   window.timeChartInstance = new Chart(ctx, {
     type: "bar",
     data: {
       labels: [...Array(24)].map((_, i) => i),
-const nowHour = new Date().getHours();
+
 
 datasets: [{
   label: "勝率",
