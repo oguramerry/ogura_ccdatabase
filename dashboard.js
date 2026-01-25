@@ -686,16 +686,25 @@ function drawTimeChart(statsData, weekday = "all") {
     type: "bar",
     data: {
       labels: [...Array(24)].map((_, i) => i),
+const nowHour = new Date().getHours();
+
 datasets: [{
   label: "勝率",
   data: winRates,
   backgroundColor: (ctx) => {
     const v = ctx.raw;
-    if (v == null || !Number.isFinite(v)) return "rgba(0,0,0,0)"; // データなしは透明
-    if (v === 50) return "#cbd5e1"; // 50ぴったり
-    return v > 50 ? "#a5c9ed" : "#f2c2d4"; // 50より上 / 下
+    if (v == null || !Number.isFinite(v)) return "rgba(0,0,0,0)";
+    if (v === 50) return "#cbd5e1";
+    return v > 50 ? "#a5c9ed" : "#f2c2d4";
+  },
+  borderWidth: (ctx) => {
+    return ctx.dataIndex === nowHour ? 2 : 0;
+  },
+  borderColor: (ctx) => {
+    return ctx.dataIndex === nowHour ? "#1f2937" : "rgba(0,0,0,0)";
   }
 }]
+
     },
     options: {
       responsive: true,
