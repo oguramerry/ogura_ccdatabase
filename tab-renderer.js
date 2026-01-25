@@ -2,13 +2,70 @@
 
 window.TabRenderer = {
   
-  // ■ Mainタブ
+// ■ Mainタブ（ここを修正！）
   main: (statsData) => {
+    // 1. データの準備
+    const matches = statsData.matches || []; // GASから受け取った全試合データ
     const m = statsData.meta || {};
     const winRateText = m.winRate != null ? (m.winRate * 100).toFixed(1) + "%" : "-";
+
+    // 2. 日付の計算
+    const now = new Date();
+    const y = now.getFullYear();
+    const mo = String(now.getMonth() + 1).padStart(2, "0");
+    const dStr = String(now.getDate()).padStart(2, "0");
+    const todayStr = `${y}-${mo}-${dStr}`; // YYYY-MM-DD
+
+    // シーズン開始日
+    const SEASON_START = "2025-12-16"; 
+
+    // 今週の開始日（月曜始まり）
+    const d = new Date(todayStr);
+    const day = d.getDay(); // 0:Sun, 1:Mon...
+    const diff = d.getDate() - (day === 0 ? 6 : day - 1); 
+    const wStart = new Date(d.setDate(diff));
+    const weekStartStr = `${wStart.getFullYear()}-${String(wStart.getMonth()+1).padStart(2,'0')}-${String(wStart.getDate()).padStart(2,'0')}`;
+
+    // 3. フィルタリング
+    const todayMatches = matches.filter(m => m.date === todayStr);
+    const weekMatches = matches.filter(m => m.date >= weekStartStr && m.date <= todayStr);
+    const seasonMatches = matches.filter(m => m.date >= SEASON_START);
+
+    // 4. 集計関数
+    const calc = (list) => {
+      const wins = list.filter(m => String(m.result).toLowerCase() === "win" || m.result === "勝利" || Number(m.result) > 0).length;
+      const losses = list.filter(m => String(m.result).toLowerCase() === "lose" || m.result === "敗北" || Number(m.result) < 0).length;
+      const total = wins + losses;
+      const rate = total > 0 ? ((wins / total) * 100).toFixed(1) : "-";
+      return { wins, losses, rate };
+    };
+
+    const tStat = calc(todayMatches);
+    const wStat = calc(weekMatches);
+    const sStat = calc(seasonMatches);
+
+    // 5. HTMLを組み立てて返す
     return `
+      <div class="summary-cards">
+        <div class="summary-card">
+          <div class="title">今日の成績</div>
+          <div class="score">${tStat.wins}勝 ${tStat.losses}敗</div>
+          <div class="rate">勝率: ${tStat.rate}%</div>
+        </div>
+        <div class="summary-card">
+          <div class="title">今週の成績</div>
+          <div class="score">${wStat.wins}勝 ${wStat.losses}敗</div>
+          <div class="rate">勝率: ${wStat.rate}%</div>
+        </div>
+        <div class="summary-card">
+          <div class="title">シーズン成績</div>
+          <div class="score">${sStat.wins}勝 ${sStat.losses}敗</div>
+          <div class="rate">勝率: ${sStat.rate}%</div>
+        </div>
+      </div>
+
       <div class="stat-card">
-        <p class="stat-title">サマリ</p>
+        <p class="stat-title">全期間サマリ</p>
         <p class="stat-body">
           試合数 ${m.total ?? "-"}<br>
           勝率 ${winRateText}
