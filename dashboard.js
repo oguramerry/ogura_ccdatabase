@@ -176,8 +176,16 @@ const render = () => {
       container.innerHTML = window.TabRenderer.renderJobStageGrid(stageJp, statsData);
     });
 
-    // 最初にパライストラを選択状態にする
-    ribbon?.querySelector('.stage-ribbon-btn')?.click();
+// 最初に「現在開催中ステージ」を選択状態にする
+const schedule = getMapSchedule();
+const keyNoSpace = (schedule?.currentKey || "").replace(/\s+/g, "");
+const btnNow = keyNoSpace
+  ? ribbon?.querySelector(`.stage-ribbon-btn.btn-${keyNoSpace}`)
+  : null;
+
+// 見つからなければ保険で先頭を選ぶ
+(btnNow || ribbon?.querySelector(".stage-ribbon-btn"))?.click();
+
   }
 
 
