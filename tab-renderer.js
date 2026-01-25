@@ -49,6 +49,17 @@ window.TabRenderer = {
       const w = list.filter(m => /win|勝利/i.test(m.result) || Number(m.result) > 0).length;
       const l = list.filter(m => /lose|敗北/i.test(m.result) || Number(m.result) < 0).length;
       const rate = (w + l) > 0 ? ((w / (w + l)) * 100).toFixed(1) : "-";
+
+      // ★色判定ロジック
+      let colorClass = "";
+      if (total > 0) {
+        if (rateVal > 50) {
+          colorClass = "bg-win-color";   // 50超え：青
+        } else if (rateVal < 50) {
+          colorClass = "bg-loss-color";  // 50未満：ピンク
+        }
+        // ※ぴったり50の時はデフォルトのデザイン
+      }
       
       return `
         <div class="summary-card">
