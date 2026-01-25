@@ -2,33 +2,50 @@
 
 window.TabRenderer = {
   
-// ■ Mainタブ（短縮版）
+// ■ Mainタブ
   main: (statsData) => {
-    const matches = statsData.matches || [];
-    const meta = statsData.meta || {};
+    // データコピー
+    const rawMatches = statsData.matches || [];
+
+    // ★5時切り替えルール適用（深夜の試合を前日扱いに補正）
+    const matches = rawMatches.map(m => {
+      let dStr = m.date; 
+      if (m.time) {
+        const hour = parseInt(m.time.split(":")[0], 10);
+        if (hour < 5) {
+          const dateObj = new Date(dStr);
+          dateObj.setDate(dateObj.getDate() - 1);
+          dStr = `${dateObj.getFullYear()}-${String(dateObj.getMonth() + 1).padStart(2, '0')}-${String(dateObj.getDate()).padStart(2, '0')}`;
+        }
+      }
+      return { ...m, date: dStr };
+    });
     
-    // 日付計算ヘルパー（YYYY-MM-DD形式を作る）
+    // 日付計算ヘルパー
     const toYMD = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
     
+    // 今日の日付（リアルタイム判定も5時切り替え）
     const now = new Date();
+    if (now.getHours() < 5) {
+      now.setDate(now.getDate() - 1);
+    }
     const todayStr = toYMD(now);
     
-    // 今週の月曜日を計算
+    // 今週の月曜日
     const d = new Date(now);
     d.setDate(now.getDate() - (now.getDay() === 0 ? 6 : now.getDay() - 1));
     const weekStart = toYMD(d);
 
-    // 3つのカードの設定リスト
+    // 集計設定
     const targets = [
       { title: "今日の成績",   filter: m => m.date === todayStr },
       { title: "今週の成績",   filter: m => m.date >= weekStart && m.date <= todayStr },
       { title: "シーズン成績", filter: m => m.date >= "2025-12-16" }
     ];
 
-    // リストをループしてHTMLを一気に生成！
+    // HTML生成
     const cardsHtml = targets.map(item => {
       const list = matches.filter(item.filter);
-      // 勝敗カウント（表記揺れや数値も考慮）
       const w = list.filter(m => /win|勝利/i.test(m.result) || Number(m.result) > 0).length;
       const l = list.filter(m => /lose|敗北/i.test(m.result) || Number(m.result) < 0).length;
       const rate = (w + l) > 0 ? ((w / (w + l)) * 100).toFixed(1) : "-";
@@ -41,17 +58,8 @@ window.TabRenderer = {
         </div>`;
     }).join("");
 
-    // 最終出力
-    return `
-      <div class="summary-cards">${cardsHtml}</div>
-      <div class="stat-card">
-        <p class="stat-title">全期間サマリ</p>
-        <p class="stat-body">
-          試合数 ${meta.total ?? "-"}<br>
-          勝率 ${meta.winRate != null ? (meta.winRate * 100).toFixed(1) + "%" : "-"}
-        </p>
-      </div>
-    `;
+    // これだけを返す
+    return `<div class="summary-cards">${cardsHtml}</div>`;
   },
 
 // ■ Jobタブ: ロール別表示（全ジョブ表示版）
