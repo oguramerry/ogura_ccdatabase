@@ -706,3 +706,43 @@ body {
     text-decoration: none;
     color: #b0c4de; /* 必要に応じて色を指定 */
   }
+
+/* --- サマリーカード用スタイル（Mainタブの追加機能） --- */
+.summary-cards {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+.summary-card {
+  flex: 1;
+  background: #f8fafc; /* ベース背景色に合わせるか、白にするかお好みで */
+  border: 1px solid var(--border-color); /* 既存のボーダー色変数を使用 */
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* タイトル部分 */
+.summary-card .title {
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: var(--accent-blue-gray); /* アクセントカラー変数を使用 */
+  font-weight: bold;
+}
+
+/* スコア（勝敗数） */
+.summary-card .score {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+/* 勝率 */
+.summary-card .rate {
+  font-size: 12px;
+  color: var(--text-sub);
+}
