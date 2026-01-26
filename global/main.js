@@ -312,11 +312,21 @@ function openModal(jobKey) {
   const fmt = (n) => Math.round(n).toLocaleString();
   const fmt2 = (n) => n.toFixed(2);
   const fmtT = (s) => `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`;
-  const makeR = (l, c, p) => {
-    const pk = (k) => d[p + k] || d[k] || 0;
-    if (l !== "全体" && ((l === "勝利" && d.wins === 0) || (l === "敗北" && d.losses === 0))) return `<tr class="${c}"><td>${l}</td><td colspan="7">データなし</td></tr>`;
-    return `<tr class="${c}"><td>${l === "全体" ? "" : l}</td><td>${fmt2(pk("avgK"))}</td><td>${fmt2(pk("avgD"))}</td><td>${fmt2(pk("avgA"))}</td><td style="color:#d69e2e">${fmt(pk("avgDamage"))}</td><td style="color:#e53e3e">${fmt(pk("avgTaken"))}</td><td style="color:#38a169">${fmt(pk("avgHeal"))}</td><td style="color:#718096">${fmtT(pk("avgTime"))}</td></tr>`;
-  };
+const makeR = (l, c, p) => {
+  const pk = (k) => d[p + k] || d[k] || 0;
+
+  const label =
+    (l === "全体") ? "全体" :
+    (l === "勝利") ? "勝利" :
+    (l === "敗北") ? "敗北" : l;
+
+  if (l !== "全体" && ((l === "勝利" && d.wins === 0) || (l === "敗北" && d.losses === 0))) {
+    return `<tr class="${c}"><td>${label}</td><td colspan="7">データなし</td></tr>`;
+  }
+
+  return `<tr class="${c}"><td>${label}</td><td>${fmt2(pk("avgK"))}</td><td>${fmt2(pk("avgD"))}</td><td>${fmt2(pk("avgA"))}</td><td style="color:#d69e2e">${fmt(pk("avgDamage"))}</td><td style="color:#e53e3e">${fmt(pk("avgTaken"))}</td><td style="color:#38a169">${fmt(pk("avgHeal"))}</td><td style="color:#718096">${fmtT(pk("avgTime"))}</td></tr>`;
+};
+
   document.getElementById("modal-stats-body").innerHTML = makeR("全体", "row-all", "") + makeR("勝利", "row-win", "w_") + makeR("敗北", "row-lose", "l_");
   document.getElementById("job-detail-modal").style.display = "flex";
 }
