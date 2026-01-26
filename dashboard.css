@@ -819,3 +819,21 @@ body {
   box-shadow: 0 3px 6px rgba(130, 151, 178, 0.3); /* 影を少し濃く */
   font-weight: bold;
 }
+
+/* --- Timeタブ：今日の曜日を目立たせる --- */
+
+/* 今日のボタン（選択されていない時） */
+.time-filter button.is-today {
+  border: 2px dashed #f687b3; /* パステルピンクの点線（ステッチ風） */
+  color: #d53f8c;             /* 文字も少し濃いピンクに */
+  background-color: #fff5f7;  /* 背景もうっすらピンク */
+  font-weight: bold;
+}
+
+/* 今日のボタンを、自分でクリックして選択した時 */
+.time-filter button.is-today.active {
+  background: var(--accent-blue-gray); /* テーマカラー（青グレー）で塗りつぶし */
+  color: #fff;
+  border: 2px solid var(--accent-blue-gray); /* 点線から実線に */
+  box-shadow: 0 3px 6px rgba(130, 151, 178, 0.4);
+}
