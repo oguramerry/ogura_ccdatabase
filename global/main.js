@@ -219,29 +219,36 @@ function renderDamageChart(jobData) {
   });
 }
 
+// global/main.js の renderJobTable 関数
+
 function renderJobTable(jobData, currentTotalMatches) {
   const tbody = document.querySelector("#job-stats-table tbody");
   const ths = document.querySelectorAll("#job-stats-table th");
   
+  // データ加工
   let list = jobData.map(d => {
-    const getVal = (val, sumName) => {
-      if (typeof val === "number") return val;
-      return d.total ? (Number(d[sumName]) || 0) / d.total : 0;
+    // 現在のモードに合わせて表示用データを作る（ここは前回と同じ）
+    const p = (key) => {
+      if (currentViewMode === "WIN") return d["w_" + key] || 0;
+      if (currentViewMode === "LOSE") return d["l_" + key] || 0;
+      return d[key] || 0; 
     };
 
     return {
       name: JOB_NAME_JP[d.job] || d.job,
+      jobKey: d.job, // ★クリック時に使う元の英語名
       winRate: (d.wins / d.total) * 100,
       pickRate: currentTotalMatches ? (d.total / currentTotalMatches) * 100 : 0,
       
-      avgK: getVal(d.avgK, "sumK"),
-      avgD: getVal(d.avgD, "sumD"),
-      avgA: getVal(d.avgA, "sumA"),
-      avgDmg: getVal(d.avgDamage, "sumDamage"),
-      avgTaken: getVal(d.avgTaken, "sumTaken"),
-      avgHeal: getVal(d.avgHeal, "sumHeal"),
+      avgK: p("avgK"),
+      avgD: p("avgD"),
+      avgA: p("avgA"),
+      avgDmg: p("avgDamage"),
+      avgTaken: p("avgTaken"),
+      avgHeal: p("avgHeal"),
+      avgTime: p("avgTime"),
 
-      raw: d
+      raw: d // 全データ（これを使ってモーダルを出す！）
     };
   });
 
@@ -251,9 +258,17 @@ function renderJobTable(jobData, currentTotalMatches) {
       const tr = document.createElement("tr");
       const winClass = d.winRate >= 50 ? "rate-high" : "rate-low";
       const fmt = (n) => Math.round(n).toLocaleString();
+      const fmtTime = (sec) => {
+        const m = Math.floor(sec / 60);
+        const s = Math.floor(sec % 60);
+        return `${m}:${s.toString().padStart(2, '0')}`;
+      };
 
       tr.innerHTML = `
-        <td style="text-align:left; font-weight:500;">${d.name}</td>
+        <td style="text-align:left; font-weight:500;" class="clickable-job" onclick="openModal('${d.jobKey}')">
+          ${d.name} <span style="font-size:0.8em; color:#718096;">❐</span>
+        </td>
+
         <td class="${winClass}">${d.winRate.toFixed(1)}%</td>
         <td>${d.pickRate.toFixed(1)}%</td>
         <td>${d.avgK.toFixed(2)}</td>
@@ -262,6 +277,7 @@ function renderJobTable(jobData, currentTotalMatches) {
         <td style="font-weight:bold; color:#d69e2e;">${fmt(d.avgDmg)}</td>
         <td style="font-weight:bold; color:#e53e3e;">${fmt(d.avgTaken)}</td>
         <td style="font-weight:bold; color:#38a169;">${fmt(d.avgHeal)}</td>
+        <td style="font-weight:bold; color:#718096;">${fmtTime(d.avgTime)}</td>
       `;
       tbody.appendChild(tr);
     });
@@ -269,12 +285,11 @@ function renderJobTable(jobData, currentTotalMatches) {
 
   list.sort((a, b) => b.winRate - a.winRate);
   draw(list);
-
+  
+  // (ソート機能はそのまま)
   ths.forEach(th => {
-    // 古いイベントリスナーが重複しないよう、クローンして置換（簡易リセット）
     const newTh = th.cloneNode(true);
     th.parentNode.replaceChild(newTh, th);
-
     newTh.addEventListener("click", () => {
       const key = newTh.dataset.key;
       if (!key) return;
@@ -297,3 +312,85 @@ function resetCanvas(id) {
   newCanv.id = id;
   container.appendChild(newCanv);
 }
+
+// --- 以下、モーダル（カード詳細）用の処理 ---
+
+// カードを開く
+function openModal(jobKey) {
+  // グローバルデータから該当ジョブを探す
+  // (currentViewModeに関係なく、現在のステージデータから探す)
+  // updateDashboardで使っている targetData はローカル変数なので、
+  // globalData から探し直します。
+  
+  // 今選ばれているステージを取得
+  const sel = document.getElementById("stage-selector");
+  const currentStage = sel ? sel.value : "ALL";
+  
+  let targetList;
+  if (currentStage === "ALL") {
+    targetList = globalData.byJob;
+  } else {
+    targetList = globalData.byStageJob.filter(d => d.stage === currentStage);
+  }
+
+  const d = targetList.find(j => j.job === jobKey);
+  if (!d) return;
+
+  // ジョブ名セット
+  document.getElementById("modal-job-name").textContent = 
+    (JOB_NAME_JP[d.job] || d.job) + " の詳細データ";
+
+  // テーブルの中身を作る関数
+  const fmt = (n) => Math.round(n).toLocaleString();
+  const fmt2 = (n) => n.toFixed(2);
+  const fmtTime = (sec) => {
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${m}:${s.toString().padStart(2, '0')}`;
+  };
+
+  // 3行分のHTML生成
+  const makeRow = (label, cls, prefix) => {
+    // prefixが空なら全体、"w_"なら勝ち、"l_"なら負け
+    const p = (key) => d[prefix + key] || d[key] || 0; 
+    
+    // データがない場合(0試合など)のガード
+    if (label === "勝利" && d.wins === 0) return `<tr class="${cls}"><td>${label}</td><td colspan="7">データなし</td></tr>`;
+    if (label === "敗北" && d.losses === 0) return `<tr class="${cls}"><td>${label}</td><td colspan="7">データなし</td></tr>`;
+
+    return `
+      <tr class="${cls}">
+        <td>${label}</td>
+        <td>${fmt2(p("avgK"))}</td>
+        <td>${fmt2(p("avgD"))}</td>
+        <td>${fmt2(p("avgA"))}</td>
+        <td style="color:#d69e2e">${fmt(p("avgDamage"))}</td>
+        <td style="color:#e53e3e">${fmt(p("avgTaken"))}</td>
+        <td style="color:#38a169">${fmt(p("avgHeal"))}</td>
+        <td style="color:#718096">${fmtTime(p("avgTime"))}</td>
+      </tr>
+    `;
+  };
+
+  const html = 
+    makeRow("全体", "row-all", "") +
+    makeRow("勝利", "row-win", "w_") +
+    makeRow("敗北", "row-lose", "l_");
+
+  document.getElementById("modal-stats-body").innerHTML = html;
+
+  // 表示
+  document.getElementById("job-detail-modal").style.display = "flex";
+}
+
+// カードを閉じる
+function closeModal() {
+  document.getElementById("job-detail-modal").style.display = "none";
+}
+
+// モーダルの外側をクリックしたら閉じる
+document.getElementById("job-detail-modal").addEventListener("click", (e) => {
+  if (e.target.id === "job-detail-modal") {
+    closeModal();
+  }
+});
