@@ -339,3 +339,267 @@ function resetCanvas(id) {
   const parent = old.parentElement; old.remove();
   const n = document.createElement("canvas"); n.id = id; parent.appendChild(n);
 }
+
+
+// --- ジョブ別 散布図（バブル） ---
+
+let jobScatterChartInstance = null;
+const JOB_ICON_CACHE = new Map(); // jobKey -> { img, promise, canvas }
+
+function roleToLabel(role) {
+  if (role === "tank") return "タンク";
+  if (role === "healer") return "ヒーラー";
+  if (role === "dps") return "DPS";
+  return "不明";
+}
+
+function loadJobIcon(jobKey) {
+  if (JOB_ICON_CACHE.has(jobKey)) return JOB_ICON_CACHE.get(jobKey).promise;
+
+  const img = new Image();
+  img.src = `../images/JOB/${jobKey}.png`;
+
+  const promise = new Promise((resolve) => {
+    img.onload = () => resolve(img);
+    img.onerror = () => resolve(null);
+  });
+
+  JOB_ICON_CACHE.set(jobKey, { img, promise, canvas: null });
+  return promise;
+}
+
+function getJobIconCanvas(jobKey) {
+  const ent = JOB_ICON_CACHE.get(jobKey);
+  if (!ent || !ent.img) return null;
+  if (ent.canvas) return ent.canvas;
+
+  const size = 52;
+  const c = document.createElement("canvas");
+  c.width = size;
+  c.height = size;
+  const ctx = c.getContext("2d");
+
+  const role = JOB_META[jobKey]?.role || "unknown";
+  const ring =
+    role === "tank" ? "#63b3ed" :
+    role === "healer" ? "#48bb78" :
+    role === "dps" ? "#f687b3" : "#a0aec0";
+
+  // ふわっと白背景 + ロール色リング
+  ctx.beginPath();
+  ctx.arc(size / 2, size / 2, size / 2 - 2, 0, Math.PI * 2);
+  ctx.fillStyle = "rgba(255,255,255,0.92)";
+  ctx.fill();
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = ring;
+  ctx.stroke();
+
+  // アイコン（丸くクリップ）
+  const pad = 8;
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(size / 2, size / 2, size / 2 - 6, 0, Math.PI * 2);
+  ctx.clip();
+  ctx.drawImage(ent.img, pad, pad, size - pad * 2, size - pad * 2);
+  ctx.restore();
+
+  ent.canvas = c;
+  return c;
+}
+
+function getOrCreateJobScatterTooltip(chart) {
+  const parent = chart.canvas.parentNode;
+  let el = parent.querySelector(".job-scatter-tooltip");
+  if (el) return el;
+
+  el = document.createElement("div");
+  el.className = "job-scatter-tooltip";
+  el.style.position = "absolute";
+  el.style.pointerEvents = "none";
+  el.style.opacity = "0";
+  el.style.transition = "opacity 0.12s ease, transform 0.12s ease";
+  el.style.transform = "translateY(4px)";
+  el.style.background = "rgba(255,255,255,0.96)";
+  el.style.border = "1px solid rgba(226,232,240,0.9)";
+  el.style.borderRadius = "14px";
+  el.style.boxShadow = "0 10px 25px rgba(0,0,0,0.10)";
+  el.style.padding = "10px 12px";
+  el.style.fontFamily = '"Kiwi Maru", serif';
+  el.style.color = "#455A64";
+  el.style.zIndex = "10";
+  parent.appendChild(el);
+  return el;
+}
+
+function jobScatterExternalTooltip(context) {
+  const { chart, tooltip } = context;
+  const tooltipEl = getOrCreateJobScatterTooltip(chart);
+
+  if (!tooltip || tooltip.opacity === 0) {
+    tooltipEl.style.opacity = "0";
+    tooltipEl.style.transform = "translateY(4px)";
+    return;
+  }
+
+  const dp = tooltip.dataPoints && tooltip.dataPoints[0];
+  const raw = dp && dp.raw;
+  if (!raw) return;
+
+  const jobKey = raw.jobKey;
+  const meta = JOB_META[jobKey] || {};
+  const role = meta.role || "unknown";
+  const roleBg = ROLE_COLORS[role] || ROLE_COLORS.unknown;
+
+  const jp = meta.jp || jobKey;
+  const winRate = Number(raw.winRate || 0).toFixed(1);
+  const pickRate = Number(raw.pickRate || 0).toFixed(1);
+  const matches = raw.matches || 0;
+
+  tooltipEl.innerHTML = `
+    <div style="display:flex; gap:10px; align-items:center;">
+      <img src="../images/JOB/${jobKey}.png" style="width:34px;height:34px;border-radius:12px;background:#fff;padding:3px;box-shadow:0 2px 8px rgba(0,0,0,0.08);" />
+      <div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <div style="font-size:0.98rem; font-weight:600;">${jp}</div>
+          <div style="font-size:0.75rem; padding:2px 8px; border-radius:999px; background:${roleBg}; color:#546E7A;">
+            ${roleToLabel(role)}
+          </div>
+        </div>
+        <div style="margin-top:6px; font-size:0.85rem; color:#546E7A; line-height:1.45;">
+          勝率 ${winRate}%　使用率 ${pickRate}%<br>
+          試合数 ${matches}
+        </div>
+      </div>
+    </div>
+  `;
+
+  const cw = chart.canvas.width;
+  const ch = chart.canvas.height;
+
+  // 右下に出す（はみ出しは内側に寄せる）
+  let x = tooltip.caretX + 14;
+  let y = tooltip.caretY + 14;
+
+  tooltipEl.style.left = "0px";
+  tooltipEl.style.top = "0px";
+  tooltipEl.style.opacity = "1";
+
+  const tw = tooltipEl.offsetWidth;
+  const th = tooltipEl.offsetHeight;
+
+  x = Math.max(8, Math.min(x, cw - tw - 8));
+  y = Math.max(8, Math.min(y, ch - th - 8));
+
+  tooltipEl.style.left = x + "px";
+  tooltipEl.style.top = y + "px";
+  tooltipEl.style.opacity = "1";
+  tooltipEl.style.transform = "translateY(0px)";
+}
+
+function renderJobScatterChart(jobData, totalMatches) {
+  const canvas = document.getElementById("jobScatterChart");
+  if (!canvas) return;
+
+  const keys = jobData
+    .map(d => d.job)
+    .filter(k => JOB_META[k]);
+
+  Promise.all(keys.map(loadJobIcon)).finally(() => {
+    resetCanvas("jobScatterChart");
+    const ctx = document.getElementById("jobScatterChart").getContext("2d");
+
+    const points = jobData
+      .filter(d => d.total > 0 && JOB_META[d.job])
+      .map(d => {
+        const matches = Math.max(1, Math.floor(d.total / 10));
+        const winRate = d.total ? (d.wins / d.total) * 100 : 0;
+        const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
+        return { jobKey: d.job, matches, winRate, pickRate };
+      });
+
+    if (!points.length) return;
+
+    const counts = points.map(p => p.matches);
+    const minC = Math.min(...counts);
+    const maxC = Math.max(...counts);
+
+    const minR = 6;   // なるべく小さめ
+    const maxR = 16;  // 上限も控えめ
+    const scaleR = (c) => {
+      if (maxC === minC) return (minR + maxR) / 2;
+      const t = (Math.sqrt(c) - Math.sqrt(minC)) / (Math.sqrt(maxC) - Math.sqrt(minC));
+      return minR + t * (maxR - minR);
+    };
+
+    // 大きいのを先に描いて、小さいのが上に来るように
+    const bubbles = points
+      .map(p => ({
+        x: p.pickRate,
+        y: p.winRate,
+        r: scaleR(p.matches),
+        jobKey: p.jobKey,
+        matches: p.matches,
+        winRate: p.winRate,
+        pickRate: p.pickRate
+      }))
+      .sort((a, b) => b.r - a.r);
+
+    if (jobScatterChartInstance) {
+      try { jobScatterChartInstance.destroy(); } catch (_) {}
+      jobScatterChartInstance = null;
+    }
+
+    jobScatterChartInstance = new Chart(ctx, {
+      type: "bubble",
+      data: {
+        datasets: [
+          {
+            label: "jobs",
+            data: bubbles,
+            parsing: false,
+            pointStyle: (c) => getJobIconCanvas(c.raw.jobKey) || "circle",
+            hoverRadius: 2
+          }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            enabled: false,
+            external: jobScatterExternalTooltip
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            max: 100,
+            title: { display: true, text: "使用率 (%)" }
+          },
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: { display: true, text: "勝率 (%)" }
+          }
+        },
+        onHover: (evt, elements) => {
+          evt.native.target.style.cursor = elements && elements.length ? "pointer" : "default";
+        },
+        onClick: (_evt, elements, chart) => {
+          if (!elements || !elements.length) return;
+          const el = elements[0];
+          const raw = chart.data.datasets[el.datasetIndex].data[el.index];
+          if (raw && raw.jobKey) openModal(raw.jobKey);
+        }
+      }
+    });
+  });
+}
+
+const _updateDashboardOriginal = updateDashboard;
+updateDashboard = function () {
+  _updateDashboardOriginal();
+  const { data, total } = getCurrentStageData();
+  renderJobScatterChart(data, total);
+};
