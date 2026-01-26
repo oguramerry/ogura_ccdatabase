@@ -148,28 +148,55 @@ function renderRoleAnalysisChart(jobData, totalMatches) {
   resetCanvas("roleAnalysisChart");
   const ctx = document.getElementById("roleAnalysisChart").getContext("2d");
 
-  // ロール別の集計
+  // 1. DPSの内訳定義
+  const MELEE = ["MNK", "DRG", "NIN", "SAM", "RPR", "VPR"];
+  const RANGE = ["BRD", "MCH", "DNC"];
+  const CASTER = ["BLM", "SMN", "RDM", "PCT"];
+
+  // 2. 集計用ボックスの作成（5区分）
+  // bg: 棒グラフの背景色, color: 棒グラフの枠線色
   const roles = {
-    tank:   { wins: 0, total: 0, label: "タンク", color: "#63b3ed", bg: "#E3F2FD" },
+    tank:   { wins: 0, total: 0, label: "タンク",   color: "#63b3ed", bg: "#E3F2FD" },
     healer: { wins: 0, total: 0, label: "ヒーラー", color: "#48bb78", bg: "#E8F5E9" },
-    dps:    { wins: 0, total: 0, label: "DPS", color: "#f687b3", bg: "#FCE4EC" }
+    melee:  { wins: 0, total: 0, label: "メレー",   color: "#f56565", bg: "#FED7D7" },
+    range:  { wins: 0, total: 0, label: "レンジ",   color: "#ed8936", bg: "#FEEBC8" },
+    caster: { wins: 0, total: 0, label: "キャスター", color: "#9f7aea", bg: "#E9D8FD" }
   };
 
+  // 3. データの振り分け
   jobData.forEach(d => {
-    const r = JOB_META[d.job]?.role;
-    if (roles[r]) {
-      roles[r].wins += d.wins;
-      roles[r].total += d.total;
+    const meta = JOB_META[d.job];
+    const r = meta?.role; // "tank", "healer", "dps"
+
+    if (r === "tank") {
+      roles.tank.wins += d.wins;
+      roles.tank.total += d.total;
+    } else if (r === "healer") {
+      roles.healer.wins += d.wins;
+      roles.healer.total += d.total;
+    } else if (r === "dps") {
+      // DPSの場合はジョブ名でさらに細かく分類
+      if (MELEE.includes(d.job)) {
+        roles.melee.wins += d.wins;
+        roles.melee.total += d.total;
+      } else if (RANGE.includes(d.job)) {
+        roles.range.wins += d.wins;
+        roles.range.total += d.total;
+      } else if (CASTER.includes(d.job)) {
+        roles.caster.wins += d.wins;
+        roles.caster.total += d.total;
+      }
     }
   });
 
+  // 4. チャート用データ生成
   const labels = Object.values(roles).map(r => r.label);
-const winRates = Object.values(roles).map(r => r.total ? Number((r.wins / r.total * 100).toFixed(1)) : 0);
-const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total / totalMatches * 100).toFixed(1)) : 0);
+  const winRates = Object.values(roles).map(r => r.total ? Number((r.wins / r.total * 100).toFixed(1)) : 0);
+  const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total / totalMatches * 100).toFixed(1)) : 0);
+  const bgColors = Object.values(roles).map(r => r.bg);
+  const borderColors = Object.values(roles).map(r => r.color);
 
-
-  
-
+  // 5. 描画
   new Chart(ctx, {
     type: 'bar',
     data: {
@@ -178,21 +205,21 @@ const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total /
         {
           label: '平均勝率 (%)',
           data: winRates,
-          backgroundColor: Object.values(roles).map(r => r.bg),
-          borderColor: Object.values(roles).map(r => r.color),
+          backgroundColor: bgColors,
+          borderColor: borderColors,
           borderWidth: 2,
           borderRadius: 8,
-          yAxisID: 'yWin', // 左側の軸を使用
+          yAxisID: 'yWin',
           order: 2
         },
         {
           label: '人口比率 (%)',
           data: pickRates,
-          type: 'line', // 人口比率だけ折れ線にする
+          type: 'line', // 人口比率は折れ線で表示
           borderColor: '#4a5568',
           borderWidth: 3,
           fill: false,
-          yAxisID: 'yPop', // 右側の軸を使用
+          yAxisID: 'yPop',
           order: 1
         }
       ]
@@ -210,9 +237,16 @@ const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total /
           beginAtZero: true,
           max: 100,
           position: 'right',
-          grid: { drawOnChartArea: false }, // グリッド線が重ならないようにする
+          grid: { drawOnChartArea: false },
           title: { display: true, text: '人口比率 (%)' }
         }
+      },
+      plugins: {
+        legend: { position: 'bottom' }
+      }
+    }
+  });
+}
       },
       plugins: {
         legend: { position: 'bottom' } // 凡例を表示して指標を明確にする
@@ -497,6 +531,13 @@ function jobScatterExternalTooltip(context) {
 }
 
 function renderJobScatterChart(jobData, totalMatches) {
+  const groups = [
+    { label: "TANK", jobs: ["PLD", "WAR", "DRK", "GNB"] },
+    { label: "HEALER", jobs: ["WHM", "SCH", "AST", "SGE"] },
+    { label: "MELEE", jobs: ["MNK", "DRG", "NIN", "SAM", "RPR", "VPR"] },
+    { label: "RANGE", jobs: ["BRD", "MCH", "DNC"] },
+    { label: "CASTER", jobs: ["BLM", "SMN", "RDM", "PCT"] }
+  ];
   const canvas = document.getElementById("jobScatterChart");
   const iconContainer = document.getElementById("job-scatter-icons");
   if (!canvas || !iconContainer) return;
