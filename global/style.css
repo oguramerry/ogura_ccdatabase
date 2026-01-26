@@ -403,5 +403,20 @@ main {
   min-height: 30px !important;
 }
 
+/* scatter chartの高さを固定して暴走を止める */
+.chart-card.wide:has(#jobScatterChart) .chart-container {
+  height: 240px !important;
+}
+
+.chart-card.wide:has(#jobScatterChart) #jobScatterChart {
+  height: 190px !important;
+  max-height: 190px !important;
+}
+
+.chart-card.wide:has(#jobScatterChart) #job-scatter-icons {
+  margin-top: 6px !important;
+  min-height: 30px !important;
+}
+
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
