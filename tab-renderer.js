@@ -8,7 +8,6 @@ window.TabRenderer = {
     const rawMatches = statsData.matches || [];
 
     // 1. 5時切り替えルール適用
-    // (GASから time が届いていれば、ここで深夜の試合が前日に移動します)
     const matches = rawMatches.map(m => {
       let dStr = m.date; 
       if (m.time) {
@@ -25,16 +24,12 @@ window.TabRenderer = {
     // 日付計算ヘルパー
     const toYMD = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
     
-    // 2. 今日の日付（リアルタイム判定も5時切り替え）
+    // 2. 今日の日付
     const now = new Date();
-    if (now.getHours() < 5) {
-      now.setDate(now.getDate() - 1);
-    }
+    if (now.getHours() < 5) now.setDate(now.getDate() - 1);
     const todayStr = toYMD(now);
     
     // 3. 今週の開始日（日曜日始まり）
-    // JavaScriptの getDay() は 日曜=0, 月曜=1... なので
-    // そのまま引けば、その週の日曜日になります。
     const d = new Date(now);
     d.setDate(now.getDate() - now.getDay()); 
     const weekStart = toYMD(d);
@@ -52,31 +47,34 @@ window.TabRenderer = {
       const w = list.filter(m => /win|勝利/i.test(m.result) || Number(m.result) > 0).length;
       const l = list.filter(m => /lose|敗北/i.test(m.result) || Number(m.result) < 0).length;
       
-      const total = w + l;
+      const total = w + l; // 総試合数
       const rateVal = total > 0 ? (w / total) * 100 : 0;
       const rateStr = total > 0 ? rateVal.toFixed(1) : "-";
 
-      // 色判定
+      // 背景色の判定
       let colorClass = "";
       if (total > 0) {
-        if (rateVal > 50) {
-          colorClass = "bg-win-color";
-        } else if (rateVal < 50) {
-          colorClass = "bg-loss-color";
-        }
+        if (rateVal > 50) colorClass = "bg-win-color";
+        else if (rateVal < 50) colorClass = "bg-loss-color";
       }
       
+      // ★ここを変更！
+      // 1. Totalを表示
+      // 2. 勝敗の数字にクラス(score-win-text / score-loss-text)をつけて色を変える
       return `
         <div class="summary-card ${colorClass}">
           <div class="title">${item.title}</div>
-          <div class="score">${w}勝 ${l}敗</div>
+          <div class="total-row">Total: ${total}試合</div>
+          <div class="score">
+            <span class="score-win-text">${w}</span>勝 
+            <span class="score-loss-text">${l}</span>敗
+          </div>
           <div class="rate">勝率: ${rateStr}%</div>
         </div>`;
     }).join("");
 
     return `<div class="summary-cards">${cardsHtml}</div>`;
   },
-
 // ■ Jobタブ: ロール別表示（全ジョブ表示版）
   job: (statsData) => {
     const map = statsData.byJob;
