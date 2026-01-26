@@ -140,3 +140,92 @@ tbody tr:hover {
 /* 勝率の色付け用 */
 .rate-high { color: #38a169; font-weight: bold; }
 .rate-low  { color: #e53e3e; font-weight: bold; }
+
+/* モーダル全体の背景（暗くするやつ） */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* カード本体 */
+.modal-card {
+  background: #fff;
+  width: 90%;
+  max-width: 800px; /* 横幅の上限 */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  overflow: hidden;
+  animation: slideUp 0.2s ease-out;
+}
+
+/* ヘッダー */
+.modal-header {
+  background: #2d3748;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0;
+  color: #fff;
+}
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* テーブル周り */
+.modal-body {
+  padding: 20px;
+  overflow-x: auto;
+}
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.compare-table th {
+  background: #edf2f7;
+  color: #4a5568;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.compare-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  font-weight: bold;
+}
+
+/* 3行の色分け */
+.row-all { background-color: #fff; }
+.row-win { background-color: #f0fff4; color: #276749; } /* 薄い緑 */
+.row-lose { background-color: #fff5f5; color: #c53030; } /* 薄い赤 */
+
+/* アニメーション */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(20px); } to { transform: translateY(0); } }
+
+/* ジョブ名をクリックできるようにする */
+.clickable-job {
+  color: #3182ce;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.clickable-job:hover {
+  color: #2c5282;
+}
