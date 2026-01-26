@@ -390,7 +390,7 @@ main {
 
 /* 散布図は下にアイコンがいるので別枠で確保 */
 .chart-container:has(#jobScatterChart) {
-  height: 230px !important;
+  height: 2190px !important;
 }
 
 /* ダメージランキングは少しだけ余裕 */
@@ -399,8 +399,8 @@ main {
 }
 
 #job-scatter-icons {
-  margin-top: 10px !important;
-  min-height: 38px !important;
+  margin-top: 6px !important;
+  min-height: 30px !important;
 }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
