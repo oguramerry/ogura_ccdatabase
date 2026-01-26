@@ -183,6 +183,7 @@ const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total /
           borderWidth: 2,
           borderRadius: 8,
           yAxisID: 'yWin' // 左側の軸を使用
+          order: 1
         },
         {
           label: '人口比率 (%)',
@@ -192,6 +193,7 @@ const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total /
           borderWidth: 3,
           fill: false,
           yAxisID: 'yPop' // 右側の軸を使用
+          order: 2
         }
       ]
     },
