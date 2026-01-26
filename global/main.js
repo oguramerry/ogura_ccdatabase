@@ -21,6 +21,8 @@ async function fetchGlobalData() {
     renderJobPieChart(data.byJob);
     renderWinRateChart(data.byJob);
     renderHourChart(data.byHour);
+    renderDamageChart(data.byJob);
+    renderJobTable(data.byJob, data.meta.total); // 全体の試合数も渡す
 
   } catch (err) {
     console.error("データ取得エラー:", err);
@@ -131,5 +133,107 @@ function renderHourChart(hourData) {
         y: { beginAtZero: true }
       }
     }
+  });
+}
+
+// 4. 平均与ダメージランキング（棒グラフ）
+function renderDamageChart(jobData) {
+  const ctx = document.getElementById("damageChart").getContext("2d");
+
+  // 平均ダメージが高い順
+  const filtered = jobData
+    .filter(d => d.total >= 5) // 5回以上登場したジョブ
+    .map(d => ({
+      ...d,
+      avgDmg: d.sumDamage / d.total
+    }))
+    .sort((a, b) => b.avgDmg - a.avgDmg);
+
+  const labels = filtered.map(d => JOB_NAME_JP[d.job] || d.job);
+  const data = filtered.map(d => Math.round(d.avgDmg)); // 小数点以下四捨五入
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: '平均与ダメージ',
+        data: data,
+        backgroundColor: '#f6ad55',
+        borderRadius: 4
+      }]
+    },
+    options: {
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+}
+
+// 5. 詳細データテーブル（ソート機能付き）
+function renderJobTable(jobData, globalTotalMatches) {
+  const tbody = document.querySelector("#job-stats-table tbody");
+  const ths = document.querySelectorAll("#job-stats-table th");
+  
+  // データ加工（平均値などを計算しておく）
+  let list = jobData.map(d => {
+    return {
+      name: JOB_NAME_JP[d.job] || d.job,
+      winRate: (d.wins / d.total) * 100,
+      pickRate: (d.total / globalTotalMatches) * 100,
+      avgK: d.sumK / d.total,
+      avgD: d.sumD / d.total,
+      avgA: d.sumA / d.total,
+      avgDmg: d.sumDamage / d.total,
+      raw: d // 元データも持っておく
+    };
+  });
+
+  // 描画関数
+  const draw = (sortedList) => {
+    tbody.innerHTML = "";
+    sortedList.forEach(d => {
+      const tr = document.createElement("tr");
+      
+      // 勝率に色をつける
+      const winClass = d.winRate >= 50 ? "rate-high" : "rate-low";
+
+      tr.innerHTML = `
+        <td style="text-align:left; font-weight:500;">${d.name}</td>
+        <td class="${winClass}">${d.winRate.toFixed(1)}%</td>
+        <td>${d.pickRate.toFixed(1)}%</td>
+        <td>${d.avgK.toFixed(2)}</td>
+        <td>${d.avgD.toFixed(2)}</td>
+        <td>${d.avgA.toFixed(2)}</td>
+        <td style="font-weight:bold;">${Math.round(d.avgDmg).toLocaleString()}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  };
+
+  // 初期表示（勝率順）
+  list.sort((a, b) => b.winRate - a.winRate);
+  draw(list);
+
+  // ソート機能のイベントリスナー
+  ths.forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.key;
+      if (!key) return;
+
+      // 並び替え実行
+      list.sort((a, b) => {
+        // ジョブ名だけ文字コード順、それ以外は数字の降順（大きい方が偉い）
+        if (key === "job") return a.name.localeCompare(b.name);
+        return b[key] - a[key];
+      });
+      
+      draw(list);
+    });
   });
 }
