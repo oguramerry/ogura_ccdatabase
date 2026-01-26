@@ -535,6 +535,18 @@ function createResizedIcon(img, size) {
   return c;
 }
 
+// --- ヘルパー関数：半透明のアイコン画像を生成する ---
+
+function createFadedIcon(img) {
+  const c = document.createElement('canvas');
+  c.width = img.width;
+  c.height = img.height;
+  const ctx = c.getContext('2d');
+  ctx.globalAlpha = 0.15; // ★ここで薄さを調整
+  ctx.drawImage(img, 0, 0);
+  return c;
+}
+
 // --- ヘルパー関数：半透明のアイコンを生成する ---
 function createFadedIcon(sourceCanvas) {
   const c = document.createElement('canvas');
