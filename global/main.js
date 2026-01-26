@@ -123,27 +123,6 @@ function refreshDamageChartOnly() {
 
 // --- グラフ描画関数 ---
 
-function renderJobPieChart(jobData) {
-  resetCanvas("jobPieChart");
-  const ctx = document.getElementById("jobPieChart").getContext("2d");
-  const sorted = [...jobData].sort((a, b) => b.total - a.total);
-  const topList = sorted.slice(0, 8);
-  const otherTotal = sorted.slice(8).reduce((sum, d) => sum + d.total, 0);
-  
-  new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: [...topList.map(d => JOB_META[d.job]?.jp || d.job), ...(otherTotal > 0 ? ["その他"] : [])],
-      datasets: [{
-        data: [...topList.map(d => Math.floor(d.total / 10)), ...(otherTotal > 0 ? [Math.floor(otherTotal / 10)] : [])],
-        backgroundColor: ['#63b3ed', '#4fd1c5', '#f6e05e', '#f687b3', '#9f7aea', '#ed8936', '#a0aec0', '#48bb78', '#cbd5e0'],
-        borderWidth: 2, borderColor: '#fff'
-      }]
-    },
-    options: { maintainAspectRatio: false, plugins: { legend: { position: 'right' } } }
-  });
-}
-
 function renderRoleAnalysisChart(jobData, totalMatches) {
   resetCanvas("roleAnalysisChart");
   const ctx = document.getElementById("roleAnalysisChart").getContext("2d");
@@ -243,13 +222,6 @@ function renderRoleAnalysisChart(jobData, totalMatches) {
       },
       plugins: {
         legend: { position: 'bottom' }
-      }
-    }
-  });
-}
-      },
-      plugins: {
-        legend: { position: 'bottom' } // 凡例を表示して指標を明確にする
       }
     }
   });
