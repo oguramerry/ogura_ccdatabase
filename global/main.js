@@ -105,7 +105,7 @@ function updateDashboard() {
   if (totalEl) totalEl.textContent = `${Math.floor(total / 10)} 試合`;
   
   renderJobPieChart(data);
-  renderRoleAnalysisChart(data);
+  renderRoleAnalysisChart(data,total);
   renderHourChart(hour);
   renderDamageChart(data);
   renderJobTable(data, total);
@@ -164,8 +164,9 @@ function renderRoleAnalysisChart(jobData, totalMatches) {
   });
 
   const labels = Object.values(roles).map(r => r.label);
-  const winRates = Object.values(roles).map(r => r.total ? (r.wins / r.total * 100).toFixed(1) : 0);
-  const pickRates = Object.values(roles).map(r => totalMatches ? (r.total / totalMatches * 100).toFixed(1) : 0);
+const winRates = Object.values(roles).map(r => r.total ? Number((r.wins / r.total * 100).toFixed(1)) : 0);
+const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total / totalMatches * 100).toFixed(1)) : 0);
+
 
   
 
