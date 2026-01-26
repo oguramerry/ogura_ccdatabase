@@ -153,15 +153,16 @@ function renderWinRateChart(jobData) {
   });
 }
 
+// 3. 時間帯別（折れ線＋棒グラフ）
 function renderHourChart(hourData) {
-  // 時間帯チャートはステージ切り替え対象外なのでリセット不要だが念のため
   resetCanvas("hourChart");
   const ctx = document.getElementById("hourChart").getContext("2d");
   
   const hours = Array.from({length: 24}, (_, i) => i);
   const counts = hours.map(h => {
     const found = hourData.find(d => Number(d.hour) === h);
-    return found ? found.total : 0;
+    // ★修正：ここでも ÷10 して切り捨て処理を入れました！
+    return found ? Math.floor(found.total / 10) : 0;
   });
 
   new Chart(ctx, {
@@ -177,7 +178,9 @@ function renderHourChart(hourData) {
     },
     options: {
       maintainAspectRatio: false,
-      scales: { y: { beginAtZero: true } }
+      scales: {
+        y: { beginAtZero: true }
+      }
     }
   });
 }
