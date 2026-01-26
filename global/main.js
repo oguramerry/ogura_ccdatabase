@@ -162,7 +162,7 @@ function updateDashboard(stageName) {
 
   // すべてのチャートに、ステージフィルター済みのデータを渡す
   renderJobPieChart(data);
-  renderWinRateChart(data);
+  renderRoleAnalysisChart(data);
   renderHourChart(hourData); // ★これで時間帯もステージ別になる！
   renderDamageChart(data);   // ★与ダメもステージフィルター適用
   renderJobTable(data, total); // ★完全リストもステージフィルター適用
@@ -220,33 +220,52 @@ function renderJobPieChart(jobData) {
   });
 }
 
-function renderWinRateChart(jobData) {
-  resetCanvas("jobWinRateChart");
-  const ctx = document.getElementById("jobWinRateChart").getContext("2d");
+// 新しいグラフ：ロール別分析
+function renderRoleAnalysisChart(jobData) {
+  resetCanvas("roleAnalysisChart");
+  const ctx = document.getElementById("roleAnalysisChart").getContext("2d");
 
-  const filtered = jobData
-    .filter(d => d.total >= 1)
-    .sort((a, b) => (b.wins / b.total) - (a.wins / a.total));
+  // ロールごとに集計する箱
+  const roles = {
+    tank:   { wins: 0, total: 0, label: "タンク", color: "#E3F2FD" },
+    healer: { wins: 0, total: 0, label: "ヒーラー", color: "#E8F5E9" },
+    dps:    { wins: 0, total: 0, label: "DPS", color: "#FCE4EC" }
+  };
 
-  const getJpName = (key) => JOB_META[key]?.jp || key;
-  const labels = filtered.map(d => getJpName(d.job));
-  const rates = filtered.map(d => ((d.wins / d.total) * 100).toFixed(1));
+  // データの集計
+  jobData.forEach(d => {
+    const role = JOB_META[d.job]?.role || "unknown";
+    if (roles[role]) {
+      roles[role].wins += d.wins;
+      roles[role].total += d.total;
+    }
+  });
+
+  const labels = Object.values(roles).map(r => r.label);
+  const winRates = Object.values(roles).map(r => r.total ? (r.wins / r.total * 100).toFixed(1) : 0);
+  const colors = Object.values(roles).map(r => r.color);
 
   new Chart(ctx, {
-    type: 'bar',
+    type: 'bar', // ロールごとの比較がしやすい棒グラフ
     data: {
       labels: labels,
       datasets: [{
-        label: '勝率 (%)',
-        data: rates,
-        backgroundColor: rates.map(r => r >= 50 ? '#68d391' : '#fc8181'),
-        borderRadius: 4
+        label: '平均勝率 (%)',
+        data: winRates,
+        backgroundColor: colors,
+        borderRadius: 12,
+        borderWidth: 2,
+        borderColor: "#cbd5e0"
       }]
     },
     options: {
-      indexAxis: 'y',
       maintainAspectRatio: false,
-      scales: { x: { beginAtZero: true, max: 100 } }
+      scales: {
+        y: { beginAtZero: true, max: 100, title: { display: true, text: '勝率 (%)' } }
+      },
+      plugins: {
+        legend: { display: false } // 凡例は不要
+      }
     }
   });
 }
