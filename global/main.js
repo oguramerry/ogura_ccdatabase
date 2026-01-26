@@ -523,6 +523,8 @@ function jobScatterExternalTooltip(context) {
   tooltipEl.style.transform = "translateY(0px)";
 }
 
+// --- main.js の renderJobScatterChart 関数をこれに置き換え ---
+
 function renderJobScatterChart(jobData, totalMatches) {
   const groups = [
     { label: "TANK", jobs: ["PLD", "WAR", "DRK", "GNB"] },
@@ -545,7 +547,6 @@ function renderJobScatterChart(jobData, totalMatches) {
       const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
       const role = JOB_META[d.job]?.role || "unknown";
       
-      // ロールごとの色定義
       const bg = ROLE_COLORS[role] || "#F5F5F5";
       const border = 
         role === "tank" ? "#63b3ed" : 
@@ -562,70 +563,76 @@ function renderJobScatterChart(jobData, totalMatches) {
 
   if (!points.length) return;
 
-  resetCanvas("jobScatterChart");
-  const ctx = document.getElementById("jobScatterChart").getContext("2d");
+  // ★変更点1：全てのアイコン画像を読み込んでからグラフを描画する
+  Promise.all(points.map(p => loadJobIcon(p.jobKey))).then(() => {
+    
+    resetCanvas("jobScatterChart");
+    const ctx = document.getElementById("jobScatterChart").getContext("2d");
 
-  if (jobScatterChartInstance) {
-    try { jobScatterChartInstance.destroy(); } catch (_) {}
-  }
-
-  // 強調表示（ターゲット以外を薄くする）ためのヘルパー
-  const updateStyles = (hoveredIndex) => {
-    const ds = jobScatterChartInstance.data.datasets[0];
-    if (hoveredIndex === null) {
-      ds.backgroundColor = points.map(p => p.backgroundColor);
-      ds.borderColor = points.map(p => p.borderColor);
-    } else {
-      // ターゲット以外を透明度 0.15 (15%) くらいにする
-      ds.backgroundColor = points.map((p, i) => i === hoveredIndex ? p.backgroundColor : p.backgroundColor + "26");
-      ds.borderColor = points.map((p, i) => i === hoveredIndex ? p.borderColor : p.borderColor + "26");
+    if (jobScatterChartInstance) {
+      try { jobScatterChartInstance.destroy(); } catch (_) {}
     }
-    jobScatterChartInstance.update("none");
-  };
 
-  jobScatterChartInstance = new Chart(ctx, {
-    type: "bubble",
-    data: {
-      datasets: [{
-        label: "jobs",
-        data: points.map(p => ({ x: p.pickRate, y: p.winRate, r: 9, ...p })),
-        backgroundColor: points.map(p => p.backgroundColor), // 点の中の色
-        borderColor: points.map(p => p.borderColor),     // 点の枠線
-        borderWidth: 2,
-        hoverRadius: (ctx) => ctx.raw.r + 5,
-        hoverBorderWidth: 3
-      }]
-    },
-    options: {
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: { enabled: false, external: jobScatterExternalTooltip }
+    // ホバー時の透過処理用ヘルパー
+    const updateStyles = (hoveredIndex) => {
+      // アイコン描画モードでは透明度操作が複雑なため、
+      // ここではシンプルにツールチップの連動のみを行う（必要なら不透明度操作を追加可能）
+      jobScatterChartInstance.update("none");
+    };
+
+    jobScatterChartInstance = new Chart(ctx, {
+      type: "bubble",
+      data: {
+        datasets: [{
+          label: "jobs",
+          // ★変更点2：半径(r)を大きくする（9 -> 20くらいが見やすい）
+          data: points.map(p => ({ x: p.pickRate, y: p.winRate, r: 22, ...p })),
+          
+          // ★変更点3：点を「アイコン画像」に設定
+          // getJobIconCanvas は既にリング付きのアイコンを生成してくれる関数
+          pointStyle: points.map(p => getJobIconCanvas(p.jobKey)),
+          
+          backgroundColor: points.map(p => p.backgroundColor),
+          borderColor: points.map(p => p.borderColor),
+          borderWidth: 1, // アイコン自体に枠があるのでここは細く
+          
+          // ホバー時は少し大きく
+          hoverRadius: 26, 
+          hoverBorderWidth: 0
+        }]
       },
-      scales: {
-        x: { 
-          beginAtZero: true, 
-          title: { display: true, text: "使用率 (%)" },
-          suggestedMax: Math.max(...points.map(p => p.pickRate)) * 1.15
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { enabled: false, external: jobScatterExternalTooltip }
         },
-        y: { 
-          title: { display: true, text: "勝率 (%)" },
-          suggestedMin: Math.min(...points.map(p => p.winRate)) - 3,
-          suggestedMax: Math.max(...points.map(p => p.winRate)) + 3
+        scales: {
+          x: { 
+            beginAtZero: true, 
+            title: { display: true, text: "使用率 (%)" },
+            suggestedMax: Math.max(...points.map(p => p.pickRate)) * 1.15
+          },
+          y: { 
+            title: { display: true, text: "勝率 (%)" },
+            // アイコンが切れないように上下に少し余裕を持たせる
+            suggestedMin: Math.min(...points.map(p => p.winRate)) - 5,
+            suggestedMax: Math.max(...points.map(p => p.winRate)) + 5
+          }
+        },
+        onHover: (evt, elements) => {
+          evt.native.target.style.cursor = elements && elements.length ? "pointer" : "default";
+        },
+        onClick: (_evt, elements, chart) => {
+          if (!elements || !elements.length) return;
+          const raw = chart.data.datasets[0].data[elements[0].index];
+          if (raw && raw.jobKey) openModal(raw.jobKey);
         }
-      },
-      onHover: (evt, elements) => {
-        evt.native.target.style.cursor = elements && elements.length ? "pointer" : "default";
-      },
-      onClick: (_evt, elements, chart) => {
-        if (!elements || !elements.length) return;
-        const raw = chart.data.datasets[0].data[elements[0].index];
-        if (raw && raw.jobKey) openModal(raw.jobKey);
       }
-    }
+    });
   });
 
-  // 3. ロール・区分別のアイコン一覧を生成
+  // --- アイコン一覧の生成---
   groups.forEach(group => {
     const groupPoints = points.filter(p => group.jobs.includes(p.jobKey));
     if (groupPoints.length === 0) return;
@@ -645,6 +652,7 @@ function renderJobScatterChart(jobData, totalMatches) {
       const globalIndex = points.findIndex(point => point.jobKey === p.jobKey);
       
       const img = document.createElement("img");
+      
       img.src = `../images/JOB/${p.jobKey}.png`;
       img.style.cssText = `width:32px; height:32px; cursor:pointer; border-radius:6px; border:2px solid ${p.borderColor}; transition:0.2s; background:${p.backgroundColor}; padding:2px;`;
       
@@ -652,13 +660,17 @@ function renderJobScatterChart(jobData, totalMatches) {
         img.style.transform = "scale(1.25) translateY(-2px)";
         img.style.boxShadow = `0 4px 12px ${p.borderColor}88`;
         updateStyles(globalIndex);
-        jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: globalIndex }], { x: 0, y: 0 });
+        if(jobScatterChartInstance) {
+           jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: globalIndex }], { x: 0, y: 0 });
+        }
       };
       img.onmouseleave = () => {
         img.style.transform = "scale(1)";
         img.style.boxShadow = "none";
         updateStyles(null);
-        jobScatterChartInstance.tooltip.setActiveElements([], { x: 0, y: 0 });
+        if(jobScatterChartInstance) {
+           jobScatterChartInstance.tooltip.setActiveElements([], { x: 0, y: 0 });
+        }
       };
       img.onclick = () => openModal(p.jobKey);
       iconsDiv.appendChild(img);
