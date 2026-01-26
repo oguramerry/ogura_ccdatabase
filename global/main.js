@@ -3,7 +3,7 @@ const API_URL = "https://script.google.com/macros/s/AKfycbxCOYEGborjJzpnyd1lG5_M
 
 // --- グローバル変数 ---
 let globalData = null;       // 全データ保存用
-let currentViewMode = "ALL"; // ALL(全体), WIN(勝), LOSE(負) ★これが抜けていました！
+let currentViewMode = "ALL"; // ALL(全体), WIN(勝), LOSE(負) 
 
 // --- 初期化 ---
 document.addEventListener("DOMContentLoaded", () => {
