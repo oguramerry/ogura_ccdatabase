@@ -1,43 +1,79 @@
-
+// ★ご自身のGASのURLであることを確認してください
 const API_URL = "https://script.google.com/macros/s/AKfycbxCOYEGborjJzpnyd1lG5_MeX3BDmQvjLC-NqN8MpKnr6YRBgcfz962kRFJsiFkb7RXdg/exec";
 
 // --- グローバル変数 ---
-let globalData = null;       // 全データ保存用
+let globalData = null;
 
 // テーブル用設定
-let currentTableViewMode = "ALL"; // ALL, WIN, LOSE
-let currentTableSortKey = "winRate"; // 初期ソートは勝率
-let currentTableSortDesc = true;     // true:降順(大きい順), false:昇順
+let currentTableViewMode = "ALL";
+let currentTableSortKey = "job"; // 初期はジョブ順にしておきます
+let currentTableSortDesc = false; // 初期は「上から順（昇順）」
 
 // ダメージグラフ用設定
-let currentDamageViewMode = "ALL"; // ALL, WIN, LOSE
+let currentDamageViewMode = "ALL";
+
+
+// ★ジョブの設定（並び順・ロール色・日本語名）
+// キーは英語名（データに合わせています）
+const JOB_META = {
+  // --- TANK (Pastel Blue) ---
+  "Paladin":      { order: 1,  role: "tank", jp: "ナイト" },
+  "Warrior":      { order: 2,  role: "tank", jp: "戦士" },
+  "Dark Knight":  { order: 3,  role: "tank", jp: "暗黒騎士" },
+  "Gunbreaker":   { order: 4,  role: "tank", jp: "ガンブレイカー" },
+  // --- HEALER (Pastel Green) ---
+  "White Mage":   { order: 5,  role: "healer", jp: "白魔道士" },
+  "Scholar":      { order: 6,  role: "healer", jp: "学者" },
+  "Astrologian":  { order: 7,  role: "healer", jp: "占星術師" },
+  "Sage":         { order: 8,  role: "healer", jp: "賢者" },
+  // --- DPS (Pastel Pink) ---
+  "Monk":         { order: 9,  role: "dps", jp: "モンク" },
+  "Dragoon":      { order: 10, role: "dps", jp: "竜騎士" },
+  "Ninja":        { order: 11, role: "dps", jp: "忍者" },
+  "Samurai":      { order: 12, role: "dps", jp: "侍" },
+  "Reaper":       { order: 13, role: "dps", jp: "リーパー" },
+  "Viper":        { order: 14, role: "dps", jp: "ヴァイパー" },
+  "Bard":         { order: 15, role: "dps", jp: "吟遊詩人" },
+  "Machinist":    { order: 16, role: "dps", jp: "機工士" },
+  "Dancer":       { order: 17, role: "dps", jp: "踊り子" },
+  "Black Mage":   { order: 18, role: "dps", jp: "黒魔道士" },
+  "Summoner":     { order: 19, role: "dps", jp: "召喚士" },
+  "Red Mage":     { order: 20, role: "dps", jp: "赤魔道士" },
+  "Pictomancer":  { order: 21, role: "dps", jp: "ピクトマンサー" }
+};
+
+// ロールごとの背景色
+const ROLE_COLORS = {
+  tank:   "#E3F2FD", // パステルブルー
+  healer: "#E8F5E9", // パステルグリーン
+  dps:    "#FCE4EC", // パステルピンク
+  unknown:"#F5F5F5"  // その他（グレー）
+};
 
 
 // --- 初期化 ---
 document.addEventListener("DOMContentLoaded", () => {
   fetchGlobalData();
 
-  // 1. テーブル用の切り替えボタン (viewMode)
+  // テーブル切り替えボタン
   const tableRadios = document.querySelectorAll('input[name="viewMode"]');
   tableRadios.forEach(r => {
     r.addEventListener("change", (e) => {
       currentTableViewMode = e.target.value;
-      // テーブルだけ再描画（現在のステージデータを使用）
       refreshTableOnly();
     });
   });
 
-  // 2. ダメージグラフ用の切り替えボタン (damageViewMode) ★新規追加
+  // グラフ切り替えボタン
   const dmgRadios = document.querySelectorAll('input[name="damageViewMode"]');
   dmgRadios.forEach(r => {
     r.addEventListener("change", (e) => {
       currentDamageViewMode = e.target.value;
-      // グラフだけ再描画
       refreshDamageChartOnly();
     });
   });
 
-  // モーダル閉じる処理
+  // モーダル閉じる
   const modal = document.getElementById("job-detail-modal");
   if (modal) {
     modal.addEventListener("click", (e) => {
@@ -52,13 +88,8 @@ async function fetchGlobalData() {
     const data = await res.json();
     globalData = data;
 
-    // ステージ選択肢生成
     initStageSelector(data.byStage);
-
-    // 初期描画（全部）
     updateDashboard("ALL");
-
-    // 時間帯グラフ（全体固定）
     renderHourChart(data.byHour);
 
   } catch (err) {
@@ -67,7 +98,6 @@ async function fetchGlobalData() {
   }
 }
 
-// ▼ ステージ選択肢
 function initStageSelector(stages) {
   const sel = document.getElementById("stage-selector");
   if (!sel) return;
@@ -81,16 +111,12 @@ function initStageSelector(stages) {
   sel.addEventListener("change", (e) => updateDashboard(e.target.value));
 }
 
-// ▼ 現在のステージデータを取得するヘルパー
 function getCurrentStageData() {
   const sel = document.getElementById("stage-selector");
   const stageName = sel ? sel.value : "ALL";
   
   if (stageName === "ALL") {
-    return { 
-      data: globalData.byJob, 
-      total: globalData.meta.total 
-    };
+    return { data: globalData.byJob, total: globalData.meta.total };
   } else {
     const stageInfo = globalData.byStage.find(s => s.stage === stageName);
     return {
@@ -100,38 +126,30 @@ function getCurrentStageData() {
   }
 }
 
-// ▼ 全体更新（ステージ変更時など）
 function updateDashboard(stageName) {
   const { data, total } = getCurrentStageData();
-
-  // 総観測数
   const displayCount = Math.floor(total / 10);
   const totalEl = document.getElementById("total-matches");
   if (totalEl) totalEl.textContent = `${displayCount} 試合`;
 
-  // 各パーツ描画
   renderJobPieChart(data);
   renderWinRateChart(data);
-  
-  // ダメージグラフとテーブルは、それぞれの現在のモード設定を使って描画
   renderDamageChart(data); 
   renderJobTable(data, total);
 }
 
-// ▼ テーブルだけ更新（ボタン切り替え時）
 function refreshTableOnly() {
   const { data, total } = getCurrentStageData();
   renderJobTable(data, total);
 }
 
-// ▼ ダメージグラフだけ更新（ボタン切り替え時）
 function refreshDamageChartOnly() {
   const { data } = getCurrentStageData();
   renderDamageChart(data);
 }
 
 
-// --- グラフ描画関数 ---
+// --- グラフ描画 ---
 
 function renderJobPieChart(jobData) {
   resetCanvas("jobPieChart");
@@ -141,8 +159,10 @@ function renderJobPieChart(jobData) {
   const topList = sorted.slice(0, 8);
   const otherTotal = sorted.slice(8).reduce((sum, d) => sum + d.total, 0);
   
-  const labels = topList.map(d => JOB_NAME_JP[d.job] || d.job);
-  const values = topList.map(d => Math.floor(d.total / 10)); // ÷10
+  const getJpName = (key) => JOB_META[key]?.jp || key; // 辞書から名前取得
+
+  const labels = topList.map(d => getJpName(d.job));
+  const values = topList.map(d => Math.floor(d.total / 10));
   
   if (otherTotal > 0) {
     labels.push("その他");
@@ -178,7 +198,8 @@ function renderWinRateChart(jobData) {
     .filter(d => d.total >= 1)
     .sort((a, b) => (b.wins / b.total) - (a.wins / a.total));
 
-  const labels = filtered.map(d => JOB_NAME_JP[d.job] || d.job);
+  const getJpName = (key) => JOB_META[key]?.jp || key;
+  const labels = filtered.map(d => getJpName(d.job));
   const rates = filtered.map(d => ((d.wins / d.total) * 100).toFixed(1));
 
   new Chart(ctx, {
@@ -228,12 +249,10 @@ function renderHourChart(hourData) {
   });
 }
 
-// ★ダメージチャート（独立モード対応）
 function renderDamageChart(jobData) {
   resetCanvas("damageChart");
   const ctx = document.getElementById("damageChart").getContext("2d");
 
-  // 現在のグラフ用モード設定(currentDamageViewMode)を使用
   const getKey = () => {
     if (currentDamageViewMode === "WIN") return "w_avgDamage";
     if (currentDamageViewMode === "LOSE") return "l_avgDamage";
@@ -243,7 +262,6 @@ function renderDamageChart(jobData) {
   const getVal = (d) => {
     const key = getKey();
     if (typeof d[key] === "number") return d[key];
-    // 全体のときだけ計算による補完
     if (key === "avgDamage") return d.total ? (Number(d.sumDamage)||0)/d.total : 0;
     return 0; 
   };
@@ -253,7 +271,8 @@ function renderDamageChart(jobData) {
     .map(d => ({ ...d, _val: getVal(d) }))
     .sort((a, b) => b._val - a._val);
 
-  const labels = filtered.map(d => JOB_NAME_JP[d.job] || d.job);
+  const getJpName = (key) => JOB_META[key]?.jp || key;
+  const labels = filtered.map(d => getJpName(d.job));
   const data = filtered.map(d => Math.round(d._val));
 
   new Chart(ctx, {
@@ -275,24 +294,31 @@ function renderDamageChart(jobData) {
   });
 }
 
-// --- テーブル描画（ソート維持・モーダル連携あり） ---
+// --- テーブル描画（デザイン＆ソート強化版） ---
 function renderJobTable(jobData, currentTotalMatches) {
   const tbody = document.querySelector("#job-stats-table tbody");
   const ths = document.querySelectorAll("#job-stats-table th");
   if (!tbody) return;
 
-  // データ整形
   let list = jobData.map(d => {
-    // 現在のテーブル用モード設定(currentTableViewMode)を使用
     const p = (key) => {
       if (currentTableViewMode === "WIN") return d["w_" + key] || 0;
       if (currentTableViewMode === "LOSE") return d["l_" + key] || 0;
       return d[key] || 0; 
     };
 
+    // 辞書から名前や順序を取得
+    const meta = JOB_META[d.job] || {}; 
+    const jpName = meta.jp || d.job;
+    const sortOrder = meta.order || 999; // 未定義は後ろへ
+    const role = meta.role || "unknown";
+
     return {
-      name: JOB_NAME_JP[d.job] || d.job,
+      name: jpName,
       jobKey: d.job,
+      sortOrder: sortOrder, // ソート用
+      role: role,           // 色付け用
+      
       winRate: (d.wins / d.total) * 100,
       pickRate: currentTotalMatches ? (d.total / currentTotalMatches) * 100 : 0,
       
@@ -302,28 +328,27 @@ function renderJobTable(jobData, currentTotalMatches) {
       avgDmg: p("avgDamage"),
       avgTaken: p("avgTaken"),
       avgHeal: p("avgHeal"),
-      avgTime: p("avgTime"), // 時間
+      avgTime: p("avgTime"),
 
       raw: d
     };
   });
 
-  // ★ソート処理（グローバル変数 currentTableSortKey を使う！）
+  // ★ソート処理
   list.sort((a, b) => {
-    const valA = a[currentTableSortKey];
-    const valB = b[currentTableSortKey];
-
-    // ジョブ名は文字列比較
+    // ジョブ順のときだけ特殊処理（指定された順番を使う）
     if (currentTableSortKey === "job") {
-      const cmp = a.name.localeCompare(b.name);
-      return currentTableSortDesc ? cmp * -1 : cmp; // 逆順対応
+      const valA = a.sortOrder;
+      const valB = b.sortOrder;
+      return currentTableSortDesc ? (valB - valA) : (valA - valB);
     }
 
-    // 数値比較
+    // それ以外（勝率やダメージなど）
+    const valA = a[currentTableSortKey];
+    const valB = b[currentTableSortKey];
     return currentTableSortDesc ? (valB - valA) : (valA - valB);
   });
 
-  // 描画
   tbody.innerHTML = "";
   list.forEach(d => {
     const tr = document.createElement("tr");
@@ -335,9 +360,27 @@ function renderJobTable(jobData, currentTotalMatches) {
       return `${m}:${s.toString().padStart(2, '0')}`;
     };
 
+    // ★ロールごとの背景色を取得
+    const badgeColor = ROLE_COLORS[d.role] || "#eee";
+
     tr.innerHTML = `
-      <td style="text-align:left; font-weight:500;" class="clickable-job" onclick="openModal('${d.jobKey}')">
-        ${d.name} <span style="font-size:0.8em; color:#718096;">❐</span>
+      <td style="text-align:left;">
+        <span class="clickable-job" 
+              onclick="openModal('${d.jobKey}')"
+              style="
+                background-color: ${badgeColor};
+                padding: 6px 14px;
+                border-radius: 20px;
+                display: inline-block;
+                color: #546E7A;
+                font-weight: bold;
+                text-decoration: none;
+                transition: transform 0.1s;
+              "
+              onmouseover="this.style.transform='scale(1.05)'" 
+              onmouseout="this.style.transform='scale(1)'">
+          ${d.name}
+        </span>
       </td>
       <td class="${winClass}">${d.winRate.toFixed(1)}%</td>
       <td>${d.pickRate.toFixed(1)}%</td>
@@ -352,44 +395,46 @@ function renderJobTable(jobData, currentTotalMatches) {
     tbody.appendChild(tr);
   });
   
-  // ヘッダーのクリックイベント（再描画しても重複しないようにクローン置換）
+  // ヘッダーのソート機能
   ths.forEach(th => {
     const newTh = th.cloneNode(true);
     th.parentNode.replaceChild(newTh, th);
     
-    // 現在ソート中の列なら目印をつけるなどしても良い（今回は省略）
+    // ソート中の列に色をつける
     if (newTh.dataset.key === currentTableSortKey) {
-      newTh.style.backgroundColor = currentTableSortDesc ? "#B3E5FC" : "#E1F5FE"; // 色でわかるように
+      newTh.style.backgroundColor = "#B3E5FC"; 
+    } else {
+      newTh.style.backgroundColor = ""; // リセット
     }
 
     newTh.addEventListener("click", () => {
       const key = newTh.dataset.key;
       if (!key) return;
 
-      // 同じキーなら昇順・降順を反転、違うキーなら降順リセット
       if (currentTableSortKey === key) {
         currentTableSortDesc = !currentTableSortDesc;
       } else {
         currentTableSortKey = key;
-        currentTableSortDesc = true; // 基本は大きい順が見やすい
+        // ジョブ名以外の数値データは、基本「大きい順（降順）」が見やすい
+        // ジョブ名は「指定順（昇順）」が見やすい
+        currentTableSortDesc = (key !== "job");
       }
-      
-      // 再描画（データは変えずソートだけ適用）
       refreshTableOnly();
     });
   });
 }
 
 
-// --- モーダル処理 ---
+// --- モーダル ---
 
 function openModal(jobKey) {
-  const { data } = getCurrentStageData(); // 現在のステージデータから検索
+  const { data } = getCurrentStageData();
   const d = data.find(j => j.job === jobKey);
   if (!d) return;
 
+  const jpName = JOB_META[d.job]?.jp || d.job;
   const nameEl = document.getElementById("modal-job-name");
-  if (nameEl) nameEl.textContent = (JOB_NAME_JP[d.job] || d.job) + " の平均詳細データ";
+  if (nameEl) nameEl.textContent = jpName + " の平均詳細データ";
 
   const fmt = (n) => Math.round(n).toLocaleString();
   const fmt2 = (n) => n.toFixed(2);
@@ -407,7 +452,8 @@ function openModal(jobKey) {
 
     return `
       <tr class="${cls}">
-        <td>${label === "全体" ? "" : label}</td> <td>${fmt2(p("avgK"))}</td>
+        <td>${label === "全体" ? "" : label}</td>
+        <td>${fmt2(p("avgK"))}</td>
         <td>${fmt2(p("avgD"))}</td>
         <td>${fmt2(p("avgA"))}</td>
         <td style="color:#d69e2e">${fmt(p("avgDamage"))}</td>
@@ -418,7 +464,6 @@ function openModal(jobKey) {
     `;
   };
 
-  // モーダル内は「全体(空欄)」「勝利」「敗北」の順
   const html = 
     makeRow("全体", "row-all", "") +
     makeRow("勝利", "row-win", "w_") +
