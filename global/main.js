@@ -561,7 +561,7 @@ function createFadedIcon(sourceCanvas) {
 // --- メイン関数：散布図の描画 ---
 function renderJobScatterChart(jobData, totalMatches) {
   // ★ここでアイコンのサイズを一括指定（直径 px）
-  const ICON_SIZE = 24; 
+  const ICON_SIZE = 50; 
 
   const groups = [
     { label: "TANK", jobs: ["PLD", "WAR", "DRK", "GNB"] },
