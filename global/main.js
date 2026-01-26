@@ -1,6 +1,6 @@
-// ★ご自身のGASのURLであることを確認してください
-const API_URL = "https://script.google.com/macros/s/AKfycbxCOYEGborjJzpnyd1lG5_MeX3BDmQvjLC-NqN8MpKnr6YRBgcfz962kRFJsiFkb7RXdg/exec";
 
+const API_URL = "https://script.google.com/macros/s/AKfycbxCOYEGborjJzpnyd1lG5_MeX3BDmQvjLC-NqN8MpKnr6YRBgcfz962kRFJsiFkb7RXdg/exec";
+let currentViewMode = "ALL";
 // --- グローバル変数 ---
 let globalData = null;
 
@@ -144,29 +144,77 @@ function renderJobPieChart(jobData) {
   });
 }
 
-function renderRoleAnalysisChart(jobData) {
+function renderRoleAnalysisChart(jobData, totalMatches) {
   resetCanvas("roleAnalysisChart");
   const ctx = document.getElementById("roleAnalysisChart").getContext("2d");
+
+  // ロール別の集計
   const roles = {
-    tank: { wins: 0, total: 0, label: "タンク", color: "#E3F2FD" },
-    healer: { wins: 0, total: 0, label: "ヒーラー", color: "#E8F5E9" },
-    dps: { wins: 0, total: 0, label: "DPS", color: "#FCE4EC" }
+    tank:   { wins: 0, total: 0, label: "タンク", color: "#63b3ed", bg: "#E3F2FD" },
+    healer: { wins: 0, total: 0, label: "ヒーラー", color: "#48bb78", bg: "#E8F5E9" },
+    dps:    { wins: 0, total: 0, label: "DPS", color: "#f687b3", bg: "#FCE4EC" }
   };
+
   jobData.forEach(d => {
     const r = JOB_META[d.job]?.role;
-    if (roles[r]) { roles[r].wins += d.wins; roles[r].total += d.total; }
+    if (roles[r]) {
+      roles[r].wins += d.wins;
+      roles[r].total += d.total;
+    }
   });
+
+  const labels = Object.values(roles).map(r => r.label);
+  const winRates = Object.values(roles).map(r => r.total ? (r.wins / r.total * 100).toFixed(1) : 0);
+  const pickRates = Object.values(roles).map(r => totalMatches ? (r.total / totalMatches * 100).toFixed(1) : 0);
+
+  
+
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: Object.values(roles).map(r => r.label),
-      datasets: [{
-        data: Object.values(roles).map(r => r.total ? (r.wins / r.total * 100).toFixed(1) : 0),
-        backgroundColor: Object.values(roles).map(r => r.color),
-        borderRadius: 12, borderWidth: 2, borderColor: "#cbd5e0"
-      }]
+      labels: labels,
+      datasets: [
+        {
+          label: '平均勝率 (%)',
+          data: winRates,
+          backgroundColor: Object.values(roles).map(r => r.bg),
+          borderColor: Object.values(roles).map(r => r.color),
+          borderWidth: 2,
+          borderRadius: 8,
+          yAxisID: 'yWin' // 左側の軸を使用
+        },
+        {
+          label: '人口比率 (%)',
+          data: pickRates,
+          type: 'line', // 人口比率だけ折れ線にする
+          borderColor: '#4a5568',
+          borderWidth: 3,
+          fill: false,
+          yAxisID: 'yPop' // 右側の軸を使用
+        }
+      ]
     },
-    options: { maintainAspectRatio: false, scales: { y: { beginAtZero: true, max: 100 } }, plugins: { legend: { display: false } } }
+    options: {
+      maintainAspectRatio: false,
+      scales: {
+        yWin: {
+          beginAtZero: true,
+          max: 100,
+          position: 'left',
+          title: { display: true, text: '勝率 (%)' }
+        },
+        yPop: {
+          beginAtZero: true,
+          max: 100,
+          position: 'right',
+          grid: { drawOnChartArea: false }, // グリッド線が重ならないようにする
+          title: { display: true, text: '人口比率 (%)' }
+        }
+      },
+      plugins: {
+        legend: { position: 'bottom' } // 凡例を表示して指標を明確にする
+      }
+    }
   });
 }
 
