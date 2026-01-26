@@ -249,30 +249,38 @@ renderJobStageGrid: (stageJpName, statsData) => {
   return html;
 },
 
-  // ■ Timeタブ
-time: (statsData) => {
-  const arr = statsData.byHour;
-  if (!arr || !arr.length) {
-    return "時間帯 集計なし";
-  }
+// ■ Timeタブ
+  time: (statsData) => {
+    const arr = statsData.byHour;
+    if (!arr || !arr.length) {
+      return "時間帯 集計なし";
+    }
 
-  return `
-    <div class="stat-card">
-      <div class="time-filter">
-        <button data-wd="all" class="active">all</button>
-        <button data-wd="sun">sun</button>
-        <button data-wd="mon">mon</button>
-        <button data-wd="tue">tue</button>
-        <button data-wd="wed">wed</button>
-        <button data-wd="thu">thu</button>
-        <button data-wd="fri">fri</button>
-        <button data-wd="sat">sat</button>
+    // ★今日が何曜日か計算（5時切り替えルール）
+    const now = new Date();
+    if (now.getHours() < 5) now.setDate(now.getDate() - 1);
+    const dayIdx = now.getDay(); // 0=Sun, 1=Mon ...
+    const wds = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+    const todayKey = wds[dayIdx]; // "sun" とか "mon" が入る
+
+    // ★ボタンのHTMLをループで作る（今日のボタンには is-today をつける）
+    const buttonsHtml = ["all", ...wds].map(wd => {
+      // 最初は all がアクティブ
+      const activeClass = wd === "all" ? "active" : "";
+      // 今日と一致したら is-today をつける
+      const todayClass = wd === todayKey ? "is-today" : "";
+      
+      return `<button data-wd="${wd}" class="${activeClass} ${todayClass}">${wd}</button>`;
+    }).join("");
+
+    return `
+      <div class="stat-card">
+        <div class="time-filter">
+          ${buttonsHtml}
+        </div>
+        <canvas id="time-chart"></canvas>
       </div>
-      <canvas id="time-chart"></canvas>
-    </div>
-  `;
-}
-
-
+    `;
+  },
   
 };
