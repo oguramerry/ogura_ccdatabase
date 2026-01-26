@@ -659,7 +659,6 @@ function renderJobScatterChart(jobData, totalMatches) {
     img.onclick = () => openModal(p.jobKey);
     iconContainer.appendChild(img);
   });
-}
 
 const _updateDashboardOriginal = updateDashboard;
 updateDashboard = function () {
