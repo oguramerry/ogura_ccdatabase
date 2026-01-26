@@ -635,31 +635,6 @@ function renderJobScatterChart(jobData, totalMatches) {
   });
 }
 
-  // 下のアイコン一覧もロール色で装飾
-  points.forEach((p, index) => {
-    const img = document.createElement("img");
-    img.src = `../images/JOB/${p.jobKey}.png`;
-    // 初期状態でロールの色の枠線を付けておく
-    img.style.cssText = `width:34px; height:34px; cursor:pointer; border-radius:8px; border:2px solid ${p.borderColor}; transition:0.2s; background:${p.backgroundColor}; padding:3px;`;
-    
-    img.onmouseenter = () => {
-      img.style.transform = "scale(1.25)";
-      img.style.boxShadow = `0 0 10px ${p.borderColor}`;
-      jobScatterChartInstance.setActiveElements([{ datasetIndex: 0, index: index }]);
-      jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: index }], { x: 0, y: 0 });
-      jobScatterChartInstance.update();
-    };
-    img.onmouseleave = () => {
-      img.style.transform = "scale(1)";
-      img.style.boxShadow = "none";
-      jobScatterChartInstance.setActiveElements([]);
-      jobScatterChartInstance.tooltip.setActiveElements([], { x: 0, y: 0 });
-      jobScatterChartInstance.update();
-    };
-    img.onclick = () => openModal(p.jobKey);
-    iconContainer.appendChild(img);
-  });
-
 const _updateDashboardOriginal = updateDashboard;
 updateDashboard = function () {
   _updateDashboardOriginal();
