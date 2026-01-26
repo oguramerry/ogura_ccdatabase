@@ -177,36 +177,34 @@ function renderDamageChart(jobData) {
   });
 }
 
-// 5. 詳細データテーブル（ソート機能付き）
+// 5. 詳細データテーブル（ソート機能付き：Taken/Heal対応版）
 function renderJobTable(jobData, globalTotalMatches) {
   const tbody = document.querySelector("#job-stats-table tbody");
   const ths = document.querySelectorAll("#job-stats-table th");
   
-  // データ加工（平均値などを計算しておく）
+  // データ加工
   let list = jobData.map(d => {
+    // 安全に数値を取り出す関数
+    const getVal = (val, sumName) => {
+      if (typeof val === "number") return val;
+      return d.total ? (Number(d[sumName]) || 0) / d.total : 0;
+    };
+
     return {
       name: JOB_NAME_JP[d.job] || d.job,
       winRate: (d.wins / d.total) * 100,
       pickRate: (d.total / globalTotalMatches) * 100,
       
-      // ★ChatGPT修正点：ここも avgK などが既にあれば優先して使う！
-      avgK: (typeof d.avgK === "number")
-        ? d.avgK
-        : (d.total ? (Number(d.sumK) || 0) / d.total : 0),
-
-      avgD: (typeof d.avgD === "number")
-        ? d.avgD
-        : (d.total ? (Number(d.sumD) || 0) / d.total : 0),
-
-      avgA: (typeof d.avgA === "number")
-        ? d.avgA
-        : (d.total ? (Number(d.sumA) || 0) / d.total : 0),
-
-      avgDmg: (typeof d.avgDamage === "number")
-        ? d.avgDamage
-        : (d.total ? (Number(d.sumDamage) || 0) / d.total : 0),
+      avgK: getVal(d.avgK, "sumK"),
+      avgD: getVal(d.avgD, "sumD"),
+      avgA: getVal(d.avgA, "sumA"),
+      avgDmg: getVal(d.avgDamage, "sumDamage"),
       
-      raw: d // 元データも持っておく
+      // ★ここに追加！
+      avgTaken: getVal(d.avgTaken, "sumTaken"),
+      avgHeal: getVal(d.avgHeal, "sumHeal"),
+
+      raw: d
     };
   });
 
@@ -215,9 +213,10 @@ function renderJobTable(jobData, globalTotalMatches) {
     tbody.innerHTML = "";
     sortedList.forEach(d => {
       const tr = document.createElement("tr");
-      
-      // 勝率に色をつける
       const winClass = d.winRate >= 50 ? "rate-high" : "rate-low";
+
+      // 数字をカンマ区切りで見やすく（例: 1,234,567）
+      const fmt = (n) => Math.round(n).toLocaleString();
 
       tr.innerHTML = `
         <td style="text-align:left; font-weight:500;">${d.name}</td>
@@ -226,7 +225,9 @@ function renderJobTable(jobData, globalTotalMatches) {
         <td>${d.avgK.toFixed(2)}</td>
         <td>${d.avgD.toFixed(2)}</td>
         <td>${d.avgA.toFixed(2)}</td>
-        <td style="font-weight:bold;">${Math.round(d.avgDmg).toLocaleString()}</td>
+        <td style="font-weight:bold; color:#d69e2e;">${fmt(d.avgDmg)}</td>
+        <td style="font-weight:bold; color:#e53e3e;">${fmt(d.avgTaken)}</td>
+        <td style="font-weight:bold; color:#38a169;">${fmt(d.avgHeal)}</td>
       `;
       tbody.appendChild(tr);
     });
@@ -236,19 +237,16 @@ function renderJobTable(jobData, globalTotalMatches) {
   list.sort((a, b) => b.winRate - a.winRate);
   draw(list);
 
-  // ソート機能のイベントリスナー
+  // ソート機能
   ths.forEach(th => {
     th.addEventListener("click", () => {
       const key = th.dataset.key;
       if (!key) return;
-
-      // 並び替え実行
+      
       list.sort((a, b) => {
-        // ジョブ名だけ文字コード順、それ以外は数字の降順（大きい方が偉い）
         if (key === "job") return a.name.localeCompare(b.name);
         return b[key] - a[key];
       });
-      
       draw(list);
     });
   });
