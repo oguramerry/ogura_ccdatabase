@@ -498,102 +498,108 @@ function jobScatterExternalTooltip(context) {
 
 function renderJobScatterChart(jobData, totalMatches) {
   const canvas = document.getElementById("jobScatterChart");
-  if (!canvas) return;
+  const iconContainer = document.getElementById("job-scatter-icons");
+  if (!canvas || !iconContainer) return;
 
-  const keys = jobData
-    .map(d => d.job)
-    .filter(k => JOB_META[k]);
+  iconContainer.innerHTML = "";
 
-  Promise.all(keys.map(loadJobIcon)).finally(() => {
-    resetCanvas("jobScatterChart");
-    const ctx = document.getElementById("jobScatterChart").getContext("2d");
+  const points = jobData
+    .filter(d => d.total > 0 && JOB_META[d.job])
+    .map(d => {
+      const matches = Math.max(1, Math.floor(d.total / 10));
+      const winRate = d.total ? (d.wins / d.total) * 100 : 0;
+      const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
+      const role = JOB_META[d.job]?.role || "unknown";
+      
+      // ロールごとの色定義
+      const bg = ROLE_COLORS[role] || "#F5F5F5";
+      const border = 
+        role === "tank" ? "#63b3ed" : 
+        role === "healer" ? "#48bb78" : 
+        role === "dps" ? "#f687b3" : "#a0aec0";
 
-    const points = jobData
-      .filter(d => d.total > 0 && JOB_META[d.job])
-      .map(d => {
-        const matches = Math.max(1, Math.floor(d.total / 10));
-        const winRate = d.total ? (d.wins / d.total) * 100 : 0;
-        const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
-        return { jobKey: d.job, matches, winRate, pickRate };
-      });
+      return { 
+        jobKey: d.job, matches, winRate, pickRate, role,
+        backgroundColor: bg,
+        borderColor: border
+      };
+    })
+    .sort((a, b) => (JOB_META[a.jobKey]?.order || 99) - (JOB_META[b.jobKey]?.order || 99));
 
-    if (!points.length) return;
+  if (!points.length) return;
 
-    const counts = points.map(p => p.matches);
-    const minC = Math.min(...counts);
-    const maxC = Math.max(...counts);
+  resetCanvas("jobScatterChart");
+  const ctx = document.getElementById("jobScatterChart").getContext("2d");
 
-    const minR = 6;   // なるべく小さめ
-    const maxR = 16;  // 上限も控えめ
-    const scaleR = (c) => {
-      if (maxC === minC) return (minR + maxR) / 2;
-      const t = (Math.sqrt(c) - Math.sqrt(minC)) / (Math.sqrt(maxC) - Math.sqrt(minC));
-      return minR + t * (maxR - minR);
-    };
+  if (jobScatterChartInstance) {
+    try { jobScatterChartInstance.destroy(); } catch (_) {}
+  }
 
-    // 大きいのを先に描いて、小さいのが上に来るように
-    const bubbles = points
-      .map(p => ({
-        x: p.pickRate,
-        y: p.winRate,
-        r: scaleR(p.matches),
-        jobKey: p.jobKey,
-        matches: p.matches,
-        winRate: p.winRate,
-        pickRate: p.pickRate
-      }))
-      .sort((a, b) => b.r - a.r);
-
-    if (jobScatterChartInstance) {
-      try { jobScatterChartInstance.destroy(); } catch (_) {}
-      jobScatterChartInstance = null;
-    }
-
-    jobScatterChartInstance = new Chart(ctx, {
-      type: "bubble",
-      data: {
-        datasets: [
-          {
-            label: "jobs",
-            data: bubbles,
-            parsing: false,
-            pointStyle: (c) => getJobIconCanvas(c.raw.jobKey) || "circle",
-            hoverRadius: 2
-          }
-        ]
+  jobScatterChartInstance = new Chart(ctx, {
+    type: "bubble",
+    data: {
+      datasets: [{
+        label: "jobs",
+        data: points.map(p => ({ x: p.pickRate, y: p.winRate, r: 9, ...p })),
+        backgroundColor: points.map(p => p.backgroundColor), // 点の中の色
+        borderColor: points.map(p => p.borderColor),     // 点の枠線
+        borderWidth: 2,
+        hoverRadius: 13,
+        hoverBorderWidth: 3
+      }]
+    },
+    options: {
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: false, external: jobScatterExternalTooltip }
       },
-      options: {
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            enabled: false,
-            external: jobScatterExternalTooltip
-          }
+      scales: {
+        x: { 
+          beginAtZero: true, 
+          title: { display: true, text: "使用率 (%)" },
+          suggestedMax: Math.max(...points.map(p => p.pickRate)) * 1.15
         },
-        scales: {
-          x: {
-            beginAtZero: true,
-            max: 100,
-            title: { display: true, text: "使用率 (%)" }
-          },
-          y: {
-            beginAtZero: true,
-            max: 100,
-            title: { display: true, text: "勝率 (%)" }
-          }
-        },
-        onHover: (evt, elements) => {
-          evt.native.target.style.cursor = elements && elements.length ? "pointer" : "default";
-        },
-        onClick: (_evt, elements, chart) => {
-          if (!elements || !elements.length) return;
-          const el = elements[0];
-          const raw = chart.data.datasets[el.datasetIndex].data[el.index];
-          if (raw && raw.jobKey) openModal(raw.jobKey);
+        y: { 
+          title: { display: true, text: "勝率 (%)" },
+          suggestedMin: Math.min(...points.map(p => p.winRate)) - 3,
+          suggestedMax: Math.max(...points.map(p => p.winRate)) + 3
         }
+      },
+      onHover: (evt, elements) => {
+        evt.native.target.style.cursor = elements && elements.length ? "pointer" : "default";
+      },
+      onClick: (_evt, elements, chart) => {
+        if (!elements || !elements.length) return;
+        const raw = chart.data.datasets[0].data[elements[0].index];
+        if (raw && raw.jobKey) openModal(raw.jobKey);
       }
-    });
+    }
+  });
+
+  // 下のアイコン一覧もロール色で装飾
+  points.forEach((p, index) => {
+    const img = document.createElement("img");
+    img.src = `../images/JOB/${p.jobKey}.png`;
+    // 初期状態でロールの色の枠線を付けておく
+    img.style.cssText = `width:34px; height:34px; cursor:pointer; border-radius:8px; border:2px solid ${p.borderColor}; transition:0.2s; background:${p.backgroundColor}; padding:3px;`;
+    
+    img.onmouseenter = () => {
+      img.style.transform = "scale(1.25)";
+      img.style.boxShadow = `0 0 10px ${p.borderColor}`;
+      jobScatterChartInstance.setActiveElements([{ datasetIndex: 0, index: index }]);
+      jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: index }], { x: 0, y: 0 });
+      jobScatterChartInstance.update();
+    };
+    img.onmouseleave = () => {
+      img.style.transform = "scale(1)";
+      img.style.boxShadow = "none";
+      jobScatterChartInstance.setActiveElements([]);
+      jobScatterChartInstance.tooltip.setActiveElements([], { x: 0, y: 0 });
+      jobScatterChartInstance.update();
+    };
+    img.onclick = () => openModal(p.jobKey);
+    iconContainer.appendChild(img);
   });
 }
 
