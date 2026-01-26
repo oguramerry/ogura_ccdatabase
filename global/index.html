@@ -67,8 +67,17 @@
       </div>
     </div>
 
-    <div class="chart-card wide" style="margin-top: 20px;">
-      <h2>ジョブ別・完全データリスト</h2>
+<div class="chart-card wide" style="margin-top: 20px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+        <h2 style="margin:0; border:none; padding:0;">ジョブ別・完全データリスト</h2>
+        
+        <div class="toggle-group">
+          <label><input type="radio" name="viewMode" value="ALL" checked> 全体平均</label>
+          <label><input type="radio" name="viewMode" value="WIN"> 勝ち平均</label>
+          <label><input type="radio" name="viewMode" value="LOSE"> 負け平均</label>
+        </div>
+      </div>
+
       <p class="table-note">※項目名をクリックすると並べ替えできます</p>
       <div class="table-responsive">
         <table id="job-stats-table">
@@ -77,12 +86,13 @@
               <th data-key="job">ジョブ</th>
               <th data-key="winRate">勝率</th>
               <th data-key="pickRate">使用率</th>
-              <th data-key="avgK">K</th>
-              <th data-key="avgD">D</th>
-              <th data-key="avgA">A</th>
-              <th data-key="avgDmg">平均与ダメ</th>
-              <th data-key="avgTaken">平均被ダメ</th>
-              <th data-key="avgHeal">平均与ヒール</th>
+              <th data-key="avgK">Avg Kills</th>
+              <th data-key="avgD">Avg Deaths</th>
+              <th data-key="avgA">Avg Assists</th>
+              <th data-key="avgDmg">Avg Damage</th>
+              <th data-key="avgTaken">Avg Taken</th>
+              <th data-key="avgHeal">Avg Heal</th>
+              <th data-key="avgTime">Avg Time</th>
             </tr>
           </thead>
           <tbody>
