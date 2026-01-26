@@ -14,7 +14,6 @@ let currentDamageViewMode = "ALL";
 
 
 // ★ジョブの設定（略称対応版）
-// キーを "PLD", "WAR" などの略称に合わせました
 const JOB_META = {
   // --- TANK (Pastel Blue) ---
   "PLD": { order: 1,  role: "tank", jp: "ナイト" },
@@ -41,7 +40,7 @@ const JOB_META = {
   "RDM": { order: 20, role: "dps", jp: "赤魔道士" },
   "PCT": { order: 21, role: "dps", jp: "ピクトマンサー" },
   
-  // (念のためフルスペルも残しておきますが、基本は上が使われます)
+  // (英語フルネーム用バックアップ)
   "Paladin": { order: 1, role: "tank", jp: "ナイト" },
   "Warrior": { order: 2, role: "tank", jp: "戦士" },
   "Dark Knight": { order: 3, role: "tank", jp: "暗黒騎士" },
@@ -65,12 +64,11 @@ const JOB_META = {
   "Pictomancer": { order: 21, role: "dps", jp: "ピクトマンサー" }
 };
 
-// ロールごとの背景色（パステルカラー）
 const ROLE_COLORS = {
-  tank:   "#E3F2FD", // パステルブルー
-  healer: "#E8F5E9", // パステルグリーン
-  dps:    "#FCE4EC", // パステルピンク
-  unknown:"#F5F5F5"  // その他（グレー）
+  tank:   "#E3F2FD", 
+  healer: "#E8F5E9", 
+  dps:    "#FCE4EC", 
+  unknown:"#F5F5F5" 
 };
 
 
@@ -113,7 +111,6 @@ async function fetchGlobalData() {
 
     initStageSelector(data.byStage);
     updateDashboard("ALL");
-    renderHourChart(data.byHour);
 
   } catch (err) {
     console.error("データ取得エラー:", err);
@@ -134,31 +131,41 @@ function initStageSelector(stages) {
   sel.addEventListener("change", (e) => updateDashboard(e.target.value));
 }
 
+// 現在のステージデータをまとめて取得する便利関数
 function getCurrentStageData() {
   const sel = document.getElementById("stage-selector");
   const stageName = sel ? sel.value : "ALL";
   
   if (stageName === "ALL") {
-    return { data: globalData.byJob, total: globalData.meta.total };
+    return { 
+      data: globalData.byJob, 
+      hourData: globalData.byHour, // 全体の時間帯
+      total: globalData.meta.total 
+    };
   } else {
     const stageInfo = globalData.byStage.find(s => s.stage === stageName);
     return {
+      // ステージごとのジョブデータ（勝ち負け情報も含む）
       data: globalData.byStageJob.filter(d => d.stage === stageName),
+      // ★ここが進化！ステージごとの時間データ
+      hourData: globalData.byStageHour.filter(d => d.stage === stageName),
       total: stageInfo ? stageInfo.total : 0
     };
   }
 }
 
 function updateDashboard(stageName) {
-  const { data, total } = getCurrentStageData();
+  const { data, hourData, total } = getCurrentStageData();
   const displayCount = Math.floor(total / 10);
   const totalEl = document.getElementById("total-matches");
   if (totalEl) totalEl.textContent = `${displayCount} 試合`;
 
+  // すべてのチャートに、ステージフィルター済みのデータを渡す
   renderJobPieChart(data);
   renderWinRateChart(data);
-  renderDamageChart(data); 
-  renderJobTable(data, total);
+  renderHourChart(hourData); // ★これで時間帯もステージ別になる！
+  renderDamageChart(data);   // ★与ダメもステージフィルター適用
+  renderJobTable(data, total); // ★完全リストもステージフィルター適用
 }
 
 function refreshTableOnly() {
@@ -250,6 +257,7 @@ function renderHourChart(hourData) {
   
   const hours = Array.from({length: 24}, (_, i) => i);
   const counts = hours.map(h => {
+    // フィルタリング済みの hourData から該当する時間の total を探す
     const found = hourData.find(d => Number(d.hour) === h);
     return found ? Math.floor(found.total / 10) : 0;
   });
