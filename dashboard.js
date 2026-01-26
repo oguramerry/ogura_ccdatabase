@@ -426,10 +426,9 @@ function ensureEmptyChart() {
         y: {
           beginAtZero: true,
 ticks: {
-  stepSize: 50,
-  callback: (v) => (v === 0 || v === 50 || v === 100 ? v + "%" : "")
-}
-,
+            stepSize: 5,
+            callback: (v) => (v === 0 ? "±0" : v)
+          },
           grid: {
             color: (ctx) => ctx.tick?.value === 0 ? "#cbd5e1" : "#f1f5f9",
             lineWidth: (ctx) => ctx.tick?.value === 0 ? 2 : 1
@@ -477,6 +476,7 @@ ticks: {
               
               return [
                 `試合日時: ${yyDate} ${d.time} (${score})`,
+                `通算: ${d.x}戦目`,
                 `使用ジョブ: ${jobName}`,
                 `ステージ: ${stageName}`
               ];
