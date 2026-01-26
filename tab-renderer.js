@@ -2,12 +2,13 @@
 
 window.TabRenderer = {
   
-// ■ Mainタブ
+// ■ Mainタブ（50%はそのまま版）
   main: (statsData) => {
-    // データコピー
+    // データ準備
     const rawMatches = statsData.matches || [];
+    const meta = statsData.meta || {};
 
-    // ★5時切り替えルール適用（深夜の試合を前日扱いに補正）
+    // 5時切り替え補正
     const matches = rawMatches.map(m => {
       let dStr = m.date; 
       if (m.time) {
@@ -21,22 +22,16 @@ window.TabRenderer = {
       return { ...m, date: dStr };
     });
     
-    // 日付計算ヘルパー
+    // 日付計算
     const toYMD = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-    
-    // 今日の日付（リアルタイム判定も5時切り替え）
     const now = new Date();
-    if (now.getHours() < 5) {
-      now.setDate(now.getDate() - 1);
-    }
+    if (now.getHours() < 5) now.setDate(now.getDate() - 1);
     const todayStr = toYMD(now);
     
-    // 今週の月曜日
     const d = new Date(now);
     d.setDate(now.getDate() - (now.getDay() === 0 ? 6 : now.getDay() - 1));
     const weekStart = toYMD(d);
 
-    // 集計設定
     const targets = [
       { title: "今日の成績",   filter: m => m.date === todayStr },
       { title: "今週の成績",   filter: m => m.date >= weekStart && m.date <= todayStr },
@@ -48,9 +43,12 @@ window.TabRenderer = {
       const list = matches.filter(item.filter);
       const w = list.filter(m => /win|勝利/i.test(m.result) || Number(m.result) > 0).length;
       const l = list.filter(m => /lose|敗北/i.test(m.result) || Number(m.result) < 0).length;
-      const rate = (w + l) > 0 ? ((w / (w + l)) * 100).toFixed(1) : "-";
+      
+      const total = w + l;
+      const rateVal = total > 0 ? (w / total) * 100 : 0;
+      const rateStr = total > 0 ? rateVal.toFixed(1) : "-";
 
-      // ★色判定ロジック
+      // ★色判定ロジック（ここを修正しました）
       let colorClass = "";
       if (total > 0) {
         if (rateVal > 50) {
@@ -58,18 +56,18 @@ window.TabRenderer = {
         } else if (rateVal < 50) {
           colorClass = "bg-loss-color";  // 50未満：ピンク
         }
-        // ※ぴったり50の時はデフォルトのデザイン
+        // ※ぴったり50の時は colorClass が空っぽのままなので、
+        //   色はつかず、線の太さも変わりません（デフォルトのデザイン）
       }
-      
+
       return `
-        <div class="summary-card">
+        <div class="summary-card ${colorClass}">
           <div class="title">${item.title}</div>
           <div class="score">${w}勝 ${l}敗</div>
-          <div class="rate">勝率: ${rate}%</div>
+          <div class="rate">勝率: ${rateStr}%</div>
         </div>`;
     }).join("");
 
-    // これだけを返す
     return `<div class="summary-cards">${cardsHtml}</div>`;
   },
 
