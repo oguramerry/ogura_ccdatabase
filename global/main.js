@@ -1,5 +1,4 @@
 
-
 const API_URL = "https://script.google.com/macros/s/AKfycbxCOYEGborjJzpnyd1lG5_MeX3BDmQvjLC-NqN8MpKnr6YRBgcfz962kRFJsiFkb7RXdg/exec";
 
 // ページ読み込み時に実行
@@ -145,7 +144,10 @@ function renderDamageChart(jobData) {
     .filter(d => d.total >= 5) // 5回以上登場したジョブ
     .map(d => ({
       ...d,
-      avgDmg: d.sumDamage / d.total
+      // ★ChatGPT修正点：avgDamageが既にあればそれを使い、なければ計算する（安全策）
+      avgDmg: (typeof d.avgDamage === "number")
+        ? d.avgDamage
+        : (d.total ? (Number(d.sumDamage) || 0) / d.total : 0)
     }))
     .sort((a, b) => b.avgDmg - a.avgDmg);
 
@@ -186,10 +188,24 @@ function renderJobTable(jobData, globalTotalMatches) {
       name: JOB_NAME_JP[d.job] || d.job,
       winRate: (d.wins / d.total) * 100,
       pickRate: (d.total / globalTotalMatches) * 100,
-      avgK: d.sumK / d.total,
-      avgD: d.sumD / d.total,
-      avgA: d.sumA / d.total,
-      avgDmg: d.sumDamage / d.total,
+      
+      // ★ChatGPT修正点：ここも avgK などが既にあれば優先して使う！
+      avgK: (typeof d.avgK === "number")
+        ? d.avgK
+        : (d.total ? (Number(d.sumK) || 0) / d.total : 0),
+
+      avgD: (typeof d.avgD === "number")
+        ? d.avgD
+        : (d.total ? (Number(d.sumD) || 0) / d.total : 0),
+
+      avgA: (typeof d.avgA === "number")
+        ? d.avgA
+        : (d.total ? (Number(d.sumA) || 0) / d.total : 0),
+
+      avgDmg: (typeof d.avgDamage === "number")
+        ? d.avgDamage
+        : (d.total ? (Number(d.sumDamage) || 0) / d.total : 0),
+      
       raw: d // 元データも持っておく
     };
   });
