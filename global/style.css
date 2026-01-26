@@ -93,3 +93,50 @@ h2 {
   height: 300px;
   width: 100%;
 }
+
+/* --- データテーブルのデザイン --- */
+.table-responsive {
+  overflow-x: auto; /* スマホで見切れないように */
+}
+.table-note {
+  font-size: 0.8rem;
+  color: #718096;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #f7fafc;
+  color: #4a5568;
+  font-weight: bold;
+  cursor: pointer; /* クリックできる感 */
+  user-select: none;
+  white-space: nowrap;
+}
+
+th:hover {
+  background-color: #edf2f7;
+  color: #2b6cb0;
+}
+
+/* 1位とかを目立たせる */
+tbody tr:hover {
+  background-color: #ebf8ff;
+}
+
+/* 勝率の色付け用 */
+.rate-high { color: #38a169; font-weight: bold; }
+.rate-low  { color: #e53e3e; font-weight: bold; }
