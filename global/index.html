@@ -1,1 +1,67 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Report - 世論調査</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>📊 世論調査レポート</h1>
+      <a href="../dashboard/index.html" class="back-link">マイ・ダッシュボードに戻る</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="stats-overview">
+      <div class="card">
+        <h3>総観測数</h3>
+        <p id="total-matches">- 試合</p>
+      </div>
+      <div class="card">
+        <h3>全体の勝率</h3>
+        <p id="total-winrate">-%</p>
+      </div>
+    </div>
+
+    <div class="charts-grid">
+      
+      <div class="chart-card">
+        <h2>人気ジョブ・ランキング (Pick率)</h2>
+        <div class="chart-container">
+          <canvas id="jobPieChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h2>ジョブ別・勝率ティア (Win率)</h2>
+        <div class="chart-container">
+          <canvas id="jobWinRateChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-card wide">
+        <h2>時間帯別・人口調査</h2>
+        <div class="chart-container">
+          <canvas id="hourChart"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="../js/ui-parts.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
