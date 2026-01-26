@@ -98,7 +98,7 @@ window.TabRenderer = {
         const data = jobStats[job] || { total: 0, winRate: 0 };
         const jobName = JOB_NAME_JP[job] ?? job;
         const winRate = ((data.winRate ?? 0) * 100).toFixed(1);
-        const iconPath = `images/JOB/${job}.png`; 
+        const iconPath = `../images/JOB/${job}.png`; 
         const emptyClass = data.total === 0 ? "job-card-empty" : "";
 
         let winRateClass = "";
@@ -218,7 +218,7 @@ renderJobStageGrid: (stageJpName, statsData) => {
       const data = stageData.find(r => r.job === job) || { total: 0, winRate: 0 };
       const jobName = JOB_NAME_JP[job] ?? job;
       const winRate = ((data.winRate ?? 0) * 100).toFixed(1);
-      const iconPath = `images/JOB/${job}.png`;
+      const iconPath = `../images/JOB/${job}.png`;
       const emptyClass = data.total === 0 ? "job-card-empty" : "";
 
       let winRateClass = "";
