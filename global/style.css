@@ -343,5 +343,65 @@ tbody tr:hover {
   height: 28px !important;
 }
 
+/* --- global report: 23型(100%)で人口調査まで見やすくする微調整 --- */
+header {
+  padding: 0.8rem 1.6rem;
+}
+
+main {
+  margin: 18px auto;
+  padding: 0 18px;
+}
+
+.stats-overview {
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 10px 0;
+  margin-top: 0;
+  box-shadow: 0 8px 16px -14px rgba(0, 0, 0, 0.18);
+  flex-wrap: wrap;
+}
+
+.stats-overview .card {
+  padding: 14px !important;
+}
+
+.charts-grid {
+  gap: 16px;
+}
+
+/* 見出しの下の余白を少し詰める（グラフの縦圧縮に効く） */
+.chart-card > h2 {
+  margin-bottom: 8px;
+}
+
+/* ここが崩れの主因だったので、幅と高さをページ向けに最適化 */
+.chart-container {
+  width: 100% !important;
+  margin: 0 auto;
+  height: 165px !important;
+}
+
+/* 円グラフ系は少しだけ背を高く */
+.chart-container:has(#jobPieChart),
+.chart-container:has(#roleAnalysisChart) {
+  height: 180px !important;
+}
+
+/* 散布図は下にアイコンがいるので別枠で確保 */
+.chart-container:has(#jobScatterChart) {
+  height: 230px !important;
+}
+
+/* ダメージランキングは少しだけ余裕 */
+.chart-container:has(#damageChart) {
+  height: 190px !important;
+}
+
+#job-scatter-icons {
+  margin-top: 10px !important;
+  min-height: 38px !important;
+}
+
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
