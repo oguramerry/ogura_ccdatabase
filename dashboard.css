@@ -766,12 +766,14 @@ body {
   font-size: 12px;
   color: var(--text-sub);
   margin-bottom: 2px; /* 勝敗スコアとの隙間を少し詰める */
+  line-height: 1;
 }
 
 /* 勝敗スコアの行 */
 .summary-card .score {
-  margin-bottom: 8px; /* ★ここでTotalとRateの間隔（1行あけ）を作る */
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--text-main);
+  margin-top: 0;
+  margin-bottom: 14px; /* ★ここで「1行ぶん」の隙間を作る */
 }
