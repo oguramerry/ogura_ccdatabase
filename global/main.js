@@ -15,6 +15,8 @@ async function fetchGlobalData() {
     
     // サマリー表示
     document.getElementById("total-matches").textContent = `${data.meta.total} 試合`;
+    const matchCount = Math.floor(data.meta.total / 10);
+    
     document.getElementById("total-winrate").textContent = `${(data.meta.winRate * 100).toFixed(1)}%`;
 
     // グラフ描画
