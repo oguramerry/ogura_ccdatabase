@@ -1,10 +1,33 @@
+// ★ご自身のGASのURLであることを確認してください
 const API_URL = "https://script.google.com/macros/s/AKfycbxCOYEGborjJzpnyd1lG5_MeX3BDmQvjLC-NqN8MpKnr6YRBgcfz962kRFJsiFkb7RXdg/exec";
 
-// データを切り替えるために一時保存しておく変数
-let globalData = null;
+// --- グローバル変数 ---
+let globalData = null;       // 全データ保存用
+let currentViewMode = "ALL"; // ALL(全体), WIN(勝), LOSE(負) ★これが抜けていました！
 
+// --- 初期化 ---
 document.addEventListener("DOMContentLoaded", () => {
   fetchGlobalData();
+
+  // 勝ち負け切り替えボタンの監視
+  const radios = document.querySelectorAll('input[name="viewMode"]');
+  radios.forEach(r => {
+    r.addEventListener("change", (e) => {
+      currentViewMode = e.target.value;
+      const sel = document.getElementById("stage-selector");
+      updateDashboard(sel ? sel.value : "ALL");
+    });
+  });
+
+  // モーダルの外側クリックで閉じる処理
+  const modal = document.getElementById("job-detail-modal");
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target.id === "job-detail-modal") {
+        closeModal();
+      }
+    });
+  }
 });
 
 async function fetchGlobalData() {
@@ -12,16 +35,15 @@ async function fetchGlobalData() {
     const res = await fetch(`${API_URL}?action=global`);
     const data = await res.json();
     
-    // データを保存（あとでフィルターする時に使う）
     globalData = data;
 
-    // ステージ選択肢を作る
+    // ステージ選択肢生成
     initStageSelector(data.byStage);
 
-    // 最初は「全部」で描画
+    // 初期描画
     updateDashboard("ALL");
 
-    // 時間帯グラフだけは全体データで固定表示（ステージ別の時間データはないため）
+    // 時間帯グラフ（全体固定）
     renderHourChart(data.byHour);
 
   } catch (err) {
@@ -30,61 +52,57 @@ async function fetchGlobalData() {
   }
 }
 
-// ▼ ステージ選択肢を生成する
+// ▼ ステージ選択肢
 function initStageSelector(stages) {
   const sel = document.getElementById("stage-selector");
-  
-  // ステージ名でソート（あいうえお順）
+  if (!sel) return;
+
   stages.sort((a, b) => a.stage.localeCompare(b.stage));
 
   stages.forEach(s => {
     const opt = document.createElement("option");
     opt.value = s.stage;
-    opt.textContent = `${s.stage} (${Math.floor(s.total/10)}試合)`; // 表示用に試合数もつける
+    opt.textContent = `${s.stage} (${Math.floor(s.total/10)}試合)`;
     sel.appendChild(opt);
   });
 
-  // 変更されたらグラフを書き換えるイベント
   sel.addEventListener("change", (e) => {
     updateDashboard(e.target.value);
   });
 }
 
-// ▼ 選択されたステージに合わせてグラフを更新する司令塔
+// ▼ 画面更新の司令塔
 function updateDashboard(stageName) {
-  let targetData;     // 描画するジョブデータ
-  let currentTotal;   // その時の総試合数
+  let targetData;
+  let currentTotal;
 
   if (stageName === "ALL") {
-    // 全ステージの場合
     targetData = globalData.byJob;
     currentTotal = globalData.meta.total;
   } else {
-    // 特定のステージの場合
-    // byStageJob（ステージ×ジョブ）の中から、選ばれたステージだけを抜き出す
     targetData = globalData.byStageJob.filter(d => d.stage === stageName);
-    
-    // そのステージの総試合数を探す
     const stageInfo = globalData.byStage.find(s => s.stage === stageName);
     currentTotal = stageInfo ? stageInfo.total : 0;
   }
 
-  // 1. 総観測数の表示更新
+  // 総観測数
   const displayCount = Math.floor(currentTotal / 10);
-  document.getElementById("total-matches").textContent = `${displayCount} 試合`;
+  const totalEl = document.getElementById("total-matches");
+  if (totalEl) totalEl.textContent = `${displayCount} 試合`;
 
-  // 2. 各グラフの再描画
+  // グラフ再描画
   renderJobPieChart(targetData);
   renderWinRateChart(targetData);
   renderDamageChart(targetData);
+  
+  // テーブル再描画（ここで currentViewMode を使う）
   renderJobTable(targetData, currentTotal);
 }
 
 
-// --- 以下、グラフ描画関数（中身はほぼ変更なし） ---
+// --- グラフ描画関数 ---
 
 function renderJobPieChart(jobData) {
-  // キャンバスをリセット（再描画時のバグ防止）
   resetCanvas("jobPieChart");
   const ctx = document.getElementById("jobPieChart").getContext("2d");
   
@@ -92,12 +110,13 @@ function renderJobPieChart(jobData) {
   const topList = sorted.slice(0, 8);
   const otherTotal = sorted.slice(8).reduce((sum, d) => sum + d.total, 0);
   
+  // 円グラフも ÷10 表記にする
   const labels = topList.map(d => JOB_NAME_JP[d.job] || d.job);
-  const values = topList.map(d => d.total);
+  const values = topList.map(d => Math.floor(d.total / 10));
   
   if (otherTotal > 0) {
     labels.push("その他");
-    values.push(otherTotal);
+    values.push(Math.floor(otherTotal / 10));
   }
 
   new Chart(ctx, {
@@ -125,10 +144,8 @@ function renderWinRateChart(jobData) {
   resetCanvas("jobWinRateChart");
   const ctx = document.getElementById("jobWinRateChart").getContext("2d");
 
-  // 試合数が少ないと信頼できないのでフィルタ（ステージ別だと母数が減るので緩和してもいいかも）
-  const threshold = 1; // 1試合でもあれば表示する設定に変更
   const filtered = jobData
-    .filter(d => d.total >= threshold)
+    .filter(d => d.total >= 1)
     .sort((a, b) => (b.wins / b.total) - (a.wins / a.total));
 
   const labels = filtered.map(d => JOB_NAME_JP[d.job] || d.job);
@@ -153,7 +170,6 @@ function renderWinRateChart(jobData) {
   });
 }
 
-// 3. 時間帯別（折れ線＋棒グラフ）
 function renderHourChart(hourData) {
   resetCanvas("hourChart");
   const ctx = document.getElementById("hourChart").getContext("2d");
@@ -161,7 +177,6 @@ function renderHourChart(hourData) {
   const hours = Array.from({length: 24}, (_, i) => i);
   const counts = hours.map(h => {
     const found = hourData.find(d => Number(d.hour) === h);
-    // ★修正：ここでも ÷10 して切り捨て処理を入れました！
     return found ? Math.floor(found.total / 10) : 0;
   });
 
@@ -178,9 +193,7 @@ function renderHourChart(hourData) {
     },
     options: {
       maintainAspectRatio: false,
-      scales: {
-        y: { beginAtZero: true }
-      }
+      scales: { y: { beginAtZero: true } }
     }
   });
 }
@@ -189,16 +202,28 @@ function renderDamageChart(jobData) {
   resetCanvas("damageChart");
   const ctx = document.getElementById("damageChart").getContext("2d");
 
+  // currentViewMode に応じて表示データを変える
+  const getKey = () => {
+    if (currentViewMode === "WIN") return "w_avgDamage";
+    if (currentViewMode === "LOSE") return "l_avgDamage";
+    return "avgDamage";
+  };
+  // データがまだ無い場合のガード（Undefined対策）
+  const getVal = (d) => {
+    const key = getKey();
+    // すでに計算済みの平均値があればそれを使う、なければ計算
+    if (typeof d[key] === "number") return d[key];
+    if (key === "avgDamage") return d.total ? (Number(d.sumDamage)||0)/d.total : 0;
+    return 0; 
+  };
+
   const filtered = jobData
     .filter(d => d.total >= 1)
-    .map(d => ({
-      ...d,
-      avgDmg: (typeof d.avgDamage === "number") ? d.avgDamage : (d.total ? (Number(d.sumDamage)||0)/d.total : 0)
-    }))
-    .sort((a, b) => b.avgDmg - a.avgDmg);
+    .map(d => ({ ...d, _val: getVal(d) }))
+    .sort((a, b) => b._val - a._val);
 
   const labels = filtered.map(d => JOB_NAME_JP[d.job] || d.job);
-  const data = filtered.map(d => Math.round(d.avgDmg));
+  const data = filtered.map(d => Math.round(d._val));
 
   new Chart(ctx, {
     type: 'bar',
@@ -219,15 +244,15 @@ function renderDamageChart(jobData) {
   });
 }
 
-// global/main.js の renderJobTable 関数
-
+// --- テーブル描画（モーダル連携あり） ---
 function renderJobTable(jobData, currentTotalMatches) {
   const tbody = document.querySelector("#job-stats-table tbody");
   const ths = document.querySelectorAll("#job-stats-table th");
   
-  // データ加工
+  if (!tbody) return;
+
   let list = jobData.map(d => {
-    // 現在のモードに合わせて表示用データを作る（ここは前回と同じ）
+    // 現在のモードに合わせて表示用データを作る
     const p = (key) => {
       if (currentViewMode === "WIN") return d["w_" + key] || 0;
       if (currentViewMode === "LOSE") return d["l_" + key] || 0;
@@ -236,7 +261,7 @@ function renderJobTable(jobData, currentTotalMatches) {
 
     return {
       name: JOB_NAME_JP[d.job] || d.job,
-      jobKey: d.job, // ★クリック時に使う元の英語名
+      jobKey: d.job, // クリック時に使う元の英語名
       winRate: (d.wins / d.total) * 100,
       pickRate: currentTotalMatches ? (d.total / currentTotalMatches) * 100 : 0,
       
@@ -286,8 +311,9 @@ function renderJobTable(jobData, currentTotalMatches) {
   list.sort((a, b) => b.winRate - a.winRate);
   draw(list);
   
-  // (ソート機能はそのまま)
+  // ソート機能
   ths.forEach(th => {
+    // 既存のリスナーを削除するためにクローンして置換
     const newTh = th.cloneNode(true);
     th.parentNode.replaceChild(newTh, th);
     newTh.addEventListener("click", () => {
@@ -302,27 +328,11 @@ function renderJobTable(jobData, currentTotalMatches) {
   });
 }
 
-// Chart.js の再描画バグを防ぐためのヘルパー
-function resetCanvas(id) {
-  const oldCanv = document.getElementById(id);
-  const container = oldCanv.parentElement;
-  oldCanv.remove();
-  
-  const newCanv = document.createElement("canvas");
-  newCanv.id = id;
-  container.appendChild(newCanv);
-}
 
 // --- 以下、モーダル（カード詳細）用の処理 ---
 
-// カードを開く
 function openModal(jobKey) {
   // グローバルデータから該当ジョブを探す
-  // (currentViewModeに関係なく、現在のステージデータから探す)
-  // updateDashboardで使っている targetData はローカル変数なので、
-  // globalData から探し直します。
-  
-  // 今選ばれているステージを取得
   const sel = document.getElementById("stage-selector");
   const currentStage = sel ? sel.value : "ALL";
   
@@ -336,11 +346,12 @@ function openModal(jobKey) {
   const d = targetList.find(j => j.job === jobKey);
   if (!d) return;
 
-  // ジョブ名セット
-  document.getElementById("modal-job-name").textContent = 
-    (JOB_NAME_JP[d.job] || d.job) + " の詳細データ";
+  const nameEl = document.getElementById("modal-job-name");
+  if (nameEl) {
+    nameEl.textContent = (JOB_NAME_JP[d.job] || d.job) + " の詳細データ";
+  }
 
-  // テーブルの中身を作る関数
+  // テーブルの中身を作る
   const fmt = (n) => Math.round(n).toLocaleString();
   const fmt2 = (n) => n.toFixed(2);
   const fmtTime = (sec) => {
@@ -349,12 +360,11 @@ function openModal(jobKey) {
     return `${m}:${s.toString().padStart(2, '0')}`;
   };
 
-  // 3行分のHTML生成
   const makeRow = (label, cls, prefix) => {
     // prefixが空なら全体、"w_"なら勝ち、"l_"なら負け
     const p = (key) => d[prefix + key] || d[key] || 0; 
     
-    // データがない場合(0試合など)のガード
+    // データがない場合のガード
     if (label === "勝利" && d.wins === 0) return `<tr class="${cls}"><td>${label}</td><td colspan="7">データなし</td></tr>`;
     if (label === "敗北" && d.losses === 0) return `<tr class="${cls}"><td>${label}</td><td colspan="7">データなし</td></tr>`;
 
@@ -377,20 +387,26 @@ function openModal(jobKey) {
     makeRow("勝利", "row-win", "w_") +
     makeRow("敗北", "row-lose", "l_");
 
-  document.getElementById("modal-stats-body").innerHTML = html;
+  const bodyEl = document.getElementById("modal-stats-body");
+  if (bodyEl) bodyEl.innerHTML = html;
 
-  // 表示
-  document.getElementById("job-detail-modal").style.display = "flex";
+  const modal = document.getElementById("job-detail-modal");
+  if (modal) modal.style.display = "flex";
 }
 
-// カードを閉じる
 function closeModal() {
-  document.getElementById("job-detail-modal").style.display = "none";
+  const modal = document.getElementById("job-detail-modal");
+  if (modal) modal.style.display = "none";
 }
 
-// モーダルの外側をクリックしたら閉じる
-document.getElementById("job-detail-modal").addEventListener("click", (e) => {
-  if (e.target.id === "job-detail-modal") {
-    closeModal();
-  }
-});
+// Chart.js の再描画バグを防ぐヘルパー
+function resetCanvas(id) {
+  const oldCanv = document.getElementById(id);
+  if (!oldCanv) return;
+  const container = oldCanv.parentElement;
+  oldCanv.remove();
+  
+  const newCanv = document.createElement("canvas");
+  newCanv.id = id;
+  container.appendChild(newCanv);
+}
