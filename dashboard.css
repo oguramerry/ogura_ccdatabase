@@ -746,3 +746,32 @@ body {
   font-size: 12px;
   color: var(--text-sub);
 }
+
+/* --- サマリーカードの数字・レイアウト調整 --- */
+
+/* 勝ち数（くっきりした鮮やかな青） */
+.score-win-text {
+  color: #3182ce; 
+  font-size: 1.1em; /* 数字をほんの少し大きく強調 */
+}
+
+/* 負け数（ボルドー寄りの落ち着いた赤） */
+.score-loss-text {
+  color: #c53030; 
+  font-size: 1.1em;
+}
+
+/* Totalの行（勝率と同じ見た目にする） */
+.summary-card .total-row {
+  font-size: 12px;
+  color: var(--text-sub);
+  margin-bottom: 2px; /* 勝敗スコアとの隙間を少し詰める */
+}
+
+/* 勝敗スコアの行 */
+.summary-card .score {
+  margin-bottom: 8px; /* ★ここでTotalとRateの間隔（1行あけ）を作る */
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--text-main);
+}
