@@ -182,7 +182,7 @@ const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total /
           borderColor: Object.values(roles).map(r => r.color),
           borderWidth: 2,
           borderRadius: 8,
-          yAxisID: 'yWin'. // 左側の軸を使用
+          yAxisID: 'yWin', // 左側の軸を使用
           order: 1
         },
         {
