@@ -622,7 +622,7 @@ function renderJobScatterChart(jobData, totalMatches) {
       data: {
         datasets: [{
           label: "jobs",
-          data: points.map(p => ({ x: p.pickRate, y: p.winRate, r: 24, ...p })),
+          data: points.map(p => ({ x: p.pickRate, y: p.winRate, r: 12, ...p })),
           
           // 初期状態はすべて通常アイコン
           pointStyle: points.map(p => iconAssets[p.jobKey]?.normal),
@@ -631,7 +631,7 @@ function renderJobScatterChart(jobData, totalMatches) {
           borderColor: 'transparent',
           
           // ホバー時の拡大設定
-          hoverRadius: 28, 
+          hoverRadius: 15, 
           hoverBorderWidth: 0
         }]
       },
