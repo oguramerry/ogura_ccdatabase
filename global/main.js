@@ -192,7 +192,7 @@ const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total /
           borderColor: '#4a5568',
           borderWidth: 3,
           fill: false,
-          yAxisID: 'yPop' // 右側の軸を使用
+          yAxisID: 'yPop', // 右側の軸を使用
           order: 2
         }
       ]
