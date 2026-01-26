@@ -6,43 +6,66 @@ let globalData = null;
 
 // テーブル用設定
 let currentTableViewMode = "ALL";
-let currentTableSortKey = "job"; // 初期はジョブ順にしておきます
-let currentTableSortDesc = false; // 初期は「上から順（昇順）」
+let currentTableSortKey = "job"; 
+let currentTableSortDesc = false;
 
 // ダメージグラフ用設定
 let currentDamageViewMode = "ALL";
 
 
-// ★ジョブの設定（並び順・ロール色・日本語名）
-// キーは英語名（データに合わせています）
+// ★ジョブの設定（略称対応版）
+// キーを "PLD", "WAR" などの略称に合わせました
 const JOB_META = {
   // --- TANK (Pastel Blue) ---
-  "Paladin":      { order: 1,  role: "tank", jp: "ナイト" },
-  "Warrior":      { order: 2,  role: "tank", jp: "戦士" },
-  "Dark Knight":  { order: 3,  role: "tank", jp: "暗黒騎士" },
-  "Gunbreaker":   { order: 4,  role: "tank", jp: "ガンブレイカー" },
+  "PLD": { order: 1,  role: "tank", jp: "ナイト" },
+  "WAR": { order: 2,  role: "tank", jp: "戦士" },
+  "DRK": { order: 3,  role: "tank", jp: "暗黒騎士" },
+  "GNB": { order: 4,  role: "tank", jp: "ガンブレイカー" },
   // --- HEALER (Pastel Green) ---
-  "White Mage":   { order: 5,  role: "healer", jp: "白魔道士" },
-  "Scholar":      { order: 6,  role: "healer", jp: "学者" },
-  "Astrologian":  { order: 7,  role: "healer", jp: "占星術師" },
-  "Sage":         { order: 8,  role: "healer", jp: "賢者" },
+  "WHM": { order: 5,  role: "healer", jp: "白魔道士" },
+  "SCH": { order: 6,  role: "healer", jp: "学者" },
+  "AST": { order: 7,  role: "healer", jp: "占星術師" },
+  "SGE": { order: 8,  role: "healer", jp: "賢者" },
   // --- DPS (Pastel Pink) ---
-  "Monk":         { order: 9,  role: "dps", jp: "モンク" },
-  "Dragoon":      { order: 10, role: "dps", jp: "竜騎士" },
-  "Ninja":        { order: 11, role: "dps", jp: "忍者" },
-  "Samurai":      { order: 12, role: "dps", jp: "侍" },
-  "Reaper":       { order: 13, role: "dps", jp: "リーパー" },
-  "Viper":        { order: 14, role: "dps", jp: "ヴァイパー" },
-  "Bard":         { order: 15, role: "dps", jp: "吟遊詩人" },
-  "Machinist":    { order: 16, role: "dps", jp: "機工士" },
-  "Dancer":       { order: 17, role: "dps", jp: "踊り子" },
-  "Black Mage":   { order: 18, role: "dps", jp: "黒魔道士" },
-  "Summoner":     { order: 19, role: "dps", jp: "召喚士" },
-  "Red Mage":     { order: 20, role: "dps", jp: "赤魔道士" },
-  "Pictomancer":  { order: 21, role: "dps", jp: "ピクトマンサー" }
+  "MNK": { order: 9,  role: "dps", jp: "モンク" },
+  "DRG": { order: 10, role: "dps", jp: "竜騎士" },
+  "NIN": { order: 11, role: "dps", jp: "忍者" },
+  "SAM": { order: 12, role: "dps", jp: "侍" },
+  "RPR": { order: 13, role: "dps", jp: "リーパー" },
+  "VPR": { order: 14, role: "dps", jp: "ヴァイパー" },
+  "BRD": { order: 15, role: "dps", jp: "吟遊詩人" },
+  "MCH": { order: 16, role: "dps", jp: "機工士" },
+  "DNC": { order: 17, role: "dps", jp: "踊り子" },
+  "BLM": { order: 18, role: "dps", jp: "黒魔道士" },
+  "SMN": { order: 19, role: "dps", jp: "召喚士" },
+  "RDM": { order: 20, role: "dps", jp: "赤魔道士" },
+  "PCT": { order: 21, role: "dps", jp: "ピクトマンサー" },
+  
+  // (念のためフルスペルも残しておきますが、基本は上が使われます)
+  "Paladin": { order: 1, role: "tank", jp: "ナイト" },
+  "Warrior": { order: 2, role: "tank", jp: "戦士" },
+  "Dark Knight": { order: 3, role: "tank", jp: "暗黒騎士" },
+  "Gunbreaker": { order: 4, role: "tank", jp: "ガンブレイカー" },
+  "White Mage": { order: 5, role: "healer", jp: "白魔道士" },
+  "Scholar": { order: 6, role: "healer", jp: "学者" },
+  "Astrologian": { order: 7, role: "healer", jp: "占星術師" },
+  "Sage": { order: 8, role: "healer", jp: "賢者" },
+  "Monk": { order: 9, role: "dps", jp: "モンク" },
+  "Dragoon": { order: 10, role: "dps", jp: "竜騎士" },
+  "Ninja": { order: 11, role: "dps", jp: "忍者" },
+  "Samurai": { order: 12, role: "dps", jp: "侍" },
+  "Reaper": { order: 13, role: "dps", jp: "リーパー" },
+  "Viper": { order: 14, role: "dps", jp: "ヴァイパー" },
+  "Bard": { order: 15, role: "dps", jp: "吟遊詩人" },
+  "Machinist": { order: 16, role: "dps", jp: "機工士" },
+  "Dancer": { order: 17, role: "dps", jp: "踊り子" },
+  "Black Mage": { order: 18, role: "dps", jp: "黒魔道士" },
+  "Summoner": { order: 19, role: "dps", jp: "召喚士" },
+  "Red Mage": { order: 20, role: "dps", jp: "赤魔道士" },
+  "Pictomancer": { order: 21, role: "dps", jp: "ピクトマンサー" }
 };
 
-// ロールごとの背景色
+// ロールごとの背景色（パステルカラー）
 const ROLE_COLORS = {
   tank:   "#E3F2FD", // パステルブルー
   healer: "#E8F5E9", // パステルグリーン
@@ -159,7 +182,7 @@ function renderJobPieChart(jobData) {
   const topList = sorted.slice(0, 8);
   const otherTotal = sorted.slice(8).reduce((sum, d) => sum + d.total, 0);
   
-  const getJpName = (key) => JOB_META[key]?.jp || key; // 辞書から名前取得
+  const getJpName = (key) => JOB_META[key]?.jp || key; 
 
   const labels = topList.map(d => getJpName(d.job));
   const values = topList.map(d => Math.floor(d.total / 10));
@@ -294,7 +317,7 @@ function renderDamageChart(jobData) {
   });
 }
 
-// --- テーブル描画（デザイン＆ソート強化版） ---
+// --- テーブル描画 ---
 function renderJobTable(jobData, currentTotalMatches) {
   const tbody = document.querySelector("#job-stats-table tbody");
   const ths = document.querySelectorAll("#job-stats-table th");
@@ -307,17 +330,16 @@ function renderJobTable(jobData, currentTotalMatches) {
       return d[key] || 0; 
     };
 
-    // 辞書から名前や順序を取得
     const meta = JOB_META[d.job] || {}; 
     const jpName = meta.jp || d.job;
-    const sortOrder = meta.order || 999; // 未定義は後ろへ
+    const sortOrder = meta.order || 999; 
     const role = meta.role || "unknown";
 
     return {
       name: jpName,
       jobKey: d.job,
-      sortOrder: sortOrder, // ソート用
-      role: role,           // 色付け用
+      sortOrder: sortOrder, 
+      role: role,           
       
       winRate: (d.wins / d.total) * 100,
       pickRate: currentTotalMatches ? (d.total / currentTotalMatches) * 100 : 0,
@@ -334,16 +356,12 @@ function renderJobTable(jobData, currentTotalMatches) {
     };
   });
 
-  // ★ソート処理
   list.sort((a, b) => {
-    // ジョブ順のときだけ特殊処理（指定された順番を使う）
     if (currentTableSortKey === "job") {
       const valA = a.sortOrder;
       const valB = b.sortOrder;
       return currentTableSortDesc ? (valB - valA) : (valA - valB);
     }
-
-    // それ以外（勝率やダメージなど）
     const valA = a[currentTableSortKey];
     const valB = b[currentTableSortKey];
     return currentTableSortDesc ? (valB - valA) : (valA - valB);
@@ -360,7 +378,6 @@ function renderJobTable(jobData, currentTotalMatches) {
       return `${m}:${s.toString().padStart(2, '0')}`;
     };
 
-    // ★ロールごとの背景色を取得
     const badgeColor = ROLE_COLORS[d.role] || "#eee";
 
     tr.innerHTML = `
@@ -395,16 +412,14 @@ function renderJobTable(jobData, currentTotalMatches) {
     tbody.appendChild(tr);
   });
   
-  // ヘッダーのソート機能
   ths.forEach(th => {
     const newTh = th.cloneNode(true);
     th.parentNode.replaceChild(newTh, th);
     
-    // ソート中の列に色をつける
     if (newTh.dataset.key === currentTableSortKey) {
       newTh.style.backgroundColor = "#B3E5FC"; 
     } else {
-      newTh.style.backgroundColor = ""; // リセット
+      newTh.style.backgroundColor = ""; 
     }
 
     newTh.addEventListener("click", () => {
@@ -415,8 +430,6 @@ function renderJobTable(jobData, currentTotalMatches) {
         currentTableSortDesc = !currentTableSortDesc;
       } else {
         currentTableSortKey = key;
-        // ジョブ名以外の数値データは、基本「大きい順（降順）」が見やすい
-        // ジョブ名は「指定順（昇順）」が見やすい
         currentTableSortDesc = (key !== "job");
       }
       refreshTableOnly();
