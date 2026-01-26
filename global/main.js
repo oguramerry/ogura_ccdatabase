@@ -14,8 +14,8 @@ async function fetchGlobalData() {
     const data = await res.json();
     
     // サマリー表示
-    document.getElementById("total-matches").textContent = `${data.meta.total} 試合`;
-    const matchCount = Math.floor(data.meta.total / 10);
+    const matchCount = Math.floor(data.meta.total / 10); 
+    document.getElementById("total-matches").textContent = `${matchCount} 試合`; 
     
     // グラフ描画
     renderJobPieChart(data.byJob);
