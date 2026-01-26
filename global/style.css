@@ -104,12 +104,12 @@ main {
 }
 .stats-overview h3 {
   margin: 0 0 5px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #90A4AE; /* 薄いブルーグレー */
 }
 .stats-overview p {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 1.5rem !important;
   font-weight: 500;
   color: var(--header-bg);
 }
@@ -151,19 +151,20 @@ main {
 
 /* 見出しのデザイン：左にパステルピンクのライン */
 h2 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: var(--text-main);
   border-left: 6px solid var(--pastel-pink);
-  padding-left: 12px;
+  padding-left: 8px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   line-height: 1.4;
+  border-left-width: 4px;
 }
 
 .chart-container {
   position: relative;
-  height: 300px;
-  width: 100%;
+  height: 220px !important;
+  width: 70%;
 }
 
 /* --- 切り替えスイッチ（トグル） --- */
@@ -210,9 +211,10 @@ table {
 }
 
 th, td {
-  padding: 14px 10px;
+  padding: 6px 8px !important;
   text-align: center;
   border-bottom: 1px solid #EEF2F5;
+  font-size: 0.85rem;
 }
 
 th {
@@ -320,6 +322,26 @@ tbody tr:hover {
 .row-all td { background-color: #F5F7FA; }
 .row-win td { background-color: #E8F5E9; color: #2E7D32; } /* パステルグリーン */
 .row-lose td { background-color: #FFEBEE; color: #C62828; } /* パステルレッド */
+
+
+/* --- 全体統計ページ（Global）用 コンパクト化設定 --- */
+
+/* 1. カードの余白を減らす */
+.stats-overview .card,
+.chart-card {
+  padding: 15px !important; /* 25px~30px から縮小 */
+  border-radius: 16px;
+}
+
+/* 5. 散布図の下のアイコン一覧の隙間調整 */
+#job-scatter-icons {
+  margin-top: 8px !important;
+  gap: 4px !important;
+}
+#job-scatter-icons img {
+  width: 28px !important; /* 32px から縮小 */
+  height: 28px !important;
+}
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
