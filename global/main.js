@@ -535,6 +535,20 @@ function renderJobScatterChart(jobData, totalMatches) {
     try { jobScatterChartInstance.destroy(); } catch (_) {}
   }
 
+  // 強調表示（ターゲット以外を薄くする）ためのヘルパー
+  const updateStyles = (hoveredIndex) => {
+    const ds = jobScatterChartInstance.data.datasets[0];
+    if (hoveredIndex === null) {
+      ds.backgroundColor = points.map(p => p.backgroundColor);
+      ds.borderColor = points.map(p => p.borderColor);
+    } else {
+      // ターゲット以外を透明度 0.15 (15%) くらいにする
+      ds.backgroundColor = points.map((p, i) => i === hoveredIndex ? p.backgroundColor : p.backgroundColor + "26");
+      ds.borderColor = points.map((p, i) => i === hoveredIndex ? p.borderColor : p.borderColor + "26");
+    }
+    jobScatterChartInstance.update("none");
+  };
+
   jobScatterChartInstance = new Chart(ctx, {
     type: "bubble",
     data: {
@@ -544,7 +558,7 @@ function renderJobScatterChart(jobData, totalMatches) {
         backgroundColor: points.map(p => p.backgroundColor), // 点の中の色
         borderColor: points.map(p => p.borderColor),     // 点の枠線
         borderWidth: 2,
-        hoverRadius: 13,
+        hoverRadius: (ctx) => ctx.raw.r + 5,
         hoverBorderWidth: 3
       }]
     },
@@ -576,6 +590,50 @@ function renderJobScatterChart(jobData, totalMatches) {
       }
     }
   });
+
+  // 3. ロール・区分別のアイコン一覧を生成
+  groups.forEach(group => {
+    const groupPoints = points.filter(p => group.jobs.includes(p.jobKey));
+    if (groupPoints.length === 0) return;
+
+    const row = document.createElement("div");
+    row.style.cssText = "display:flex; align-items:center; gap:12px; flex-wrap:wrap; padding:2px 0;";
+
+    const label = document.createElement("span");
+    label.textContent = group.label;
+    label.style.cssText = "font-size:0.7rem; font-weight:bold; color:#94A3B8; min-width:55px; border-right:2px solid #E2E8F0; margin-right:4px;";
+    row.appendChild(label);
+
+    const iconsDiv = document.createElement("div");
+    iconsDiv.style.cssText = "display:flex; gap:6px; flex-wrap:wrap;";
+
+    groupPoints.forEach(p => {
+      const globalIndex = points.findIndex(point => point.jobKey === p.jobKey);
+      
+      const img = document.createElement("img");
+      img.src = `../images/JOB/${p.jobKey}.png`;
+      img.style.cssText = `width:32px; height:32px; cursor:pointer; border-radius:6px; border:2px solid ${p.borderColor}; transition:0.2s; background:${p.backgroundColor}; padding:2px;`;
+      
+      img.onmouseenter = () => {
+        img.style.transform = "scale(1.25) translateY(-2px)";
+        img.style.boxShadow = `0 4px 12px ${p.borderColor}88`;
+        updateStyles(globalIndex);
+        jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: globalIndex }], { x: 0, y: 0 });
+      };
+      img.onmouseleave = () => {
+        img.style.transform = "scale(1)";
+        img.style.boxShadow = "none";
+        updateStyles(null);
+        jobScatterChartInstance.tooltip.setActiveElements([], { x: 0, y: 0 });
+      };
+      img.onclick = () => openModal(p.jobKey);
+      iconsDiv.appendChild(img);
+    });
+
+    row.appendChild(iconsDiv);
+    iconContainer.appendChild(row);
+  });
+}
 
   // 下のアイコン一覧もロール色で装飾
   points.forEach((p, index) => {
