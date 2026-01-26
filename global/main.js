@@ -523,8 +523,18 @@ function jobScatterExternalTooltip(context) {
   tooltipEl.style.transform = "translateY(0px)";
 }
 
-// --- main.js の renderJobScatterChart 関数をこれに置き換え ---
+// --- ヘルパー関数：半透明のアイコン画像を生成する ---
+function createFadedIcon(img) {
+  const c = document.createElement('canvas');
+  c.width = img.width;
+  c.height = img.height;
+  const ctx = c.getContext('2d');
+  ctx.globalAlpha = 0.15; // ★ここで薄さを調整
+  ctx.drawImage(img, 0, 0);
+  return c;
+}
 
+// --- メイン関数：散布図の描画 ---
 function renderJobScatterChart(jobData, totalMatches) {
   const groups = [
     { label: "TANK", jobs: ["PLD", "WAR", "DRK", "GNB"] },
@@ -539,6 +549,7 @@ function renderJobScatterChart(jobData, totalMatches) {
 
   iconContainer.innerHTML = "";
 
+  // データの準備
   const points = jobData
     .filter(d => d.total > 0 && JOB_META[d.job])
     .map(d => {
@@ -546,7 +557,6 @@ function renderJobScatterChart(jobData, totalMatches) {
       const winRate = d.total ? (d.wins / d.total) * 100 : 0;
       const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
       const role = JOB_META[d.job]?.role || "unknown";
-      
       const bg = ROLE_COLORS[role] || "#F5F5F5";
       const border = 
         role === "tank" ? "#63b3ed" : 
@@ -563,9 +573,21 @@ function renderJobScatterChart(jobData, totalMatches) {
 
   if (!points.length) return;
 
-  // ★変更点1：全てのアイコン画像を読み込んでからグラフを描画する
-  Promise.all(points.map(p => loadJobIcon(p.jobKey))).then(() => {
+  // 画像読み込み待機
+  Promise.all(points.map(p => loadJobIcon(p.jobKey))).then((loadedImages) => {
     
+    // 読み込んだ画像から「通常版」と「薄い版」のペアを作るマップを作成
+    const iconAssets = {};
+    points.forEach((p, i) => {
+      const img = loadedImages[i];
+      if (img) {
+        iconAssets[p.jobKey] = {
+          normal: img,                 // そのままの画像
+          faded: createFadedIcon(img)  // 薄くした画像
+        };
+      }
+    });
+
     resetCanvas("jobScatterChart");
     const ctx = document.getElementById("jobScatterChart").getContext("2d");
 
@@ -573,31 +595,43 @@ function renderJobScatterChart(jobData, totalMatches) {
       try { jobScatterChartInstance.destroy(); } catch (_) {}
     }
 
-    // ホバー時の透過処理用ヘルパー
+    // ★表示スタイルを更新する関数（カーソルが乗ったときに呼ばれる）
+    let lastHoveredIndex = null;
     const updateStyles = (hoveredIndex) => {
-      // アイコン描画モードでは透明度操作が複雑なため、
-      // ここではシンプルにツールチップの連動のみを行う（必要なら不透明度操作を追加可能）
-      jobScatterChartInstance.update("none");
+      if (lastHoveredIndex === hoveredIndex) return; // 変化がなければ何もしない（負荷軽減）
+      lastHoveredIndex = hoveredIndex;
+
+      const ds = jobScatterChartInstance.data.datasets[0];
+      
+      if (hoveredIndex === null) {
+        // --- 何もホバーしていない時：全員「通常アイコン」 ---
+        ds.pointStyle = points.map(p => iconAssets[p.jobKey]?.normal);
+      } else {
+        // --- ホバー中：対象は「通常」、それ以外は「薄いアイコン」 ---
+        ds.pointStyle = points.map((p, i) => {
+          return i === hoveredIndex ? iconAssets[p.jobKey]?.normal : iconAssets[p.jobKey]?.faded;
+        });
+      }
+      
+      jobScatterChartInstance.update("none"); // アニメーションなしで即時反映
     };
 
+    // チャート生成
     jobScatterChartInstance = new Chart(ctx, {
       type: "bubble",
       data: {
         datasets: [{
           label: "jobs",
-          // ★変更点2：半径(r)を大きくする（9 -> 20くらいが見やすい）
-          data: points.map(p => ({ x: p.pickRate, y: p.winRate, r: 22, ...p })),
+          data: points.map(p => ({ x: p.pickRate, y: p.winRate, r: 24, ...p })),
           
-          // ★変更点3：点を「アイコン画像」に設定
-          // getJobIconCanvas は既にリング付きのアイコンを生成してくれる関数
-          pointStyle: points.map(p => getJobIconCanvas(p.jobKey)),
+          // 初期状態はすべて通常アイコン
+          pointStyle: points.map(p => iconAssets[p.jobKey]?.normal),
           
-          backgroundColor: points.map(p => p.backgroundColor),
-          borderColor: points.map(p => p.borderColor),
-          borderWidth: 1, // アイコン自体に枠があるのでここは細く
+          borderWidth: 0, // 枠線なし
+          borderColor: 'transparent',
           
-          // ホバー時は少し大きく
-          hoverRadius: 26, 
+          // ホバー時の拡大設定
+          hoverRadius: 28, 
           hoverBorderWidth: 0
         }]
       },
@@ -615,13 +649,15 @@ function renderJobScatterChart(jobData, totalMatches) {
           },
           y: { 
             title: { display: true, text: "勝率 (%)" },
-            // アイコンが切れないように上下に少し余裕を持たせる
             suggestedMin: Math.min(...points.map(p => p.winRate)) - 5,
             suggestedMax: Math.max(...points.map(p => p.winRate)) + 5
           }
         },
+        // ★チャート上のホバー検知
         onHover: (evt, elements) => {
-          evt.native.target.style.cursor = elements && elements.length ? "pointer" : "default";
+          const activeIndex = (elements && elements.length) ? elements[0].index : null;
+          updateStyles(activeIndex);
+          evt.native.target.style.cursor = activeIndex !== null ? "pointer" : "default";
         },
         onClick: (_evt, elements, chart) => {
           if (!elements || !elements.length) return;
@@ -630,54 +666,65 @@ function renderJobScatterChart(jobData, totalMatches) {
         }
       }
     });
-  });
 
-  // --- アイコン一覧の生成---
-  groups.forEach(group => {
-    const groupPoints = points.filter(p => group.jobs.includes(p.jobKey));
-    if (groupPoints.length === 0) return;
+    // --- 上部のアイコン一覧を生成 ---
+    groups.forEach(group => {
+      const groupPoints = points.filter(p => group.jobs.includes(p.jobKey));
+      if (groupPoints.length === 0) return;
 
-    const row = document.createElement("div");
-    row.style.cssText = "display:flex; align-items:center; gap:12px; flex-wrap:wrap; padding:2px 0;";
+      const row = document.createElement("div");
+      row.style.cssText = "display:flex; align-items:center; gap:12px; flex-wrap:wrap; padding:2px 0;";
 
-    const label = document.createElement("span");
-    label.textContent = group.label;
-    label.style.cssText = "font-size:0.7rem; font-weight:bold; color:#94A3B8; min-width:55px; border-right:2px solid #E2E8F0; margin-right:4px;";
-    row.appendChild(label);
+      const label = document.createElement("span");
+      label.textContent = group.label;
+      label.style.cssText = "font-size:0.7rem; font-weight:bold; color:#94A3B8; min-width:55px; border-right:2px solid #E2E8F0; margin-right:4px;";
+      row.appendChild(label);
 
-    const iconsDiv = document.createElement("div");
-    iconsDiv.style.cssText = "display:flex; gap:6px; flex-wrap:wrap;";
+      const iconsDiv = document.createElement("div");
+      iconsDiv.style.cssText = "display:flex; gap:6px; flex-wrap:wrap;";
 
-    groupPoints.forEach(p => {
-      const globalIndex = points.findIndex(point => point.jobKey === p.jobKey);
-      
-      const img = document.createElement("img");
-      
-      img.src = `../images/JOB/${p.jobKey}.png`;
-      img.style.cssText = `width:32px; height:32px; cursor:pointer; border-radius:6px; border:2px solid ${p.borderColor}; transition:0.2s; background:${p.backgroundColor}; padding:2px;`;
-      
-      img.onmouseenter = () => {
-        img.style.transform = "scale(1.25) translateY(-2px)";
-        img.style.boxShadow = `0 4px 12px ${p.borderColor}88`;
-        updateStyles(globalIndex);
-        if(jobScatterChartInstance) {
-           jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: globalIndex }], { x: 0, y: 0 });
-        }
-      };
-      img.onmouseleave = () => {
-        img.style.transform = "scale(1)";
-        img.style.boxShadow = "none";
-        updateStyles(null);
-        if(jobScatterChartInstance) {
-           jobScatterChartInstance.tooltip.setActiveElements([], { x: 0, y: 0 });
-        }
-      };
-      img.onclick = () => openModal(p.jobKey);
-      iconsDiv.appendChild(img);
+      groupPoints.forEach(p => {
+        const globalIndex = points.findIndex(point => point.jobKey === p.jobKey);
+        
+        const img = document.createElement("img");
+        img.src = `../images/JOB/${p.jobKey}.png`;
+        img.style.cssText = `width:32px; height:32px; cursor:pointer; border-radius:6px; border:2px solid ${p.borderColor}; transition:0.2s; background:${p.backgroundColor}; padding:2px;`;
+        
+        // ★アイコンにマウスが乗ったときの処理
+        img.onmouseenter = () => {
+          // アイコン自体を少し強調
+          img.style.transform = "scale(1.25) translateY(-2px)";
+          img.style.boxShadow = `0 4px 12px ${p.borderColor}88`;
+          
+          // グラフの方も強調表示（該当以外を薄く）
+          updateStyles(globalIndex);
+          
+          // ツールチップを表示
+          if(jobScatterChartInstance) {
+             jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: globalIndex }], { x: 0, y: 0 });
+          }
+        };
+        
+        // ★マウスが離れたときの処理
+        img.onmouseleave = () => {
+          img.style.transform = "scale(1)";
+          img.style.boxShadow = "none";
+          
+          // グラフの表示をリセット（全員通常に戻す）
+          updateStyles(null);
+          
+          if(jobScatterChartInstance) {
+             jobScatterChartInstance.tooltip.setActiveElements([], { x: 0, y: 0 });
+          }
+        };
+        
+        img.onclick = () => openModal(p.jobKey);
+        iconsDiv.appendChild(img);
+      });
+
+      row.appendChild(iconsDiv);
+      iconContainer.appendChild(row);
     });
-
-    row.appendChild(iconsDiv);
-    iconContainer.appendChild(row);
   });
 }
 
