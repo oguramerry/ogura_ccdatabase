@@ -348,7 +348,7 @@ function openModal(jobKey) {
 
   const nameEl = document.getElementById("modal-job-name");
   if (nameEl) {
-    nameEl.textContent = (JOB_NAME_JP[d.job] || d.job) + " の詳細データ";
+    nameEl.textContent = (JOB_NAME_JP[d.job] || d.job) + " の平均詳細データ";
   }
 
   // テーブルの中身を作る
