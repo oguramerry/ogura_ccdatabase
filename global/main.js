@@ -563,8 +563,9 @@ function jobScatterExternalTooltip(context) {
           </div>
         </div>
         <div style="margin-top:6px; font-size:0.85rem; color:#546E7A; line-height:1.45;">
-          勝率 ${winRate}%　使用率 ${pickRate}%<br>
-          試合数 ${matches}
+勝率 ${winRate}%　<br>
+使用率 ${pickRate}%<br>
+          使用回数 ${matches}
         </div>
       </div>
     </div>
@@ -637,7 +638,8 @@ function renderJobScatterChart(jobData, totalMatches) {
   const points = jobData
     .filter(d => d.total > 0 && JOB_META[d.job])
     .map(d => {
-      const matches = d.uniqueMatches ? d.uniqueMatches : Math.max(1, Math.floor(d.total / 10));
+      
+      const matches = d.total; 
       const winRate = d.total ? (d.wins / d.total) * 100 : 0;
       const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
       const role = JOB_META[d.job]?.role || "unknown";
