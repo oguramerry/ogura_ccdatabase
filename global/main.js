@@ -121,16 +121,24 @@ function getCurrentStageData() {
   };
 }
 
+
 function updateDashboard() {
   const { data, hour, total } = getCurrentStageData();
   const totalEl = document.getElementById("total-matches");
+  
+  // 表示用：10で割って試合数とする
   if (totalEl) totalEl.textContent = `${Math.floor(total / 10)} 試合`;
   
-  renderJobPieChart(data);
-  renderRoleAnalysisChart(data,total);
+  // renderJobPieChart に total（分母）を渡す
+  renderJobPieChart(data, total);
+  
+  renderRoleAnalysisChart(data, total);
   renderHourChart(hour);
   renderDamageChart(data);
   renderJobTable(data, total);
+  
+  // 散布図の更新
+  renderJobScatterChart(data, total);
 }
 
 function refreshTableOnly() {
@@ -144,25 +152,65 @@ function refreshDamageChartOnly() {
 }
 
 // --- グラフ描画関数 ---
-
-function renderJobPieChart(jobData) {
+function renderJobPieChart(jobData, totalPlayers) {
   resetCanvas("jobPieChart");
   const ctx = document.getElementById("jobPieChart").getContext("2d");
+  
+  // 多い順にソート
   const sorted = [...jobData].sort((a, b) => b.total - a.total);
+  
+  // 上位8ジョブ ＋ その他 にまとめる
   const topList = sorted.slice(0, 8);
   const otherTotal = sorted.slice(8).reduce((sum, d) => sum + d.total, 0);
+  
+  // ★計算ロジック変更：人数(total) から 使用率(%) を算出
+  // totalPlayers が 0 の場合はエラー回避で 0 を返す
+  const toRate = (val) => totalPlayers > 0 ? ((val / totalPlayers) * 100).toFixed(1) : 0;
+
+  // データ配列を作成（中身はパーセンテージの数値になる）
+  const chartValues = [
+    ...topList.map(d => toRate(d.total)),
+    ...(otherTotal > 0 ? [toRate(otherTotal)] : [])
+  ];
+
+  // ラベル配列を作成
+  const chartLabels = [
+    ...topList.map(d => JOB_META[d.job]?.jp || d.job),
+    ...(otherTotal > 0 ? ["その他"] : [])
+  ];
   
   new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: [...topList.map(d => JOB_META[d.job]?.jp || d.job), ...(otherTotal > 0 ? ["その他"] : [])],
+      labels: chartLabels,
       datasets: [{
-        data: [...topList.map(d => Math.floor(d.total / 10)), ...(otherTotal > 0 ? [Math.floor(otherTotal / 10)] : [])],
+        data: chartValues, // ここに％が入る
         backgroundColor: ['#63b3ed', '#4fd1c5', '#f6e05e', '#f687b3', '#9f7aea', '#ed8936', '#a0aec0', '#48bb78', '#cbd5e0'],
-        borderWidth: 2, borderColor: '#fff'
+        borderWidth: 2, 
+        borderColor: '#fff'
       }]
     },
-    options: { maintainAspectRatio: false, plugins: { legend: { position: 'right' } } }
+    options: { 
+      maintainAspectRatio: false, 
+      plugins: { 
+        legend: { position: 'right' },
+        tooltip: {
+          callbacks: {
+            // ツールチップに「%」を付けて分かりやすくする
+            label: function(context) {
+              let label = context.label || '';
+              if (label) {
+                label += ': ';
+              }
+              if (context.parsed !== null) {
+                label += context.parsed + '%';
+              }
+              return label;
+            }
+          }
+        }
+      } 
+    }
   });
 }
 
