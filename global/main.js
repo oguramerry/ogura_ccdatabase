@@ -48,6 +48,24 @@ const ROLE_COLORS = {
 // --- 初期化 ---
 document.addEventListener("DOMContentLoaded", () => {
   fetchGlobalData();
+
+  // ★ここに追加: 更新ボタンのイベントリスナー
+  const refreshBtn = document.getElementById("refresh-btn");
+  if (refreshBtn) {
+    refreshBtn.addEventListener("click", async () => {
+      // 連打防止：すでにロード中なら何もしない
+      if (refreshBtn.classList.contains("loading")) return;
+
+      try {
+        refreshBtn.classList.add("loading"); // 回転開始
+        await fetchGlobalData();             // データの再取得待機
+      } catch (e) {
+        console.error("更新エラー", e);
+      } finally {
+        refreshBtn.classList.remove("loading"); // 回転終了
+      }
+    });
+  }
   
   // テーブル・グラフの切替監視
   const monitorRadio = (name, callback) => {
