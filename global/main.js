@@ -3,6 +3,7 @@
 // --- グローバル変数 ---
 let currentViewMode = "ALL";
 let globalData = null;
+
 // 集計方法（"avg" or "median"）
 let currentStatMethod = "avg";
 
@@ -14,17 +15,36 @@ let currentTableSortDesc = false;
 // ダメージグラフ用設定
 let currentDamageViewMode = "ALL";
 
-// 散布図フィルター用設定（初期値は全ジョブON）
-// ジョブキーが true なら表示、false なら非表示
+// 散布図フィルター用設定
 let jobFilterState = {}; 
 // 初期化: すべてtrueにする
 FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
+
+
+// --- ★ステージ名と画像ファイル名の対応マップ ---
+// APIから返ってくる「ステージ名」がキーになる
+const STAGE_IMAGE_MAP = {
+  "パライストラ": "pala.jpg",
+  "ヴォルカニック・ハート": "vol.jpg",
+  "クラウドナイン": "cloud.jpg",
+  "レッド・サンズ": "red.jpg",
+  "東方絡繰御殿": "kara.jpg", 
+  "ベイサイド・バトルグラウンド": "bay.jpg",
+  // 英語名で来る場合用（念のため）
+  "Palaistra": "pala.jpg",
+  "Volcanic Heart": "vol.jpg",
+  "Cloud Nine": "cloud.jpg",
+  "The Red Sands": "red.jpg",
+  "The Clockwork Castletown": "kara.jpg"
+  "Bayside Battleground": "bay.jpg",
+};
+
 
 // --- 初期化 ---
 document.addEventListener("DOMContentLoaded", () => {
   fetchGlobalData();
 
-// 更新ボタン
+  // 更新ボタン
   const refreshBtn = document.getElementById("refresh-btn");
   if (refreshBtn) {
     refreshBtn.addEventListener("click", async () => {
@@ -41,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
-  // テーブル・グラフの切替監視
+  // ラジオボタン監視（共通化）
   const monitorRadio = (name, callback) => {
     document.querySelectorAll(`input[name="${name}"]`).forEach(r => {
       r.addEventListener("change", (e) => callback(e.target.value));
@@ -56,9 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
     currentDamageViewMode = val; 
     refreshDamageChartOnly(); 
   });
-});
 
-// 集計方法の切り替え監視
+  // 集計方法の切り替え監視
   monitorRadio("statMethod", (val) => {
     currentStatMethod = val;
     // 表とダメージグラフの両方を更新
@@ -79,12 +98,13 @@ async function fetchGlobalData() {
 function initStageSelector(stages) {
   const sel = document.getElementById("stage-selector");
   if (!sel) return;
-// 一旦リセット
+  // 一旦リセット
   sel.innerHTML = '<option value="ALL">全てのステージ</option>';
   
   stages.sort((a, b) => a.stage.localeCompare(b.stage)).forEach(s => {
     const opt = document.createElement("option");
     opt.value = s.stage;
+    // 試合数を表示（データ仕様により /10 するか調整）
     opt.textContent = `${s.stage} (${Math.floor(s.total/10)}試合)`;
     sel.appendChild(opt);
   });
@@ -94,33 +114,27 @@ function initStageSelector(stages) {
 function getCurrentStageData() {
   const stageName = document.getElementById("stage-selector").value;
   if (stageName === "ALL") {
-    return { data: globalData.byJob, hour: globalData.byHour, total: globalData.meta.total };
+    return { data: globalData.byJob, hour: globalData.byHour, total: globalData.meta.total, stageName: "ALL" };
   }
   return {
     data: globalData.byStageJob.filter(d => d.stage === stageName),
     hour: globalData.byStageHour.filter(d => d.stage === stageName),
-    total: globalData.byStage.find(s => s.stage === stageName)?.total || 0
+    total: globalData.byStage.find(s => s.stage === stageName)?.total || 0,
+    stageName: stageName
   };
 }
 
-// --- ★データ取得ヘルパー---
-// 平均/中央値 × 全体/勝ち/負け のキーを自動生成して値を取る
-// 例: avg + w_ + Damage -> "w_avgDamage"
-// 例: median + Damage -> "medianDamage"
+// --- ★データ取得ヘルパー ---
 function getStatValue(dataObj, metricKey, viewMode = "ALL") {
   if (!dataObj) return 0;
   
-  // viewModeのプレフィックス (WIN -> "w_", LOSE -> "l_", ALL -> "")
+  // viewModeのプレフィックス
   const prefix = (viewMode === "WIN") ? "w_" : (viewMode === "LOSE") ? "l_" : "";
   
   // method (avg または median)
   const method = currentStatMethod; 
 
-  // キーの組み立て: "w_" + "median" + "Damage"
-  // ※ただし、勝率(winRate)や使用率(pickRate)はavg/median関係ないので除外が必要だが
-  // この関数はスタッツ用として使う
-  
-  // 元のJSONキーが "avgK", "w_avgK", "medianK", "w_medianK" というルールであると仮定
+  // キーの組み立て
   const finalKey = `${prefix}${method}${metricKey}`;
   
   return dataObj[finalKey] || 0;
@@ -132,7 +146,8 @@ function updateDashboard() {
   const totalEl = document.getElementById("total-matches");
   if (totalEl) totalEl.textContent = `${Math.floor(total / 10)} 試合`;
 
-updateBackgroundImage(stageName);
+  // 背景画像の更新
+  updateBackgroundImage(stageName);
   
   renderJobPieChart(data, total);
   renderRoleAnalysisChart(data, total);
@@ -142,19 +157,17 @@ updateBackgroundImage(stageName);
   renderJobScatterChart(data, total);
 }
 
-// ★背景画像更新関数
+// ★背景画像更新関数（ファイル名対応版）
 function updateBackgroundImage(stageName) {
   const bg = document.getElementById("stage-background");
   if (!bg) return;
 
   if (stageName === "ALL") {
-    bg.style.backgroundImage = "none"; // ALLの時は画像なしか、共通画像
-    // bg.style.backgroundImage = "url('../images/STAGE/ALL.jpg')";
+    bg.style.backgroundImage = "none"; 
   } else {
-    // 画像パスのルール: ../images/STAGE/ステージ名.jpg
-    // 画像がない場合のエラーハンドリングはCSSだけでは難しいが、透過しているので目立たない
-    // 必要ならJSで画像存在チェックを入れる
-    bg.style.backgroundImage = `url('../images/STAGE/${stageName}.jpg')`;
+    // マップからファイル名を取得、なければそのまま（保険）
+    const fileName = STAGE_IMAGE_MAP[stageName] || `${stageName}.jpg`;
+    bg.style.backgroundImage = `url('../images/STAGE/${fileName}')`;
   }
 }
 
@@ -275,32 +288,26 @@ function renderRoleAnalysisChart(jobData, totalMatches) {
   });
 }
 
-
 function renderHourChart(hourData) {
-  
   const hours = Array.from({length: 24}, (_, i) => i);
   const counts = hours.map(h => {
     const found = hourData.find(d => Number(d.hour) === h);
     return found ? Math.floor(found.total / 10) : 0;
   });
 
-  // 共通関数を呼び出す
   drawSimpleBarChart(
-    "hourChart",             // キャンバスID
-    hours.map(h => `${h}時`), // ラベル（X軸）
-    counts,                  // データ（Y軸）
-    '試合数',                 // データの名前
-    '#90cdf4'                // 棒の色
+    "hourChart",
+    hours.map(h => `${h}時`),
+    counts,
+    '試合数',
+    '#90cdf4'
   );
 }
 
-
 function renderDamageChart(jobData) {
   // ★ getStatValueを使って値を取得
-  // キーは "Damage" を指定 -> "avgDamage" or "medianDamage" or "w_avgDamage" etc.
   const metric = "Damage";
   
-  // ソート用に一時的な値 _val を持たせる
   const filtered = jobData
     .filter(d => d.total >= 1)
     .map(d => ({ 
@@ -312,7 +319,6 @@ function renderDamageChart(jobData) {
   const labels = filtered.map(d => JOB_META[d.job]?.jp || d.job);
   const data = filtered.map(d => Math.round(d._val));
 
-  // グラフタイトルも動的に
   const methodLabel = (currentStatMethod === "avg") ? "平均" : "中央値";
   
   drawSimpleBarChart(
@@ -350,13 +356,9 @@ function renderJobTable(jobData, currentTotalMatches) {
     };
   });
 
-// ソート処理
+  // ソート処理
   list.sort((a, b) => {
-    // データキーと内部プロパティ名のマッピングが必要
-    // HTMLの data-key="K" -> obj.statK
     let keyA, keyB;
-    
-    // 特別なキー（勝率など）と動的キー（K, Dなど）の振り分け
     if (currentTableSortKey === "job") return (currentTableSortDesc ? b.sortOrder - a.sortOrder : a.sortOrder - b.sortOrder);
     
     // マッピング
@@ -371,7 +373,7 @@ function renderJobTable(jobData, currentTotalMatches) {
     return currentTableSortDesc ? (b[prop] - a[prop]) : (a[prop] - b[prop]);
   });
   
-tbody.innerHTML = "";
+  tbody.innerHTML = "";
   list.forEach(d => {
     const tr = document.createElement("tr");
     const fmt = (n) => Math.round(n).toLocaleString();
@@ -415,17 +417,14 @@ function openModal(jobKey) {
   const fmt2 = (n) => n.toFixed(2);
   const fmtT = (s) => `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`;
   
-  // 現在の集計モード（avg/median）に従って表示する
   const method = currentStatMethod; 
   
   const makeR = (l, c, viewModePrefix) => {
-     // viewModePrefix: "w_", "l_", "" 
      const getKey = (k) => `${viewModePrefix}${method}${k}`;
      const val = (k) => d[getKey(k)] || 0;
      
      const label = (l === "全体") ? "全体" : (l === "勝利") ? "勝利" : (l === "敗北") ? "敗北" : l;
      
-     // データがない場合
      if (l !== "全体" && ((l === "勝利" && d.wins === 0) || (l === "敗北" && d.losses === 0))) {
        return `<tr class="${c}"><td>${label}</td><td colspan="8">データなし</td></tr>`;
      }
@@ -458,9 +457,7 @@ function resetCanvas(id) {
   const n = document.createElement("canvas"); n.id = id; parent.appendChild(n);
 }
 
-
-// --- ★ジョブ別 散布図（フィルター機能付き） ---
-
+// --- 散布図フィルター機能 ---
 let jobScatterChartInstance = null;
 const JOB_ICON_CACHE = new Map();
 
@@ -484,7 +481,6 @@ function loadJobIcon(jobKey) {
 }
 
 function getJobIconCanvas(jobKey) {
-  // キャッシュから取得してサイズ統一して返すヘルパー（今回は createResizedIcon で代用）
   return JOB_ICON_CACHE.get(jobKey)?.canvas;
 }
 
@@ -561,13 +557,11 @@ function createFadedIcon(sourceCanvas) {
   const c = document.createElement('canvas');
   c.width = sourceCanvas.width; c.height = sourceCanvas.height;
   const ctx = c.getContext('2d');
-  ctx.globalAlpha = 0.2; // 薄さ調整
-  ctx.filter = "grayscale(100%)"; // ★モノクロにする
+  ctx.globalAlpha = 0.2; 
+  ctx.filter = "grayscale(100%)"; 
   ctx.drawImage(sourceCanvas, 0, 0);
   return c;
 }
-
-// ★ここから: フィルター関連の操作関数
 
 function toggleSingleJob(jobKey) {
   jobFilterState[jobKey] = !jobFilterState[jobKey];
@@ -575,7 +569,6 @@ function toggleSingleJob(jobKey) {
 }
 
 function toggleRoleGroup(jobs) {
-  // そのグループ内で「一つでもOFF」があれば「全ON」にする。全部ONなら「全OFF」
   const hasOff = jobs.some(j => !jobFilterState[j]);
   const newState = hasOff;
   jobs.forEach(j => jobFilterState[j] = newState);
@@ -587,25 +580,20 @@ function toggleAllJobs(newState) {
   refreshScatterAndIcons();
 }
 
-// 現在のデータを使って再描画だけするショートカット
 function refreshScatterAndIcons() {
   const { data, total } = getCurrentStageData();
   renderJobScatterChart(data, total);
 }
 
-
-// --- メイン関数：散布図の描画（クリックフィルター対応版） ---
 function renderJobScatterChart(jobData, totalMatches) {
-  const ICON_SIZE = 40;  //散布図のジョブアイコンのサイズ調整
+  const ICON_SIZE = 40; 
   const canvas = document.getElementById("jobScatterChart");
   const iconContainer = document.getElementById("job-scatter-icons");
   if (!canvas || !iconContainer) return;
 
-  // 1. 表示対象データのフィルタリング
-  // jobFilterState[d.job] が true のデータだけグラフに渡す
   const activePoints = jobData
     .filter(d => d.total > 0 && JOB_META[d.job])
-    .filter(d => jobFilterState[d.job]) // ★フィルター適用
+    .filter(d => jobFilterState[d.job]) 
     .map(d => {
       const winRate = d.total ? (d.wins / d.total) * 100 : 0;
       const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
@@ -622,13 +610,10 @@ function renderJobScatterChart(jobData, totalMatches) {
     })
     .sort((a, b) => (JOB_META[a.jobKey]?.order || 99) - (JOB_META[b.jobKey]?.order || 99));
 
-  // アイコン生成用に「全ジョブ」のリストも必要（ボタン表示のため）
   const allJobKeys = jobData.map(d => d.job).filter(j => JOB_META[j]);
 
-  // 画像ロード
   Promise.all(allJobKeys.map(j => loadJobIcon(j))).then((loadedImages) => {
     
-    // アイコンアセット生成 (ON/OFF用)
     const iconAssets = {};
     allJobKeys.forEach((key, i) => {
       const img = loadedImages[i];
@@ -639,7 +624,6 @@ function renderJobScatterChart(jobData, totalMatches) {
       }
     });
 
-    // --- A. チャート描画 ---
     resetCanvas("jobScatterChart");
     const ctx = document.getElementById("jobScatterChart").getContext("2d");
     if (jobScatterChartInstance) { try { jobScatterChartInstance.destroy(); } catch (_) {} }
@@ -650,7 +634,7 @@ function renderJobScatterChart(jobData, totalMatches) {
         datasets: [{
           label: "jobs",
           data: activePoints.map(p => ({ x: p.pickRate, y: p.winRate, r: ICON_SIZE / 2, ...p })),
-          pointStyle: activePoints.map(p => iconAssets[p.jobKey]?.normal), // 表示データ分だけnormalアイコン
+          pointStyle: activePoints.map(p => iconAssets[p.jobKey]?.normal), 
           borderWidth: 0,
           borderColor: 'transparent',
           hoverRadius: ICON_SIZE / 2 + 2, 
@@ -667,13 +651,12 @@ function renderJobScatterChart(jobData, totalMatches) {
           x: { 
             beginAtZero: true, 
             title: { display: true, text: "使用率 (%)" },
-            // 軸の最大値がブレないように固定したほうが良いが、ここではデータに合わせて自動
-            suggestedMax: 15 // 仮
+            suggestedMax: 15 
           },
           y: { 
             title: { display: true, text: "勝率 (%)" },
-            suggestedMin: 35, // 仮
-            suggestedMax: 65  // 仮
+            suggestedMin: 35, 
+            suggestedMax: 65 
           }
         },
         onHover: (evt, elements) => {
@@ -687,46 +670,37 @@ function renderJobScatterChart(jobData, totalMatches) {
       }
     });
 
-    // --- B. アイコンボタン群（フィルターUI）の描画 ---
-    
     iconContainer.innerHTML = "";
     iconContainer.style.cssText = "display:flex; gap:30px; justify-content:center; align-items:flex-start; flex-wrap:wrap;";
 
-    // 2カラムレイアウト作成ヘルパー
     const createGroupRow = (group) => {
-      // そのロールに含まれるジョブが1つも無ければスキップ
       const groupJobKeys = group.jobs;
       if (!groupJobKeys.some(j => iconAssets[j])) return null;
 
       const row = document.createElement("div");
       row.style.cssText = "display:flex; align-items:center; gap:12px; margin-bottom:12px;";
 
-      // ラベル（クリックで一括切替）
       const label = document.createElement("span");
       label.textContent = group.label;
       label.title = "クリックで一括切替";
       label.style.cssText = "font-size:0.75rem; font-weight:bold; color:#64748b; min-width:55px; border-right:2px solid #cbd5e1; margin-right:4px; cursor:pointer; user-select:none;";
       label.onclick = () => toggleRoleGroup(groupJobKeys);
-      // ホバー効果
       label.onmouseenter = () => label.style.color = "#334155";
       label.onmouseleave = () => label.style.color = "#64748b";
       row.appendChild(label);
 
-      // アイコン群
       const iconsDiv = document.createElement("div");
       iconsDiv.style.cssText = "display:flex; gap:6px; flex-wrap:wrap;";
 
       groupJobKeys.forEach(key => {
         if (!iconAssets[key]) return;
         
-        const isON = jobFilterState[key]; // 現在の状態
+        const isON = jobFilterState[key]; 
         const img = document.createElement("img");
         img.src = `../images/JOB/${key}.png`;
         
-        // デザイン調整: OFFなら半透明＆モノクロ
         const baseStyle = `width:32px; height:32px; cursor:pointer; border-radius:6px; transition:0.2s; padding:2px;`;
         if (isON) {
-           // ON: 色付き枠線
            const role = JOB_META[key]?.role || "unknown";
            const borderCol = 
              role === "tank" ? "#63b3ed" : 
@@ -734,7 +708,6 @@ function renderJobScatterChart(jobData, totalMatches) {
              role === "dps" ? "#f687b3" : "#a0aec0";
            img.style.cssText = baseStyle + `border:2px solid ${borderCol}; background:#fff; opacity:1; filter:none; transform:scale(1); box-shadow:0 1px 3px rgba(0,0,0,0.1);`;
         } else {
-           // OFF: グレー、半透明、縮小
            img.style.cssText = baseStyle + `border:2px solid #e2e8f0; background:transparent; opacity:0.4; filter:grayscale(100%); transform:scale(0.9);`;
         }
 
@@ -746,28 +719,25 @@ function renderJobScatterChart(jobData, totalMatches) {
       return row;
     };
 
-    // カラム構築
     const leftCol = document.createElement("div");
     leftCol.style.cssText = "display:flex; flex-direction:column;";
     const rightCol = document.createElement("div");
     rightCol.style.cssText = "display:flex; flex-direction:column;";
 
-    const tRow = createGroupRow(FILTER_GROUPS_DEF[0]); // TANK
-    const hRow = createGroupRow(FILTER_GROUPS_DEF[1]); // HEALER
+    const tRow = createGroupRow(FILTER_GROUPS_DEF[0]); 
+    const hRow = createGroupRow(FILTER_GROUPS_DEF[1]); 
     if(tRow) leftCol.appendChild(tRow);
     if(hRow) leftCol.appendChild(hRow);
 
-    // 右上（MELEE + RANGE）
     const rightTop = document.createElement("div");
     rightTop.style.cssText = "display:flex; gap:20px; flex-wrap:wrap;";
-    const mRow = createGroupRow(FILTER_GROUPS_DEF[2]); // MELEE
-    const rRow = createGroupRow(FILTER_GROUPS_DEF[3]); // RANGE
+    const mRow = createGroupRow(FILTER_GROUPS_DEF[2]); 
+    const rRow = createGroupRow(FILTER_GROUPS_DEF[3]); 
     if(mRow) rightTop.appendChild(mRow);
     if(rRow) rightTop.appendChild(rRow);
     rightCol.appendChild(rightTop);
 
-    // 右下（CASTER）
-    const cRow = createGroupRow(FILTER_GROUPS_DEF[4]); // CASTER
+    const cRow = createGroupRow(FILTER_GROUPS_DEF[4]); 
     if(cRow) rightCol.appendChild(cRow);
 
     iconContainer.appendChild(leftCol);
@@ -775,13 +745,10 @@ function renderJobScatterChart(jobData, totalMatches) {
   });
 }
 
-// --- 棒グラフを描く共通関数 ---
 function drawSimpleBarChart(canvasId, labels, data, labelText, color) {
-  // 既存のキャンバスをリセット
   resetCanvas(canvasId);
   const ctx = document.getElementById(canvasId).getContext("2d");
 
-  // グラフを描画
   new Chart(ctx, {
     type: 'bar',
     data: {
@@ -793,17 +760,11 @@ function drawSimpleBarChart(canvasId, labels, data, labelText, color) {
         borderRadius: 4
       }]
     },
-options: {
-maintainAspectRatio: false,
-layout: {
-padding: { top: 4, bottom: 4 }
-},
-plugins: {
-legend: { display: false }
-},
-scales: {
-y: { beginAtZero: true }
-}
-}
+    options: {
+      maintainAspectRatio: false,
+      layout: { padding: { top: 4, bottom: 4 } },
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true } }
+    }
   });
 }
