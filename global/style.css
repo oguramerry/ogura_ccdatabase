@@ -404,26 +404,6 @@ main {
   min-height: 200px;
 }
 
-
-
-/* 円グラフなどは少し正方形に近づける */
-.chart-container:has(#jobPieChart),
-.chart-container:has(#roleAnalysisChart) {
-  aspect-ratio: 3 / 2;
-  min-height: 200px;
-}
-
-/* 散布図はアイコンがあるので縦長を許容 */
-.chart-container:has(#jobScatterChart) {
-  aspect-ratio: auto; /* 比率指定を解除 */
-  height: 300px !important;
-}
-
-/* ダメージランキングは横長 */
-.chart-container:has(#damageChart) {
-  aspect-ratio: 21 / 9;
-}
-
 /* 散布図下のアイコン群 */
 #job-scatter-icons {
   margin-top: 10px !important;
