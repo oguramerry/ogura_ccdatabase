@@ -413,7 +413,49 @@ main {
   min-height: 30px !important;
 }
 
+/* --- データ更新ボタン用スタイル --- */
+/* タイトルとボタンを横並びにするラッパー */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* タイトルとボタンの間隔 */
+}
 
+/* 更新ボタン本体 */
+.refresh-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-size: 1.2rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  outline: none;
+  padding-bottom: 3px; /* 記号の縦位置微調整 */
+}
+
+.refresh-btn:hover {
+  background: var(--pastel-pink);
+  border-color: var(--pastel-pink);
+  transform: rotate(180deg); /* ホバー時に半回転 */
+}
+
+/* 更新中のくるくるアニメーション */
+.refresh-btn.loading {
+  pointer-events: none; /* 連打防止 */
+  opacity: 0.8;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
