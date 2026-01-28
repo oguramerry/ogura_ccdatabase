@@ -172,14 +172,7 @@ margin-bottom: 4px;
 line-height: 1.25;
 }
 
-.chart-container {
-position: relative;
-width: 100% !important;
-height: auto !important;
-min-height: 140px;
-aspect-ratio: 16 / 9;
-margin: 0;
-}
+
 
 /* --- 切り替えスイッチ（トグル） --- */
 .toggle-group {
@@ -387,14 +380,19 @@ main {
   margin-bottom: 8px;
 }
 
-/* ★重要：高さ固定(px)をやめ、アスペクト比で管理する */
 .chart-container {
-  width: 100% !important;
-  margin: 0 auto;
-  
-  height: auto !important;      /* 固定高さを解除 */
-  min-height: 180px;            /* 最低でもこれくらいは確保 */
-  aspect-ratio: 16 / 9;         /* 基本的にワイド比率を保つ */
+position: relative;
+width: 100% !important;
+margin: 0 auto;
+
+height: 220px;
+min-height: 220px;
+aspect-ratio: 16 / 9;
+}
+
+.chart-card.wide .chart-container {
+height: 260px;
+min-height: 260px;
 }
 
 /* 円グラフなどは少し正方形に近づける */
