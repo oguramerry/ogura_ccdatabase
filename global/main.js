@@ -679,9 +679,17 @@ function drawSimpleBarChart(canvasId, labels, data, labelText, color) {
         borderRadius: 4
       }]
     },
-    options: {
-      maintainAspectRatio: false,
-      scales: { y: { beginAtZero: true } }
-    }
+options: {
+maintainAspectRatio: false,
+layout: {
+padding: { top: 4, bottom: 4 }
+},
+plugins: {
+legend: { display: false }
+},
+scales: {
+y: { beginAtZero: true }
+}
+}
   });
 }
