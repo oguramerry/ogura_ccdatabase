@@ -567,7 +567,7 @@ function renderJobScatterChart(jobData, totalMatches) {
   const points = jobData
     .filter(d => d.total > 0 && JOB_META[d.job])
     .map(d => {
-      const matches = Math.max(1, Math.floor(d.total / 10));
+      const matches = d.uniqueMatches ? d.uniqueMatches : Math.max(1, Math.floor(d.total / 10));
       const winRate = d.total ? (d.wins / d.total) * 100 : 0;
       const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
       const role = JOB_META[d.job]?.role || "unknown";
