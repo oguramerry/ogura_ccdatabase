@@ -132,23 +132,8 @@ main {
   font-family: "Kiwi Maru", serif;
   cursor: pointer;
   outline: none;
-  font-size: 0.95rem;
-  transition: border-color 0.3s;
-}
-#stage-selector:focus {
-  border-color: var(--active-blue);
-}
-
-/* ステージ選択プルダウン */
-#stage-selector {
-  border: 2px solid var(--pastel-blue);
-  color: var(--text-main);
-  background-color: #FAFDFF;
-  border-radius: 12px;
-  padding: 8px 12px;
-  font-family: "Kiwi Maru", serif;
-  cursor: pointer;
-  outline: none;
+  font-size: 1.1rem;
+  width: 100%;
   transition: border-color 0.3s;
 }
 #stage-selector:focus {
