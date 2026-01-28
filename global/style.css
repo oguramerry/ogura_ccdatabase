@@ -465,5 +465,53 @@ main {
   100% { transform: rotate(360deg); }
 }
 
+
+/* アイコンフィルターのスタイル */
+.filter-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+/* ロール名（ボタン化） */
+.filter-role-label {
+  font-weight: bold;
+  color: #5d7e98; /* 画像に近い色 */
+  cursor: pointer;
+  user-select: none;
+  min-width: 60px;
+  text-align: right;
+  margin-right: 5px;
+  border-right: 2px solid #ddd; /* 区切り線 */
+  padding-right: 10px;
+  transition: color 0.2s;
+}
+.filter-role-label:hover {
+  color: #2b4f6c;
+  text-decoration: underline;
+}
+
+/* ジョブアイコン（ボタン化） */
+.filter-job-icon {
+  width: 32px; /* アイコンサイズ調整 */
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+.filter-job-icon:hover {
+  transform: scale(1.1);
+}
+
+/* OFFの状態（半透明＋白黒） */
+.filter-job-icon.off {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
