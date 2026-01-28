@@ -239,7 +239,7 @@ h2 {
 .chart-container.auto-height {
   height: auto !important;     /* 固定高さを解除 */
   min-height: auto !important;
-  aspect-ratio: 16 / 10;       /* 横幅に応じて高さを自動決定（比率は好みで調整可） */
+  aspect-ratio: 22 / 9;       /* 横幅に応じて高さを自動決定（比率は好みで調整可） */
 }
 
 /* 散布図下のアイコン群 */
