@@ -1,4 +1,3 @@
-
 const API_URL = "https://script.google.com/macros/s/AKfycbxCOYEGborjJzpnyd1lG5_MeX3BDmQvjLC-NqN8MpKnr6YRBgcfz962kRFJsiFkb7RXdg/exec";
 let currentViewMode = "ALL";
 // --- グローバル変数 ---
@@ -11,6 +10,19 @@ let currentTableSortDesc = false;
 
 // ダメージグラフ用設定
 let currentDamageViewMode = "ALL";
+
+// ★追加: 散布図フィルター用設定（初期値は全ジョブON）
+// ジョブキーが true なら表示、false なら非表示
+let jobFilterState = {}; 
+const FILTER_GROUPS_DEF = [
+  { label: 'TANK',   jobs: ['PLD', 'WAR', 'DRK', 'GNB'] },
+  { label: 'HEALER', jobs: ['WHM', 'SCH', 'AST', 'SGE'] },
+  { label: 'MELEE',  jobs: ['MNK', 'DRG', 'NIN', 'SAM', 'RPR', 'VPR'] },
+  { label: 'RANGE',  jobs: ['BRD', 'MCH', 'DNC'] },
+  { label: 'CASTER', jobs: ['BLM', 'SMN', 'RDM', 'PCT'] }
+];
+// 初期化: すべてtrueにする
+FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
 
 
 // ★ジョブの設定（略称対応・指定順・ロール別カラー）
@@ -49,21 +61,18 @@ const ROLE_COLORS = {
 document.addEventListener("DOMContentLoaded", () => {
   fetchGlobalData();
 
-  // ★ここに追加: 更新ボタンのイベントリスナー
+  // ★更新ボタン
   const refreshBtn = document.getElementById("refresh-btn");
   if (refreshBtn) {
     refreshBtn.addEventListener("click", async () => {
-      // 連打防止：すでにロード中なら何もしない
       if (refreshBtn.classList.contains("loading")) return;
-
-try {
-        refreshBtn.classList.add("loading"); // くるくる開始
-        await fetchGlobalData();             // データ再取得
+      try {
+        refreshBtn.classList.add("loading"); 
+        await fetchGlobalData();             
       } catch (e) {
         console.error("更新に失敗しました", e);
         alert("データの更新に失敗しました");
       } finally {
-        // 少し余韻を持たせてから止める（0.5秒後）
         setTimeout(() => {
           refreshBtn.classList.remove("loading");
         }, 500);
@@ -126,12 +135,9 @@ function updateDashboard() {
   const { data, hour, total } = getCurrentStageData();
   const totalEl = document.getElementById("total-matches");
   
-  // 表示用：10で割って試合数とする
   if (totalEl) totalEl.textContent = `${Math.floor(total / 10)} 試合`;
   
-  // renderJobPieChart に total（分母）を渡す
   renderJobPieChart(data, total);
-  
   renderRoleAnalysisChart(data, total);
   renderHourChart(hour);
   renderDamageChart(data);
@@ -156,24 +162,16 @@ function renderJobPieChart(jobData, totalPlayers) {
   resetCanvas("jobPieChart");
   const ctx = document.getElementById("jobPieChart").getContext("2d");
   
-  // 多い順にソート
   const sorted = [...jobData].sort((a, b) => b.total - a.total);
-  
-  // 上位8ジョブ ＋ その他 にまとめる
   const topList = sorted.slice(0, 8);
   const otherTotal = sorted.slice(8).reduce((sum, d) => sum + d.total, 0);
-  
-  // ★計算ロジック変更：人数(total) から 使用率(%) を算出
-  // totalPlayers が 0 の場合はエラー回避で 0 を返す
   const toRate = (val) => totalPlayers > 0 ? ((val / totalPlayers) * 100).toFixed(1) : 0;
 
-  // データ配列を作成（中身はパーセンテージの数値になる）
   const chartValues = [
     ...topList.map(d => toRate(d.total)),
     ...(otherTotal > 0 ? [toRate(otherTotal)] : [])
   ];
 
-  // ラベル配列を作成
   const chartLabels = [
     ...topList.map(d => JOB_META[d.job]?.jp || d.job),
     ...(otherTotal > 0 ? ["その他"] : [])
@@ -184,7 +182,7 @@ function renderJobPieChart(jobData, totalPlayers) {
     data: {
       labels: chartLabels,
       datasets: [{
-        data: chartValues, // ここに％が入る
+        data: chartValues,
         backgroundColor: ['#63b3ed', '#4fd1c5', '#f6e05e', '#f687b3', '#9f7aea', '#ed8936', '#a0aec0', '#48bb78', '#cbd5e0'],
         borderWidth: 2, 
         borderColor: '#fff'
@@ -196,15 +194,10 @@ function renderJobPieChart(jobData, totalPlayers) {
         legend: { position: 'right' },
         tooltip: {
           callbacks: {
-            // ツールチップに「%」を付けて分かりやすくする
             label: function(context) {
               let label = context.label || '';
-              if (label) {
-                label += ': ';
-              }
-              if (context.parsed !== null) {
-                label += context.parsed + '%';
-              }
+              if (label) label += ': ';
+              if (context.parsed !== null) label += context.parsed + '%';
               return label;
             }
           }
@@ -218,13 +211,10 @@ function renderRoleAnalysisChart(jobData, totalMatches) {
   resetCanvas("roleAnalysisChart");
   const ctx = document.getElementById("roleAnalysisChart").getContext("2d");
 
-  // 1. DPSの内訳定義
   const MELEE = ["MNK", "DRG", "NIN", "SAM", "RPR", "VPR"];
   const RANGE = ["BRD", "MCH", "DNC"];
   const CASTER = ["BLM", "SMN", "RDM", "PCT"];
 
-  // 2. 集計用ボックスの作成（5区分）
-  // bg: 棒グラフの背景色, color: 棒グラフの枠線色
   const roles = {
     tank:   { wins: 0, total: 0, label: "タンク",   color: "#63b3ed", bg: "#E3F2FD" },
     healer: { wins: 0, total: 0, label: "ヒーラー", color: "#48bb78", bg: "#E8F5E9" },
@@ -233,87 +223,43 @@ function renderRoleAnalysisChart(jobData, totalMatches) {
     caster: { wins: 0, total: 0, label: "キャスター", color: "#9f7aea", bg: "#E9D8FD" }
   };
 
-  // 3. データの振り分け
   jobData.forEach(d => {
     const meta = JOB_META[d.job];
-    const r = meta?.role; // "tank", "healer", "dps"
+    const r = meta?.role;
 
     if (r === "tank") {
-      roles.tank.wins += d.wins;
-      roles.tank.total += d.total;
+      roles.tank.wins += d.wins; roles.tank.total += d.total;
     } else if (r === "healer") {
-      roles.healer.wins += d.wins;
-      roles.healer.total += d.total;
+      roles.healer.wins += d.wins; roles.healer.total += d.total;
     } else if (r === "dps") {
-      // DPSの場合はジョブ名でさらに細かく分類
-      if (MELEE.includes(d.job)) {
-        roles.melee.wins += d.wins;
-        roles.melee.total += d.total;
-      } else if (RANGE.includes(d.job)) {
-        roles.range.wins += d.wins;
-        roles.range.total += d.total;
-      } else if (CASTER.includes(d.job)) {
-        roles.caster.wins += d.wins;
-        roles.caster.total += d.total;
-      }
+      if (MELEE.includes(d.job)) { roles.melee.wins += d.wins; roles.melee.total += d.total; }
+      else if (RANGE.includes(d.job)) { roles.range.wins += d.wins; roles.range.total += d.total; }
+      else if (CASTER.includes(d.job)) { roles.caster.wins += d.wins; roles.caster.total += d.total; }
     }
   });
 
-  // 4. チャート用データ生成
   const labels = Object.values(roles).map(r => r.label);
   const winRates = Object.values(roles).map(r => r.total ? Number((r.wins / r.total * 100).toFixed(1)) : 0);
   const pickRates = Object.values(roles).map(r => totalMatches ? Number((r.total / totalMatches * 100).toFixed(1)) : 0);
   const bgColors = Object.values(roles).map(r => r.bg);
   const borderColors = Object.values(roles).map(r => r.color);
 
-  // 5. 描画
   new Chart(ctx, {
     type: 'bar',
     data: {
       labels: labels,
       datasets: [
-        {
-          label: '平均勝率 (%)',
-          data: winRates,
-          backgroundColor: bgColors,
-          borderColor: borderColors,
-          borderWidth: 2,
-          borderRadius: 8,
-          yAxisID: 'yWin',
-          order: 2
-        },
-        {
-          label: '人口比率 (%)',
-          data: pickRates,
-          type: 'line', // 人口比率は折れ線で表示
-          borderColor: '#4a5568',
-          borderWidth: 3,
-          fill: false,
-          yAxisID: 'yPop',
-          order: 1
-        }
+        { label: '平均勝率 (%)', data: winRates, backgroundColor: bgColors, borderColor: borderColors, borderWidth: 2, borderRadius: 8, yAxisID: 'yWin', order: 2 },
+        { label: '人口比率 (%)', data: pickRates, type: 'line', borderColor: '#4a5568', borderWidth: 3, fill: false, yAxisID: 'yPop', order: 1 }
       ]
     },
     options: {
       maintainAspectRatio: false,
       scales: {
-        yWin: {
-          beginAtZero: true,
-          max: 100,
-          position: 'left',
-          title: { display: true, text: '勝率 (%)' }
-        },
-        yPop: {
-          beginAtZero: true,
-          max: 100,
-          position: 'right',
-          grid: { drawOnChartArea: false },
-          title: { display: true, text: '人口比率 (%)' }
-        }
+        yWin: { beginAtZero: true, max: 100, position: 'left', title: { display: true, text: '勝率 (%)' } },
+        yPop: { beginAtZero: true, max: 100, position: 'right', grid: { drawOnChartArea: false }, title: { display: true, text: '人口比率 (%)' } }
       },
-      plugins: {
-        legend: { position: 'bottom' }
-      }
+      plugins: { legend: { position: 'bottom' } }
     }
   });
 }
@@ -411,21 +357,14 @@ function openModal(jobKey) {
   const fmt = (n) => Math.round(n).toLocaleString();
   const fmt2 = (n) => n.toFixed(2);
   const fmtT = (s) => `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`;
-const makeR = (l, c, p) => {
-  const pk = (k) => d[p + k] || d[k] || 0;
-
-  const label =
-    (l === "全体") ? "全体" :
-    (l === "勝利") ? "勝利" :
-    (l === "敗北") ? "敗北" : l;
-
-  if (l !== "全体" && ((l === "勝利" && d.wins === 0) || (l === "敗北" && d.losses === 0))) {
-    return `<tr class="${c}"><td>${label}</td><td colspan="7">データなし</td></tr>`;
-  }
-
-  return `<tr class="${c}"><td>${label}</td><td>${fmt2(pk("avgK"))}</td><td>${fmt2(pk("avgD"))}</td><td>${fmt2(pk("avgA"))}</td><td style="color:#d69e2e">${fmt(pk("avgDamage"))}</td><td style="color:#e53e3e">${fmt(pk("avgTaken"))}</td><td style="color:#38a169">${fmt(pk("avgHeal"))}</td><td style="color:#718096">${fmtT(pk("avgTime"))}</td></tr>`;
-};
-
+  const makeR = (l, c, p) => {
+    const pk = (k) => d[p + k] || d[k] || 0;
+    const label = (l === "全体") ? "全体" : (l === "勝利") ? "勝利" : (l === "敗北") ? "敗北" : l;
+    if (l !== "全体" && ((l === "勝利" && d.wins === 0) || (l === "敗北" && d.losses === 0))) {
+      return `<tr class="${c}"><td>${label}</td><td colspan="7">データなし</td></tr>`;
+    }
+    return `<tr class="${c}"><td>${label}</td><td>${fmt2(pk("avgK"))}</td><td>${fmt2(pk("avgD"))}</td><td>${fmt2(pk("avgA"))}</td><td style="color:#d69e2e">${fmt(pk("avgDamage"))}</td><td style="color:#e53e3e">${fmt(pk("avgTaken"))}</td><td style="color:#38a169">${fmt(pk("avgHeal"))}</td><td style="color:#718096">${fmtT(pk("avgTime"))}</td></tr>`;
+  };
   document.getElementById("modal-stats-body").innerHTML = makeR("全体", "row-all", "") + makeR("勝利", "row-win", "w_") + makeR("敗北", "row-lose", "l_");
   document.getElementById("job-detail-modal").style.display = "flex";
 }
@@ -438,10 +377,10 @@ function resetCanvas(id) {
 }
 
 
-// --- ジョブ別 散布図（バブル） ---
+// --- ★ジョブ別 散布図（フィルター機能付き） ---
 
 let jobScatterChartInstance = null;
-const JOB_ICON_CACHE = new Map(); // jobKey -> { img, promise, canvas }
+const JOB_ICON_CACHE = new Map();
 
 function roleToLabel(role) {
   if (role === "tank") return "タンク";
@@ -452,78 +391,28 @@ function roleToLabel(role) {
 
 function loadJobIcon(jobKey) {
   if (JOB_ICON_CACHE.has(jobKey)) return JOB_ICON_CACHE.get(jobKey).promise;
-
   const img = new Image();
   img.src = `../images/JOB/${jobKey}.png`;
-
   const promise = new Promise((resolve) => {
     img.onload = () => resolve(img);
     img.onerror = () => resolve(null);
   });
-
   JOB_ICON_CACHE.set(jobKey, { img, promise, canvas: null });
   return promise;
 }
 
 function getJobIconCanvas(jobKey) {
-  const ent = JOB_ICON_CACHE.get(jobKey);
-  if (!ent || !ent.img) return null;
-  if (ent.canvas) return ent.canvas;
-
-  const size = 52;
-  const c = document.createElement("canvas");
-  c.width = size;
-  c.height = size;
-  const ctx = c.getContext("2d");
-
-  const role = JOB_META[jobKey]?.role || "unknown";
-  const ring =
-    role === "tank" ? "#63b3ed" :
-    role === "healer" ? "#48bb78" :
-    role === "dps" ? "#f687b3" : "#a0aec0";
-
-  // ふわっと白背景 + ロール色リング
-  ctx.beginPath();
-  ctx.arc(size / 2, size / 2, size / 2 - 2, 0, Math.PI * 2);
-  ctx.fillStyle = "rgba(255,255,255,0.92)";
-  ctx.fill();
-  ctx.lineWidth = 3;
-  ctx.strokeStyle = ring;
-  ctx.stroke();
-
-  // アイコン（丸くクリップ）
-  const pad = 8;
-  ctx.save();
-  ctx.beginPath();
-  ctx.arc(size / 2, size / 2, size / 2 - 6, 0, Math.PI * 2);
-  ctx.clip();
-  ctx.drawImage(ent.img, pad, pad, size - pad * 2, size - pad * 2);
-  ctx.restore();
-
-  ent.canvas = c;
-  return c;
+  // キャッシュから取得してサイズ統一して返すヘルパー（今回は createResizedIcon で代用）
+  return JOB_ICON_CACHE.get(jobKey)?.canvas;
 }
 
 function getOrCreateJobScatterTooltip(chart) {
   const parent = chart.canvas.parentNode;
   let el = parent.querySelector(".job-scatter-tooltip");
   if (el) return el;
-
   el = document.createElement("div");
   el.className = "job-scatter-tooltip";
-  el.style.position = "absolute";
-  el.style.pointerEvents = "none";
-  el.style.opacity = "0";
-  el.style.transition = "opacity 0.12s ease, transform 0.12s ease";
-  el.style.transform = "translateY(4px)";
-  el.style.background = "rgba(255,255,255,0.96)";
-  el.style.border = "1px solid rgba(226,232,240,0.9)";
-  el.style.borderRadius = "14px";
-  el.style.boxShadow = "0 10px 25px rgba(0,0,0,0.10)";
-  el.style.padding = "10px 12px";
-  el.style.fontFamily = '"Kiwi Maru", serif';
-  el.style.color = "#455A64";
-  el.style.zIndex = "10";
+  el.style.cssText = "position:absolute; pointer-events:none; opacity:0; transition:opacity 0.12s ease, transform 0.12s ease; transform:translateY(4px); background:rgba(255,255,255,0.96); border:1px solid rgba(226,232,240,0.9); border-radius:14px; box-shadow:0 10px 25px rgba(0,0,0,0.10); padding:10px 12px; font-family:'Kiwi Maru',serif; color:#455A64; z-index:10;";
   parent.appendChild(el);
   return el;
 }
@@ -537,7 +426,6 @@ function jobScatterExternalTooltip(context) {
     tooltipEl.style.transform = "translateY(4px)";
     return;
   }
-
   const dp = tooltip.dataPoints && tooltip.dataPoints[0];
   const raw = dp && dp.raw;
   if (!raw) return;
@@ -546,7 +434,6 @@ function jobScatterExternalTooltip(context) {
   const meta = JOB_META[jobKey] || {};
   const role = meta.role || "unknown";
   const roleBg = ROLE_COLORS[role] || ROLE_COLORS.unknown;
-
   const jp = meta.jp || jobKey;
   const winRate = Number(raw.winRate || 0).toFixed(1);
   const pickRate = Number(raw.pickRate || 0).toFixed(1);
@@ -563,90 +450,81 @@ function jobScatterExternalTooltip(context) {
           </div>
         </div>
         <div style="margin-top:6px; font-size:0.85rem; color:#546E7A; line-height:1.45;">
-勝率 ${winRate}%　<br>
-使用率 ${pickRate}%<br>
-          使用回数 ${matches}
+          勝率 ${winRate}%<br>使用率 ${pickRate}%<br>使用回数 ${matches}
         </div>
       </div>
-    </div>
-  `;
+    </div>`;
 
   const cw = chart.canvas.width;
   const ch = chart.canvas.height;
-
-  // 右下に出す（はみ出しは内側に寄せる）
   let x = tooltip.caretX + 14;
   let y = tooltip.caretY + 14;
-
-  tooltipEl.style.left = "0px";
-  tooltipEl.style.top = "0px";
-  tooltipEl.style.opacity = "1";
-
-  const tw = tooltipEl.offsetWidth;
-  const th = tooltipEl.offsetHeight;
-
+  tooltipEl.style.left = "0px"; tooltipEl.style.top = "0px"; tooltipEl.style.opacity = "1";
+  const tw = tooltipEl.offsetWidth; const th = tooltipEl.offsetHeight;
   x = Math.max(8, Math.min(x, cw - tw - 8));
   y = Math.max(8, Math.min(y, ch - th - 8));
-
-  tooltipEl.style.left = x + "px";
-  tooltipEl.style.top = y + "px";
-  tooltipEl.style.opacity = "1";
+  tooltipEl.style.left = x + "px"; tooltipEl.style.top = y + "px";
   tooltipEl.style.transform = "translateY(0px)";
 }
 
-
-// --- ヘルパー関数：画像を強制的に指定サイズにリサイズする ---
 function createResizedIcon(img, size) {
   const c = document.createElement('canvas');
-  c.width = size;
-  c.height = size;
+  c.width = size; c.height = size;
   const ctx = c.getContext('2d');
-  // 画像を指定サイズに縮小して描画
   ctx.drawImage(img, 0, 0, size, size);
   return c;
 }
 
-// --- ヘルパー関数：半透明のアイコンを生成する ---
 function createFadedIcon(sourceCanvas) {
   const c = document.createElement('canvas');
-  c.width = sourceCanvas.width;
-  c.height = sourceCanvas.height;
+  c.width = sourceCanvas.width; c.height = sourceCanvas.height;
   const ctx = c.getContext('2d');
-  ctx.globalAlpha = 0.15; // 薄さの調整
+  ctx.globalAlpha = 0.2; // 薄さ調整
+  ctx.filter = "grayscale(100%)"; // ★モノクロにする
   ctx.drawImage(sourceCanvas, 0, 0);
   return c;
 }
 
-// --- メイン関数：散布図の描画（アイコン配置変更版） ---
+// ★ここから: フィルター関連の操作関数
+
+function toggleSingleJob(jobKey) {
+  jobFilterState[jobKey] = !jobFilterState[jobKey];
+  refreshScatterAndIcons();
+}
+
+function toggleRoleGroup(jobs) {
+  // そのグループ内で「一つでもOFF」があれば「全ON」にする。全部ONなら「全OFF」
+  const hasOff = jobs.some(j => !jobFilterState[j]);
+  const newState = hasOff;
+  jobs.forEach(j => jobFilterState[j] = newState);
+  refreshScatterAndIcons();
+}
+
+function toggleAllJobs(newState) {
+  Object.keys(jobFilterState).forEach(k => jobFilterState[k] = newState);
+  refreshScatterAndIcons();
+}
+
+// 現在のデータを使って再描画だけするショートカット
+function refreshScatterAndIcons() {
+  const { data, total } = getCurrentStageData();
+  renderJobScatterChart(data, total);
+}
+
+
+// --- メイン関数：散布図の描画（クリックフィルター対応版） ---
 function renderJobScatterChart(jobData, totalMatches) {
-  // ★アイコンのサイズ（直径 px）
   const ICON_SIZE = 50; 
-
-  // グループ定義（キーで呼び出せるようにオブジェクト化）
-  const groupsData = {
-    TANK:   { label: "TANK",   jobs: ["PLD", "WAR", "DRK", "GNB"] },
-    HEALER: { label: "HEALER", jobs: ["WHM", "SCH", "AST", "SGE"] },
-    MELEE:  { label: "MELEE",  jobs: ["MNK", "DRG", "NIN", "SAM", "RPR", "VPR"] },
-    RANGE:  { label: "RANGE",  jobs: ["BRD", "MCH", "DNC"] },
-    CASTER: { label: "CASTER", jobs: ["BLM", "SMN", "RDM", "PCT"] }
-  };
-
   const canvas = document.getElementById("jobScatterChart");
   const iconContainer = document.getElementById("job-scatter-icons");
   if (!canvas || !iconContainer) return;
 
-  // コンテナの初期化（レイアウト用のスタイル適用）
-  iconContainer.innerHTML = "";
-  iconContainer.style.display = "flex";
-  iconContainer.style.gap = "30px";           // 左カラムと右カラムの間隔
-  iconContainer.style.justifyContent = "center";
-  iconContainer.style.alignItems = "flex-start"; // 上揃え
-  iconContainer.style.flexWrap = "wrap";      // 画面が狭いときは折り返す
-
-  const points = jobData
+  // 1. 表示対象データのフィルタリング
+  // jobFilterState[d.job] が true のデータだけグラフに渡す
+  const activePoints = jobData
     .filter(d => d.total > 0 && JOB_META[d.job])
+    .filter(d => jobFilterState[d.job]) // ★フィルター適用
     .map(d => {
-      const matches = d.total; 
       const winRate = d.total ? (d.wins / d.total) * 100 : 0;
       const pickRate = totalMatches ? (d.total / totalMatches) * 100 : 0;
       const role = JOB_META[d.job]?.role || "unknown";
@@ -655,63 +533,42 @@ function renderJobScatterChart(jobData, totalMatches) {
         role === "tank" ? "#63b3ed" : 
         role === "healer" ? "#48bb78" : 
         role === "dps" ? "#f687b3" : "#a0aec0";
-
       return { 
-        jobKey: d.job, matches, winRate, pickRate, role,
-        backgroundColor: bg,
-        borderColor: border
+        jobKey: d.job, matches: d.total, winRate, pickRate, role,
+        backgroundColor: bg, borderColor: border
       };
     })
     .sort((a, b) => (JOB_META[a.jobKey]?.order || 99) - (JOB_META[b.jobKey]?.order || 99));
 
-  if (!points.length) return;
+  // アイコン生成用に「全ジョブ」のリストも必要（ボタン表示のため）
+  const allJobKeys = jobData.map(d => d.job).filter(j => JOB_META[j]);
 
-  Promise.all(points.map(p => loadJobIcon(p.jobKey))).then((loadedImages) => {
+  // 画像ロード
+  Promise.all(allJobKeys.map(j => loadJobIcon(j))).then((loadedImages) => {
     
-    // アイコン画像の準備
+    // アイコンアセット生成 (ON/OFF用)
     const iconAssets = {};
-    points.forEach((p, i) => {
+    allJobKeys.forEach((key, i) => {
       const img = loadedImages[i];
       if (img) {
         const resized = createResizedIcon(img, ICON_SIZE);
         const faded = createFadedIcon(resized);
-        iconAssets[p.jobKey] = { normal: resized, faded: faded };
+        iconAssets[key] = { normal: resized, faded: faded };
       }
     });
 
-    // チャートの描画（リセット＆再作成）
+    // --- A. チャート描画 ---
     resetCanvas("jobScatterChart");
     const ctx = document.getElementById("jobScatterChart").getContext("2d");
+    if (jobScatterChartInstance) { try { jobScatterChartInstance.destroy(); } catch (_) {} }
 
-    if (jobScatterChartInstance) {
-      try { jobScatterChartInstance.destroy(); } catch (_) {}
-    }
-
-    let lastHoveredIndex = null;
-    
-    // ホバー時のスタイル更新関数
-    const updateStyles = (hoveredIndex) => {
-      if (lastHoveredIndex === hoveredIndex) return;
-      lastHoveredIndex = hoveredIndex;
-      const ds = jobScatterChartInstance.data.datasets[0];
-      if (hoveredIndex === null) {
-        ds.pointStyle = points.map(p => iconAssets[p.jobKey]?.normal);
-      } else {
-        ds.pointStyle = points.map((p, i) => {
-          return i === hoveredIndex ? iconAssets[p.jobKey]?.normal : iconAssets[p.jobKey]?.faded;
-        });
-      }
-      jobScatterChartInstance.update("none");
-    };
-
-    // チャート本体の生成
     jobScatterChartInstance = new Chart(ctx, {
       type: "bubble",
       data: {
         datasets: [{
           label: "jobs",
-          data: points.map(p => ({ x: p.pickRate, y: p.winRate, r: ICON_SIZE / 2, ...p })),
-          pointStyle: points.map(p => iconAssets[p.jobKey]?.normal),
+          data: activePoints.map(p => ({ x: p.pickRate, y: p.winRate, r: ICON_SIZE / 2, ...p })),
+          pointStyle: activePoints.map(p => iconAssets[p.jobKey]?.normal), // 表示データ分だけnormalアイコン
           borderWidth: 0,
           borderColor: 'transparent',
           hoverRadius: ICON_SIZE / 2 + 2, 
@@ -728,18 +585,17 @@ function renderJobScatterChart(jobData, totalMatches) {
           x: { 
             beginAtZero: true, 
             title: { display: true, text: "使用率 (%)" },
-            suggestedMax: Math.max(...points.map(p => p.pickRate)) * 1.15
+            // 軸の最大値がブレないように固定したほうが良いが、ここではデータに合わせて自動
+            suggestedMax: 15 // 仮
           },
           y: { 
             title: { display: true, text: "勝率 (%)" },
-            suggestedMin: Math.min(...points.map(p => p.winRate)) - 5,
-            suggestedMax: Math.max(...points.map(p => p.winRate)) + 5
+            suggestedMin: 35, // 仮
+            suggestedMax: 65  // 仮
           }
         },
         onHover: (evt, elements) => {
-          const activeIndex = (elements && elements.length) ? elements[0].index : null;
-          updateStyles(activeIndex);
-          evt.native.target.style.cursor = activeIndex !== null ? "pointer" : "default";
+          evt.native.target.style.cursor = (elements && elements.length) ? "pointer" : "default";
         },
         onClick: (_evt, elements, chart) => {
           if (!elements || !elements.length) return;
@@ -749,89 +605,90 @@ function renderJobScatterChart(jobData, totalMatches) {
       }
     });
 
-    // --- アイコン一覧のレイアウト生成 ---
+    // --- B. アイコンボタン群（フィルターUI）の描画 ---
+    
+    iconContainer.innerHTML = "";
+    iconContainer.style.cssText = "display:flex; gap:30px; justify-content:center; align-items:flex-start; flex-wrap:wrap;";
 
-    // ヘルパー: 1つのグループ（例：TANK行）のHTML要素を作る関数
+    // 2カラムレイアウト作成ヘルパー
     const createGroupRow = (group) => {
-      const groupPoints = points.filter(p => group.jobs.includes(p.jobKey));
-      if (groupPoints.length === 0) return null;
+      // そのロールに含まれるジョブが1つも無ければスキップ
+      const groupJobKeys = group.jobs;
+      if (!groupJobKeys.some(j => iconAssets[j])) return null;
 
       const row = document.createElement("div");
-      // 各行のデザイン
       row.style.cssText = "display:flex; align-items:center; gap:12px; margin-bottom:12px;";
 
+      // ラベル（クリックで一括切替）
       const label = document.createElement("span");
       label.textContent = group.label;
-      label.style.cssText = "font-size:0.7rem; font-weight:bold; color:#94A3B8; min-width:55px; border-right:2px solid #E2E8F0; margin-right:4px;";
+      label.title = "クリックで一括切替";
+      label.style.cssText = "font-size:0.75rem; font-weight:bold; color:#64748b; min-width:55px; border-right:2px solid #cbd5e1; margin-right:4px; cursor:pointer; user-select:none;";
+      label.onclick = () => toggleRoleGroup(groupJobKeys);
+      // ホバー効果
+      label.onmouseenter = () => label.style.color = "#334155";
+      label.onmouseleave = () => label.style.color = "#64748b";
       row.appendChild(label);
 
+      // アイコン群
       const iconsDiv = document.createElement("div");
       iconsDiv.style.cssText = "display:flex; gap:6px; flex-wrap:wrap;";
 
-      groupPoints.forEach(p => {
-        const globalIndex = points.findIndex(point => point.jobKey === p.jobKey);
-        const img = document.createElement("img");
-        img.src = `../images/JOB/${p.jobKey}.png`;
-        img.style.cssText = `width:32px; height:32px; cursor:pointer; border-radius:6px; border:2px solid ${p.borderColor}; transition:0.2s; background:${p.backgroundColor}; padding:2px;`;
+      groupJobKeys.forEach(key => {
+        if (!iconAssets[key]) return;
         
-        img.onmouseenter = () => {
-          img.style.transform = "scale(1.25) translateY(-2px)";
-          img.style.boxShadow = `0 4px 12px ${p.borderColor}88`;
-          updateStyles(globalIndex);
-          if(jobScatterChartInstance) jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: globalIndex }], { x: 0, y: 0 });
-        };
-        img.onmouseleave = () => {
-          img.style.transform = "scale(1)";
-          img.style.boxShadow = "none";
-          updateStyles(null);
-          if(jobScatterChartInstance) jobScatterChartInstance.tooltip.setActiveElements([], { x: 0, y: 0 });
-        };
-        img.onclick = () => openModal(p.jobKey);
+        const isON = jobFilterState[key]; // 現在の状態
+        const img = document.createElement("img");
+        img.src = `../images/JOB/${key}.png`;
+        
+        // デザイン調整: OFFなら半透明＆モノクロ
+        const baseStyle = `width:32px; height:32px; cursor:pointer; border-radius:6px; transition:0.2s; padding:2px;`;
+        if (isON) {
+           // ON: 色付き枠線
+           const role = JOB_META[key]?.role || "unknown";
+           const borderCol = 
+             role === "tank" ? "#63b3ed" : 
+             role === "healer" ? "#48bb78" : 
+             role === "dps" ? "#f687b3" : "#a0aec0";
+           img.style.cssText = baseStyle + `border:2px solid ${borderCol}; background:#fff; opacity:1; filter:none; transform:scale(1); box-shadow:0 1px 3px rgba(0,0,0,0.1);`;
+        } else {
+           // OFF: グレー、半透明、縮小
+           img.style.cssText = baseStyle + `border:2px solid #e2e8f0; background:transparent; opacity:0.4; filter:grayscale(100%); transform:scale(0.9);`;
+        }
+
+        img.onclick = () => toggleSingleJob(key);
         iconsDiv.appendChild(img);
       });
+      
       row.appendChild(iconsDiv);
       return row;
     };
 
-    // 1. 左カラムを作る（TANK, HEALER）
+    // カラム構築
     const leftCol = document.createElement("div");
-    leftCol.style.display = "flex";
-    leftCol.style.flexDirection = "column";
-
-    const tankRow = createGroupRow(groupsData.TANK);
-    if(tankRow) leftCol.appendChild(tankRow);
-
-    const healerRow = createGroupRow(groupsData.HEALER);
-    if(healerRow) leftCol.appendChild(healerRow);
-
-
-    // 2. 右カラムを作る
+    leftCol.style.cssText = "display:flex; flex-direction:column;";
     const rightCol = document.createElement("div");
-    rightCol.style.display = "flex";
-    rightCol.style.flexDirection = "column";
+    rightCol.style.cssText = "display:flex; flex-direction:column;";
 
-    // 2-a. 右上の段（MELEE と RANGE を横に並べる）
-    const rightTopRow = document.createElement("div");
-    rightTopRow.style.display = "flex";
-    rightTopRow.style.gap = "20px"; // メレーとレンジの間隔
-    rightTopRow.style.flexWrap = "wrap";
+    const tRow = createGroupRow(FILTER_GROUPS_DEF[0]); // TANK
+    const hRow = createGroupRow(FILTER_GROUPS_DEF[1]); // HEALER
+    if(tRow) leftCol.appendChild(tRow);
+    if(hRow) leftCol.appendChild(hRow);
 
-    const meleeRow = createGroupRow(groupsData.MELEE);
-    if(meleeRow) rightTopRow.appendChild(meleeRow);
+    // 右上（MELEE + RANGE）
+    const rightTop = document.createElement("div");
+    rightTop.style.cssText = "display:flex; gap:20px; flex-wrap:wrap;";
+    const mRow = createGroupRow(FILTER_GROUPS_DEF[2]); // MELEE
+    const rRow = createGroupRow(FILTER_GROUPS_DEF[3]); // RANGE
+    if(mRow) rightTop.appendChild(mRow);
+    if(rRow) rightTop.appendChild(rRow);
+    rightCol.appendChild(rightTop);
 
-    const rangeRow = createGroupRow(groupsData.RANGE);
-    if(rangeRow) rightTopRow.appendChild(rangeRow);
+    // 右下（CASTER）
+    const cRow = createGroupRow(FILTER_GROUPS_DEF[4]); // CASTER
+    if(cRow) rightCol.appendChild(cRow);
 
-    rightCol.appendChild(rightTopRow);
-
-    // 2-b. 右下の段（CASTER）※メレーの下に配置
-    const casterRow = createGroupRow(groupsData.CASTER);
-    if(casterRow) rightCol.appendChild(casterRow);
-
-
-    // コンテナに追加
     iconContainer.appendChild(leftCol);
     iconContainer.appendChild(rightCol);
-
   });
 }
