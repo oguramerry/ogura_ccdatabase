@@ -226,37 +226,43 @@ function renderRoleAnalysisChart(jobData, totalMatches) {
   });
 }
 
+
 function renderHourChart(hourData) {
-  resetCanvas("hourChart");
-  const ctx = document.getElementById("hourChart").getContext("2d");
+  
   const hours = Array.from({length: 24}, (_, i) => i);
   const counts = hours.map(h => {
     const found = hourData.find(d => Number(d.hour) === h);
     return found ? Math.floor(found.total / 10) : 0;
   });
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: hours.map(h => `${h}時`),
-      datasets: [{ label: '試合数', data: counts, backgroundColor: '#90cdf4', borderRadius: 4 }]
-    },
-    options: { maintainAspectRatio: false, scales: { y: { beginAtZero: true } } }
-  });
+
+  // 共通関数を呼び出す
+  drawSimpleBarChart(
+    "hourChart",             // キャンバスID
+    hours.map(h => `${h}時`), // ラベル（X軸）
+    counts,                  // データ（Y軸）
+    '試合数',                 // データの名前
+    '#90cdf4'                // 棒の色
+  );
 }
 
+
 function renderDamageChart(jobData) {
-  resetCanvas("damageChart");
-  const ctx = document.getElementById("damageChart").getContext("2d");
+ 
   const key = (currentDamageViewMode === "WIN") ? "w_avgDamage" : (currentDamageViewMode === "LOSE") ? "l_avgDamage" : "avgDamage";
   const filtered = jobData.filter(d => d.total >= 1).map(d => ({ ...d, _val: d[key] || 0 })).sort((a, b) => b._val - a._val);
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: filtered.map(d => JOB_META[d.job]?.jp || d.job),
-      datasets: [{ label: '平均与ダメ', data: filtered.map(d => Math.round(d._val)), backgroundColor: '#f6ad55', borderRadius: 4 }]
-    },
-    options: { maintainAspectRatio: false, scales: { y: { beginAtZero: true } } }
-  });
+
+  // 描画用に配列を用意
+  const labels = filtered.map(d => JOB_META[d.job]?.jp || d.job);
+  const data = filtered.map(d => Math.round(d._val));
+
+  // 共通関数を呼び出す
+  drawSimpleBarChart(
+    "damageChart",
+    labels,
+    data,
+    '平均与ダメ',
+    '#f6ad55'
+  );
 }
 
 function renderJobTable(jobData, currentTotalMatches) {
@@ -652,5 +658,30 @@ function renderJobScatterChart(jobData, totalMatches) {
 
     iconContainer.appendChild(leftCol);
     iconContainer.appendChild(rightCol);
+  });
+}
+
+// --- 棒グラフを描く共通関数 ---
+function drawSimpleBarChart(canvasId, labels, data, labelText, color) {
+  // 既存のキャンバスをリセット
+  resetCanvas(canvasId);
+  const ctx = document.getElementById(canvasId).getContext("2d");
+
+  // グラフを描画
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: labelText,
+        data: data,
+        backgroundColor: color,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      maintainAspectRatio: false,
+      scales: { y: { beginAtZero: true } }
+    }
   });
 }
