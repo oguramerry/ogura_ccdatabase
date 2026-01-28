@@ -56,13 +56,17 @@ document.addEventListener("DOMContentLoaded", () => {
       // 連打防止：すでにロード中なら何もしない
       if (refreshBtn.classList.contains("loading")) return;
 
-      try {
-        refreshBtn.classList.add("loading"); // 回転開始
-        await fetchGlobalData();             // データの再取得待機
+try {
+        refreshBtn.classList.add("loading"); // くるくる開始
+        await fetchGlobalData();             // データ再取得
       } catch (e) {
-        console.error("更新エラー", e);
+        console.error("更新に失敗しました", e);
+        alert("データの更新に失敗しました");
       } finally {
-        refreshBtn.classList.remove("loading"); // 回転終了
+        // 少し余韻を持たせてから止める（0.5秒後）
+        setTimeout(() => {
+          refreshBtn.classList.remove("loading");
+        }, 500);
       }
     });
   }
