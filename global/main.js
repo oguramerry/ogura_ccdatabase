@@ -1,4 +1,4 @@
-// main.js (整理後)
+// main.js (修正版)
 
 // --- グローバル変数 ---
 let currentViewMode = "ALL";
@@ -17,12 +17,10 @@ let currentDamageViewMode = "ALL";
 
 // 散布図フィルター用設定
 let jobFilterState = {}; 
-// 初期化: すべてtrueにする
 FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
 
 
 // --- ★ステージ名と画像ファイル名の対応マップ ---
-// APIから返ってくる「ステージ名」がキーになる
 const STAGE_IMAGE_MAP = {
   "パライストラ": "pala.jpg",
   "ヴォルカニック・ハート": "vol.jpg",
@@ -30,7 +28,7 @@ const STAGE_IMAGE_MAP = {
   "レッド・サンズ": "red.jpg",
   "東方絡繰御殿": "kara.jpg", 
   "ベイサイド・バトルグラウンド": "bay.jpg",
-  // 英語名で来る場合用（念のため）
+  // 英語名用
   "Palaistra": "pala.jpg",
   "Volcanic Heart": "vol.jpg",
   "Cloud Nine": "cloud.jpg",
@@ -61,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
-  // ラジオボタン監視（共通化）
+  // ラジオボタン監視
   const monitorRadio = (name, callback) => {
     document.querySelectorAll(`input[name="${name}"]`).forEach(r => {
       r.addEventListener("change", (e) => callback(e.target.value));
@@ -80,9 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // 集計方法の切り替え監視
   monitorRadio("statMethod", (val) => {
     currentStatMethod = val;
-    // 表とダメージグラフの両方を更新
+    // ★修正: 表だけを更新し、ダメージグラフには影響させない
     refreshTableOnly();
-    refreshDamageChartOnly();
   });
 });
 
@@ -98,13 +95,11 @@ async function fetchGlobalData() {
 function initStageSelector(stages) {
   const sel = document.getElementById("stage-selector");
   if (!sel) return;
-  // 一旦リセット
   sel.innerHTML = '<option value="ALL">全てのステージ</option>';
   
   stages.sort((a, b) => a.stage.localeCompare(b.stage)).forEach(s => {
     const opt = document.createElement("option");
     opt.value = s.stage;
-    // 試合数を表示（データ仕様により /10 するか調整）
     opt.textContent = `${s.stage} (${Math.floor(s.total/10)}試合)`;
     sel.appendChild(opt);
   });
@@ -127,16 +122,9 @@ function getCurrentStageData() {
 // --- ★データ取得ヘルパー ---
 function getStatValue(dataObj, metricKey, viewMode = "ALL") {
   if (!dataObj) return 0;
-  
-  // viewModeのプレフィックス
   const prefix = (viewMode === "WIN") ? "w_" : (viewMode === "LOSE") ? "l_" : "";
-  
-  // method (avg または median)
   const method = currentStatMethod; 
-
-  // キーの組み立て
   const finalKey = `${prefix}${method}${metricKey}`;
-  
   return dataObj[finalKey] || 0;
 }
 
@@ -157,7 +145,7 @@ function updateDashboard() {
   renderJobScatterChart(data, total);
 }
 
-// ★背景画像更新関数（ファイル名対応版）
+// ★背景画像更新関数（パス修正済み）
 function updateBackgroundImage(stageName) {
   const bg = document.getElementById("stage-background");
   if (!bg) return;
@@ -165,8 +153,9 @@ function updateBackgroundImage(stageName) {
   if (stageName === "ALL") {
     bg.style.backgroundImage = "none"; 
   } else {
-    // マップからファイル名を取得、なければそのまま（保険）
+    // マップからファイル名を取得
     const fileName = STAGE_IMAGE_MAP[stageName] || `${stageName}.jpg`;
+    // ★修正: フォルダ名を小文字の "stage" に変更
     bg.style.backgroundImage = `url('../images/stage/${fileName}')`;
   }
 }
@@ -305,27 +294,30 @@ function renderHourChart(hourData) {
 }
 
 function renderDamageChart(jobData) {
-  // ★ getStatValueを使って値を取得
+  // ★修正: ここでは「平均(avg)」を強制的に使用する
+  // (テーブル側のトグルに関係なく平均与ダメを表示するため)
   const metric = "Damage";
+  const method = "avg"; // 固定
+  
+  const prefix = (currentDamageViewMode === "WIN") ? "w_" : (currentDamageViewMode === "LOSE") ? "l_" : "";
+  const key = `${prefix}${method}${metric}`;
   
   const filtered = jobData
     .filter(d => d.total >= 1)
     .map(d => ({ 
       ...d, 
-      _val: getStatValue(d, metric, currentDamageViewMode) 
+      _val: d[key] || 0 
     }))
     .sort((a, b) => b._val - a._val);
 
   const labels = filtered.map(d => JOB_META[d.job]?.jp || d.job);
   const data = filtered.map(d => Math.round(d._val));
 
-  const methodLabel = (currentStatMethod === "avg") ? "平均" : "中央値";
-  
   drawSimpleBarChart(
     "damageChart",
     labels,
     data,
-    `${methodLabel}与ダメ`,
+    '平均与ダメ',
     '#f6ad55'
   );
 }
@@ -334,7 +326,6 @@ function renderJobTable(jobData, currentTotalMatches) {
   const tbody = document.querySelector("#job-stats-table tbody");
   const ths = document.querySelectorAll("#job-stats-table th");
   
-  // ヘルパー: 現在のモードとメソッドで値を取得
   const val = (d, key) => getStatValue(d, key, currentTableViewMode);
 
   let list = jobData.map(d => {
@@ -344,24 +335,21 @@ function renderJobTable(jobData, currentTotalMatches) {
       winRate: d.total ? (d.wins / d.total) * 100 : 0,
       pickRate: currentTotalMatches ? (d.total / currentTotalMatches) * 100 : 0,
       
-      // ★動的取得
       statK: val(d, "K"),
       statD: val(d, "D"),
       statA: val(d, "A"),
       statDmg: val(d, "Damage"),
       statTaken: val(d, "Taken"),
       statHeal: val(d, "Heal"),
-      statTime: val(d, "Time"),          // 移送時間
-      statMatchTime: val(d, "MatchTime") // ★新設: 試合時間
+      statTime: val(d, "Time"),          
+      statMatchTime: val(d, "MatchTime") 
     };
   });
 
-  // ソート処理
   list.sort((a, b) => {
     let keyA, keyB;
     if (currentTableSortKey === "job") return (currentTableSortDesc ? b.sortOrder - a.sortOrder : a.sortOrder - b.sortOrder);
     
-    // マッピング
     const map = {
       "winRate": "winRate", "pickRate": "pickRate",
       "K": "statK", "D": "statD", "A": "statA",
