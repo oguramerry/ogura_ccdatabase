@@ -799,10 +799,3 @@ function renderJobScatterChart(jobData, totalMatches) {
     });
   });
 }
-
-const _updateDashboardOriginal = updateDashboard;
-updateDashboard = function () {
-  _updateDashboardOriginal();
-  const { data, total } = getCurrentStageData();
-  renderJobScatterChart(data, total);
-};
