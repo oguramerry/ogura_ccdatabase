@@ -190,7 +190,6 @@ box-shadow: 0 3px 10px rgba(176, 190, 197, 0.18);
 border: 1px solid #fff;
 }
 
-.chart-card.wide { grid-column: 1 / -1; }
 
 /* 見出しのデザイン：左にパステルピンクのライン */
 h2 {
@@ -405,10 +404,7 @@ main {
   min-height: 200px;
 }
 
-.chart-card.wide .chart-container {
-height: 260px;
-min-height: 260px;
-}
+
 
 /* 円グラフなどは少し正方形に近づける */
 .chart-container:has(#jobPieChart),
