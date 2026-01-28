@@ -15,6 +15,8 @@
 </head>
 <body>
 
+  <div id="stage-background" class="stage-bg"></div>
+
   <header>
     <div class="header-inner">
       <div class="header-left">
@@ -100,6 +102,11 @@
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; flex-wrap:wrap; gap:10px;">
           <h2 style="margin:0; border:none; padding:0;">ジョブ別・完全データリスト</h2>
           
+          <div class="toggle-group method-toggle">
+            <label><input type="radio" name="statMethod" value="avg" checked> 平均値</label>
+            <label><input type="radio" name="statMethod" value="median"> 中央値</label>
+          </div>
+
           <div class="toggle-group">
             <label><input type="radio" name="viewMode" value="ALL" checked> 全体</label>
             <label><input type="radio" name="viewMode" value="WIN"> 勝ち</label>
@@ -115,13 +122,14 @@
                 <th data-key="job">ジョブ</th>
                 <th data-key="winRate">勝率</th>
                 <th data-key="pickRate">使用率</th>
-                <th data-key="avgK">K</th>
-                <th data-key="avgD">D</th>
-                <th data-key="avgA">A</th>
-                <th data-key="avgDmg">与ダメ</th>
-                <th data-key="avgTaken">被ダメ</th>
-                <th data-key="avgHeal">与ヒール</th>
-                <th data-key="avgTime">移送</th>
+                <th data-key="K">K</th>
+                <th data-key="D">D</th>
+                <th data-key="A">A</th>
+                <th data-key="Damage">与ダメ</th>
+                <th data-key="Taken">被ダメ</th>
+                <th data-key="Heal">与ヒール</th>
+                <th data-key="Time">移送時間</th>
+                <th data-key="MatchTime">試合時間</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -136,12 +144,13 @@
           <h2 id="modal-job-name">ジョブ名</h2>
           <button class="close-btn" onclick="closeModal()">×</button>
         </div>
+        
         <div class="modal-body">
           <table class="compare-table">
             <thead>
               <tr>
                 <th></th> <th>K</th> <th>D</th> <th>A</th>
-                <th>与ダメージ</th> <th>被ダメージ</th> <th>与ヒール</th> <th>移送時間</th>
+                <th>与ダメージ</th> <th>被ダメージ</th> <th>与ヒール</th> <th>移送時間</th> <th>試合時間</th>
               </tr>
             </thead>
             <tbody id="modal-stats-body"></tbody>
