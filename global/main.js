@@ -35,7 +35,7 @@ const STAGE_IMAGE_MAP = {
   "Volcanic Heart": "vol.jpg",
   "Cloud Nine": "cloud.jpg",
   "The Red Sands": "red.jpg",
-  "The Clockwork Castletown": "kara.jpg"
+  "The Clockwork Castletown": "kara.jpg",
   "Bayside Battleground": "bay.jpg",
 };
 
