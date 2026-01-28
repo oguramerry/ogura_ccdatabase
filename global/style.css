@@ -61,9 +61,9 @@ h1 {
 
 /* --- レイアウト --- */
 main {
-  width: 65%;          
-  max-width: 1000px;   
-  margin: 18px auto;   /* 中央寄せ */
+  width: 65%;
+  min-width: 800px; 
+  margin: 18px auto;
   padding: 0 10px;
 }
 
@@ -165,23 +165,6 @@ main {
   border: 1px solid #fff;
   display: flex;
   flex-direction: column;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 1200px) {
-  main {
-    width: 85%;        
-    max-width: none;
-  }
-}
-
-@media (max-width: 768px) {
-  main {
-    width: 95%;        /* スマホは画面いっぱい使う */
-  }
-  .layout-row {
-    flex-direction: column;
-  }
 }
 
 .chart-card {
