@@ -167,7 +167,7 @@ function updateBackgroundImage(stageName) {
   } else {
     // マップからファイル名を取得、なければそのまま（保険）
     const fileName = STAGE_IMAGE_MAP[stageName] || `${stageName}.jpg`;
-    bg.style.backgroundImage = `url('../images/STAGE/${fileName}')`;
+    bg.style.backgroundImage = `url('../images/stage/${fileName}')`;
   }
 }
 
