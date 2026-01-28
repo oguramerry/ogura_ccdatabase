@@ -152,24 +152,24 @@ main {
 }
 
 .chart-card {
-  background: var(--card-bg);
-  padding: 12px;
-  border-radius: 12px; /* 丸く */
-  box-shadow: 0 4px 15px rgba(176, 190, 197, 0.2);
-  border: 1px solid #fff; /* 白枠で浮き出る感じ */
+background: var(--card-bg);
+padding: 8px;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(176, 190, 197, 0.18);
+border: 1px solid #fff;
 }
+
 .chart-card.wide { grid-column: 1 / -1; }
 
 /* 見出しのデザイン：左にパステルピンクのライン */
 h2 {
-  font-size: 0.9rem;
-  color: var(--text-main);
-  border-left: 6px solid var(--pastel-pink);
-  padding-left: 6px;
-  margin-top: 0;
-  margin-bottom: 8px;
-  line-height: 1.4;
-  border-left-width: 3px;
+font-size: 0.85rem;
+color: var(--text-main);
+border-left: 3px solid var(--pastel-pink);
+padding-left: 6px;
+margin-top: 0;
+margin-bottom: 4px;
+line-height: 1.25;
 }
 
 .chart-container {
