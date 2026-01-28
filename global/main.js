@@ -482,7 +482,7 @@ function refreshScatterAndIcons() {
 
 // --- メイン関数：散布図の描画（クリックフィルター対応版） ---
 function renderJobScatterChart(jobData, totalMatches) {
-  const ICON_SIZE = 50; 
+  const ICON_SIZE = 40;  //散布図のジョブアイコンのサイズ調整
   const canvas = document.getElementById("jobScatterChart");
   const iconContainer = document.getElementById("job-scatter-icons");
   if (!canvas || !iconContainer) return;
