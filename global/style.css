@@ -334,26 +334,10 @@ tbody tr:hover {
 .row-lose td { background-color: #FFEBEE; color: #C62828; } /* パステルレッド */
 
 
-/* --- 全体統計ページ（Global）用 コンパクト化設定 --- */
+/* --- 全体統計ページ（Global）用 コンパクト化＆レスポンシブ設定 --- */
+/* 注: 以前の固定設定を上書きし、ズームや画面サイズ変更に強くしています */
 
-/* 1. カードの余白を減らす */
-.stats-overview .card,
-.chart-card {
-  padding: 15px !important; /* 25px~30px から縮小 */
-  border-radius: 16px;
-}
-
-/* 5. 散布図の下のアイコン一覧の隙間調整 */
-#job-scatter-icons {
-  margin-top: 8px !important;
-  gap: 4px !important;
-}
-#job-scatter-icons img {
-  width: 28px !important; /* 32px から縮小 */
-  height: 28px !important;
-}
-
-/* --- global report: 23型(100%)で人口調査まで見やすくする微調整 --- */
+/* 1. 基本レイアウト調整（コンパクト化） */
 header {
   padding: 0.8rem 1.6rem;
 }
@@ -363,72 +347,95 @@ main {
   padding: 0 18px;
 }
 
+/* 2. スタッツバー（上部固定バー）のズーム対策 */
 .stats-overview {
   gap: 12px;
   margin-bottom: 18px;
   padding: 10px 0;
   margin-top: 0;
   box-shadow: 0 8px 16px -14px rgba(0, 0, 0, 0.18);
+  
+  /* ★重要：カードがあふれたら折り返す設定 */
   flex-wrap: wrap;
+  height: auto !important; /* 固定高さを解除 */
 }
 
 .stats-overview .card {
   padding: 14px !important;
+  /* ★重要：中身（文字）が大きくなったらカードも伸びるようにする */
+  min-height: auto !important; 
+  height: auto;
 }
 
+/* 3. グラフエリア（Chart Container）のズーム対策 */
 .charts-grid {
   gap: 16px;
 }
 
-/* 見出しの下の余白を少し詰める（グラフの縦圧縮に効く） */
+.chart-card {
+  padding: 15px !important;
+  border-radius: 16px;
+}
+
 .chart-card > h2 {
   margin-bottom: 8px;
 }
 
-/* ここが崩れの主因だったので、幅と高さをページ向けに最適化 */
+/* ★重要：高さ固定(px)をやめ、アスペクト比で管理する */
 .chart-container {
   width: 100% !important;
   margin: 0 auto;
-  height: 165px !important;
+  
+  height: auto !important;      /* 固定高さを解除 */
+  min-height: 180px;            /* 最低でもこれくらいは確保 */
+  aspect-ratio: 16 / 9;         /* 基本的にワイド比率を保つ */
 }
 
-/* 円グラフ系は少しだけ背を高く */
+/* 円グラフなどは少し正方形に近づける */
 .chart-container:has(#jobPieChart),
 .chart-container:has(#roleAnalysisChart) {
-  height: 180px !important;
+  aspect-ratio: 3 / 2;
+  min-height: 200px;
 }
 
-/* 散布図は下にアイコンがいるので別枠で確保 */
+/* 散布図はアイコンがあるので縦長を許容 */
 .chart-container:has(#jobScatterChart) {
-  height: 350px !important;
+  aspect-ratio: auto; /* 比率指定を解除して */
+  min-height: 350px;  /* 高さをしっかり確保 */
 }
 
-/* ダメージランキングは少しだけ余裕 */
+/* ダメージランキングは横長 */
 .chart-container:has(#damageChart) {
-  height: 190px !important;
+  aspect-ratio: 21 / 9;
 }
 
+/* 4. 散布図下のアイコン一覧の隙間調整 */
 #job-scatter-icons {
-  margin-top: 6px !important;
+  margin-top: 8px !important;
+  gap: 4px !important;
   min-height: 30px !important;
 }
+#job-scatter-icons img {
+  width: 28px !important;
+  height: 28px !important;
+}
 
-/* --- データ更新ボタン用スタイル --- */
+/* --- 追加機能：データ更新ボタン --- */
 /* タイトルとボタンを横並びにするラッパー */
 .header-left {
   display: flex;
   align-items: center;
-  gap: 15px; /* タイトルとボタンの間隔 */
+  gap: 10px; /* タイトルとボタンの間隔 */
 }
 
 /* 更新ボタン本体 */
 .refresh-btn {
   background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   color: #fff;
-  font-size: 1.2rem;
-  width: 36px;
-  height: 36px;
+  font-size: 1.1rem;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -436,13 +443,13 @@ main {
   justify-content: center;
   transition: all 0.3s ease;
   outline: none;
-  padding-bottom: 3px; /* 記号の縦位置微調整 */
+  padding-bottom: 2px; /* 記号の縦位置微調整 */
 }
 
 .refresh-btn:hover {
   background: var(--pastel-pink);
   border-color: var(--pastel-pink);
-  transform: rotate(180deg); /* ホバー時に半回転 */
+  transform: rotate(180deg);
 }
 
 /* 更新中のくるくるアニメーション */
@@ -452,6 +459,7 @@ main {
   animation: spin 1s linear infinite;
 }
 
+/* --- アニメーション定義（重複削除済み・統合版） --- */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
