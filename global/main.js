@@ -375,12 +375,21 @@ function renderJobTable(jobData, currentTotalMatches) {
 
   let list = jobData.map(d => {
     const meta = JOB_META[d.job] || {};
+
+// 現在のモードに合わせて表示する件数(N)を切り替える
+    let currentCount = d.total;
+    if (currentTableViewMode === "WIN") currentCount = d.wins;
+    else if (currentTableViewMode === "LOSE") currentCount = d.losses;
+
+    
     return {
       name: meta.jp || d.job, 
       jobKey: d.job, 
       sortOrder: meta.order || 999, 
       role: meta.role || "unknown",
-      count: d.total,
+      
+      count: currentCount,
+      
       winRate: d.total ? (d.wins / d.total) * 100 : 0,
       pickRate: currentTotalMatches ? (d.total / currentTotalMatches) * 100 : 0,
       
