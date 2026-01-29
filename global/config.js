@@ -44,3 +44,11 @@ const JOB_META = {
 const ROLE_COLORS = {
   tank: "#E3F2FD", healer: "#E8F5E9", dps: "#FCE4EC", unknown: "#F5F5F5"
 };
+
+const DC_META = {
+  "Elemental": { color: "#A5D6A7", label: "Elemental" }, // パステルグリーン
+  "Gaia":      { color: "#CE93D8", label: "Gaia" },      // パステルパープル
+  "Mana":      { color: "#90CAF9", label: "Mana" },      // パステルブルー
+  "Meteor":    { color: "#FFCC80", label: "Meteor" },    // パステルオレンジ
+  "Unknown":   { color: "#CFD8DC", label: "不明" }       // グレー
+};
