@@ -430,7 +430,13 @@ function renderJobTable(jobData, currentTotalMatches) {
 
   ths.forEach(th => {
     const newTh = th.cloneNode(true); th.parentNode.replaceChild(newTh, th);
-    if (newTh.dataset.key === currentTableSortKey) newTh.style.backgroundColor = "#B3E5FC";
+    
+    if (newTh.dataset.key === currentTableSortKey) {
+  newTh.style.backgroundColor = "#B3E5FC";
+} else {
+  newTh.style.backgroundColor = ""; // インラインスタイルを削除してCSSに戻す
+}
+    
     newTh.addEventListener("click", () => {
       if (currentTableSortKey === newTh.dataset.key) currentTableSortDesc = !currentTableSortDesc;
       else { currentTableSortKey = newTh.dataset.key; currentTableSortDesc = (newTh.dataset.key !== "job"); }
