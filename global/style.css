@@ -342,7 +342,7 @@ tbody tr:hover { background-color: #FFF3E0; }
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000;
   backdrop-filter: blur(2px);
   animation: fadeIn 0.3s ease;
 }
