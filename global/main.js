@@ -201,7 +201,7 @@ function updateBackgroundImage(stageName) {
   } else {
     // マップからファイル名を取得
     const fileName = STAGE_IMAGE_MAP[stageName] || `${stageName}.jpg`;
-    // ★修正: フォルダ名を小文字の "stage" に変更
+    
     bg.style.backgroundImage = `url('../images/stage/${fileName}')`;
   }
 }
@@ -255,7 +255,7 @@ function renderDCPieChart(dcData) {
               if (label) label += ': ';
               const val = context.parsed;
               const percentage = total > 0 ? ((val / total) * 100).toFixed(1) + '%' : '0%';
-              return `${label}${val}人 (${percentage})`;
+              return `${val}人 (${percentage})`;
             }
           }
         }
@@ -263,6 +263,8 @@ function renderDCPieChart(dcData) {
     }
   });
 }
+
+
 function renderRoleAnalysisChart(jobData, totalMatches) {
   resetCanvas("roleAnalysisChart");
   const ctx = document.getElementById("roleAnalysisChart").getContext("2d");
