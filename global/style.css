@@ -279,7 +279,7 @@ h2 {
 }
 
 .table-responsive {
-  overflow-x: auto;
+  overflow: visible;
   border-radius: 12px;
 }
 .table-note {
@@ -307,7 +307,14 @@ th {
   font-weight: 500;
   white-space: nowrap;
   cursor: pointer;
+
+  position: sticky;     /* 固定設定 */
+  top: 80px;            /* 上のバーの高さ分だけ空ける（ここを0にするとバーの下に隠れる） */
+  z-index: 800;         /* 他の要素より手前に表示 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影をつけて浮いているように見せる */
 }
+
+
 th:hover { background-color: #B3E5FC; }
 tbody tr:nth-child(even) { background-color: #FAFAFA; }
 tbody tr:hover { background-color: #FFF3E0; }
