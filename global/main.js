@@ -428,21 +428,40 @@ function renderJobTable(jobData, currentTotalMatches) {
     tbody.appendChild(tr);
   });
 
+  
   ths.forEach(th => {
-    const newTh = th.cloneNode(true); th.parentNode.replaceChild(newTh, th);
-    
+    const newTh = th.cloneNode(true);
+    th.parentNode.replaceChild(newTh, th);
+
+    // 1. まず古い矢印（▲や▼）があれば消して、元の名前に戻す
+    newTh.textContent = newTh.textContent.replace(/[▲▼]/g, '');
+
+    // 2. 現在選択中の列なら、色をつけて矢印を追加する
     if (newTh.dataset.key === currentTableSortKey) {
-  newTh.style.backgroundColor = "#B3E5FC";
-} else {
-  newTh.style.backgroundColor = ""; // インラインスタイルを削除してCSSに戻す
-}
-    
+      newTh.style.backgroundColor = "#B3E5FC";
+      
+      // 降順(true)なら▼、昇順(false)なら▲
+      const arrow = currentTableSortDesc ? " ▼" : " ▲"; 
+      newTh.textContent += arrow; // 名前のお尻に矢印をくっつける
+
+    } else {
+      // 選択されていない列は色をリセット
+      newTh.style.backgroundColor = "";
+    }
+
     newTh.addEventListener("click", () => {
-      if (currentTableSortKey === newTh.dataset.key) currentTableSortDesc = !currentTableSortDesc;
-      else { currentTableSortKey = newTh.dataset.key; currentTableSortDesc = (newTh.dataset.key !== "job"); }
+      // 同じ列なら反転、違う列なら切り替え
+      if (currentTableSortKey === newTh.dataset.key) {
+         currentTableSortDesc = !currentTableSortDesc;
+      } else { 
+         currentTableSortKey = newTh.dataset.key; 
+         // ジョブ以外は「降順(true)」からスタートする
+         currentTableSortDesc = (newTh.dataset.key !== "job"); 
+      }
       refreshTableOnly();
     });
   });
+  
 }
 
 // --- モーダル ---
