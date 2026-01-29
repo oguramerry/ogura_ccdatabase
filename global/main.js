@@ -137,7 +137,10 @@ function updateDashboard() {
   // 背景画像の更新
   updateBackgroundImage(stageName);
   
-  renderJobPieChart(data, total);
+  if (globalData && globalData.byDC) {
+    renderDCPieChart(globalData.byDC);
+  }
+  
   renderRoleAnalysisChart(data, total);
   renderHourChart(hour);
   renderDamageChart(data);
@@ -170,34 +173,31 @@ function refreshDamageChartOnly() {
   renderDamageChart(data);
 }
 
-// --- グラフ描画関数 ---
-function renderJobPieChart(jobData, totalPlayers) {
-  resetCanvas("jobPieChart");
-  const ctx = document.getElementById("jobPieChart").getContext("2d");
+// ★新しい円グラフ描画関数を追加
+function renderDCPieChart(dcData) {
+  // Canvasのリセット
+  resetCanvas("dcPieChart");
+  const ctx = document.getElementById("dcPieChart").getContext("2d");
   
-  const sorted = [...jobData].sort((a, b) => b.total - a.total);
-  const topList = sorted.slice(0, 8);
-  const otherTotal = sorted.slice(8).reduce((sum, d) => sum + d.total, 0);
-  const toRate = (val) => totalPlayers > 0 ? ((val / totalPlayers) * 100).toFixed(1) : 0;
-
-  const chartValues = [
-    ...topList.map(d => toRate(d.total)),
-    ...(otherTotal > 0 ? [toRate(otherTotal)] : [])
-  ];
-
-  const chartLabels = [
-    ...topList.map(d => JOB_META[d.job]?.jp || d.job),
-    ...(otherTotal > 0 ? ["その他"] : [])
-  ];
+  // データの整形
+  // dcData は { "Elemental": 100, "Gaia": 80... } のような形式を想定
+  const labels = ["Elemental", "Gaia", "Mana", "Meteor"];
+  const counts = labels.map(label => dcData[label] || 0);
   
+  // 合計数の算出（比率計算用）
+  const total = counts.reduce((a, b) => a + b, 0);
+  
+  // 色配列の作成
+  const bgColors = labels.map(label => DC_META[label]?.color || "#ccc");
+
   new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: chartLabels,
+      labels: labels,
       datasets: [{
-        data: chartValues,
-        backgroundColor: ['#63b3ed', '#4fd1c5', '#f6e05e', '#f687b3', '#9f7aea', '#ed8936', '#a0aec0', '#48bb78', '#cbd5e0'],
-        borderWidth: 2, 
+        data: counts,
+        backgroundColor: bgColors,
+        borderWidth: 2,
         borderColor: '#fff'
       }]
     },
@@ -210,8 +210,9 @@ function renderJobPieChart(jobData, totalPlayers) {
             label: function(context) {
               let label = context.label || '';
               if (label) label += ': ';
-              if (context.parsed !== null) label += context.parsed + '%';
-              return label;
+              const val = context.parsed;
+              const percentage = total > 0 ? ((val / total) * 100).toFixed(1) + '%' : '0%';
+              return `${label}${val}人 (${percentage})`;
             }
           }
         }
@@ -219,7 +220,6 @@ function renderJobPieChart(jobData, totalPlayers) {
     }
   });
 }
-
 function renderRoleAnalysisChart(jobData, totalMatches) {
   resetCanvas("roleAnalysisChart");
   const ctx = document.getElementById("roleAnalysisChart").getContext("2d");
