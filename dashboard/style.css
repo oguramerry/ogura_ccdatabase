@@ -934,8 +934,10 @@ body {
 }
 
 .status-pupi { color: var(--text-main); }
+.status-gekipupi { color: var(--text-main); }
 .status-retirement { color: #d68fa8; } /* くすみピンク */
 .status-debut { color: #8297B2; }      /* ブルーグレー */
+
 
 /* メタ情報 (l2 n=3) */
 .forecast-meta {
