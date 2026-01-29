@@ -19,6 +19,15 @@ let currentDamageViewMode = "ALL";
 let jobFilterState = {}; 
 FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
 
+// ステージ名の日本語変換マップ
+const STAGE_NAME_JP = {
+  "Palaistra": "パライストラ",
+  "Volcanic Heart": "ヴォルカニック・ハート",
+  "Cloud Nine": "クラウドナイン",
+  "The Red Sands": "レッド・サンズ",
+  "The Clockwork Castletown": "東方絡繰御殿",
+  "Bayside Battleground": "ベイサイド・バトルグラウンド"
+};
 
 // --- ★ステージ名と画像ファイル名の対応マップ ---
 const STAGE_IMAGE_MAP = {
@@ -100,7 +109,9 @@ function initStageSelector(stages) {
   stages.sort((a, b) => a.stage.localeCompare(b.stage)).forEach(s => {
     const opt = document.createElement("option");
     opt.value = s.stage;
-    opt.textContent = `${s.stage} (${Math.floor(s.total/10)}試合)`;
+    const jpName = STAGE_NAME_JP[s.stage] || s.stage; 
+    opt.textContent = `${jpName} (${Math.floor(s.total/10)}試合)`;
+    
     sel.appendChild(opt);
   });
   sel.addEventListener("change", updateDashboard);
