@@ -24,7 +24,7 @@ const STAGE_NAME_JP = {
   "Palaistra": "パライストラ",
   "Volcanic Heart": "ヴォルカニック・ハート",
   "The Clockwork Castletown": "東方絡繰御殿",
-  "Bayside Battleground": "ベイサイド・バトルグラウンド".
+  "Bayside Battleground": "ベイサイド・バトルグラウンド",
   "Cloud Nine": "クラウドナイン",
   "The Red Sands": "レッド・サンズ"
 };
