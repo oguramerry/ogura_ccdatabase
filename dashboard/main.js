@@ -214,6 +214,11 @@ const btnNow = keyNoSpace
   window.handleStatsJsonp = (data) => {
     statsData = data;
     render();
+
+    if (window.WeatherForecast) {
+      WeatherForecast.render(data);
+    }
+    
     const m = data.meta;
     const resultEl = document.getElementById("result");
     if (resultEl) {
