@@ -108,14 +108,33 @@ function initStageSelector(stages) {
 
 function getCurrentStageData() {
   const stageName = document.getElementById("stage-selector").value;
+  let targetDCData = globalData.byDC;
+  
   if (stageName === "ALL") {
-    return { data: globalData.byJob, hour: globalData.byHour, total: globalData.meta.total, stageName: "ALL" };
+    return { 
+      data: globalData.byJob, 
+      hour: globalData.byHour, 
+      total: globalData.meta.total, 
+      stageName: "ALL",
+      dcData: targetDCData
+    };
   }
+  
+// ステージ指定時
+  // byStageDCが存在し、かつそのステージのデータがあればそれを使う
+  if (globalData.byStageDC && globalData.byStageDC[stageName]) {
+    targetDCData = globalData.byStageDC[stageName];
+  } else {
+    // データがない場合は空っぽのデータを入れるかnullにする（ここでは0埋めデータを想定）
+    targetDCData = { "Elemental": 0, "Gaia": 0, "Mana": 0, "Meteor": 0 };
+  }
+  
   return {
     data: globalData.byStageJob.filter(d => d.stage === stageName),
     hour: globalData.byStageHour.filter(d => d.stage === stageName),
     total: globalData.byStage.find(s => s.stage === stageName)?.total || 0,
-    stageName: stageName
+    stageName: stageName,
+    dcData: targetDCData
   };
 }
 
@@ -129,7 +148,7 @@ function getStatValue(dataObj, metricKey, viewMode = "ALL") {
 }
 
 function updateDashboard() {
-  const { data, hour, total, stageName } = getCurrentStageData();
+  const { data, hour, total, stageName, dcData } = getCurrentStageData();
   
   const totalEl = document.getElementById("total-matches");
   if (totalEl) totalEl.textContent = `${Math.floor(total / 10)} 試合`;
@@ -137,8 +156,8 @@ function updateDashboard() {
   // 背景画像の更新
   updateBackgroundImage(stageName);
   
-  if (globalData && globalData.byDC) {
-    renderDCPieChart(globalData.byDC);
+if (dcData) {
+    renderDCPieChart(dcData);
   }
   
   renderRoleAnalysisChart(data, total);
