@@ -23,11 +23,20 @@ FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
 const STAGE_NAME_JP = {
   "Palaistra": "パライストラ",
   "Volcanic Heart": "ヴォルカニック・ハート",
-  "Cloud Nine": "クラウドナイン",
-  "The Red Sands": "レッド・サンズ",
   "The Clockwork Castletown": "東方絡繰御殿",
-  "Bayside Battleground": "ベイサイド・バトルグラウンド"
+  "Bayside Battleground": "ベイサイド・バトルグラウンド".
+  "Cloud Nine": "クラウドナイン",
+  "The Red Sands": "レッド・サンズ"
 };
+
+const STAGE_ORDER = [
+  "Palaistra",                // パライストラ
+  "Volcanic Heart",           // ヴォルカニック・ハート
+  "The Clockwork Castletown", // 東方絡繰御殿
+  "Bayside Battleground",     // ベイサイド・バトルグラウンド
+  "Cloud Nine",               // クラウドナイン
+  "The Red Sands"           // レッド・サンズ
+];
 
 // --- ★ステージ名と画像ファイル名の対応マップ ---
 const STAGE_IMAGE_MAP = {
@@ -106,14 +115,28 @@ function initStageSelector(stages) {
   if (!sel) return;
   sel.innerHTML = '<option value="ALL">全てのステージ</option>';
   
-  stages.sort((a, b) => a.stage.localeCompare(b.stage)).forEach(s => {
+  stages.sort((a, b) => {
+    const indexA = STAGE_ORDER.indexOf(a.stage);
+    const indexB = STAGE_ORDER.indexOf(b.stage);
+    
+    // リストにないものは末尾へ
+    if (indexA === -1) return 1;
+    if (indexB === -1) return -1;
+    
+    return indexA - indexB;
+  });
+
+  stages.forEach(s => {
     const opt = document.createElement("option");
     opt.value = s.stage;
-    const jpName = STAGE_NAME_JP[s.stage] || s.stage; 
+    
+    // 日本語名で表示
+    const jpName = STAGE_NAME_JP[s.stage] || s.stage;
     opt.textContent = `${jpName} (${Math.floor(s.total/10)}試合)`;
     
     sel.appendChild(opt);
   });
+  
   sel.addEventListener("change", updateDashboard);
 }
 
