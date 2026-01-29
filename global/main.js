@@ -339,32 +339,53 @@ function renderHourChart(hourData) {
 }
 
 function renderDamageChart(jobData) {
-  // ★修正: ここでは「平均(avg)」を強制的に使用する
-  // (テーブル側のトグルに関係なく平均与ダメを表示するため)
-  const metric = "Damage";
-  const method = "avg"; // 固定
+  // ▼▼▼ 設定部分 ▼▼▼
+  const chartTitle = "平均DPM (分間ダメージ)";
+  const barColor = "#FC8181"; // 攻撃的なパステルレッド
+
+  const method = "avg"; // 平均値を使用
   
-  const prefix = (currentDamageViewMode === "WIN") ? "w_" : (currentDamageViewMode === "LOSE") ? "l_" : "";
-  const key = `${prefix}${method}${metric}`;
-  
+  // ▼▼▼ データ計算部分 ▼▼▼
   const filtered = jobData
     .filter(d => d.total >= 1)
-    .map(d => ({ 
-      ...d, 
-      _val: d[key] || 0 
-    }))
-    .sort((a, b) => b._val - a._val);
+    .map(d => {
+      // 勝ち/負け/全体の切り替えに対応
+      const prefix = (currentDamageViewMode === "WIN") ? "w_" : (currentDamageViewMode === "LOSE") ? "l_" : "";
+      
+      // ダメージと試合時間(秒)を取得
+      const dmgVal = d[`${prefix}${method}Damage`] || 0;
+      const timeVal = d[`${prefix}${method}MatchTime`] || 0;
+
+      // 時間を「分」に変換（0秒の場合はエラー回避で1とする）
+      const minutes = (timeVal > 0) ? timeVal / 60 : 1;
+      
+      // DPM = ダメージ ÷ 分
+      const dpm = dmgVal / minutes;
+
+      return { 
+        ...d, 
+        _val: dpm 
+      };
+    })
+    .sort((a, b) => b._val - a._val); // 高い順に並び替え
 
   const labels = filtered.map(d => JOB_META[d.job]?.jp || d.job);
+  
+  // 整数に丸めて表示
   const data = filtered.map(d => Math.round(d._val));
 
+  // グラフ描画
   drawSimpleBarChart(
     "damageChart",
     labels,
     data,
-    '平均与ダメ',
-    '#f6ad55'
+    chartTitle,
+    barColor
   );
+  
+  // カードの見出し(h2)も自動で書き換える
+  const titleEl = document.querySelector("#damageChart").closest(".chart-card").querySelector("h2");
+  if(titleEl) titleEl.innerText = chartTitle;
 }
 
 function renderJobTable(jobData, currentTotalMatches) {
