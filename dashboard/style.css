@@ -848,13 +848,14 @@ body {
 }
 
 .forecast-table-wrapper {
-  overflow-x: auto; /* 万が一の時用 */
+  overflow-x: auto;
+  padding: 4px; /* 影が切れないように余白 */
 }
 
 .forecast-table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 4px;
+  border-spacing: 6px 4px;
   table-layout: fixed;
 }
 
@@ -882,11 +883,28 @@ body {
 .forecast-cell {
   background: var(--base-bg);
   border-radius: 8px;
-  padding: 6px;
+  padding: 4px;
   position: relative;
-  height: 60px;
+  height: 48px;
   border: 1px solid transparent;
   transition: transform 0.2s;
+}
+
+/* 過去のスケジュール（グレーアウト） */
+.forecast-cell.is-past {
+  opacity: 0.5;
+  filter: grayscale(100%);
+  background-color: #f1f5f9;
+  pointer-events: none; /* クリック不可 */
+}
+
+/* 現在開催中（強調） */
+.forecast-cell.is-now {
+  background-color: #fff;
+  border: 2px solid var(--accent-blue-gray) !important;
+  box-shadow: 0 4px 12px rgba(130, 151, 178, 0.4);
+  transform: scale(1.02); /* 少し浮き出る */
+  z-index: 5;
 }
 
 .forecast-cell:hover {
@@ -907,9 +925,10 @@ body {
   font-size: 9px;
   font-weight: bold;
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   color: var(--text-main);
   opacity: 0.8;
+  line-height: 1;
 }
 
 /* セル内コンテンツ（アイコン/テキスト） */
@@ -918,7 +937,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2px;
-  height: 32px;
+  height: 28px;
 }
 
 .forecast-job-icon {
@@ -934,17 +953,46 @@ body {
 }
 
 .status-pupi { color: var(--text-main); }
+.status-retirement { color: #d68fa8; } 
+.status-debut { color: #8297B2; }      
 .status-gekipupi { color: var(--text-main); }
-.status-retirement { color: #d68fa8; } /* くすみピンク */
-.status-debut { color: #8297B2; }      /* ブルーグレー */
 
 
 /* メタ情報 (l2 n=3) */
 .forecast-meta {
-  position: absolute;
-  bottom: 2px;
-  right: 4px;
-  font-size: 8px;
+  display: none;
+}
+
+/* ナビゲーション */
+.forecast-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.nav-arrow-btn, .nav-today-btn {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 4px 12px;
   color: var(--text-sub);
-  font-family: monospace;
+  font-family: "Kiwi Maru", serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+
+.nav-arrow-btn:hover, .nav-today-btn:hover {
+  background: var(--accent-blue-gray);
+  color: #fff;
+  border-color: var(--accent-blue-gray);
+}
+
+.nav-range-label {
+  font-family: "Darumadrop One", cursive;
+  font-size: 16px;
+  color: var(--text-main);
+  letter-spacing: 1px;
 }
