@@ -340,7 +340,7 @@ function renderHourChart(hourData) {
 
 function renderDamageChart(jobData) {
   // ▼▼▼ 設定部分 ▼▼▼
-  const chartTitle = "平均分間ダメージ";
+  const chartTitle = "平均DPM";
   const barColor = "#FC8181"; // 攻撃的なパステルレッド
 
   const method = "avg"; // 平均値を使用
