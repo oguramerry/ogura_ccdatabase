@@ -376,7 +376,11 @@ function renderJobTable(jobData, currentTotalMatches) {
   let list = jobData.map(d => {
     const meta = JOB_META[d.job] || {};
     return {
-      name: meta.jp || d.job, jobKey: d.job, sortOrder: meta.order || 999, role: meta.role || "unknown",
+      name: meta.jp || d.job, 
+      jobKey: d.job, 
+      sortOrder: meta.order || 999, 
+      role: meta.role || "unknown",
+      count: d.total,
       winRate: d.total ? (d.wins / d.total) * 100 : 0,
       pickRate: currentTotalMatches ? (d.total / currentTotalMatches) * 100 : 0,
       
@@ -414,7 +418,12 @@ function renderJobTable(jobData, currentTotalMatches) {
     const fmtT = (s) => `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`;
     
     tr.innerHTML = `
-      <td style="text-align:left;"><span class="clickable-job" onclick="openModal('${d.jobKey}')" style="background-color:${ROLE_COLORS[d.role]}; padding:6px 14px; border-radius:20px; color:#546E7A; font-weight:bold;">${d.name}</span></td>
+      <td style="text-align:left;">
+      <span class="clickable-job" onclick="openModal('${d.jobKey}')" style="background-color:${ROLE_COLORS[d.role]}; padding:6px 14px; border-radius:20px; color:#546E7A; font-weight:bold;">
+      ${d.name} <span style="font-size:0.85em; font-weight:normal; opacity:0.8;">(${d.count})</span>
+      </span>
+      </td>
+      
       <td class="${d.winRate >= 50 ? 'rate-high' : 'rate-low'}">${d.winRate.toFixed(1)}%</td>
       <td>${d.pickRate.toFixed(1)}%</td>
       <td>${fmt2(d.statK)}</td>
