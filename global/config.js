@@ -47,7 +47,7 @@ const ROLE_COLORS = {
 
 const DC_META = {
   "Elemental": { color: "#A5D6A7", label: "Elemental" }, // パステルグリーン
-  "Gaia":      { color: "##FFCC80", label: "Gaia" },      //パステルオレンジ 
+  "Gaia":      { color: "#FFCC80", label: "Gaia" },      //パステルオレンジ 
   "Mana":      { color: "#90CAF9", label: "Mana" },      // パステルブルー
   "Meteor":    { color: "#CE93D8", label: "Meteor" },    // パステルパープル
 };
