@@ -775,11 +775,3 @@ function drawSimpleBarChart(canvasId, labels, data, labelText, color) {
     }
   });
 }
-
-// DCごとの設定（色など）
-const DC_META = {
-  "Elemental": { color: "#A5D6A7", label: "Elemental" }, // パステルグリーン
-  "Gaia":      { color: "#CE93D8", label: "Gaia" },      // パステルパープル
-  "Mana":      { color: "#90CAF9", label: "Mana" },      // パステルブルー
-  "Meteor":    { color: "#FFCC80", label: "Meteor" },    // パステルオレンジ
-};
