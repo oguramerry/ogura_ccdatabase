@@ -19,23 +19,13 @@ let currentDamageViewMode = "ALL";
 let jobFilterState = {}; 
 FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
 
-// ステージ名の日本語変換マップ
-const STAGE_NAME_JP = {
-  "Palaistra": "パライストラ",
-  "Volcanic Heart": "ヴォルカニック・ハート",
-  "The Clockwork Castletown": "東方絡繰御殿",
-  "Bayside Battleground": "ベイサイド・バトルグラウンド",
-  "Cloud Nine": "クラウドナイン",
-  "The Red Sands": "レッド・サンズ"
-};
-
 const STAGE_ORDER = [
   "Palaistra",                // パライストラ
   "Volcanic Heart",           // ヴォルカニック・ハート
-  "The Clockwork Castletown", // 東方絡繰御殿
+  "Clockwork Castletown", // 東方絡繰御殿
   "Bayside Battleground",     // ベイサイド・バトルグラウンド
   "Cloud Nine",               // クラウドナイン
-  "The Red Sands"           // レッド・サンズ
+  "Red Sands"           // レッド・サンズ
 ];
 
 // --- ★ステージ名と画像ファイル名の対応マップ ---
@@ -50,8 +40,8 @@ const STAGE_IMAGE_MAP = {
   "Palaistra": "pala.jpg",
   "Volcanic Heart": "vol.jpg",
   "Cloud Nine": "cloud.jpg",
-  "The Red Sands": "red.jpg",
-  "The Clockwork Castletown": "kara.jpg",
+  "Red Sands": "red.jpg",
+  "Clockwork Castletown": "kara.jpg",
   "Bayside Battleground": "bay.jpg",
 };
 
