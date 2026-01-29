@@ -837,3 +837,112 @@ body {
   border: 2px solid var(--accent-blue-gray); /* 点線から実線に */
   box-shadow: 0 3px 6px rgba(130, 151, 178, 0.4);
 }
+
+/* --- ランクマ天気予報セクション --- */
+.forecast-container {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+}
+
+.forecast-table-wrapper {
+  overflow-x: auto; /* 万が一の時用 */
+}
+
+.forecast-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px;
+  table-layout: fixed;
+}
+
+/* ヘッダー（日付） */
+.forecast-th {
+  font-family: "Darumadrop One", cursive;
+  font-size: 12px;
+  color: var(--accent-blue-gray);
+  text-align: center;
+  padding: 4px;
+}
+
+/* 時間軸ラベル */
+.forecast-time-label {
+  font-family: "Darumadrop One", cursive;
+  font-size: 11px;
+  color: var(--text-sub);
+  vertical-align: middle;
+  text-align: right;
+  width: 50px;
+  padding-right: 8px;
+}
+
+/* 予報セル基本 */
+.forecast-cell {
+  background: var(--base-bg);
+  border-radius: 8px;
+  padding: 6px;
+  position: relative;
+  height: 60px;
+  border: 1px solid transparent;
+  transition: transform 0.2s;
+}
+
+.forecast-cell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* ステージ別の左帯（既存色を流用） */
+.st-bar-Palaistra { border-left: 4px solid #8297B2 !important; }
+.st-bar-VolcanicHeart { border-left: 4px solid #e57373 !important; }
+.st-bar-ClockworkCastletown { border-left: 4px solid #dda0dd !important; }
+.st-bar-BaysideBattleground { border-left: 4px solid #7fffd4 !important; }
+.st-bar-CloudNine { border-left: 4px solid #64b5f6 !important; }
+.st-bar-RedSands { border-left: 4px solid #deb887 !important; }
+
+/* ステージ略称 */
+.st-abbr {
+  font-size: 9px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-main);
+  opacity: 0.8;
+}
+
+/* セル内コンテンツ（アイコン/テキスト） */
+.forecast-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  height: 32px;
+}
+
+.forecast-job-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* ステータステキスト */
+.status-text {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.status-pupi { color: var(--text-main); }
+.status-retirement { color: #d68fa8; } /* くすみピンク */
+.status-debut { color: #8297B2; }      /* ブルーグレー */
+
+/* メタ情報 (l2 n=3) */
+.forecast-meta {
+  position: absolute;
+  bottom: 2px;
+  right: 4px;
+  font-size: 8px;
+  color: var(--text-sub);
+  font-family: monospace;
+}
