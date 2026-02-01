@@ -21,7 +21,7 @@ ROTATION: [
 ]
   };
 
-const GAS_BASE = "https://script.google.com/macros/s/AKfycbxCOYEGborjJzpnyd1lG5_MeX3BDmQvjLC-NqN8MpKnr6YRBgcfz962kRFJsiFkb7RXdg/exec";
+const GAS_BASE = "https://script.google.com/macros/s/AKfycbyqUe1owS384-HR_mirZSmZZxKQdZLrNBIUJL07AzvRmsMR62cgrbR5VcilJBfLRdzpiA/exec";
 
 let matchChartInstance = null;
 const now = new Date();
