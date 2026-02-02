@@ -318,10 +318,14 @@ tabs.addEventListener("click", (e) => {
     });
   }
 
+
+
+  
   // --- 初期化処理 ---
   updateCalendarDisplay();
   fetchUsers("");
 
+  tabs?.querySelector('button[data-tab="main"]')?.classList.add("active");
   // 更新ボタン
   document.getElementById("refreshBtn")?.addEventListener("click", () => {
     if (!currentUserForApi) return;
