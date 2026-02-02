@@ -287,8 +287,13 @@ body {
   transition: all 0.2s;
 }
 
-#tabButtons button:hover {
+#tabButtons：active {
   background: #8297B2;
+  color: #fff;
+}
+
+#tabButtons button:hover {
+  background: #a3b8d4;
   color: #fff;
 }
 
