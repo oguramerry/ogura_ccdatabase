@@ -20,12 +20,12 @@ let jobFilterState = {};
 FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
 
 const STAGE_ORDER = [
-  "Palaistra",                // パライストラ
-  "Volcanic Heart",           // ヴォルカニック・ハート
-  "Clockwork Castletown", // 東方絡繰御殿
-  "Bayside Battleground",     // ベイサイド・バトルグラウンド
-  "Cloud Nine",               // クラウドナイン
-  "Red Sands"           // レッド・サンズ
+"パライストラ",
+  "ヴォルカニック・ハート",
+  "東方絡繰御殿",
+  "ベイサイド・バトルグラウンド",
+  "クラウドナイン",
+  "レッド・サンズ"
 ];
 
 // --- ★ステージ名と画像ファイル名の対応マップ ---
