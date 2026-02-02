@@ -211,6 +211,7 @@ tabs.addEventListener("click", (e) => {
   btn.classList.add("active");
 
   setActiveTab(btn.dataset.tab);
+  });
   }
 
   // --- JSONP コールバック関数群 ---
