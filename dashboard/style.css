@@ -627,35 +627,35 @@ body {
 
 /* パライストラ*/
 .stage-ribbon-btn.btn-Palaistra.active {
-  background-color: #8297B2; 
+  background-color: #c6dbf5; 
 
 }
 
 /* ヴォルカニック・ハート */
 .stage-ribbon-btn.btn-VolcanicHeart.active {
-  background-color: #e57373; 
+  background-color: #8f422b; 
  
 }
 
 /* 東方絡繰御殿*/
 .stage-ribbon-btn.btn-ClockworkCastletown.active {
-  background-color: #dda0dd;
+  background-color:#b680e8;
   
 }
 
 /* ベイサイド・バトルグラウンド */
 .stage-ribbon-btn.btn-BaysideBattleground.active {
-  background-color: #7fffd4;
+  background-color: #5cb88d;
 }
 
 /* クラウドナイン */
 .stage-ribbon-btn.btn-CloudNine.active {
-  background-color: #64b5f6;
+  background-color: #97b85c;
 }
 
 /* レッド・サンズ */
 .stage-ribbon-btn.btn-RedSands.active {
-  background-color: #deb887;
+  background-color:#b89e5c;
 }
 
 
@@ -664,37 +664,37 @@ body {
 
 /* パライストラ */
 .stage-ribbon-btn.btn-Palaistra:hover {
-  background-color: ##64b5f6;
+  background-color: #e6eef7;
   color: inherit;
 }
 
 /* ヴォルカニック・ハート  */
 .stage-ribbon-btn.btn-VolcanicHeart:hover {
-  background-color: #e57373;
+  background-color: #cc7d66;
   color: inherit; 
 }
 
 /* 東方絡繰御殿 */
 .stage-ribbon-btn.btn-ClockworkCastletown:hover {
-  background-color: #dda0dd;  
+  background-color: #cfa6f5;  
   color: inherit;
 }
 
 /* ベイサイド・バトルグラウンド */
 .stage-ribbon-btn.btn-BaysideBattleground:hover {
-  background-color: #4bb8b0; 
+  background-color: #8aebbe; 
   color: inherit;
 }
 
 /* クラウドナイン */
 .stage-ribbon-btn.btn-CloudNine:hover {
-  background-color: #589e4f;
+  background-color: #bede85;
   color: inherit;
 }
 
 /* レッド・サンズ */
 .stage-ribbon-btn.btn-RedSands:hover{
-  background-color: #deb887; 
+  background-color: #e3ca8a; 
   color: inherit;
 }
 
