@@ -58,7 +58,7 @@ window.TabRenderer = {
         else if (rateVal < 50) colorClass = "bg-loss-color";
       }
       
-      // ★ここを変更！
+      
       // 1. Totalを表示
       // 2. 勝敗の数字にクラス(score-win-text / score-loss-text)をつけて色を変える
       return `
