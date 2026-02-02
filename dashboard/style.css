@@ -659,7 +659,7 @@ body {
 
 /* パライストラ */
 .stage-ribbon-btn.btn-Palaistra:hover {
-  background-color: #8297B2;
+  background-color: ##64b5f6;
   color: inherit;
 }
 
@@ -677,13 +677,13 @@ body {
 
 /* ベイサイド・バトルグラウンド */
 .stage-ribbon-btn.btn-BaysideBattleground:hover {
-  background-color: #7fffd4; 
+  background-color: #4bb8b0; 
   color: inherit;
 }
 
 /* クラウドナイン */
 .stage-ribbon-btn.btn-CloudNine:hover {
-  background-color: #64b5f6;
+  background-color: #589e4f;
   color: inherit;
 }
 
