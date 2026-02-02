@@ -202,12 +202,15 @@ const btnNow = keyNoSpace
   };
 
   if (tabs) {
-    tabs.addEventListener("click", (e) => {
-      const btn = e.target.closest("button[data-tab]");
-      if (!btn) return;
-      setActiveTab(btn.dataset.tab);
-  
-    });
+tabs.addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-tab]");
+  if (!btn) return;
+
+  // 見た目のactiveを切り替え
+  tabs.querySelectorAll("button[data-tab]").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+
+  setActiveTab(btn.dataset.tab);
   }
 
   // --- JSONP コールバック関数群 ---
