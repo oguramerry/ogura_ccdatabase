@@ -69,3 +69,31 @@ button{ padding:10px 14px; cursor:pointer; }
 .thumb.is-uploading{ opacity:.6; }
 .thumb.is-done{ outline:2px solid #b7e3b7; }
 .thumb.is-error{ outline:2px solid #f2b6b6; }
+
+.commonGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 6px;
+}
+.commonNote{
+  grid-column: 1 / -1;
+}
+
+.toolbar2{
+  margin-top: 10px;
+}
+
+.extra{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 8px;
+}
+.extraNote{
+  grid-column: 1 / -1;
+}
+.extraItem input{
+  width: 100%;
+}
+
