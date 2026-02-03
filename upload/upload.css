@@ -131,3 +131,17 @@ button{ padding:10px 14px; cursor:pointer; }
     grid-column: auto;
   }
 }
+
+.guide-img {
+  width: 60%;        /* 幅を60%に */
+  height: auto;      /* 高さは比率を維持して自動 */
+  display: block;    /* ブロック要素として扱う（中央寄せのため） */
+  margin: 0 auto 20px; /* 上0、左右自動（中央寄せ）、下20pxの余白 */
+}
+
+/* スマホ（幅が狭いとき）は少し大きくしたい場合は以下*/
+@media (max-width: 520px){
+  .guide-img {
+    width: 90%; /* スマホなら90%くらいが見やすいかも */
+  }
+}
