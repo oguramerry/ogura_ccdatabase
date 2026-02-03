@@ -249,7 +249,7 @@ function copyCommonToAll(){
     it.perNote = cn;
     it.perStage = cs;
   }
-  setMsg("共通入力を全ファイル欄にコピーしたよ");
+  setMsg("すべての画像にコピーしたﾆｮ");
   render();
 }
 
