@@ -6,6 +6,8 @@ const filePicker = document.getElementById("filePicker");
 const previews = document.getElementById("previews");
 const sendBtn = document.getElementById("send");
 const clearBtn = document.getElementById("clear");
+const sendBtnBottom = document.getElementById("sendBottom");
+const clearBtnBottom = document.getElementById("clearBottom");
 const msg = document.getElementById("msg");
 const progress = document.getElementById("progress");
 const scoreInput = document.getElementById("score");
@@ -117,6 +119,8 @@ function render(){
     setProgress("");
     sendBtn.disabled = true;
     clearBtn.disabled = true;
+    sendBtnBottom.disabled = true;
+    clearBtnBottom.disabled = true;
     return;
   }
 
@@ -235,6 +239,9 @@ sWrap.appendChild(sInput);
 
   sendBtn.disabled = uploading || items.every(x => x.status !== "ready");
   clearBtn.disabled = uploading || items.length === 0;
+
+  sendBtnBottom.disabled = sendBtn.disabled;
+  clearBtnBottom.disabled = clearBtn.disabled;
 }
 
 function copyCommonToAll(){
@@ -310,6 +317,8 @@ async function uploadAll(){
   sendBtn.disabled = true;
   clearBtn.disabled = true;
   copyCommonBtn.disabled = true;
+  sendBtnBottom.disabled = true;
+  clearBtnBottom.disabled = true;
 
   const score = scoreInput ? scoreInput.value : "";
 
@@ -341,6 +350,8 @@ async function uploadAll(){
   sendBtn.disabled = items.every(x => x.status !== "ready");
   clearBtn.disabled = false;
   copyCommonBtn.disabled = items.length === 0 || items.some(x => x.status === "uploading");
+  sendBtnBottom.disabled = sendBtn.disabled;
+  clearBtnBottom.disabled = clearBtn.disabled;
 }
 
 dropzone.addEventListener("click", () => filePicker.click());
@@ -369,6 +380,8 @@ dropzone.addEventListener("drop", (e) => {
 sendBtn.addEventListener("click", uploadAll);
 clearBtn.addEventListener("click", clearAll);
 copyCommonBtn.addEventListener("click", copyCommonToAll);
+sendBtnBottom.addEventListener("click", uploadAll);
+clearBtnBottom.addEventListener("click", clearAll);
 
 function initCommonStage(){
   // 一旦空にする
