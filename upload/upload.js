@@ -1,3 +1,4 @@
+//upload.js
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzZbWFbxilYd4n3o_vMoGNdQFMgZd4sFSmfSdJ_oxAtuFSvfx6a1A18JwVrYZp-O5Rh/exec";
 
 const dropzone = document.getElementById("dropzone");
