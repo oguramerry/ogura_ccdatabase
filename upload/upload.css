@@ -1,185 +1,268 @@
-/* upload.css */
+/* upload.css  */
 
-body{
-  font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-  margin:0; padding:24px;
-}
-.wrap{ max-width:720px; margin:0 auto; }
-.card{ margin-top:16px; padding:16px; border:1px solid #ddd; border-radius:12px; }
-
-.dropzone{
-  border:2px dashed #bbb;
-  border-radius:12px;
-  padding:18px;
-  text-align:center;
-  cursor:pointer;
-  user-select:none;
-}
-.dropzone.is-dragover{ border-color:#666; background:#f6f6f6; }
-.row{ margin-top:14px; }
-.label{ display:block; margin:0 0 6px; }
-input[type="text"], select { 
-  width:100%; 
-  padding:10px; 
-  box-sizing:border-box; 
+:root {
+  /* パレット定義 */
+  --bg-color: #eef9fc;       /* 全体の背景：激薄パステルブルー */
+  --card-bg: #ffffff;        /* カード背景：ホワイト */
+  --main-blue: #a3dbf0;      /* メイン水色 */
+  --main-pink: #ffcce0;      /* メインピンク */
+  --accent-pink: #ff9ebd;    /* 濃いピンク（ボタン影など） */
+  --accent-blue: #7dc4e3;    /* 濃い水色（ボタン影など） */
+  --text-color: #778899;     /* 文字色：グレーッシュブルー */
+  --border-radius: 24px;     /* 全体の丸み */
 }
 
-.toolbar{
-  display:flex;
-  gap:10px;
-  align-items:center;
-  margin-top:14px;
-  flex-wrap:wrap;
-}
-button{ padding:10px 14px; cursor:pointer; }
-.progress{ margin-left:auto; opacity:.85; }
-.msg{ margin-top:10px; min-height:1.4em; }
-
-.previews{
-  margin-top:14px;
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap:12px;
-}
-.thumb{
-  position:relative;
-  border:1px solid #eee;
-  border-radius:12px;
-  padding:10px;
-  background:#fff;
-  min-width: 0;
-  overflow: hidden;
-}
-.thumb img{
-  width:100%;
-  height:140px;
-  object-fit:cover;
-  border-radius:10px;
-  display:block;
-}
-.thumb .meta{
-  margin-top:8px;
-  font-size:12px;
-  opacity:.8;
-  word-break:break-all;
-}
-.thumb .remove{
-  position:absolute;
-  top:8px;
-  right:8px;
-  width:28px;
-  height:28px;
-  border-radius:999px;
-  border:1px solid #ddd;
-  background:#fff;
-  cursor:pointer;
-}
-.thumb.is-uploading{ opacity:.6; }
-.thumb.is-done{ outline:2px solid #b7e3b7; }
-.thumb.is-error{ outline:2px solid #f2b6b6; }
-
-.commonGrid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 6px;
-}
-.commonNote{
-  grid-column: 1 / -1;
+body {
+  font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif; /* 丸文字 */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 24px;
+  background-image: radial-gradient(#d6eff9 10%, transparent 10%); /* 水玉模様 */
+  background-size: 20px 20px;
 }
 
-.toolbar2{
-  margin-top: 10px;
+.wrap { max-width: 720px; margin: 0 auto; }
+
+h1 {
+  text-align: center;
+  color: var(--accent-blue);
+  text-shadow: 2px 2px 0 #fff;
+  margin-bottom: 20px;
 }
 
-.extra{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 8px;
-  min-width: 0;
-}
-.extraNote{
-  grid-column: 1 / -1;
-}
-.extraItem{
-  min-width: 0;
-}
-.extraItem input{
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-  box-sizing: border-box;
+/* 白いカード部分 */
+.card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 25px rgba(163, 219, 240, 0.4); /* ふんわりした影 */
+  border: 4px solid #fff; /* 内側に白い縁取り */
 }
 
-@media (max-width: 520px){
-  .previews{
-    grid-template-columns: 1fr;
-  }
-
-  .commonGrid{
-    grid-template-columns: 1fr;
-  }
-  .commonNote{
-    grid-column: auto;
-  }
-
-  .extra{
-    grid-template-columns: 1fr;
-  }
-  .extraNote{
-    grid-column: auto;
-  }
-}
-
-.guide-img {
-  width: 80%;        /* 幅を60%に */
-  height: auto;      /* 高さは比率を維持して自動 */
-  display: block;    /* ブロック要素として扱う（中央寄せのため） */
-  margin: 0 auto 20px; /* 上0、左右自動（中央寄せ）、下20pxの余白 */
-}
-
-/* スマホ（幅が狭いとき）は少し大きくしたい場合は以下*/
-@media (max-width: 520px){
-  .guide-img {
-    width: 90%; /* スマホなら90%くらいが見やすいかも */
-  }
-}
-
-/* クリックできることがわかるようにカーソルを指にする */
-.guide-img {
+/* 画像選択エリア */
+.dropzone {
+  border: 3px dashed var(--main-blue);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-align: center;
   cursor: pointer;
-  transition: opacity 0.2s;
+  background-color: #fbfdff;
+  color: var(--main-blue);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.dropzone:hover {
+  background-color: #fff0f5; /* ホバーで薄いピンクに */
+  border-color: var(--main-pink);
+  color: var(--accent-pink);
+  transform: scale(1.02);
+}
+
+/* 入力欄のデザイン */
+.label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: bold;
+  color: var(--accent-blue);
+}
+input[type="text"], input[type="date"], input[type="time"], select {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid #e0f0f5;
+  border-radius: 12px;
+  background: #fdfdfd;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+input:focus, select:focus {
+  border-color: var(--main-pink);
+  background: #fffafa;
+}
+
+/* ボタン共通設定（キャンディ風） */
+button {
+  padding: 12px 24px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px; /* 完全な丸 */
+  transition: all 0.1s;
+  position: relative;
+  top: 0;
+}
+button:active {
+  top: 4px; /* 押したときに沈む */
+  box-shadow: none !important;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  top: 4px;
+  filter: grayscale(80%);
+}
+
+/* 各ボタンの色設定 */
+#send, #sendBottom {
+  background-color: var(--main-pink);
+  color: white;
+  box-shadow: 0 4px 0 var(--accent-pink); /* 立体的な影 */
+  font-size: 16px;
+  width: 100%;
+  max-width: 200px;
+}
+
+#clear, #clearBottom {
+  background-color: #fff;
+  color: var(--text-color);
+  border: 2px solid #eee;
+  box-shadow: 0 4px 0 #ddd;
+}
+
+#copyCommon {
+  background-color: var(--main-blue);
+  color: white;
+  box-shadow: 0 4px 0 var(--accent-blue);
+  font-size: 13px;
+  width: 100%;
+}
+
+/* ツールバーの配置 */
+.toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center; /* 中央寄せ */
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.toolbar2 { margin-top: 16px; }
+
+/* プレビューエリア */
+.previews {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.thumb {
+  border: 2px solid #eef9fc;
+  border-radius: 16px;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  position: relative;
+}
+.thumb img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+.thumb .meta {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #99aacc;
+}
+.thumb .remove {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  color: var(--accent-pink);
+  border: 2px solid var(--main-pink);
+  box-shadow: none;
+  top: -8px;
+  right: -8px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.thumb .remove:hover {
+  background: var(--main-pink);
+  color: #fff;
+}
+
+/* グリッドレイアウト */
+.commonGrid, .extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+.commonNote, .extraNote { grid-column: 1 / -1; }
+.extraItem input, .extraItem select { font-size: 12px; padding: 8px; }
+
+/* メッセージ・進捗 */
+.msg {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--accent-pink);
+}
+.progress {
+  font-size: 12px;
+  color: var(--accent-blue);
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* 説明画像のスタイル（前の設定を引き継ぎ） */
+.guide-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 16px; /* 画像も角丸に */
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(163, 219, 240, 0.4);
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
 }
 .guide-img:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+  transform: scale(1.01);
 }
 
-/* 拡大表示用の背景（普段は非表示） */
+/* モーダル（前の設定を引き継ぎ） */
 .modal {
-  display: none; /* 最初は消しておく */
+  display: none;
   position: fixed;
-  z-index: 9999; /* 最前面に */
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.85); /* 背景を半透明の黒に */
+  background-color: rgba(255, 255, 255, 0.85); /* 背景を白っぽく透過に変更 */
+  backdrop-filter: blur(4px); /* すりガラス効果 */
   align-items: center;
   justify-content: center;
-  cursor: zoom-out; /* 閉じれそうなカーソルに */
+  cursor: zoom-out;
 }
-
-/* クラスがついたら表示する */
-.modal.is-open {
-  display: flex;
-}
-
-/* 拡大画像のスタイル */
+.modal.is-open { display: flex; }
 .modal img {
-  max-width: 95%;
-  max-height: 95%;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  object-fit: contain;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(163, 219, 240, 0.6);
+  border: 4px solid white;
+}
+
+/* レスポンシブ */
+@media (max-width: 520px){
+  .previews, .commonGrid, .extra { grid-template-columns: 1fr; }
+  .commonNote, .extraNote { grid-column: auto; }
+  .wrap { padding: 16px; }
+  .guide-img { width: 95%; }
+  h1 { font-size: 20px; }
 }
