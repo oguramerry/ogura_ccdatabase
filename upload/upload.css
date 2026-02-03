@@ -224,7 +224,7 @@ button:disabled {
 
 /* 説明画像のスタイル（前の設定を引き継ぎ） */
 .guide-img {
-  width: 80%;
+  width: 90%;
   height: auto;
   display: block;
   margin: 0 auto 20px;
