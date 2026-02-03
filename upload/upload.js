@@ -20,6 +20,15 @@ const MAX_FILES = 10;
 const MAX_SIZE_MB = 8;
 const MAX_TOTAL_MB = 30;
 
+const STAGE_ORDER = [
+  "パライストラ",
+  "ヴォルカニック・ハート",
+  "東方絡繰御殿",
+  "ベイサイド・バトルグラウンド",
+  "クラウドナイン",
+  "レッド・サンズ"
+];
+
 let submissionId = "";
 let items = []; // { id, file, url, status, error?, perDate, perTime, perNote }
 
@@ -168,13 +177,31 @@ sWrap.className = "extraItem extraStage";
 const sLabel = document.createElement("label");
 sLabel.className = "label";
 sLabel.textContent = "ステージ名（任意）";
-const sInput = document.createElement("input");
-sInput.type = "text";
-sInput.maxLength = 60;
-sInput.placeholder = "任意";
-sInput.value = it.perStage || "";
-sInput.disabled = it.status === "uploading";
-sInput.addEventListener("input", () => { it.perStage = sInput.value || ""; });
+    
+const sInput = document.createElement("select");
+    sInput.disabled = it.status === "uploading";
+    
+    // デフォルト（未選択）
+    const defOpt = document.createElement("option");
+    defOpt.value = "";
+    defOpt.textContent = "任意";
+    sInput.appendChild(defOpt);
+
+    // リストから選択肢生成
+    for(const st of STAGE_ORDER){
+      const opt = document.createElement("option");
+      opt.value = st;
+      opt.textContent = st;
+      sInput.appendChild(opt);
+    }
+
+    // 値をセット
+    sInput.value = it.perStage || "";
+
+    // イベントリスナー
+    sInput.addEventListener("change", () => { it.perStage = sInput.value || ""; });
+
+    
 sWrap.appendChild(sLabel);
 sWrap.appendChild(sInput);
 
@@ -336,5 +363,25 @@ dropzone.addEventListener("drop", (e) => {
 sendBtn.addEventListener("click", uploadAll);
 clearBtn.addEventListener("click", clearAll);
 copyCommonBtn.addEventListener("click", copyCommonToAll);
+
+function initCommonStage(){
+  // 一旦空にする
+  commonStageEl.innerHTML = "";
+  
+  // デフォルト（未選択）を追加
+  const defaultOpt = document.createElement("option");
+  defaultOpt.value = "";
+  defaultOpt.textContent = "ステージを選択（任意）";
+  commonStageEl.appendChild(defaultOpt);
+
+  // リストから選択肢を追加
+  for(const st of STAGE_ORDER){
+    const opt = document.createElement("option");
+    opt.value = st;
+    opt.textContent = st;
+    commonStageEl.appendChild(opt);
+  }
+}
+initCommonStage();
 
 render();
