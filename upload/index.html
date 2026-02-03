@@ -1,3 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>画像送信</title>
+  <link rel="stylesheet" href="./upload.css">
+  <script defer src="./upload.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <h1>戦績画像の送信</h1>
 
-<link rel="stylesheet" href="./upload.css">
-<script defer src="./upload.js"></script>
+    <div class="card">
+      <label class="label" for="img">画像</label>
+      <input id="img" type="file" accept="image/*" />
+
+      <div class="preview">
+        <img id="previewImg" alt="" />
+      </div>
+
+      <label class="label" for="score">戦績（任意）</label>
+      <input id="score" type="text" placeholder="例: 10-2" />
+
+      <button id="send" type="button">送信</button>
+      <div id="msg" class="msg" aria-live="polite"></div>
+    </div>
+  </main>
+</body>
+</html>
