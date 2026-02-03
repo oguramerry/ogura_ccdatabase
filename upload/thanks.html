@@ -1,18 +1,64 @@
-<!-- thanks.html -->
 <!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>送信完了</title>
+  <title>送信完了！ - 感謝ﾆｮ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./upload.css">
+  <style>
+    /* Thanks画面専用の追加スタイル */
+    .thanks-card {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .icon-check {
+      font-size: 64px;
+      margin-bottom: 20px;
+      display: inline-block;
+      animation: bounce 1s infinite;
+    }
+    .thanks-msg {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+    .thanks-msg span {
+      display: block;
+      font-size: 14px;
+      color: #99aacc;
+      margin-top: 8px;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .back-btn {
+      background-color: var(--main-blue);
+      color: white;
+      box-shadow: 0 4px 0 var(--accent-blue);
+      text-decoration: none;
+      display: inline-block;
+      padding: 12px 40px;
+    }
+  </style>
 </head>
+
 <body>
   <main class="wrap">
-    <h1>送信完了</h1>
-    <p>送ってくれてましてﾊﾆｧﾄｫ(´;ω;｀)</p>
-    <p><a href="../">引退ちまちゅ（トップへ戻る）</a></p>
-    <p><a href="./">まだ、あﾝだぉね？！（送信ページへ戻る）</a></p>
+    <h1>送信完了！</h1>
+    
+    <section class="card thanks-card">
+      <div class="icon-check">✊</div>
+      <div class="thanks-msg">
+        <strong>ご協力はにぁとぉ(´；Д；｀)</strong>
+        <span>集計にちょち、ｩｫ時間ｩｫいただきめちゅ(´；Д；｀)</span>
+      </div>
+
+      <a href="./index.html" class="back-btn">もどる</a>
+    </section>
   </main>
 </body>
 </html>
