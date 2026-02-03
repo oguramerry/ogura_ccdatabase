@@ -32,7 +32,7 @@ button{ padding:10px 14px; cursor:pointer; }
 .previews{
   margin-top:14px;
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap:12px;
 }
 .thumb{
@@ -41,6 +41,8 @@ button{ padding:10px 14px; cursor:pointer; }
   border-radius:12px;
   padding:10px;
   background:#fff;
+  min-width: 0;
+  overflow: hidden;
 }
 .thumb img{
   width:100%;
@@ -89,11 +91,37 @@ button{ padding:10px 14px; cursor:pointer; }
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-top: 8px;
+  min-width: 0;
 }
 .extraNote{
   grid-column: 1 / -1;
 }
+.extraItem{
+  min-width: 0;
+}
 .extraItem input{
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
+@media (max-width: 520px){
+  .previews{
+    grid-template-columns: 1fr;
+  }
+
+  .commonGrid{
+    grid-template-columns: 1fr;
+  }
+  .commonNote{
+    grid-column: auto;
+  }
+
+  .extra{
+    grid-template-columns: 1fr;
+  }
+  .extraNote{
+    grid-column: auto;
+  }
+}
