@@ -145,3 +145,41 @@ button{ padding:10px 14px; cursor:pointer; }
     width: 90%; /* スマホなら90%くらいが見やすいかも */
   }
 }
+
+/* クリックできることがわかるようにカーソルを指にする */
+.guide-img {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.guide-img:hover {
+  opacity: 0.8;
+}
+
+/* 拡大表示用の背景（普段は非表示） */
+.modal {
+  display: none; /* 最初は消しておく */
+  position: fixed;
+  z-index: 9999; /* 最前面に */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* 背景を半透明の黒に */
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out; /* 閉じれそうなカーソルに */
+}
+
+/* クラスがついたら表示する */
+.modal.is-open {
+  display: flex;
+}
+
+/* 拡大画像のスタイル */
+.modal img {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  object-fit: contain;
+}
