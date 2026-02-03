@@ -151,7 +151,7 @@ button:disabled {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
-  scroll-margin-top: 20px;
+  scroll-margin-top: 30px;
 }
 .thumb {
   border: 2px solid #eef9fc;
@@ -263,6 +263,90 @@ button:disabled {
   box-shadow: 0 10px 40px rgba(163, 219, 240, 0.6);
   border: 4px solid white;
 }
+
+/* ガイドカードのスタイル */
+.info-card {
+  background: #fff;
+  border-radius: var(--border-radius);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(163, 219, 240, 0.2);
+}
+.info-title {
+  margin: 0 0 8px;
+  font-weight: bold;
+  color: var(--accent-pink);
+  font-size: 15px;
+}
+.info-list {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* アコーディオンのスタイル */
+.guide-accordion {
+  margin-top: 20px;
+  border: 2px solid #eef9fc;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fbfdff;
+}
+.guide-accordion summary {
+  padding: 10px 16px;
+  background: var(--main-blue);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.guide-accordion summary::before {
+  content: '▼';
+  margin-right: 8px;
+  font-size: 10px;
+  transition: 0.2s;
+}
+.guide-accordion[open] summary::before { transform: rotate(180deg); }
+
+.guide-content {
+  padding: 16px;
+  font-size: 12px;
+}
+
+.pattern {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.tag {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  color: white;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.tag-blue { background: var(--accent-blue); }
+.tag-pink { background: var(--accent-pink); }
+.tag-gray { background: #adb5bd; }
+.pattern p { margin: 0; line-height: 1.4; }
+.guide-footer {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px dashed #ddd;
+  font-size: 11px;
+  color: #99aacc;
+  text-align: center;
+}
+
+
 
 /* レスポンシブ */
 @media (max-width: 520px){
