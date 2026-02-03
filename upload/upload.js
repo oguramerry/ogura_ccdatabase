@@ -136,6 +136,15 @@ function render(){
     img.src = it.url;
     img.alt = it.file.name;
 
+    img.addEventListener("click", () => {
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modalImg");
+      if(modal && modalImg){
+        modalImg.src = it.url; // プレビュー画像をモーダルに渡す
+        modal.classList.add("is-open");
+      }
+    });
+
     const meta = document.createElement("div");
     meta.className = "meta";
     meta.textContent = `${it.file.name} (${bytesToMB(it.file.size).toFixed(2)}mb)` + (it.status === "error" ? ` / ${it.error || "error"}` : "");
