@@ -13,6 +13,7 @@ const commonDateEl = document.getElementById("commonDate");
 const commonTimeEl = document.getElementById("commonTime");
 const commonNoteEl = document.getElementById("commonNote");
 const copyCommonBtn = document.getElementById("copyCommon");
+const commonStageEl = document.getElementById("commonStage");
 
 const MAX_FILES = 10;
 const MAX_SIZE_MB = 8;
@@ -65,7 +66,7 @@ function addFiles(fileList){
 
     const id = crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random();
     const url = URL.createObjectURL(f);
-    items.push({ id, file: f, url, status: "ready", perDate: "", perTime: "", perNote: "" });
+    items.push({ id, file: f, url, status: "ready", perDate: "", perTime: "", perNote: "" , perStage: "" });
     added++;
   }
 
@@ -161,6 +162,22 @@ function render(){
     tWrap.appendChild(tLabel);
     tWrap.appendChild(tInput);
 
+    const sWrap = document.createElement("div");
+sWrap.className = "extraItem extraStage";
+const sLabel = document.createElement("label");
+sLabel.className = "label";
+sLabel.textContent = "ステージ名（任意）";
+const sInput = document.createElement("input");
+sInput.type = "text";
+sInput.maxLength = 60;
+sInput.placeholder = "任意";
+sInput.value = it.perStage || "";
+sInput.disabled = it.status === "uploading";
+sInput.addEventListener("input", () => { it.perStage = sInput.value || ""; });
+sWrap.appendChild(sLabel);
+sWrap.appendChild(sInput);
+
+    
     const nWrap = document.createElement("div");
     nWrap.className = "extraItem extraNote";
     const nLabel = document.createElement("label");
@@ -178,6 +195,7 @@ function render(){
 
     extra.appendChild(dWrap);
     extra.appendChild(tWrap);
+    extra.appendChild(sWrap);
     extra.appendChild(nWrap);
 
     div.appendChild(btn);
@@ -195,11 +213,13 @@ function copyCommonToAll(){
   const cd = commonDateEl.value || "";
   const ct = commonTimeEl.value || "";
   const cn = commonNoteEl.value || "";
+  const cs = commonStageEl.value || "";
 
   for (const it of items){
     it.perDate = cd;
     it.perTime = ct;
     it.perNote = cn;
+    it.perStage = cs;
   }
   setMsg("共通入力を全ファイル欄にコピーしたよ");
   render();
