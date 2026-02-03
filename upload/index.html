@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="ja">
-  
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,7 +7,7 @@
   <link rel="stylesheet" href="./upload.css">
   <script defer src="./upload.js"></script>
 </head>
-  
+
 <body>
   <main class="wrap">
     <h1>リザルト画像の送信</h1>
@@ -22,6 +21,28 @@
       <div class="row">
         <label class="label" for="score">戦績（任意）</label>
         <input id="score" type="text" placeholder="例: 10-2" />
+      </div>
+
+      <div class="row">
+        <label class="label">補足情報（任意・共通）</label>
+        <div class="commonGrid">
+          <div class="commonItem">
+            <label class="label" for="commonDate">試合日</label>
+            <input id="commonDate" type="date" />
+          </div>
+          <div class="commonItem">
+            <label class="label" for="commonTime">時刻</label>
+            <input id="commonTime" type="time" />
+          </div>
+          <div class="commonItem commonNote">
+            <label class="label" for="commonNote">メモ</label>
+            <input id="commonNote" type="text" maxlength="200" placeholder="任意" />
+          </div>
+        </div>
+
+        <div class="toolbar2">
+          <button id="copyCommon" type="button">共通入力を全ファイル欄にコピー</button>
+        </div>
       </div>
 
       <div class="toolbar">
