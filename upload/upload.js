@@ -46,9 +46,9 @@ document.getElementById("send").addEventListener("click", async () => {
 
   const json = await res.json();
   if (json.ok) {
-    document.getElementById("msg").textContent = "送信できたよ。ありがとう";
+    document.getElementById("msg").textContent = "送信完了！ﾊﾆｧﾄｫ(´;ω;｀)";
   } else {
-    document.getElementById("msg").textContent = "失敗しちゃった：" + (json.error || "unknown");
+    document.getElementById("msg").textContent = "失敗しちゃったﾆｮｰ(´;ω;｀)：" + (json.error || "unknown");
   }
 });
 </script>
