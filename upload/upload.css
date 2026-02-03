@@ -18,7 +18,11 @@ body{
 .dropzone.is-dragover{ border-color:#666; background:#f6f6f6; }
 .row{ margin-top:14px; }
 .label{ display:block; margin:0 0 6px; }
-input[type="text"]{ width:100%; padding:10px; box-sizing:border-box; }
+input[type="text"], select { 
+  width:100%; 
+  padding:10px; 
+  box-sizing:border-box; 
+}
 
 .toolbar{
   display:flex;
