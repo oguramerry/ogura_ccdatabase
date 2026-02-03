@@ -253,6 +253,8 @@ function copyCommonToAll(){
   render();
 }
 
+
+
 async function uploadOne(it, index, score){
   it.status = "uploading";
   it.error = "";
@@ -275,10 +277,14 @@ async function uploadOne(it, index, score){
       commonDate: commonDateEl.value || "",
       commonTime: commonTimeEl.value || "",
       commonNote: commonNoteEl.value || "",
+      // ★追加：共通ステージ情報
+      commonStage: commonStageEl ? commonStageEl.value : "",
 
       perFileDate: it.perDate || "",
       perFileTime: it.perTime || "",
-      perFileNote: it.perNote || ""
+      perFileNote: it.perNote || "",
+      // ★追加：個別ステージ情報
+      perFileStage: it.perStage || ""
     })
   });
 
@@ -305,7 +311,7 @@ async function uploadAll(){
   clearBtn.disabled = true;
   copyCommonBtn.disabled = true;
 
-  const score = scoreInput.value || "";
+  const score = scoreInput ? scoreInput.value : "";
 
   let okCount = 0;
   for (let i = 0; i < queue.length; i++){
