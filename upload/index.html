@@ -15,13 +15,41 @@
 <body>
   <main class="wrap">
     <img src="img/example.jpg" title="添付画像の注意点" class="guide-img">
+    
     <h1>リザルト画像の送信</h1>
+    <div class="info-card">
+      <p class="info-title">📸 送信のヒント</p>
+      <ul class="info-list">
+        <li>1回で<strong>最大10枚</strong>まで送れるよ（何枚でも大歓迎！）</li>
+        <li>ゲーム画面全体でもOK！リザルトが見切れないように注意してね。</li>
+        <li>チーム別で並び替えた状態だと、登録がとってもスムーズになるﾆｮ！</li>
+      </ul>
+    </div>
 
     <section class="card">
       <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="画像を追加">
         ここに画像をドロップ、またはクリックして選択
         <input id="filePicker" type="file" accept="image/*" multiple hidden>
       </div>
+
+      <details class="guide-accordion">
+        <summary>🕒 日時の入力はどうすればいい？</summary>
+        <div class="guide-content">
+          <div class="pattern">
+            <span class="tag tag-blue">入力不要</span>
+            <p>ファイル名が<strong>「2026-1-28...」</strong>など日時になっている場合</p>
+          </div>
+          <div class="pattern">
+            <span class="tag tag-pink">日付のみ</span>
+            <p>画像内にLT(日本時間)が写っている場合（例：0128、1/28など）</p>
+          </div>
+          <div class="pattern">
+            <span class="tag tag-gray">日付＋時刻</span>
+            <p>トリミング済みやLT不明の場合（例：0128 2230、1/28 22:30頃など）</p>
+          </div>
+          <p class="guide-footer">※詳細に書くほど、戦績がより精密に集計されるよ！</p>
+        </div>
+      </details>
 
 
         <label class="label">補足情報（任意・共通）</label>
