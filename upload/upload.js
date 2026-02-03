@@ -89,6 +89,19 @@ function addFiles(fileList){
   }
 
   render();
+
+  if (added > 0) {
+    //DOMのレンダリング完了を待つ
+    setTimeout(() => {
+      const rect = previews.getBoundingClientRect();
+      // プレビューエリアが画面内に完全に見えていない（下の方にある）場合のみスクロール
+      const isVisible = (rect.top >= 0 && rect.bottom <= window.innerHeight);
+
+      if (!isVisible) {
+        previews.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 50);
+  }
 }
 
 function removeItem(id){
