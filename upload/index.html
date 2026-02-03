@@ -18,12 +18,7 @@
         <input id="filePicker" type="file" accept="image/*" multiple hidden>
       </div>
 
-      <div class="row">
-        <label class="label" for="score">戦績（任意）</label>
-        <input id="score" type="text" placeholder="例: 10-2" />
-      </div>
 
-      <div class="row">
         <label class="label">補足情報（任意・共通）</label>
         <div class="commonGrid">
           <div class="commonItem">
@@ -34,6 +29,10 @@
             <label class="label" for="commonTime">時刻</label>
             <input id="commonTime" type="time" />
           </div>
+          <div class="commonItem commonStage">
+  <label class="label" for="commonStage">ステージ名</label>
+  <input id="commonStage" type="text" maxlength="60" placeholder="任意" />
+</div>
           <div class="commonItem commonNote">
             <label class="label" for="commonNote">メモ</label>
             <input id="commonNote" type="text" maxlength="200" placeholder="任意" />
