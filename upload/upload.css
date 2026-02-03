@@ -1,1 +1,48 @@
 
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  margin: 0;
+  padding: 24px;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.label {
+  display: block;
+  margin: 12px 0 6px;
+}
+
+input[type="file"], input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.msg {
+  margin-top: 10px;
+  min-height: 1.4em;
+}
+
+.preview img {
+  display: none;
+  margin-top: 12px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
