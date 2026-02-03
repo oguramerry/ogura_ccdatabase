@@ -133,7 +133,7 @@ button{ padding:10px 14px; cursor:pointer; }
 }
 
 .guide-img {
-  width: 60%;        /* 幅を60%に */
+  width: 80%;        /* 幅を60%に */
   height: auto;      /* 高さは比率を維持して自動 */
   display: block;    /* ブロック要素として扱う（中央寄せのため） */
   margin: 0 auto 20px; /* 上0、左右自動（中央寄せ）、下20pxの余白 */
