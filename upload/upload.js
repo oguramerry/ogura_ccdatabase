@@ -9,16 +9,25 @@ const msg = document.getElementById("msg");
 const progress = document.getElementById("progress");
 const scoreInput = document.getElementById("score");
 
-const MAX_FILES = 10;           // 1回で選べる枚数
-const MAX_SIZE_MB = 8;          // 1枚あたり（base64化で増えるので様子見推奨）
-const MAX_TOTAL_MB = 30;        // 合計（安全側）
+const commonDateEl = document.getElementById("commonDate");
+const commonTimeEl = document.getElementById("commonTime");
+const commonNoteEl = document.getElementById("commonNote");
+const copyCommonBtn = document.getElementById("copyCommon");
 
-let items = []; // { id, file, url, status: 'ready'|'uploading'|'done'|'error', error? }
+const MAX_FILES = 10;
+const MAX_SIZE_MB = 8;
+const MAX_TOTAL_MB = 30;
+
+let submissionId = "";
+let items = []; // { id, file, url, status, error?, perDate, perTime, perNote }
 
 function setMsg(t){ msg.textContent = t || ""; }
 function setProgress(t){ progress.textContent = t || ""; }
-
 function bytesToMB(b){ return b / 1024 / 1024; }
+
+function makeSubmissionId(){
+  return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
 
 function fileToBase64(file) {
   return new Promise((resolve, reject) => {
@@ -35,10 +44,10 @@ function addFiles(fileList){
 
   const currentTotal = items.reduce((s, it) => s + it.file.size, 0);
   let added = 0;
+  let runningTotal = currentTotal;
 
   for (const f of files){
     if (!f.type.startsWith("image/")) continue;
-
     if (items.length >= MAX_FILES) break;
 
     if (bytesToMB(f.size) > MAX_SIZE_MB) {
@@ -46,15 +55,17 @@ function addFiles(fileList){
       continue;
     }
 
-    const newTotal = currentTotal + items.reduce((s, it) => s + it.file.size, 0) + f.size;
+    const newTotal = runningTotal + f.size;
     if (bytesToMB(newTotal) > MAX_TOTAL_MB) {
       setMsg(`合計サイズが大きいかも(´;ω;｀)（合計上限 ${MAX_TOTAL_MB}mb）`);
       break;
     }
 
+    runningTotal = newTotal;
+
     const id = crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random();
     const url = URL.createObjectURL(f);
-    items.push({ id, file: f, url, status: "ready" });
+    items.push({ id, file: f, url, status: "ready", perDate: "", perTime: "", perNote: "" });
     added++;
   }
 
@@ -86,14 +97,20 @@ function clearAll(){
 function render(){
   previews.innerHTML = "";
 
-  if (items.length === 0){
+  const uploading = items.some(x => x.status === "uploading");
+  const hasItems = items.length > 0;
+
+  copyCommonBtn.disabled = !hasItems || uploading;
+
+  if (!hasItems){
     setProgress("");
+    sendBtn.disabled = true;
+    clearBtn.disabled = true;
     return;
   }
 
   const ready = items.filter(x => x.status === "ready").length;
   const done = items.filter(x => x.status === "done").length;
-  const uploading = items.some(x => x.status === "uploading");
   setProgress(`選択 ${items.length}枚 / 送信待ち ${ready} / 完了 ${done}`);
 
   for (const it of items){
@@ -115,9 +132,58 @@ function render(){
     btn.disabled = it.status === "uploading";
     btn.addEventListener("click", () => removeItem(it.id));
 
+    const extra = document.createElement("div");
+    extra.className = "extra";
+
+    const dWrap = document.createElement("div");
+    dWrap.className = "extraItem";
+    const dLabel = document.createElement("label");
+    dLabel.className = "label";
+    dLabel.textContent = "試合日（任意）";
+    const dInput = document.createElement("input");
+    dInput.type = "date";
+    dInput.value = it.perDate || "";
+    dInput.disabled = it.status === "uploading";
+    dInput.addEventListener("input", () => { it.perDate = dInput.value || ""; });
+    dWrap.appendChild(dLabel);
+    dWrap.appendChild(dInput);
+
+    const tWrap = document.createElement("div");
+    tWrap.className = "extraItem";
+    const tLabel = document.createElement("label");
+    tLabel.className = "label";
+    tLabel.textContent = "時刻（任意）";
+    const tInput = document.createElement("input");
+    tInput.type = "time";
+    tInput.value = it.perTime || "";
+    tInput.disabled = it.status === "uploading";
+    tInput.addEventListener("input", () => { it.perTime = tInput.value || ""; });
+    tWrap.appendChild(tLabel);
+    tWrap.appendChild(tInput);
+
+    const nWrap = document.createElement("div");
+    nWrap.className = "extraItem extraNote";
+    const nLabel = document.createElement("label");
+    nLabel.className = "label";
+    nLabel.textContent = "メモ（任意）";
+    const nInput = document.createElement("input");
+    nInput.type = "text";
+    nInput.maxLength = 200;
+    nInput.placeholder = "任意";
+    nInput.value = it.perNote || "";
+    nInput.disabled = it.status === "uploading";
+    nInput.addEventListener("input", () => { it.perNote = nInput.value || ""; });
+    nWrap.appendChild(nLabel);
+    nWrap.appendChild(nInput);
+
+    extra.appendChild(dWrap);
+    extra.appendChild(tWrap);
+    extra.appendChild(nWrap);
+
     div.appendChild(btn);
     div.appendChild(img);
     div.appendChild(meta);
+    div.appendChild(extra);
     previews.appendChild(div);
   }
 
@@ -125,7 +191,21 @@ function render(){
   clearBtn.disabled = uploading || items.length === 0;
 }
 
-async function uploadOne(it, score){
+function copyCommonToAll(){
+  const cd = commonDateEl.value || "";
+  const ct = commonTimeEl.value || "";
+  const cn = commonNoteEl.value || "";
+
+  for (const it of items){
+    it.perDate = cd;
+    it.perTime = ct;
+    it.perNote = cn;
+  }
+  setMsg("共通入力を全ファイル欄にコピーしたよ");
+  render();
+}
+
+async function uploadOne(it, index, score){
   it.status = "uploading";
   it.error = "";
   render();
@@ -136,10 +216,21 @@ async function uploadOne(it, score){
     method: "POST",
     headers: { "Content-Type": "text/plain;charset=utf-8" },
     body: JSON.stringify({
+      submissionId,
+      index,
+
       filename: it.file.name,
       mimeType: it.file.type,
       dataUrl,
-      score
+      score,
+
+      commonDate: commonDateEl.value || "",
+      commonTime: commonTimeEl.value || "",
+      commonNote: commonNoteEl.value || "",
+
+      perFileDate: it.perDate || "",
+      perFileTime: it.perTime || "",
+      perFileNote: it.perNote || ""
     })
   });
 
@@ -159,9 +250,12 @@ async function uploadAll(){
     return;
   }
 
+  submissionId = makeSubmissionId();
+
   setMsg("送信中…");
   sendBtn.disabled = true;
   clearBtn.disabled = true;
+  copyCommonBtn.disabled = true;
 
   const score = scoreInput.value || "";
 
@@ -171,7 +265,7 @@ async function uploadAll(){
     setProgress(`送信中 ${i+1}/${queue.length}`);
 
     try {
-      await uploadOne(it, score);
+      await uploadOne(it, items.indexOf(it), score);
       it.status = "done";
       okCount++;
     } catch (e){
@@ -192,6 +286,7 @@ async function uploadAll(){
 
   sendBtn.disabled = items.every(x => x.status !== "ready");
   clearBtn.disabled = false;
+  copyCommonBtn.disabled = items.length === 0 || items.some(x => x.status === "uploading");
 }
 
 dropzone.addEventListener("click", () => filePicker.click());
@@ -219,5 +314,6 @@ dropzone.addEventListener("drop", (e) => {
 
 sendBtn.addEventListener("click", uploadAll);
 clearBtn.addEventListener("click", clearAll);
+copyCommonBtn.addEventListener("click", copyCommonToAll);
 
 render();
