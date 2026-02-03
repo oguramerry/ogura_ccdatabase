@@ -404,3 +404,21 @@ function initCommonStage(){
 initCommonStage();
 
 render();
+
+// ★画像の拡大表示ロジック
+const guideImg = document.querySelector(".guide-img");
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+
+if (guideImg && modal && modalImg) {
+  // 画像クリックでモーダルを開く
+  guideImg.addEventListener("click", () => {
+    modalImg.src = guideImg.src; // 元画像のURLをコピー
+    modal.classList.add("is-open");
+  });
+
+  // モーダルクリックで閉じる
+  modal.addEventListener("click", () => {
+    modal.classList.remove("is-open");
+  });
+}
