@@ -53,8 +53,8 @@ function initMenu() {
     <nav id="sideMenu" class="side-menu">
       <ul>
         <li><a href="${base}index.html">・TOP</a></li>
-        <li><a href="${base}dashboard/index.html">・戦場レポート</a></li>
-        <li><a href="${base}global/index.html">・こんくりラボ</a></li>
+        <li><a href="${base}global/index.html">・戦場レポート</a></li>
+        <li><a href="${base}dashboard/index.html">・こんくりラボ</a></li>
         <li><a href="${base}upload/index.html">・リザルト送信BOX</a></li>
       </ul>
     </nav>
