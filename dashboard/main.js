@@ -1042,18 +1042,22 @@ function renderMatchDetail() {
 
     // ジョブアイコンパス
     const jobIconPath = `../images/JOB/${p.job}.png`; 
+    tr.innerHTML = `
+      <td class="${nameClass}">${star}</td>
+      <td>
+        <img src="${jobIconPath}" alt="${p.job}" class="result-job-icon" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span style="display:none; font-size:10px;">${p.job}</span>
+      </td>
 
-  tr.innerHTML = `
-    <td class="${nameClass}">${star}</td>
-    
-    <td>
-      <img src="${jobIconPath}" alt="${p.job}" class="result-job-icon" 
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-      <span style="display:none; font-size:10px;">${p.job}</span>
-    </td>
-    <td class="${nameClass}" style="text-align:left;">${formatName(p.name)}</td>
-    <td class="cell-world" style="font-size: 0.9em; color: #666;">${p.world || "-"}</td>
-    <td class="cell-rank">${p.rank}</td>
+      <td class="${nameClass} clickable-name" 
+          data-name="${p.name}" 
+          style="text-align:left; cursor:pointer;" 
+          title="このユーザーを検索">
+          ${formatName(p.name)}
+      </td>
+      <td class="cell-world" style="font-size: 0.9em; color: #666;">${p.world || "-"}</td>
+      <td class="cell-rank">${p.rank}</td>
       <td class="cell-num">${p.k}</td>
       <td class="cell-num">${p.d}</td>
       <td class="cell-num">${p.a}</td>
