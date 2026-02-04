@@ -278,7 +278,8 @@ tabs.addEventListener("click", (e) => {
           time: p.time,
           job: p.job || p.Job || "",
           stage: p.stage || p.Stage || "",
-          date: data.date
+          date: data.date,
+          matchId: p.RecordID || p.matchId || p.id
         });
       });
     }
