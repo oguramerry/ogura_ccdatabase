@@ -910,6 +910,7 @@ window.handleMatchDetailJsonp = (data) => {
 // 3. 描画処理
 function renderMatchDetail() {
   const players = [...currentMatchPlayers]; // 配列をコピーして操作
+  console.log("▼データの確認:", players[0]);
     players.forEach((p, i) => { p.__idx = i; });
 
   const tbody = document.getElementById("resultListBody");
