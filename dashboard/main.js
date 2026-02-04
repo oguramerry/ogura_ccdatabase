@@ -341,9 +341,49 @@ tabs.addEventListener("click", (e) => {
     fetchAvailableDates(currentUserForApi);
     fetchMatchHistory(currentUserForApi, currentDate);
   });
-});
+  // --- モーダルのイベント（ソート＆クローズ）をまとめて初期化（イベント委譲） ---
+  const resultModal = document.getElementById("resultModal");
 
-// --- 以下、関数定義 ---
+  const closeModal = () => {
+    const modal = document.getElementById("resultModal");
+    if (modal) modal.classList.remove("active");
+  };
+
+  if (resultModal) {
+    resultModal.addEventListener("click", (e) => {
+      // 1) ×ボタンで閉じる
+      const closeBtn = e.target.closest("#closeModalBtn");
+      if (closeBtn) {
+        closeModal();
+        return;
+      }
+
+      // 2) 外側（オーバーレイ直押し）で閉じる
+      if (e.target === resultModal) {
+        closeModal();
+        return;
+      }
+
+      // 3) ソート（th-sortable 押下）
+      const th = e.target.closest(".th-sortable");
+      if (th) {
+        const key = th.dataset.key;
+
+        if (currentSortState.key === key) {
+          currentSortState.dir = (currentSortState.dir === "desc") ? "asc" : "desc";
+        } else {
+          currentSortState.key = key;
+          currentSortState.dir = "desc";
+        }
+
+        renderMatchDetail();
+        return;
+      }
+    });
+  }
+
+  
+});
 
 // --- マップスケジュール計算 ---
 function getMapSchedule() {
@@ -990,45 +1030,4 @@ function renderMatchDetail() {
   });
 }
 
-// 4. ソート機能イベントリスナー
-document.querySelectorAll(".th-sortable").forEach(th => {
-  th.addEventListener("click", () => {
-    const key = th.dataset.key; // HTMLのdata-key="damage"などを取得
-    
-    // 同じキーなら昇順・降順を切り替え、違うキーなら降順(desc)から開始
-    if (currentSortState.key === key) {
-      currentSortState.dir = (currentSortState.dir === 'desc') ? 'asc' : 'desc';
-    } else {
-      currentSortState.key = key;
-      currentSortState.dir = 'desc'; // 数値は基本的に大きい方が偉いのでdesc
-    }
-    
-    // 再描画
-    renderMatchDetail();
-  });
-});
-
-// 5. モーダルを閉じる処理（バツボタン & 背景クリック）
-const closeModal = () => {
-  const modal = document.getElementById("resultModal");
-  if (modal) modal.classList.remove("active");
-};
-
-// バツボタン
-const closeBtn = document.getElementById("closeModalBtn");
-if (closeBtn) {
-  closeBtn.addEventListener("click", closeModal);
-}
-
-// 画面外（背景）クリック
-const modalOverlay = document.getElementById("resultModal");
-if (modalOverlay) {
-  modalOverlay.addEventListener("click", (e) => {
-    // クリックされたのが「modal-content-card」の中身ではなく、
-    // 外側の「overlay」そのものである場合のみ閉じる
-    if (e.target === modalOverlay) {
-      closeModal();
-    }
-  });
-}
 
