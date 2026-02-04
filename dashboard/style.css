@@ -1139,3 +1139,9 @@ body {
 
 /* ランク用 */
 .cell-rank { font-size: 10px; color: #94a3b8; }
+
+.clickable-name:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* 薄いグレー */
+  text-decoration: underline; /* 下線 */
+  color: #555; 
+}
