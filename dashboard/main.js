@@ -820,19 +820,24 @@ function drawXAxisLabels(chart) {
   ctx.restore();
 }
 
-
 // --- リザルト詳細モーダル関連 ---
 
-let currentMatchPlayers = []; // ソート用に保持
+let currentMatchPlayers = []; // データ保持用
+let currentSortState = { key: 'default', dir: 'desc' }; // ソート状態保持
 
 // 1. 詳細データの取得とモーダルオープン
 function openMatchDetail(matchId) {
-  // ローディング表示（簡易的）
+  // ソート状態をリセット
+  currentSortState = { key: 'default', dir: 'desc' };
+
+  // ローディング表示
   const tbody = document.getElementById("resultListBody");
   if(tbody) tbody.innerHTML = '<tr><td colspan="11" style="text-align:center; padding:20px;">読み込み中...</td></tr>';
   
   const modal = document.getElementById("resultModal");
-  modal.classList.add("active");
+  if (modal) {
+    modal.classList.add("active");
+  }
 
   // GASへリクエスト
   const script = document.createElement("script");
@@ -847,26 +852,56 @@ window.handleMatchDetailJsonp = (data) => {
     return;
   }
   currentMatchPlayers = data.players; // データを保存
-  renderMatchDetail(currentMatchPlayers); // 描画
+  renderMatchDetail(); // 描画実行
 };
 
-// 3. 描画処理（ソート対応）
-function renderMatchDetail(players) {
+// 3. 描画処理
+function renderMatchDetail() {
+  const players = [...currentMatchPlayers]; // 配列をコピーして操作
   const tbody = document.getElementById("resultListBody");
   const headerContainer = document.getElementById("modalHeader");
   tbody.innerHTML = "";
 
   if (players.length === 0) return;
 
-  // --- ヘッダー情報の生成（1人目のデータを使用） ---
-  const meta = players[0];
-  const isWin = meta.winLoss === "勝利"; // 自分の視点での勝敗
+  // --- A. 基本情報の特定 (自分基準) ---
+  // リストの中から自分(inputuser)を探す
+  const selfObj = players.find(p => p.name === currentUserForApi);
+  // いなければリストの先頭(p[0])を基準にする保険処理
+  const referencePlayer = selfObj || players[0];
+
+  // 勝敗判定：基準になったプレイヤーの winLoss が「勝利」かどうか
+  // ※スプシのデータが「自分の勝敗」を正しく持っている前提
+  const isWin = (referencePlayer.winLoss === "勝利" || referencePlayer.winLoss === "Win");
+  
   const resultText = isWin ? "VICTORY" : "DEFEAT";
   const resultColorClass = isWin ? "text-win-color" : "text-loss-color";
   
-  // 試合時間の整形 (秒 -> mm:ss)
+  // どのサイドが勝ったチームなのかを特定（★をつけるため）
+  // 自分が勝っていれば自分のサイドが勝ち、負けていれば逆サイドが勝ち
+  let winningSide = "";
+  if (isWin) {
+    winningSide = referencePlayer.side;
+  } else {
+    winningSide = (referencePlayer.side === "My Team") ? "Enemy" : "My Team";
+  }
+
+  // --- B. ヘッダー情報の生成 (JST変換対応) ---
+  const meta = players[0]; // 日時やステージは全員共通なので先頭から取得
+
+  // 日付のJST変換 (ISO文字列 -> JST表示)
+  const formatDateJST = (isoStr) => {
+    if (!isoStr) return "-";
+    const d = new Date(isoStr);
+    return d.toLocaleString("ja-JP", {
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit'
+    });
+  };
+
+  // 経過時間の整形 (秒 -> mm:ss)
   const formatDuration = (sec) => {
-    if(!sec) return "-";
+    if(!sec && sec !== 0) return "-";
     const m = Math.floor(sec / 60);
     const s = String(sec % 60).padStart(2, '0');
     return `${m}:${s}`;
@@ -878,7 +913,7 @@ function renderMatchDetail(players) {
       <div class="result-meta">
         <span class="stage-name">${meta.stage}</span>
         <span class="separator"> | </span>
-        <span class="match-date">${formatDateOnly(meta.date)}</span> 
+        <span class="match-date">${formatDateJST(meta.date)}</span> 
       </div>
     </div>
     <div class="header-right">
@@ -887,41 +922,64 @@ function renderMatchDetail(players) {
     </div>
   `;
 
-  const myTeamIsWin = (meta.winLoss === "勝利");
+  // --- C. プレイヤーリストの加工 ---
+  
+  // ソート処理
+  const key = currentSortState.key;
+  const dir = currentSortState.dir === 'asc' ? 1 : -1;
 
-  // プレイヤーごとに「この人は勝ったか？」フラグを付ける
-  const enrichedPlayers = players.map(p => {
-    let isWinner = false;
-    if (myTeamIsWin && p.side === "My Team") isWinner = true;
-    if (!myTeamIsWin && p.side === "Enemy") isWinner = true;
-    return { ...p, isWinner: isWinner };
+  players.sort((a, b) => {
+    // 1. デフォルト状態（key === 'default'）なら「勝利チーム優先」
+    if (key === 'default') {
+      const aIsWin = (a.side === winningSide);
+      const bIsWin = (b.side === winningSide);
+      if (aIsWin !== bIsWin) return aIsWin ? -1 : 1; // 勝者が上
+      return 0; // 同チーム内は元の順序（通常はロール順など）
+    }
+
+    // 2. 任意のカラムでソート（数値比較）
+    const valA = a[key] || 0;
+    const valB = b[key] || 0;
+    return (valA - valB) * dir;
   });
 
-  // ソート処理（デフォルトは 勝者優先 > 指定キー順）
-  enrichedPlayers.sort((a, b) => {
-    if (a.isWinner !== b.isWinner) return a.isWinner ? -1 : 1;
-    return 0; // その他の並びは維持
-  });
+  // --- D. テーブル行の生成 ---
+  
+  // 名前の整形（キャメルケースの区切りにスペース挿入）
+  const formatName = (str) => {
+    if (!str) return "";
+    // 小文字(a-z)の直後に大文字(A-Z)が来たら、間にスペースを入れる
+    return str.replace(/([a-z])([A-Z])/g, '$1 $2');
+  };
 
-  // 行の生成
-  enrichedPlayers.forEach(p => {
+  // 数値のカンマ区切り
+  const fmt = (n) => Number(n).toLocaleString();
+
+  players.forEach(p => {
     const tr = document.createElement("tr");
     
     // 自分ハイライト
-    if (p.name === currentUserForApi) { // currentUserForApiはmain.jsのグローバル変数
+    if (p.name === currentUserForApi) { 
       tr.classList.add("row-me");
     }
 
-    // 勝利チームかどうかで文字色を変える
-    const nameClass = p.isWinner ? "team-win-text" : "team-lose-text";
-    const star = p.isWinner ? "★ " : "";
+    // 勝者判定（行ごとの★と色付け用）
+    const isRowWinner = (p.side === winningSide);
+    const nameClass = isRowWinner ? "team-win-text" : "team-lose-text";
+    const star = isRowWinner ? "★ " : "";
 
-    // 数値のカンマ区切り
-    const fmt = (n) => Number(n).toLocaleString();
+    // ジョブアイコンパス
+    // 例: ../images/job/PCT.png
+    const jobIconPath = `../images/job/${p.job}.png`; 
 
     tr.innerHTML = `
       <td class="${nameClass}">${star}</td>
-      <td><span class="job-label">${p.job}</span></td> <td class="${nameClass}">${p.name}</td>
+      <td>
+        <img src="${jobIconPath}" alt="${p.job}" class="result-job-icon" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span style="display:none; font-size:10px;">${p.job}</span>
+      </td>
+      <td class="${nameClass}" style="text-align:left;">${formatName(p.name)}</td>
       <td class="cell-rank">${p.rank}</td>
       <td class="cell-num">${p.k}</td>
       <td class="cell-num">${p.d}</td>
@@ -935,23 +993,52 @@ function renderMatchDetail(players) {
   });
 }
 
-// 4. ソート機能（ヘッダークリック）
+// 4. ソート機能イベントリスナー
 document.querySelectorAll(".th-sortable").forEach(th => {
   th.addEventListener("click", () => {
-    const key = th.dataset.key;
-    if (!currentMatchPlayers.length) return;
+    const key = th.dataset.key; // HTMLのdata-key="damage"などを取得
     
-    alert("ソート機能は現在調整中です！（" + key + "順）");
+    // 同じキーなら昇順・降順を切り替え、違うキーなら降順(desc)から開始
+    if (currentSortState.key === key) {
+      currentSortState.dir = (currentSortState.dir === 'desc') ? 'asc' : 'desc';
+    } else {
+      currentSortState.key = key;
+      currentSortState.dir = 'desc'; // 数値は基本的に大きい方が偉いのでdesc
+    }
+    
+    // 再描画
+    renderMatchDetail();
   });
 });
 
-// 閉じるボタン
-document.getElementById("closeModalBtn")?.addEventListener("click", () => {
-  document.getElementById("resultModal").classList.remove("active");
-});
+// 5. モーダルを閉じる処理（バツボタン & 背景クリック）
+const closeModal = () => {
+  const modal = document.getElementById("resultModal");
+  if (modal) modal.classList.remove("active");
+};
 
-// 日付整形ヘルパー (YYYY-MM-DD HH:mm 等から必要な部分だけ)
+// バツボタン
+const closeBtn = document.getElementById("closeModalBtn"); // HTML側のIDと一致させる
+if (closeBtn) {
+  closeBtn.addEventListener("click", closeModal);
+}
+
+// 画面外（背景）クリック
+const modalOverlay = document.getElementById("resultModal");
+if (modalOverlay) {
+  modalOverlay.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) {
+      closeModal();
+    }
+  });
+}
+
+// 日付整形ヘルパー 
 function formatDateOnly(dateStr) {
-  // 必要に応じて実装
-  return dateStr; 
+  if (!dateStr) return "-";
+  const d = new Date(dateStr);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}/${m}/${day}`;
 }
