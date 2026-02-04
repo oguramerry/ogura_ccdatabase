@@ -205,9 +205,7 @@ window.WeatherForecast = {
       { lv: 3, f: m => isStageMatch(m) },
       { lv: 4, f: m => getSlot(m.time) === t },
       { lv: 5, f: m => getMatchWDay(m) === targetW },
-      // ★修正：Level 6 (全体データ) を削除
-      // ここを削除することで、特定の条件に合致するデータがない場合は
-      // 素直に「データなし(Debut)」として扱われるようになる。
+      
     ];
 
     for (let layer of levels) {
