@@ -910,7 +910,7 @@ window.handleMatchDetailJsonp = (data) => {
 // 3. 描画処理
 function renderMatchDetail() {
   const players = [...currentMatchPlayers]; // 配列をコピーして操作
-  console.log("▼データの確認:", players[0]);
+ 
     players.forEach((p, i) => { p.__idx = i; });
 
   const tbody = document.getElementById("resultListBody");
@@ -1052,6 +1052,7 @@ function renderMatchDetail() {
       <span style="display:none; font-size:10px;">${p.job}</span>
     </td>
     <td class="${nameClass}" style="text-align:left;">${formatName(p.name)}</td>
+    <td class="cell-world" style="font-size: 0.9em; color: #666;">${p.world || "-"}</td>
     <td class="cell-rank">${p.rank}</td>
       <td class="cell-num">${p.k}</td>
       <td class="cell-num">${p.d}</td>
