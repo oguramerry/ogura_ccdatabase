@@ -18,6 +18,7 @@
   --pastel-loss-text: #d68fa8;  /* 負け文字色 */
   --pastel-draw-bg: #f1f5f9;    /* 引き分け背景 */
   --pastel-draw-text: #94a3b8;  /* 引き分け文字色 */
+
 }
 
 /* 全体の基本設定 */
@@ -624,39 +625,53 @@ body {
 }
 
 /* --- ステージ別・ボタンの色設定（目印！） --- */
-
-/* パライストラ*/
-.stage-ribbon-btn.btn-Palaistra.active {
-  background-color:#A2C8F3 ; 
-
+/* 1. 【定義】色を変えたい時はここだけをいじる */
+:root {
+  --color-palaistra: #A2C8F3;
+  --color-volcanic: #ec3868;
+  --color-clockwork: #ad68e9;
+  --color-bayside: #1999c7;
+  --color-cloudnine: #61e439;
+  --color-redsands: #dac458;
 }
 
-/* ヴォルカニック・ハート */
-.stage-ribbon-btn.btn-VolcanicHeart.active {
-  background-color:#ec3868 ; 
- 
-}
+/* 2. 【一括設定】ここはもう触らなくてOK。自動で連動 */
 
-/* 東方絡繰御殿*/
-.stage-ribbon-btn.btn-ClockworkCastletown.active {
-  background-color:#ad68e9;
-  
-}
+/* パライストラ */
+.stage-ribbon-btn.btn-Palaistra.active,
+.st-bar-Palaistra { --current-stage-color: var(--color-palaistra); }
 
-/* ベイサイド・バトルグラウンド */
-.stage-ribbon-btn.btn-BaysideBattleground.active {
-  background-color:#1999c7 ;
-}
+/* ヴォルカニック */
+.stage-ribbon-btn.btn-VolcanicHeart.active,
+.st-bar-VolcanicHeart { --current-stage-color: var(--color-volcanic); }
+
+/* 東方絡繰御殿 */
+.stage-ribbon-btn.btn-ClockworkCastletown.active,
+.st-bar-ClockworkCastletown { --current-stage-color: var(--color-clockwork); }
+
+/* ベイサイド */
+.stage-ribbon-btn.btn-BaysideBattleground.active,
+.st-bar-BaysideBattleground { --current-stage-color: var(--color-bayside); }
 
 /* クラウドナイン */
-.stage-ribbon-btn.btn-CloudNine.active {
-  background-color: #61e439;
+.stage-ribbon-btn.btn-CloudNine.active,
+.st-bar-CloudNine { --current-stage-color: var(--color-cloudnine); }
+
+/* レッドサンズ */
+.stage-ribbon-btn.btn-RedSands.active,
+.st-bar-RedSands { --current-stage-color: var(--color-redsands); }
+
+/* 3. 【共通ルール】色の塗り方を1回だけ書く */
+.stage-ribbon-btn.active {
+  background-color: var(--current-stage-color) !important;
+  border-color: var(--current-stage-color) !important;
+  color: #fff !important;
 }
 
-/* レッド・サンズ */
-.stage-ribbon-btn.btn-RedSands.active {
-  background-color:#dac458;
+.forecast-cell[class*="st-bar-"] {
+  border-left: 4px solid var(--current-stage-color) !important;
 }
+
 
 /* ジョブステージタブ　ホバー演出 */
 
@@ -720,7 +735,7 @@ body {
 
 .summary-card {
   flex: 1;
-  background: #f8fafc; /* ベース背景色に合わせるか、白にするかお好みで */
+  background: #f8fafc; 
   border: 1px solid var(--border-color); /* 既存のボーダー色変数を使用 */
   border-radius: 12px;
   padding: 12px;
@@ -915,13 +930,6 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-/* ステージ別の左帯（既存色を流用） */
-.st-bar-Palaistra { border-left: 4px solid #8297B2 !important; }
-.st-bar-VolcanicHeart { border-left: 4px solid #e57373 !important; }
-.st-bar-ClockworkCastletown { border-left: 4px solid #dda0dd !important; }
-.st-bar-BaysideBattleground { border-left: 4px solid #7fffd4 !important; }
-.st-bar-CloudNine { border-left: 4px solid #64b5f6 !important; }
-.st-bar-RedSands { border-left: 4px solid #deb887 !important; }
 
 /* ステージ略称 */
 .st-abbr {
