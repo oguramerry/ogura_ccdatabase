@@ -871,14 +871,12 @@ function renderMatchDetail() {
   const referencePlayer = selfObj || players[0];
 
   // 勝敗判定：基準になったプレイヤーの winLoss が「勝利」かどうか
-  // ※スプシのデータが「自分の勝敗」を正しく持っている前提
   const isWin = (referencePlayer.winLoss === "勝利" || referencePlayer.winLoss === "Win");
   
   const resultText = isWin ? "VICTORY" : "DEFEAT";
   const resultColorClass = isWin ? "text-win-color" : "text-loss-color";
   
   // どのサイドが勝ったチームなのかを特定（★をつけるため）
-  // 自分が勝っていれば自分のサイドが勝ち、負けていれば逆サイドが勝ち
   let winningSide = "";
   if (isWin) {
     winningSide = referencePlayer.side;
@@ -969,7 +967,6 @@ function renderMatchDetail() {
     const star = isRowWinner ? "★ " : "";
 
     // ジョブアイコンパス
-    // 例: ../images/job/PCT.png
     const jobIconPath = `../images/job/${p.job}.png`; 
 
     tr.innerHTML = `
@@ -1018,7 +1015,7 @@ const closeModal = () => {
 };
 
 // バツボタン
-const closeBtn = document.getElementById("closeModalBtn"); // HTML側のIDと一致させる
+const closeBtn = document.getElementById("closeModalBtn");
 if (closeBtn) {
   closeBtn.addEventListener("click", closeModal);
 }
@@ -1027,18 +1024,11 @@ if (closeBtn) {
 const modalOverlay = document.getElementById("resultModal");
 if (modalOverlay) {
   modalOverlay.addEventListener("click", (e) => {
+    // クリックされたのが「modal-content-card」の中身ではなく、
+    // 外側の「overlay」そのものである場合のみ閉じる
     if (e.target === modalOverlay) {
       closeModal();
     }
   });
 }
 
-// 日付整形ヘルパー 
-function formatDateOnly(dateStr) {
-  if (!dateStr) return "-";
-  const d = new Date(dateStr);
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}/${m}/${day}`;
-}
