@@ -42,7 +42,6 @@ function formatHourRange(hour) {
   return `${start}～${end}`;
 }
 
-// ui-parts.js の一番下に追加
 
 // ロール定義
 const JOB_ROLES = {
