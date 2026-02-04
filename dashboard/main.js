@@ -434,6 +434,21 @@ function ensureEmptyChart() {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+
+      onClick: (e, activeElements) => {
+    if (activeElements.length > 0) {
+      const index = activeElements[0].index;
+      const dataPoint = matchChartInstance.data.datasets[0].data[index];
+      
+      // データポイントに matchId が含まれているか確認
+      if (dataPoint && dataPoint.matchId) {
+        openMatchDetail(dataPoint.matchId);
+      } else {
+        console.warn("MatchIDが見つかりません");
+      }
+    }
+  },
+      
       scales: {
         x: { type: "linear", ticks: { stepSize: 1 } },
         y: {
@@ -802,4 +817,140 @@ function drawXAxisLabels(chart) {
   }
 
   ctx.restore();
+}
+
+
+// --- リザルト詳細モーダル関連 ---
+
+let currentMatchPlayers = []; // ソート用に保持
+
+// 1. 詳細データの取得とモーダルオープン
+function openMatchDetail(matchId) {
+  // ローディング表示（簡易的）
+  const tbody = document.getElementById("resultListBody");
+  if(tbody) tbody.innerHTML = '<tr><td colspan="11" style="text-align:center; padding:20px;">読み込み中...</td></tr>';
+  
+  const modal = document.getElementById("resultModal");
+  modal.classList.add("active");
+
+  // GASへリクエスト
+  const script = document.createElement("script");
+  script.src = `${GAS_BASE}?action=matchdetail&id=${encodeURIComponent(matchId)}&callback=handleMatchDetailJsonp&_=${Date.now()}`;
+  document.body.appendChild(script);
+}
+
+// 2. GASからのコールバック受取
+window.handleMatchDetailJsonp = (data) => {
+  if (!data || !data.players) {
+    alert("データの取得に失敗しました");
+    return;
+  }
+  currentMatchPlayers = data.players; // データを保存
+  renderMatchDetail(currentMatchPlayers); // 描画
+};
+
+// 3. 描画処理（ソート対応）
+function renderMatchDetail(players) {
+  const tbody = document.getElementById("resultListBody");
+  const headerContainer = document.getElementById("modalHeader");
+  tbody.innerHTML = "";
+
+  if (players.length === 0) return;
+
+  // --- ヘッダー情報の生成（1人目のデータを使用） ---
+  const meta = players[0];
+  const isWin = meta.winLoss === "勝利"; // 自分の視点での勝敗
+  const resultText = isWin ? "VICTORY" : "DEFEAT";
+  const resultColorClass = isWin ? "text-win-color" : "text-loss-color";
+  
+  // 試合時間の整形 (秒 -> mm:ss)
+  const formatDuration = (sec) => {
+    if(!sec) return "-";
+    const m = Math.floor(sec / 60);
+    const s = String(sec % 60).padStart(2, '0');
+    return `${m}:${s}`;
+  };
+
+  headerContainer.innerHTML = `
+    <div class="header-left">
+      <div class="result-status ${resultColorClass}">${resultText}</div>
+      <div class="result-meta">
+        <span class="stage-name">${meta.stage}</span>
+        <span class="separator"> | </span>
+        <span class="match-date">${formatDateOnly(meta.date)}</span> 
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="duration-label">経過時間</div>
+      <div class="duration-value">${formatDuration(meta.duration)}</div>
+    </div>
+  `;
+
+  const myTeamIsWin = (meta.winLoss === "勝利");
+
+  // プレイヤーごとに「この人は勝ったか？」フラグを付ける
+  const enrichedPlayers = players.map(p => {
+    let isWinner = false;
+    if (myTeamIsWin && p.side === "My Team") isWinner = true;
+    if (!myTeamIsWin && p.side === "Enemy") isWinner = true;
+    return { ...p, isWinner: isWinner };
+  });
+
+  // ソート処理（デフォルトは 勝者優先 > 指定キー順）
+  enrichedPlayers.sort((a, b) => {
+    if (a.isWinner !== b.isWinner) return a.isWinner ? -1 : 1;
+    return 0; // その他の並びは維持
+  });
+
+  // 行の生成
+  enrichedPlayers.forEach(p => {
+    const tr = document.createElement("tr");
+    
+    // 自分ハイライト
+    if (p.name === currentUserForApi) { // currentUserForApiはmain.jsのグローバル変数
+      tr.classList.add("row-me");
+    }
+
+    // 勝利チームかどうかで文字色を変える
+    const nameClass = p.isWinner ? "team-win-text" : "team-lose-text";
+    const star = p.isWinner ? "★ " : "";
+
+    // 数値のカンマ区切り
+    const fmt = (n) => Number(n).toLocaleString();
+
+    tr.innerHTML = `
+      <td class="${nameClass}">${star}</td>
+      <td><span class="job-label">${p.job}</span></td> <td class="${nameClass}">${p.name}</td>
+      <td class="cell-rank">${p.rank}</td>
+      <td class="cell-num">${p.k}</td>
+      <td class="cell-num">${p.d}</td>
+      <td class="cell-num">${p.a}</td>
+      <td class="cell-num">${fmt(p.damage)}</td>
+      <td class="cell-num">${fmt(p.taken)}</td>
+      <td class="cell-num">${fmt(p.heal)}</td>
+      <td class="cell-num">${formatDuration(p.time)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// 4. ソート機能（ヘッダークリック）
+document.querySelectorAll(".th-sortable").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.key;
+    if (!currentMatchPlayers.length) return;
+    
+    alert("ソート機能は現在調整中です！（" + key + "順）");
+  });
+});
+
+// 閉じるボタン
+document.getElementById("closeModalBtn")?.addEventListener("click", () => {
+  document.getElementById("resultModal").classList.remove("active");
+});
+
+// 日付整形ヘルパー (YYYY-MM-DD HH:mm 等から必要な部分だけ)
+function formatDateOnly(dateStr) {
+  // 必要に応じて実装
+  return dateStr; 
 }
