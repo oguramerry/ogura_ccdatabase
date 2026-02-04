@@ -4,9 +4,9 @@
 
 /* カラー変数 */
 :root {
-  --base-bg: #f8fafc;           /* 全体の背景（ごく薄いブルーグレー） */
+  --base-bg: #f8fafc;           /* 全体の背景 */
   --card-bg: #ffffff;           /* カードの背景 */
-  --border-color: #d1dce8;      /* 枠線の色（落ち着いたブルーグレー） */
+  --border-color: #d1dce8;      /* 枠線の色 */
   --text-main: #4a5568;         /* メインの文字色 */
   --text-sub: #94a3b8;          /* 補足の文字色 */
   --accent-blue-gray: #8297B2;  /* 曜日の背景色など */
