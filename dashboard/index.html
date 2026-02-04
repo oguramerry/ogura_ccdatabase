@@ -101,5 +101,36 @@
         <script src="tab-renderer.js?V=2"></script>
         <script src="forecast.js?V=2"></script>
         <script src="main.js?V=2"></script>
+
+  <!-- リザルトモーダル　-->
+  <div id="resultModal" class="modal-overlay">
+  <div class="modal-content-card">
+    <button id="closeModalBtn" class="modal-close-btn" type="button">×</button>
+    
+    <div id="modalHeader" class="modal-header-container">
+      </div>
+
+    <div class="result-table-wrapper">
+      <table class="result-table">
+        <thead>
+          <tr>
+            <th class="th-win"></th> <th class="th-job">Job</th>
+            <th class="th-name">Name</th>
+            <th class="th-rank">Rank</th>
+            <th class="th-sortable" data-key="k">K</th>
+            <th class="th-sortable" data-key="d">D</th>
+            <th class="th-sortable" data-key="a">A</th>
+            <th class="th-sortable" data-key="damage">与ダメ</th>
+            <th class="th-sortable" data-key="taken">被ダメ</th>
+            <th class="th-sortable" data-key="heal">ヒール</th>
+            <th class="th-sortable" data-key="time">移送</th>
+          </tr>
+        </thead>
+        <tbody id="resultListBody">
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
     </body>
 </html>
