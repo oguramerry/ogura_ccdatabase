@@ -364,6 +364,22 @@ tabs.addEventListener("click", (e) => {
         return;
       }
 
+      // 名前クリックで検索ボックスに入れてリロード
+      const nameCell = e.target.closest(".clickable-name");
+      if (nameCell) {
+        const rawName = nameCell.dataset.name; // data-nameに入れた元の名前を取得
+        if (rawName) {
+          const input = document.getElementById("userInput");
+          input.value = rawName; // 検索ボックスにセット
+          
+          // 入力イベントを人工的に起こして検索を開始させる
+          input.dispatchEvent(new Event('input')); 
+
+          closeModal(); // モーダルを閉じる
+        }
+        return;
+      }
+
       // 3) ソート（th-sortable 押下）
       const th = e.target.closest(".th-sortable");
       if (th) {
