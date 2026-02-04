@@ -967,7 +967,7 @@ function renderMatchDetail() {
     const star = isRowWinner ? "★ " : "";
 
     // ジョブアイコンパス
-    const jobIconPath = `../images/job/${p.job}.png`; 
+    const jobIconPath = `../images/JOB/${p.job}.png`; 
 
     tr.innerHTML = `
       <td class="${nameClass}">${star}</td>
