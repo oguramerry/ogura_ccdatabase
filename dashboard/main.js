@@ -873,7 +873,7 @@ function renderMatchDetail() {
   // 勝敗判定：基準になったプレイヤーの winLoss が「勝利」かどうか
   const isWin = (referencePlayer.winLoss === "勝利" || referencePlayer.winLoss === "Win");
   
-  const resultText = isWin ? "VICTORY" : "DEFEAT";
+  const resultText = isWin ? "Win" : "Lose";
   const resultColorClass = isWin ? "text-win-color" : "text-loss-color";
   
   // どのサイドが勝ったチームなのかを特定（★をつけるため）
