@@ -1036,6 +1036,8 @@ function renderMatchDetail() {
     const isRowWinner = (p.side === winningSide);
     const nameClass = isRowWinner ? "team-win-text" : "team-lose-text";
     const star = isRowWinner ? "★ " : "";
+    const teamMark = (p.side === "My Team") ? "MY" : "EN";
+
 
     // ジョブアイコンパス
     const jobIconPath = `../images/JOB/${p.job}.png`; 
