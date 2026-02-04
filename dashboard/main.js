@@ -1044,6 +1044,8 @@ function renderMatchDetail() {
 
     tr.innerHTML = `
       <td class="${nameClass}">${star}</td>
+            <td class="cell-team"></td>
+
       <td>
         <img src="${jobIconPath}" alt="${p.job}" class="result-job-icon" 
              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
