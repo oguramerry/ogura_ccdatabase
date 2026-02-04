@@ -369,6 +369,17 @@ tabs.addEventListener("click", (e) => {
       if (th) {
         const key = th.dataset.key;
 
+        // チーム並び替えは「勝者→My→Enemy」の3段階トグル
+        if (key === "team") {
+          if (typeof currentSortState.teamMode !== "number") currentSortState.teamMode = 0;
+          currentSortState.teamMode = (currentSortState.teamMode + 1) % 3; // 0/1/2
+          currentSortState.key = "team";
+          currentSortState.dir = "desc";
+          renderMatchDetail();
+          return;
+        }
+
+        // それ以外は今まで通り（数値ソート）
         if (currentSortState.key === key) {
           currentSortState.dir = (currentSortState.dir === "desc") ? "asc" : "desc";
         } else {
@@ -378,6 +389,7 @@ tabs.addEventListener("click", (e) => {
 
         renderMatchDetail();
         return;
+
       }
     });
   }
@@ -898,6 +910,8 @@ window.handleMatchDetailJsonp = (data) => {
 // 3. 描画処理
 function renderMatchDetail() {
   const players = [...currentMatchPlayers]; // 配列をコピーして操作
+    players.forEach((p, i) => { p.__idx = i; });
+
   const tbody = document.getElementById("resultListBody");
   const headerContainer = document.getElementById("modalHeader");
   tbody.innerHTML = "";
@@ -967,6 +981,23 @@ function renderMatchDetail() {
   const dir = currentSortState.dir === 'asc' ? 1 : -1;
 
   players.sort((a, b) => {
+        // 0. チーム並び替え（勝者→My→Enemy）
+    if (key === "team") {
+      const mode = (typeof currentSortState.teamMode === "number") ? currentSortState.teamMode : 0;
+
+      // mode: 0=勝者上 / 1=My Team上 / 2=Enemy上
+      const topSide = (mode === 0) ? winningSide : (mode === 1 ? "My Team" : "Enemy");
+
+      const aTop = (a.side === topSide);
+      const bTop = (b.side === topSide);
+      if (aTop !== bTop) return aTop ? -1 : 1;
+
+      // 同チーム内は元の順序を維持（安定化）
+      const ai = (typeof a.__idx === "number") ? a.__idx : 0;
+      const bi = (typeof b.__idx === "number") ? b.__idx : 0;
+      return ai - bi;
+    }
+
     // 1. デフォルト状態（key === 'default'）なら「勝利チーム優先」
     if (key === 'default') {
       const aIsWin = (a.side === winningSide);
