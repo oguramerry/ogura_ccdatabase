@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   input?.addEventListener("change", () => {
+    input.blur();
     if (!currentUserForApi) return;
 
     ensureEmptyChart();
