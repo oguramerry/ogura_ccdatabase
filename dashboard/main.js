@@ -99,6 +99,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const loader = document.getElementById("chartLoading");
     if (loader) loader.classList.add("active");
+
+    if (window.WeatherForecast) {
+      window.WeatherForecast.showLoading();
+    }
+    
     const old = document.getElementById("jsonpStats");
     if (old) old.remove();
     const s = document.createElement("script");
