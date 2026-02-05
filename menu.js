@@ -14,15 +14,13 @@ function initMenu() {
       display: flex; align-items: center; justify-content: center;
       z-index: 1000; box-shadow: 0 4px 0 var(--accent-blue); cursor: pointer; border: none;
     }
-    .menu-btn span, .menu-btn span::before, .menu-btn span::after {
-      display: block; width: 20px; height: 3px; background-color: white;
-      border-radius: 2px; position: absolute; transition: 0.3s;
+
+    .menu-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* 画像を枠内に収める */
+      pointer-events: none;
     }
-    .menu-btn span::before { content: ""; top: -6px; }
-    .menu-btn span::after { content: ""; top: 6px; }
-    .menu-btn.is-open span { background: transparent; }
-    .menu-btn.is-open span::before { transform: rotate(45deg); top: 0; }
-    .menu-btn.is-open span::after { transform: rotate(-45deg); top: 0; }
 
     .side-menu {
       position: fixed; top: 0; left: -260px; width: 250px; height: 100%;
@@ -47,8 +45,10 @@ function initMenu() {
   document.head.appendChild(style);
 
   // HTMLの注入
-  const menuHTML = `
-    <button id="menuBtn" class="menu-btn" aria-label="メニューを開く"><span></span></button>
+const menuHTML = `
+    <button id="menuBtn" class="menu-btn" aria-label="メニューを開く">
+      <img src="${base}images/shu_shima.png" alt="メニュー">
+    </button>
     <div id="overlay" class="overlay"></div>
     <nav id="sideMenu" class="side-menu">
       <ul>
