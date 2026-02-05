@@ -7,23 +7,28 @@ function initMenu() {
   const style = document.createElement('style');
   style.textContent = `
     .menu-btn {
-      position: fixed; top: 0px; left: 15px; width: 80px; height: 80px;
-      background-color: var(--main-blue); border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      z-index: 1000; box-shadow: 0 4px 0 var(--accent-blue); cursor: pointer; border: none;
-      padding: 0; /* 画像を端まで表示するために余白を0に */
-      overflow: hidden;
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 90px; /* ボタン全体のサイズをおっきくしたよ */
+      height: 90px;
+      background-color: var(--main-blue); 
+      border-radius: 0 0 24px 0; /* 左上を端にピタッとさせるために角にして、右下だけ丸くしたよ */
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      z-index: 1000; 
+      box-shadow: 0 4px 0 var(--accent-blue); 
+      cursor: pointer; 
+      border: none;
+      padding: 0;
     }
 
     .menu-btn img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* 画像をボタン内に収める */
+      width: 85%; /* 画像をボタンいっぱいに大きく表示するよ */
+      height: 85%;
+      object-fit: contain;
       pointer-events: none;
-    }
-
-    .menu-btn.is-open img {
-      opacity: 0.7; /* メニューが開いている時に少し薄くする */
     }
 
     .side-menu {
@@ -48,6 +53,7 @@ function initMenu() {
   `;
   document.head.appendChild(style);
 
+  // 余計なheaderタグを消して、ボタンだけに書き換えたよ
   const menuHTML = `
     <button id="menuBtn" class="menu-btn" aria-label="メニューを開く">
       <img src="${base}images/shu_shima.png" alt="メニュー">
