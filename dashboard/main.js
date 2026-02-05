@@ -608,15 +608,43 @@ function fetchAvailableDates(user) {
   document.body.appendChild(s);
 }
 
+let usersCacheAll = null;
+let usersCacheAt = 0;
+const USERS_CACHE_TTL_MS = 60 * 1000; // 60秒（新規追加もすぐ拾いたい前提）
+
 function fetchUsers(qText) {
-  const q = encodeURIComponent(String(qText || "").replace(/\s+/g, ""));
+  const raw = String(qText || "");
+  const normalized = raw.replace(/\s+/g, "");
+  const q = encodeURIComponent(normalized);
+
+  // 全件はブラウザでキャッシュして、同一セッションの体感を爆速にする
+  const now = Date.now();
+  const isAll = normalized.length === 0;
+
+  if (isAll && usersCacheAll && (now - usersCacheAt) < USERS_CACHE_TTL_MS) {
+    // 既存の描画ロジックをそのまま使うため、擬似的にコールバックを呼ぶ
+    window.handleUsersJsonp({ q: "", users: usersCacheAll });
+    return;
+  }
+
   const oldUsers = document.getElementById("jsonpUsers");
   if (oldUsers) oldUsers.remove();
+
   const su = document.createElement("script");
   su.id = "jsonpUsers";
-  su.src = `${GAS_BASE}?action=users&q=${q}&callback=handleUsersJsonp&_=${Date.now()}`;
+
+  // 全件の場合だけ、キャッシュに保存するためにコールバックを一段かませる
+  const cb = isAll ? "handleUsersJsonpAllCache" : "handleUsersJsonp";
+  su.src = `${GAS_BASE}?action=users&q=${q}&callback=${cb}&_=${Date.now()}`;
   document.body.appendChild(su);
 }
+
+// 全件用の受け口：キャッシュ保存してから既存コールバックへ流す
+window.handleUsersJsonpAllCache = (data) => {
+  usersCacheAll = Array.isArray(data?.users) ? data.users : [];
+  usersCacheAt = Date.now();
+  window.handleUsersJsonp(data);
+};
 
 function buildCalendar(year, month) {
   const cal = document.getElementById("calendar");
