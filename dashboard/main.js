@@ -438,12 +438,18 @@ window.handleAvailableDatesJsonp = (data) => {
           return;
         }
 
-        // それ以外は今まで通り（数値ソート）
-        if (currentSortState.key === key) {
+        // （数値ソート）
+if (currentSortState.key === key) {
           currentSortState.dir = (currentSortState.dir === "desc") ? "asc" : "desc";
         } else {
           currentSortState.key = key;
-          currentSortState.dir = "desc";
+
+          // 「被ダメ(taken)」のときだけascスタート
+          if (key === "taken") {
+            currentSortState.dir = "asc";
+          } else {
+            currentSortState.dir = "desc";
+          }
         }
 
         renderMatchDetail();
