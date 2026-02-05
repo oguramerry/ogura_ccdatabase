@@ -88,20 +88,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. 文字が入っている場合：0.3秒待ってから検索（タイマーを使用）
     inputTimer = setTimeout(() => {
       fetchUsers(user);
-      
-      ensureEmptyChart();
+    }, 300);
 
-      // 統計情報の取得（JSONP）
-      const old = document.getElementById("jsonpStats");
-      if (old) old.remove();
-      const s = document.createElement("script");
-      s.id = "jsonpStats";
-      s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
-      document.body.appendChild(s);
-
-      fetchAvailableDates(currentUserForApi);
-    }, 300); 
   });
+
+  input?.addEventListener("change", () => {
+    if (!currentUserForApi) return;
+    ensureEmptyChart();
+
+    // 統計情報の取得（JSONP）
+    const old = document.getElementById("jsonpStats");
+    if (old) old.remove();
+    const s = document.createElement("script");
+    s.id = "jsonpStats";
+    s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
+    document.body.appendChild(s);
+
+    // カレンダー用の取得（JSONP）
+    fetchAvailableDates(currentUserForApi);
+
+  });
+
 
   // --- クリアボタンクリック時の動作 ---
   clearBtn?.addEventListener("click", () => {
