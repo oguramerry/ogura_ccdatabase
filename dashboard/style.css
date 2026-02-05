@@ -1039,9 +1039,9 @@ body {
 .modal-content-card {
   background: #fff;
   width: 95%;
-  max-width: 900px; /* PCで見やすく */
+  max-width: 900px;
   border-radius: 24px;
-  padding: 24px;
+  padding: 44px 24px 24px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   position: relative;
   max-height: 90vh;
