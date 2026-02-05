@@ -651,7 +651,8 @@ function fetchUsers(qText) {
 
   // 全件の場合だけ、キャッシュに保存するためにコールバックを一段かませる
   const cb = isAll ? "handleUsersJsonpAllCache" : "handleUsersJsonp";
-  su.src = `${GAS_BASE}?action=users&q=${q}&callback=${cb}&_=${Date.now()}`;
+  const lim = isAll ? 20 : 50;
+  su.src = `${GAS_BASE}?action=users&limit=${lim}&q=${q}&callback=${cb}&_=${Date.now()}`;
   document.body.appendChild(su);
 }
 
