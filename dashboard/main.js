@@ -326,7 +326,14 @@ tabs.addEventListener("click", (e) => {
   // --- 初期化処理 ---
   updateCalendarDisplay();
   // fetchUsers("");
-  setTimeout(() => fetchUsers(""), 800);
+  setTimeout(() => {
+  // 先読み（候補を温める）
+  fetchUsers("");
+
+  // さらに保険：60秒後にもう一回だけ取り直して、新規追加も拾う
+  setTimeout(() => fetchUsers(""), 60 * 1000);
+}, 200);
+
 
 
   tabs?.querySelector('button[data-tab="main"]')?.classList.add("active");
