@@ -670,8 +670,7 @@ function fetchUsers(qText) {
   // 全件の場合だけ、キャッシュに保存するためにコールバックを一段かませる
   const cb = isAll ? "handleUsersJsonpAllCache" : "handleUsersJsonp";
 
-  // 検索文字があるなら 1000件 要求する
-  const lim = isAll ? 20 : 1000;
+  const lim = 2000;
   
   su.src = `${GAS_BASE}?action=users&limit=${lim}&q=${q}&callback=${cb}&_=${Date.now()}`;
   document.body.appendChild(su);
