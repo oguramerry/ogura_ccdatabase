@@ -96,6 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ensureEmptyChart();
 
+    const loader = document.getElementById("chartLoading");
+    if (loader) loader.classList.add("active");
     const old = document.getElementById("jsonpStats");
     if (old) old.remove();
     const s = document.createElement("script");
@@ -398,6 +400,7 @@ tabs.addEventListener("click", (e) => {
           
           // 入力イベントを人工的に起こして検索を開始させる
           input.dispatchEvent(new Event('input')); 
+          input.dispatchEvent(new Event('change'));
 
           closeModal(); // モーダルを閉じる
         }
