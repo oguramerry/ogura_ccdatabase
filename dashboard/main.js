@@ -91,21 +91,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 300);
   });
 
-  input?.addEventListener("keydown", (e) => {
-  if (e.key !== "Enter") return;
-  if (!currentUserForApi) return;
+  input?.addEventListener("change", () => {
+    if (!currentUserForApi) return;
 
-  ensureEmptyChart();
+    ensureEmptyChart();
 
-  const old = document.getElementById("jsonpStats");
-  if (old) old.remove();
-  const s = document.createElement("script");
-  s.id = "jsonpStats";
-  s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
-  document.body.appendChild(s);
+    const old = document.getElementById("jsonpStats");
+    if (old) old.remove();
+    const s = document.createElement("script");
+    s.id = "jsonpStats";
+    s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
+    document.body.appendChild(s);
 
-  fetchAvailableDates(currentUserForApi);
-});
+    fetchAvailableDates(currentUserForApi);
+  });
+
 
 
   // --- クリアボタンクリック時の動作 ---
