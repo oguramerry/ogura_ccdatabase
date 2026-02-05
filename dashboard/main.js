@@ -261,11 +261,13 @@ tabs.addEventListener("click", (e) => {
     if (!list) return;
     list.innerHTML = "";
     const users = data.users || [];
+    const fragment = document.createDocumentFragment();
     for (const u of users) {
       const opt = document.createElement("option");
       opt.value = formatCharacterName(u);
       list.appendChild(opt);
     }
+    list.appendChild(fragment);
   };
 
   window.handleMatchHistoryJsonp = (data) => {
