@@ -359,16 +359,25 @@ tabs.addEventListener("click", (e) => {
     if (modal) modal.classList.remove("active");
   };
 
+  document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  const modal = document.getElementById("resultModal");
+  if (modal && modal.classList.contains("active")) {
+    closeModal();
+  }
+});
+
+  
   if (resultModal) {
     resultModal.addEventListener("click", (e) => {
-      // 1) ×ボタンで閉じる
+      // ×ボタンで閉じる
       const closeBtn = e.target.closest("#closeModalBtn");
       if (closeBtn) {
         closeModal();
         return;
       }
 
-      // 2) 外側（オーバーレイ直押し）で閉じる
+      // 外側（オーバーレイ直押し）で閉じる
       if (e.target === resultModal) {
         closeModal();
         return;
