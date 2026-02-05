@@ -9,7 +9,7 @@ function initMenu() {
   const style = document.createElement('style');
   style.textContent = `
     .menu-btn {
-      position: fixed; top: 15px; left: 15px; width: 66px; height: 66px;
+      position: fixed; top: 15px; left: 15px; width:80px; height:80px;
       background-color: var(--main-blue); border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       z-index: 1000; box-shadow: 0 4px 0 var(--accent-blue); cursor: pointer; border: none;
