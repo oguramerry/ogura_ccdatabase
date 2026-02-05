@@ -1,6 +1,10 @@
 /*　dashbord.css */
 /* フォント読み込み */
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kiwi+Maru:wght@400;500&family=Yomogi&display=swap');
+*, *::before, *::after { box-sizing: border-box; }
+html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
+img, canvas { max-width: 100%; height: auto; }
+
 
 /* カラー変数 */
 :root {
@@ -1127,8 +1131,8 @@ body {
 .row-me {
   background-color: #fffbeb; /* 薄い黄色 */
 }
-/* 数値セルは右寄せ */
-.cell-num { text-align:zenter ; font-family: "Kiwi Maru", serif; }
+
+.cell-num { text-align:center ; font-family: "Kiwi Maru", serif; }
 
 /* ジョブアイコン */
 .result-job-icon {
