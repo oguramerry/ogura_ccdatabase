@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const resultEl = document.getElementById("result");
     if (resultEl) resultEl.textContent = "試合数 - / 勝率 -";
+    fetchUsers("");
     input.focus();
   });
 
