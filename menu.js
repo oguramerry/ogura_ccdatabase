@@ -10,10 +10,10 @@ function initMenu() {
       position: fixed; 
       top: 0; 
       left: 0; 
-      width: 90px; /* ボタン全体のサイズをおっきくしたよ */
+      width: 90px; 
       height: 90px;
       background-color: var(--main-blue); 
-      border-radius: 0 0 24px 0; /* 左上を端にピタッとさせるために角にして、右下だけ丸くしたよ */
+      border-radius: 0 0 24px 0; 
       display: flex; 
       align-items: center; 
       justify-content: center;
@@ -25,7 +25,7 @@ function initMenu() {
     }
 
     .menu-btn img {
-      width: 85%; /* 画像をボタンいっぱいに大きく表示するよ */
+      width: 85%; 
       height: 85%;
       object-fit: contain;
       pointer-events: none;
@@ -53,7 +53,7 @@ function initMenu() {
   `;
   document.head.appendChild(style);
 
-  // 余計なheaderタグを消して、ボタンだけに書き換えたよ
+ 
   const menuHTML = `
     <button id="menuBtn" class="menu-btn" aria-label="メニューを開く">
       <img src="${base}images/shu_shima.png" alt="メニュー">
