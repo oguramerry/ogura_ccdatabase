@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 進行中のタイマーがあれば一旦止める
     clearTimeout(inputTimer);
 
-    // 2. 入力が「空」になった場合：特急券で即実行！
+    // 2. 入力が「空」になった場合：即実行
     if (!currentUserForApi) {
       // 即座に全ユーザーリストを取得し直す（これでプルダウンが復活する）
       fetchUsers(""); 
@@ -324,7 +324,9 @@ tabs.addEventListener("click", (e) => {
   
   // --- 初期化処理 ---
   updateCalendarDisplay();
-  fetchUsers("");
+  // fetchUsers("");
+  setTimeout(() => fetchUsers(""), 800);
+
 
   tabs?.querySelector('button[data-tab="main"]')?.classList.add("active");
   // 更新ボタン
