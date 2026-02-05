@@ -298,7 +298,7 @@ tabs.addEventListener("click", (e) => {
     matchChartInstance.update();
   };
 
-  window.handleAvailableDatesJsonp = (data) => {
+window.handleAvailableDatesJsonp = (data) => {
     availableDates = [];
     const keys = Object.keys(resultByDate);
     for (const k of keys) delete resultByDate[k];
@@ -308,11 +308,19 @@ tabs.addEventListener("click", (e) => {
       resultByDate[item.date] = { status: item.status, score: item.score };
     });
     updateCalendarDisplay();
+
+    
     if (availableDates.includes(currentDate)) {
+      // 今日データがあるなら、詳細を取りに行く（ローディング解除は向こうでやる）
       fetchMatchHistory(currentUserForApi, currentDate);
-    } else if (matchChartInstance) {
-      matchChartInstance.data.datasets[0].data = [];
-      matchChartInstance.update();
+    } else {
+      // ★今日データがないなら、ここでグラフを空にして、ローディングを強制的に消す
+      if (matchChartInstance) {
+        matchChartInstance.data.datasets[0].data = [];
+        matchChartInstance.update();
+      }
+      const loader = document.getElementById("chartLoading");
+      if (loader) loader.classList.remove("active");
     }
   };
 
