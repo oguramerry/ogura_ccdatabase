@@ -662,12 +662,17 @@ function fetchUsers(qText) {
   const oldUsers = document.getElementById("jsonpUsers");
   if (oldUsers) oldUsers.remove();
 
+// main.js の fetchUsers 関数内
+
   const su = document.createElement("script");
   su.id = "jsonpUsers";
 
   // 全件の場合だけ、キャッシュに保存するためにコールバックを一段かませる
   const cb = isAll ? "handleUsersJsonpAllCache" : "handleUsersJsonp";
-  const lim = isAll ? 20 : 50;
+
+  // 検索文字があるなら 1000件 要求する
+  const lim = isAll ? 20 : 1000;
+  
   su.src = `${GAS_BASE}?action=users&limit=${lim}&q=${q}&callback=${cb}&_=${Date.now()}`;
   document.body.appendChild(su);
 }
