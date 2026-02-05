@@ -89,25 +89,23 @@ document.addEventListener("DOMContentLoaded", () => {
     inputTimer = setTimeout(() => {
       fetchUsers(user);
     }, 300);
-
   });
 
-  input?.addEventListener("change", () => {
-    if (!currentUserForApi) return;
-    ensureEmptyChart();
+  input?.addEventListener("keydown", (e) => {
+  if (e.key !== "Enter") return;
+  if (!currentUserForApi) return;
 
-    // 統計情報の取得（JSONP）
-    const old = document.getElementById("jsonpStats");
-    if (old) old.remove();
-    const s = document.createElement("script");
-    s.id = "jsonpStats";
-    s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
-    document.body.appendChild(s);
+  ensureEmptyChart();
 
-    // カレンダー用の取得（JSONP）
-    fetchAvailableDates(currentUserForApi);
+  const old = document.getElementById("jsonpStats");
+  if (old) old.remove();
+  const s = document.createElement("script");
+  s.id = "jsonpStats";
+  s.src = `${GAS_BASE}?action=stats&user=${encodeURIComponent(currentUserForApi)}&callback=handleStatsJsonp&_=${Date.now()}`;
+  document.body.appendChild(s);
 
-  });
+  fetchAvailableDates(currentUserForApi);
+});
 
 
   // --- クリアボタンクリック時の動作 ---
