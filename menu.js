@@ -1,32 +1,57 @@
 // menu.js
 function initMenu() {
-  // 現在のページが「フォルダ内」にあるか判定（upload, dashboard, globalのいずれか）
   const path = window.location.pathname;
-  const isSubFolder = path.includes('/upload/') || path.includes('/dashboard/') || path.includes('/global/');
+  const isSubFolder = path.includes('/upload') || path.includes('/dashboard') || path.includes('/global');
   const base = isSubFolder ? '../' : './';
 
-  // CSSの注入
   const style = document.createElement('style');
   style.textContent = `
-.menu-btn {
-      position: fixed; top: 15px; left: 15px; width: 66px; height: 66px;
-      background-color: #a3dbf0; 
-      border-radius: 50%;
+    /* --- ヘッダー領域（ロゴとボタンを横並びにする） --- */
+    .site-header {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1000;
+      display: flex;
+      align-items: center; /* 上下中央揃え */
+      gap: 15px; /* ロゴとボタンの間隔 */
+    }
+
+    /* --- ロゴのスタイル --- */
+    .site-logo img {
+      display: block;
+      width: 100px; /* ここでロゴの大きさを調整*/
+      height: auto;
+      transition: 0.3s;
+    }
+    .site-logo a:hover img {
+      opacity: 0.8; /* カーソルを乗せた時に少し薄くする */
+    }
+
+    /* --- メニューボタン（三本線に戻す） --- */
+    .menu-btn {
+      position: relative; /* fixedから変更 */
+      width: 44px; height: 44px;
+      background-color: var(--main-blue); border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      z-index: 1000; 
-      box-shadow: 0 4px 0 #89c7de; 
-      cursor: pointer; border: none;
+      box-shadow: 0 4px 0 var(--accent-blue); cursor: pointer; border: none;
       padding: 0;
-      overflow: hidden;
     }
-
-    .menu-btn img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* 画像を枠内に収める */
-      pointer-events: none;
+    /* 三本線のデザイン */
+    .menu-btn span, .menu-btn span::before, .menu-btn span::after {
+      display: block; width: 20px; height: 3px; background-color: white;
+      border-radius: 2px; position: absolute; transition: 0.3s;
+      content: "";
     }
+    .menu-btn span::before { top: -6px; }
+    .menu-btn span::after { top: 6px; }
+    /* 開いた時のバツ印 */
+    .menu-btn.is-open span { background: transparent; }
+    .menu-btn.is-open span::before { transform: rotate(45deg); top: 0; }
+    .menu-btn.is-open span::after { transform: rotate(-45deg); top: 0; }
 
+
+    /* --- サイドメニューとオーバーレイ（ここはそのまま） --- */
     .side-menu {
       position: fixed; top: 0; left: -260px; width: 250px; height: 100%;
       background: white; z-index: 999; transition: 0.4s; padding-top: 80px;
@@ -49,11 +74,19 @@ function initMenu() {
   `;
   document.head.appendChild(style);
 
-  // HTMLの注入
-const menuHTML = `
-    <button id="menuBtn" class="menu-btn" aria-label="メニューを開く">
-      <img src="${base}images/shu_shima.png" alt="メニュー">
-    </button>
+  // HTMLの注入（ヘッダーの中にロゴとボタンを入れる）
+  const menuHTML = `
+    <header class="site-header">
+      <div class="site-logo">
+        <a href="${base}index.html">
+          <img src="${base}images/shu_shima.png" alt="トップページへ">
+        </a>
+      </div>
+      <button id="menuBtn" class="menu-btn" aria-label="メニューを開く">
+        <span></span>
+      </button>
+    </header>
+
     <div id="overlay" class="overlay"></div>
     <nav id="sideMenu" class="side-menu">
       <ul>
@@ -66,7 +99,6 @@ const menuHTML = `
   `;
   document.body.insertAdjacentHTML('afterbegin', menuHTML);
 
-  // 動きの制御
   const menuBtn = document.getElementById("menuBtn");
   const sideMenu = document.getElementById("sideMenu");
   const overlay = document.getElementById("overlay");
