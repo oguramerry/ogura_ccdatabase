@@ -16,6 +16,19 @@ window.WeatherForecast = {
     "Red Sands": { jp: "レッド・サンズ", abbr: "サンズ", class: "RedSands" }
   },
 
+  // 読み込み中表示用関数
+  showLoading: function() {
+    const wrapper = document.getElementById("forecastWrapper");
+    if (!wrapper) return;
+
+    // 高さを確保して中央に「読み込み中...」を表示
+    wrapper.innerHTML = `
+      <div style="display: flex; justify-content: center; align-items: center; height: 300px; color: #666; font-weight: bold;">
+        読み込み中...
+      </div>
+    `;
+  },
+
   // 初期化＆描画
   render: function(statsData) {
     this.statsDataCache = statsData;
