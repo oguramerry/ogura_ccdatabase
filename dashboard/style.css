@@ -1213,3 +1213,13 @@ body {
   color: #9b2c2c; /* Dark Red */
   text-shadow: 0 0 1px rgba(155, 44, 44, 0.2); /* 少しだけ発光感 */
 }
+
+
+/* カウントダウン表示エリア */
+.stage-countdown {
+  font-size: 12px;
+  font-family: "Darumadrop One", cursive;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  min-height: 0; /* 隠れてるときは高さゼロ */
+}
