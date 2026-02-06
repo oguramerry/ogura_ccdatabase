@@ -1123,7 +1123,7 @@ function renderMatchDetail() {
   // 数値のカンマ区切り
   const fmt = (n) => Number(n).toLocaleString();
 
-  players.forEach(p => {
+players.forEach(p => {
     const tr = document.createElement("tr");
     
     // 自分ハイライト
@@ -1136,6 +1136,10 @@ function renderMatchDetail() {
     const nameClass = isRowWinner ? "team-win-text" : "team-lose-text";
     const star = isRowWinner ? "★ " : "";
     const teamMark = (p.side === "My Team") ? "MY" : "EN";
+
+
+    // ランク用のクラス名を取得する
+    const rankClass = getRankClass(p.rank);
 
 
     // ジョブアイコンパス
@@ -1155,7 +1159,13 @@ function renderMatchDetail() {
           ${formatName(p.name)}
       </td>
       <td class="cell-world" style="font-size: 0.9em; color: #666;">${p.world || "-"}</td>
-      <td class="cell-rank">${p.rank}</td>
+
+
+      <td class="cell-rank">
+         <span class="rank-text ${rankClass}">${p.rank}</span>
+      </td>
+
+
       <td class="cell-num">${p.k}</td>
       <td class="cell-num">${p.d}</td>
       <td class="cell-num">${p.a}</td>
