@@ -518,6 +518,25 @@ function updateMapHighlight() {
     const timeEl = el.querySelector('.stage-next-start');
     if (timeEl) timeEl.textContent = item.timeStr;
 
+    const countdownEl = el.querySelector('.stage-countdown');
+    if (countdownEl) {
+      if (item.key === schedule.currentKey) {
+        // 現在開催中なら計算して表示
+        const diffMs = schedule.nextSwitchTime - Date.now();
+        const diffMin = Math.ceil(diffMs / 60000);
+        
+        const colorStyle = diffMin <= 10 ? "color:#e53e3e; font-weight:bold;" : "color:#2b6cb0; font-weight:bold;";
+        
+        // 分数を表示
+        countdownEl.innerHTML = `<span style="${colorStyle}">あと ${diffMin} 分</span>`;
+        countdownEl.style.display = "block"; // 表示する
+      } else {
+        // 開催中じゃないなら隠す
+        countdownEl.innerHTML = "";
+        countdownEl.style.display = "none";
+      }
+    }
+    
     // 2. クラスとバッジのリセット
     el.classList.remove('current-map', 'next-map');
     const badgeArea = el.querySelector('.stage-badge-area');
