@@ -1011,9 +1011,15 @@ function openMatchDetail(matchId) {
   }
 
   // GASへリクエスト
+  // ★ matchdetail のscriptが溜まらないように差し替え
+  const old = document.getElementById("jsonpMatchDetail");
+  if (old) old.remove();
+
   const script = document.createElement("script");
+  script.id = "jsonpMatchDetail";
   script.src = `${GAS_BASE}?action=matchdetail&id=${encodeURIComponent(matchId)}&callback=handleMatchDetailJsonp&_=${Date.now()}`;
   document.body.appendChild(script);
+
 }
 
 // 2. GASからのコールバック受取
