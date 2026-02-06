@@ -1005,6 +1005,23 @@ window.handleMatchDetailJsonp = (data) => {
   renderMatchDetail(); // 描画実行
 };
 
+// ランク文字列からCSSクラスを取得するヘルパー関数
+const getRankClass = (rankName) => {
+  if (!rankName) return "rank-unranked";
+  
+  // 部分一致で判定
+  if (rankName.includes("アルテマ")) return "rank-ultima";
+  if (rankName.includes("オメガ")) return "rank-omega";
+  if (rankName.includes("クリスタル")) return "rank-crystal";
+  if (rankName.includes("ダイヤモンド")) return "rank-diamond";
+  if (rankName.includes("プラチナ")) return "rank-platinum";
+  if (rankName.includes("ゴールド")) return "rank-gold";
+  if (rankName.includes("シルバー")) return "rank-silver";
+  if (rankName.includes("ブロンズ")) return "rank-bronze";
+  
+  return "rank-unranked";
+};
+
 // 3. 描画処理
 function renderMatchDetail() {
   const players = [...currentMatchPlayers]; // 配列をコピーして操作
