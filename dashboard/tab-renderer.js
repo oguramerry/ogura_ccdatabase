@@ -167,13 +167,17 @@ stage: (statsData) => {
 html += `
       <div id="stage-card-${safeId}" class="stage-card-item ${colorClass}">
         <div class="stage-info">
+          
           <div class="stage-name-row">
             <span class="stage-name-text">${jpName}</span>
             <span class="stage-next-start"></span> 
           </div>
-          <div class="stage-countdown"></div> 
+
+          <div class="stage-stat-row">
+             <span class="stage-stat-text">${winRate}% / ${row.total}試合</span>
+             <div class="stage-countdown"></div> 
+          </div>
           
-          <span class="stage-stat-text">${winRate}% / ${row.total}試合</span>
         </div>
         <div class="stage-badge-area"></div>
       </div>
