@@ -795,9 +795,12 @@ function renderJobScatterChart(jobData, totalMatches) {
         const isON = jobFilterState[key]; 
         const img = document.createElement("img");
         img.src = `../images/JOB/${key}.png`;
-        
+
+        //スタイル定義
         const baseStyle = `width:32px; height:32px; cursor:pointer; border-radius:6px; transition:0.2s; padding:2px;`;
+       
         if (isON) {
+          //ONの状態
            const role = JOB_META[key]?.role || "unknown";
            const borderCol = 
              role === "tank" ? "#63b3ed" : 
@@ -805,10 +808,48 @@ function renderJobScatterChart(jobData, totalMatches) {
              role === "dps" ? "#f687b3" : "#a0aec0";
            img.style.cssText = baseStyle + `border:2px solid ${borderCol}; background:#fff; opacity:1; filter:none; transform:scale(1); box-shadow:0 1px 3px rgba(0,0,0,0.1);`;
         } else {
+          //OFFの状態
            img.style.cssText = baseStyle + `border:2px solid #e2e8f0; background:transparent; opacity:0.4; filter:grayscale(100%); transform:scale(0.9);`;
         }
 
         img.onclick = () => toggleSingleJob(key);
+
+        if (isON) { 
+            // マウスが乗った時
+            img.onmouseenter = () => {
+                if (!jobScatterChartInstance) return;
+                
+                const dataset = jobScatterChartInstance.data.datasets[0];
+                
+                // 1. 自分以外のアイコンを薄い画像(faded)に差し替える
+                dataset.pointStyle = activePoints.map(p => {
+                    return p.jobKey === key ? iconAssets[p.jobKey].normal : iconAssets[p.jobKey].faded;
+                });
+
+                // 2. 自分のアイコンだけ半径を大きくする
+                dataset.radius = activePoints.map(p => {
+                    return p.jobKey === key ? (ICON_SIZE / 2) + 5 : (ICON_SIZE / 2);
+                });
+
+                // 3. 高速再描画
+                jobScatterChartInstance.update('none');
+            };
+
+            // マウスが離れた時
+            img.onmouseleave = () => {
+                if (!jobScatterChartInstance) return;
+
+                const dataset = jobScatterChartInstance.data.datasets[0];
+                
+                // 全部normal画像に戻す
+                dataset.pointStyle = activePoints.map(p => iconAssets[p.jobKey].normal);
+                
+                // 半径も元に戻す
+                dataset.radius = ICON_SIZE / 2;
+
+                jobScatterChartInstance.update('none');
+            };
+        }
         iconsDiv.appendChild(img);
       });
       
