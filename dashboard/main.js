@@ -481,8 +481,22 @@ function getMapSchedule() {
   };
 }
 
+
 // --- 画面の強調表示更新 ---
+// ★ タイマー多重化防止：1本だけ動くように管理する
+let stageHighlightTimerId = null;
+
+function stopMapHighlight() {
+  if (stageHighlightTimerId != null) {
+    clearTimeout(stageHighlightTimerId);
+    stageHighlightTimerId = null;
+  }
+}
+
 function updateMapHighlight() {
+  // 先に前回の予約を消して、常に1本だけにする
+  stopMapHighlight();
+
   const schedule = getMapSchedule();
   const nextTimes = getAllStageNextTimes();
 
@@ -512,9 +526,9 @@ function updateMapHighlight() {
     }
   });
 
-  // 次回ローテーションの2秒後に自動更新を予約
-const delay = Math.max(0, schedule.nextSwitchTime - Date.now());
-setTimeout(updateMapHighlight, delay);
+  // 次回ローテーションのタイミングで自動更新を予約（1本だけ）
+  const delay = Math.max(0, schedule.nextSwitchTime - Date.now());
+  stageHighlightTimerId = setTimeout(updateMapHighlight, delay);
 }
 
 function ensureEmptyChart() {
