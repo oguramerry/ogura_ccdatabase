@@ -1149,3 +1149,67 @@ body {
   text-decoration: underline; /* 下線 */
   color: #555; 
 }
+
+
+/* --- ランク別カラー設定 --- */
+
+/* 共通設定：高ランクが目立つように少し太くする */
+.rank-text {
+  font-weight: bold;
+  display: inline-block; /* グラデーション表示用 */
+}
+
+/* アンランク：薄いグレー */
+.rank-unranked {
+  color: #cbd5e1; 
+}
+
+/* ブロンズ：銅色 */
+.rank-bronze {
+  color: #a0522d; /* Sienna */
+}
+
+/* シルバー：銀色（少し明るめ） */
+.rank-silver {
+  color: #718096; /* Slate-500 */
+}
+
+/* ゴールド：金色 */
+.rank-gold {
+  color: #b7791f; 
+}
+
+/* プラチナ：銀と水色 */
+.rank-platinum {
+  background: linear-gradient(135deg, #a0aec0 20%, #63b3ed 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #63b3ed; /* fallback */
+}
+
+/* ダイヤモンド：金と水色 */
+.rank-diamond {
+  background: linear-gradient(135deg, #d69e2e 20%, #22d3ee 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #22d3ee; /* fallback */
+}
+
+/* クリスタル：青と水色 */
+.rank-crystal {
+  background: linear-gradient(135deg, #3182ce 20%, #4fd1c5 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #4fd1c5; /* fallback */
+}
+
+/* オメガ：濃い紫 */
+.rank-omega {
+  color: #6b46c1; 
+}
+
+/* アルテマ：濃い暗めの赤 */
+.rank-ultima {
+  color: #9b2c2c; /* Dark Red */
+  text-shadow: 0 0 1px rgba(155, 44, 44, 0.2); /* 少しだけ発光感 */
+}
