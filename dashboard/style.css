@@ -1,4 +1,4 @@
-/*　dashbord.css */
+/*　style.css */
 /* フォント読み込み */
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kiwi+Maru:wght@400;500&family=Yomogi&display=swap');
 *, *::before, *::after { box-sizing: border-box; }
@@ -1215,11 +1215,21 @@ body {
 }
 
 
-/* カウントダウン表示エリア */
+/* カウントダウン自体のスタイル */
 .stage-countdown {
-  font-size: 12px;
+  font-size: 13px;
   font-family: "Darumadrop One", cursive;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  min-height: 0; /* 隠れてるときは高さゼロ */
+  line-height: 1;
+  /* 色はJSで指定されるけど、念のためデフォルト色 */
+  color: #2b6cb0;
 }
+
+/* 勝率とカウントダウンを横並びにする行 */
+.stage-stat-row {
+  display: flex;
+  align-items: baseline; /* 文字の高さを揃える */
+  gap: 12px;             /* 勝率とカウントダウンの間のスペース */
+  margin-top: 4px;       /* 上段（時間）との隙間 */
+}
+
+
