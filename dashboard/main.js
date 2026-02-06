@@ -210,10 +210,17 @@ const btnNow = keyNoSpace
   }
 };
 
-  const setActiveTab = (tab) => {
-    activeTab = tab;
-    render();
-  };
+const setActiveTab = (tab) => {
+  activeTab = tab;
+
+  // ★ stage以外に移動したら、強調更新タイマーを止める（多重化・無駄更新防止）
+  if (tab !== "stage" && typeof stopMapHighlight === "function") {
+    stopMapHighlight();
+  }
+
+  render();
+};
+
 
   if (tabs) {
 tabs.addEventListener("click", (e) => {
