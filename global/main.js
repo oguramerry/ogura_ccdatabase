@@ -816,38 +816,53 @@ function renderJobScatterChart(jobData, totalMatches) {
 
         if (isON) { 
             // マウスが乗った時
-            img.onmouseenter = () => {
+img.onmouseenter = () => {
                 if (!jobScatterChartInstance) return;
                 
                 const dataset = jobScatterChartInstance.data.datasets[0];
                 
-                // 1. 自分以外のアイコンを薄い画像(faded)に差し替える
+                // 1. データ内でこのジョブが何番目にあるか探す
+                const dataIndex = activePoints.findIndex(p => p.jobKey === key);
+
+                // 2. アイコンの見た目変更（さっきの実装）
+                // 自分以外を薄く、自分を大きく
                 dataset.pointStyle = activePoints.map(p => {
                     return p.jobKey === key ? iconAssets[p.jobKey].normal : iconAssets[p.jobKey].faded;
                 });
-
-                // 2. 自分のアイコンだけ半径を大きくする
                 dataset.radius = activePoints.map(p => {
                     return p.jobKey === key ? (ICON_SIZE / 2) + 5 : (ICON_SIZE / 2);
                 });
 
-                // 3. 高速再描画
-                jobScatterChartInstance.update('none');
+                // 3. 【追加】ツールチップを強制的に表示させる！
+                if (dataIndex >= 0) {
+                    jobScatterChartInstance.tooltip.setActiveElements([
+                        { datasetIndex: 0, index: dataIndex }
+                    ]);
+                    jobScatterChartInstance.setActiveElements([
+                        { datasetIndex: 0, index: dataIndex }
+                    ]);
+                }
+
+                // 4. 再描画（ツールチップを出すために 'none' は外すのが無難）
+                jobScatterChartInstance.update();
             };
 
             // マウスが離れた時
-            img.onmouseleave = () => {
+img.onmouseleave = () => {
                 if (!jobScatterChartInstance) return;
 
                 const dataset = jobScatterChartInstance.data.datasets[0];
                 
-                // 全部normal画像に戻す
+                // 1. アイコンの見た目を元に戻す
                 dataset.pointStyle = activePoints.map(p => iconAssets[p.jobKey].normal);
-                
-                // 半径も元に戻す
                 dataset.radius = ICON_SIZE / 2;
 
-                jobScatterChartInstance.update('none');
+                // 2. 【追加】ツールチップを隠す
+                jobScatterChartInstance.tooltip.setActiveElements([], {x: 0, y: 0});
+                jobScatterChartInstance.setActiveElements([]);
+
+                // 3. 再描画
+                jobScatterChartInstance.update();
             };
         }
         iconsDiv.appendChild(img);
