@@ -1,5 +1,6 @@
 /* --- ベース変数設定（パステル＆ブルーグレー基調） --- */
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
 :root {
   --bg-color: #F5F7FA;
   --text-main: #455A64;
