@@ -448,6 +448,9 @@ tbody tr:hover { background-color: #FFF3E0; }
   transition: all 0.2s ease;
   color: #64748b;
   font-family: "Kiwi Maru", serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ボタンが押されている（アクティブ）時のスタイル */
