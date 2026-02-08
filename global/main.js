@@ -961,14 +961,14 @@ function initRankFilter() {
   Object.keys(RANK_META).forEach(key => {
     const btn = document.createElement("button");
     btn.className = `rank-btn ${rankFilterState[key] ? 'active' : ''}`;
-    // ONのときはランクの色、OFFのときは薄いグレー
     btn.style.backgroundColor = rankFilterState[key] ? RANK_META[key].color : "#f1f5f9";
     btn.textContent = RANK_META[key].label;
 
     btn.onclick = () => {
       rankFilterState[key] = !rankFilterState[key];
       initRankFilter(); // 見た目を更新
-      fetchGlobalData(); // データを再取得
+      //  fetchGlobalData() ではなく、手元のデータで再計算する
+      aggregateAndRender(); 
     };
     container.appendChild(btn);
   });
