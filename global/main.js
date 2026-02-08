@@ -1107,10 +1107,11 @@ function aggregateAndRender() {
 
   // 4. 画面を更新
   updateDashboard();
-  if (globalData.byStage) {
+if (globalData && globalData.byStage) {
     initStageSelector(globalData.byStage);
   }
 }
+
 
 // --- 補助関数：オブジェクトの合算 ---
 function mergeSubtotals_(target, source) {
@@ -1119,14 +1120,23 @@ function mergeSubtotals_(target, source) {
     const t = target[key];
     const s = source[key];
 
+    // 全体の基本数
     t.total += s.total; t.wins += s.wins; t.losses += s.losses;
+    
+    // 全体の小計
     t.sumK += s.sumK; t.sumD += s.sumD; t.sumA += s.sumA;
     t.sumDmg += s.sumDmg; t.sumTaken += s.sumTaken; t.sumHeal += s.sumHeal;
     t.sumTime += s.sumTime; t.sumMatchTime += s.sumMatchTime;
 
-    // 中央値用の配列を連結（全項目分）
-    const keys = ["K", "D", "A", "Dmg", "Taken", "Heal", "Time", "MatchTime"];
-    keys.forEach(k => {
+    
+    const metrics = ["K", "D", "A", "Dmg", "Taken", "Heal", "Time", "MatchTime"];
+    metrics.forEach(m => {
+      t[`w${m}`] += (s[`w${m}`] || 0);
+      t[`l${m}`] += (s[`l${m}`] || 0);
+    });
+
+    
+    metrics.forEach(k => {
       t[`arr${k}`] = t[`arr${k}`].concat(s[`arr${k}`] || []);
       t[`w_arr${k}`] = t[`w_arr${k}`].concat(s[`w_arr${k}`] || []);
       t[`l_arr${k}`] = t[`l_arr${k}`].concat(s[`l_arr${k}`] || []);
