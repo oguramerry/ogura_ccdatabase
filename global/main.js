@@ -363,14 +363,14 @@ function renderHourChart(hourData) {
   const hours = Array.from({length: 24}, (_, i) => i);
   const counts = hours.map(h => {
     const found = hourData.find(d => Number(d.hour) === h);
-    return found ? Math.floor(found.total / 10) : 0;
+    return found ? found.total : 0;
   });
 
   drawSimpleBarChart(
     "hourChart",
     hours.map(h => `${h}時`),
     counts,
-    '試合数',
+    '観測数',
     '#90cdf4'
   );
 }
