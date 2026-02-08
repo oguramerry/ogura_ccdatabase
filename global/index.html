@@ -32,36 +32,29 @@
 
   <main>
     <div class="stats-overview">
-<div class="card data-stats-card">
-  <h3>データ統計</h3>
-  <div class="stats-grid">
-    <div class="stat-item">
-      <small>総観測数 (N)</small>
-      <p id="total-obs">0</p>
-    </div>
-    <div class="stat-item">
-      <small>データ占有率</small>
-      <p id="data-coverage">0%</p>
-    </div>
-    <div class="stat-item">
-      <small>最終更新</small>
-      <p id="last-updated">-</p>
-    </div>
-  </div>
-</div>
-        <h3>ステージフィルター</h3>
+      
+      <div class="card data-stats-card">
+        <h3>データ統計</h3>
+        <div class="stats-grid">
+          <div class="stat-item"><small>総観測数 (N)</small><p id="total-obs">0</p></div>
+          <div class="stat-item"><small>データ占有率</small><p id="data-coverage">0%</p></div>
+          <div class="stat-item"><small>最終更新</small><p id="last-updated">-</p></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>ステージ</h3>
         <select id="stage-selector">
           <option value="ALL">全てのステージ</option>
         </select>
       </div>
-      <div class="card">
-  <h3>ランクフィルター</h3>
-  <div id="rank-selector-container" class="rank-toggles">
-    </div>
-</div>
-    </div>
 
-    <div class="layout-row">
+      <div class="card">
+        <h3>ランクフィルター</h3>
+        <div id="rank-selector-container" class="rank-toggles"></div>
+      </div>
+
+    </div> <div class="layout-row">
       <div class="chart-card">
         <h2>所属DC分布</h2>
         <div class="chart-container">
