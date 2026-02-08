@@ -104,28 +104,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function fetchGlobalData() {
-
   try {
-    // ランク指定なしで、全ランクの「小計データ」を一度に取得
     const res = await fetch(`${API_URL}?action=global`);
     const json = await res.json();
-    
-    // 生データをグローバル変数に保存
     rawGlobalDataByRank = json.dataByRank;
-
+    
+    // 全ランクの合計を計算
     window.grandTotal = Object.values(rawGlobalDataByRank).reduce((sum, d) => sum + d.total, 0);
-    
-    // ★追加：最終更新日時を表示
-    const lastUpdate = new Date(json.meta.generatedAt);
-    document.getElementById("last-updated").textContent = 
-      `${lastUpdate.getMonth() + 1}/${lastUpdate.getDate()} ${lastUpdate.getHours()}:${String(lastUpdate.getMinutes()).padStart(2, '0')}`;
-    // 画面のランクフィルターを初期化（まだなら）
+
+    // 最終更新時刻を表示
+    if (json.meta && json.meta.generatedAt) {
+      const lastUpdate = new Date(json.meta.generatedAt);
+      const targetEl = document.getElementById("last-updated");
+      if (targetEl) {
+        targetEl.textContent = 
+          `${lastUpdate.getMonth() + 1}/${lastUpdate.getDate()} ${lastUpdate.getHours()}:${String(lastUpdate.getMinutes()).padStart(2, '0')}`;
+      }
+    }
+
     initRankFilter();
-    
-    // 合算＆描画を実行
     aggregateAndRender();
-  } catch (err) {
-    console.error("データ取得失敗:", err);
+  } catch (err) { 
+    console.error("データ取得失敗:", err); 
   }
 }
 
