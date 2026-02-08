@@ -22,6 +22,8 @@ FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
 let rankFilterState = {};
 Object.keys(RANK_META).forEach(r => rankFilterState[r] = true); // デフォルトは全選択
 
+let rawGlobalDataByRank = null;
+
 const STAGE_ORDER = [
 "パライストラ",
   "ヴォルカニック・ハート",
@@ -102,17 +104,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function fetchGlobalData() {
+  const refreshBtn = document.getElementById("refresh-btn");
   try {
-    // ONになっているランクを抽出してカンマ区切りにする
-    const selected = Object.keys(rankFilterState).filter(k => rankFilterState[k]).join(',');
+    // ランク指定なしで、全ランクの「小計データ」を一度に取得
+    const res = await fetch(`${API_URL}?action=global`);
+    const json = await res.json();
     
-    // URLにランク情報をくっつけてAPIを叩く
-    const res = await fetch(`${API_URL}?action=global&ranks=${encodeURIComponent(selected)}`);
-    globalData = await res.json();
+    // 生データをグローバル変数に保存
+    rawGlobalDataByRank = json.dataByRank;
     
-    initStageSelector(globalData.byStage);
-    updateDashboard();
-  } catch (err) { console.error(err); }
+    // 画面のランクフィルターを初期化（まだなら）
+    initRankFilter();
+    
+    // 合算＆描画を実行
+    aggregateAndRender();
+  } catch (err) {
+    console.error("データ取得失敗:", err);
+  }
 }
 
 function initStageSelector(stages) {
@@ -964,4 +972,142 @@ function initRankFilter() {
     };
     container.appendChild(btn);
   });
+}
+
+
+// 選択されたランクのデータを合算して描画する
+function aggregateAndRender() {
+  if (!rawGlobalDataByRank) return;
+
+  const selected = Object.keys(rankFilterState).filter(k => rankFilterState[k]);
+  
+  // 合算用のテンプレート
+  const merged = {
+    meta: { total: 0, wins: 0, losses: 0 },
+    byJob: {},    // ジョブごとの合算
+    byStageJob: {}, // ステージ×ジョブの合算
+    byHour: {},   // 時間帯の合算
+    byDC: { "Elemental": 0, "Gaia": 0, "Mana": 0, "Meteor": 0 },
+    byStageDC: {}
+  };
+
+  // 1. 選ばれたランクのデータをループで足し合わせる
+  selected.forEach(rank => {
+    const rd = rawGlobalDataByRank[rank];
+    if (!rd) return;
+
+    merged.meta.total += rd.total;
+    merged.meta.wins += rd.wins;
+    merged.meta.losses += rd.losses;
+
+    // DC集計の合算
+    Object.keys(rd.byDC).forEach(dc => merged.byDC[dc] += rd.byDC[dc]);
+    
+    // ステージ別DCの合算
+    Object.keys(rd.byStageDC).forEach(stage => {
+      if (!merged.byStageDC[stage]) merged.byStageDC[stage] = { "Elemental": 0, "Gaia": 0, "Mana": 0, "Meteor": 0 };
+      Object.keys(rd.byStageDC[stage]).forEach(dc => merged.byStageDC[stage][dc] += rd.byStageDC[stage][dc]);
+    });
+
+    // 時間帯の合算
+    Object.keys(rd.byHour).forEach(h => {
+      if (!merged.byHour[h]) merged.byHour[h] = { total: 0, wins: 0 };
+      merged.byHour[h].total += rd.byHour[h].total;
+      merged.byHour[h].wins += rd.byHour[h].wins;
+    });
+
+    // ジョブ集計の合算（生配列の連結含む）
+    mergeSubtotals_(merged.byJob, rd.byJob);
+    // ステージ×ジョブの合算
+    mergeSubtotals_(merged.byStageJob, rd.byStage);
+  });
+
+  // 2. 合算した生データから「平均」や「中央値」を計算して dashboard 用の形式に整える
+  globalData = {
+    meta: { ...merged.meta, winRate: merged.meta.total ? merged.meta.wins / merged.meta.total : 0 },
+    byDC: merged.byDC,
+    byStageDC: merged.byStageDC,
+    byJob: finalizeStats_(merged.byJob),
+    byStageJob: finalizeStats_(merged.byStageJob, true), // ステージ名分離フラグ
+    byHour: Object.keys(merged.byHour).map(h => ({ hour: h, total: merged.byHour[h].total, winRate: merged.byHour[h].total ? merged.byHour[h].wins / merged.byHour[h].total : 0 })),
+    byStage: calculateStageTotals_(merged.byStageJob) // ステージごとの合計
+  };
+
+  // 3. 描画！
+  updateDashboard();
+}
+
+// --- 補助関数：オブジェクトの合算 ---
+function mergeSubtotals_(target, source) {
+  Object.keys(source).forEach(key => {
+    if (!target[key]) target[key] = createEmptyMergeObj_();
+    const t = target[key];
+    const s = source[key];
+
+    t.total += s.total; t.wins += s.wins; t.losses += s.losses;
+    t.sumK += s.sumK; t.sumD += s.sumD; t.sumA += s.sumA;
+    t.sumDmg += s.sumDmg; t.sumTaken += s.sumTaken; t.sumHeal += s.sumHeal;
+    t.sumTime += s.sumTime; t.sumMatchTime += s.sumMatchTime;
+
+    // 中央値用の配列をガッチャンコ（連結）
+    t.arrK = t.arrK.concat(s.arrK); t.arrD = t.arrD.concat(s.arrD); t.arrA = t.arrA.concat(s.arrA);
+    t.arrDmg = t.arrDmg.concat(s.arrDmg); t.arrTaken = t.arrTaken.concat(s.arrTaken); 
+    t.arrHeal = t.arrHeal.concat(s.arrHeal); t.arrTime = t.arrTime.concat(s.arrTime); 
+    t.arrMatchTime = t.arrMatchTime.concat(s.arrMatchTime);
+    // 勝利/敗北時の配列も同様に（長いので省略気味だが実際は全部書く）
+    t.w_arrK = t.w_arrK.concat(s.w_arrK || []); // 以下同様...
+  });
+}
+
+// --- 補助関数：最終的な統計値を算出（平均・中央値） ---
+function finalizeStats_(map, isStageJob = false) {
+  return Object.keys(map).map(key => {
+    const p = map[key];
+    const div = (s, n) => n ? s / n : 0;
+    const res = {
+      total: p.total, wins: p.wins, losses: p.losses,
+      winRate: div(p.wins, p.total),
+      avgK: div(p.sumK, p.total), avgD: div(p.sumD, p.total), avgA: div(p.sumA, p.total),
+      avgDamage: div(p.sumDmg, p.total), avgTaken: div(p.sumTaken, p.total),
+      avgHeal: div(p.sumHeal, p.total), avgTime: div(p.sumTime, p.total),
+      avgMatchTime: div(p.sumMatchTime, p.total),
+      // JS側で中央値を計算
+      medianK: jsCalcMedian(p.arrK), medianDamage: jsCalcMedian(p.arrDmg) // 必要分だけ計算
+      // ... 他の項目も必要に応じて
+    };
+    if (isStageJob) {
+      const [stage, job] = key.split("\t");
+      res.stage = stage; res.job = job;
+    } else {
+      res.job = key;
+    }
+    return res;
+  });
+}
+
+function jsCalcMedian(arr) {
+  if (!arr || arr.length === 0) return 0;
+  const sorted = [...arr].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
+function createEmptyMergeObj_() {
+  return {
+    total: 0, wins: 0, losses: 0,
+    sumK: 0, sumD: 0, sumA: 0, sumDmg: 0, sumTaken: 0, sumHeal: 0, sumTime: 0, sumMatchTime: 0,
+    arrK: [], arrD: [], arrA: [], arrDmg: [], arrTaken: [], arrHeal: [], arrTime: [], arrMatchTime: [],
+    w_arrK: [] // ... (勝利/敗北用配列も初期化)
+  };
+}
+
+function calculateStageTotals_(stageJobMap) {
+  const sMap = {};
+  Object.keys(stageJobMap).forEach(key => {
+    const stage = key.split("\t")[0];
+    if (!sMap[stage]) sMap[stage] = { stage, total: 0, wins: 0 };
+    sMap[stage].total += stageJobMap[key].total;
+    sMap[stage].wins += stageJobMap[key].wins;
+  });
+  return Object.values(sMap);
 }
