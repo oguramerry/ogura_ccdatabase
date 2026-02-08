@@ -32,11 +32,23 @@
 
   <main>
     <div class="stats-overview">
-      <div class="card">
-        <h3>総観測数</h3>
-        <p id="total-matches">- 試合</p>
-      </div>
-      <div class="card">
+<div class="card data-stats-card">
+  <h3>データ統計</h3>
+  <div class="stats-grid">
+    <div class="stat-item">
+      <small>総観測数 (N)</small>
+      <p id="total-obs">0</p>
+    </div>
+    <div class="stat-item">
+      <small>データ占有率</small>
+      <p id="data-coverage">0%</p>
+    </div>
+    <div class="stat-item">
+      <small>最終更新</small>
+      <p id="last-updated">-</p>
+    </div>
+  </div>
+</div>
         <h3>ステージフィルター</h3>
         <select id="stage-selector">
           <option value="ALL">全てのステージ</option>
