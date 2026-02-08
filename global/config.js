@@ -51,3 +51,14 @@ const DC_META = {
   "Mana":      { color: "#90CAF9", label: "Mana" },      // パステルブルー
   "Meteor":    { color: "#CE93D8", label: "Meteor" },    // パステルパープル
 };
+
+const RANK_META = {
+  "アルテマ":   { label: "アルテマ",   color: "#7F1D1D" }, 
+  "オメガ":     { label: "オメガ",     color: "#C026D3" },
+  "クリスタル": { label: "クリスタル", color: "#38BDF8" }, 
+  "ダイヤモンド": { label: "ダイヤ",   color: "#D4AF37" }, 
+  "プラチナ":   { label: "プラチナ",   color: "#94A3B8" }, 
+  "ゴールド":   { label: "ゴールド",   color: "#F59E0B" },
+  "シルバー":   { label: "シルバー",   color: "#E5E7EB" },
+  "ブロンズ":   { label: "ブロンズ",   color: "#C2410C" }
+};
