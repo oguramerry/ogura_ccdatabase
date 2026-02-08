@@ -959,14 +959,13 @@ function initRankFilter() {
 
   container.innerHTML = "";
 
+  // 一括操作ボタン
   const controls = document.createElement("div");
   controls.style.cssText = "display:flex; gap:5px; margin-right:10px; border-right:2px solid #e2e8f0; padding-right:10px;";
-
   const createAllBtn = (label, state) => {
     const btn = document.createElement("button");
     btn.className = "rank-btn";
-    btn.style.fontSize = "0.7rem";
-    btn.style.padding = "2px 8px";
+    btn.style.cssText = "font-size:0.7rem; padding:2px 8px;";
     btn.textContent = label;
     btn.onclick = () => {
       Object.keys(rankFilterState).forEach(k => rankFilterState[k] = state);
@@ -975,28 +974,42 @@ function initRankFilter() {
     };
     return btn;
   };
-
   controls.appendChild(createAllBtn("ALL ON", true));
   controls.appendChild(createAllBtn("ALL OFF", false));
   container.appendChild(controls);
 
-  
+  // 各ランクボタンの生成
   Object.keys(RANK_META).forEach(key => {
     const btn = document.createElement("button");
     btn.className = `rank-btn ${rankFilterState[key] ? 'active' : ''}`;
-    btn.style.backgroundColor = rankFilterState[key] ? RANK_META[key].color : "#f1f5f9";
-    btn.textContent = RANK_META[key].label;
+    
+    // アイコン画像の追加
+    const icon = document.createElement("img");
+    icon.src = `img/${RANK_META[key].img}`;
+    icon.style.cssText = "width:20px; height:20px; vertical-align:middle; margin-right:5px;";
+    
+    // OFFの時は画像を白黒にする
+    if (!rankFilterState[key]) {
+      icon.style.filter = "grayscale(100%) opacity(0.6)";
+      btn.style.backgroundColor = "#f1f5f9";
+    } else {
+      btn.style.backgroundColor = RANK_META[key].color;
+    }
+
+    btn.appendChild(icon);
+
+    const text = document.createElement("span");
+    text.textContent = RANK_META[key].label;
+    btn.appendChild(text);
 
     btn.onclick = () => {
       rankFilterState[key] = !rankFilterState[key];
-      initRankFilter(); // 見た目を更新
-      //  fetchGlobalData() ではなく、手元のデータで再計算する
-      aggregateAndRender(); 
+      initRankFilter();
+      aggregateAndRender();
     };
     container.appendChild(btn);
   });
 }
-
 
 // 選択されたランクのデータを合算して描画する
 function aggregateAndRender() {
