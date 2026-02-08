@@ -429,5 +429,35 @@ tbody tr:hover { background-color: #FFF3E0; }
 .filter-job-icon:hover { transform: scale(1.1); }
 .filter-job-icon.off { opacity: 0.3; filter: grayscale(100%); }
 
+/* ランクフィルター全体の並び */
+.rank-toggles {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* ランクボタンの基本スタイル */
+.rank-btn {
+  border: 1px solid #e2e8f0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #64748b;
+  font-family: "Kiwi Maru", serif;
+}
+
+/* ボタンが押されている（アクティブ）時のスタイル */
+.rank-btn.active {
+  color: #455A64;
+  font-weight: bold;
+  border-color: #94a3b8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
