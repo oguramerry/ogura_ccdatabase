@@ -462,5 +462,63 @@ tbody tr:hover { background-color: #FFF3E0; }
   transform: translateY(-1px);
 }
 
+/* --- データ統計カード（N数、占有率、更新日） --- */
+.data-stats-card {
+  /* ここは他のカードより少し幅を広めに、角丸は少し控えめにすると情報が見やすい */
+  min-width: 320px !important; 
+  border-radius: 16px !important; /* グリッドを入れるので、楕円より四角に近い方が整う */
+  padding: 10px 20px !important;
+  flex-direction: column !important; /* 縦にタイトル、横に数字の並びにする */
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-item small {
+  display: block;
+  color: #90A4AE;
+  font-size: 0.65rem;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.stat-item p {
+  font-size: 0.95rem !important;
+  color: var(--header-bg);
+  margin: 0;
+  font-weight: bold;
+}
+
+/* 最終更新だけ少し文字を小さくして収まりを良くする */
+#last-updated {
+  font-size: 0.85rem !important;
+}
+
+/* --- ランクボタン（画像対応）の微調整 --- */
+.rank-btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  transition: filter 0.2s ease;
+}
+
+/* ホバー時に少し浮き上がらせる */
+.rank-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
