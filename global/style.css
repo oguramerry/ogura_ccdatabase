@@ -131,12 +131,14 @@ main {
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 20px;
+  
   position: sticky; top: 0; z-index: 850;
+  
   background-color: var(--bg-color);
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: -10px;
-  box-shadow: none;
+  box-shadow: 0 4px 10px -5px rgba(0,0,0,0.1);
   justify-content: center;
 }
 
@@ -304,16 +306,12 @@ th, td {
   font-size: 0.85rem;
 }
 th {
+position: sticky;
+  /* stats-overviewの高さに合わせて調整 */
+  top: 90px; 
+  z-index: 700;
   background-color: var(--pastel-blue);
-  color: var(--text-main);
-  font-weight: 500;
-  white-space: nowrap;
-  cursor: pointer;
-
-  position: sticky;     /* 固定設定 */
-  top: 80px;            /* 上のバーの高さ分だけ空ける（ここを0にするとバーの下に隠れる） */
-  z-index: 800;         /* 他の要素より手前に表示 */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影をつけて浮いているように見せる */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 
