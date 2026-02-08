@@ -1,4 +1,4 @@
-// main.js (修正版)
+// main.js 
 
 // --- グローバル変数 ---
 let currentViewMode = "ALL";
@@ -18,6 +18,9 @@ let currentDamageViewMode = "ALL";
 // 散布図フィルター用設定
 let jobFilterState = {}; 
 FILTER_GROUPS_DEF.flatMap(g => g.jobs).forEach(j => jobFilterState[j] = true);
+
+let rankFilterState = {};
+Object.keys(RANK_META).forEach(r => rankFilterState[r] = true); // デフォルトは全選択
 
 const STAGE_ORDER = [
 "パライストラ",
@@ -48,6 +51,7 @@ const STAGE_IMAGE_MAP = {
 
 // --- 初期化 ---
 document.addEventListener("DOMContentLoaded", () => {
+  initRankFilter();
   fetchGlobalData();
 
   const stageSel = document.getElementById("stage-selector");
@@ -91,15 +95,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // 集計方法の切り替え監視
   monitorRadio("statMethod", (val) => {
     currentStatMethod = val;
-    // ★修正: 表だけを更新し、ダメージグラフには影響させない
+    // 表だけを更新し、ダメージグラフには影響させない
     refreshTableOnly();
   });
+  
 });
 
 async function fetchGlobalData() {
   try {
-    const res = await fetch(`${API_URL}?action=global`);
+    // ONになっているランクを抽出してカンマ区切りにする
+    const selected = Object.keys(rankFilterState).filter(k => rankFilterState[k]).join(',');
+    
+    // URLにランク情報をくっつけてAPIを叩く
+    const res = await fetch(`${API_URL}?action=global&ranks=${encodeURIComponent(selected)}`);
     globalData = await res.json();
+    
     initStageSelector(globalData.byStage);
     updateDashboard();
   } catch (err) { console.error(err); }
@@ -931,5 +941,27 @@ function drawSimpleBarChart(canvasId, labels, data, labelText, color) {
       plugins: { legend: { display: false } },
       scales: { y: { beginAtZero: true } }
     }
+  });
+}
+
+// ★ランクフィルターのUI（ボタン）を生成する関数
+function initRankFilter() {
+  const container = document.getElementById("rank-selector-container");
+  if (!container) return;
+
+  container.innerHTML = "";
+  Object.keys(RANK_META).forEach(key => {
+    const btn = document.createElement("button");
+    btn.className = `rank-btn ${rankFilterState[key] ? 'active' : ''}`;
+    // ONのときはランクの色、OFFのときは薄いグレー
+    btn.style.backgroundColor = rankFilterState[key] ? RANK_META[key].color : "#f1f5f9";
+    btn.textContent = RANK_META[key].label;
+
+    btn.onclick = () => {
+      rankFilterState[key] = !rankFilterState[key];
+      initRankFilter(); // 見た目を更新
+      fetchGlobalData(); // データを再取得
+    };
+    container.appendChild(btn);
   });
 }
