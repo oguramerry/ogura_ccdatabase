@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function fetchGlobalData() {
-  const refreshBtn = document.getElementById("refresh-btn");
+
   try {
     // ランク指定なしで、全ランクの「小計データ」を一度に取得
     const res = await fetch(`${API_URL}?action=global`);
@@ -112,7 +112,13 @@ async function fetchGlobalData() {
     
     // 生データをグローバル変数に保存
     rawGlobalDataByRank = json.dataByRank;
+
+    window.grandTotal = Object.values(rawGlobalDataByRank).reduce((sum, d) => sum + d.total, 0);
     
+    // ★追加：最終更新日時を表示
+    const lastUpdate = new Date(json.meta.generatedAt);
+    document.getElementById("last-updated").textContent = 
+      `${lastUpdate.getMonth() + 1}/${lastUpdate.getDate()} ${lastUpdate.getHours()}:${String(lastUpdate.getMinutes()).padStart(2, '0')}`;
     // 画面のランクフィルターを初期化（まだなら）
     initRankFilter();
     
@@ -1057,6 +1063,19 @@ function aggregateAndRender() {
     // ステージ×ジョブの合算
     mergeSubtotals_(merged.byStageJob, rd.byStage);
   });
+
+  // A. 総観測数 (N)
+  const totalObs = merged.meta.total;
+  const totalObsEl = document.getElementById("total-obs");
+  if (totalObsEl) totalObsEl.textContent = totalObs.toLocaleString();
+
+  // B. データ占有率
+  // window.grandTotal（全ランクの合計）が fetchGlobalData で計算されている前提
+  const coverageEl = document.getElementById("data-coverage");
+  if (coverageEl && window.grandTotal > 0) {
+    const coverage = ((totalObs / window.grandTotal) * 100).toFixed(1);
+    coverageEl.textContent = `${coverage}%`;
+  }
 
   // 2. 合算した生データから「平均」や「中央値」を計算して dashboard 用の形式に整える
   globalData = {
