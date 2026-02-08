@@ -1023,17 +1023,18 @@ function aggregateAndRender() {
 
   const selected = Object.keys(rankFilterState).filter(k => rankFilterState[k]);
   
-  // 合算用のテンプレート
+  // 1. 合算用の空の箱（テンプレート）を用意
   const merged = {
     meta: { total: 0, wins: 0, losses: 0 },
-    byJob: {},    // ジョブごとの合算
-    byStageJob: {}, // ステージ×ジョブの合算
-    byHour: {},   // 時間帯の合算
+    byJob: {},
+    byStageJob: {},
+    byHour: {},
+    byStageHour: {}, // ★ここがステージ別時間の箱
     byDC: { "Elemental": 0, "Gaia": 0, "Mana": 0, "Meteor": 0 },
     byStageDC: {}
   };
 
-  // 1. 選ばれたランクのデータをループで足し合わせる
+  // 2. 選ばれた各ランクのデータをループで全部足していく
   selected.forEach(rank => {
     const rd = rawGlobalDataByRank[rank];
     if (!rd) return;
@@ -1042,7 +1043,7 @@ function aggregateAndRender() {
     merged.meta.wins += rd.wins;
     merged.meta.losses += rd.losses;
 
-    // DC集計の合算
+    // DC分布の合算
     Object.keys(rd.byDC).forEach(dc => merged.byDC[dc] += rd.byDC[dc]);
     
     // ステージ別DCの合算
@@ -1051,44 +1052,59 @@ function aggregateAndRender() {
       Object.keys(rd.byStageDC[stage]).forEach(dc => merged.byStageDC[stage][dc] += rd.byStageDC[stage][dc]);
     });
 
-    // 時間帯の合算
+    // 時間帯（全体）の合算
     Object.keys(rd.byHour).forEach(h => {
       if (!merged.byHour[h]) merged.byHour[h] = { total: 0, wins: 0 };
       merged.byHour[h].total += rd.byHour[h].total;
       merged.byHour[h].wins += rd.byHour[h].wins;
     });
 
-    // ジョブ集計の合算（生配列の連結含む）
+    // ★追加：ステージ別時間の合算
+    if (rd.byStageHour) {
+      Object.keys(rd.byStageHour).forEach(shKey => {
+        if (!merged.byStageHour[shKey]) merged.byStageHour[shKey] = { total: 0, wins: 0 };
+        merged.byStageHour[shKey].total += rd.byStageHour[shKey].total;
+        merged.byStageHour[shKey].wins += rd.byStageHour[shKey].wins;
+      });
+    }
+
+    // ジョブ・ステージジョブの合算（中央値用配列含む）
     mergeSubtotals_(merged.byJob, rd.byJob);
-    // ステージ×ジョブの合算
     mergeSubtotals_(merged.byStageJob, rd.byStage);
   });
 
-  // A. 総観測数 (N)
+  // --- 統計カードの更新 ---
   const totalObs = merged.meta.total;
-  const totalObsEl = document.getElementById("total-obs");
-  if (totalObsEl) totalObsEl.textContent = totalObs.toLocaleString();
-
-  // B. データ占有率
-  // window.grandTotal（全ランクの合計）が fetchGlobalData で計算されている前提
-  const coverageEl = document.getElementById("data-coverage");
-  if (coverageEl && window.grandTotal > 0) {
+  if (document.getElementById("total-obs")) {
+    document.getElementById("total-obs").textContent = totalObs.toLocaleString();
+  }
+  if (document.getElementById("data-coverage") && window.grandTotal > 0) {
     const coverage = ((totalObs / window.grandTotal) * 100).toFixed(1);
-    coverageEl.textContent = `${coverage}%`;
+    document.getElementById("data-coverage").textContent = `${coverage}%`;
   }
 
-  // 2. 合算した生データから「平均」や「中央値」を計算して dashboard 用の形式に整える
+  // 3. 合算した生データを、グラフや表で使える形式（globalData）に変換
   globalData = {
     meta: { ...merged.meta, winRate: merged.meta.total ? merged.meta.wins / merged.meta.total : 0 },
     byDC: merged.byDC,
     byStageDC: merged.byStageDC,
     byJob: finalizeStats_(merged.byJob),
-    byStageJob: finalizeStats_(merged.byStageJob, true), // ステージ名分離フラグ
-    byHour: Object.keys(merged.byHour).map(h => ({ hour: h, total: merged.byHour[h].total, winRate: merged.byHour[h].total ? merged.byHour[h].wins / merged.byHour[h].total : 0 })),
-    byStage: calculateStageTotals_(merged.byStageJob) // ステージごとの合計
+    byStageJob: finalizeStats_(merged.byStageJob, true),
+    byHour: Object.keys(merged.byHour).map(h => ({ 
+      hour: Number(h), 
+      total: merged.byHour[h].total, 
+      winRate: merged.byHour[h].total ? merged.byHour[h].wins / merged.byHour[h].total : 0 
+    })),
+    // ★追加：ステージ別時間の配列化
+    byStageHour: Object.keys(merged.byStageHour).map(key => {
+      const [stage, hour] = key.split("\t");
+      const d = merged.byStageHour[key];
+      return { stage, hour: Number(hour), total: d.total, winRate: d.total ? d.wins / d.total : 0 };
+    }),
+    byStage: calculateStageTotals_(merged.byStageJob)
   };
 
-  // 3. 描画！
+  // 4. 画面を更新
   updateDashboard();
   if (globalData.byStage) {
     initStageSelector(globalData.byStage);
