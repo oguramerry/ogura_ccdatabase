@@ -50,6 +50,11 @@ const STAGE_IMAGE_MAP = {
 document.addEventListener("DOMContentLoaded", () => {
   fetchGlobalData();
 
+  const stageSel = document.getElementById("stage-selector");
+  if (stageSel) {
+    stageSel.addEventListener("change", updateDashboard);
+  }
+
   // 更新ボタン
   const refreshBtn = document.getElementById("refresh-btn");
   if (refreshBtn) {
@@ -103,6 +108,9 @@ async function fetchGlobalData() {
 function initStageSelector(stages) {
   const sel = document.getElementById("stage-selector");
   if (!sel) return;
+
+  const currentVal = sel.value;
+  
   sel.innerHTML = '<option value="ALL">全てのステージ</option>';
   
   stages.sort((a, b) => {
@@ -126,8 +134,12 @@ function initStageSelector(stages) {
     
     sel.appendChild(opt);
   });
+
+  if (currentVal) {
+    sel.value = currentVal;
+  }
   
-  sel.addEventListener("change", updateDashboard);
+  
 }
 
 function getCurrentStageData() {
