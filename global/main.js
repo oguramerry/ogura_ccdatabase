@@ -154,7 +154,7 @@ function initStageSelector(stages) {
     
     // 日本語名で表示
     const jpName = STAGE_NAME_JP[s.stage] || s.stage;
-    opt.textContent = `${jpName} (${Math.floor(s.total/10)}試合)`;
+    opt.textContent = `${jpName} (${s.total.toLocaleString()}件)`;
     
     sel.appendChild(opt);
   });
@@ -210,9 +210,10 @@ function getStatValue(dataObj, metricKey, viewMode = "ALL") {
 function updateDashboard() {
   const { data, hour, total, stageName, dcData } = getCurrentStageData();
   
-  const totalEl = document.getElementById("total-matches");
-  if (totalEl) totalEl.textContent = `${Math.floor(total / 10)} 試合`;
-
+ const totalEl = document.getElementById("total-obs");
+  if (totalEl) {
+    totalEl.textContent = total.toLocaleString(); 
+  }
   // 背景画像の更新
   updateBackgroundImage(stageName);
   
