@@ -74,7 +74,7 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 999px;
   background: #fff;
-  max-width: 300px;
+  max-width: 450px;
 }
 
 .search-input {
