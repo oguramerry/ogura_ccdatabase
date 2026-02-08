@@ -1049,13 +1049,13 @@ function mergeSubtotals_(target, source) {
     t.sumDmg += s.sumDmg; t.sumTaken += s.sumTaken; t.sumHeal += s.sumHeal;
     t.sumTime += s.sumTime; t.sumMatchTime += s.sumMatchTime;
 
-    // 中央値用の配列をガッチャンコ（連結）
-    t.arrK = t.arrK.concat(s.arrK); t.arrD = t.arrD.concat(s.arrD); t.arrA = t.arrA.concat(s.arrA);
-    t.arrDmg = t.arrDmg.concat(s.arrDmg); t.arrTaken = t.arrTaken.concat(s.arrTaken); 
-    t.arrHeal = t.arrHeal.concat(s.arrHeal); t.arrTime = t.arrTime.concat(s.arrTime); 
-    t.arrMatchTime = t.arrMatchTime.concat(s.arrMatchTime);
-    // 勝利/敗北時の配列も同様に（長いので省略気味だが実際は全部書く）
-    t.w_arrK = t.w_arrK.concat(s.w_arrK || []); // 以下同様...
+    // 中央値用の配列を連結（全項目分）
+    const keys = ["K", "D", "A", "Dmg", "Taken", "Heal", "Time", "MatchTime"];
+    keys.forEach(k => {
+      t[`arr${k}`] = t[`arr${k}`].concat(s[`arr${k}`] || []);
+      t[`w_arr${k}`] = t[`w_arr${k}`].concat(s[`w_arr${k}`] || []);
+      t[`l_arr${k}`] = t[`l_arr${k}`].concat(s[`l_arr${k}`] || []);
+    });
   });
 }
 
@@ -1064,17 +1064,35 @@ function finalizeStats_(map, isStageJob = false) {
   return Object.keys(map).map(key => {
     const p = map[key];
     const div = (s, n) => n ? s / n : 0;
+    
     const res = {
       total: p.total, wins: p.wins, losses: p.losses,
       winRate: div(p.wins, p.total),
+      // --- 平均値 ---
       avgK: div(p.sumK, p.total), avgD: div(p.sumD, p.total), avgA: div(p.sumA, p.total),
       avgDamage: div(p.sumDmg, p.total), avgTaken: div(p.sumTaken, p.total),
       avgHeal: div(p.sumHeal, p.total), avgTime: div(p.sumTime, p.total),
       avgMatchTime: div(p.sumMatchTime, p.total),
-      // JS側で中央値を計算
-      medianK: jsCalcMedian(p.arrK), medianDamage: jsCalcMedian(p.arrDmg) // 必要分だけ計算
-      // ... 他の項目も必要に応じて
     };
+
+    // --- 中央値の計算を一気に回す ---
+    const metrics = [
+      { k: "K", target: "K" }, { k: "D", target: "D" }, { k: "A", target: "A" },
+      { k: "Dmg", target: "Damage" }, { k: "Taken", target: "Taken" },
+      { k: "Heal", target: "Heal" }, { k: "Time", target: "Time" },
+      { k: "MatchTime", target: "MatchTime" }
+    ];
+
+    metrics.forEach(m => {
+      res[`median${m.target}`] = jsCalcMedian(p[`arr${m.k}`]);
+      res[`w_median${m.target}`] = jsCalcMedian(p[`w_arr${m.k}`]);
+      res[`l_median${m.target}`] = jsCalcMedian(p[`l_arr${m.k}`]);
+      
+      // 勝ち・負けの「平均」もテーブルで使うからここで計算
+      res[`w_avg${m.target}`] = div(p[`w${m.k}`], p.wins);
+      res[`l_avg${m.target}`] = div(p[`l${m.k}`], p.losses);
+    });
+
     if (isStageJob) {
       const [stage, job] = key.split("\t");
       res.stage = stage; res.job = job;
@@ -1093,12 +1111,19 @@ function jsCalcMedian(arr) {
 }
 
 function createEmptyMergeObj_() {
-  return {
+  const obj = {
     total: 0, wins: 0, losses: 0,
     sumK: 0, sumD: 0, sumA: 0, sumDmg: 0, sumTaken: 0, sumHeal: 0, sumTime: 0, sumMatchTime: 0,
-    arrK: [], arrD: [], arrA: [], arrDmg: [], arrTaken: [], arrHeal: [], arrTime: [], arrMatchTime: [],
-    w_arrK: [] // ... (勝利/敗北用配列も初期化)
+    wK: 0, wD: 0, wA: 0, wDmg: 0, wTaken: 0, wHeal: 0, wTime: 0, wMatchTime: 0,
+    lK: 0, lD: 0, lA: 0, lDmg: 0, lTaken: 0, lHeal: 0, lTime: 0, lMatchTime: 0
   };
+  const keys = ["K", "D", "A", "Dmg", "Taken", "Heal", "Time", "MatchTime"];
+  keys.forEach(k => {
+    obj[`arr${k}`] = [];
+    obj[`w_arr${k}`] = [];
+    obj[`l_arr${k}`] = [];
+  });
+  return obj;
 }
 
 function calculateStageTotals_(stageJobMap) {
