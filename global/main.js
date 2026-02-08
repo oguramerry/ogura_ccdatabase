@@ -958,6 +958,29 @@ function initRankFilter() {
   if (!container) return;
 
   container.innerHTML = "";
+
+  const controls = document.createElement("div");
+  controls.style.cssText = "display:flex; gap:5px; margin-right:10px; border-right:2px solid #e2e8f0; padding-right:10px;";
+
+  const createAllBtn = (label, state) => {
+    const btn = document.createElement("button");
+    btn.className = "rank-btn";
+    btn.style.fontSize = "0.7rem";
+    btn.style.padding = "2px 8px";
+    btn.textContent = label;
+    btn.onclick = () => {
+      Object.keys(rankFilterState).forEach(k => rankFilterState[k] = state);
+      initRankFilter();
+      aggregateAndRender();
+    };
+    return btn;
+  };
+
+  controls.appendChild(createAllBtn("ALL ON", true));
+  controls.appendChild(createAllBtn("ALL OFF", false));
+  container.appendChild(controls);
+
+  
   Object.keys(RANK_META).forEach(key => {
     const btn = document.createElement("button");
     btn.className = `rank-btn ${rankFilterState[key] ? 'active' : ''}`;
