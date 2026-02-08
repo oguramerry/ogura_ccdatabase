@@ -1090,6 +1090,9 @@ function aggregateAndRender() {
 
   // 3. 描画！
   updateDashboard();
+  if (globalData.byStage) {
+    initStageSelector(globalData.byStage);
+  }
 }
 
 // --- 補助関数：オブジェクトの合算 ---
