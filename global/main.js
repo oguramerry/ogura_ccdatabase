@@ -526,10 +526,11 @@ function renderJobTable(jobData, currentTotalMatches) {
       <td>${fmt2(d.statK)}</td>
       <td>${fmt2(d.statD)}</td>
       <td>${fmt2(d.statA)}</td>
-      <td style="font-weight:bold; color:#d69e2e;">${isRate ? fmt2(d.statDmg) : fmtInt(d.statDmg)}</td>
-      <td style="font-weight:bold; color:#e53e3e;">${isRate ? fmt2(d.statTaken) : fmtInt(d.statTaken)}</td>
-      <td style="font-weight:bold; color:#38a169;">${isRate ? fmt2(d.statHeal) : fmtInt(d.statHeal)}</td>
-      <td style="font-weight:bold; color:#718096;">${isRate ? fmt2(d.statTime) : fmtT(d.statTime)}</td>
+<td style="font-weight:bold; color:#d69e2e;">${fmtInt(d.statDmg)}</td>
+<td style="font-weight:bold; color:#e53e3e;">${fmtInt(d.statTaken)}</td>
+<td style="font-weight:bold; color:#38a169;">${fmtInt(d.statHeal)}</td>
+<td style="font-weight:bold; color:#718096;">${fmtT(Math.round(d.statTime))}</td>
+
       <td style="font-weight:bold; color:#607D8B;">${fmtT(d.statMatchTime)}</td>
     `;
     tbody.appendChild(tr);
