@@ -617,7 +617,7 @@ return `
     <td style="color:#e53e3e">${fmtInt(getVal("Taken"))}</td>
     <td style="color:#38a169">${fmtInt(getVal("Heal"))}</td>
     <td style="color:#718096">${fmtT(Math.round(getVal("Time")))}</td>
-    <td style="color:#607D8B">${fmtT(rawMT)}</td>
+    <td style="color:#607D8B">${fmtT(Math.round(rawMT))}</td>
   </tr>`;
 
   document.getElementById("modal-stats-body").innerHTML = 
