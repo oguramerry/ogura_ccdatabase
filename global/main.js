@@ -566,40 +566,57 @@ function renderJobTable(jobData, currentTotalMatches) {
   
 }
 
-// --- モーダル ---
+// --- モーダル（レート表示対応版） ---
 function openModal(jobKey) {
   const { data } = getCurrentStageData();
   const d = data.find(j => j.job === jobKey);
   if (!d) return;
+
   document.getElementById("modal-job-name").textContent = (JOB_META[d.job]?.jp || d.job) + " の詳細データ";
   
-  const fmt = (n) => Math.round(n).toLocaleString();
-  const fmt2 = (n) => n.toFixed(2);
+  const fmtInt = (n) => Math.round(Number(n || 0)).toLocaleString();
+  const fmt2 = (n) => Number(n || 0).toFixed(2);
   const fmtT = (s) => `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`;
   
   const method = currentStatMethod; 
-  
-  const makeR = (l, c, viewModePrefix) => {
-     const getKey = (k) => `${viewModePrefix}${method}${k}`;
-     const val = (k) => d[getKey(k)] || 0;
-     
-     const label = (l === "全体") ? "全体" : (l === "勝利") ? "勝利" : (l === "敗北") ? "敗北" : l;
-     
-     if (l !== "全体" && ((l === "勝利" && d.wins === 0) || (l === "敗北" && d.losses === 0))) {
-       return `<tr class="${c}"><td>${label}</td><td colspan="8">データなし</td></tr>`;
-     }
-     
-     return `
-      <tr class="${c}">
-        <td>${label}</td>
-        <td>${fmt2(val("K"))}</td>
-        <td>${fmt2(val("D"))}</td>
-        <td>${fmt2(val("A"))}</td>
-        <td style="color:#d69e2e">${fmt(val("Damage"))}</td>
-        <td style="color:#e53e3e">${fmt(val("Taken"))}</td>
-        <td style="color:#38a169">${fmt(val("Heal"))}</td>
-        <td style="color:#718096">${fmtT(val("Time"))}</td>
-        <td style="color:#607D8B">${fmtT(val("MatchTime"))}</td> </tr>`;
+  const isRate = (currentRateMode !== "RAW");
+
+  const makeR = (labelTitle, rowClass, viewModePrefix) => {
+    const getRaw = (k) => d[`${viewModePrefix}${method}${k}`] || 0;
+
+    // この行（全体/勝利/敗北）ごとのMatchTimeと件数を取得
+    const rawMT = getRaw("MatchTime");
+    const count = (viewModePrefix === "w_") ? d.wins : (viewModePrefix === "l_") ? d.losses : d.total;
+
+    // データがない場合は「データなし」を表示
+    if (count === 0) {
+      return `<tr class="${rowClass}"><td>${labelTitle}</td><td colspan="8">データなし</td></tr>`;
+    }
+
+    // 各行のMatchTimeに合わせて倍率を計算
+    let factor = 1;
+    if (isRate && rawMT > 0) {
+      const base = (currentRateMode === "PER5") ? 300 : 60;
+      factor = base / rawMT;
+    }
+
+    const getVal = (k) => {
+      const raw = getRaw(k);
+      return (k === "MatchTime") ? raw : raw * factor;
+    };
+
+    return `
+      <tr class="${rowClass}">
+        <td>${labelTitle}</td>
+        <td>${fmt2(getVal("K"))}</td>
+        <td>${fmt2(getVal("D"))}</td>
+        <td>${fmt2(getVal("A"))}</td>
+        <td style="color:#d69e2e">${isRate ? fmt2(getVal("Damage")) : fmtInt(getVal("Damage"))}</td>
+        <td style="color:#e53e3e">${isRate ? fmt2(getVal("Taken")) : fmtInt(getVal("Taken"))}</td>
+        <td style="color:#38a169">${isRate ? fmt2(getVal("Heal")) : fmtInt(getVal("Heal"))}</td>
+        <td style="color:#718096">${isRate ? fmt2(getVal("Time")) : fmtT(getVal("Time"))}</td>
+        <td style="color:#607D8B">${fmtT(getRaw("MatchTime"))}</td>
+      </tr>`;
   };
 
   document.getElementById("modal-stats-body").innerHTML = 
