@@ -1000,7 +1000,8 @@ function initRankFilter() {
       icon.style.filter = "grayscale(100%) opacity(0.6)";
       btn.style.background = "#f1f5f9";
     } else {
-      btn.style.background = RANK_META[key].color;
+      const [c1, c2] = RANK_META[key].colors;
+btn.style.background = `linear-gradient(135deg, ${c1}, ${c2})`;
     }
 
     btn.appendChild(icon);
