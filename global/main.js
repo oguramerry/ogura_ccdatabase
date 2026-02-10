@@ -606,19 +606,19 @@ function openModal(jobKey) {
       return (k === "MatchTime") ? raw : raw * factor;
     };
 
-    return `
-      <tr class="${rowClass}">
-        <td>${labelTitle}</td>
-        <td>${fmt2(getVal("K"))}</td>
-        <td>${fmt2(getVal("D"))}</td>
-        <td>${fmt2(getVal("A"))}</td>
-        <td style="color:#d69e2e">${isRate ? fmt2(getVal("Damage")) : fmtInt(getVal("Damage"))}</td>
-        <td style="color:#e53e3e">${isRate ? fmt2(getVal("Taken")) : fmtInt(getVal("Taken"))}</td>
-        <td style="color:#38a169">${isRate ? fmt2(getVal("Heal")) : fmtInt(getVal("Heal"))}</td>
-        <td style="color:#718096">${isRate ? fmt2(getVal("Time")) : fmtT(getVal("Time"))}</td>
-        <td style="color:#607D8B">${fmtT(getRaw("MatchTime"))}</td>
-      </tr>`;
-  };
+// モーダルもテーブルと同じ表示ルール
+return `
+  <tr class="${rowClass}">
+    <td>${labelTitle}</td>
+    <td>${fmt2(getVal("K"))}</td>
+    <td>${fmt2(getVal("D"))}</td>
+    <td>${fmt2(getVal("A"))}</td>
+    <td style="color:#d69e2e">${fmtInt(getVal("Damage"))}</td>
+    <td style="color:#e53e3e">${fmtInt(getVal("Taken"))}</td>
+    <td style="color:#38a169">${fmtInt(getVal("Heal"))}</td>
+    <td style="color:#718096">${fmtT(Math.round(getVal("Time")))}</td>
+    <td style="color:#607D8B">${fmtT(rawMT)}</td>
+  </tr>`;
 
   document.getElementById("modal-stats-body").innerHTML = 
     makeR("全体", "row-all", "") + 
