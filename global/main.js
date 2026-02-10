@@ -1007,6 +1007,17 @@ btn.style.background = `linear-gradient(135deg, ${c1}, ${c2})`;
     btn.appendChild(icon);
 
     const text = document.createElement("span");
+    text.style.textShadow = `
+  -1px -1px 0 #fff,
+   1px -1px 0 #fff,
+  -1px  1px 0 #fff,
+   1px  1px 0 #fff,
+   0px -1px 0 #fff,
+   0px  1px 0 #fff,
+  -1px  0px 0 #fff,
+   1px  0px 0 #fff
+`;
+
     text.textContent = RANK_META[key].label;
     btn.appendChild(text);
 
