@@ -530,7 +530,6 @@ function renderJobTable(jobData, currentTotalMatches) {
 <td style="font-weight:bold; color:#e53e3e;">${fmtInt(d.statTaken)}</td>
 <td style="font-weight:bold; color:#38a169;">${fmtInt(d.statHeal)}</td>
 <td style="font-weight:bold; color:#718096;">${fmtT(Math.round(d.statTime))}</td>
-
       <td style="font-weight:bold; color:#607D8B;">${fmtT(d.statMatchTime)}</td>
     `;
     tbody.appendChild(tr);
@@ -619,6 +618,7 @@ return `
     <td style="color:#718096">${fmtT(Math.round(getVal("Time")))}</td>
     <td style="color:#607D8B">${fmtT(Math.round(rawMT))}</td>
   </tr>`;
+  };
 
   document.getElementById("modal-stats-body").innerHTML = 
     makeR("全体", "row-all", "") + 
