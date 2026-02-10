@@ -7,6 +7,9 @@ let globalData = null;
 // 集計方法（"avg" or "median"）
 let currentStatMethod = "avg";
 
+// レート表示モード（"RAW" / "PER1" / "PER5"）
+let currentRateMode = "RAW";
+
 // テーブル用設定
 let currentTableViewMode = "ALL";
 let currentTableSortKey = "job"; 
@@ -100,6 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // 表だけを更新し、ダメージグラフには影響させない
     refreshTableOnly();
   });
+
+  // レート表示（通常/1分/5分）切り替え監視
+  monitorRadio("rateMode", (val) => {
+    currentRateMode = val;
+    refreshTableOnly();
+  });
   
 });
 
@@ -162,8 +171,6 @@ function initStageSelector(stages) {
   if (currentVal) {
     sel.value = currentVal;
   }
-  
-  
 }
 
 function getCurrentStageData() {
@@ -180,12 +187,12 @@ function getCurrentStageData() {
     };
   }
   
-// ステージ指定時
+  // ステージ指定時
   // byStageDCが存在し、かつそのステージのデータがあればそれを使う
   if (globalData.byStageDC && globalData.byStageDC[stageName]) {
     targetDCData = globalData.byStageDC[stageName];
   } else {
-    // データがない場合は空っぽのデータを入れるかnullにする（ここでは0埋めデータを想定）
+    // データがない場合は0埋め
     targetDCData = { "Elemental": 0, "Gaia": 0, "Mana": 0, "Meteor": 0 };
   }
   
@@ -207,17 +214,37 @@ function getStatValue(dataObj, metricKey, viewMode = "ALL") {
   return dataObj[finalKey] || 0;
 }
 
+// テーブル用：RAW / 1分 / 5分 の倍率（分母は MatchTime 秒）
+function getRateFactorForTable_(rowObj) {
+  if (currentRateMode === "RAW") return 1;
+
+  const mt = getStatValue(rowObj, "MatchTime", currentTableViewMode); // 秒
+  if (!mt || mt <= 0) return 0;
+
+  const base = (currentRateMode === "PER5") ? 300 : 60; // 5分=300秒, 1分=60秒
+  return base / mt;
+}
+
+// テーブル用：項目値（必要ならレート化）
+function getTableMetric_(rowObj, metricKey) {
+  const raw = getStatValue(rowObj, metricKey, currentTableViewMode);
+  if (metricKey === "MatchTime") return raw; // MatchTimeは常にmm:ss表示（レート化しない）
+  if (currentRateMode === "RAW") return raw;
+  return raw * getRateFactorForTable_(rowObj);
+}
+
 function updateDashboard() {
   const { data, hour, total, stageName, dcData } = getCurrentStageData();
   
- const totalEl = document.getElementById("total-obs");
+  const totalEl = document.getElementById("total-obs");
   if (totalEl) {
     totalEl.textContent = total.toLocaleString(); 
   }
+
   // 背景画像の更新
   updateBackgroundImage(stageName);
   
-if (dcData) {
+  if (dcData) {
     renderDCPieChart(dcData);
   }
   
@@ -238,7 +265,6 @@ function updateBackgroundImage(stageName) {
   } else {
     // マップからファイル名を取得
     const fileName = STAGE_IMAGE_MAP[stageName] || `${stageName}.jpg`;
-    
     bg.style.backgroundImage = `url('../images/stage/${fileName}')`;
   }
 }
@@ -260,7 +286,6 @@ function renderDCPieChart(dcData) {
   const ctx = document.getElementById("dcPieChart").getContext("2d");
   
   // データの整形
-  // dcData は { "Elemental": 100, "Gaia": 80... } のような形式を想定
   const labels = ["Elemental", "Gaia", "Mana", "Meteor"];
   const counts = labels.map(label => dcData[label] || 0);
   
@@ -429,17 +454,17 @@ function renderJobTable(jobData, currentTotalMatches) {
   const tbody = document.querySelector("#job-stats-table tbody");
   const ths = document.querySelectorAll("#job-stats-table th");
   
-  const val = (d, key) => getStatValue(d, key, currentTableViewMode);
+  // レート化を含む取得（テーブル専用）
+  const val = (d, key) => getTableMetric_(d, key);
 
   let list = jobData.map(d => {
     const meta = JOB_META[d.job] || {};
 
-// 現在のモードに合わせて表示する件数(N)を切り替える
+    // 現在のモードに合わせて表示する件数(N)を切り替える
     let currentCount = d.total;
     if (currentTableViewMode === "WIN") currentCount = d.wins;
     else if (currentTableViewMode === "LOSE") currentCount = d.losses;
 
-    
     return {
       name: meta.jp || d.job, 
       jobKey: d.job, 
@@ -457,14 +482,15 @@ function renderJobTable(jobData, currentTotalMatches) {
       statDmg: val(d, "Damage"),
       statTaken: val(d, "Taken"),
       statHeal: val(d, "Heal"),
-      statTime: val(d, "Time"),          
-      statMatchTime: val(d, "MatchTime") 
+      statTime: val(d, "Time"),
+      statMatchTime: getStatValue(d, "MatchTime", currentTableViewMode) // MatchTimeは常に生の秒
     };
   });
 
   list.sort((a, b) => {
-    let keyA, keyB;
-    if (currentTableSortKey === "job") return (currentTableSortDesc ? b.sortOrder - a.sortOrder : a.sortOrder - b.sortOrder);
+    if (currentTableSortKey === "job") {
+      return (currentTableSortDesc ? b.sortOrder - a.sortOrder : a.sortOrder - b.sortOrder);
+    }
     
     const map = {
       "winRate": "winRate", "pickRate": "pickRate",
@@ -478,17 +504,21 @@ function renderJobTable(jobData, currentTotalMatches) {
   });
   
   tbody.innerHTML = "";
+
+  const fmt2 = (n) => Number(n || 0).toFixed(2);
+  const fmtInt = (n) => Math.round(Number(n || 0)).toLocaleString();
+  const fmtT = (s) => `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`;
+
+  const isRate = (currentRateMode !== "RAW");
+
   list.forEach(d => {
     const tr = document.createElement("tr");
-    const fmt = (n) => Math.round(n).toLocaleString();
-    const fmt2 = (n) => n.toFixed(2);
-    const fmtT = (s) => `${Math.floor(s/60)}:${Math.floor(s%60).toString().padStart(2,'0')}`;
-    
+
     tr.innerHTML = `
       <td style="text-align:left;">
-      <span class="clickable-job" onclick="openModal('${d.jobKey}')" style="background-color:${ROLE_COLORS[d.role]}; padding:6px 14px; border-radius:20px; color:#546E7A; font-weight:bold;">
-      ${d.name} <span style="font-size:0.85em; font-weight:normal; opacity:0.8;">(${d.count})</span>
-      </span>
+        <span class="clickable-job" onclick="openModal('${d.jobKey}')" style="background-color:${ROLE_COLORS[d.role]}; padding:6px 14px; border-radius:20px; color:#546E7A; font-weight:bold;">
+          ${d.name} <span style="font-size:0.85em; font-weight:normal; opacity:0.8;">(${d.count})</span>
+        </span>
       </td>
       
       <td class="${d.winRate >= 50 ? 'rate-high' : 'rate-low'}">${d.winRate.toFixed(1)}%</td>
@@ -496,32 +526,28 @@ function renderJobTable(jobData, currentTotalMatches) {
       <td>${fmt2(d.statK)}</td>
       <td>${fmt2(d.statD)}</td>
       <td>${fmt2(d.statA)}</td>
-      <td style="font-weight:bold; color:#d69e2e;">${fmt(d.statDmg)}</td>
-      <td style="font-weight:bold; color:#e53e3e;">${fmt(d.statTaken)}</td>
-      <td style="font-weight:bold; color:#38a169;">${fmt(d.statHeal)}</td>
-      <td style="font-weight:bold; color:#718096;">${fmtT(d.statTime)}</td>
-      <td style="font-weight:bold; color:#607D8B;">${fmtT(d.statMatchTime)}</td> `;
+      <td style="font-weight:bold; color:#d69e2e;">${isRate ? fmt2(d.statDmg) : fmtInt(d.statDmg)}</td>
+      <td style="font-weight:bold; color:#e53e3e;">${isRate ? fmt2(d.statTaken) : fmtInt(d.statTaken)}</td>
+      <td style="font-weight:bold; color:#38a169;">${isRate ? fmt2(d.statHeal) : fmtInt(d.statHeal)}</td>
+      <td style="font-weight:bold; color:#718096;">${isRate ? fmt2(d.statTime) : fmtT(d.statTime)}</td>
+      <td style="font-weight:bold; color:#607D8B;">${fmtT(d.statMatchTime)}</td>
+    `;
     tbody.appendChild(tr);
   });
 
-  
   ths.forEach(th => {
     const newTh = th.cloneNode(true);
     th.parentNode.replaceChild(newTh, th);
 
-    // 1. まず古い矢印（▲や▼）があれば消して、元の名前に戻す
+    // 1. 古い矢印（▲や▼）があれば消して元の名前に戻す
     newTh.textContent = newTh.textContent.replace(/[▲▼]/g, '');
 
-    // 2. 現在選択中の列なら、色をつけて矢印を追加する
+    // 2. 現在選択中の列なら色＋矢印
     if (newTh.dataset.key === currentTableSortKey) {
       newTh.style.backgroundColor = "#B3E5FC";
-      
-      // 降順(true)なら▼、昇順(false)なら▲
       const arrow = currentTableSortDesc ? " ▼" : " ▲"; 
-      newTh.textContent += arrow; // 名前のお尻に矢印をくっつける
-
+      newTh.textContent += arrow;
     } else {
-      // 選択されていない列は色をリセット
       newTh.style.backgroundColor = "";
     }
 
@@ -531,7 +557,7 @@ function renderJobTable(jobData, currentTotalMatches) {
          currentTableSortDesc = !currentTableSortDesc;
       } else { 
          currentTableSortKey = newTh.dataset.key; 
-         // ジョブ以外は「降順(true)」からスタートする
+         // ジョブ以外は「降順(true)」からスタート
          currentTableSortDesc = (newTh.dataset.key !== "job"); 
       }
       refreshTableOnly();
@@ -833,74 +859,61 @@ function renderJobScatterChart(jobData, totalMatches) {
         const img = document.createElement("img");
         img.src = `../images/JOB/${key}.png`;
 
-        //スタイル定義
+        // スタイル定義
         const baseStyle = `width:32px; height:32px; cursor:pointer; border-radius:6px; transition:0.2s; padding:2px;`;
        
         if (isON) {
-          //ONの状態
-           const role = JOB_META[key]?.role || "unknown";
-           const borderCol = 
-             role === "tank" ? "#63b3ed" : 
-             role === "healer" ? "#48bb78" : 
-             role === "dps" ? "#f687b3" : "#a0aec0";
-           img.style.cssText = baseStyle + `border:2px solid ${borderCol}; background:#fff; opacity:1; filter:none; transform:scale(1); box-shadow:0 1px 3px rgba(0,0,0,0.1);`;
+          // ONの状態
+          const role = JOB_META[key]?.role || "unknown";
+          const borderCol = 
+            role === "tank" ? "#63b3ed" : 
+            role === "healer" ? "#48bb78" : 
+            role === "dps" ? "#f687b3" : "#a0aec0";
+          img.style.cssText = baseStyle + `border:2px solid ${borderCol}; background:#fff; opacity:1; filter:none; transform:scale(1); box-shadow:0 1px 3px rgba(0,0,0,0.1);`;
         } else {
-          //OFFの状態
-           img.style.cssText = baseStyle + `border:2px solid #e2e8f0; background:transparent; opacity:0.4; filter:grayscale(100%); transform:scale(0.9);`;
+          // OFFの状態
+          img.style.cssText = baseStyle + `border:2px solid #e2e8f0; background:transparent; opacity:0.4; filter:grayscale(100%); transform:scale(0.9);`;
         }
 
         img.onclick = () => toggleSingleJob(key);
 
         if (isON) { 
-            // マウスが乗った時
-img.onmouseenter = () => {
-                if (!jobScatterChartInstance) return;
-                
-                const dataset = jobScatterChartInstance.data.datasets[0];
-                
-                // 1. データ内でこのジョブが何番目にあるか探す
-                const dataIndex = activePoints.findIndex(p => p.jobKey === key);
+          // マウスが乗った時
+          img.onmouseenter = () => {
+            if (!jobScatterChartInstance) return;
+            
+            const dataset = jobScatterChartInstance.data.datasets[0];
+            const dataIndex = activePoints.findIndex(p => p.jobKey === key);
 
-                // 2. アイコンの見た目変更（さっきの実装）
-                // 自分以外を薄く、自分を大きく
-                dataset.pointStyle = activePoints.map(p => {
-                    return p.jobKey === key ? iconAssets[p.jobKey].normal : iconAssets[p.jobKey].faded;
-                });
-                dataset.radius = activePoints.map(p => {
-                    return p.jobKey === key ? (ICON_SIZE / 2) + 5 : (ICON_SIZE / 2);
-                });
+            dataset.pointStyle = activePoints.map(p => {
+              return p.jobKey === key ? iconAssets[p.jobKey].normal : iconAssets[p.jobKey].faded;
+            });
+            dataset.radius = activePoints.map(p => {
+              return p.jobKey === key ? (ICON_SIZE / 2) + 5 : (ICON_SIZE / 2);
+            });
 
-                // 3. ツールチップを強制的に表示させる
-                if (dataIndex >= 0) {
-                    jobScatterChartInstance.tooltip.setActiveElements([
-                        { datasetIndex: 0, index: dataIndex }
-                    ]);
-                    jobScatterChartInstance.setActiveElements([
-                        { datasetIndex: 0, index: dataIndex }
-                    ]);
-                }
+            if (dataIndex >= 0) {
+              jobScatterChartInstance.tooltip.setActiveElements([{ datasetIndex: 0, index: dataIndex }]);
+              jobScatterChartInstance.setActiveElements([{ datasetIndex: 0, index: dataIndex }]);
+            }
 
-                // 4. 再描画（ツールチップを出すために 'none' は外すのが無難）
-                jobScatterChartInstance.update();
-            };
+            jobScatterChartInstance.update();
+          };
 
-            // マウスが離れた時
-img.onmouseleave = () => {
-                if (!jobScatterChartInstance) return;
+          // マウスが離れた時
+          img.onmouseleave = () => {
+            if (!jobScatterChartInstance) return;
 
-                const dataset = jobScatterChartInstance.data.datasets[0];
-                
-                // 1. アイコンの見た目を元に戻す
-                dataset.pointStyle = activePoints.map(p => iconAssets[p.jobKey].normal);
-                dataset.radius = ICON_SIZE / 2;
+            const dataset = jobScatterChartInstance.data.datasets[0];
 
-                // 2. ツールチップを隠す
-                jobScatterChartInstance.tooltip.setActiveElements([], {x: 0, y: 0});
-                jobScatterChartInstance.setActiveElements([]);
+            dataset.pointStyle = activePoints.map(p => iconAssets[p.jobKey].normal);
+            dataset.radius = ICON_SIZE / 2;
 
-                // 3. 再描画
-                jobScatterChartInstance.update();
-            };
+            jobScatterChartInstance.tooltip.setActiveElements([], {x: 0, y: 0});
+            jobScatterChartInstance.setActiveElements([]);
+
+            jobScatterChartInstance.update();
+          };
         }
         iconsDiv.appendChild(img);
       });
@@ -1001,7 +1014,7 @@ function initRankFilter() {
       btn.style.background = "#f1f5f9";
     } else {
       const [c1, c2] = RANK_META[key].colors;
-btn.style.background = `linear-gradient(135deg, ${c1}, ${c2})`;
+      btn.style.background = `linear-gradient(135deg, ${c1}, ${c2})`;
     }
 
     btn.appendChild(icon);
@@ -1111,15 +1124,15 @@ function aggregateAndRender() {
     // ステージ別時間の配列化
     byStageHour: Object.keys(merged.byStageHour).map(key => {
       const [stage, hour] = key.split("\t");
-      const d = merged.byStageHour[key];
-      return { stage, hour: Number(hour), total: d.total, winRate: d.total ? d.wins / d.total : 0 };
+      const dd = merged.byStageHour[key];
+      return { stage, hour: Number(hour), total: dd.total, winRate: dd.total ? dd.wins / dd.total : 0 };
     }),
     byStage: calculateStageTotals_(merged.byStageJob)
   };
 
   // 4. 画面を更新
   updateDashboard();
-if (globalData && globalData.byStage) {
+  if (globalData && globalData.byStage) {
     initStageSelector(globalData.byStage);
   }
 }
@@ -1140,14 +1153,12 @@ function mergeSubtotals_(target, source) {
     t.sumDmg += s.sumDmg; t.sumTaken += s.sumTaken; t.sumHeal += s.sumHeal;
     t.sumTime += s.sumTime; t.sumMatchTime += s.sumMatchTime;
 
-    
     const metrics = ["K", "D", "A", "Dmg", "Taken", "Heal", "Time", "MatchTime"];
     metrics.forEach(m => {
       t[`w${m}`] += (s[`w${m}`] || 0);
       t[`l${m}`] += (s[`l${m}`] || 0);
     });
 
-    
     metrics.forEach(k => {
       t[`arr${k}`] = t[`arr${k}`].concat(s[`arr${k}`] || []);
       t[`w_arr${k}`] = t[`w_arr${k}`].concat(s[`w_arr${k}`] || []);
