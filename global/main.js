@@ -1008,10 +1008,14 @@ btn.style.background = `linear-gradient(135deg, ${c1}, ${c2})`;
 
     const text = document.createElement("span");
     text.style.textShadow = `
-  -0.5px -0.5px 0 #fff,
-   0.5px -0.5px 0 #fff,
-  -0.5px  0.5px 0 #fff,
-   0.5px  0.5px 0 #fff
+-0.4px -0.4px 0 #fff,
+   0.4px -0.4px 0 #fff,
+  -0.4px  0.4px 0 #fff,
+   0.4px  0.4px 0 #fff,
+   0px  -0.4px 0 #fff,
+   0px   0.4px 0 #fff,
+  -0.4px  0px  0 #fff,
+   0.4px  0px  0 #fff
 `;
 
     text.textContent = RANK_META[key].label;
