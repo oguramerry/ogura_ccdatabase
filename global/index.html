@@ -115,10 +115,17 @@
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; flex-wrap:wrap; gap:10px;">
           <h2 style="margin:0; border:none; padding:0;">ジョブ別・完全データリスト</h2>
           
-          <div class="toggle-group method-toggle">
-            <label><input type="radio" name="statMethod" value="avg" checked> 平均値</label>
-            <label><input type="radio" name="statMethod" value="median"> 中央値</label>
-          </div>
+<div class="toggle-group method-toggle">
+  <label><input type="radio" name="statMethod" value="avg" checked> 平均値</label>
+  <label><input type="radio" name="statMethod" value="median"> 中央値</label>
+</div>
+
+<div class="toggle-group">
+  <label><input type="radio" name="rateMode" value="RAW" checked> 通常</label>
+  <label><input type="radio" name="rateMode" value="PER1"> 1分</label>
+  <label><input type="radio" name="rateMode" value="PER5"> 5分</label>
+</div>
+
 
           <div class="toggle-group">
             <label><input type="radio" name="viewMode" value="ALL" checked> 全体</label>
