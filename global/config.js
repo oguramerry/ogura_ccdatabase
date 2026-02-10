@@ -53,12 +53,12 @@ const DC_META = {
 };
 
 const RANK_META = {
-  "アルテマ":   { label: "アルテマ",   img: "ultima.png", color: "#7F1D1D" }, 
-  "オメガ":     { label: "オメガ",     img: "omega.png", color: "#C026D3" },
-  "クリスタル": { label: "クリスタル", img: "crystal.png", color: "#38BDF8" }, 
-  "ダイヤモンド": { label: "ダイヤ",   img: "diamond.png", color: "#D4AF37" }, 
-  "プラチナ":   { label: "プラチナ",  img: "platinum.png",  color: "#94A3B8" }, 
-  "ゴールド":   { label: "ゴールド", img: "gold.png",   color: "#F59E0B" },
-  "シルバー":   { label: "シルバー",  img: "silver.png",  color: "#E5E7EB" },
-  "ブロンズ":   { label: "ブロンズ", img: "bronze.png",   color: "#C2410C" }
+  "アルテマ":   { label: "アルテマ",   img: "ultima.png", color: "#560002" , "#e5022b" }, 
+  "オメガ":     { label: "オメガ",     img: "omega.png", color: "#6e0072" , "#f44ed6" },
+  "クリスタル": { label: "クリスタル", img: "crystal.png", color: "#2d1eff" , "#64d8e5" }, 
+  "ダイヤモンド": { label: "ダイヤ",   img: "diamond.png", color: "#c4ce0c" , "#4e9bed" }, 
+  "プラチナ":   { label: "プラチナ",  img: "platinum.png",  color: "#abbad3" , "#5cc3d6" }, 
+  "ゴールド":   { label: "ゴールド", img: "gold.png",   color: "#968134" , "#e5de82" },
+  "シルバー":   { label: "シルバー",  img: "silver.png",  color: "#95a6c1" , "#cbd5ed" },
+  "ブロンズ":   { label: "ブロンズ", img: "bronze.png",   color: "#72430c" , "#b2905e" }
 };
