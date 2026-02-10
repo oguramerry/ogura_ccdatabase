@@ -228,7 +228,7 @@ if (dcData) {
   renderJobScatterChart(data, total);
 }
 
-// ★背景画像更新関数（パス修正済み）
+// ★背景画像更新関数
 function updateBackgroundImage(stageName) {
   const bg = document.getElementById("stage-background");
   if (!bg) return;
@@ -998,9 +998,9 @@ function initRankFilter() {
     // OFFの時は画像を白黒にする
     if (!rankFilterState[key]) {
       icon.style.filter = "grayscale(100%) opacity(0.6)";
-      btn.style.backgroundColor = "#f1f5f9";
+      btn.style.background = "#f1f5f9";
     } else {
-      btn.style.backgroundColor = RANK_META[key].color;
+      btn.style.background = RANK_META[key].color;
     }
 
     btn.appendChild(icon);
