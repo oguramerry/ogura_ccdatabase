@@ -870,7 +870,7 @@ img.onmouseenter = () => {
                     return p.jobKey === key ? (ICON_SIZE / 2) + 5 : (ICON_SIZE / 2);
                 });
 
-                // 3. 【追加】ツールチップを強制的に表示させる！
+                // 3. ツールチップを強制的に表示させる
                 if (dataIndex >= 0) {
                     jobScatterChartInstance.tooltip.setActiveElements([
                         { datasetIndex: 0, index: dataIndex }
@@ -894,7 +894,7 @@ img.onmouseleave = () => {
                 dataset.pointStyle = activePoints.map(p => iconAssets[p.jobKey].normal);
                 dataset.radius = ICON_SIZE / 2;
 
-                // 2. 【追加】ツールチップを隠す
+                // 2. ツールチップを隠す
                 jobScatterChartInstance.tooltip.setActiveElements([], {x: 0, y: 0});
                 jobScatterChartInstance.setActiveElements([]);
 
@@ -1060,7 +1060,7 @@ function aggregateAndRender() {
       merged.byHour[h].wins += rd.byHour[h].wins;
     });
 
-    // ★追加：ステージ別時間の合算
+    // ステージ別時間の合算
     if (rd.byStageHour) {
       Object.keys(rd.byStageHour).forEach(shKey => {
         if (!merged.byStageHour[shKey]) merged.byStageHour[shKey] = { total: 0, wins: 0 };
@@ -1096,7 +1096,7 @@ function aggregateAndRender() {
       total: merged.byHour[h].total, 
       winRate: merged.byHour[h].total ? merged.byHour[h].wins / merged.byHour[h].total : 0 
     })),
-    // ★追加：ステージ別時間の配列化
+    // ステージ別時間の配列化
     byStageHour: Object.keys(merged.byStageHour).map(key => {
       const [stage, hour] = key.split("\t");
       const d = merged.byStageHour[key];
