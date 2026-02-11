@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 71,
+    "viewers": 72,
     "started_at": "2026-02-11T05:12:18Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 29,
+    "viewers": 25,
     "started_at": "2026-02-11T13:04:42Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】もう少し勘をつかみたいな【クリコンランクマ】【侍】【ヴァイパー】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=_UUTzovLna0",
+    "thumbnail": "https://i.ytimg.com/vi/_UUTzovLna0/mqdefault_live.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-11T12:49:32Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +41,7 @@
     "streamer": "ぐみもぐ",
     "url": "https://www.twitch.tv/gumimogumogu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-11T14:01:11Z"
   },
   {
