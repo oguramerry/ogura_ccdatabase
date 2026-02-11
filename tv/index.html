@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,196 +7,19 @@
     <title>配信一覧</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="../menu.js?v=1.1" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            /* パステルカラーの定義 */
-            --pastel-blue: #a2d2ff;
-            --pastel-pink: #ffc8dd;
-            --pastel-cream: #fdfbf7;
-            --text-gray: #6d6d6d;
-            --white: #ffffff;
-        }
+    
+    <link rel="stylesheet" href="style.css">
 
-        body {
-            font-family: 'M PLUS Rounded 1c', sans-serif;
-            background-color: var(--pastel-cream);
-            color: var(--text-gray);
-            margin: 0;
-            padding: 40px 20px;
-            background-image: radial-gradient(var(--pastel-blue) 1px, transparent 1px), radial-gradient(var(--pastel-pink) 1px, transparent 1px);
-            background-size: 40px 40px;
-            background-position: 0 0, 20px 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: var(--pastel-blue);
-            font-size: 2em;
-            margin-bottom: 40px;
-            text-shadow: 2px 2px 0px var(--pastel-pink);
-            letter-spacing: 0.1em;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 24px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: var(--white);
-            border-radius: 20px;
-            overflow: hidden;
-            border: 3px solid var(--pastel-pink);
-            box-shadow: 0 8px 16px rgba(255, 200, 221, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(162, 210, 255, 0.6);
-            border-color: var(--pastel-blue);
-        }
-
-        .thumb-container {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 16/9;
-            overflow: hidden;
-            border-bottom: 2px dashed var(--pastel-pink);
-        }
-
-        .thumb {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-        }
-
-        .card:hover .thumb {
-            transform: scale(1.05);
-        }
-
-        .info {
-            padding: 16px;
-        }
-
-        .platform {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: white;
-        }
-        
-        .platform.youtube { background-color: #ffadad; } /* パステルレッド */
-        .platform.twitch { background-color: #bdb2ff; }  /* パステルパープル */
-
-        .title {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: var(--text-gray);
-            line-height: 1.5;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .streamer {
-            font-size: 14px;
-            color: #999;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .streamer::before {
-            content: '♥';
-            color: var(--pastel-pink);
-        }
-
-        .viewers {
-            font-size: 14px;
-            color: var(--pastel-blue);
-            font-weight: bold;
-            text-align: right;
-        }
-
-        .empty {
-            text-align: center;
-            grid-column: 1 / -1;
-            padding: 60px;
-            background: white;
-            border-radius: 20px;
-            border: 3px dashed var(--pastel-blue);
-            color: var(--pastel-blue);
-            font-weight: bold;
-        }
-
-        /* スマホ向けの調整 */
-        @media (max-width: 600px) {
-            .grid { grid-template-columns: 1fr; }
-            body { padding: 20px 15px; }
-        }
-    </style>
+    <script src="../menu.js?v=1.1" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<h1>コンクリ番組表 </h1>
-<div id="stream-grid" class="grid">
-    <div class="empty">さがしています...♡</div>
-</div>
+    <h1>コンクリ番組表 </h1>
+    <div id="stream-grid" class="grid">
+        <div class="empty">さがしています...♡</div>
+    </div>
 
-<script>
-    async function loadStreams() {
-        const grid = document.getElementById('stream-grid');
-        try {
-            // jsonを読み込む設定
-            const response = await fetch('./stream_data.json', { cache: 'no-cache' });
-            
-            if (!response.ok) throw new Error('File not found');
-            
-            const data = await response.json();
-
-            if (data.length === 0) {
-                grid.innerHTML = '<div class="empty">今は誰も配信してないじゃ、ないでしょうか(´;ω;｀)...<br>ほにゃ、引退(´;ω;｀)</div>';
-                return;
-            }
-
-            grid.innerHTML = data.map(s => `
-                <a href="${s.url}" target="_blank" class="card">
-                    <div class="thumb-container">
-                        <img src="${s.thumbnail}" class="thumb" alt="thumbnail">
-                    </div>
-                    <div class="info">
-                        <span class="platform ${s.platform.toLowerCase()}">${s.platform}</span>
-                        <div class="title">${s.title}</div>
-                        <div class="streamer">${s.streamer}</div>
-                        <div class="viewers">✧ ${s.viewers.toLocaleString()} 人が見てるよ</div>
-                    </div>
-                </a>
-            `).join('');
-        } catch (e) {
-            console.error(e);
-            grid.innerHTML = '<div class="empty">データの読み込みに失敗(´;ω;｀)...<br>リロードして、みてね(´;ω;｀)</div>';
-        }
-    }
-
-    loadStreams();
-    // 1分ごとに更新
-    setInterval(loadStreams, 60000);
-</script>
 </body>
 </html>
