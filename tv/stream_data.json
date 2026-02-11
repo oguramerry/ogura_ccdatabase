@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 81,
+    "viewers": 85,
     "started_at": "2026-02-11T05:12:18Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 73,
+    "viewers": 71,
     "started_at": "2026-02-11T11:13:43Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 22,
+    "viewers": 18,
     "started_at": "2026-02-11T13:04:42Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=_UUTzovLna0",
     "thumbnail": "https://i.ytimg.com/vi/_UUTzovLna0/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 4,
     "started_at": "2026-02-11T12:49:32Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "ぐみもぐ",
     "url": "https://www.twitch.tv/gumimogumogu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-11T14:01:11Z"
   },
   {
@@ -50,7 +50,16 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 4,
+    "viewers": 1,
+    "started_at": "2026-02-11T09:43:31Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ダイヤ４から",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 1,
     "started_at": "2026-02-11T09:43:31Z"
   }
 ]
