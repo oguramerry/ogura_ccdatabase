@@ -67,6 +67,7 @@ function initMenu() {
         <li><a href="${base}index.html">・TOP</a></li>
         <li><a href="${base}global/index.html">・戦場レポート</a></li>
         <li><a href="${base}dashboard/index.html">・こんくりラボ</a></li>
+        <li><a href="${base}tv/index.html">・こんくりTV</a></li>
         <li><a href="${base}upload/index.html">・リザルト送信BOX</a></li>
       </ul>
     </nav>
