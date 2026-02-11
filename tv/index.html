@@ -35,7 +35,7 @@
         try {
             // GASが作ったJSONファイルを読み込む
             
-            const response = await fetch('../stream_data.json', { cache: 'no-cache' });
+            const response = await fetch('./stream_data.json', { cache: 'no-cache' });
             const data = await response.json();
 
             if (data.length === 0) {
