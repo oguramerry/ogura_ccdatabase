@@ -109,6 +109,23 @@ document.addEventListener("DOMContentLoaded", () => {
     currentRateMode = val;
     refreshTableOnly();
   });
+
+  const modal = document.getElementById("job-detail-modal");
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      // クリックされたのがモーダル背景そのもの（中身のカードじゃない）なら閉じる
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    // モーダルが表示されている時だけEscで閉じる
+    if (e.key === "Escape" && modal && modal.style.display !== "none") {
+      closeModal();
+    }
+  });
   
 });
 
