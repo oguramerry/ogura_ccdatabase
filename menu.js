@@ -1,7 +1,7 @@
 // menu.js
 function initMenu() {
   const path = window.location.pathname;
-  const isSubFolder = path.includes('/upload') || path.includes('/dashboard') || path.includes('/global');
+  const isSubFolder = path.includes('/upload') || path.includes('/dashboard') || path.includes('/global') || path.includes('/tv');
   const base = isSubFolder ? '../' : './';
 
   const style = document.createElement('style');
