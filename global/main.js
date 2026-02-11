@@ -1,4 +1,4 @@
-// main.js 
+// main.js
 
 // --- グローバル変数 ---
 let currentViewMode = "ALL";
