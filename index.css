@@ -1,45 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@charset "UTF-8";
 
-/* 中央寄せ */
-.container {
-display: flex;
-flex-direction: column;
-align-items: center;
+/* 全体のリセットとフォント設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* 背景 */
 body {
-background-image: url("./images/bg_sky_shiwamoco");
-background-size: 60px 60px;
-background-repeat: repeat;
-background-position: top left;
-}
-
-/* タイトルのサイズ調整 */
-.title img{
-  width: 20vw;　　　　/* 画面の横に対してx% */
-  height: auto;
-}
-.please {
   font-family: "Kiwi Maru", serif;
+  background-color: #dbe4ea; /* パステルブルーグレー */
+  background-image: 
+    radial-gradient(#ffffff 20%, transparent 20%),
+    radial-gradient(#ffffff 20%, transparent 20%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  color: #707070; /* 優しいグレーの文字 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.daemon img{
-  width: 20vw;
+/* 白いふわっとしたカード */
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px; /* PCで見ても広がりすぎないように */
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(176, 196, 222, 0.4); /* ブルーグレーの影 */
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* 要素同士の間隔 */
+}
+
+/* タイトル画像 */
+.title img {
+  width: 80%;
+  max-width: 300px;
   height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* サブタイトル */
+.please {
+  font-size: 1rem;
+  color: #8daab9; /* 少し濃いブルーグレー */
+  margin-bottom: 10px;
+}
+
+/* デーモン画像 */
+.daemon-section img {
+  width: 60%;
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.daemon-section img:hover {
+  transform: scale(1.05) rotate(2deg); /* ホバーで少し拡大して傾く */
+}
+
+/* メニューリスト（縦並び） */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* ベビーピンクのボタン */
+.menu-btn {
+  display: block;
+  width: 80%;
+  max-width: 280px;
+  padding: 15px;
+  background-color: #fce2e8; /* ベビーピンク */
+  color: #707070;
+  text-decoration: none;
+  border-radius: 50px; /* カプセル型 */
+  font-weight: bold;
+  box-shadow: 0 4px 0 #f0cdd6; /* ボタンの立体感 */
+  transition: all 0.2s ease;
+  position: relative;
+  top: 0;
+}
+
+.menu-btn:hover {
+  background-color: #fddde4;
+  top: 2px; /* 押した感じ */
+  box-shadow: 0 2px 0 #f0cdd6;
+  color: #555;
+}
+
+.menu-btn:active {
+  top: 4px;
+  box-shadow: none;
 }
 
 /* フッター */
 footer {
-  display: flex;
-  bottom: 0;
-  color: #ffffff;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-size: 0.8em;
+  margin-top: 30px;
+  color: #8daab9;
+  font-size: 0.8rem;
 }
-
-
-  
-  
