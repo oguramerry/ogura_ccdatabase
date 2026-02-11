@@ -1233,3 +1233,22 @@ body {
 }
 
 
+/* 1列目を固定して、スクロールしても隠れないようにする */
+.result-table th:first-child,
+.result-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2; /* 他のセルより上に */
+  background-color: #fff; /* 背景色がないと透けちゃうので必須 */
+  border-right: 1px solid #e2e8f0; /* 固定列の境目に線を入れる */
+}
+
+/* 予報テーブルも同様に（時間軸ラベルを固定） */
+.forecast-time-label {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: #fff;
+  border-right: 1px solid #e2e8f0;
+}
+
