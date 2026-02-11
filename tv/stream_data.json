@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "［FF14］クリコンランクマッチ",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 76,
-    "started_at": "2026-02-11T11:13:43Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK） 『今日は何の日：建国記念の日、文化勲章制定記念日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 72,
+    "viewers": 81,
     "started_at": "2026-02-11T05:12:18Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "［FF14］クリコンランクマッチ",
+    "streamer": "ろびす",
+    "url": "https://www.twitch.tv/robswiz_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
+    "viewers": 73,
+    "started_at": "2026-02-11T11:13:43Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 25,
+    "viewers": 22,
     "started_at": "2026-02-11T13:04:42Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=_UUTzovLna0",
     "thumbnail": "https://i.ytimg.com/vi/_UUTzovLna0/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 8,
     "started_at": "2026-02-11T12:49:32Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "ぐみもぐ",
     "url": "https://www.twitch.tv/gumimogumogu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-11T14:01:11Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 1,
+    "viewers": 4,
     "started_at": "2026-02-11T09:43:31Z"
   }
 ]
