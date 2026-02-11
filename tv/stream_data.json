@@ -5,7 +5,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 32,
+    "viewers": 31,
     "started_at": "2026-02-11T13:04:42Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=_UUTzovLna0",
     "thumbnail": "https://i.ytimg.com/vi/_UUTzovLna0/mqdefault_live.jpg",
-    "viewers": 10,
+    "viewers": 5,
     "started_at": "2026-02-11T12:49:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】リハビリ—パー【クリコン】",
-    "streamer": "ぐみもぐ",
-    "url": "https://www.twitch.tv/gumimogumogu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-11T14:01:11Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-02-11T09:43:31Z"
   }
 ]
