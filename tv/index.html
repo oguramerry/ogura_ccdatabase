@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリコン配信テレビ欄</title>
+    <style>
+        body { font-family: sans-serif; background: #1a1a1a; color: white; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #00d4ff; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: #2a2a2a; border-radius: 10px; overflow: hidden; transition: transform 0.2s; border: 1px solid #444; }
+        .card:hover { transform: translateY(-5px); border-color: #00d4ff; }
+        .thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+        .info { padding: 15px; }
+        .platform { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-bottom: 8px; }
+        .youtube { background: #ff0000; }
+        .twitch { background: #9146ff; }
+        .title { font-size: 16px; font-weight: bold; margin-bottom: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .streamer { font-size: 14px; color: #aaa; margin-bottom: 5px; }
+        .viewers { font-size: 14px; color: #00d4ff; }
+        a { text-decoration: none; color: inherit; }
+        .empty { text-align: center; grid-column: 1 / -1; padding: 50px; color: #888; }
+    </style>
+</head>
+<body>
+
+<h1>FF14 クリコン配信番組表</h1>
+<div id="stream-grid" class="grid">
+    <div class="empty">配信情報を読み込み中...</div>
+</div>
+
+<script>
+    async function loadStreams() {
+        const grid = document.getElementById('stream-grid');
+        try {
+            // GASが作ったJSONファイルを読み込む
+            
+            const response = await fetch('./stream_data.json', { cache: 'no-cache' });
+            const data = await response.json();
+
+            if (data.length === 0) {
+                grid.innerHTML = '<div class="empty">現在、配信中の番組はありません。</div>';
+                return;
+            }
+
+            grid.innerHTML = data.map(s => `
+                <a href="${s.url}" target="_blank" class="card">
+                    <img src="${s.thumbnail}" class="thumb" alt="thumbnail">
+                    <div class="info">
+                        <span class="platform ${s.platform.toLowerCase()}">${s.platform}</span>
+                        <div class="title">${s.title}</div>
+                        <div class="streamer">${s.streamer}</div>
+                        <div class="viewers">● ${s.viewers.toLocaleString()} 人が視聴中</div>
+                    </div>
+                </a>
+            `).join('');
+        } catch (e) {
+            grid.innerHTML = '<div class="empty">データの読み込みに失敗しました。</div>';
+        }
+    }
+
+    loadStreams();
+    // 1分ごとに表示を更新
+    setInterval(loadStreams, 60000);
+</script>
+
+</body>
+</html>
