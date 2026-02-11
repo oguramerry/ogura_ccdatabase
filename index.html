@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <meta name "robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow" />
+    <title>集合しましょう！</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <script src="./menu.js" defer></script>
-    <title>集合しましょう！</title>
   </head>
   <body>
-  <div class="container">
-    <p class="title"><img src="./images/shu_shima.png"></p>
-    <p class="please">～タクティカルクリスタルを移送してください！～</p>
 
-    <!-- マウスオーバーで画像変更 -->
-  <span class="daemon">
-    <a href="./dashboard/index.html">
-      <img src="./images/before_daemon.png" border="0" 
-        onMouseOver="this.src='./images/after_daemon.png'" 
-        onMouseOut="this.src='./images/before_daemon.png'" />
-    </a>
-  </span>
-  </div>
+    <div class="card">
+      
+      <div class="header-section">
+        <p class="title"><img src="./images/shu_shima.png" alt="集合しましょう！"></p>
+        <p class="please">～タクティカルクリスタルを移送してください！～</p>
+      </div>
 
-    <div>
-      <a href="./global/index.html">戦場調査</a>
+      <div class="daemon-section">
+        <a href="./dashboard/index.html">
+          <img src="./images/before_daemon.png" 
+               onMouseOver="this.src='./images/after_daemon.png'" 
+               onMouseOut="this.src='./images/before_daemon.png'"
+               alt="Dashboard Link" />
+        </a>
+      </div>
+
+      <nav class="menu-list">
+        <a href="./global/index.html" class="menu-btn">
+          <span class="btn-text">戦場調査</span>
+        </a>
+        <a href="./tv/index.html" class="menu-btn">
+          <span class="btn-text">コンクリTV</span>
+        </a>
+        <a href="./upload/" class="menu-btn">
+          <span class="btn-text">リザルト送信BOX</span>
+        </a>
+      </nav>
+
     </div>
 
-        <div>
-    <a href="./tv/index.html">コンクリTV</a>
-      </div>
+    <footer>
+      <small>Copyright © 2026 Ogura Chan All Rights Reserved.</small>
+    </footer>
 
-    <div>
-    <a href="./upload/">リザルト送信BOX</a>
-      </div>
-
-  
-  <footer>
-    <small class="container">
-      Copyright © 2026 Ogura Chan All Rights Reserved.
-    </small>
-  </footer>
   </body>
 </html>
