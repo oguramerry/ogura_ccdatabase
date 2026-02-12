@@ -5,7 +5,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 36,
+    "viewers": 45,
     "started_at": "2026-02-12T14:33:20Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 30,
+    "viewers": 35,
     "started_at": "2026-02-12T14:31:02Z"
   },
   {
@@ -23,26 +23,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 27,
+    "viewers": 26,
     "started_at": "2026-02-12T09:31:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "02/12 24:15～25:30【FF14】Gaia 深夜クリコン部 カスタムマッチ PART.154 ライト版",
-    "streamer": "スーニャ",
-    "url": "https://www.twitch.tv/sunyacatfox",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-12T15:10:48Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "夕雲あずさ",
-    "url": "https://www.twitch.tv/01azusa",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-02-12T12:10:53Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +32,43 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 1,
+    "viewers": 17,
     "started_at": "2026-02-12T15:28:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "夕雲あずさ",
+    "url": "https://www.twitch.tv/01azusa",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-12T12:10:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "02/12 24:15～25:30【FF14】Gaia 深夜クリコン部 カスタムマッチ PART.154 ライト版",
+    "streamer": "スーニャ",
+    "url": "https://www.twitch.tv/sunyacatfox",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-12T15:10:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "いくぞω【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
+    "streamer": "ザキアク",
+    "url": "https://www.twitch.tv/zakiyoshi4101",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zakiyoshi4101-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-12T15:36:04Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "いくぞω【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
+    "streamer": "ザキアクのゲーム実況配信",
+    "url": "https://www.youtube.com/watch?v=mZz-QjyVXwc",
+    "thumbnail": "https://i.ytimg.com/vi/mZz-QjyVXwc/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-12T15:36:10Z"
   }
 ]
