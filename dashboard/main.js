@@ -1293,5 +1293,5 @@ players.forEach(p => {
     tr.appendChild(tdTime);
 
     tbody.appendChild(tr);
-
-}); }
+});
+}
