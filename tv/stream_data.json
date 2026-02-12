@@ -5,17 +5,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 50,
+    "viewers": 44,
     "started_at": "2026-02-12T14:33:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】解き放たれし者【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 42,
-    "started_at": "2026-02-12T13:10:42Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 33,
+    "viewers": 38,
     "started_at": "2026-02-12T15:28:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】解き放たれし者【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-02-12T13:10:42Z"
   },
   {
     "platform": "YouTube",
