@@ -5,7 +5,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 41,
+    "viewers": 47,
     "started_at": "2026-02-12T14:33:20Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 35,
+    "viewers": 25,
     "started_at": "2026-02-12T14:31:02Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 19,
+    "viewers": 17,
     "started_at": "2026-02-12T15:28:37Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 13,
+    "viewers": 15,
     "started_at": "2026-02-12T13:10:42Z"
   },
   {
@@ -41,8 +41,17 @@
     "streamer": "スーニャ",
     "url": "https://www.twitch.tv/sunyacatfox",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
-    "viewers": 4,
+    "viewers": 9,
     "started_at": "2026-02-12T15:10:48Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】解き放たれし者【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=tsCZUiWYL1s",
+    "thumbnail": "https://i.ytimg.com/vi/tsCZUiWYL1s/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-12T15:49:36Z"
   },
   {
     "platform": "Twitch",
@@ -55,20 +64,11 @@
   },
   {
     "platform": "YouTube",
-    "title": "【クリコン】解き放たれし者【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=tsCZUiWYL1s",
-    "thumbnail": "https://i.ytimg.com/vi/tsCZUiWYL1s/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-12T15:49:36Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "いくぞω【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
     "streamer": "ザキアクのゲーム実況配信",
     "url": "https://www.youtube.com/watch?v=mZz-QjyVXwc",
     "thumbnail": "https://i.ytimg.com/vi/mZz-QjyVXwc/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-02-12T15:36:10Z"
   }
 ]
