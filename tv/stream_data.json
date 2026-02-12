@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 48,
+    "viewers": 54,
     "started_at": "2026-02-12T10:09:15Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 42,
+    "viewers": 41,
     "started_at": "2026-02-12T09:28:56Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 28,
+    "viewers": 34,
     "started_at": "2026-02-12T09:59:18Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン  ｳﾂｾﾐﾉｼﾞｭﾂ",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 28,
-    "started_at": "2026-02-12T10:09:51Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 27,
+    "viewers": 30,
     "started_at": "2026-02-12T09:31:07Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン  ｳﾂｾﾐﾉｼﾞｭﾂ",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-02-12T10:09:51Z"
   },
   {
     "platform": "YouTube",
@@ -50,8 +50,17 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=aIN52SZ_YFQ",
     "thumbnail": "https://i.ytimg.com/vi/aIN52SZ_YFQ/mqdefault_live.jpg",
-    "viewers": 15,
+    "viewers": 13,
     "started_at": "2026-02-12T10:30:13Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #81 ～ 成功とは、失敗を重ねても、やる気を失わないでいられる才能である ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-12T10:05:34Z"
   },
   {
     "platform": "Twitch",
