@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function renderPreview(data, displayTitle) {
         let imgTag = "";
-        if (data.imageUrl) {
-            let finalUrl = data.imageUrl;
+        if (data.image) {
+            let finalUrl = data.image;
             console.log("② 変換前のURL:", finalUrl);
 
             const driveMatch = finalUrl.match(/[-\w]{25,}/);
