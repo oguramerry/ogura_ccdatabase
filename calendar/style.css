@@ -1,89 +1,104 @@
 /* style.css */
+/* --- 共通設定 --- */
 body {
-    background-color: #fdfdfd; /* ほぼ白に近いライトグレー */
-    font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸文字フォント */
+    background-color: #fdfdfd;
+    /* 全体は「Huninn」のような丸みのあるZen Maru Gothicを採用 */
+    font-family: 'Zen Maru Gothic', sans-serif; 
     color: #78909c;
 }
 
-/* タイトルはグラデーションで可愛く */
+/* --- フォント使い分け --- */
+.mochi-text { font-family: 'Mochi Pop One', sans-serif; }
+.dot-text { font-family: 'DotGothic16', sans-serif; }
+
 #calendar-title {
-    background: linear-gradient(to right, #90caf9, #f48fb1); /* ベビーブルーとピンク */
+    font-family: 'Mochi Pop One', sans-serif;
+    background: linear-gradient(to right, #90caf9, #f48fb1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.5rem;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.05));
+    font-size: 2.8rem;
+    filter: drop-shadow(3px 3px 0px rgba(144, 202, 249, 0.2));
 }
 
-/* ふわふわのカードスタイル */
+/* --- カードデザイン --- */
 .cute-card {
     background: #ffffff;
-    border-radius: 25px; /* カドをまるく */
-    padding: 20px;
+    border-radius: 30px; /* さらにカドを丸く！ */
+    padding: 25px;
     border: none;
-    box-shadow: 0 10px 25px rgba(144, 202, 249, 0.15); /* 青みがかった優しい影 */
+    box-shadow: 0 15px 35px rgba(144, 202, 249, 0.12);
 }
 
 #calendar-card {
-    border: 4px solid #e3f2fd; /* ベビーブルーの太めの枠 */
+    border: 6px solid #e3f2fd;
 }
 
 #preview-card {
-    border: 4px solid #fce4ec; /* ベビーピンクの太めの枠 */
+    border: 6px solid #fce4ec;
     background-color: #fffbfd;
-    min-height: 550px;
+    min-height: 600px;
     position: sticky;
     top: 20px;
 }
 
-/* FullCalendarの中身もかわいく */
-.fc-theme-standard td, .fc-theme-standard th {
-    border-color: #f1f8fe !important;
-}
-
+/* --- カレンダーの中身 (DotGothic16を活用) --- */
 .fc-daygrid-day-number {
-    color: #90caf9;
-    font-weight: bold;
+    font-family: 'DotGothic16', sans-serif; /* 日付をピクセルフォントに！ */
+    color: #90caf9 !important;
+    font-size: 1.2rem;
     padding: 10px !important;
 }
 
+.fc-col-header-cell-cushion {
+    font-family: 'Mochi Pop One', sans-serif;
+    color: #f48fb1;
+}
+
 .fc-button-primary {
+    font-family: 'Mochi Pop One', sans-serif;
     background-color: #90caf9 !important;
     border: none !important;
-    border-radius: 15px !important;
-    font-weight: bold !important;
-    box-shadow: 0 4px 0 #64b5f6; /* ぷにっとしたボタン */
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+    box-shadow: 0 5px 0 #64b5f6 !important;
 }
 
-.fc-button-primary:active {
-    transform: translateY(4px);
-    box-shadow: none !important;
-}
-
-/* リスト部分の見出し */
+/* --- リスト部分 --- */
 .list-title {
+    font-family: 'Mochi Pop One', sans-serif;
     color: #f06292;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
 }
 
-/* イベントカードをポラロイド風に */
 .event-card {
     background: white;
-    border-radius: 20px;
-    padding: 15px;
-    border: 2px solid #eceff1;
-    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 20px;
+    border: 3px solid #f1f8fe;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .event-card:hover {
-    transform: scale(1.03) rotate(1deg); /* ちょっと傾くのがかわいい */
-    box-shadow: 0 15px 30px rgba(244, 143, 177, 0.2);
+    transform: scale(1.05) rotate(-1deg);
+    border-color: #fce4ec;
+    box-shadow: 0 20px 40px rgba(244, 143, 177, 0.25);
 }
 
+/* 予定がない時の文字 */
 .empty-state {
     text-align: center;
-    color: #d1d9e6;
-    margin-top: 100px;
-    font-size: 1.5rem;
+    margin-top: 150px;
+}
+
+.empty-state .dot-text {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #cfd8dc;
+}
+
+.empty-state .mochi-text {
+    font-size: 1.6rem;
+    color: #f8bbd0;
 }
