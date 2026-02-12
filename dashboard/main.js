@@ -1208,38 +1208,90 @@ players.forEach(p => {
 
     // ジョブアイコンパス
     const jobIconPath = `../images/JOB/${p.job}.png`; 
-    tr.innerHTML = `
-      <td class="${nameClass}">${star}</td>
-      <td>
-        <img src="${jobIconPath}" alt="${p.job}" class="result-job-icon" 
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-        <span style="display:none; font-size:10px;">${p.job}</span>
-      </td>
+  
+     // ここから安全なDOM組み立て（innerHTMLを使わない）
+    const tdStar = document.createElement("td");
+    tdStar.className = nameClass;
+    tdStar.textContent = star;
 
-      <td class="${nameClass} clickable-name" 
-          data-name="${p.name}" 
-          style="text-align:left; cursor:pointer;" 
-          title="このユーザーを検索">
-          ${formatName(p.name)}
-      </td>
-      <td class="cell-world" style="font-size: 0.9em; color: #666;">${p.world || "-"}</td>
+    const tdJob = document.createElement("td");
+    const img = document.createElement("img");
+    img.className = "result-job-icon";
+    img.alt = String(p.job || "");
+    img.src = jobIconPath;
 
+    const jobFallback = document.createElement("span");
+    jobFallback.style.display = "none";
+    jobFallback.style.fontSize = "10px";
+    jobFallback.textContent = String(p.job || "");
 
-      <td class="cell-rank">
-         <span class="rank-text ${rankClass}">${p.rank}</span>
-      </td>
+    img.addEventListener("error", () => {
+      img.style.display = "none";
+      jobFallback.style.display = "inline";
+    });
 
+    tdJob.appendChild(img);
+    tdJob.appendChild(jobFallback);
 
-      <td class="cell-num">${p.k}</td>
-      <td class="cell-num">${p.d}</td>
-      <td class="cell-num">${p.a}</td>
-      <td class="cell-num">${fmt(p.damage)}</td>
-      <td class="cell-num">${fmt(p.taken)}</td>
-      <td class="cell-num">${fmt(p.heal)}</td>
-      <td class="cell-num">${formatDuration(p.time)}</td>
-    `;
+    const tdName = document.createElement("td");
+    tdName.className = `${nameClass} clickable-name`;
+    tdName.dataset.name = String(p.name || "");
+    tdName.style.textAlign = "left";
+    tdName.style.cursor = "pointer";
+    tdName.title = "このユーザーを検索";
+    tdName.textContent = formatName(String(p.name || ""));
+
+    const tdWorld = document.createElement("td");
+    tdWorld.className = "cell-world";
+    tdWorld.style.fontSize = "0.9em";
+    tdWorld.style.color = "#666";
+    tdWorld.textContent = p.world ? String(p.world) : "-";
+
+    const tdRank = document.createElement("td");
+    tdRank.className = "cell-rank";
+    const rankSpan = document.createElement("span");
+    rankSpan.className = `rank-text ${rankClass}`;
+    rankSpan.textContent = String(p.rank || "");
+    tdRank.appendChild(rankSpan);
+
+    const makeNumTd = (value) => {
+      const td = document.createElement("td");
+      td.className = "cell-num";
+      td.textContent = String(value ?? "");
+      return td;
+    };
+
+    const makeFmtTd = (value) => {
+      const td = document.createElement("td");
+      td.className = "cell-num";
+      td.textContent = fmt(value);
+      return td;
+    };
+
+    const tdK = makeNumTd(p.k);
+    const tdD = makeNumTd(p.d);
+    const tdA = makeNumTd(p.a);
+    const tdDamage = makeFmtTd(p.damage);
+    const tdTaken = makeFmtTd(p.taken);
+    const tdHeal = makeFmtTd(p.heal);
+
+    const tdTime = document.createElement("td");
+    tdTime.className = "cell-num";
+    tdTime.textContent = formatDuration(p.time);
+
+    tr.appendChild(tdStar);
+    tr.appendChild(tdJob);
+    tr.appendChild(tdName);
+    tr.appendChild(tdWorld);
+    tr.appendChild(tdRank);
+    tr.appendChild(tdK);
+    tr.appendChild(tdD);
+    tr.appendChild(tdA);
+    tr.appendChild(tdDamage);
+    tr.appendChild(tdTaken);
+    tr.appendChild(tdHeal);
+    tr.appendChild(tdTime);
+
     tbody.appendChild(tr);
-  });
-}
 
 
