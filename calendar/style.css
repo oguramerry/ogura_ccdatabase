@@ -24,6 +24,7 @@ body {
     padding: 25px;
     border: none;
     box-shadow: 0 15px 35px rgba(144, 202, 249, 0.12);
+    min-height: 650px; 
     display: flex;
     flex-direction: column;
 }
@@ -39,7 +40,7 @@ body {
 }
 
 .fc {
-    height: 100% !important;
+    height: auto !important;
 }
 
 .fc-daygrid-day-number {
@@ -92,7 +93,8 @@ body {
 
 .preview-img {
     width: 100%;
+    max-height: 300px;
+    object-fit: contain; /* 画像全体が見えるように */
     border-radius: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
