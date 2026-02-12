@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】発狂したら即配信終了！！！！！ #FF14 えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 35,
-    "started_at": "2026-02-12T14:31:02Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【第113話】Age of Older【FFXIV：クリコン】",
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 31,
+    "viewers": 36,
     "started_at": "2026-02-12T14:33:20Z"
   },
   {
     "platform": "Twitch",
-    "title": "【ff14】今日こそは勝ち越すぞ！クリコンランクマ！黒魔導士＆召喚！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-02-12T12:56:27Z"
+    "title": "【クリコン】発狂したら即配信終了！！！！！ #FF14 えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 30,
+    "started_at": "2026-02-12T14:31:02Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +23,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 25,
+    "viewers": 27,
     "started_at": "2026-02-12T09:31:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "夕雲あずさ",
-    "url": "https://www.twitch.tv/01azusa",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-12T12:10:53Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +32,25 @@
     "streamer": "スーニャ",
     "url": "https://www.twitch.tv/sunyacatfox",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
-    "viewers": 2,
+    "viewers": 11,
     "started_at": "2026-02-12T15:10:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "夕雲あずさ",
+    "url": "https://www.twitch.tv/01azusa",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-12T12:10:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン  ひゃくえむ。を見た男",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-12T15:28:37Z"
   }
 ]
