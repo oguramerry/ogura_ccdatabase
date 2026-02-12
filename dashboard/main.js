@@ -1294,4 +1294,4 @@ players.forEach(p => {
 
     tbody.appendChild(tr);
 
-
+}); }
