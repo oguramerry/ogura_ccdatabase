@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 82,
+    "viewers": 71,
     "started_at": "2026-02-12T10:09:15Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 34,
+    "viewers": 36,
     "started_at": "2026-02-12T09:31:07Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 13,
+    "viewers": 19,
     "started_at": "2026-02-12T12:56:27Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】さぁ 行こうか！ 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=aIN52SZ_YFQ",
-    "thumbnail": "https://i.ytimg.com/vi/aIN52SZ_YFQ/mqdefault_live.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-12T10:30:13Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 6,
     "started_at": "2026-02-12T10:05:34Z"
   },
   {
@@ -50,7 +41,7 @@
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-02-12T10:55:48Z"
   }
 ]
