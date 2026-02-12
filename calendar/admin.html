@@ -266,6 +266,7 @@
             if (result.error) {
                 alert("エラー: " + result.error);
             } else {
+                localStorage.removeItem(DRAFT_KEY);
                 alert("登録完了！ ID: " + result.id);
                 // 成功したらリロードしてフォームをクリア
                 location.reload();
@@ -278,6 +279,54 @@
             submitBtn.innerText = "登録する";
         }
     });
+
+    // --- 下書き保存機能 (リロード対策) ---
+    const DRAFT_KEY = 'calendar_event_draft';
+
+    // 1. 入力したら自動でローカルストレージに保存
+    document.getElementById('eventForm').addEventListener('input', (e) => {
+        const draftData = {
+            password: document.getElementById('password').value,
+            title: document.getElementById('title').value,
+            category: document.getElementById('category').value,
+            start: document.getElementById('start').value,
+            end: document.getElementById('end').value,
+            url: document.getElementById('url').value,
+            memo: document.getElementById('memo').value,
+            quest_name: document.getElementById('quest_name').value,
+            requirement: document.getElementById('requirement').value,
+            npc: document.getElementById('npc').value,
+            location: document.getElementById('location').value,
+            reward_links: document.getElementById('reward_links').value,
+            priority: document.getElementById('priority').value
+        };
+        localStorage.setItem(DRAFT_KEY, JSON.stringify(draftData));
+    });
+
+    // 2. ページを開いたときに復元
+    window.addEventListener('load', () => {
+        const savedDraft = localStorage.getItem(DRAFT_KEY);
+        if (savedDraft) {
+            const data = JSON.parse(savedDraft);
+            document.getElementById('password').value = data.password || '';
+            document.getElementById('title').value = data.title || '';
+            document.getElementById('category').value = data.category || 'official_event';
+            document.getElementById('start').value = data.start || '';
+            document.getElementById('end').value = data.end || '';
+            document.getElementById('url').value = data.url || '';
+            document.getElementById('memo').value = data.memo || '';
+            document.getElementById('quest_name').value = data.quest_name || '';
+            document.getElementById('requirement').value = data.requirement || '';
+            document.getElementById('npc').value = data.npc || '';
+            document.getElementById('location').value = data.location || '';
+            document.getElementById('reward_links').value = data.reward_links || '';
+            document.getElementById('priority').value = data.priority || 'normal';
+        }
+    });
+
+    // 3. 送信成功したときだけ下書きを削除
+    // ※元の送信処理の success の部分に以下の1行を追加する必要があるよ
+    // localStorage.removeItem(DRAFT_KEY);
 </script>
 
 </body>
