@@ -5,17 +5,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 47,
+    "viewers": 56,
     "started_at": "2026-02-12T14:33:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】発狂したら即配信終了！！！！！ #FF14 えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 25,
-    "started_at": "2026-02-12T14:31:02Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 17,
+    "viewers": 47,
     "started_at": "2026-02-12T15:28:37Z"
   },
   {
@@ -32,26 +23,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 15,
+    "viewers": 23,
     "started_at": "2026-02-12T13:10:42Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "02/12 24:15～25:30【FF14】Gaia 深夜クリコン部 カスタムマッチ PART.154 ライト版",
-    "streamer": "スーニャ",
-    "url": "https://www.twitch.tv/sunyacatfox",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-02-12T15:10:48Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】解き放たれし者【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=tsCZUiWYL1s",
-    "thumbnail": "https://i.ytimg.com/vi/tsCZUiWYL1s/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-12T15:49:36Z"
   },
   {
     "platform": "Twitch",
@@ -64,11 +37,20 @@
   },
   {
     "platform": "YouTube",
+    "title": "【クリコン】解き放たれし者【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=tsCZUiWYL1s",
+    "thumbnail": "https://i.ytimg.com/vi/tsCZUiWYL1s/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-12T15:49:36Z"
+  },
+  {
+    "platform": "YouTube",
     "title": "いくぞω【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
     "streamer": "ザキアクのゲーム実況配信",
     "url": "https://www.youtube.com/watch?v=mZz-QjyVXwc",
     "thumbnail": "https://i.ytimg.com/vi/mZz-QjyVXwc/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 0,
     "started_at": "2026-02-12T15:36:10Z"
   }
 ]
