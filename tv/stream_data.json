@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 75,
+    "viewers": 68,
     "started_at": "2026-02-12T10:09:15Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day67【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-02-12T09:31:07Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 22,
+    "viewers": 35,
     "started_at": "2026-02-12T12:56:27Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day67【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 30,
+    "started_at": "2026-02-12T09:31:07Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +32,8 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 15,
+    "viewers": 24,
     "started_at": "2026-02-12T14:31:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "夕雲あずさ",
-    "url": "https://www.twitch.tv/01azusa",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-12T12:10:53Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +41,17 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 12,
+    "viewers": 22,
     "started_at": "2026-02-12T14:33:20Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #81 ～ 成功とは、失敗を重ねても、やる気を失わないでいられる才能である ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-12T10:05:34Z"
+    "title": "クリコン",
+    "streamer": "夕雲あずさ",
+    "url": "https://www.twitch.tv/01azusa",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-12T12:10:53Z"
   },
   {
     "platform": "YouTube",
