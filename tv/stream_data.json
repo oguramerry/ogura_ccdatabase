@@ -5,17 +5,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 56,
+    "viewers": 49,
     "started_at": "2026-02-12T14:33:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン  ひゃくえむ。を見た男",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 47,
-    "started_at": "2026-02-12T15:28:37Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +14,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 23,
+    "viewers": 34,
     "started_at": "2026-02-12T13:10:42Z"
   },
   {
     "platform": "Twitch",
-    "title": "いくぞω【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
-    "streamer": "ザキアク",
-    "url": "https://www.twitch.tv/zakiyoshi4101",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zakiyoshi4101-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-12T15:36:04Z"
+    "title": "クリコン  ひゃくえむ。を見た男",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 32,
+    "started_at": "2026-02-12T15:28:37Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=tsCZUiWYL1s",
     "thumbnail": "https://i.ytimg.com/vi/tsCZUiWYL1s/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-02-12T15:49:36Z"
   },
   {
