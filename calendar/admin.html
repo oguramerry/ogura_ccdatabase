@@ -261,7 +261,16 @@
         },
                 body: JSON.stringify(data) // JSON文字列として送る
             });
-            const result = await response.json();
+           const raw = await response.text();
+let result;
+try {
+  result = JSON.parse(raw);
+} catch (e) {
+  console.error("GAS response (not JSON):", raw);
+  alert("GASの返り値がJSONじゃないみたい。consoleに返り値を出したよ。");
+  throw e;
+}
+
 
             if (result.error) {
                 alert("エラー: " + result.error);
