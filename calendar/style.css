@@ -1,8 +1,15 @@
-/* style.css */
 body {
     background-color: #fdfdfd;
     font-family: 'Zen Maru Gothic', sans-serif; 
     color: #78909c;
+    margin: 0;
+    padding: 0;
+}
+
+/* 画面全体の80%に収める設定 */
+.main-wrapper {
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .mochi-text { font-family: 'Mochi Pop One', sans-serif; }
@@ -13,88 +20,66 @@ body {
     background: linear-gradient(to right, #90caf9, #f48fb1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.8rem;
-    filter: drop-shadow(3px 3px 0px rgba(144, 202, 249, 0.2));
-    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* カレンダーとプレビューの高さを画面の60%に固定 */
+.content-area {
+    display: flex;
+    gap: 20px;
+    height: 60vh; 
+    margin-bottom: 40px;
 }
 
 .cute-card {
     background: #ffffff;
     border-radius: 30px;
-    padding: 25px;
-    border: none;
-    box-shadow: 0 15px 35px rgba(144, 202, 249, 0.12);
-    min-height: 650px; 
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(144, 202, 249, 0.12);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #calendar-card {
-    border: 6px solid #e3f2fd;
+    flex: 2; /* カレンダーを広めにするよ */
+    border: 5px solid #e3f2fd;
 }
 
 #preview-card {
-    border: 6px solid #fce4ec;
+    flex: 1; /* プレビューをカレンダーの横に */
+    border: 5px solid #fce4ec;
     background-color: #fffbfd;
-    overflow-y: auto;
+    overflow-y: auto; /* 詳細が長い時はここだけスクロール */
 }
 
-.fc {
-    height: auto !important;
+/* カレンダーの中身をカードにフィットさせる */
+#calendar {
+    height: 100% !important;
 }
 
-.fc-daygrid-day-number {
-    font-family: 'DotGothic16', sans-serif;
-    color: #90caf9 !important;
-    font-size: 1.2rem;
-    padding: 10px !important;
+.preview-img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.fc-col-header-cell-cushion {
-    font-family: 'Mochi Pop One', sans-serif;
-    color: #f48fb1;
-}
-
-.fc-button-primary {
-    font-family: 'Mochi Pop One', sans-serif;
-    background-color: #90caf9 !important;
-    border: none !important;
-    border-radius: 20px !important;
-    padding: 10px 20px !important;
-    box-shadow: 0 5px 0 #64b5f6 !important;
-}
-
+/* 下部リスト */
 .list-title {
     font-family: 'Mochi Pop One', sans-serif;
     color: #f06292;
     text-align: center;
-    margin-bottom: 50px;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .event-card {
     background: white;
     border-radius: 25px;
-    padding: 20px;
+    padding: 15px;
     border: 3px solid #f1f8fe;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
-.event-card:hover {
-    transform: scale(1.05) rotate(-1deg);
-    border-color: #fce4ec;
-    box-shadow: 0 20px 40px rgba(244, 143, 177, 0.25);
-}
-
-.empty-state {
-    text-align: center;
-    margin-top: 150px;
-}
-
-.preview-img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: contain; /* 画像全体が見えるように */
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
+.event-card:hover { transform: translateY(-5px); border-color: #fce4ec; }
