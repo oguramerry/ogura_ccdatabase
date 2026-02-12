@@ -29,8 +29,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
         locale: 'ja',
-        height: '100%',
-        aspectRatio: 1.8, // ここで横長具合を調整できるよ
+        // ★ここを 'auto' にすると、スクロールバーが出ずに1ヶ月分が全部表示されるよ！
+        height: 'auto', 
+        // ★横長のバランスを調整（数字を小さくすると縦に伸びるよ）
+        aspectRatio: 1.5, 
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',
@@ -58,13 +60,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         let imgTag = "";
         if (data.imageUrl) {
             let finalUrl = data.imageUrl;
-            // GoogleドライブのURLからIDを抜き出す処理を強化したよ
-            const driveMatch = finalUrl.match(/\/(?:d|open\?id|file\/d)\/([a-zA-Z0-9_-]+)/) || finalUrl.match(/id=([a-zA-Z0-9_-]+)/);
-            if (driveMatch) {
-                const fileId = driveMatch[1];
-                finalUrl = `https://drive.google.com/uc?export=view&id=${fileId}`;
+            // ★GoogleドライブのあらゆるURL形式からIDを引っこ抜く魔法！
+            const driveMatch = finalUrl.match(/[-\w]{25,}/); // IDっぽい英数字の羅列を探すよ
+            if (driveMatch && finalUrl.includes("drive.google.com")) {
+                finalUrl = `https://drive.google.com/uc?export=view&id=${driveMatch[0]}`;
             }
-            imgTag = `<img src="${finalUrl}" class="preview-img" alt="event image">`;
+            imgTag = `<img src="${finalUrl}" class="preview-img" onerror="this.style.display='none'; console.log('画像読み込み失敗:', this.src);">`;
         }
 
         previewContent.innerHTML = `
@@ -72,16 +73,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 ${imgTag}
                 <p class="mochi-text" style="color: #f06292; font-size: 1.5rem; margin-bottom: 10px;">${displayTitle}</p>
                 <p class="dot-text mb-3" style="font-size: 0.9rem; color: #90caf9;">${start} 〜 ${end}</p>
-                
                 <div class="p-3 rounded-4" style="background: rgba(144, 202, 249, 0.05); font-size: 0.9rem; text-align: left; line-height: 1.6;">
                     ${data.memo ? `<p class="mb-2"><strong>Memo:</strong><br>${data.memo.replace(/\n/g, '<br>')}</p>` : ''}
                     ${data.quest_name ? `<p class="mb-1"><strong>受注:</strong> ${data.quest_name}</p>` : ''}
                     ${data.location ? `<p class="mb-1"><strong>場所:</strong> ${data.location}</p>` : ''}
                 </div>
-                
                 <div class="mt-3">
                     ${data.url ? `<a href="${data.url}" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mochi-text w-100 mb-2">公式サイト</a>` : ''}
-                    ${data.reward_links ? `<a href="${data.reward_links}" target="_blank" class="btn btn-sm btn-outline-danger rounded-pill mochi-text w-100">報酬DB</a>` : ''}
                 </div>
             </div>
         `;
@@ -90,7 +88,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     function renderList(eventData) {
         eventListEl.innerHTML = "";
         const sorted = [...eventData].sort((a, b) => new Date(a.start) - new Date(b.start));
-
         sorted.forEach(ev => {
             const card = document.createElement('div');
             card.className = "col-md-6 col-lg-4";
