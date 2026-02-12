@@ -2,9 +2,16 @@
 /* --- 共通設定 --- */
 body {
     background-color: #fdfdfd;
-    /* 全体は「Huninn」のような丸みのあるZen Maru Gothicを採用 */
     font-family: 'Zen Maru Gothic', sans-serif; 
     color: #78909c;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* --- フォント使い分け --- */
@@ -16,51 +23,76 @@ body {
     background: linear-gradient(to right, #90caf9, #f48fb1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.8rem;
+    font-size: 2.2rem; 
     filter: drop-shadow(3px 3px 0px rgba(144, 202, 249, 0.2));
+    margin-top: 20px;
 }
 
 /* --- カードデザイン --- */
 .cute-card {
     background: #ffffff;
-    border-radius: 30px; /* さらにカドを丸く！ */
-    padding: 25px;
+    border-radius: 25px; 
+    padding: 15px; 
     border: none;
-    box-shadow: 0 15px 35px rgba(144, 202, 249, 0.12);
+    box-shadow: 0 10px 25px rgba(144, 202, 249, 0.12);
 }
 
 #calendar-card {
-    border: 6px solid #e3f2fd;
+    border: 5px solid #e3f2fd;
 }
 
 #preview-card {
-    border: 6px solid #fce4ec;
+    border: 5px solid #fce4ec;
     background-color: #fffbfd;
-    min-height: 600px;
+    min-height: 400px; 
     position: sticky;
     top: 20px;
 }
 
-/* --- カレンダーの中身 (DotGothic16を活用) --- */
+/* --- 画像プレビューのスタイリング--- */
+.preview-img {
+    width: 100%;
+    max-height: 250px; /* 画像が大きくなりすぎないように制限 */
+    object-fit: cover; /* 枠に合わせて綺麗に収める */
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* --- カレンダーの中身をコンパクトに --- */
+.fc {
+    max-width: 100%;
+    font-size: 0.85rem; /* 全体の文字を少し小さく */
+}
+
 .fc-daygrid-day-number {
-    font-family: 'DotGothic16', sans-serif; /* 日付をピクセルフォントに！ */
+    font-family: 'DotGothic16', sans-serif;
     color: #90caf9 !important;
-    font-size: 1.2rem;
-    padding: 10px !important;
+    font-size: 1rem; /* 1.2remから1remに */
+    padding: 5px !important;
 }
 
 .fc-col-header-cell-cushion {
     font-family: 'Mochi Pop One', sans-serif;
     color: #f48fb1;
+    font-size: 0.9rem;
+}
+
+.fc-toolbar-title {
+    font-family: 'Mochi Pop One', sans-serif;
+    font-size: 1.1rem !important; /* 年月の表示を小さく */
+    color: #78909c;
 }
 
 .fc-button-primary {
     font-family: 'Mochi Pop One', sans-serif;
-    background-color: #90caf9 !important;
+    background-color: #e3f2fd !important; /* 塗りつぶしを薄く */
     border: none !important;
-    border-radius: 20px !important;
-    padding: 10px 20px !important;
-    box-shadow: 0 5px 0 #64b5f6 !important;
+    border-radius: 15px !important;
+    padding: 5px 12px !important;
+    font-size: 0.8rem !important;
+    color: #90caf9 !important;
+    box-shadow: 0 3px 0 #bbdefb !important;
 }
 
 /* --- リスト部分 --- */
@@ -68,37 +100,26 @@ body {
     font-family: 'Mochi Pop One', sans-serif;
     color: #f06292;
     text-align: center;
-    margin-bottom: 50px;
-    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
 }
 
 .event-card {
     background: white;
-    border-radius: 25px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 15px;
     border: 3px solid #f1f8fe;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .event-card:hover {
-    transform: scale(1.05) rotate(-1deg);
+    transform: translateY(-5px);
     border-color: #fce4ec;
-    box-shadow: 0 20px 40px rgba(244, 143, 177, 0.25);
 }
 
 /* 予定がない時の文字 */
 .empty-state {
     text-align: center;
-    margin-top: 150px;
-}
-
-.empty-state .dot-text {
-    font-size: 1rem;
-    letter-spacing: 2px;
-    color: #cfd8dc;
-}
-
-.empty-state .mochi-text {
-    font-size: 1.6rem;
-    color: #f8bbd0;
+    margin-top: 100px;
 }
