@@ -1,0 +1,281 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリコンカレンダー管理画面</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
+    
+    <style>
+        body { background-color: #f8f9fa; padding: 20px; }
+        .container { max-width: 800px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+        .preview-area { width: 100%; height: 300px; background: #eee; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+        .preview-area img { max-width: 100%; max-height: 100%; }
+        /* ドラッグ&ドロップ時のスタイル */
+        .preview-area.dragover { background: #e9ecef; border-color: #0d6efd; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="mb-4 text-center">📅 イベント登録</h2>
+
+    <form id="eventForm">
+        <div class="mb-3">
+            <label class="form-label">合言葉 (Password)</label>
+            <input type="password" class="form-control" id="password" required placeholder="GASで設定したパスワード">
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">イベント名 (Title)</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">カテゴリ</label>
+                <select class="form-select" id="category">
+                    <option value="official_event">公式イベント情報</option>
+                    <option value="official_pvp">公式PVP情報</option>
+                    <option value="game_event">ゲーム内イベント情報</option>
+                    <option value="player_event">プレイヤーイベント</option>
+                    <option value="goods">グッズ発売情報</option>
+                    <option value="sale">セール情報</option>
+                    <option value="seasonal">シーズナルイベント</option>
+                    <option value="other">その他</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">開始日時</label>
+                <input type="datetime-local" class="form-control" id="start" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">終了日時</label>
+                <input type="datetime-local" class="form-control" id="end" required>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">画像 (ファイル選択 または ここをクリックしてCtrl+V)</label>
+            <input type="file" class="form-control mb-2" id="imageInput" accept="image/*">
+            
+            <div class="preview-area" id="dropArea" tabindex="0">
+                <span class="text-muted">画像をドラッグ＆ドロップ、または貼り付け(Ctrl+V)</span>
+                <img id="imagePreview" style="display:none;">
+            </div>
+            <div class="mt-2 text-end">
+                <button type="button" class="btn btn-secondary btn-sm" id="cropBtn" style="display:none;">切り抜きを確定</button>
+                <button type="button" class="btn btn-danger btn-sm" id="resetBtn" style="display:none;">リセット</button>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">詳細URL (公式ページなど)</label>
+            <input type="url" class="form-control" id="url" placeholder="https://...">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">メモ (Memo)</label>
+            <textarea class="form-control" id="memo" rows="3"></textarea>
+        </div>
+
+        <div class="accordion mb-3" id="gameInfoAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGameInfo">
+                        🎮 ゲーム内詳細 (クエスト/場所/報酬など)
+                    </button>
+                </h2>
+                <div id="collapseGameInfo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label class="form-label">クエスト名</label>
+                                <input type="text" class="form-control" id="quest_name">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label class="form-label">受注条件</label>
+                                <input type="text" class="form-control" id="requirement">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label class="form-label">NPC名</label>
+                                <input type="text" class="form-control" id="npc">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label class="form-label">場所 (X: Y:)</label>
+                                <input type="text" class="form-control" id="location">
+                            </div>
+                            <div class="col-12 mb-2">
+                                <label class="form-label">報酬詳細URL (公式DB)</label>
+                                <input type="url" class="form-control" id="reward_links">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">重要度</label>
+            <select class="form-select" id="priority">
+                <option value="normal">普通</option>
+                <option value="high">高い</option>
+                <option value="low">低い</option>
+            </select>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">登録する</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+
+<script>
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbzKzOJkwTnR2RgPBKIfCaIHT9GLdLlWgKUlI8ISsXnl2et5CyCFV-FARNwmifn3oOFGmQ/exec"; 
+
+    // 変数定義
+    const imageInput = document.getElementById('imageInput');
+    const dropArea = document.getElementById('dropArea');
+    const imagePreview = document.getElementById('imagePreview');
+    const cropBtn = document.getElementById('cropBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    let cropper = null;
+    let croppedImageData = null; // 最終的に送信する画像データ
+
+    // --- 画像処理関連 ---
+
+    // 1. 画像読み込み処理 (共通)
+    function handleImage(file) {
+        if (!file.type.startsWith('image/')) return;
+        
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            imagePreview.src = e.target.result;
+            imagePreview.style.display = 'block';
+            dropArea.querySelector('span').style.display = 'none';
+            resetBtn.style.display = 'inline-block';
+            
+            // Cropper起動
+            if (cropper) cropper.destroy();
+            cropper = new Cropper(imagePreview, {
+                aspectRatio: NaN, // 自由な比率 (16/9とか固定したければここを変える)
+                viewMode: 1,
+            });
+            cropBtn.style.display = 'inline-block';
+        };
+        reader.readAsDataURL(file);
+    }
+
+    // 2. ファイル選択時
+    imageInput.addEventListener('change', (e) => {
+        if (e.target.files && e.target.files[0]) {
+            handleImage(e.target.files[0]);
+        }
+    });
+
+    // 3. ペースト (Ctrl+V) 時
+    document.addEventListener('paste', (e) => {
+        const items = e.clipboardData.items;
+        for (let i = 0; i < items.length; i++) {
+            if (items[i].type.indexOf('image') !== -1) {
+                const file = items[i].getAsFile();
+                handleImage(file);
+                e.preventDefault(); // デフォルトのペースト動作を無効化
+                break;
+            }
+        }
+    });
+
+    // 4. 切り抜き確定ボタン
+    cropBtn.addEventListener('click', () => {
+        if (!cropper) return;
+        // トリミングしたデータを取得
+        croppedImageData = cropper.getCroppedCanvas().toDataURL('image/jpeg');
+        
+        // プレビューを切り抜いた画像に差し替え
+        cropper.destroy();
+        cropper = null;
+        imagePreview.src = croppedImageData;
+        cropBtn.style.display = 'none';
+        alert("画像を切り抜きました！登録ボタンで送信されます。");
+    });
+
+    // 5. リセットボタン
+    resetBtn.addEventListener('click', () => {
+        if (cropper) cropper.destroy();
+        cropper = null;
+        imagePreview.src = '';
+        imagePreview.style.display = 'none';
+        dropArea.querySelector('span').style.display = 'block';
+        imageInput.value = '';
+        cropBtn.style.display = 'none';
+        resetBtn.style.display = 'none';
+        croppedImageData = null;
+    });
+
+    // --- 送信処理 ---
+
+    document.getElementById('eventForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.disabled = true;
+        submitBtn.innerText = "送信中...";
+
+        // フォームデータの収集
+        const data = {
+            password: document.getElementById('password').value,
+            title: document.getElementById('title').value,
+            category: document.getElementById('category').value,
+            start: document.getElementById('start').value,
+            end: document.getElementById('end').value,
+            url: document.getElementById('url').value,
+            memo: document.getElementById('memo').value,
+            quest_name: document.getElementById('quest_name').value,
+            requirement: document.getElementById('requirement').value,
+            npc: document.getElementById('npc').value,
+            location: document.getElementById('location').value,
+            reward_links: document.getElementById('reward_links').value,
+            priority: document.getElementById('priority').value,
+            
+            // 画像データ (切り抜き済みがあればそれ、なければ空)
+            imageData: croppedImageData || null,
+            imageName: 'upload_image.jpg',
+            imageMimeType: 'image/jpeg'
+        };
+
+        // GASへ送信
+        try {
+            const response = await fetch(GAS_URL, {
+                method: 'POST',
+                body: JSON.stringify(data) // JSON文字列として送る
+            });
+            const result = await response.json();
+
+            if (result.error) {
+                alert("エラー: " + result.error);
+            } else {
+                alert("登録完了！ ID: " + result.id);
+                // 成功したらリロードしてフォームをクリア
+                location.reload();
+            }
+        } catch (error) {
+            console.error(error);
+            alert("通信エラーが発生しました");
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerText = "登録する";
+        }
+    });
+</script>
+
+</body>
+</html>
