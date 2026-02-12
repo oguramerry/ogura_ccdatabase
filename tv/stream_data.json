@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 78,
+    "viewers": 75,
     "started_at": "2026-02-12T10:09:15Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 34,
+    "viewers": 32,
     "started_at": "2026-02-12T09:31:07Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 20,
+    "viewers": 22,
     "started_at": "2026-02-12T12:56:27Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】発狂したら即配信終了！！！！！ #FF14 えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-02-12T14:31:02Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +41,17 @@
     "streamer": "夕雲あずさ",
     "url": "https://www.twitch.tv/01azusa",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
-    "viewers": 10,
+    "viewers": 12,
     "started_at": "2026-02-12T12:10:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第113話】Age of Older【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-12T14:33:20Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +59,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
+    "viewers": 8,
     "started_at": "2026-02-12T10:05:34Z"
   },
   {
