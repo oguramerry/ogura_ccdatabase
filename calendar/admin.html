@@ -1,31 +1,28 @@
-<!-- admin.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>クリコンカレンダー管理画面</title>
+    <title>管理画面</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
-    
     <style>
         body { background-color: #f8f9fa; padding: 20px; }
         .container { max-width: 800px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
-        .preview-area { width: 100%; height: 300px; background: #eee; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+        .preview-area { width: 100%; height: 300px; background: #eee; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; cursor: pointer; }
         .preview-area img { max-width: 100%; max-height: 100%; }
-        /* ドラッグ&ドロップ時のスタイル */
         .preview-area.dragover { background: #e9ecef; border-color: #0d6efd; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2 class="mb-4 text-center">📅 イベント登録</h2>
+    <h2 class="mb-4 text-center">📅 イベントデータ登録</h2>
 
     <form id="eventForm">
         <div class="mb-3">
             <label class="form-label">合言葉 (Password)</label>
-            <input type="password" class="form-control" id="password" required placeholder="GASで設定したパスワード">
+            <input type="password" class="form-control" id="password" required value="5265">
         </div>
 
         <hr>
@@ -38,13 +35,13 @@
             <div class="col-md-6 mb-3">
                 <label class="form-label">カテゴリ</label>
                 <select class="form-select" id="category">
-                    <option value="official_event">公式イベント情報</option>
+                    <option value="seasonal">シーズナルイベント</option>
                     <option value="official_pvp">公式PVP情報</option>
+                    <option value="official_event">公式イベント情報</option>
                     <option value="game_event">ゲーム内イベント情報</option>
                     <option value="player_event">プレイヤーイベント</option>
                     <option value="goods">グッズ発売情報</option>
                     <option value="sale">セール情報</option>
-                    <option value="seasonal">シーズナルイベント</option>
                     <option value="other">その他</option>
                 </select>
             </div>
@@ -62,26 +59,25 @@
         </div>
 
         <div class="mb-3">
-            <label class="form-label">画像 (ファイル選択 または ここをクリックしてCtrl+V)</label>
+            <label class="form-label">画像 (ファイル選択 または ドロップ・貼り付け)</label>
             <input type="file" class="form-control mb-2" id="imageInput" accept="image/*">
-            
             <div class="preview-area" id="dropArea" tabindex="0">
-                <span class="text-muted">画像をドラッグ＆ドロップ、または貼り付け(Ctrl+V)</span>
+                <span class="text-muted">ここに画像をドロップ、またはCtrl+V</span>
                 <img id="imagePreview" style="display:none;">
             </div>
             <div class="mt-2 text-end">
-                <button type="button" class="btn btn-secondary btn-sm" id="cropBtn" style="display:none;">切り抜きを確定</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="cropBtn" style="display:none;">範囲を確定</button>
                 <button type="button" class="btn btn-danger btn-sm" id="resetBtn" style="display:none;">リセット</button>
             </div>
         </div>
 
         <div class="mb-3">
-            <label class="form-label">詳細URL (公式ページなど)</label>
+            <label class="form-label">詳細URL</label>
             <input type="url" class="form-control" id="url" placeholder="https://...">
         </div>
 
         <div class="mb-3">
-            <label class="form-label">メモ (Memo)</label>
+            <label class="form-label">メモ</label>
             <textarea class="form-control" id="memo" rows="3"></textarea>
         </div>
 
@@ -89,11 +85,11 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGameInfo">
-                        🎮 ゲーム内詳細 (クエスト/場所/報酬など)
+                        🎮 ゲーム内詳細設定
                     </button>
                 </h2>
                 <div id="collapseGameInfo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
+                    <div class="accordion-body bg-light text-dark">
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <label class="form-label">クエスト名</label>
@@ -141,75 +137,70 @@
 
 <script>
     const GAS_URL = "https://script.google.com/macros/s/AKfycbw9q7AMUUGrPaJFgkcEHRNNMLHzIj7DZHDBN4NxJqSRPYMk9Vfp7TwKNwOd629So00bgA/exec"; 
+    const DRAFT_KEY = 'calendar_event_draft';
 
-    // 変数定義
     const imageInput = document.getElementById('imageInput');
     const dropArea = document.getElementById('dropArea');
     const imagePreview = document.getElementById('imagePreview');
     const cropBtn = document.getElementById('cropBtn');
     const resetBtn = document.getElementById('resetBtn');
     let cropper = null;
-    let croppedImageData = null; // 最終的に送信する画像データ
+    let croppedImageData = null;
 
-    // --- 画像処理関連 ---
+    function preventDefaults(e) { e.preventDefault(); e.stopPropagation(); }
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(name => {
+        dropArea.addEventListener(name, preventDefaults, false);
+    });
+    ['dragenter', 'dragover'].forEach(name => {
+        dropArea.addEventListener(name, () => dropArea.classList.add('dragover'), false);
+    });
+    ['dragleave', 'drop'].forEach(name => {
+        dropArea.addEventListener(name, () => dropArea.classList.remove('dragover'), false);
+    });
+    dropArea.addEventListener('drop', (e) => {
+        const files = e.dataTransfer.files;
+        if (files && files[0]) handleImage(files[0]);
+    });
 
-    // 1. 画像読み込み処理 (共通)
     function handleImage(file) {
         if (!file.type.startsWith('image/')) return;
-        
         const reader = new FileReader();
         reader.onload = (e) => {
             imagePreview.src = e.target.result;
             imagePreview.style.display = 'block';
             dropArea.querySelector('span').style.display = 'none';
             resetBtn.style.display = 'inline-block';
-            
-            // Cropper起動
             if (cropper) cropper.destroy();
-            cropper = new Cropper(imagePreview, {
-                aspectRatio: NaN, // 自由な比率 (16/9とか固定したければここを変える)
-                viewMode: 1,
-            });
+            cropper = new Cropper(imagePreview, { aspectRatio: NaN, viewMode: 1 });
             cropBtn.style.display = 'inline-block';
         };
         reader.readAsDataURL(file);
     }
 
-    // 2. ファイル選択時
     imageInput.addEventListener('change', (e) => {
-        if (e.target.files && e.target.files[0]) {
-            handleImage(e.target.files[0]);
-        }
+        if (e.target.files && e.target.files[0]) handleImage(e.target.files[0]);
     });
 
-    // 3. ペースト (Ctrl+V) 時
     document.addEventListener('paste', (e) => {
         const items = e.clipboardData.items;
         for (let i = 0; i < items.length; i++) {
             if (items[i].type.indexOf('image') !== -1) {
-                const file = items[i].getAsFile();
-                handleImage(file);
-                e.preventDefault(); // デフォルトのペースト動作を無効化
+                handleImage(items[i].getAsFile());
+                e.preventDefault();
                 break;
             }
         }
     });
 
-    // 4. 切り抜き確定ボタン
     cropBtn.addEventListener('click', () => {
         if (!cropper) return;
-        // トリミングしたデータを取得
         croppedImageData = cropper.getCroppedCanvas().toDataURL('image/jpeg');
-        
-        // プレビューを切り抜いた画像に差し替え
         cropper.destroy();
         cropper = null;
         imagePreview.src = croppedImageData;
         cropBtn.style.display = 'none';
-        alert("画像を切り抜きました！登録ボタンで送信されます。");
     });
 
-    // 5. リセットボタン
     resetBtn.addEventListener('click', () => {
         if (cropper) cropper.destroy();
         cropper = null;
@@ -222,15 +213,16 @@
         croppedImageData = null;
     });
 
-    // --- 送信処理 ---
-
     document.getElementById('eventForm').addEventListener('submit', async (e) => {
         e.preventDefault();
         const submitBtn = document.getElementById('submitBtn');
         submitBtn.disabled = true;
         submitBtn.innerText = "送信中...";
 
-        // フォームデータの収集
+        if (cropper) {
+            croppedImageData = cropper.getCroppedCanvas().toDataURL('image/jpeg');
+        }
+
         const data = {
             password: document.getElementById('password').value,
             title: document.getElementById('title').value,
@@ -245,43 +237,33 @@
             location: document.getElementById('location').value,
             reward_links: document.getElementById('reward_links').value,
             priority: document.getElementById('priority').value,
-            
-            // 画像データ (切り抜き済みがあればそれ、なければ空)
             imageData: croppedImageData || null,
-            imageName: 'upload_image.jpg',
+            imageName: 'upload.jpg',
             imageMimeType: 'image/jpeg'
         };
 
-        // GASへ送信
         try {
             const response = await fetch(GAS_URL, {
                 method: 'POST',
-                headers: {
-            'Content-Type': 'text/plain;charset=utf-8' 
-        },
-                body: JSON.stringify(data) // JSON文字列として送る
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify(data)
             });
-           const raw = await response.text();
-let result;
-try {
-  result = JSON.parse(raw);
-} catch (e) {
-  console.error("GAS response (not JSON):", raw);
-  alert("GASの返り値がJSONじゃないみたい。consoleに返り値を出したよ。");
-  throw e;
-}
-
+            const raw = await response.text();
+            let result;
+            try { result = JSON.parse(raw); } catch (ex) {
+                console.error("GAS raw response:", raw);
+                throw ex;
+            }
 
             if (result.error) {
                 alert("エラー: " + result.error);
             } else {
                 localStorage.removeItem(DRAFT_KEY);
-                alert("登録完了！ ID: " + result.id);
-                // 成功したらリロードしてフォームをクリア
+                alert("登録完了");
                 location.reload();
             }
-        } catch (error) {
-            console.error(error);
+        } catch (err) {
+            console.error(err);
             alert("通信エラーが発生しました");
         } finally {
             submitBtn.disabled = false;
@@ -289,13 +271,8 @@ try {
         }
     });
 
-    // --- 下書き保存機能 (リロード対策) ---
-    const DRAFT_KEY = 'calendar_event_draft';
-
-    // 1. 入力したら自動でローカルストレージに保存
-    document.getElementById('eventForm').addEventListener('input', (e) => {
-        const draftData = {
-            password: document.getElementById('password').value,
+    document.getElementById('eventForm').addEventListener('input', () => {
+        const draft = {
             title: document.getElementById('title').value,
             category: document.getElementById('category').value,
             start: document.getElementById('start').value,
@@ -309,17 +286,15 @@ try {
             reward_links: document.getElementById('reward_links').value,
             priority: document.getElementById('priority').value
         };
-        localStorage.setItem(DRAFT_KEY, JSON.stringify(draftData));
+        localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
     });
 
-    // 2. ページを開いたときに復元
     window.addEventListener('load', () => {
-        const savedDraft = localStorage.getItem(DRAFT_KEY);
-        if (savedDraft) {
-            const data = JSON.parse(savedDraft);
-            document.getElementById('password').value = data.password || '';
+        const saved = localStorage.getItem(DRAFT_KEY);
+        if (saved) {
+            const data = JSON.parse(saved);
             document.getElementById('title').value = data.title || '';
-            document.getElementById('category').value = data.category || 'official_event';
+            document.getElementById('category').value = data.category || 'seasonal';
             document.getElementById('start').value = data.start || '';
             document.getElementById('end').value = data.end || '';
             document.getElementById('url').value = data.url || '';
@@ -332,11 +307,6 @@ try {
             document.getElementById('priority').value = data.priority || 'normal';
         }
     });
-
-    // 3. 送信成功したときだけ下書きを削除
-    // ※元の送信処理の success の部分に以下の1行を追加する必要があるよ
-    // localStorage.removeItem(DRAFT_KEY);
 </script>
-
 </body>
 </html>
