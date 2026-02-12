@@ -278,10 +278,11 @@ tabs.addEventListener("click", (e) => {
     for (const u of users) {
       const opt = document.createElement("option");
       opt.value = formatCharacterName(u);
-      list.appendChild(opt);
+      fragment.appendChild(opt);
     }
     list.appendChild(fragment);
   };
+
 
   window.handleMatchHistoryJsonp = (data) => {
     console.log("届いたデータの中身:", data);
