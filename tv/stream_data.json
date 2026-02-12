@@ -5,26 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 81,
+    "viewers": 72,
     "started_at": "2026-02-12T10:09:15Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン🍹世界が渇望したNasiaのクリコンランク➧炊いたら別ゲ候補：PvE、スターデューバレー、NTE、マイクラ",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 49,
-    "started_at": "2026-02-12T09:59:18Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン  ｳﾂｾﾐﾉｼﾞｭﾂ",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 42,
-    "started_at": "2026-02-12T10:09:51Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 41,
+    "viewers": 33,
     "started_at": "2026-02-12T09:31:07Z"
   },
   {
@@ -41,7 +23,34 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=aIN52SZ_YFQ",
     "thumbnail": "https://i.ytimg.com/vi/aIN52SZ_YFQ/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 13,
     "started_at": "2026-02-12T10:30:13Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #81 ～ 成功とは、失敗を重ねても、やる気を失わないでいられる才能である ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-12T10:05:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンいく",
+    "streamer": "るりむい",
+    "url": "https://www.twitch.tv/ruri_muy",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-12T10:55:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14】今日こそは勝ち越すぞ！クリコンランクマ！黒魔導士＆召喚！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-12T12:56:27Z"
   }
 ]
