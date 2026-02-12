@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 84,
+    "viewers": 78,
     "started_at": "2026-02-12T10:09:15Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 31,
+    "viewers": 29,
     "started_at": "2026-02-12T09:31:07Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 23,
+    "viewers": 27,
     "started_at": "2026-02-12T12:56:27Z"
   },
   {
@@ -32,8 +32,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 9,
+    "viewers": 7,
     "started_at": "2026-02-12T10:05:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンいく",
+    "streamer": "るりむい",
+    "url": "https://www.twitch.tv/ruri_muy",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-12T10:55:48Z"
   },
   {
     "platform": "YouTube",
