@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン：ランクマ】ただいまクリコン！リハビリで戦場に行くにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 46,
-    "started_at": "2026-02-12T09:28:56Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK） 『今日は何の日：ダーウィンの日、ペニシリンの日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 46,
+    "viewers": 48,
     "started_at": "2026-02-12T10:09:15Z"
   },
   {
     "platform": "Twitch",
-    "title": "［FF14］クリコンランクマッチ",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 37,
-    "started_at": "2026-02-12T10:05:56Z"
+    "title": "【クリコン：ランクマ】ただいまクリコン！リハビリで戦場に行くにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 42,
+    "started_at": "2026-02-12T09:28:56Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 30,
+    "viewers": 28,
     "started_at": "2026-02-12T09:59:18Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン  ｳﾂｾﾐﾉｼﾞｭﾂ",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 28,
+    "started_at": "2026-02-12T10:09:51Z"
   },
   {
     "platform": "Twitch",
@@ -45,21 +45,12 @@
     "started_at": "2026-02-12T09:31:07Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコン  ｳﾂｾﾐﾉｼﾞｭﾂ",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-02-12T10:09:51Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【FF14】さぁ 行こうか！ 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=aIN52SZ_YFQ",
     "thumbnail": "https://i.ytimg.com/vi/aIN52SZ_YFQ/mqdefault_live.jpg",
-    "viewers": 14,
+    "viewers": 15,
     "started_at": "2026-02-12T10:30:13Z"
   },
   {
@@ -68,7 +59,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
+    "viewers": 5,
     "started_at": "2026-02-12T10:05:34Z"
   }
 ]
