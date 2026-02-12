@@ -5,7 +5,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 45,
+    "viewers": 41,
     "started_at": "2026-02-12T14:33:20Z"
   },
   {
@@ -19,30 +19,21 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day67【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-02-12T09:31:07Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン  ひゃくえむ。を見た男",
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 17,
+    "viewers": 19,
     "started_at": "2026-02-12T15:28:37Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "夕雲あずさ",
-    "url": "https://www.twitch.tv/01azusa",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-12T12:10:53Z"
+    "title": "【クリコン】解き放たれし者【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-12T13:10:42Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "スーニャ",
     "url": "https://www.twitch.tv/sunyacatfox",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
-    "viewers": 8,
+    "viewers": 4,
     "started_at": "2026-02-12T15:10:48Z"
   },
   {
@@ -61,6 +52,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zakiyoshi4101-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-12T15:36:04Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】解き放たれし者【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=tsCZUiWYL1s",
+    "thumbnail": "https://i.ytimg.com/vi/tsCZUiWYL1s/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-12T15:49:36Z"
   },
   {
     "platform": "YouTube",
