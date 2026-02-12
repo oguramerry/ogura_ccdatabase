@@ -1,59 +1,89 @@
 /* style.css */
 body {
-    background-color: #f5f5f5; /* ライトグレー */
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    color: #555;
+    background-color: #fdfdfd; /* ほぼ白に近いライトグレー */
+    font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸文字フォント */
+    color: #78909c;
 }
 
+/* タイトルはグラデーションで可愛く */
 #calendar-title {
-    color: #90caf9; /* ベビーブルー */
-    font-weight: bold;
+    background: linear-gradient(to right, #90caf9, #f48fb1); /* ベビーブルーとピンク */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.05));
 }
 
-/* カレンダーエリアの設定 */
-#calendar-container {
-    background-color: #ffffff;
-    border: 2px solid #e3f2fd; /* ベビーブルーの枠線 */
+/* ふわふわのカードスタイル */
+.cute-card {
+    background: #ffffff;
+    border-radius: 25px; /* カドをまるく */
+    padding: 20px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(144, 202, 249, 0.15); /* 青みがかった優しい影 */
 }
 
-/* FullCalendarの見た目カスタマイズ */
-.fc {
-    max-width: 100%;
-    background-color: white;
+#calendar-card {
+    border: 4px solid #e3f2fd; /* ベビーブルーの太めの枠 */
 }
 
-.fc-toolbar-title {
-    font-size: 1.2rem !important;
-    color: #444;
-}
-
-.fc-button-primary {
-    background-color: #e3f2fd !important;
-    border-color: #e3f2fd !important;
-    color: #5d99c6 !important;
-}
-
-/* プレビューウィンドウの設定 */
-#preview-window {
-    background-color: #fff9fb; /* ほんのりベビーピンク */
-    border: 2px solid #fce4ec; /* ベビーピンクの枠線 */
-    min-height: 500px;
+#preview-card {
+    border: 4px solid #fce4ec; /* ベビーピンクの太めの枠 */
+    background-color: #fffbfd;
+    min-height: 550px;
     position: sticky;
     top: 20px;
 }
 
-/* リストエリアの設定 */
-#list-section h3 {
-    color: #f06292; /* 少し濃いピンク */
-    font-size: 1.5rem;
+/* FullCalendarの中身もかわいく */
+.fc-theme-standard td, .fc-theme-standard th {
+    border-color: #f1f8fe !important;
 }
 
+.fc-daygrid-day-number {
+    color: #90caf9;
+    font-weight: bold;
+    padding: 10px !important;
+}
+
+.fc-button-primary {
+    background-color: #90caf9 !important;
+    border: none !important;
+    border-radius: 15px !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 0 #64b5f6; /* ぷにっとしたボタン */
+}
+
+.fc-button-primary:active {
+    transform: translateY(4px);
+    box-shadow: none !important;
+}
+
+/* リスト部分の見出し */
+.list-title {
+    color: #f06292;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* イベントカードをポラロイド風に */
 .event-card {
-    background-color: #fff;
-    border-left: 5px solid #90caf9;
-    transition: transform 0.2s;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    border: 2px solid #eceff1;
+    transition: all 0.3s ease;
 }
 
 .event-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.03) rotate(1deg); /* ちょっと傾くのがかわいい */
+    box-shadow: 0 15px 30px rgba(244, 143, 177, 0.2);
+}
+
+.empty-state {
+    text-align: center;
+    color: #d1d9e6;
+    margin-top: 100px;
+    font-size: 1.5rem;
 }
