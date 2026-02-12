@@ -132,9 +132,21 @@ document.addEventListener("DOMContentLoaded", () => {
 async function fetchGlobalData() {
   try {
     const res = await fetch(`${API_URL}?action=global`);
+
+    // HTTPエラーを先に弾く
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status} ${res.statusText}`);
+    }
+
+    // 期待しないContent-Typeも弾く（HTMLエラー画面など対策）
+    const ct = res.headers.get("content-type") || "";
+    if (!ct.includes("application/json")) {
+      throw new Error(`Unexpected Content-Type: ${ct}`);
+    }
+
     const json = await res.json();
     rawGlobalDataByRank = json.dataByRank;
-    
+
     // 全ランクの合計を計算
     window.grandTotal = Object.values(rawGlobalDataByRank).reduce((sum, d) => sum + d.total, 0);
 
@@ -143,17 +155,18 @@ async function fetchGlobalData() {
       const lastUpdate = new Date(json.meta.generatedAt);
       const targetEl = document.getElementById("last-updated");
       if (targetEl) {
-        targetEl.textContent = 
-          `${lastUpdate.getMonth() + 1}/${lastUpdate.getDate()} ${lastUpdate.getHours()}:${String(lastUpdate.getMinutes()).padStart(2, '0')}`;
+        targetEl.textContent =
+          `${lastUpdate.getMonth() + 1}/${lastUpdate.getDate()} ${lastUpdate.getHours()}:${String(lastUpdate.getMinutes()).padStart(2, "0")}`;
       }
     }
 
     initRankFilter();
     aggregateAndRender();
-  } catch (err) { 
-    console.error("データ取得失敗:", err); 
+  } catch (err) {
+    console.error("データ取得失敗:", err);
   }
 }
+
 
 function initStageSelector(stages) {
   const sel = document.getElementById("stage-selector");
