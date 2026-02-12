@@ -5,7 +5,16 @@
     "streamer": "Lexellent7",
     "url": "https://www.twitch.tv/lexellent7",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
-    "viewers": 26,
+    "viewers": 19,
     "started_at": "2026-02-11T19:18:47Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "Ranked Crystal Conflict NA",
+    "streamer": "BrianRicardo",
+    "url": "https://www.twitch.tv/brianricardo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-11T23:14:16Z"
   }
 ]
