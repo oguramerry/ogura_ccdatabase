@@ -1,38 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK） 『今日は何の日：ダーウィンの日、ペニシリンの日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 68,
-    "started_at": "2026-02-12T10:09:15Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】今日こそは勝ち越すぞ！クリコンランクマ！黒魔導士＆召喚！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 35,
-    "started_at": "2026-02-12T12:56:27Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day67【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 30,
-    "started_at": "2026-02-12T09:31:07Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】発狂したら即配信終了！！！！！ #FF14 えふじゅよ",
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 24,
+    "viewers": 35,
     "started_at": "2026-02-12T14:31:02Z"
   },
   {
@@ -41,8 +14,26 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 22,
+    "viewers": 31,
     "started_at": "2026-02-12T14:33:20Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14】今日こそは勝ち越すぞ！クリコンランクマ！黒魔導士＆召喚！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-02-12T12:56:27Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day67【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 25,
+    "started_at": "2026-02-12T09:31:07Z"
   },
   {
     "platform": "Twitch",
@@ -50,16 +41,16 @@
     "streamer": "夕雲あずさ",
     "url": "https://www.twitch.tv/01azusa",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
-    "viewers": 10,
+    "viewers": 8,
     "started_at": "2026-02-12T12:10:53Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14】【クリコン】【ランクマ】お久クリコン",
-    "streamer": "一般男性あべどり",
-    "url": "https://www.youtube.com/watch?v=AYug_sdygPE",
-    "thumbnail": "https://i.ytimg.com/vi/AYug_sdygPE/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-12T13:48:25Z"
+    "platform": "Twitch",
+    "title": "02/12 24:15～25:30【FF14】Gaia 深夜クリコン部 カスタムマッチ PART.154 ライト版",
+    "streamer": "スーニャ",
+    "url": "https://www.twitch.tv/sunyacatfox",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-12T15:10:48Z"
   }
 ]
