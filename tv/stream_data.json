@@ -5,17 +5,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 55,
+    "viewers": 54,
     "started_at": "2026-02-13T07:54:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "目指せ総合与ダメ90万!!【FF14】竜騎士クリコン in Mana",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-13T07:59:43Z"
   },
   {
     "platform": "YouTube",
@@ -23,8 +14,17 @@
     "streamer": "ナスおじ戦カミチャンネル",
     "url": "https://www.youtube.com/watch?v=NaKvu1IRr3U",
     "thumbnail": "https://i.ytimg.com/vi/NaKvu1IRr3U/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-02-13T08:21:19Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "目指せ総合与ダメ90万!!【FF14】竜騎士クリコン in Mana",
+    "streamer": "ゆきはれ",
+    "url": "https://www.twitch.tv/yukihale",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-13T07:59:43Z"
   },
   {
     "platform": "YouTube",
