@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 75,
+    "viewers": 59,
     "started_at": "2026-02-13T10:53:45Z"
   },
   {
@@ -14,35 +14,8 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 53,
+    "viewers": 58,
     "started_at": "2026-02-13T12:18:25Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンカスタム 実況",
-    "streamer": "so5u",
-    "url": "https://www.twitch.tv/so5u",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-02-13T12:10:09Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #82 ～ 夢を追い求める勇気があれば、すべての夢は叶う ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-02-13T10:05:18Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】希望の灯、レッドサンズ。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=f0EwwQzE18E",
-    "thumbnail": "https://i.ytimg.com/vi/f0EwwQzE18E/mqdefault_live.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-13T10:44:56Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +23,26 @@
     "streamer": "AMEPERO",
     "url": "https://www.twitch.tv/amepero",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amepero-320x180.jpg",
-    "viewers": 4,
+    "viewers": 31,
     "started_at": "2026-02-13T12:57:58Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "AliciaFF14",
-    "url": "https://www.twitch.tv/aliciaff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aliciaff14-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-13T11:58:16Z"
+    "title": "【ff14】22:30〜クリコンチーム練習！対戦➤クリモンパパ様",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-02-13T13:01:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンカスタム 実況",
+    "streamer": "so5u",
+    "url": "https://www.twitch.tv/so5u",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-02-13T12:10:09Z"
   },
   {
     "platform": "YouTube",
@@ -68,8 +50,17 @@
     "streamer": "AMEPERO",
     "url": "https://www.youtube.com/watch?v=zLF6azRhhAM",
     "thumbnail": "https://i.ytimg.com/vi/zLF6azRhhAM/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 6,
     "started_at": "2026-02-13T12:58:07Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] クリコン ダイヤモンド5～",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=d-Zn8xGxZ5g",
+    "thumbnail": "https://i.ytimg.com/vi/d-Zn8xGxZ5g/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-13T13:13:30Z"
   },
   {
     "platform": "YouTube",
