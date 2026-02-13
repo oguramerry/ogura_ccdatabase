@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 83,
+    "viewers": 74,
     "started_at": "2026-02-13T13:21:02Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 44,
+    "viewers": 48,
     "started_at": "2026-02-13T15:40:16Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=a_av-uHYOFU",
     "thumbnail": "https://i.ytimg.com/vi/a_av-uHYOFU/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-13T15:40:47Z"
   },
   {
@@ -32,7 +32,25 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=d-Zn8xGxZ5g",
     "thumbnail": "https://i.ytimg.com/vi/d-Zn8xGxZ5g/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-13T13:13:30Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "Ranked Crystal Conflict and Rivals",
+    "streamer": "BrianRicardo",
+    "url": "https://www.twitch.tv/brianricardo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-13T18:25:51Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "Ranked Crystal Conflict and Rivals",
+    "streamer": "Brian Ricardo",
+    "url": "https://www.youtube.com/watch?v=5Pa6Zs27jE4",
+    "thumbnail": "https://i.ytimg.com/vi/5Pa6Zs27jE4/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-13T18:25:58Z"
   }
 ]
