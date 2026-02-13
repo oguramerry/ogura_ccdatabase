@@ -5,7 +5,16 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=5Pa6Zs27jE4",
     "thumbnail": "https://i.ytimg.com/vi/5Pa6Zs27jE4/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-13T18:25:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "Crystal conflict gaming",
+    "streamer": "Lexellent7",
+    "url": "https://www.twitch.tv/lexellent7",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-13T20:22:26Z"
   }
 ]
