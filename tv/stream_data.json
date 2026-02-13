@@ -5,44 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 60,
+    "viewers": 69,
     "started_at": "2026-02-13T10:53:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン  ちょっとだけ、ゆるりと頑張る",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 36,
-    "started_at": "2026-02-13T10:52:51Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #82 ～ 夢を追い求める勇気があれば、すべての夢は叶う ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 20,
-    "started_at": "2026-02-13T10:05:18Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】希望の灯、レッドサンズ。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=f0EwwQzE18E",
-    "thumbnail": "https://i.ytimg.com/vi/f0EwwQzE18E/mqdefault_live.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-13T10:44:56Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンカスタム 実況",
-    "streamer": "so5u",
-    "url": "https://www.twitch.tv/so5u",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-13T12:10:09Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +14,35 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 10,
+    "viewers": 44,
     "started_at": "2026-02-13T12:18:25Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #82 ～ 夢を追い求める勇気があれば、すべての夢は叶う ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-13T10:05:18Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンカスタム 実況",
+    "streamer": "so5u",
+    "url": "https://www.twitch.tv/so5u",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-02-13T12:10:09Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】希望の灯、レッドサンズ。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=f0EwwQzE18E",
+    "thumbnail": "https://i.ytimg.com/vi/f0EwwQzE18E/mqdefault_live.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-13T10:44:56Z"
   },
   {
     "platform": "Twitch",
