@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 56,
+    "viewers": 58,
     "started_at": "2026-02-13T10:53:45Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 19,
+    "viewers": 37,
     "started_at": "2026-02-13T10:52:51Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】希望の灯、レッドサンズ。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=f0EwwQzE18E",
-    "thumbnail": "https://i.ytimg.com/vi/f0EwwQzE18E/mqdefault_live.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-13T10:44:56Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,44 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
+    "viewers": 21,
     "started_at": "2026-02-13T10:05:18Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】希望の灯、レッドサンズ。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=f0EwwQzE18E",
+    "thumbnail": "https://i.ytimg.com/vi/f0EwwQzE18E/mqdefault_live.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-13T10:44:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンカスタム 実況",
+    "streamer": "so5u",
+    "url": "https://www.twitch.tv/so5u",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-13T12:10:09Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "AliciaFF14",
+    "url": "https://www.twitch.tv/aliciaff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aliciaff14-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-13T11:58:16Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】クリスタルコンフリクト",
+    "streamer": "Gaap",
+    "url": "https://www.youtube.com/watch?v=bhjVbMVQNvw",
+    "thumbnail": "https://i.ytimg.com/vi/bhjVbMVQNvw/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-13T12:05:23Z"
   },
   {
     "platform": "YouTube",
