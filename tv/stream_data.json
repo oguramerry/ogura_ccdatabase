@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 66,
+    "viewers": 61,
     "started_at": "2026-02-13T15:40:16Z"
   },
   {
@@ -14,8 +14,17 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 15,
+    "viewers": 21,
     "started_at": "2026-02-13T18:25:51Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】協約どんぐり収集システム【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=a_av-uHYOFU",
+    "thumbnail": "https://i.ytimg.com/vi/a_av-uHYOFU/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-13T15:40:47Z"
   },
   {
     "platform": "YouTube",
@@ -25,14 +34,5 @@
     "thumbnail": "https://i.ytimg.com/vi/5Pa6Zs27jE4/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-02-13T18:25:58Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】協約どんぐり収集システム【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=a_av-uHYOFU",
-    "thumbnail": "https://i.ytimg.com/vi/a_av-uHYOFU/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-13T15:40:47Z"
   }
 ]
