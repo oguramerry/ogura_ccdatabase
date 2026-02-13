@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "まきなべるぐ",
-    "url": "https://www.twitch.tv/mknblg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 62,
-    "started_at": "2026-02-13T12:18:25Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン 22時30分～『クリモンパパ様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：世界ラジオデー、苗字制定記念日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 57,
+    "viewers": 58,
     "started_at": "2026-02-13T10:53:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "まきなべるぐ",
+    "url": "https://www.twitch.tv/mknblg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
+    "viewers": 55,
+    "started_at": "2026-02-13T12:18:25Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "AMEPERO",
     "url": "https://www.twitch.tv/amepero",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amepero-320x180.jpg",
-    "viewers": 37,
+    "viewers": 40,
     "started_at": "2026-02-13T12:57:58Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 23,
+    "viewers": 27,
     "started_at": "2026-02-13T12:10:09Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 23,
+    "viewers": 19,
     "started_at": "2026-02-13T13:01:21Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "AMEPERO",
     "url": "https://www.youtube.com/watch?v=zLF6azRhhAM",
     "thumbnail": "https://i.ytimg.com/vi/zLF6azRhhAM/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 6,
     "started_at": "2026-02-13T12:58:07Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=d-Zn8xGxZ5g",
     "thumbnail": "https://i.ytimg.com/vi/d-Zn8xGxZ5g/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-13T13:13:30Z"
   },
   {
@@ -68,17 +68,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-13T13:29:31Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】クリスタルコンフリクト",
-    "streamer": "Gaap",
-    "url": "https://www.youtube.com/watch?v=bhjVbMVQNvw",
-    "thumbnail": "https://i.ytimg.com/vi/bhjVbMVQNvw/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-13T12:05:23Z"
   },
   {
     "platform": "YouTube",
