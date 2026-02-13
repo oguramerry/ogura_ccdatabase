@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 106,
+    "viewers": 90,
     "started_at": "2026-02-13T13:21:02Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 50,
+    "viewers": 53,
     "started_at": "2026-02-13T15:40:16Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】22:30〜クリコンチーム練習！対戦➤クリモンパパ様",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 28,
-    "started_at": "2026-02-13T13:01:21Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +23,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=a_av-uHYOFU",
     "thumbnail": "https://i.ytimg.com/vi/a_av-uHYOFU/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-02-13T15:40:47Z"
   },
   {
