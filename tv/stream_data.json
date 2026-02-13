@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
+    "title": "【FF14】クリコンを上手くなるためには 教えて！ トライ占星！",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 79,
+    "started_at": "2026-02-13T13:21:02Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン 22時30分～『クリモンパパ様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：世界ラジオデー、苗字制定記念日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 48,
+    "viewers": 62,
     "started_at": "2026-02-13T10:53:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】22:30〜クリコンチーム練習！対戦➤クリモンパパ様",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-02-13T13:01:21Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +23,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 20,
+    "viewers": 33,
     "started_at": "2026-02-13T15:40:16Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14】22:30〜クリコンチーム練習！対戦➤クリモンパパ様",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-02-13T13:01:21Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +41,8 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 18,
+    "viewers": 20,
     "started_at": "2026-02-13T12:10:09Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【 #FF14 】クリコンリハビリ🍭対よろーー！【AMEPERO/Vtuber】",
-    "streamer": "AMEPERO",
-    "url": "https://www.youtube.com/watch?v=zLF6azRhhAM",
-    "thumbnail": "https://i.ytimg.com/vi/zLF6azRhhAM/mqdefault_live.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-13T12:58:07Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +50,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=a_av-uHYOFU",
     "thumbnail": "https://i.ytimg.com/vi/a_av-uHYOFU/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 4,
     "started_at": "2026-02-13T15:40:47Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=d-Zn8xGxZ5g",
     "thumbnail": "https://i.ytimg.com/vi/d-Zn8xGxZ5g/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-13T13:13:30Z"
   },
   {
