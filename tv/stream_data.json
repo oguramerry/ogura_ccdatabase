@@ -5,26 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 59,
+    "viewers": 48,
     "started_at": "2026-02-13T10:53:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンリハビリ🍭対よろ！！",
-    "streamer": "AMEPERO",
-    "url": "https://www.twitch.tv/amepero",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amepero-320x180.jpg",
-    "viewers": 54,
-    "started_at": "2026-02-13T12:57:58Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンカスタム 実況",
-    "streamer": "so5u",
-    "url": "https://www.twitch.tv/so5u",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-02-13T12:10:09Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +14,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 19,
+    "viewers": 24,
     "started_at": "2026-02-13T13:01:21Z"
   },
   {
@@ -41,8 +23,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 14,
+    "viewers": 20,
     "started_at": "2026-02-13T15:40:16Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンカスタム 実況",
+    "streamer": "so5u",
+    "url": "https://www.twitch.tv/so5u",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-02-13T12:10:09Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +41,7 @@
     "streamer": "AMEPERO",
     "url": "https://www.youtube.com/watch?v=zLF6azRhhAM",
     "thumbnail": "https://i.ytimg.com/vi/zLF6azRhhAM/mqdefault_live.jpg",
-    "viewers": 13,
+    "viewers": 8,
     "started_at": "2026-02-13T12:58:07Z"
   },
   {
