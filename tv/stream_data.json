@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 58,
+    "viewers": 60,
     "started_at": "2026-02-13T10:53:45Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 37,
+    "viewers": 36,
     "started_at": "2026-02-13T10:52:51Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 21,
+    "viewers": 20,
     "started_at": "2026-02-13T10:05:18Z"
   },
   {
@@ -41,8 +41,17 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 9,
+    "viewers": 13,
     "started_at": "2026-02-13T12:10:09Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "まきなべるぐ",
+    "url": "https://www.twitch.tv/mknblg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-13T12:18:25Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +59,7 @@
     "streamer": "AliciaFF14",
     "url": "https://www.twitch.tv/aliciaff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aliciaff14-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-13T11:58:16Z"
   },
   {
