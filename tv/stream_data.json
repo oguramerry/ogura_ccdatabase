@@ -5,17 +5,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 58,
+    "viewers": 55,
     "started_at": "2026-02-13T07:54:28Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "クリコンランクマORカジュアル 機工士",
-    "streamer": "ナスおじ戦カミチャンネル",
-    "url": "https://www.youtube.com/watch?v=NaKvu1IRr3U",
-    "thumbnail": "https://i.ytimg.com/vi/NaKvu1IRr3U/mqdefault_live.jpg",
-    "viewers": 9,
-    "started_at": "2026-02-13T08:21:19Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-02-13T07:59:43Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "クリコンランクマORカジュアル 機工士",
+    "streamer": "ナスおじ戦カミチャンネル",
+    "url": "https://www.youtube.com/watch?v=NaKvu1IRr3U",
+    "thumbnail": "https://i.ytimg.com/vi/NaKvu1IRr3U/mqdefault_live.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-13T08:21:19Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +32,16 @@
     "streamer": "せれ@Ixion",
     "url": "https://www.youtube.com/watch?v=0NbzOJ5WcRY",
     "thumbnail": "https://i.ytimg.com/vi/0NbzOJ5WcRY/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 6,
     "started_at": "2026-02-13T09:50:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #82 ～ 夢を追い求める勇気があれば、すべての夢は叶う ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-13T10:05:18Z"
   }
 ]
