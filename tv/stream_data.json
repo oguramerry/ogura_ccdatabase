@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 45,
+    "viewers": 49,
     "started_at": "2026-02-13T15:40:16Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 23,
+    "viewers": 24,
     "started_at": "2026-02-13T13:01:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンカスタム 実況",
-    "streamer": "so5u",
-    "url": "https://www.twitch.tv/so5u",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 18,
-    "started_at": "2026-02-13T12:10:09Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=a_av-uHYOFU",
     "thumbnail": "https://i.ytimg.com/vi/a_av-uHYOFU/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 1,
     "started_at": "2026-02-13T15:40:47Z"
   },
   {
@@ -50,17 +41,8 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=d-Zn8xGxZ5g",
     "thumbnail": "https://i.ytimg.com/vi/d-Zn8xGxZ5g/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-13T13:13:30Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "久々にクリコン",
-    "streamer": "Gaku",
-    "url": "https://www.youtube.com/watch?v=N16mmIzjV2Q",
-    "thumbnail": "https://i.ytimg.com/vi/N16mmIzjV2Q/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-13T14:44:22Z"
   },
   {
     "platform": "YouTube",
