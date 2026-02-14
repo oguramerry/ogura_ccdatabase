@@ -20,7 +20,7 @@ ROTATION: [
 ]
   };
 
-const GAS_BASE = "https://script.google.com/macros/s/AKfycbxpRRpIHKgsB3yTUpzCe8IxXKqBTXSkjnHoGFjvMnq7pBwGp1tTNQwpIoHsEns_aQhG4g/exec";
+const GAS_BASE = "https://script.google.com/macros/s/AKfycbwmqHosquuvjHHlpAU9ycYbtAIHcJpV1oEG35nPNlLm2av1tGS-XUq4iiyPKSD2n6aZew/exec";
 
 let matchChartInstance = null;
 const now = new Date();
