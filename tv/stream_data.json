@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 70,
+    "viewers": 71,
     "started_at": "2026-02-14T08:20:57Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 50,
+    "viewers": 49,
     "started_at": "2026-02-14T10:39:31Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】ハッピーバレンタイン✨💘クリコンランクマ！黒魔or召喚！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 25,
-    "started_at": "2026-02-14T13:00:13Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +23,17 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 19,
+    "viewers": 42,
     "started_at": "2026-02-14T14:50:38Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14/PVP】クリコンカジュアルで徒然なるままに遊ぶ回(多分)/S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
-    "streamer": "せんとうっど",
-    "url": "https://www.youtube.com/watch?v=Sv6AXZZb_YI",
-    "thumbnail": "https://i.ytimg.com/vi/Sv6AXZZb_YI/mqdefault_live.jpg",
-    "viewers": 15,
-    "started_at": "2026-02-14T12:02:18Z"
+    "platform": "Twitch",
+    "title": "【ff14】ハッピーバレンタイン✨💘クリコンランクマ！黒魔or召喚！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 26,
+    "started_at": "2026-02-14T13:00:13Z"
   },
   {
     "platform": "YouTube",
@@ -52,14 +43,5 @@
     "thumbnail": "https://i.ytimg.com/vi/f0yR9yai5Lw/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-02-14T13:42:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-14T13:43:19Z"
   }
 ]
