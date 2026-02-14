@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 77,
+    "viewers": 69,
     "started_at": "2026-02-14T08:20:57Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day68【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 50,
-    "started_at": "2026-02-14T10:39:31Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 47,
+    "viewers": 53,
     "started_at": "2026-02-14T14:50:38Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day68【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 43,
+    "started_at": "2026-02-14T10:39:31Z"
   },
   {
     "platform": "Twitch",
