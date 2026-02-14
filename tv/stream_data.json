@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 67,
+    "viewers": 63,
     "started_at": "2026-02-14T16:48:36Z"
   },
   {
@@ -14,8 +14,17 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 17,
+    "viewers": 23,
     "started_at": "2026-02-14T17:41:00Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】ばれんたいんあすふぁるとダイバー【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=3GH-NAtnlqw",
+    "thumbnail": "https://i.ytimg.com/vi/3GH-NAtnlqw/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-14T16:49:05Z"
   },
   {
     "platform": "Twitch",
@@ -25,14 +34,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_acontextual_id-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-14T20:27:08Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】ばれんたいんあすふぁるとダイバー【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=3GH-NAtnlqw",
-    "thumbnail": "https://i.ytimg.com/vi/3GH-NAtnlqw/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-14T16:49:05Z"
   }
 ]
