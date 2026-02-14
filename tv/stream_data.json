@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 72,
+    "viewers": 77,
     "started_at": "2026-02-14T08:20:57Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 49,
+    "viewers": 50,
     "started_at": "2026-02-14T10:39:31Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 46,
+    "viewers": 47,
     "started_at": "2026-02-14T14:50:38Z"
   },
   {
@@ -32,8 +32,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 30,
+    "viewers": 24,
     "started_at": "2026-02-14T13:00:13Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-14T15:43:46Z"
   },
   {
     "platform": "YouTube",
@@ -46,11 +55,20 @@
   },
   {
     "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "title": "週末ランク【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
+    "streamer": "ザキアク",
+    "url": "https://www.twitch.tv/zakiyoshi4101",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zakiyoshi4101-320x180.jpg",
     "viewers": 1,
-    "started_at": "2026-02-14T15:43:46Z"
+    "started_at": "2026-02-14T16:10:41Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "週末ランク【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
+    "streamer": "ザキアクのゲーム実況配信",
+    "url": "https://www.youtube.com/watch?v=bTqi71v9agc",
+    "thumbnail": "https://i.ytimg.com/vi/bTqi71v9agc/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-14T16:10:49Z"
   }
 ]
