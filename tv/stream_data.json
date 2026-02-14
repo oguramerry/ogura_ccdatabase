@@ -5,8 +5,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 72,
+    "viewers": 67,
     "started_at": "2026-02-14T08:20:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】ちょっとだけ",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 39,
+    "started_at": "2026-02-14T11:24:50Z"
   },
   {
     "platform": "Twitch",
@@ -19,20 +28,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】ちょっとだけ",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 34,
-    "started_at": "2026-02-14T11:24:50Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン🍹配信開始4周年記念ウィーク！ 炊いたらDuoカジュ➧FLMC「#FLMC チョコ争奪戦 1番甘いのだぁれ❤甘いセリフ選手権」参加",
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 34,
+    "viewers": 30,
     "started_at": "2026-02-14T10:29:52Z"
   },
   {
@@ -41,8 +41,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
+    "viewers": 18,
     "started_at": "2026-02-14T10:14:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14【PvP】クリコン  追撃してくれる遠距離を引く闇のゲーム",
+    "streamer": "ゃんゃん",
+    "url": "https://www.twitch.tv/yanyan2525",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-14T12:21:47Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +59,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=Sv6AXZZb_YI",
     "thumbnail": "https://i.ytimg.com/vi/Sv6AXZZb_YI/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 7,
     "started_at": "2026-02-14T12:02:18Z"
   }
 ]
