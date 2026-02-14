@@ -1,30 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ （JP CC RANK） 『Endless rain,fall on my heart 心の傷に Let me forget all of the hate,all of the sadness』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 55,
-    "started_at": "2026-02-14T08:20:57Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】ばれんたいんあすふぁるとダイバー【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 45,
+    "viewers": 53,
     "started_at": "2026-02-14T16:48:36Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【第114話】Look at the both sides of the shield【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 42,
-    "started_at": "2026-02-14T14:50:38Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 40,
+    "viewers": 46,
     "started_at": "2026-02-14T10:39:31Z"
   },
   {
@@ -41,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 38,
+    "viewers": 41,
     "started_at": "2026-02-14T13:00:13Z"
   },
   {
@@ -50,7 +32,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 7,
+    "viewers": 14,
     "started_at": "2026-02-14T17:41:00Z"
   },
   {
@@ -59,7 +41,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=3GH-NAtnlqw",
     "thumbnail": "https://i.ytimg.com/vi/3GH-NAtnlqw/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-14T16:49:05Z"
   },
   {
@@ -68,7 +50,7 @@
     "streamer": "Gaku",
     "url": "https://www.youtube.com/watch?v=f0yR9yai5Lw",
     "thumbnail": "https://i.ytimg.com/vi/f0yR9yai5Lw/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-14T13:42:02Z"
   }
 ]
