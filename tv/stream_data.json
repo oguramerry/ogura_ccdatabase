@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 71,
+    "viewers": 74,
     "started_at": "2026-02-14T08:20:57Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 39,
+    "viewers": 49,
     "started_at": "2026-02-14T10:39:31Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 23,
+    "viewers": 27,
     "started_at": "2026-02-14T13:00:13Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=Sv6AXZZb_YI",
     "thumbnail": "https://i.ytimg.com/vi/Sv6AXZZb_YI/mqdefault_live.jpg",
-    "viewers": 14,
+    "viewers": 13,
     "started_at": "2026-02-14T12:02:18Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-14T13:43:19Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +41,7 @@
     "streamer": "Gaku",
     "url": "https://www.youtube.com/watch?v=f0yR9yai5Lw",
     "thumbnail": "https://i.ytimg.com/vi/f0yR9yai5Lw/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-02-14T13:42:02Z"
   }
 ]
