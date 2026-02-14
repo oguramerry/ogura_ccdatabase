@@ -1,5 +1,5 @@
 // main.js
-const GAS_URL = "https://script.google.com/macros/s/AKfycbw9q7AMUUGrPaJFgkcEHRNNMLHzIj7DZHDBN4NxJqSRPYMk9Vfp7TwKNwOd629So00bgA/exec";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbxpRRpIHKgsB3yTUpzCe8IxXKqBTXSkjnHoGFjvMnq7pBwGp1tTNQwpIoHsEns_aQhG4g/exec";
 
 const CATEGORY_ICONS = {
     seasonal: "🎁", official_pvp: "⚔️", official_event: "📢",
