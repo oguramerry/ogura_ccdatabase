@@ -1,4 +1,4 @@
-//upload.js
+//upload.js（改善版）
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzZbWFbxilYd4n3o_vMoGNdQFMgZd4sFSmfSdJ_oxAtuFSvfx6a1A18JwVrYZp-O5Rh/exec";
 
 const dropzone = document.getElementById("dropzone");
@@ -139,7 +139,20 @@ function render(){
 
   const ready = items.filter(x => x.status === "ready").length;
   const done = items.filter(x => x.status === "done").length;
-  setProgress(`選択 ${items.length}枚 / 送信待ち ${ready} / 完了 ${done}`);
+  const error = items.filter(x => x.status === "error").length;
+  
+  // ⭐ 改善：状態を明確に表示
+  if (uploading) {
+    // 送信中は詳細な進捗を表示（uploadAll関数で更新）
+    // ここでは何もしない（uploadAll側で制御）
+  } else {
+    // 待機中は状態サマリーを表示
+    let statusText = `選択中: ${items.length}枚`;
+    if (done > 0) statusText += ` | ✅ 完了: ${done}枚`;
+    if (ready > 0) statusText += ` | ⏳ 送信待ち: ${ready}枚`;
+    if (error > 0) statusText += ` | ❌ エラー: ${error}枚`;
+    setProgress(statusText);
+  }
 
   for (const it of items){
     const div = document.createElement("div");
@@ -160,7 +173,14 @@ function render(){
 
     const meta = document.createElement("div");
     meta.className = "meta";
-    meta.textContent = `${it.file.name} (${bytesToMB(it.file.size).toFixed(2)}mb)` + (it.status === "error" ? ` / ${it.error || "error"}` : "");
+    
+    // ⭐ 改善：ステータスアイコンを追加
+    let statusIcon = "";
+    if (it.status === "uploading") statusIcon = "⏳ ";
+    else if (it.status === "done") statusIcon = "✅ ";
+    else if (it.status === "error") statusIcon = "❌ ";
+    
+    meta.textContent = statusIcon + `${it.file.name} (${bytesToMB(it.file.size).toFixed(2)}mb)` + (it.status === "error" ? ` / ${it.error || "error"}` : "");
 
     const btn = document.createElement("button");
     btn.className = "remove";
@@ -199,12 +219,12 @@ function render(){
     tWrap.appendChild(tInput);
 
     const sWrap = document.createElement("div");
-sWrap.className = "extraItem extraStage";
-const sLabel = document.createElement("label");
-sLabel.className = "label";
-sLabel.textContent = "ステージ名（任意）";
+    sWrap.className = "extraItem extraStage";
+    const sLabel = document.createElement("label");
+    sLabel.className = "label";
+    sLabel.textContent = "ステージ名（任意）";
     
-const sInput = document.createElement("select");
+    const sInput = document.createElement("select");
     sInput.disabled = it.status === "uploading";
     
     // デフォルト（未選択）
@@ -228,8 +248,8 @@ const sInput = document.createElement("select");
     sInput.addEventListener("change", () => { it.perStage = sInput.value || ""; });
 
     
-sWrap.appendChild(sLabel);
-sWrap.appendChild(sInput);
+    sWrap.appendChild(sLabel);
+    sWrap.appendChild(sInput);
 
     
     const nWrap = document.createElement("div");
@@ -345,14 +365,26 @@ async function uploadAll(){
   const score = scoreInput ? scoreInput.value : "";
 
   let okCount = 0;
+  
   for (let i = 0; i < queue.length; i++){
     const it = queue[i];
-    setProgress(`送信中 ${i+1}/${queue.length}`);
+    
+    // 送信中の状態表示
+    const currentNum = i + 1;
+    const totalNum = queue.length;
+    const doneCount = okCount;
+    const currentFileName = it.file.name;
+    
+    // 現在処理中のファイル名も表示
+    setProgress(`📤 送信中: ${currentNum}/${totalNum}枚 | ✅ 完了: ${doneCount}枚 | 処理中: ${currentFileName}`);
 
     try {
       await uploadOne(it, items.indexOf(it), score);
       it.status = "done";
       okCount++;
+      
+      // 送信完了直後に進捗を更新
+      setProgress(`📤 送信中: ${currentNum}/${totalNum}枚 | ✅ 完了: ${okCount}枚`);
     } catch (e){
       it.status = "error";
       it.error = String(e);
@@ -363,9 +395,15 @@ async function uploadAll(){
   const errCount = queue.length - okCount;
 
   if (errCount === 0){
+    setProgress(`🎉 全${okCount}枚の送信が完了しました！`);
     setMsg("送信完了！ﾊﾆｧﾄｫ(´;ω;｀)");
-    window.location.href = "./thanks.html";
+    
+    // ⭐ 完了メッセージを2秒間表示してからリダイレクト
+    setTimeout(() => {
+      window.location.href = "./thanks.html";
+    }, 2000);
   } else {
+    setProgress(`完了: ${okCount}枚 | エラー: ${errCount}枚`);
     setMsg(`完了 ${okCount}枚 / 失敗 ${errCount}枚。そのままもう一回送信ボタンｩｫ押してね`);
   }
 
