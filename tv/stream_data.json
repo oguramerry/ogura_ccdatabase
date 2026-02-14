@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【ff14】ハッピーバレンタイン✨💘クリコンランクマ！黒魔or召喚！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 59,
-    "started_at": "2026-02-14T13:00:13Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】ばれんたいんあすふぁるとダイバー【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 56,
+    "viewers": 69,
     "started_at": "2026-02-14T16:48:36Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day68【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 38,
-    "started_at": "2026-02-14T10:39:31Z"
+    "title": "【ff14】ハッピーバレンタイン✨💘クリコンランクマ！黒魔or召喚！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 57,
+    "started_at": "2026-02-14T13:00:13Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 15,
+    "viewers": 23,
     "started_at": "2026-02-14T17:41:00Z"
   },
   {
@@ -41,16 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=3GH-NAtnlqw",
     "thumbnail": "https://i.ytimg.com/vi/3GH-NAtnlqw/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-14T16:49:05Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "久々にクリコン",
-    "streamer": "Gaku",
-    "url": "https://www.youtube.com/watch?v=f0yR9yai5Lw",
-    "thumbnail": "https://i.ytimg.com/vi/f0yR9yai5Lw/mqdefault_live.jpg",
     "viewers": 2,
-    "started_at": "2026-02-14T13:42:02Z"
+    "started_at": "2026-02-14T16:49:05Z"
   }
 ]
