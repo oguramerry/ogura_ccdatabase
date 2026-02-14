@@ -2,7 +2,6 @@
 
 // ==========================================
 // ■ マップローテーション設定 (CC_CONFIG)
-//   将来仕様が変わったらここを直すだけ！
 // ==========================================
 const CC_CONFIG = {
   ANCHOR_EPOCH: 1769094000000, 
@@ -21,7 +20,7 @@ ROTATION: [
 ]
   };
 
-const GAS_BASE = "https://script.google.com/macros/s/AKfycbyqUe1owS384-HR_mirZSmZZxKQdZLrNBIUJL07AzvRmsMR62cgrbR5VcilJBfLRdzpiA/exec";
+const GAS_BASE = "https://script.google.com/macros/s/AKfycbxpRRpIHKgsB3yTUpzCe8IxXKqBTXSkjnHoGFjvMnq7pBwGp1tTNQwpIoHsEns_aQhG4g/exec";
 
 let matchChartInstance = null;
 const now = new Date();
