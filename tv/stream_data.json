@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 59,
+    "viewers": 72,
     "started_at": "2026-02-14T08:20:57Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 38,
+    "viewers": 34,
     "started_at": "2026-02-14T10:39:31Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン🍹配信開始4周年記念ウィーク！ 炊いたらDuoカジュ➧FLMC「#FLMC チョコ争奪戦 1番甘いのだぁれ❤甘いセリフ選手権」参加",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 33,
-    "started_at": "2026-02-14T10:29:52Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 21,
+    "viewers": 34,
     "started_at": "2026-02-14T11:24:50Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン🍹配信開始4周年記念ウィーク！ 炊いたらDuoカジュ➧FLMC「#FLMC チョコ争奪戦 1番甘いのだぁれ❤甘いセリフ選手権」参加",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 34,
+    "started_at": "2026-02-14T10:29:52Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +41,16 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
+    "viewers": 11,
     "started_at": "2026-02-14T10:14:23Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14/PVP】クリコンカジュアルで徒然なるままに遊ぶ回(多分)/S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=Sv6AXZZb_YI",
+    "thumbnail": "https://i.ytimg.com/vi/Sv6AXZZb_YI/mqdefault_live.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-14T12:02:18Z"
   }
 ]
