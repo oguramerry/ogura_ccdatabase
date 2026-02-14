@@ -1,21 +1,39 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ （JP CC RANK） 『Endless rain,fall on my heart 心の傷に Let me forget all of the hate,all of the sadness』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 73,
-    "started_at": "2026-02-14T08:20:57Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】༒翼の折れたANGEL ༒であるぼきゅ様が人類の罪に涙を流すと天からチョコが降ってきましたにょw #FF14 えふじゅよ",
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
     "viewers": 37,
     "started_at": "2026-02-14T09:25:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "［FF14］クリコンランクマッチ",
+    "streamer": "ろびす",
+    "url": "https://www.twitch.tv/robswiz_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
+    "viewers": 30,
+    "started_at": "2026-02-14T10:27:50Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン🍹配信開始4周年記念ウィーク！ 炊いたらDuoカジュ➧FLMC「#FLMC チョコ争奪戦 1番甘いのだぁれ❤甘いセリフ選手権」参加",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-14T10:29:52Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day68【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-14T10:39:31Z"
   },
   {
     "platform": "Twitch",
@@ -28,20 +46,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "［FF14］クリコンランクマッチ",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-14T10:27:50Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン🍹配信開始4周年記念ウィーク！ 炊いたらDuoカジュ➧FLMC「#FLMC チョコ争奪戦 1番甘いのだぁれ❤甘いセリフ選手権」参加",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-14T10:29:52Z"
+    "title": "【FF14】超クリコン研究会 Day68【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-14T10:39:31Z"
   }
 ]
