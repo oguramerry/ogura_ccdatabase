@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 42,
+    "viewers": 59,
     "started_at": "2026-02-14T08:20:57Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン🍹配信開始4周年記念ウィーク！ 炊いたらDuoカジュ➧FLMC「#FLMC チョコ争奪戦 1番甘いのだぁれ❤甘いセリフ選手権」参加",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 39,
-    "started_at": "2026-02-14T10:29:52Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 29,
+    "viewers": 38,
     "started_at": "2026-02-14T10:39:31Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン🍹配信開始4周年記念ウィーク！ 炊いたらDuoカジュ➧FLMC「#FLMC チョコ争奪戦 1番甘いのだぁれ❤甘いセリフ選手権」参加",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-02-14T10:29:52Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 14,
+    "viewers": 21,
     "started_at": "2026-02-14T11:24:50Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 10,
+    "viewers": 8,
     "started_at": "2026-02-14T10:14:23Z"
   }
 ]
