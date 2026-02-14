@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 72,
+    "viewers": 66,
     "started_at": "2026-02-14T08:20:57Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 42,
     "started_at": "2026-02-14T10:39:31Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン🍹配信開始4周年記念ウィーク！ 炊いたらDuoカジュ➧FLMC「#FLMC チョコ争奪戦 1番甘いのだぁれ❤甘いセリフ選手権」参加",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-02-14T10:29:52Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 25,
+    "viewers": 27,
     "started_at": "2026-02-14T13:00:13Z"
   },
   {
@@ -41,8 +32,17 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=Sv6AXZZb_YI",
     "thumbnail": "https://i.ytimg.com/vi/Sv6AXZZb_YI/mqdefault_live.jpg",
-    "viewers": 15,
+    "viewers": 13,
     "started_at": "2026-02-14T12:02:18Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-14T13:43:19Z"
   },
   {
     "platform": "YouTube",
@@ -52,14 +52,5 @@
     "thumbnail": "https://i.ytimg.com/vi/f0yR9yai5Lw/mqdefault_live.jpg",
     "viewers": 0,
     "started_at": "2026-02-14T13:42:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-14T13:43:19Z"
   }
 ]
