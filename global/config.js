@@ -1,7 +1,7 @@
 // config.js
 
 // APIのURL
-const API_URL = "https://script.google.com/macros/s/AKfycbxpRRpIHKgsB3yTUpzCe8IxXKqBTXSkjnHoGFjvMnq7pBwGp1tTNQwpIoHsEns_aQhG4g/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwmqHosquuvjHHlpAU9ycYbtAIHcJpV1oEG35nPNlLm2av1tGS-XUq4iiyPKSD2n6aZew/exec";
 
 // 散布図フィルターのグループ定義
 const FILTER_GROUPS_DEF = [
