@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 70,
+    "viewers": 77,
     "started_at": "2026-02-14T08:20:57Z"
   },
   {
@@ -14,7 +14,16 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 37,
+    "viewers": 41,
     "started_at": "2026-02-14T09:25:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #83 ～ 酒は人類にとって最大の敵かもしれない。だが聖書はこう言っている、「汝の敵を愛せよ」と ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-14T10:14:23Z"
   }
 ]
