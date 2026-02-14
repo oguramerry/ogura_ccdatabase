@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 67,
+    "viewers": 69,
     "started_at": "2026-02-14T08:20:57Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ちょっとだけ",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 39,
-    "started_at": "2026-02-14T11:24:50Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 34,
+    "viewers": 36,
     "started_at": "2026-02-14T10:39:31Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14【PvP】クリコン  追撃してくれる遠距離を引く闇のゲーム",
+    "streamer": "ゃんゃん",
+    "url": "https://www.twitch.tv/yanyan2525",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
+    "viewers": 36,
+    "started_at": "2026-02-14T12:21:47Z"
   },
   {
     "platform": "Twitch",
@@ -37,21 +37,21 @@
   },
   {
     "platform": "Twitch",
+    "title": "【クリコン】ちょっとだけ",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 29,
+    "started_at": "2026-02-14T11:24:50Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【FF14】猫又クリコン部 #83 ～ 酒は人類にとって最大の敵かもしれない。だが聖書はこう言っている、「汝の敵を愛せよ」と ～",
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 18,
+    "viewers": 12,
     "started_at": "2026-02-14T10:14:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14【PvP】クリコン  追撃してくれる遠距離を引く闇のゲーム",
-    "streamer": "ゃんゃん",
-    "url": "https://www.twitch.tv/yanyan2525",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-14T12:21:47Z"
   },
   {
     "platform": "YouTube",
@@ -59,7 +59,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=Sv6AXZZb_YI",
     "thumbnail": "https://i.ytimg.com/vi/Sv6AXZZb_YI/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 9,
     "started_at": "2026-02-14T12:02:18Z"
   }
 ]
