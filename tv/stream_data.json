@@ -1,20 +1,20 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコンしたいし、イベントもしたいし、サブクエもしたい【FF14】竜騎士クリコン in Mana",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-02-14T03:00:36Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "まなかじゅ★『クリコン』",
     "streamer": "てとぽて",
     "url": "https://www.twitch.tv/tet_potet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tet_potet-320x180.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-02-14T05:01:24Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンしたいし、イベントもしたいし、サブクエもしたい【FF14】竜騎士クリコン in Mana",
+    "streamer": "ゆきはれ",
+    "url": "https://www.twitch.tv/yukihale",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-14T03:00:36Z"
   }
 ]
