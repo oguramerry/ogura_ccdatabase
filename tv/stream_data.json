@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 62,
+    "viewers": 66,
     "started_at": "2026-02-14T08:20:57Z"
   },
   {
@@ -14,8 +14,17 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 56,
+    "viewers": 48,
     "started_at": "2026-02-14T14:50:38Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14】ハッピーバレンタイン✨💘クリコンランクマ！黒魔or召喚！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 41,
+    "started_at": "2026-02-14T13:00:13Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +32,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 38,
     "started_at": "2026-02-14T10:39:31Z"
   },
   {
@@ -32,17 +41,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 26,
+    "viewers": 32,
     "started_at": "2026-02-14T16:48:36Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】ハッピーバレンタイン✨💘クリコンランクマ！黒魔or召喚！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-02-14T13:00:13Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +50,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=3GH-NAtnlqw",
     "thumbnail": "https://i.ytimg.com/vi/3GH-NAtnlqw/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-14T16:49:05Z"
   },
   {
@@ -70,23 +70,5 @@
     "thumbnail": "https://i.ytimg.com/vi/f0yR9yai5Lw/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-02-14T13:42:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "週末ランク【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
-    "streamer": "ザキアク",
-    "url": "https://www.twitch.tv/zakiyoshi4101",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zakiyoshi4101-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-14T16:10:41Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "週末ランク【クリスタルコンフリクト】【FINALFANTASYXIV】© SQUARE ENIX",
-    "streamer": "ザキアクのゲーム実況配信",
-    "url": "https://www.youtube.com/watch?v=bTqi71v9agc",
-    "thumbnail": "https://i.ytimg.com/vi/bTqi71v9agc/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-14T16:10:49Z"
   }
 ]
