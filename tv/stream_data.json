@@ -10,21 +10,21 @@
   },
   {
     "platform": "Twitch",
-    "title": "【第114話】Look at the both sides of the shield【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 48,
-    "started_at": "2026-02-14T14:50:38Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day68【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 46,
+    "viewers": 49,
     "started_at": "2026-02-14T10:39:31Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第114話】Look at the both sides of the shield【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 46,
+    "started_at": "2026-02-14T14:50:38Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 31,
+    "viewers": 30,
     "started_at": "2026-02-14T13:00:13Z"
   },
   {
@@ -43,5 +43,14 @@
     "thumbnail": "https://i.ytimg.com/vi/f0yR9yai5Lw/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-02-14T13:42:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-14T15:43:46Z"
   }
 ]
