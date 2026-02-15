@@ -1,12 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】しばし",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 54,
-    "started_at": "2026-02-15T12:45:54Z"
+    "title": "クリコンランク戦士/ダイヤ4から   @nikeajikyo",
+    "streamer": "ニケア",
+    "url": "https://www.twitch.tv/nikeajikyo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
+    "viewers": 55,
+    "started_at": "2026-02-15T12:12:21Z"
   },
   {
     "platform": "Twitch",
@@ -14,17 +14,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 46,
+    "viewers": 49,
     "started_at": "2026-02-15T10:11:44Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランク戦士/ダイヤ4から   @nikeajikyo",
-    "streamer": "ニケア",
-    "url": "https://www.twitch.tv/nikeajikyo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
-    "viewers": 45,
-    "started_at": "2026-02-15T12:12:21Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 13,
+    "viewers": 12,
     "started_at": "2026-02-15T13:01:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】酔っ払いでも良ければ胸を貸してくれる人〜クリコンチーム練習〜カスタムダイヤ以上オメガ以下推奨",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-15T12:53:18Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +50,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-02-15T13:26:20Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-15T14:10:11Z"
   },
   {
     "platform": "YouTube",
