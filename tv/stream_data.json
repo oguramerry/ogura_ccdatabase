@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 67,
+    "viewers": 61,
     "started_at": "2026-02-15T10:11:44Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ニケア",
     "url": "https://www.twitch.tv/nikeajikyo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
-    "viewers": 51,
+    "viewers": 46,
     "started_at": "2026-02-15T12:12:21Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 36,
+    "viewers": 45,
     "started_at": "2026-02-15T12:45:54Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #84 ～ 1日は24時間。ビール1ケースは24本。偶然の一致なのだろうか？私はそうは思わない。/ 22時からGAIAにてカスタム募集🔥 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-15T12:52:02Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +41,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 16,
+    "viewers": 13,
     "started_at": "2026-02-15T13:01:41Z"
   },
   {
@@ -41,17 +50,8 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 9,
+    "viewers": 11,
     "started_at": "2026-02-15T12:53:18Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-15T14:10:11Z"
   },
   {
     "platform": "Twitch",
@@ -59,17 +59,26 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-02-15T13:26:20Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコンランクブロンズから",
-    "streamer": "なめと",
-    "url": "https://www.twitch.tv/namehoshi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_namehoshi-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-15T12:24:47Z"
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-15T13:26:20Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-15T14:10:11Z"
   },
   {
     "platform": "YouTube",
