@@ -5,8 +5,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 41,
+    "viewers": 56,
     "started_at": "2026-02-15T10:11:44Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ホログラムを登る男",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 30,
+    "started_at": "2026-02-15T10:35:48Z"
   },
   {
     "platform": "YouTube",
@@ -23,17 +32,8 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 17,
+    "viewers": 13,
     "started_at": "2026-02-15T10:35:36Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン ホログラムを登る男",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-15T10:35:48Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +41,7 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 12,
+    "viewers": 10,
     "started_at": "2026-02-15T09:38:41Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=ZeP0OXLd_0w",
     "thumbnail": "https://i.ytimg.com/vi/ZeP0OXLd_0w/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-15T10:58:23Z"
   }
 ]
