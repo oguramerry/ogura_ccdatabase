@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 61,
+    "viewers": 56,
     "started_at": "2026-02-15T10:11:44Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 39,
+    "viewers": 44,
     "started_at": "2026-02-15T15:52:17Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 23,
+    "viewers": 25,
     "started_at": "2026-02-15T13:01:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-15T13:26:20Z"
   },
   {
     "platform": "YouTube",
@@ -41,8 +32,17 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=Z3s44f13-QU",
     "thumbnail": "https://i.ytimg.com/vi/Z3s44f13-QU/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-15T15:52:44Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-15T13:26:20Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +50,7 @@
     "streamer": "一般男性あべどり",
     "url": "https://www.youtube.com/watch?v=QkrvLFgPITo",
     "thumbnail": "https://i.ytimg.com/vi/QkrvLFgPITo/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-15T14:15:21Z"
   }
 ]
