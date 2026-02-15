@@ -5,7 +5,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 43,
+    "viewers": 52,
     "started_at": "2026-02-15T05:06:34Z"
   },
   {
@@ -14,16 +14,16 @@
     "streamer": "天咲ゆい",
     "url": "https://www.twitch.tv/amasaki_yui",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 9,
+    "viewers": 14,
     "started_at": "2026-02-15T06:01:06Z"
   },
   {
-    "platform": "Twitch",
-    "title": "息抜きクリコン",
-    "streamer": "ウツトカゲ",
-    "url": "https://www.twitch.tv/mozu223",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mozu223-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-15T05:47:59Z"
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 1974/2553【クリコン】",
+    "streamer": "Fania Eckert",
+    "url": "https://www.youtube.com/watch?v=CGgVfrWHRZo",
+    "thumbnail": "https://i.ytimg.com/vi/CGgVfrWHRZo/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-15T06:54:06Z"
   }
 ]
