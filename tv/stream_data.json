@@ -5,7 +5,7 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=CGgVfrWHRZo",
     "thumbnail": "https://i.ytimg.com/vi/CGgVfrWHRZo/mqdefault_live.jpg",
-    "viewers": 19,
+    "viewers": 20,
     "started_at": "2026-02-15T06:54:06Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 11,
+    "viewers": 15,
     "started_at": "2026-02-15T09:38:41Z"
   },
   {
@@ -23,7 +23,16 @@
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 2,
+    "viewers": 6,
     "started_at": "2026-02-15T09:43:27Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～『クリコン幼稚園様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：春一番名付けの日、全日本スキー連盟設立の日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-15T10:11:44Z"
   }
 ]
