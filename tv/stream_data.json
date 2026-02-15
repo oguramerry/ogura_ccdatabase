@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 63,
+    "viewers": 58,
     "started_at": "2026-02-15T10:11:44Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 45,
+    "viewers": 46,
     "started_at": "2026-02-15T15:52:17Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤クリコン幼稚園様！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 23,
-    "started_at": "2026-02-15T13:01:41Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-15T13:26:20Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=Z3s44f13-QU",
     "thumbnail": "https://i.ytimg.com/vi/Z3s44f13-QU/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-15T15:52:44Z"
   }
 ]
