@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 123,
+    "viewers": 75,
     "started_at": "2026-02-15T10:11:44Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ニケア",
     "url": "https://www.twitch.tv/nikeajikyo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
-    "viewers": 45,
+    "viewers": 48,
     "started_at": "2026-02-15T12:12:21Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 28,
+    "viewers": 37,
     "started_at": "2026-02-15T12:45:54Z"
   },
   {
@@ -45,13 +45,40 @@
     "started_at": "2026-02-15T12:52:02Z"
   },
   {
+    "platform": "Twitch",
+    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤クリコン幼稚園様！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-15T13:01:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】酔っ払いでも良ければ胸を貸してくれる人〜クリコンチーム練習〜カスタムダイヤ以上オメガ以下推奨",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-15T12:53:18Z"
+  },
+  {
     "platform": "YouTube",
-    "title": "【FF14】覚悟を決めた男。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=ZeP0OXLd_0w",
-    "thumbnail": "https://i.ytimg.com/vi/ZeP0OXLd_0w/mqdefault_live.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-15T10:58:23Z"
+    "title": "【クリコン ランクマ】モンク 感謝の正拳突き  シルバー2",
+    "streamer": "ロボケイ",
+    "url": "https://www.youtube.com/watch?v=hKKmoBK-XQw",
+    "thumbnail": "https://i.ytimg.com/vi/hKKmoBK-XQw/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-15T13:11:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-15T13:26:20Z"
   },
   {
     "platform": "Twitch",
@@ -70,14 +97,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_t260g_nofuture-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-15T13:10:08Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン ランクマ】モンク 感謝の正拳突き  シルバー2",
-    "streamer": "ロボケイ",
-    "url": "https://www.youtube.com/watch?v=hKKmoBK-XQw",
-    "thumbnail": "https://i.ytimg.com/vi/hKKmoBK-XQw/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-15T13:11:04Z"
   }
 ]
