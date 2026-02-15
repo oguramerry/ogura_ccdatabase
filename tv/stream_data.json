@@ -1,20 +1,11 @@
 [
   {
-    "platform": "Twitch",
-    "title": "クリコン（ランクマ）するよ！回線次第で別のゲーム",
-    "streamer": "天咲ゆい",
-    "url": "https://www.twitch.tv/amasaki_yui",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-02-15T06:01:06Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 1974/2553【クリコン】",
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=CGgVfrWHRZo",
     "thumbnail": "https://i.ytimg.com/vi/CGgVfrWHRZo/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 12,
     "started_at": "2026-02-15T06:54:06Z"
   }
 ]
