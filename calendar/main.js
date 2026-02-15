@@ -1,6 +1,6 @@
 // main.js
-//配信取得
-const GAS_URL = "https://script.google.com/macros/s/AKfycbzZbWFbxilYd4n3o_vMoGNdQFMgZd4sFSmfSdJ_oxAtuFSvfx6a1A18JwVrYZp-O5Rh/exec";
+//cc_calendar
+const GAS_URL = "https://script.google.com/macros/s/AKfycbw9q7AMUUGrPaJFgkcEHRNNMLHzIj7DZHDBN4NxJqSRPYMk9Vfp7TwKNwOd629So00bgA/exec";
 
 const CATEGORY_ICONS = {
     seasonal: "🎁", official_pvp: "⚔️", official_event: "📢",
