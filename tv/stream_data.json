@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン 22時30分～『クリコン幼稚園様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：春一番名付けの日、全日本スキー連盟設立の日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 58,
-    "started_at": "2026-02-15T10:11:44Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】しばし",
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 55,
+    "viewers": 54,
     "started_at": "2026-02-15T12:45:54Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～『クリコン幼稚園様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：春一番名付けの日、全日本スキー連盟設立の日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 46,
+    "started_at": "2026-02-15T10:11:44Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +23,8 @@
     "streamer": "ニケア",
     "url": "https://www.twitch.tv/nikeajikyo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
-    "viewers": 43,
+    "viewers": 45,
     "started_at": "2026-02-15T12:12:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤クリコン幼稚園様！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-15T13:01:41Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 13,
+    "viewers": 15,
     "started_at": "2026-02-15T12:52:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤クリコン幼稚園様！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-15T13:01:41Z"
   },
   {
     "platform": "Twitch",
@@ -52,15 +52,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
     "viewers": 4,
     "started_at": "2026-02-15T13:26:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-15T14:10:11Z"
   },
   {
     "platform": "YouTube",
