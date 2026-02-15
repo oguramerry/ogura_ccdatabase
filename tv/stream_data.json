@@ -14,7 +14,16 @@
     "streamer": "デルアキ",
     "url": "https://www.twitch.tv/deluaki",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 18,
+    "viewers": 19,
     "started_at": "2026-02-15T05:08:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "息抜きクリコン",
+    "streamer": "ウツトカゲ",
+    "url": "https://www.twitch.tv/mozu223",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mozu223-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-15T05:47:59Z"
   }
 ]
