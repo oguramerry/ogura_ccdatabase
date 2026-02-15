@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 29,
+    "viewers": 33,
     "started_at": "2026-02-15T10:11:44Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=CGgVfrWHRZo",
     "thumbnail": "https://i.ytimg.com/vi/CGgVfrWHRZo/mqdefault_live.jpg",
-    "viewers": 21,
+    "viewers": 18,
     "started_at": "2026-02-15T06:54:06Z"
   },
   {
@@ -23,16 +23,25 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 9,
+    "viewers": 10,
     "started_at": "2026-02-15T09:38:41Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】これね何かわかる？クリコンの苗木【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-15T09:43:27Z"
+    "title": "【クリコン：22時〜泥酔クリコン部カスタム募集】今日もリハビリで戦場に行くにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-15T10:35:36Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ホログラムを登る男",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-15T10:35:48Z"
   }
 ]
