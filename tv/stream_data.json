@@ -5,53 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 87,
+    "viewers": 101,
     "started_at": "2026-02-16T11:06:35Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #85 ～ 酒は人生という手術を耐えさせてくれる麻酔薬だ🥃 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-16T09:49:58Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】星になったDクラス職員【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-16T10:53:08Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】 月曜のクリコンランク配信。【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=a3mj6N6-XHU",
-    "thumbnail": "https://i.ytimg.com/vi/a3mj6N6-XHU/mqdefault_live.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-16T10:31:30Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ウォーミングアップを兼ねてカジュアルなど回しながら練習22時30分より〜クリコンチーム練習〜スクリム鳥華族様",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-16T11:36:01Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】 そろそろクリコンを回さないとやばいぜ！！！　Gaia Ridill【Vtuber】",
-    "streamer": "鬼瓦 無畏",
-    "url": "https://www.youtube.com/watch?v=NQFTsTDs5vA",
-    "thumbnail": "https://i.ytimg.com/vi/NQFTsTDs5vA/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-16T11:29:47Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +14,43 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 1,
+    "viewers": 28,
     "started_at": "2026-02-16T11:42:15Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ウォーミングアップを兼ねてカジュアルなど回しながら練習22時30分より〜クリコンチーム練習〜スクリム鳥華族様",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-16T11:36:01Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】 月曜のクリコンランク配信。【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=a3mj6N6-XHU",
+    "thumbnail": "https://i.ytimg.com/vi/a3mj6N6-XHU/mqdefault_live.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-16T10:31:30Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】星になったDクラス職員【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-16T10:53:08Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】 そろそろクリコンを回さないとやばいぜ！！！　Gaia Ridill【Vtuber】",
+    "streamer": "鬼瓦 無畏",
+    "url": "https://www.youtube.com/watch?v=NQFTsTDs5vA",
+    "thumbnail": "https://i.ytimg.com/vi/NQFTsTDs5vA/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-16T11:29:47Z"
   }
 ]
