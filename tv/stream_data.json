@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 107,
+    "viewers": 104,
     "started_at": "2026-02-16T11:06:35Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 49,
+    "viewers": 45,
     "started_at": "2026-02-16T12:02:04Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】 月曜のクリコンランク配信。【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=a3mj6N6-XHU",
-    "thumbnail": "https://i.ytimg.com/vi/a3mj6N6-XHU/mqdefault_live.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-16T10:31:30Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 6,
+    "viewers": 11,
     "started_at": "2026-02-16T12:20:47Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】 月曜のクリコンランク配信。【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=a3mj6N6-XHU",
+    "thumbnail": "https://i.ytimg.com/vi/a3mj6N6-XHU/mqdefault_live.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-16T10:31:30Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +41,8 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 5,
+    "viewers": 7,
     "started_at": "2026-02-16T11:36:01Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】星になったDクラス職員【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-16T10:53:08Z"
   },
   {
     "platform": "YouTube",
@@ -59,8 +50,26 @@
     "streamer": "鬼瓦 無畏",
     "url": "https://www.youtube.com/watch?v=NQFTsTDs5vA",
     "thumbnail": "https://i.ytimg.com/vi/NQFTsTDs5vA/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 5,
     "started_at": "2026-02-16T11:29:47Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "#FF14 集まればクリコンカスタム（漁師ジョブを添えて）",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=fL8f850UXJQ",
+    "thumbnail": "https://i.ytimg.com/vi/fL8f850UXJQ/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-16T12:28:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】星になったDクラス職員【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-16T10:53:08Z"
   },
   {
     "platform": "Twitch",
@@ -73,20 +82,11 @@
   },
   {
     "platform": "YouTube",
-    "title": "#FF14 集まればクリコンカスタム（漁師ジョブを添えて）",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=fL8f850UXJQ",
-    "thumbnail": "https://i.ytimg.com/vi/fL8f850UXJQ/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-16T12:28:59Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "【FF14クリコン】開幕デスしない動きを！ランクマ ガンブレダイヤ帯",
     "streamer": "ぴょんちゃんねる",
     "url": "https://www.youtube.com/watch?v=N_6CcjcccV8",
     "thumbnail": "https://i.ytimg.com/vi/N_6CcjcccV8/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-02-16T12:00:20Z"
   }
 ]
