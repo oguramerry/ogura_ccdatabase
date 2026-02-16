@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 79,
+    "viewers": 73,
     "started_at": "2026-02-16T11:06:35Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 42,
+    "viewers": 35,
     "started_at": "2026-02-16T13:47:39Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "ニケア",
     "url": "https://www.twitch.tv/nikeajikyo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
-    "viewers": 32,
+    "viewers": 28,
     "started_at": "2026-02-16T13:00:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン：22時半〜泥酔クリコン部スクリム】しばらく白杖とさよならにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-16T12:20:47Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,26 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 12,
+    "viewers": 17,
     "started_at": "2026-02-16T13:00:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：22時半〜泥酔クリコン部スクリム】しばらく白杖とさよならにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-16T12:20:47Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-16T13:31:11Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +59,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
+    "viewers": 5,
     "started_at": "2026-02-16T13:18:04Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】ウォーミングアップを兼ねてカジュアルなど回しながら練習22時30分より〜クリコンチーム練習〜スクリム鳥華族様",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "title": "FF14 クリコン １タゲって何ですか？？？？",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
     "viewers": 4,
-    "started_at": "2026-02-16T11:36:01Z"
+    "started_at": "2026-02-16T14:14:57Z"
   },
   {
     "platform": "YouTube",
@@ -72,30 +81,12 @@
     "started_at": "2026-02-16T11:29:47Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-16T13:31:11Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン １タゲって何ですか？？？？",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-16T14:14:57Z"
-  },
-  {
     "platform": "YouTube",
-    "title": "#FF14 集まればクリコンカスタム（漁師ジョブを添えて）",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=fL8f850UXJQ",
-    "thumbnail": "https://i.ytimg.com/vi/fL8f850UXJQ/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-16T12:28:59Z"
+    "title": "クリコン",
+    "streamer": "Gaku",
+    "url": "https://www.youtube.com/watch?v=YFShCXLFEDs",
+    "thumbnail": "https://i.ytimg.com/vi/YFShCXLFEDs/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-16T14:34:33Z"
   }
 ]
