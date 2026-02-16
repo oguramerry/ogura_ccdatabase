@@ -5,17 +5,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 42,
+    "viewers": 41,
     "started_at": "2026-02-16T14:55:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】駆け込むなら今【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 40,
-    "started_at": "2026-02-16T15:39:16Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 30,
+    "viewers": 33,
     "started_at": "2026-02-16T13:47:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】駆け込むなら今【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 29,
+    "started_at": "2026-02-16T15:39:16Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 29,
+    "viewers": 22,
     "started_at": "2026-02-16T11:06:35Z"
   },
   {
@@ -41,17 +41,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 13,
+    "viewers": 18,
     "started_at": "2026-02-16T13:31:11Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤泥酔クリコン部様！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-16T13:00:48Z"
   },
   {
     "platform": "YouTube",
@@ -59,8 +50,26 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=1xWXpGTyccM",
     "thumbnail": "https://i.ytimg.com/vi/1xWXpGTyccM/mqdefault_live.jpg",
-    "viewers": 6,
+    "viewers": 9,
     "started_at": "2026-02-16T15:39:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤泥酔クリコン部様！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-16T13:00:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤泥酔クリコン部様！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-16T13:00:48Z"
   },
   {
     "platform": "Twitch",
@@ -68,7 +77,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-02-16T14:14:57Z"
   }
 ]
