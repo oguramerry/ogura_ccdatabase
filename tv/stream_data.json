@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】駆け込むなら今【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 34,
-    "started_at": "2026-02-16T15:39:16Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【第115話】星がお前を狙っている【FFXIV：クリコン】",
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 25,
+    "viewers": 42,
     "started_at": "2026-02-16T14:55:05Z"
   },
   {
@@ -23,16 +14,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-02-16T14:14:57Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】駆け込むなら今【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=1xWXpGTyccM",
-    "thumbnail": "https://i.ytimg.com/vi/1xWXpGTyccM/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-16T15:39:40Z"
   }
 ]
