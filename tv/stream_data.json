@@ -5,7 +5,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 43,
+    "viewers": 50,
     "started_at": "2026-02-16T14:55:05Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 42,
+    "viewers": 37,
     "started_at": "2026-02-16T11:06:35Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 28,
+    "viewers": 34,
     "started_at": "2026-02-16T13:47:39Z"
   },
   {
@@ -32,8 +32,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 18,
+    "viewers": 30,
     "started_at": "2026-02-16T15:39:16Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-16T13:31:11Z"
   },
   {
     "platform": "Twitch",
@@ -45,24 +54,6 @@
     "started_at": "2026-02-16T13:00:48Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-16T13:31:11Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン １タゲって何ですか？？？？",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-16T14:14:57Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【FF14】 そろそろクリコンを回さないとやばいぜ！！！　Gaia Ridill【Vtuber】",
     "streamer": "鬼瓦 無畏",
@@ -72,12 +63,21 @@
     "started_at": "2026-02-16T11:29:47Z"
   },
   {
+    "platform": "Twitch",
+    "title": "FF14 クリコン １タゲって何ですか？？？？",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-16T14:14:57Z"
+  },
+  {
     "platform": "YouTube",
     "title": "【クリコン】駆け込むなら今【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=1xWXpGTyccM",
     "thumbnail": "https://i.ytimg.com/vi/1xWXpGTyccM/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-02-16T15:39:40Z"
   },
   {
