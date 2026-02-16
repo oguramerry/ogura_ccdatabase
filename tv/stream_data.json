@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "［FF14］ とことんクリコンカジュアル",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 36,
-    "started_at": "2026-02-16T05:30:42Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信",
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 28,
+    "viewers": 42,
     "started_at": "2026-02-16T07:54:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "［FF14］ とことんクリコンカジュアル",
+    "streamer": "ろびす",
+    "url": "https://www.twitch.tv/robswiz_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
+    "viewers": 34,
+    "started_at": "2026-02-16T05:30:42Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 21,
+    "viewers": 18,
     "started_at": "2026-02-16T08:08:47Z"
   }
 ]
