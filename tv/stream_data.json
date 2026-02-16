@@ -14,8 +14,17 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 50,
+    "viewers": 49,
     "started_at": "2026-02-16T12:02:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランク戦士/ダイヤ4から   @nikeajikyo",
+    "streamer": "ニケア",
+    "url": "https://www.twitch.tv/nikeajikyo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
+    "viewers": 24,
+    "started_at": "2026-02-16T13:00:04Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +32,26 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 14,
+    "viewers": 16,
     "started_at": "2026-02-16T12:20:47Z"
   },
   {
+    "platform": "Twitch",
+    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤泥酔クリコン部様！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-16T13:00:48Z"
+  },
+  {
     "platform": "YouTube",
-    "title": "【FF14】 月曜のクリコンランク配信。【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=a3mj6N6-XHU",
-    "thumbnail": "https://i.ytimg.com/vi/a3mj6N6-XHU/mqdefault_live.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-16T10:31:30Z"
+    "title": "#FF14 集まればクリコンカスタム（漁師ジョブを添えて）",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=fL8f850UXJQ",
+    "thumbnail": "https://i.ytimg.com/vi/fL8f850UXJQ/mqdefault_live.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-16T12:28:59Z"
   },
   {
     "platform": "Twitch",
@@ -46,30 +64,12 @@
   },
   {
     "platform": "YouTube",
-    "title": "#FF14 集まればクリコンカスタム（漁師ジョブを添えて）",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=fL8f850UXJQ",
-    "thumbnail": "https://i.ytimg.com/vi/fL8f850UXJQ/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-16T12:28:59Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "【FF14】 そろそろクリコンを回さないとやばいぜ！！！　Gaia Ridill【Vtuber】",
     "streamer": "鬼瓦 無畏",
     "url": "https://www.youtube.com/watch?v=NQFTsTDs5vA",
     "thumbnail": "https://i.ytimg.com/vi/NQFTsTDs5vA/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-16T11:29:47Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】星になったDクラス職員【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-16T10:53:08Z"
   },
   {
     "platform": "YouTube",
@@ -88,5 +88,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-16T12:01:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】星になったDクラス職員【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-16T10:53:08Z"
   }
 ]
