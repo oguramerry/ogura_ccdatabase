@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【第115話】星がお前を狙っている【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 38,
-    "started_at": "2026-02-16T14:55:05Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン 22時30分～『泥酔クリコン部様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：天気図記念日、寒天の日、全国狩猟禁止の日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 34,
+    "viewers": 40,
     "started_at": "2026-02-16T11:06:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第115話】星がお前を狙っている【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 39,
+    "started_at": "2026-02-16T14:55:05Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +23,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 31,
+    "viewers": 34,
     "started_at": "2026-02-16T15:39:16Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】駆け込むなら今【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=1xWXpGTyccM",
-    "thumbnail": "https://i.ytimg.com/vi/1xWXpGTyccM/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-16T15:39:40Z"
   },
   {
     "platform": "Twitch",
@@ -43,6 +34,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
     "viewers": 4,
     "started_at": "2026-02-16T14:14:57Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】駆け込むなら今【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=1xWXpGTyccM",
+    "thumbnail": "https://i.ytimg.com/vi/1xWXpGTyccM/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-16T15:39:40Z"
   },
   {
     "platform": "Twitch",
