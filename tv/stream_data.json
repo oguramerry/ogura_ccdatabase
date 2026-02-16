@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【第115話】星がお前を狙っている【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 39,
-    "started_at": "2026-02-16T14:55:05Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】駆け込むなら今【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 32,
+    "viewers": 46,
     "started_at": "2026-02-16T15:39:16Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第115話】星がお前を狙っている【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-02-16T14:55:05Z"
   },
   {
     "platform": "Twitch",
