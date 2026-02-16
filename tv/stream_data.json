@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 75,
+    "viewers": 67,
     "started_at": "2026-02-16T07:54:56Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 21,
+    "viewers": 50,
     "started_at": "2026-02-16T11:06:35Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 10,
+    "viewers": 9,
     "started_at": "2026-02-16T09:49:58Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】星になったDクラス職員【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-16T10:53:08Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +32,16 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=a3mj6N6-XHU",
     "thumbnail": "https://i.ytimg.com/vi/a3mj6N6-XHU/mqdefault_live.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-02-16T10:31:30Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】星になったDクラス職員【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-16T10:53:08Z"
   }
 ]
