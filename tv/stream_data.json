@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 104,
+    "viewers": 105,
     "started_at": "2026-02-16T11:06:35Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 45,
+    "viewers": 50,
     "started_at": "2026-02-16T12:02:04Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 11,
+    "viewers": 14,
     "started_at": "2026-02-16T12:20:47Z"
   },
   {
@@ -41,17 +41,8 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-16T11:36:01Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】 そろそろクリコンを回さないとやばいぜ！！！　Gaia Ridill【Vtuber】",
-    "streamer": "鬼瓦 無畏",
-    "url": "https://www.youtube.com/watch?v=NQFTsTDs5vA",
-    "thumbnail": "https://i.ytimg.com/vi/NQFTsTDs5vA/mqdefault_live.jpg",
     "viewers": 5,
-    "started_at": "2026-02-16T11:29:47Z"
+    "started_at": "2026-02-16T11:36:01Z"
   },
   {
     "platform": "YouTube",
@@ -59,8 +50,17 @@
     "streamer": "ショウケイ",
     "url": "https://www.youtube.com/watch?v=fL8f850UXJQ",
     "thumbnail": "https://i.ytimg.com/vi/fL8f850UXJQ/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-16T12:28:59Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】 そろそろクリコンを回さないとやばいぜ！！！　Gaia Ridill【Vtuber】",
+    "streamer": "鬼瓦 無畏",
+    "url": "https://www.youtube.com/watch?v=NQFTsTDs5vA",
+    "thumbnail": "https://i.ytimg.com/vi/NQFTsTDs5vA/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-16T11:29:47Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +68,17 @@
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-16T10:53:08Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14クリコン】開幕デスしない動きを！ランクマ ガンブレダイヤ帯",
+    "streamer": "ぴょんちゃんねる",
+    "url": "https://www.youtube.com/watch?v=N_6CcjcccV8",
+    "thumbnail": "https://i.ytimg.com/vi/N_6CcjcccV8/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-16T12:00:20Z"
   },
   {
     "platform": "Twitch",
@@ -79,14 +88,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-16T12:01:22Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14クリコン】開幕デスしない動きを！ランクマ ガンブレダイヤ帯",
-    "streamer": "ぴょんちゃんねる",
-    "url": "https://www.youtube.com/watch?v=N_6CcjcccV8",
-    "thumbnail": "https://i.ytimg.com/vi/N_6CcjcccV8/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-16T12:00:20Z"
   }
 ]
