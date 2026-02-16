@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 92,
+    "viewers": 82,
     "started_at": "2026-02-16T11:06:35Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 52,
+    "viewers": 46,
     "started_at": "2026-02-16T12:02:04Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ニケア",
     "url": "https://www.twitch.tv/nikeajikyo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
-    "viewers": 28,
+    "viewers": 26,
     "started_at": "2026-02-16T13:00:04Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 21,
+    "viewers": 18,
     "started_at": "2026-02-16T13:00:48Z"
   },
   {
@@ -45,15 +45,6 @@
     "started_at": "2026-02-16T12:20:47Z"
   },
   {
-    "platform": "YouTube",
-    "title": "#FF14 集まればクリコンカスタム（漁師ジョブを添えて）",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=fL8f850UXJQ",
-    "thumbnail": "https://i.ytimg.com/vi/fL8f850UXJQ/mqdefault_live.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-16T12:28:59Z"
-  },
-  {
     "platform": "Twitch",
     "title": "【FF14】ウォーミングアップを兼ねてカジュアルなど回しながら練習22時30分より〜クリコンチーム練習〜スクリム鳥華族様",
     "streamer": "アスヤン",
@@ -63,6 +54,15 @@
     "started_at": "2026-02-16T11:36:01Z"
   },
   {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-16T13:31:11Z"
+  },
+  {
     "platform": "YouTube",
     "title": "【FF14】 そろそろクリコンを回さないとやばいぜ！！！　Gaia Ridill【Vtuber】",
     "streamer": "鬼瓦 無畏",
@@ -70,15 +70,6 @@
     "thumbnail": "https://i.ytimg.com/vi/NQFTsTDs5vA/mqdefault_live.jpg",
     "viewers": 4,
     "started_at": "2026-02-16T11:29:47Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14クリコン】開幕デスしない動きを！ランクマ ガンブレダイヤ帯",
-    "streamer": "ぴょんちゃんねる",
-    "url": "https://www.youtube.com/watch?v=N_6CcjcccV8",
-    "thumbnail": "https://i.ytimg.com/vi/N_6CcjcccV8/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-16T12:00:20Z"
   },
   {
     "platform": "Twitch",
@@ -99,12 +90,12 @@
     "started_at": "2026-02-16T10:53:08Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】星になったDクラス職員【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-16T10:53:08Z"
+    "platform": "YouTube",
+    "title": "#FF14 集まればクリコンカスタム（漁師ジョブを添えて）",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=fL8f850UXJQ",
+    "thumbnail": "https://i.ytimg.com/vi/fL8f850UXJQ/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-16T12:28:59Z"
   }
 ]
