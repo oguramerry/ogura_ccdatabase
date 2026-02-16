@@ -5,8 +5,17 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 96,
+    "viewers": 75,
     "started_at": "2026-02-16T07:54:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～『泥酔クリコン部様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：天気図記念日、寒天の日、全国狩猟禁止の日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-16T11:06:35Z"
   },
   {
     "platform": "Twitch",
@@ -14,8 +23,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-02-16T09:49:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】星になったDクラス職員【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-16T10:53:08Z"
   },
   {
     "platform": "YouTube",
@@ -23,7 +41,7 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=a3mj6N6-XHU",
     "thumbnail": "https://i.ytimg.com/vi/a3mj6N6-XHU/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 6,
     "started_at": "2026-02-16T10:31:30Z"
   }
 ]
