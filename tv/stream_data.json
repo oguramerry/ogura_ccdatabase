@@ -5,35 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 73,
+    "viewers": 79,
     "started_at": "2026-02-16T11:06:35Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ねぇこんな形の出会いしか無かったの……？哀しいぬぇ〜〜〜〜〜 #FF14 えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 41,
-    "started_at": "2026-02-16T12:02:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランク戦士/ダイヤ4から   @nikeajikyo",
-    "streamer": "ニケア",
-    "url": "https://www.twitch.tv/nikeajikyo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-02-16T13:00:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤泥酔クリコン部様！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-02-16T13:00:48Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +14,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 14,
+    "viewers": 42,
     "started_at": "2026-02-16T13:47:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランク戦士/ダイヤ4から   @nikeajikyo",
+    "streamer": "ニケア",
+    "url": "https://www.twitch.tv/nikeajikyo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
+    "viewers": 32,
+    "started_at": "2026-02-16T13:00:04Z"
   },
   {
     "platform": "Twitch",
@@ -50,26 +32,17 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 14,
+    "viewers": 12,
     "started_at": "2026-02-16T12:20:47Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-16T13:31:11Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ウォーミングアップを兼ねてカジュアルなど回しながら練習22時30分より〜クリコンチーム練習〜スクリム鳥華族様",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-16T11:36:01Z"
+    "title": "【ff14】22:30～チーム練習！召喚or黒魔でがんばります！対戦➤泥酔クリコン部様！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-16T13:00:48Z"
   },
   {
     "platform": "Twitch",
@@ -77,8 +50,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 8,
     "started_at": "2026-02-16T13:18:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ウォーミングアップを兼ねてカジュアルなど回しながら練習22時30分より〜クリコンチーム練習〜スクリム鳥華族様",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-16T11:36:01Z"
   },
   {
     "platform": "YouTube",
@@ -88,6 +70,24 @@
     "thumbnail": "https://i.ytimg.com/vi/NQFTsTDs5vA/mqdefault_live.jpg",
     "viewers": 3,
     "started_at": "2026-02-16T11:29:47Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-16T13:31:11Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン １タゲって何ですか？？？？",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-16T14:14:57Z"
   },
   {
     "platform": "YouTube",
