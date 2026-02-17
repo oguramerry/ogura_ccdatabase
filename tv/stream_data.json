@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 66,
+    "viewers": 59,
     "started_at": "2026-02-17T07:55:37Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 41,
+    "viewers": 42,
     "started_at": "2026-02-17T10:16:48Z"
   },
   {
@@ -23,7 +23,43 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 13,
+    "viewers": 15,
     "started_at": "2026-02-17T10:24:08Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンおはなししよ！ すこやさんとかへおさんと一緒に！",
+    "streamer": "東雲ハクエン",
+    "url": "https://www.twitch.tv/hakuensinonome",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-17T10:51:47Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンおはなししよ！with東雲ハクエン、かへお",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-17T10:50:00Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-17T10:46:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】絶叫と絶望とクリスタルコンフリクト【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-17T10:58:45Z"
   }
 ]
