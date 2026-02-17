@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 59,
-    "started_at": "2026-02-17T07:55:37Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK） 『今日は何の日：天使の囁き記念日、中部国際空港開港記念日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 42,
+    "viewers": 70,
     "started_at": "2026-02-17T10:16:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンおはなししよ！with東雲ハクエン、かへお",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 46,
+    "started_at": "2026-02-17T10:50:00Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 15,
+    "viewers": 25,
     "started_at": "2026-02-17T10:24:08Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 4,
+    "viewers": 13,
     "started_at": "2026-02-17T10:51:47Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンおはなししよ！with東雲ハクエン、かへお",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-17T10:50:00Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 1,
+    "viewers": 4,
     "started_at": "2026-02-17T10:46:34Z"
   },
   {
@@ -59,7 +50,7 @@
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 0,
+    "viewers": 3,
     "started_at": "2026-02-17T10:58:45Z"
   }
 ]
