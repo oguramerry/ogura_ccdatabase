@@ -5,26 +5,8 @@
     "streamer": "PVPAsh",
     "url": "https://www.twitch.tv/pvpash",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pvpash-320x180.jpg",
-    "viewers": 83,
+    "viewers": 81,
     "started_at": "2026-02-17T11:11:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK） 『今日は何の日：天使の囁き記念日、中部国際空港開港記念日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 70,
-    "started_at": "2026-02-17T10:16:48Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】魂のジョブ【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 36,
-    "started_at": "2026-02-17T14:48:09Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +14,7 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 35,
+    "viewers": 42,
     "started_at": "2026-02-17T14:35:03Z"
   },
   {
@@ -41,8 +23,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 28,
+    "viewers": 31,
     "started_at": "2026-02-17T10:24:08Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】魂のジョブ【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-02-17T14:48:09Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 20,
+    "viewers": 26,
     "started_at": "2026-02-17T15:29:14Z"
   },
   {
@@ -59,26 +50,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 19,
+    "viewers": 16,
     "started_at": "2026-02-17T13:36:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "消化終わってクリコン",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-17T13:01:02Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】魂のジョブ【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=g6GM_sqlMTU",
-    "thumbnail": "https://i.ytimg.com/vi/g6GM_sqlMTU/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-17T14:48:43Z"
   },
   {
     "platform": "Twitch",
@@ -90,12 +63,30 @@
     "started_at": "2026-02-17T10:46:34Z"
   },
   {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-17T10:46:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "消化終わってクリコン",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-17T13:01:02Z"
+  },
+  {
     "platform": "YouTube",
-    "title": "【FF14】【クリコン】【カジュアル】忍ばないタイプの忍者",
-    "streamer": "一般男性あべどり",
-    "url": "https://www.youtube.com/watch?v=Uk5alh9CqUM",
-    "thumbnail": "https://i.ytimg.com/vi/Uk5alh9CqUM/mqdefault_live.jpg",
+    "title": "【クリコン】魂のジョブ【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=g6GM_sqlMTU",
+    "thumbnail": "https://i.ytimg.com/vi/g6GM_sqlMTU/mqdefault_live.jpg",
     "viewers": 1,
-    "started_at": "2026-02-17T13:31:25Z"
+    "started_at": "2026-02-17T14:48:43Z"
   }
 ]
