@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 67,
+    "viewers": 63,
     "started_at": "2026-02-17T10:16:48Z"
   },
   {
@@ -14,35 +14,8 @@
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 55,
+    "viewers": 49,
     "started_at": "2026-02-17T12:16:51Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】おじゃ",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-02-17T12:35:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】20時〜クリコントーク会！超クリコン研究会 Day68.5【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 30,
-    "started_at": "2026-02-17T10:24:08Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "調整後らしい。クリコン ランク S18 暗黒騎士（ダイヤ/490）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-02-17T13:36:21Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +23,35 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 22,
+    "viewers": 35,
     "started_at": "2026-02-17T14:35:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "調整後らしい。クリコン ランク S18 暗黒騎士（ダイヤ/490）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 32,
+    "started_at": "2026-02-17T13:36:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】20時〜クリコントーク会！超クリコン研究会 Day68.5【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 28,
+    "started_at": "2026-02-17T10:24:08Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】おじゃ",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 23,
+    "started_at": "2026-02-17T12:35:07Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +59,7 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 13,
+    "viewers": 14,
     "started_at": "2026-02-17T11:56:37Z"
   },
   {
@@ -68,8 +68,17 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-17T10:46:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】魂のジョブ【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-17T14:48:09Z"
   },
   {
     "platform": "Twitch",
@@ -79,6 +88,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-17T10:58:45Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】魂のジョブ【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=g6GM_sqlMTU",
+    "thumbnail": "https://i.ytimg.com/vi/g6GM_sqlMTU/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-17T14:48:43Z"
   },
   {
     "platform": "YouTube",
