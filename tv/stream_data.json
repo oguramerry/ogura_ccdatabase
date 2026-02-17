@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 79,
+    "viewers": 90,
     "started_at": "2026-02-17T10:16:48Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 50,
+    "viewers": 55,
     "started_at": "2026-02-17T12:16:51Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】20時〜クリコントーク会！超クリコン研究会 Day68.5【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 33,
-    "started_at": "2026-02-17T10:24:08Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 29,
+    "viewers": 39,
     "started_at": "2026-02-17T12:35:07Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】20時〜クリコントーク会！超クリコン研究会 Day68.5【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 38,
+    "started_at": "2026-02-17T10:24:08Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +41,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 17,
+    "viewers": 24,
     "started_at": "2026-02-17T13:36:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンおはなししよ！with東雲ハクエン、かへお",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-17T10:50:00Z"
   },
   {
     "platform": "Twitch",
@@ -59,35 +50,8 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 15,
+    "viewers": 13,
     "started_at": "2026-02-17T11:56:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンおはなししよ！ すこやさんとかへおさんと一緒に！",
-    "streamer": "東雲ハクエン",
-    "url": "https://www.twitch.tv/hakuensinonome",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-17T10:51:47Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】心が折れたDクラス職員【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-17T10:58:45Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "#FF14 本日も集まればクリコンカスタム（漁師ジョブを添えて）",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=5-c_u0spPkg",
-    "thumbnail": "https://i.ytimg.com/vi/5-c_u0spPkg/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-17T12:31:50Z"
   },
   {
     "platform": "Twitch",
