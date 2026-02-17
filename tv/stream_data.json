@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 73,
+    "viewers": 78,
     "started_at": "2026-02-17T10:16:48Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 33,
+    "viewers": 37,
     "started_at": "2026-02-17T12:35:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンおはなししよ！with東雲ハクエン、かへお",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-02-17T10:50:00Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 24,
+    "viewers": 32,
     "started_at": "2026-02-17T10:24:08Z"
   },
   {
@@ -41,8 +32,17 @@
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 23,
+    "viewers": 32,
     "started_at": "2026-02-17T12:16:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンおはなししよ！with東雲ハクエン、かへお",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 25,
+    "started_at": "2026-02-17T10:50:00Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +50,7 @@
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 12,
+    "viewers": 17,
     "started_at": "2026-02-17T10:51:47Z"
   },
   {
@@ -59,26 +59,8 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 12,
+    "viewers": 15,
     "started_at": "2026-02-17T11:56:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #86 ～ 教わったことを身体に落とし込む！繰り返し...繰り返し！ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-17T11:45:46Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "#FF14 本日も集まればクリコンカスタム（漁師ジョブを添えて）",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=5-c_u0spPkg",
-    "thumbnail": "https://i.ytimg.com/vi/5-c_u0spPkg/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-17T12:31:50Z"
   },
   {
     "platform": "Twitch",
@@ -86,8 +68,26 @@
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-17T10:58:45Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "#FF14 本日も集まればクリコンカスタム（漁師ジョブを添えて）",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=5-c_u0spPkg",
+    "thumbnail": "https://i.ytimg.com/vi/5-c_u0spPkg/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-17T12:31:50Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-17T10:46:34Z"
   },
   {
     "platform": "Twitch",
@@ -106,14 +106,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_himasamurai-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-17T11:24:26Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-17T10:46:34Z"
   }
 ]
