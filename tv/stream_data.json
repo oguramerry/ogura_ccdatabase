@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 90,
+    "viewers": 67,
     "started_at": "2026-02-17T10:16:48Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 39,
+    "viewers": 31,
     "started_at": "2026-02-17T12:35:07Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 38,
+    "viewers": 30,
     "started_at": "2026-02-17T10:24:08Z"
   },
   {
@@ -41,8 +41,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 24,
+    "viewers": 27,
     "started_at": "2026-02-17T13:36:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "調整クリコン",
+    "streamer": "まきなべるぐ",
+    "url": "https://www.twitch.tv/mknblg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
+    "viewers": 22,
+    "started_at": "2026-02-17T14:35:03Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +68,17 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-17T10:46:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】心が折れたDクラス職員【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-17T10:58:45Z"
   },
   {
     "platform": "YouTube",
