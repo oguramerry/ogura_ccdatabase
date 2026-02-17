@@ -23,7 +23,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 21,
+    "viewers": 20,
     "started_at": "2026-02-17T10:24:08Z"
   },
   {
@@ -32,8 +32,17 @@
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 20,
+    "viewers": 15,
     "started_at": "2026-02-17T10:51:47Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14クリコン】クリスタル↔ダイヤ帯_ランクマガンブレ：カジュアル白魔",
+    "streamer": "太陽と向日葵",
+    "url": "https://www.twitch.tv/himasamurai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_himasamurai-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-17T11:24:26Z"
   },
   {
     "platform": "Twitch",
@@ -52,14 +61,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-17T10:58:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14クリコン】クリスタル↔ダイヤ帯_ランクマガンブレ：カジュアル白魔",
-    "streamer": "太陽と向日葵",
-    "url": "https://www.twitch.tv/himasamurai",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_himasamurai-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-17T11:24:26Z"
   }
 ]
