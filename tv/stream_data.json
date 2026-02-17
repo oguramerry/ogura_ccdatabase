@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 73,
+    "viewers": 79,
     "started_at": "2026-02-17T10:16:48Z"
   },
   {
@@ -14,8 +14,17 @@
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 60,
+    "viewers": 50,
     "started_at": "2026-02-17T12:16:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】20時〜クリコントーク会！超クリコン研究会 Day68.5【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-02-17T10:24:08Z"
   },
   {
     "platform": "Twitch",
@@ -28,12 +37,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】20時〜クリコントーク会！超クリコン研究会 Day68.5【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 28,
-    "started_at": "2026-02-17T10:24:08Z"
+    "title": "調整後らしい。クリコン ランク S18 暗黒騎士（ダイヤ/490）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-17T13:36:21Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +50,7 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 17,
+    "viewers": 16,
     "started_at": "2026-02-17T10:50:00Z"
   },
   {
@@ -55,39 +64,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "調整後らしい。クリコン ランク S18 暗黒騎士（ダイヤ/490）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-17T13:36:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "調整後らしい。クリコン ランク S18 暗黒騎士（ダイヤ/490）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-17T13:36:21Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコンおはなししよ！ すこやさんとかへおさんと一緒に！",
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
     "viewers": 11,
     "started_at": "2026-02-17T10:51:47Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "#FF14 本日も集まればクリコンカスタム（漁師ジョブを添えて）",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=5-c_u0spPkg",
-    "thumbnail": "https://i.ytimg.com/vi/5-c_u0spPkg/mqdefault_live.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-17T12:31:50Z"
   },
   {
     "platform": "Twitch",
@@ -97,6 +79,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 3,
     "started_at": "2026-02-17T10:58:45Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "#FF14 本日も集まればクリコンカスタム（漁師ジョブを添えて）",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=5-c_u0spPkg",
+    "thumbnail": "https://i.ytimg.com/vi/5-c_u0spPkg/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-17T12:31:50Z"
   },
   {
     "platform": "Twitch",
