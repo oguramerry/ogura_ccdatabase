@@ -5,8 +5,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 78,
+    "viewers": 79,
     "started_at": "2026-02-17T10:16:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14PVP】クリコンランク、22時からFLいくぞ in Gaia フェンリル鯖  #ぎゃわ配信/視聴者参加型/イベント主催/Final Fantasy XIV PVP (@gyawa_vatos)",
+    "streamer": "Gyawa_Vatos",
+    "url": "https://www.twitch.tv/gyawa_vatos",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
+    "viewers": 35,
+    "started_at": "2026-02-17T12:16:51Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 37,
+    "viewers": 34,
     "started_at": "2026-02-17T12:35:07Z"
   },
   {
@@ -23,17 +32,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 32,
+    "viewers": 33,
     "started_at": "2026-02-17T10:24:08Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14PVP】クリコンランク、22時からFLいくぞ in Gaia フェンリル鯖  #ぎゃわ配信/視聴者参加型/イベント主催/Final Fantasy XIV PVP (@gyawa_vatos)",
-    "streamer": "Gyawa_Vatos",
-    "url": "https://www.twitch.tv/gyawa_vatos",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-02-17T12:16:51Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +41,8 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 25,
+    "viewers": 21,
     "started_at": "2026-02-17T10:50:00Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンおはなししよ！ すこやさんとかへおさんと一緒に！",
-    "streamer": "東雲ハクエン",
-    "url": "https://www.twitch.tv/hakuensinonome",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-02-17T10:51:47Z"
   },
   {
     "platform": "Twitch",
@@ -64,12 +55,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】心が折れたDクラス職員【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-17T10:58:45Z"
+    "title": "クリコンおはなししよ！ すこやさんとかへおさんと一緒に！",
+    "streamer": "東雲ハクエン",
+    "url": "https://www.twitch.tv/hakuensinonome",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-17T10:51:47Z"
   },
   {
     "platform": "YouTube",
@@ -77,17 +68,8 @@
     "streamer": "ショウケイ",
     "url": "https://www.youtube.com/watch?v=5-c_u0spPkg",
     "thumbnail": "https://i.ytimg.com/vi/5-c_u0spPkg/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-17T12:31:50Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-17T10:46:34Z"
   },
   {
     "platform": "Twitch",
@@ -95,8 +77,26 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-17T12:00:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】心が折れたDクラス職員【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-17T10:58:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-17T10:46:34Z"
   },
   {
     "platform": "Twitch",
@@ -106,5 +106,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_himasamurai-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-17T11:24:26Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-17T10:46:34Z"
   }
 ]
