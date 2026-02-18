@@ -1,12 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK） 『今日は何の日：冥王星の日、エアメールの日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 66,
-    "started_at": "2026-02-18T12:01:20Z"
+    "title": "【クリコン】きょうもがんばんぞ【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 50,
+    "started_at": "2026-02-18T15:43:24Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 41,
+    "viewers": 36,
     "started_at": "2026-02-18T09:42:34Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 36,
+    "viewers": 34,
     "started_at": "2026-02-18T14:34:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】きょうもがんばんぞ【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-02-18T15:43:24Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,7 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 25,
+    "viewers": 29,
     "started_at": "2026-02-18T13:30:29Z"
   },
   {
@@ -50,7 +41,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 23,
+    "viewers": 24,
     "started_at": "2026-02-18T12:32:19Z"
   },
   {
@@ -64,21 +55,21 @@
   },
   {
     "platform": "YouTube",
-    "title": "【クリコン】きょうもがんばんぞ【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=mFAUjZ0xoyA",
-    "thumbnail": "https://i.ytimg.com/vi/mFAUjZ0xoyA/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-18T15:43:55Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "【FF14】【クリコン】【カジュアル】昼間もシャキるくらいクリコン流行れよ",
     "streamer": "一般男性あべどり",
     "url": "https://www.youtube.com/watch?v=3R2rPNNvD68",
     "thumbnail": "https://i.ytimg.com/vi/3R2rPNNvD68/mqdefault_live.jpg",
     "viewers": 3,
     "started_at": "2026-02-18T13:11:40Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】きょうもがんばんぞ【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=mFAUjZ0xoyA",
+    "thumbnail": "https://i.ytimg.com/vi/mFAUjZ0xoyA/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-18T15:43:55Z"
   },
   {
     "platform": "Twitch",
@@ -88,14 +79,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-18T12:07:56Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン ランクマで斬鉄剣するだけ",
-    "streamer": "コンガナジャイ",
-    "url": "https://www.twitch.tv/konbanhag",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-18T15:02:29Z"
   }
 ]
