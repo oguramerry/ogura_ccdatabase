@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 54,
+    "viewers": 50,
     "started_at": "2026-02-18T15:43:24Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 48,
+    "viewers": 40,
     "started_at": "2026-02-18T13:30:29Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 44,
+    "viewers": 36,
     "started_at": "2026-02-18T14:34:38Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 17,
+    "viewers": 15,
     "started_at": "2026-02-18T16:54:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンランク",
-    "streamer": "ゲーマー主婦れんむ",
-    "url": "https://www.twitch.tv/a_renmu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-02-18T17:37:02Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +41,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-02-18T15:56:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンランク",
+    "streamer": "ゲーマー主婦れんむ",
+    "url": "https://www.twitch.tv/a_renmu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-18T17:37:02Z"
   },
   {
     "platform": "YouTube",
@@ -68,7 +68,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=mFAUjZ0xoyA",
     "thumbnail": "https://i.ytimg.com/vi/mFAUjZ0xoyA/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 0,
     "started_at": "2026-02-18T15:43:55Z"
   }
 ]
