@@ -5,8 +5,17 @@
     "streamer": "夏樹すず",
     "url": "https://www.twitch.tv/72ksz",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_72ksz-320x180.jpg",
-    "viewers": 85,
+    "viewers": 83,
     "started_at": "2026-02-18T08:26:19Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "Crystal conflict gaming",
+    "streamer": "Lexellent7",
+    "url": "https://www.twitch.tv/lexellent7",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-02-18T20:30:42Z"
   },
   {
     "platform": "Twitch",
@@ -18,21 +27,12 @@
     "started_at": "2026-02-18T14:34:38Z"
   },
   {
-    "platform": "Twitch",
-    "title": "Crystal conflict gaming",
-    "streamer": "Lexellent7",
-    "url": "https://www.twitch.tv/lexellent7",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-18T20:30:42Z"
-  },
-  {
     "platform": "YouTube",
     "title": "Ranked Crystal Conflict JP/EU",
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=ESf4m6SnNOs",
     "thumbnail": "https://i.ytimg.com/vi/ESf4m6SnNOs/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-18T16:54:28Z"
   }
 ]
