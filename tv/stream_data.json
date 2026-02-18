@@ -14,7 +14,7 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 42,
+    "viewers": 48,
     "started_at": "2026-02-18T13:30:29Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 36,
+    "viewers": 44,
     "started_at": "2026-02-18T14:34:38Z"
   },
   {
@@ -50,17 +50,8 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
+    "viewers": 4,
     "started_at": "2026-02-18T15:56:06Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】きょうもがんばんぞ【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=mFAUjZ0xoyA",
-    "thumbnail": "https://i.ytimg.com/vi/mFAUjZ0xoyA/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-18T15:43:55Z"
   },
   {
     "platform": "YouTube",
@@ -70,5 +61,14 @@
     "thumbnail": "https://i.ytimg.com/vi/ESf4m6SnNOs/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-02-18T16:54:28Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】きょうもがんばんぞ【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=mFAUjZ0xoyA",
+    "thumbnail": "https://i.ytimg.com/vi/mFAUjZ0xoyA/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-18T15:43:55Z"
   }
 ]
