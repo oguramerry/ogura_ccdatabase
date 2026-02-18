@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 78,
+    "viewers": 77,
     "started_at": "2026-02-18T12:01:20Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 40,
+    "viewers": 36,
     "started_at": "2026-02-18T09:42:34Z"
   },
   {
@@ -23,26 +23,8 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 33,
+    "viewers": 30,
     "started_at": "2026-02-18T13:07:11Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "ととちむ",
-    "url": "https://www.twitch.tv/toto_chimu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-02-18T13:30:29Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン ランク S18 暗黒騎士（ダイヤ1/490）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-02-18T12:32:19Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +32,35 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 11,
+    "viewers": 29,
     "started_at": "2026-02-18T13:01:20Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ランク S18 暗黒騎士（ダイヤ1/490）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 28,
+    "started_at": "2026-02-18T12:32:19Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "ととちむ",
+    "url": "https://www.twitch.tv/toto_chimu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
+    "viewers": 25,
+    "started_at": "2026-02-18T13:30:29Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】動き方を意識しながらやりたい気持ちはあるだが溶かしまくったものを取り返したいのだよ！私はね？〜クリコンダイヤ帯なり",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-18T11:38:46Z"
   },
   {
     "platform": "Twitch",
@@ -64,21 +73,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】動き方を意識しながらやりたい気持ちはあるだが溶かしまくったものを取り返したいのだよ！私はね？〜クリコンダイヤ帯なり",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-18T11:38:46Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンだぁ～～(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "title": "【第116話】𝐄𝐍𝐉𝐎𝐘 クリスタルに乗り続ける【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
     "viewers": 4,
-    "started_at": "2026-02-18T12:07:56Z"
+    "started_at": "2026-02-18T14:34:38Z"
   },
   {
     "platform": "YouTube",
@@ -86,8 +86,17 @@
     "streamer": "一般男性あべどり",
     "url": "https://www.youtube.com/watch?v=3R2rPNNvD68",
     "thumbnail": "https://i.ytimg.com/vi/3R2rPNNvD68/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-18T13:11:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンだぁ～～(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-18T12:07:56Z"
   },
   {
     "platform": "Twitch",
