@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 45,
+    "viewers": 47,
     "started_at": "2026-02-18T15:43:24Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 38,
+    "viewers": 43,
     "started_at": "2026-02-18T14:34:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day69【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 37,
-    "started_at": "2026-02-18T09:42:34Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 23,
+    "viewers": 36,
     "started_at": "2026-02-18T12:32:19Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 21,
+    "viewers": 30,
     "started_at": "2026-02-18T13:30:29Z"
   },
   {
@@ -50,7 +41,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 5,
+    "viewers": 3,
     "started_at": "2026-02-18T15:56:06Z"
   },
   {
@@ -59,16 +50,25 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=mFAUjZ0xoyA",
     "thumbnail": "https://i.ytimg.com/vi/mFAUjZ0xoyA/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-18T15:43:55Z"
   },
   {
+    "platform": "Twitch",
+    "title": "Ranked Crystal Conflict JP/EU",
+    "streamer": "BrianRicardo",
+    "url": "https://www.twitch.tv/brianricardo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-18T16:54:21Z"
+  },
+  {
     "platform": "YouTube",
-    "title": "【FF14】【クリコン】【カジュアル】昼間もシャキるくらいクリコン流行れよ",
-    "streamer": "一般男性あべどり",
-    "url": "https://www.youtube.com/watch?v=3R2rPNNvD68",
-    "thumbnail": "https://i.ytimg.com/vi/3R2rPNNvD68/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-18T13:11:40Z"
+    "title": "Ranked Crystal Conflict JP/EU",
+    "streamer": "Brian Ricardo",
+    "url": "https://www.youtube.com/watch?v=ESf4m6SnNOs",
+    "thumbnail": "https://i.ytimg.com/vi/ESf4m6SnNOs/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-18T16:54:28Z"
   }
 ]
