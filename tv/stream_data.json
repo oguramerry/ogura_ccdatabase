@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 41,
+    "viewers": 46,
     "started_at": "2026-02-18T15:43:24Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 33,
+    "viewers": 32,
     "started_at": "2026-02-18T14:34:38Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ゲーマー主婦れんむ",
     "url": "https://www.twitch.tv/a_renmu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 27,
+    "viewers": 25,
     "started_at": "2026-02-18T17:37:02Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 15,
+    "viewers": 19,
     "started_at": "2026-02-18T16:54:21Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "Ranked Crystal Conflict JP/EU",
-    "streamer": "Brian Ricardo",
-    "url": "https://www.youtube.com/watch?v=ESf4m6SnNOs",
-    "thumbnail": "https://i.ytimg.com/vi/ESf4m6SnNOs/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-18T16:54:28Z"
   },
   {
     "platform": "YouTube",
@@ -61,5 +52,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-18T18:46:26Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "Ranked Crystal Conflict JP/EU",
+    "streamer": "Brian Ricardo",
+    "url": "https://www.youtube.com/watch?v=ESf4m6SnNOs",
+    "thumbnail": "https://i.ytimg.com/vi/ESf4m6SnNOs/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-18T16:54:28Z"
   }
 ]
