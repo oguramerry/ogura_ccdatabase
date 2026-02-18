@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day69【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 53,
-    "started_at": "2026-02-18T09:42:34Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK） 『今日は何の日：冥王星の日、エアメールの日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 41,
+    "viewers": 54,
     "started_at": "2026-02-18T12:01:20Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day69【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 46,
+    "started_at": "2026-02-18T09:42:34Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +23,17 @@
     "streamer": "デルアキ",
     "url": "https://www.twitch.tv/deluaki",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 37,
+    "viewers": 39,
     "started_at": "2026-02-18T12:00:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】いま機工士のLBが貯まっても絶対オデに魔弾を撃たないでください。撃つとADHDすぎてほぼ100%その場で⚪︎んでしまいます。 #FF14 えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-18T13:07:11Z"
   },
   {
     "platform": "Twitch",
@@ -32,26 +41,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 9,
+    "viewers": 8,
     "started_at": "2026-02-18T12:32:19Z"
   },
   {
     "platform": "Twitch",
-    "title": "[FF14]クリコン配信クリ-ダイア当たり",
-    "streamer": "乙卯ぽるる",
-    "url": "https://www.twitch.tv/kinotoporuru",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
+    "title": "クリコンランクマッチ調整 ダイヤ2～",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
     "viewers": 6,
-    "started_at": "2026-02-18T12:10:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-18T10:28:05Z"
+    "started_at": "2026-02-18T12:57:02Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +59,7 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-18T12:07:56Z"
   },
   {
@@ -73,11 +73,29 @@
   },
   {
     "platform": "Twitch",
-    "title": "自分を店員だと思い込んでいる光の戦士のクリコンランクマ配信",
-    "streamer": "ノットさん",
-    "url": "https://www.twitch.tv/notskeleton2",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_notskeleton2-320x180.jpg",
+    "title": "【ff14クリコン】召喚or黒魔でがんばります！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-18T13:01:20Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14]クリコン配信クリ-ダイア当たり",
+    "streamer": "乙卯ぽるる",
+    "url": "https://www.twitch.tv/kinotoporuru",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 2,
-    "started_at": "2026-02-18T12:26:40Z"
+    "started_at": "2026-02-18T12:10:06Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】【クリコン】【カジュアル】昼間もシャキるくらいクリコン流行れよ",
+    "streamer": "一般男性あべどり",
+    "url": "https://www.youtube.com/watch?v=3R2rPNNvD68",
+    "thumbnail": "https://i.ytimg.com/vi/3R2rPNNvD68/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-18T13:11:40Z"
   }
 ]
