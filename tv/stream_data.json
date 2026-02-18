@@ -5,8 +5,17 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 58,
+    "viewers": 45,
     "started_at": "2026-02-18T07:55:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day69【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-18T09:42:34Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,7 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-18T08:00:14Z"
   }
 ]
