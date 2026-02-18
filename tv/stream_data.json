@@ -5,8 +5,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 64,
+    "viewers": 70,
     "started_at": "2026-02-18T09:42:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK） 『今日は何の日：冥王星の日、エアメールの日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-02-18T12:01:20Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,7 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 11,
+    "viewers": 12,
     "started_at": "2026-02-18T11:38:46Z"
   },
   {
@@ -23,16 +32,43 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 9,
+    "viewers": 7,
     "started_at": "2026-02-18T10:28:05Z"
   },
   {
     "platform": "Twitch",
-    "title": "自分を店員だと思い込んでいる光の戦士のクリコンランクマ配信",
-    "streamer": "ノットさん",
-    "url": "https://www.twitch.tv/notskeleton2",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_notskeleton2-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-18T11:48:43Z"
+    "title": "【FF14】クリコン レート2792～【アドバイス歓迎",
+    "streamer": "デルアキ",
+    "url": "https://www.twitch.tv/deluaki",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-18T12:00:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンだぁ～～(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-18T12:07:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14]クリコン配信クリ-ダイア当たり",
+    "streamer": "乙卯ぽるる",
+    "url": "https://www.twitch.tv/kinotoporuru",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-18T12:10:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン  FF14 サンリオの決闘者",
+    "streamer": "ぶらはむ",
+    "url": "https://www.twitch.tv/brahamham",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brahamham-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-18T12:07:35Z"
   }
 ]
