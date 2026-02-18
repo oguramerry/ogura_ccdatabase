@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "ととちむ",
-    "url": "https://www.twitch.tv/toto_chimu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 48,
-    "started_at": "2026-02-18T13:30:29Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】きょうもがんばんぞ【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 48,
+    "viewers": 54,
     "started_at": "2026-02-18T15:43:24Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "ととちむ",
+    "url": "https://www.twitch.tv/toto_chimu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
+    "viewers": 42,
+    "started_at": "2026-02-18T13:30:29Z"
   },
   {
     "platform": "Twitch",
@@ -23,53 +23,35 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 39,
+    "viewers": 36,
     "started_at": "2026-02-18T14:34:38Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #87 ～ 酒をおいしく飲めないところに良い人生もない！ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-18T15:56:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #87 ～ 酒をおいしく飲めないところに良い人生もない！ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-18T15:56:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンランク",
-    "streamer": "ゲーマー主婦れんむ",
-    "url": "https://www.twitch.tv/a_renmu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-18T17:37:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンランク",
-    "streamer": "ゲーマー主婦れんむ",
-    "url": "https://www.twitch.tv/a_renmu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-18T17:37:02Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "Ranked Crystal Conflict JP/EU",
-    "streamer": "Brian Ricardo",
-    "url": "https://www.youtube.com/watch?v=ESf4m6SnNOs",
-    "thumbnail": "https://i.ytimg.com/vi/ESf4m6SnNOs/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-18T16:54:28Z"
+    "streamer": "BrianRicardo",
+    "url": "https://www.twitch.tv/brianricardo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-18T16:54:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンランク",
+    "streamer": "ゲーマー主婦れんむ",
+    "url": "https://www.twitch.tv/a_renmu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-18T17:37:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #87 ～ 酒をおいしく飲めないところに良い人生もない！ ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-18T15:56:06Z"
   },
   {
     "platform": "YouTube",
@@ -77,7 +59,16 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=mFAUjZ0xoyA",
     "thumbnail": "https://i.ytimg.com/vi/mFAUjZ0xoyA/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-18T15:43:55Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "Ranked Crystal Conflict JP/EU",
+    "streamer": "Brian Ricardo",
+    "url": "https://www.youtube.com/watch?v=ESf4m6SnNOs",
+    "thumbnail": "https://i.ytimg.com/vi/ESf4m6SnNOs/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-18T16:54:28Z"
   }
 ]
