@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 75,
+    "viewers": 78,
     "started_at": "2026-02-18T12:01:20Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 40,
     "started_at": "2026-02-18T09:42:34Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 31,
+    "viewers": 33,
     "started_at": "2026-02-18T13:07:11Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン ランク S18 暗黒騎士（ダイヤ1/490）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 22,
-    "started_at": "2026-02-18T12:32:19Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 21,
+    "viewers": 26,
     "started_at": "2026-02-18T13:30:29Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ランク S18 暗黒騎士（ダイヤ1/490）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-02-18T12:32:19Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +50,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 15,
+    "viewers": 11,
     "started_at": "2026-02-18T13:01:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】動き方を意識しながらやりたい気持ちはあるだが溶かしまくったものを取り返したいのだよ！私はね？〜クリコンダイヤ帯なり",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-18T11:38:46Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +59,17 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-02-18T12:57:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】動き方を意識しながらやりたい気持ちはあるだが溶かしまくったものを取り返したいのだよ！私はね？〜クリコンダイヤ帯なり",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-18T11:38:46Z"
   },
   {
     "platform": "Twitch",
@@ -77,8 +77,17 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 1,
+    "viewers": 4,
     "started_at": "2026-02-18T12:07:56Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】【クリコン】【カジュアル】昼間もシャキるくらいクリコン流行れよ",
+    "streamer": "一般男性あべどり",
+    "url": "https://www.youtube.com/watch?v=3R2rPNNvD68",
+    "thumbnail": "https://i.ytimg.com/vi/3R2rPNNvD68/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-18T13:11:40Z"
   },
   {
     "platform": "Twitch",
@@ -88,14 +97,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-18T13:34:49Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】【クリコン】【カジュアル】昼間もシャキるくらいクリコン流行れよ",
-    "streamer": "一般男性あべどり",
-    "url": "https://www.youtube.com/watch?v=3R2rPNNvD68",
-    "thumbnail": "https://i.ytimg.com/vi/3R2rPNNvD68/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-18T13:11:40Z"
   }
 ]
