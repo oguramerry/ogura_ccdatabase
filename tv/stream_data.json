@@ -14,26 +14,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 31,
+    "viewers": 33,
     "started_at": "2026-02-18T14:34:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンランク",
-    "streamer": "ゲーマー主婦れんむ",
-    "url": "https://www.twitch.tv/a_renmu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 28,
-    "started_at": "2026-02-18T17:37:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "Ranked Crystal Conflict JP/EU",
-    "streamer": "BrianRicardo",
-    "url": "https://www.twitch.tv/brianricardo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-02-18T16:54:21Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +23,7 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=ESf4m6SnNOs",
     "thumbnail": "https://i.ytimg.com/vi/ESf4m6SnNOs/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 0,
     "started_at": "2026-02-18T16:54:28Z"
   }
 ]
