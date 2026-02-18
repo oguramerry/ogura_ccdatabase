@@ -5,17 +5,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 65,
+    "viewers": 64,
     "started_at": "2026-02-18T09:42:34Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-18T10:28:05Z"
   },
   {
     "platform": "Twitch",
@@ -23,16 +14,25 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 5,
+    "viewers": 11,
     "started_at": "2026-02-18T11:38:46Z"
   },
   {
     "platform": "Twitch",
-    "title": "[FF14]クリコン配信クリ-ダイア当たり",
-    "streamer": "乙卯ぽるる",
-    "url": "https://www.twitch.tv/kinotoporuru",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-18T10:28:05Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "自分を店員だと思い込んでいる光の戦士のクリコンランクマ配信",
+    "streamer": "ノットさん",
+    "url": "https://www.twitch.tv/notskeleton2",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_notskeleton2-320x180.jpg",
     "viewers": 1,
-    "started_at": "2026-02-18T11:08:47Z"
+    "started_at": "2026-02-18T11:48:43Z"
   }
 ]
