@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 55,
-    "started_at": "2026-02-18T07:55:51Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day69【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 43,
+    "viewers": 71,
     "started_at": "2026-02-18T09:42:34Z"
   },
   {
@@ -25,5 +16,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
     "viewers": 5,
     "started_at": "2026-02-18T10:28:05Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14]クリコン配信クリ-ダイア当たり（Twitch初配信です）",
+    "streamer": "乙卯ぽるる",
+    "url": "https://www.twitch.tv/kinotoporuru",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-18T11:08:47Z"
   }
 ]
