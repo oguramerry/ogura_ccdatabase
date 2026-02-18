@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 59,
+    "viewers": 65,
     "started_at": "2026-02-18T09:42:34Z"
   },
   {
@@ -14,16 +14,25 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-02-18T10:28:05Z"
   },
   {
     "platform": "Twitch",
-    "title": "[FF14]クリコン配信クリ-ダイア当たり（Twitch初配信です）",
+    "title": "【FF14】動き方を意識しながらやりたい気持ちはあるだが溶かしまくったものを取り返したいのだよ！私はね？〜クリコンダイヤ帯なり",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-18T11:38:46Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14]クリコン配信クリ-ダイア当たり",
     "streamer": "乙卯ぽるる",
     "url": "https://www.twitch.tv/kinotoporuru",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-18T11:08:47Z"
   }
 ]
