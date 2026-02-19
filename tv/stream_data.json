@@ -1,12 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 57,
-    "started_at": "2026-02-19T07:55:27Z"
+    "title": "［FF14］ クリコン調整後ランクマ",
+    "streamer": "ろびす",
+    "url": "https://www.twitch.tv/robswiz_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
+    "viewers": 36,
+    "started_at": "2026-02-19T11:05:50Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +14,7 @@
     "streamer": "白夜にこ",
     "url": "https://www.twitch.tv/nico_byakuya",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nico_byakuya-320x180.jpg",
-    "viewers": 22,
+    "viewers": 26,
     "started_at": "2026-02-19T10:03:00Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-19T09:12:19Z"
   },
   {
@@ -32,13 +32,13 @@
     "streamer": "あどるんよしもり",
     "url": "https://www.twitch.tv/adolnyoshimori",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-02-19T10:58:27Z"
   },
   {
     "platform": "YouTube",
     "title": "クリコン」",
-    "streamer": "tabata",
+    "streamer": "Chan Tabata",
     "url": "https://www.youtube.com/watch?v=jEDBwZ5rPPA",
     "thumbnail": "https://i.ytimg.com/vi/jEDBwZ5rPPA/mqdefault_live.jpg",
     "viewers": 0,
