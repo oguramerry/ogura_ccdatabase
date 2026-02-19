@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 52,
+    "viewers": 57,
     "started_at": "2026-02-19T07:55:27Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "白夜にこ",
     "url": "https://www.twitch.tv/nico_byakuya",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nico_byakuya-320x180.jpg",
-    "viewers": 21,
+    "viewers": 22,
     "started_at": "2026-02-19T10:03:00Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-02-19T09:12:19Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリスタルコンフリクト",
+    "streamer": "あどるんよしもり",
+    "url": "https://www.twitch.tv/adolnyoshimori",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-19T10:58:27Z"
   },
   {
     "platform": "YouTube",
