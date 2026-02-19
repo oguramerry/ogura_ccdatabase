@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "ととちむ",
-    "url": "https://www.twitch.tv/toto_chimu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 58,
-    "started_at": "2026-02-19T13:26:27Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "JP クリコン ランクマ CC Rank",
     "streamer": "Piggy_Walk",
     "url": "https://www.twitch.tv/piggy_walk",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_piggy_walk-320x180.jpg",
-    "viewers": 1,
+    "viewers": 5,
     "started_at": "2026-02-19T19:03:04Z"
   }
 ]
