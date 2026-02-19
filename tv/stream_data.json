@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 46,
+    "viewers": 47,
     "started_at": "2026-02-19T14:42:38Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 27,
+    "viewers": 36,
     "started_at": "2026-02-19T13:26:27Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 17,
+    "viewers": 21,
     "started_at": "2026-02-19T16:16:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンだぁ～～(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-19T11:54:51Z"
   },
   {
     "platform": "YouTube",
@@ -59,7 +50,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-19T03:41:48Z"
   }
 ]
