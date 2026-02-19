@@ -5,16 +5,25 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 30,
+    "viewers": 55,
     "started_at": "2026-02-19T12:05:14Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】ちょっとだけ釣りの民.ᐟ.ᐟリッチパース釣りたい.ᐟ.ᐟ➡クリコンカジュアル練習",
+    "title": "【クリコン】ハロワ",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-19T12:11:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ちょっとだけ釣りの民.ᐟ.ᐟリッチパース釣りたい.ᐟ.ᐟ➡クリコンカジュアル練習➡地図の民ᐟ.ᐟ",
     "streamer": "白夜にこ",
     "url": "https://www.twitch.tv/nico_byakuya",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nico_byakuya-320x180.jpg",
-    "viewers": 23,
+    "viewers": 12,
     "started_at": "2026-02-19T10:03:00Z"
   },
   {
@@ -23,26 +32,8 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=tGo2E9Fnd4c",
     "thumbnail": "https://i.ytimg.com/vi/tGo2E9Fnd4c/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 9,
     "started_at": "2026-02-19T10:30:14Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ハロワ",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-19T12:11:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンだぁ～～(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-19T11:54:51Z"
   },
   {
     "platform": "Twitch",
@@ -51,7 +42,25 @@
     "url": "https://www.twitch.tv/adolnyoshimori",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
     "viewers": 4,
-    "started_at": "2026-02-19T10:58:27Z"
+    "started_at": "2026-02-19T12:25:29Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-19T03:41:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンだぁ～～(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-19T11:54:51Z"
   },
   {
     "platform": "YouTube",
@@ -70,15 +79,6 @@
     "thumbnail": "https://i.ytimg.com/vi/BigWv-7xX4k/mqdefault_live.jpg",
     "viewers": 2,
     "started_at": "2026-02-19T11:20:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-19T03:41:48Z"
   },
   {
     "platform": "YouTube",
