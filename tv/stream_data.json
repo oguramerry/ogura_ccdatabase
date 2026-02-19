@@ -14,26 +14,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 55,
+    "viewers": 51,
     "started_at": "2026-02-19T14:42:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン オメガ昇格に失敗して終末の獣になった男のランクマッチ（JP CC RANK） 『今日は何の日：万国郵便連合加盟記念日、プロレスの日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 50,
-    "started_at": "2026-02-19T12:55:47Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "ととちむ",
-    "url": "https://www.twitch.tv/toto_chimu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-02-19T13:26:27Z"
   },
   {
     "platform": "Twitch",
@@ -46,21 +28,21 @@
   },
   {
     "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "ととちむ",
+    "url": "https://www.twitch.tv/toto_chimu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-19T13:26:27Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "02/19 24:15～25:30【FF14】Gaia 深夜クリコン部 カスタムマッチ PART.155",
     "streamer": "スーニャ",
     "url": "https://www.twitch.tv/sunyacatfox",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
-    "viewers": 16,
+    "viewers": 13,
     "started_at": "2026-02-19T15:09:58Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリスタルコンフリクト",
-    "streamer": "夕雲あずさ",
-    "url": "https://www.twitch.tv/01azusa",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_01azusa-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-19T12:47:16Z"
   },
   {
     "platform": "Twitch",
@@ -81,13 +63,13 @@
     "started_at": "2026-02-19T12:39:21Z"
   },
   {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "platform": "YouTube",
+    "title": "【クリコン】コントローラーの正しい持ち方研究委員会：机の上背もたれ無し編【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=D5DzClRPAkk",
+    "thumbnail": "https://i.ytimg.com/vi/D5DzClRPAkk/mqdefault_live.jpg",
     "viewers": 4,
-    "started_at": "2026-02-19T03:41:48Z"
+    "started_at": "2026-02-19T14:43:04Z"
   },
   {
     "platform": "Twitch",
@@ -99,12 +81,21 @@
     "started_at": "2026-02-19T11:54:51Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【クリコン】コントローラーの正しい持ち方研究委員会：机の上背もたれ無し編【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=D5DzClRPAkk",
-    "thumbnail": "https://i.ytimg.com/vi/D5DzClRPAkk/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-19T14:43:04Z"
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-19T03:41:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】連携",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-19T16:16:04Z"
   }
 ]
