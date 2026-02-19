@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】コントローラーの正しい持ち方研究委員会：机の上背もたれあり編【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 42,
-    "started_at": "2026-02-19T14:42:38Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン",
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 29,
+    "viewers": 40,
     "started_at": "2026-02-19T13:26:27Z"
   },
   {
@@ -25,14 +16,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
     "viewers": 12,
     "started_at": "2026-02-19T03:41:48Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】コントローラーの正しい持ち方研究委員会：机の上背もたれ無し編【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=D5DzClRPAkk",
-    "thumbnail": "https://i.ytimg.com/vi/D5DzClRPAkk/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-19T14:43:04Z"
   }
 ]
