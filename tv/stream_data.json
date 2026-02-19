@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 48,
+    "viewers": 45,
     "started_at": "2026-02-19T14:42:38Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 38,
+    "viewers": 28,
     "started_at": "2026-02-19T13:26:27Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】連携",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-02-19T16:16:04Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 19,
+    "viewers": 14,
     "started_at": "2026-02-19T03:41:48Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=D5DzClRPAkk",
     "thumbnail": "https://i.ytimg.com/vi/D5DzClRPAkk/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 1,
     "started_at": "2026-02-19T14:43:04Z"
   }
 ]
