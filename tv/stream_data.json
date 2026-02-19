@@ -5,7 +5,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 73,
+    "viewers": 69,
     "started_at": "2026-02-19T12:05:14Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 45,
+    "viewers": 57,
     "started_at": "2026-02-19T12:55:47Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 17,
+    "viewers": 15,
     "started_at": "2026-02-19T12:46:43Z"
   },
   {
@@ -37,15 +37,6 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #88.5 ～ 泥酔クリコン部カスタム練習会 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-19T12:48:04Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコンだぁ～～(/・ω・)/",
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
@@ -55,12 +46,30 @@
   },
   {
     "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #88.5 ～ 泥酔クリコン部カスタム練習会 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-19T12:48:04Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "FF14 クリコン",
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 5,
+    "viewers": 6,
     "started_at": "2026-02-19T03:41:48Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14クリコン】3連勝～目指して！ランクマッチ ダイヤ帯",
+    "streamer": "ぴょんちゃんねる",
+    "url": "https://www.youtube.com/watch?v=H0gXWgH3Q-Q",
+    "thumbnail": "https://i.ytimg.com/vi/H0gXWgH3Q-Q/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-19T12:00:32Z"
   },
   {
     "platform": "YouTube",
@@ -72,13 +81,13 @@
     "started_at": "2026-02-19T11:20:45Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14クリコン】3連勝～目指して！ランクマッチ ダイヤ帯",
-    "streamer": "ぴょんちゃんねる",
-    "url": "https://www.youtube.com/watch?v=H0gXWgH3Q-Q",
-    "thumbnail": "https://i.ytimg.com/vi/H0gXWgH3Q-Q/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-19T12:00:32Z"
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "ととちむ",
+    "url": "https://www.twitch.tv/toto_chimu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-19T13:26:27Z"
   },
   {
     "platform": "Twitch",
