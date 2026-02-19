@@ -5,7 +5,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 55,
+    "viewers": 58,
     "started_at": "2026-02-19T12:05:14Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 51,
+    "viewers": 48,
     "started_at": "2026-02-19T14:42:38Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 19,
+    "viewers": 27,
     "started_at": "2026-02-19T13:57:01Z"
   },
   {
@@ -32,26 +32,26 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 17,
+    "viewers": 25,
     "started_at": "2026-02-19T13:26:27Z"
   },
   {
     "platform": "Twitch",
-    "title": "02/19 24:15～25:30【FF14】Gaia 深夜クリコン部 カスタムマッチ PART.155",
-    "streamer": "スーニャ",
-    "url": "https://www.twitch.tv/sunyacatfox",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sunyacatfox-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-19T15:09:58Z"
+    "title": "【クリコン】連携",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-19T16:16:04Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #88.5 ～ 泥酔クリコン部カスタム練習会 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-19T12:48:04Z"
+    "title": "クリコンだぁ～～(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-19T11:54:51Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +59,7 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
+    "viewers": 5,
     "started_at": "2026-02-19T12:39:21Z"
   },
   {
@@ -73,29 +73,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコンだぁ～～(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-19T11:54:51Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "FF14 クリコン",
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-19T03:41:48Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】連携",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-19T16:16:04Z"
   }
 ]
