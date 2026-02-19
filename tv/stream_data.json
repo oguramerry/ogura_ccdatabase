@@ -5,7 +5,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 77,
+    "viewers": 88,
     "started_at": "2026-02-19T12:05:14Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 20,
+    "viewers": 19,
     "started_at": "2026-02-19T13:26:27Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 18,
+    "viewers": 17,
     "started_at": "2026-02-19T12:46:43Z"
   },
   {
@@ -46,11 +46,20 @@
   },
   {
     "platform": "Twitch",
+    "title": "【ff14クリコン】今日も召喚or黒魔でがんばります！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-19T13:57:01Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【FF14】猫又クリコン部 #88.5 ～ 泥酔クリコン部カスタム練習会 ～",
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 10,
     "started_at": "2026-02-19T12:48:04Z"
   },
   {
@@ -59,7 +68,7 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 7,
+    "viewers": 6,
     "started_at": "2026-02-19T11:54:51Z"
   },
   {
@@ -77,7 +86,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-02-19T03:41:48Z"
   },
   {
@@ -86,17 +95,8 @@
     "streamer": "一般男性あべどり",
     "url": "https://www.youtube.com/watch?v=BigWv-7xX4k",
     "thumbnail": "https://i.ytimg.com/vi/BigWv-7xX4k/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-19T11:20:45Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "クリコン」",
-    "streamer": "Chan Tabata",
-    "url": "https://www.youtube.com/watch?v=jEDBwZ5rPPA",
-    "thumbnail": "https://i.ytimg.com/vi/jEDBwZ5rPPA/mqdefault_live.jpg",
     "viewers": 2,
-    "started_at": "2026-02-19T10:15:43Z"
+    "started_at": "2026-02-19T11:20:45Z"
   },
   {
     "platform": "Twitch",
@@ -108,6 +108,15 @@
     "started_at": "2026-02-19T12:39:21Z"
   },
   {
+    "platform": "YouTube",
+    "title": "クリコン」",
+    "streamer": "Chan Tabata",
+    "url": "https://www.youtube.com/watch?v=jEDBwZ5rPPA",
+    "thumbnail": "https://i.ytimg.com/vi/jEDBwZ5rPPA/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-19T10:15:43Z"
+  },
+  {
     "platform": "Twitch",
     "title": "クリコン",
     "streamer": "ふくろろろ",
@@ -115,14 +124,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_igarashi_hiromu-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-19T13:05:40Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14クリコン】今日も召喚or黒魔でがんばります！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-19T13:57:01Z"
   }
 ]
