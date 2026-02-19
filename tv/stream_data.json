@@ -5,7 +5,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 69,
+    "viewers": 77,
     "started_at": "2026-02-19T12:05:14Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 65,
+    "viewers": 68,
     "started_at": "2026-02-19T12:55:47Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 13,
+    "viewers": 20,
     "started_at": "2026-02-19T13:26:27Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコンカスタム：GAIA】22時〜参加よろしくお願いしますにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-02-19T12:46:43Z"
   },
   {
     "platform": "Twitch",
@@ -37,20 +46,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコンカスタム：GAIA】22時〜参加よろしくお願いしますにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-19T12:46:43Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】猫又クリコン部 #88.5 ～ 泥酔クリコン部カスタム練習会 ～",
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
+    "viewers": 7,
     "started_at": "2026-02-19T12:48:04Z"
   },
   {
@@ -59,8 +59,17 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-02-19T11:54:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "自分を店員だと思い込んでいる光の戦士のクリコンランクマ配信",
+    "streamer": "ノットさん",
+    "url": "https://www.twitch.tv/notskeleton2",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_notskeleton2-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-19T13:39:26Z"
   },
   {
     "platform": "Twitch",
@@ -81,6 +90,24 @@
     "started_at": "2026-02-19T11:20:45Z"
   },
   {
+    "platform": "YouTube",
+    "title": "クリコン」",
+    "streamer": "Chan Tabata",
+    "url": "https://www.youtube.com/watch?v=jEDBwZ5rPPA",
+    "thumbnail": "https://i.ytimg.com/vi/jEDBwZ5rPPA/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-19T10:15:43Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ウォーミングアップと立ち回り見直してみたり〜クリコン〜22時からチーム練習カスタムダイヤ以上オメガ以下推奨",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-19T12:39:21Z"
+  },
+  {
     "platform": "Twitch",
     "title": "クリコン",
     "streamer": "ふくろろろ",
@@ -90,12 +117,12 @@
     "started_at": "2026-02-19T13:05:40Z"
   },
   {
-    "platform": "YouTube",
-    "title": "クリコン」",
-    "streamer": "Chan Tabata",
-    "url": "https://www.youtube.com/watch?v=jEDBwZ5rPPA",
-    "thumbnail": "https://i.ytimg.com/vi/jEDBwZ5rPPA/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-19T10:15:43Z"
+    "platform": "Twitch",
+    "title": "【ff14クリコン】今日も召喚or黒魔でがんばります！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-19T13:57:01Z"
   }
 ]
