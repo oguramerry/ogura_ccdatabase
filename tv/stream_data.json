@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "Crystal conflict gaming",
-    "streamer": "Lexellent7",
-    "url": "https://www.twitch.tv/lexellent7",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
-    "viewers": 25,
-    "started_at": "2026-02-18T21:28:20Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "[ PvP ]  Crystalline Conflict S18:  Trying something different.",
     "streamer": "ElvenWinds",
     "url": "https://www.twitch.tv/elvenwinds",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elvenwinds-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-19T00:40:15Z"
   }
 ]
