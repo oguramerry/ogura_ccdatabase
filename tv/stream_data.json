@@ -5,8 +5,17 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 63,
+    "viewers": 54,
     "started_at": "2026-02-19T07:55:27Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ちょっとだけ釣りの民.ᐟ.ᐟリッチパース釣りたい.ᐟ.ᐟ➡クリコンカジュアル練習",
+    "streamer": "白夜にこ",
+    "url": "https://www.twitch.tv/nico_byakuya",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nico_byakuya-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-19T10:03:00Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,16 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 5,
     "started_at": "2026-02-19T09:12:19Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "クリコン」",
+    "streamer": "tabata",
+    "url": "https://www.youtube.com/watch?v=jEDBwZ5rPPA",
+    "thumbnail": "https://i.ytimg.com/vi/jEDBwZ5rPPA/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-19T10:15:43Z"
   }
 ]
