@@ -5,7 +5,7 @@
     "streamer": "ととちむ",
     "url": "https://www.twitch.tv/toto_chimu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toto_chimu-320x180.jpg",
-    "viewers": 40,
+    "viewers": 46,
     "started_at": "2026-02-19T13:26:27Z"
   },
   {
@@ -14,7 +14,16 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 12,
+    "viewers": 18,
     "started_at": "2026-02-19T03:41:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "JP クリコン ランクマ CC Rank",
+    "streamer": "Piggy_Walk",
+    "url": "https://www.twitch.tv/piggy_walk",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_piggy_walk-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-19T19:03:04Z"
   }
 ]
