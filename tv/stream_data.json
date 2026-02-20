@@ -14,7 +14,7 @@
     "streamer": "雪之枝ひお",
     "url": "https://www.twitch.tv/yukinoe_hio",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 53,
+    "viewers": 37,
     "started_at": "2026-02-20T10:50:53Z"
   },
   {
@@ -28,12 +28,30 @@
   },
   {
     "platform": "Twitch",
+    "title": "【FF14】クリコン 気まぐれメテオドライブ/いきものがかり",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-20T12:23:54Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-20T11:21:01Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 1226/1443【クリコン】",
+    "streamer": "Fania Eckert",
+    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
+    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-20T12:23:49Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +59,7 @@
     "streamer": "ぴょんちゃんねる",
     "url": "https://www.youtube.com/watch?v=jbJ2EUqw4Io",
     "thumbnail": "https://i.ytimg.com/vi/jbJ2EUqw4Io/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 1,
     "started_at": "2026-02-20T11:59:35Z"
   }
 ]
