@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン 22時30分～『チームタイガーキッチン様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：歌舞伎の日、夫婦円満の日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 42,
-    "started_at": "2026-02-20T12:50:06Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】クリコン ランク",
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 40,
+    "viewers": 45,
     "started_at": "2026-02-20T15:26:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～『チームタイガーキッチン様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：歌舞伎の日、夫婦円満の日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 40,
+    "started_at": "2026-02-20T12:50:06Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +23,17 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 30,
+    "viewers": 28,
     "started_at": "2026-02-20T14:28:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】コントローラーの正しい持ち方敗北委員会【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 22,
+    "started_at": "2026-02-20T16:00:04Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +41,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 18,
+    "viewers": 21,
     "started_at": "2026-02-20T15:26:57Z"
   },
   {
@@ -41,8 +50,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 16,
+    "viewers": 13,
     "started_at": "2026-02-20T13:00:32Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
+    "streamer": "Fania Eckert",
+    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
+    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-20T12:23:49Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +68,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 13,
+    "viewers": 8,
     "started_at": "2026-02-20T16:27:36Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】コントローラーの正しい持ち方敗北委員会【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-20T16:00:04Z"
+    "title": "クリコンだよぉ～(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-20T13:56:19Z"
   },
   {
     "platform": "Twitch",
@@ -72,15 +90,6 @@
     "started_at": "2026-02-20T11:21:01Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコンだよぉ～(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-20T13:56:19Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【クリコン】コントローラーの正しい持ち方敗北委員会【ランクマ】",
     "streamer": "そわさん",
@@ -88,15 +97,6 @@
     "thumbnail": "https://i.ytimg.com/vi/e4ovjwS5BLQ/mqdefault_live.jpg",
     "viewers": 3,
     "started_at": "2026-02-20T16:00:36Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
-    "streamer": "Fania Eckert",
-    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
-    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-20T12:23:49Z"
   },
   {
     "platform": "Twitch",
