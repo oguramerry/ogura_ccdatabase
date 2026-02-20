@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン 22時30分～『チームタイガーキッチン様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：歌舞伎の日、夫婦円満の日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 55,
-    "started_at": "2026-02-20T12:50:06Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】クリコン 気まぐれメテオドライブ/いきものがかり",
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 48,
+    "viewers": 51,
     "started_at": "2026-02-20T12:23:54Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～『チームタイガーキッチン様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：歌舞伎の日、夫婦円満の日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 36,
+    "started_at": "2026-02-20T12:50:06Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 32,
+    "viewers": 27,
     "started_at": "2026-02-20T14:28:59Z"
   },
   {
@@ -32,8 +32,26 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 13,
+    "viewers": 16,
     "started_at": "2026-02-20T13:00:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコン ランク",
+    "streamer": "so5u",
+    "url": "https://www.twitch.tv/so5u",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-02-20T15:26:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "もうクリコンスキーの彼氏と付き合うの無理かも。レート減ってるのに後ろから「クリコンのシーズン18終了までついに2週間切りましたね」とか言ってくるんだよ。 #FF14 クリコン えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-20T15:26:57Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +59,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-02-20T11:21:01Z"
   },
   {
@@ -50,17 +68,8 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-02-20T13:56:19Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "もうクリコンスキーの彼氏と付き合うの無理かも。レート減ってるのに後ろから「クリコンのシーズン18終了までついに2週間切りましたね」とか言ってくるんだよ。 #FF14 クリコン えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-20T15:26:57Z"
   },
   {
     "platform": "YouTube",
@@ -68,26 +77,8 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
     "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-20T12:23:49Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】【クリコン】【カジュアル】あっち側に行くのは俺や！！",
-    "streamer": "一般男性あべどり",
-    "url": "https://www.youtube.com/watch?v=WTclAG3xR8w",
-    "thumbnail": "https://i.ytimg.com/vi/WTclAG3xR8w/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-20T13:49:36Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-20T13:29:05Z"
   },
   {
     "platform": "YouTube",
@@ -99,13 +90,22 @@
     "started_at": "2026-02-20T14:59:08Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】クリコン ランク",
-    "streamer": "so5u",
-    "url": "https://www.twitch.tv/so5u",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
+    "platform": "YouTube",
+    "title": "【FF14】【クリコン】【カジュアル】あっち側に行くのは俺や！！",
+    "streamer": "一般男性あべどり",
+    "url": "https://www.youtube.com/watch?v=WTclAG3xR8w",
+    "thumbnail": "https://i.ytimg.com/vi/WTclAG3xR8w/mqdefault_live.jpg",
     "viewers": 1,
-    "started_at": "2026-02-20T15:26:32Z"
+    "started_at": "2026-02-20T13:49:36Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-20T13:29:05Z"
   },
   {
     "platform": "Twitch",
