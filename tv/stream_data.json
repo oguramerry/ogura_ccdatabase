@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】クリコン 気まぐれメテオドライブ/いきものがかり",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 50,
-    "started_at": "2026-02-20T12:23:54Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン 22時30分～『チームタイガーキッチン様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：歌舞伎の日、夫婦円満の日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 40,
+    "viewers": 50,
     "started_at": "2026-02-20T12:50:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコン 気まぐれメテオドライブ/いきものがかり",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 44,
+    "started_at": "2026-02-20T12:23:54Z"
   },
   {
     "platform": "Twitch",
@@ -23,35 +23,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 35,
+    "viewers": 27,
     "started_at": "2026-02-20T10:34:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【悲報】3層消化終わってないらしい → 22:30から！クリコン配信者チームに凸する💀",
-    "streamer": "ろとえでん",
-    "url": "https://www.twitch.tv/rotoeden",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rotoeden-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-02-20T04:44:44Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【泥酔クリコン部カスタム：GAIA】22時過ぎ〜参加よろしくお願いしますにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-20T12:48:35Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-02-20T11:21:01Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +32,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 9,
+    "viewers": 16,
     "started_at": "2026-02-20T13:08:00Z"
   },
   {
@@ -68,8 +41,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 9,
+    "viewers": 16,
     "started_at": "2026-02-20T13:00:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【泥酔クリコン部カスタム：GAIA】22時過ぎ〜参加よろしくお願いしますにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-20T12:48:35Z"
   },
   {
     "platform": "YouTube",
@@ -77,8 +59,17 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
     "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-02-20T12:23:49Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-20T11:21:01Z"
   },
   {
     "platform": "Twitch",
@@ -86,17 +77,8 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 5,
+    "viewers": 3,
     "started_at": "2026-02-20T12:52:26Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14クリコン】侍練習しよう！ランクマッチ ダイヤ帯",
-    "streamer": "ぴょんちゃんねる",
-    "url": "https://www.youtube.com/watch?v=jbJ2EUqw4Io",
-    "thumbnail": "https://i.ytimg.com/vi/jbJ2EUqw4Io/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-20T11:59:35Z"
   },
   {
     "platform": "Twitch",
