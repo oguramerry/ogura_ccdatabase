@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 50,
+    "viewers": 47,
     "started_at": "2026-02-20T12:50:06Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 44,
+    "viewers": 46,
     "started_at": "2026-02-20T12:23:54Z"
   },
   {
@@ -25,6 +25,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
     "viewers": 27,
     "started_at": "2026-02-20T10:34:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【泥酔クリコン部カスタム：GAIA】22時過ぎ〜参加よろしくお願いしますにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-20T12:48:35Z"
   },
   {
     "platform": "Twitch",
@@ -41,26 +50,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-20T13:00:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【泥酔クリコン部カスタム：GAIA】22時過ぎ〜参加よろしくお願いしますにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
     "viewers": 12,
-    "started_at": "2026-02-20T12:48:35Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 1226/1443【クリコン】",
-    "streamer": "Fania Eckert",
-    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
-    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-20T12:23:49Z"
+    "started_at": "2026-02-20T13:00:32Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +59,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 5,
+    "viewers": 9,
     "started_at": "2026-02-20T11:21:01Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 1226/1443【クリコン】",
+    "streamer": "Fania Eckert",
+    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
+    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-20T12:23:49Z"
   },
   {
     "platform": "Twitch",
@@ -79,6 +79,24 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
     "viewers": 3,
     "started_at": "2026-02-20T12:52:26Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンだよぉ～(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-20T13:56:19Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】【クリコン】【カジュアル】あっち側に行くのは俺や！！",
+    "streamer": "一般男性あべどり",
+    "url": "https://www.youtube.com/watch?v=WTclAG3xR8w",
+    "thumbnail": "https://i.ytimg.com/vi/WTclAG3xR8w/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-20T13:49:36Z"
   },
   {
     "platform": "Twitch",
