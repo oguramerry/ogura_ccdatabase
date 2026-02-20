@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 46,
+    "viewers": 48,
     "started_at": "2026-02-20T12:50:06Z"
   },
   {
@@ -23,26 +23,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 20,
+    "viewers": 29,
     "started_at": "2026-02-20T14:28:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【#FF14 】腹筋ローラーカスタム【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-02-20T13:08:00Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-20T11:21:01Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +32,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 13,
+    "viewers": 14,
     "started_at": "2026-02-20T13:00:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-20T11:21:01Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +50,17 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 5,
+    "viewers": 9,
     "started_at": "2026-02-20T13:56:19Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
+    "streamer": "Fania Eckert",
+    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
+    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-20T12:23:49Z"
   },
   {
     "platform": "YouTube",
@@ -72,24 +72,6 @@
     "started_at": "2026-02-20T13:49:36Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
-    "streamer": "Fania Eckert",
-    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
-    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-20T12:23:49Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ひとまず声を出してみよう！〜泥酔クリコン部〜22時過ぎからチーム練習カスタム",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-20T12:52:26Z"
-  },
-  {
     "platform": "Twitch",
     "title": "クリコン",
     "streamer": "鳥乃すずめ",
@@ -97,6 +79,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-20T13:29:05Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ランクマで斬鉄剣するだけ",
+    "streamer": "コンガナジャイ",
+    "url": "https://www.twitch.tv/konbanhag",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-20T15:01:44Z"
   },
   {
     "platform": "YouTube",
