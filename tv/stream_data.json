@@ -5,35 +5,8 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 46,
+    "viewers": 51,
     "started_at": "2026-02-20T12:23:54Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day70【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
-    "started_at": "2026-02-20T10:34:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【悲報】3層消化終わってないらしい → 22:30から！クリコン配信者チームに凸する💀",
-    "streamer": "ろとえでん",
-    "url": "https://www.twitch.tv/rotoeden",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rotoeden-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-02-20T04:44:44Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン ゆるりとやろうか ゆるぼ：大阪のおすすめスポット",
-    "streamer": "雪之枝ひお",
-    "url": "https://www.twitch.tv/yukinoe_hio",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-02-20T10:50:53Z"
   },
   {
     "platform": "Twitch",
@@ -41,26 +14,53 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 12,
+    "viewers": 42,
     "started_at": "2026-02-20T12:50:06Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-20T11:21:01Z"
+    "title": "【FF14】超クリコン研究会 Day70【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 30,
+    "started_at": "2026-02-20T10:34:21Z"
   },
   {
     "platform": "Twitch",
-    "title": "【泥酔クリコン部カスタム：GAIA】22時過ぎ〜参加よろしくお願いしますにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-20T12:48:35Z"
+    "title": "クリコン ゆるりとやろうか ゆるぼ：大阪のおすすめスポット",
+    "streamer": "雪之枝ひお",
+    "url": "https://www.twitch.tv/yukinoe_hio",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
+    "viewers": 25,
+    "started_at": "2026-02-20T10:50:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【悲報】3層消化終わってないらしい → 22:30から！クリコン配信者チームに凸する💀",
+    "streamer": "ろとえでん",
+    "url": "https://www.twitch.tv/rotoeden",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rotoeden-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-20T04:44:44Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14クリコン】22:30～チーム練習！召喚で頑張るぞ！対戦➤チームタイガーキッチン様",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-20T13:00:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【#FF14 】腹筋ローラーカスタム【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-20T13:08:00Z"
   },
   {
     "platform": "YouTube",
@@ -68,8 +68,17 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
     "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 7,
     "started_at": "2026-02-20T12:23:49Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-20T11:21:01Z"
   },
   {
     "platform": "Twitch",
