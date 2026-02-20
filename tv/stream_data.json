@@ -5,17 +5,8 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 49,
+    "viewers": 50,
     "started_at": "2026-02-20T15:26:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【第116話】都会によるvc有り無し論争【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-02-20T14:28:59Z"
   },
   {
     "platform": "Twitch",
@@ -23,16 +14,16 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 21,
+    "viewers": 28,
     "started_at": "2026-02-20T16:27:36Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
-    "streamer": "Fania Eckert",
-    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
-    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-20T12:23:49Z"
+    "platform": "Twitch",
+    "title": "【第116話】都会によるvc有り無し論争【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 25,
+    "started_at": "2026-02-20T14:28:59Z"
   }
 ]
