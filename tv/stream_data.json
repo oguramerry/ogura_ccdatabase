@@ -5,17 +5,8 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 47,
+    "viewers": 44,
     "started_at": "2026-02-20T15:26:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】コントローラーの正しい持ち方敗北委員会【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-02-20T16:00:04Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 26,
+    "viewers": 24,
     "started_at": "2026-02-20T16:27:36Z"
   },
   {
@@ -32,17 +23,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 25,
+    "viewers": 23,
     "started_at": "2026-02-20T14:28:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14クリコン】22:30～チーム練習！召喚で頑張るぞ！対戦➤チームタイガーキッチン様",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-20T13:00:32Z"
   },
   {
     "platform": "YouTube",
@@ -50,17 +32,8 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
     "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 9,
+    "viewers": 12,
     "started_at": "2026-02-20T12:23:49Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコン レート3298～【アドバイス歓迎",
-    "streamer": "デルアキ",
-    "url": "https://www.twitch.tv/deluaki",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-20T16:41:46Z"
   },
   {
     "platform": "Twitch",
@@ -68,16 +41,7 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 6,
+    "viewers": 3,
     "started_at": "2026-02-20T13:56:19Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】コントローラーの正しい持ち方敗北委員会【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=e4ovjwS5BLQ",
-    "thumbnail": "https://i.ytimg.com/vi/e4ovjwS5BLQ/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-20T16:00:36Z"
   }
 ]
