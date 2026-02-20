@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 51,
+    "viewers": 55,
     "started_at": "2026-02-20T12:23:54Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 36,
+    "viewers": 35,
     "started_at": "2026-02-20T12:50:06Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 27,
+    "viewers": 32,
     "started_at": "2026-02-20T14:28:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14クリコン】22:30～チーム練習！召喚で頑張るぞ！対戦➤チームタイガーキッチン様",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-20T13:00:32Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 15,
+    "viewers": 24,
     "started_at": "2026-02-20T15:26:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14クリコン】22:30～チーム練習！召喚で頑張るぞ！対戦➤チームタイガーキッチン様",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-20T13:00:32Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +50,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 14,
+    "viewers": 15,
     "started_at": "2026-02-20T15:26:57Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 10,
+    "viewers": 11,
     "started_at": "2026-02-20T11:21:01Z"
   },
   {
@@ -72,6 +72,24 @@
     "started_at": "2026-02-20T13:56:19Z"
   },
   {
+    "platform": "Twitch",
+    "title": "クリコン ランクマで斬鉄剣するだけ",
+    "streamer": "コンガナジャイ",
+    "url": "https://www.twitch.tv/konbanhag",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-20T15:01:44Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】【クリコン】【カジュアル】あっち側に行くのは俺や！！",
+    "streamer": "一般男性あべどり",
+    "url": "https://www.youtube.com/watch?v=WTclAG3xR8w",
+    "thumbnail": "https://i.ytimg.com/vi/WTclAG3xR8w/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-20T13:49:36Z"
+  },
+  {
     "platform": "YouTube",
     "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
     "streamer": "Fania Eckert",
@@ -81,24 +99,6 @@
     "started_at": "2026-02-20T12:23:49Z"
   },
   {
-    "platform": "YouTube",
-    "title": "#FF14 寝る前にクリコンを少々",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=Ik9rkrl3gA4",
-    "thumbnail": "https://i.ytimg.com/vi/Ik9rkrl3gA4/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-20T14:59:08Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】【クリコン】【カジュアル】あっち側に行くのは俺や！！",
-    "streamer": "一般男性あべどり",
-    "url": "https://www.youtube.com/watch?v=WTclAG3xR8w",
-    "thumbnail": "https://i.ytimg.com/vi/WTclAG3xR8w/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-20T13:49:36Z"
-  },
-  {
     "platform": "Twitch",
     "title": "クリコン",
     "streamer": "鳥乃すずめ",
@@ -106,14 +106,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-20T13:29:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン ランクマで斬鉄剣するだけ",
-    "streamer": "コンガナジャイ",
-    "url": "https://www.twitch.tv/konbanhag",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-20T15:01:44Z"
   }
 ]
