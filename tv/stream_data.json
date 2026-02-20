@@ -5,8 +5,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 55,
+    "viewers": 49,
     "started_at": "2026-02-20T10:34:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコン 気まぐれメテオドライブ/いきものがかり",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 41,
+    "started_at": "2026-02-20T12:23:54Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,7 @@
     "streamer": "雪之枝ひお",
     "url": "https://www.twitch.tv/yukinoe_hio",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 37,
+    "viewers": 25,
     "started_at": "2026-02-20T10:50:53Z"
   },
   {
@@ -23,17 +32,8 @@
     "streamer": "ろとえでん",
     "url": "https://www.twitch.tv/rotoeden",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rotoeden-320x180.jpg",
-    "viewers": 25,
+    "viewers": 23,
     "started_at": "2026-02-20T04:44:44Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコン 気まぐれメテオドライブ/いきものがかり",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-20T12:23:54Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +50,7 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
     "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-02-20T12:23:49Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "ぴょんちゃんねる",
     "url": "https://www.youtube.com/watch?v=jbJ2EUqw4Io",
     "thumbnail": "https://i.ytimg.com/vi/jbJ2EUqw4Io/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-20T11:59:35Z"
   }
 ]
