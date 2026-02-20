@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【悲報】3層消化終わってないらしい → 22:30から！クリコン配信者チームに凸する💀",
-    "streamer": "ろとえでん",
-    "url": "https://www.twitch.tv/rotoeden",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rotoeden-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-02-20T04:44:44Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信",
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 5,
+    "viewers": 32,
     "started_at": "2026-02-20T07:55:55Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【悲報】3層消化終わってないらしい → 22:30から！クリコン配信者チームに凸する💀",
+    "streamer": "ろとえでん",
+    "url": "https://www.twitch.tv/rotoeden",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rotoeden-320x180.jpg",
+    "viewers": 26,
+    "started_at": "2026-02-20T04:44:44Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,16 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 0,
+    "viewers": 5,
+    "started_at": "2026-02-20T07:59:55Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "カジュアルたくさん走るゾ【FF14】竜騎士クリコン in Gaia",
+    "streamer": "ゆきはれ",
+    "url": "https://www.twitch.tv/yukihale",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
+    "viewers": 5,
     "started_at": "2026-02-20T07:59:55Z"
   }
 ]
