@@ -1,12 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】クリコン ランク",
-    "streamer": "so5u",
-    "url": "https://www.twitch.tv/so5u",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 39,
-    "started_at": "2026-02-20T15:26:32Z"
+    "title": "今週もおつかれさまでした。入眠クリコン ランク S18 暗黒騎士（199/490）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 22,
+    "started_at": "2026-02-20T16:27:36Z"
   },
   {
     "platform": "Twitch",
@@ -14,16 +14,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 25,
+    "viewers": 19,
     "started_at": "2026-02-20T14:28:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "今週もおつかれさまでした。入眠クリコン ランク S18 暗黒騎士（199/490）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 23,
-    "started_at": "2026-02-20T16:27:36Z"
   }
 ]
