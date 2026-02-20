@@ -5,17 +5,8 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 44,
+    "viewers": 49,
     "started_at": "2026-02-20T15:26:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "今週もおつかれさまでした。入眠クリコン ランク S18 暗黒騎士（199/490）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-02-20T16:27:36Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 23,
+    "viewers": 27,
     "started_at": "2026-02-20T14:28:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "今週もおつかれさまでした。入眠クリコン ランク S18 暗黒騎士（199/490）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-20T16:27:36Z"
   },
   {
     "platform": "YouTube",
@@ -32,16 +32,7 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
     "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 11,
     "started_at": "2026-02-20T12:23:49Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンだよぉ～(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-20T13:56:19Z"
   }
 ]
