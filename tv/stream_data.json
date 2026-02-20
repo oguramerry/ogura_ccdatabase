@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 47,
+    "viewers": 56,
     "started_at": "2026-02-20T10:34:21Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "雪之枝ひお",
     "url": "https://www.twitch.tv/yukinoe_hio",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 35,
+    "viewers": 48,
     "started_at": "2026-02-20T10:50:53Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ろとえでん",
     "url": "https://www.twitch.tv/rotoeden",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rotoeden-320x180.jpg",
-    "viewers": 18,
+    "viewers": 24,
     "started_at": "2026-02-20T04:44:44Z"
   },
   {
@@ -32,7 +32,25 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 5,
     "started_at": "2026-02-20T11:21:01Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリスタルコンフリクト",
+    "streamer": "あどるんよしもり",
+    "url": "https://www.twitch.tv/adolnyoshimori",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-20T09:49:44Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14クリコン】侍練習しよう！ランクマッチ ダイヤ帯",
+    "streamer": "ぴょんちゃんねる",
+    "url": "https://www.youtube.com/watch?v=jbJ2EUqw4Io",
+    "thumbnail": "https://i.ytimg.com/vi/jbJ2EUqw4Io/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-20T11:59:35Z"
   }
 ]
