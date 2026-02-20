@@ -5,7 +5,7 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 51,
+    "viewers": 50,
     "started_at": "2026-02-20T15:26:32Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 32,
+    "viewers": 31,
     "started_at": "2026-02-20T16:00:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "今週もおつかれさまでした。入眠クリコン ランク S18 暗黒騎士（199/490）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 25,
-    "started_at": "2026-02-20T16:27:36Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,26 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 20,
+    "viewers": 31,
     "started_at": "2026-02-20T14:28:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "今週もおつかれさまでした。入眠クリコン ランク S18 暗黒騎士（199/490）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 22,
+    "started_at": "2026-02-20T16:27:36Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "もうクリコンスキーの彼氏と付き合うの無理かも。レート減ってるのに後ろから「クリコンのシーズン18終了までついに2週間切りましたね」とか言ってくるんだよ。 #FF14 クリコン えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-20T15:26:57Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +50,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 16,
+    "viewers": 12,
     "started_at": "2026-02-20T13:00:32Z"
   },
   {
@@ -50,35 +59,8 @@
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
     "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 9,
     "started_at": "2026-02-20T12:23:49Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "もうクリコンスキーの彼氏と付き合うの無理かも。レート減ってるのに後ろから「クリコンのシーズン18終了までついに2週間切りましたね」とか言ってくるんだよ。 #FF14 クリコン えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-20T15:26:57Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-20T11:21:01Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンだよぉ～(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-20T13:56:19Z"
   },
   {
     "platform": "Twitch",
@@ -86,8 +68,26 @@
     "streamer": "デルアキ",
     "url": "https://www.twitch.tv/deluaki",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 5,
+    "viewers": 6,
     "started_at": "2026-02-20T16:41:46Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンだよぉ～(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-20T13:56:19Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #89 ～ 世の中の問題は、みんな飲み足りていないことだ。 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-20T11:21:01Z"
   },
   {
     "platform": "YouTube",
