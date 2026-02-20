@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 45,
+    "viewers": 48,
     "started_at": "2026-02-20T12:50:06Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 40,
+    "viewers": 47,
     "started_at": "2026-02-20T12:23:54Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 31,
+    "viewers": 30,
     "started_at": "2026-02-20T10:34:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【#FF14 】腹筋ローラーカスタム【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-20T13:08:00Z"
   },
   {
     "platform": "Twitch",
@@ -37,20 +46,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【#FF14 】腹筋ローラーカスタム【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-20T13:08:00Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【ff14クリコン】22:30～チーム練習！召喚で頑張るぞ！対戦➤チームタイガーキッチン様",
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 11,
+    "viewers": 15,
     "started_at": "2026-02-20T13:00:32Z"
   },
   {
@@ -59,17 +59,26 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
+    "viewers": 9,
     "started_at": "2026-02-20T11:21:01Z"
   },
   {
     "platform": "YouTube",
-    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 1226/1443【クリコン】",
+    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
     "streamer": "Fania Eckert",
     "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
     "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
     "viewers": 6,
     "started_at": "2026-02-20T12:23:49Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンだよぉ～(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-20T13:56:19Z"
   },
   {
     "platform": "Twitch",
@@ -91,20 +100,20 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコンだよぉ～(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-20T13:56:19Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン",
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-20T13:29:05Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第116話】都会によるvc有り無し論争【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-20T14:28:59Z"
   }
 ]
