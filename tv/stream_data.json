@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコン ゆるりとやろうか ゆるぼ：大阪のおすすめスポット",
-    "streamer": "雪之枝ひお",
-    "url": "https://www.twitch.tv/yukinoe_hio",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 40,
-    "started_at": "2026-02-20T10:50:53Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day70【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 39,
+    "viewers": 47,
     "started_at": "2026-02-20T10:34:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ゆるりとやろうか ゆるぼ：大阪のおすすめスポット",
+    "streamer": "雪之枝ひお",
+    "url": "https://www.twitch.tv/yukinoe_hio",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
+    "viewers": 35,
+    "started_at": "2026-02-20T10:50:53Z"
   },
   {
     "platform": "Twitch",
@@ -32,16 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 5,
+    "viewers": 7,
     "started_at": "2026-02-20T11:21:01Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリスタルコンフリクト",
-    "streamer": "あどるんよしもり",
-    "url": "https://www.twitch.tv/adolnyoshimori",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-20T09:49:44Z"
   }
 ]
