@@ -5,26 +5,8 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 45,
+    "viewers": 41,
     "started_at": "2026-02-20T15:26:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン 22時30分～『チームタイガーキッチン様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：歌舞伎の日、夫婦円満の日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 40,
-    "started_at": "2026-02-20T12:50:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【第116話】都会によるvc有り無し論争【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 28,
-    "started_at": "2026-02-20T14:28:59Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +14,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 22,
+    "viewers": 32,
     "started_at": "2026-02-20T16:00:04Z"
   },
   {
     "platform": "Twitch",
-    "title": "もうクリコンスキーの彼氏と付き合うの無理かも。レート減ってるのに後ろから「クリコンのシーズン18終了までついに2週間切りましたね」とか言ってくるんだよ。 #FF14 クリコン えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-02-20T15:26:57Z"
+    "title": "【第116話】都会によるvc有り無し論争【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-02-20T14:28:59Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +32,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 13,
+    "viewers": 15,
     "started_at": "2026-02-20T13:00:32Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
-    "streamer": "Fania Eckert",
-    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
-    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
-    "viewers": 9,
-    "started_at": "2026-02-20T12:23:49Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +41,26 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 8,
+    "viewers": 13,
     "started_at": "2026-02-20T16:27:36Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "もうクリコンスキーの彼氏と付き合うの無理かも。レート減ってるのに後ろから「クリコンのシーズン18終了までついに2週間切りましたね」とか言ってくるんだよ。 #FF14 クリコン えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-20T15:26:57Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14 クリスタルコンフリクト ランクマッチ 2381/2553 & 1226/1443【クリコン】",
+    "streamer": "Fania Eckert",
+    "url": "https://www.youtube.com/watch?v=uyH0C0S6ug8",
+    "thumbnail": "https://i.ytimg.com/vi/uyH0C0S6ug8/mqdefault_live.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-20T12:23:49Z"
   },
   {
     "platform": "Twitch",
@@ -77,8 +68,17 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 7,
+    "viewers": 6,
     "started_at": "2026-02-20T13:56:19Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコン レート3298～【アドバイス歓迎",
+    "streamer": "デルアキ",
+    "url": "https://www.twitch.tv/deluaki",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-20T16:41:46Z"
   },
   {
     "platform": "Twitch",
@@ -86,7 +86,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
+    "viewers": 4,
     "started_at": "2026-02-20T11:21:01Z"
   },
   {
@@ -95,25 +95,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=e4ovjwS5BLQ",
     "thumbnail": "https://i.ytimg.com/vi/e4ovjwS5BLQ/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-20T16:00:36Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】クリスタルから タンク練習",
-    "streamer": "ぱってぃ_",
-    "url": "https://www.twitch.tv/patricia_frankene",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_patricia_frankene-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-20T16:14:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコン レート3298～【アドバイス歓迎",
-    "streamer": "デルアキ",
-    "url": "https://www.twitch.tv/deluaki",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-20T16:41:46Z"
   }
 ]
