@@ -5,26 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 32,
+    "viewers": 48,
     "started_at": "2026-02-21T13:09:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコン レート3406～【アドバイス歓迎",
-    "streamer": "デルアキ",
-    "url": "https://www.twitch.tv/deluaki",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 29,
-    "started_at": "2026-02-21T12:01:34Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-21T11:13:21Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +14,26 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 14,
+    "viewers": 17,
     "started_at": "2026-02-21T13:03:02Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14/PVP】クリコンカジュアルでおたわむれるの回/S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
-    "streamer": "せんとうっど",
-    "url": "https://www.youtube.com/watch?v=XFv-_xHoVyo",
-    "thumbnail": "https://i.ytimg.com/vi/XFv-_xHoVyo/mqdefault_live.jpg",
+    "platform": "Twitch",
+    "title": "【クリコン：ランクマ】念仏のように声を出す練習するにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-21T13:08:15Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
     "viewers": 12,
-    "started_at": "2026-02-21T12:05:11Z"
+    "started_at": "2026-02-21T11:13:21Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +41,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
     "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 11,
     "started_at": "2026-02-21T11:11:03Z"
   },
   {
@@ -63,13 +54,13 @@
     "started_at": "2026-02-21T11:13:40Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【クリコン：ランクマ】念仏のように声を出す練習するにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "platform": "YouTube",
+    "title": "【FF14/PVP】クリコンカジュアルでおたわむれるの回/S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=XFv-_xHoVyo",
+    "thumbnail": "https://i.ytimg.com/vi/XFv-_xHoVyo/mqdefault_live.jpg",
     "viewers": 9,
-    "started_at": "2026-02-21T13:08:15Z"
+    "started_at": "2026-02-21T12:05:11Z"
   },
   {
     "platform": "Twitch",
