@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 73,
+    "viewers": 69,
     "started_at": "2026-02-21T13:09:02Z"
   },
   {
@@ -28,21 +28,21 @@
   },
   {
     "platform": "YouTube",
-    "title": "【FF14】おひさしぶりぶりシャドウブリンガー【クリコンカジュアル】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
-    "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-21T11:11:03Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "【FF14/PVP】続・クリコンカジュアルでおたわむれるの回",
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=rrknmxrMeBA",
     "thumbnail": "https://i.ytimg.com/vi/rrknmxrMeBA/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 13,
     "started_at": "2026-02-21T13:57:15Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】おひさしぶりぶりシャドウブリンガー【クリコンカジュアル】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
+    "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-21T11:11:03Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +50,7 @@
     "streamer": "コンガナジャイ",
     "url": "https://www.twitch.tv/konbanhag",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 10,
+    "viewers": 8,
     "started_at": "2026-02-21T14:45:06Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-21T15:36:47Z"
   },
   {
@@ -68,7 +68,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=apGMzNH-Dw4",
     "thumbnail": "https://i.ytimg.com/vi/apGMzNH-Dw4/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-21T15:12:09Z"
   },
   {
