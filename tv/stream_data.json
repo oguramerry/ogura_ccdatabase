@@ -1,11 +1,20 @@
 [
   {
     "platform": "Twitch",
+    "title": "【FF14】クリコン レート3406～【アドバイス歓迎",
+    "streamer": "デルアキ",
+    "url": "https://www.twitch.tv/deluaki",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-02-21T12:01:34Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "クリコン",
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 26,
+    "viewers": 27,
     "started_at": "2026-02-21T11:13:21Z"
   },
   {
@@ -14,17 +23,8 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
     "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
-    "viewers": 14,
+    "viewers": 13,
     "started_at": "2026-02-21T11:11:03Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコン レート3406～【アドバイス歓迎",
-    "streamer": "デルアキ",
-    "url": "https://www.twitch.tv/deluaki",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-21T12:01:34Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +32,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=XLZlvGhVEkU",
     "thumbnail": "https://i.ytimg.com/vi/XLZlvGhVEkU/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 12,
     "started_at": "2026-02-21T11:13:40Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=XFv-_xHoVyo",
     "thumbnail": "https://i.ytimg.com/vi/XFv-_xHoVyo/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 7,
     "started_at": "2026-02-21T12:05:11Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "あどるんよしもり",
     "url": "https://www.twitch.tv/adolnyoshimori",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-21T10:50:56Z"
   }
 ]
