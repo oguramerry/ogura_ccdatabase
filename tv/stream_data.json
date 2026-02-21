@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 54,
+    "viewers": 67,
     "started_at": "2026-02-21T13:09:02Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 27,
+    "viewers": 22,
     "started_at": "2026-02-21T13:03:02Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】おひさしぶりぶりシャドウブリンガー【クリコンカジュアル】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
-    "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-21T11:11:03Z"
   },
   {
     "platform": "YouTube",
@@ -32,8 +23,26 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=rrknmxrMeBA",
     "thumbnail": "https://i.ytimg.com/vi/rrknmxrMeBA/mqdefault_live.jpg",
-    "viewers": 10,
+    "viewers": 14,
     "started_at": "2026-02-21T13:57:15Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】おひさしぶりぶりシャドウブリンガー【クリコンカジュアル】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
+    "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-21T11:11:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ランクマで斬鉄剣するだけ",
+    "streamer": "コンガナジャイ",
+    "url": "https://www.twitch.tv/konbanhag",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-21T14:45:06Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +50,7 @@
     "streamer": "はじめひめじめ",
     "url": "https://www.twitch.tv/hajimehimejime",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hajimehimejime-320x180.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-21T13:55:18Z"
   }
 ]
