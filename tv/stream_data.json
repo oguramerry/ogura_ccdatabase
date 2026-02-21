@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 50,
+    "viewers": 54,
     "started_at": "2026-02-21T13:09:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14クリコン】ランクマ！召喚＆黒魔で頑張るぞ！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 22,
-    "started_at": "2026-02-21T13:03:02Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +14,17 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 14,
+    "viewers": 19,
     "started_at": "2026-02-21T13:08:15Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-21T11:13:21Z"
+    "title": "【ff14クリコン】ランクマ！召喚＆黒魔で頑張るぞ！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-02-21T13:03:02Z"
   },
   {
     "platform": "YouTube",
@@ -46,21 +37,30 @@
   },
   {
     "platform": "YouTube",
+    "title": "【FF14/PVP】続・クリコンカジュアルでおたわむれるの回",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=rrknmxrMeBA",
+    "thumbnail": "https://i.ytimg.com/vi/rrknmxrMeBA/mqdefault_live.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-21T13:57:15Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-21T11:13:21Z"
+  },
+  {
+    "platform": "YouTube",
     "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=XLZlvGhVEkU",
     "thumbnail": "https://i.ytimg.com/vi/XLZlvGhVEkU/mqdefault_live.jpg",
     "viewers": 8,
     "started_at": "2026-02-21T11:13:40Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14/PVP】続・クリコンカジュアルでおたわむれるの回",
-    "streamer": "せんとうっど",
-    "url": "https://www.youtube.com/watch?v=rrknmxrMeBA",
-    "thumbnail": "https://i.ytimg.com/vi/rrknmxrMeBA/mqdefault_live.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-21T13:57:15Z"
   },
   {
     "platform": "Twitch",
