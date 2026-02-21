@@ -5,7 +5,16 @@
     "streamer": "てとぽて",
     "url": "https://www.twitch.tv/tet_potet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tet_potet-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-21T10:34:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリスタルコンフリクト",
+    "streamer": "あどるんよしもり",
+    "url": "https://www.twitch.tv/adolnyoshimori",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-21T10:50:56Z"
   }
 ]
