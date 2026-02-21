@@ -5,7 +5,7 @@
     "streamer": "デルアキ",
     "url": "https://www.twitch.tv/deluaki",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 30,
+    "viewers": 26,
     "started_at": "2026-02-21T12:01:34Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 22,
+    "viewers": 19,
     "started_at": "2026-02-21T11:13:21Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=XLZlvGhVEkU",
-    "thumbnail": "https://i.ytimg.com/vi/XLZlvGhVEkU/mqdefault_live.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-21T11:13:40Z"
   },
   {
     "platform": "YouTube",
@@ -32,8 +23,17 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
     "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 11,
     "started_at": "2026-02-21T11:11:03Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=XLZlvGhVEkU",
+    "thumbnail": "https://i.ytimg.com/vi/XLZlvGhVEkU/mqdefault_live.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-21T11:13:40Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +41,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=XFv-_xHoVyo",
     "thumbnail": "https://i.ytimg.com/vi/XFv-_xHoVyo/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-02-21T12:05:11Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "あどるんよしもり",
     "url": "https://www.twitch.tv/adolnyoshimori",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-21T12:30:35Z"
   }
 ]
