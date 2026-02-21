@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 87,
+    "viewers": 78,
     "started_at": "2026-02-21T13:09:02Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 49,
+    "viewers": 58,
     "started_at": "2026-02-21T15:11:44Z"
   },
   {
@@ -23,26 +23,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 25,
+    "viewers": 24,
     "started_at": "2026-02-21T13:03:02Z"
   },
   {
     "platform": "YouTube",
-    "title": "【FF14/PVP】続・クリコンカジュアルでおたわむれるの回",
-    "streamer": "せんとうっど",
-    "url": "https://www.youtube.com/watch?v=rrknmxrMeBA",
-    "thumbnail": "https://i.ytimg.com/vi/rrknmxrMeBA/mqdefault_live.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-21T13:57:15Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン ランクマで斬鉄剣するだけ",
-    "streamer": "コンガナジャイ",
-    "url": "https://www.twitch.tv/konbanhag",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-21T14:45:06Z"
+    "title": "【クリコン】フグ美味かった【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=apGMzNH-Dw4",
+    "thumbnail": "https://i.ytimg.com/vi/apGMzNH-Dw4/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-21T15:12:09Z"
   },
   {
     "platform": "Twitch",
@@ -52,15 +43,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
     "viewers": 5,
     "started_at": "2026-02-21T15:36:47Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】フグ美味かった【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=apGMzNH-Dw4",
-    "thumbnail": "https://i.ytimg.com/vi/apGMzNH-Dw4/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-21T15:12:09Z"
   },
   {
     "platform": "Twitch",
