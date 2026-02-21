@@ -1,21 +1,21 @@
 [
   {
-    "platform": "Twitch",
-    "title": "クリコンランク★思ってることを声に出して行動してみよう★",
-    "streamer": "てとぽて",
-    "url": "https://www.twitch.tv/tet_potet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tet_potet-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-21T10:34:34Z"
+    "platform": "YouTube",
+    "title": "【FF14】おひさしぶりぶりシャドウブリンガー【クリコンカジュアル】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
+    "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-21T11:11:03Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "platform": "Twitch",
+    "title": "クリコン",
     "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=XLZlvGhVEkU",
-    "thumbnail": "https://i.ytimg.com/vi/XLZlvGhVEkU/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-21T11:13:40Z"
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-21T11:13:21Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +23,17 @@
     "streamer": "ヴィオレット",
     "url": "https://www.twitch.tv/violette_silver",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_violette_silver-320x180.jpg",
-    "viewers": 3,
+    "viewers": 6,
     "started_at": "2026-02-21T11:04:24Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=XLZlvGhVEkU",
+    "thumbnail": "https://i.ytimg.com/vi/XLZlvGhVEkU/mqdefault_live.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-21T11:13:40Z"
   },
   {
     "platform": "Twitch",
@@ -34,14 +43,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-21T10:50:56Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-21T11:13:21Z"
   }
 ]
