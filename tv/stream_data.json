@@ -5,17 +5,8 @@
     "streamer": "デルアキ",
     "url": "https://www.twitch.tv/deluaki",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 26,
+    "viewers": 25,
     "started_at": "2026-02-21T12:01:34Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-02-21T11:13:21Z"
   },
   {
     "platform": "YouTube",
@@ -23,8 +14,17 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
     "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 14,
     "started_at": "2026-02-21T11:11:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-21T11:13:21Z"
   },
   {
     "platform": "YouTube",
@@ -41,16 +41,34 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=XFv-_xHoVyo",
     "thumbnail": "https://i.ytimg.com/vi/XFv-_xHoVyo/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 10,
     "started_at": "2026-02-21T12:05:11Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリスタルコンフリクト",
-    "streamer": "あどるんよしもり",
-    "url": "https://www.twitch.tv/adolnyoshimori",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-21T12:30:35Z"
+    "title": "【クリコン：ランクマ】念仏のように声を出す練習するにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-21T13:08:15Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ【オメガ昇格を諦めきれない漢の物語】（JP CC RANK）「やっぱ好きやねん やっぱ好きやねん きつく抱いてよ 今夜は」",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-21T13:09:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン★記録用★無言",
+    "streamer": "てとぽて",
+    "url": "https://www.twitch.tv/tet_potet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tet_potet-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-21T13:09:22Z"
   }
 ]
