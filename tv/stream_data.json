@@ -5,7 +5,16 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 22,
+    "viewers": 50,
     "started_at": "2026-02-21T22:20:33Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "#CCRC2026 NA日本語同時視聴！公式クリコン大会🍹4周年記念ウィーク！Week2😎",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-02-21T22:35:33Z"
   }
 ]
