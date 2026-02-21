@@ -5,17 +5,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 40,
+    "viewers": 69,
     "started_at": "2026-02-21T15:11:44Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14クリコン】ランクマ！召喚＆黒魔で頑張るぞ！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 20,
-    "started_at": "2026-02-21T13:03:02Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 18,
+    "viewers": 26,
     "started_at": "2026-02-21T16:58:55Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14クリコン】ランクマ！召喚＆黒魔で頑張るぞ！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 16,
+    "started_at": "2026-02-21T13:03:02Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-02-21T15:36:47Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=apGMzNH-Dw4",
     "thumbnail": "https://i.ytimg.com/vi/apGMzNH-Dw4/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-02-21T15:12:09Z"
   },
   {
