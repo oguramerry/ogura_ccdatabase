@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 61,
+    "viewers": 70,
     "started_at": "2026-02-21T13:09:02Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 32,
+    "viewers": 44,
     "started_at": "2026-02-21T15:11:44Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 22,
+    "viewers": 25,
     "started_at": "2026-02-21T13:03:02Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】おひさしぶりぶりシャドウブリンガー【クリコンカジュアル】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
-    "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-21T11:11:03Z"
   },
   {
     "platform": "YouTube",
@@ -41,8 +32,17 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=rrknmxrMeBA",
     "thumbnail": "https://i.ytimg.com/vi/rrknmxrMeBA/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 11,
     "started_at": "2026-02-21T13:57:15Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】おひさしぶりぶりシャドウブリンガー【クリコンカジュアル】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
+    "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-21T11:11:03Z"
   },
   {
     "platform": "Twitch",
@@ -54,13 +54,13 @@
     "started_at": "2026-02-21T14:45:06Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【クリコン】フグ美味かった【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=apGMzNH-Dw4",
-    "thumbnail": "https://i.ytimg.com/vi/apGMzNH-Dw4/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-21T15:12:09Z"
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #90 ～ 酒の一杯は健康のため。二杯は快楽のため。三杯は放縦のため。四杯は狂気のため ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-21T15:36:47Z"
   },
   {
     "platform": "Twitch",
@@ -68,7 +68,16 @@
     "streamer": "はじめひめじめ",
     "url": "https://www.twitch.tv/hajimehimejime",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hajimehimejime-320x180.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-21T13:55:18Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】フグ美味かった【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=apGMzNH-Dw4",
+    "thumbnail": "https://i.ytimg.com/vi/apGMzNH-Dw4/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-21T15:12:09Z"
   }
 ]
