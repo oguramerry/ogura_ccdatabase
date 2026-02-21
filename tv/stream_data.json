@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 56,
+    "viewers": 54,
     "started_at": "2026-02-21T13:09:02Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 26,
+    "viewers": 27,
     "started_at": "2026-02-21T13:03:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン：ランクマ】念仏のように声を出す練習するにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-02-21T13:08:15Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +23,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
     "thumbnail": "https://i.ytimg.com/vi/uqkuUKzuWzM/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 13,
     "started_at": "2026-02-21T11:11:03Z"
   },
   {
@@ -50,7 +41,7 @@
     "streamer": "はじめひめじめ",
     "url": "https://www.twitch.tv/hajimehimejime",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hajimehimejime-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-21T13:55:18Z"
   }
 ]
