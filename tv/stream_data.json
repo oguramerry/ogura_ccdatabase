@@ -1,38 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】フグ美味かった【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 84,
-    "started_at": "2026-02-21T15:11:44Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【ff14クリコン】ランクマ！召喚＆黒魔で頑張るぞ！",
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 28,
+    "viewers": 38,
     "started_at": "2026-02-21T13:03:02Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】フグ美味かった【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=apGMzNH-Dw4",
-    "thumbnail": "https://i.ytimg.com/vi/apGMzNH-Dw4/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-21T15:12:09Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】3か月ぶりなので初見プレイみたいなものです",
-    "streamer": "はじめひめじめ",
-    "url": "https://www.twitch.tv/hajimehimejime",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hajimehimejime-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-21T13:55:18Z"
   }
 ]
