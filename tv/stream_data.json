@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 78,
+    "viewers": 69,
     "started_at": "2026-02-21T13:09:02Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 58,
+    "viewers": 41,
     "started_at": "2026-02-21T15:11:44Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 24,
+    "viewers": 22,
     "started_at": "2026-02-21T13:03:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #90 ～ 酒の一杯は健康のため。二杯は快楽のため。三杯は放縦のため。四杯は狂気のため ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-21T15:36:47Z"
   },
   {
     "platform": "YouTube",
@@ -34,15 +43,6 @@
     "thumbnail": "https://i.ytimg.com/vi/apGMzNH-Dw4/mqdefault_live.jpg",
     "viewers": 5,
     "started_at": "2026-02-21T15:12:09Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #90 ～ 酒の一杯は健康のため。二杯は快楽のため。三杯は放縦のため。四杯は狂気のため ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-21T15:36:47Z"
   },
   {
     "platform": "Twitch",
