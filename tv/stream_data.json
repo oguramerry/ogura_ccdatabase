@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ【オメガ昇格を諦めきれない漢の物語】（JP CC RANK）「やっぱ好きやねん やっぱ好きやねん きつく抱いてよ 今夜は」",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 69,
-    "started_at": "2026-02-21T13:09:02Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】フグ美味かった【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 41,
+    "viewers": 40,
     "started_at": "2026-02-21T15:11:44Z"
   },
   {
@@ -23,8 +14,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 22,
+    "viewers": 20,
     "started_at": "2026-02-21T13:03:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】既に2日酔い",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-02-21T16:58:55Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 6,
     "started_at": "2026-02-21T15:36:47Z"
   },
   {
