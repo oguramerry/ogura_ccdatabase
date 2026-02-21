@@ -1,6 +1,24 @@
 [
   {
     "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=XLZlvGhVEkU",
+    "thumbnail": "https://i.ytimg.com/vi/XLZlvGhVEkU/mqdefault_live.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-21T11:13:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-21T11:13:21Z"
+  },
+  {
+    "platform": "YouTube",
     "title": "【FF14】おひさしぶりぶりシャドウブリンガー【クリコンカジュアル】",
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=uqkuUKzuWzM",
@@ -10,30 +28,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-21T11:13:21Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "誕生日記念耐久✨シャキらなくなるまでクリコン！",
     "streamer": "ヴィオレット",
     "url": "https://www.twitch.tv/violette_silver",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_violette_silver-320x180.jpg",
-    "viewers": 6,
+    "viewers": 3,
     "started_at": "2026-02-21T11:04:24Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=XLZlvGhVEkU",
-    "thumbnail": "https://i.ytimg.com/vi/XLZlvGhVEkU/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-21T11:13:40Z"
   },
   {
     "platform": "Twitch",
