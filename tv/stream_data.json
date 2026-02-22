@@ -5,7 +5,7 @@
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 56,
+    "viewers": 60,
     "started_at": "2026-02-22T12:16:09Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 40,
+    "viewers": 42,
     "started_at": "2026-02-22T12:55:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "2/22夜 ОWのミラプリでクリコンカスタムしたい",
-    "streamer": "雪のれんこん",
-    "url": "https://www.twitch.tv/yukinorennkonn",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinorennkonn-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-02-22T12:30:51Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 26,
+    "viewers": 31,
     "started_at": "2026-02-22T11:27:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "2/22夜 ОWのミラプリでクリコンカスタムしたい",
+    "streamer": "雪のれんこん",
+    "url": "https://www.twitch.tv/yukinorennkonn",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinorennkonn-320x180.jpg",
+    "viewers": 29,
+    "started_at": "2026-02-22T12:30:51Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +50,17 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 22,
+    "viewers": 21,
     "started_at": "2026-02-22T10:29:55Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】クリスタル戻れるようにがんばる→コテンパンにされたのでクリコンカスタムで更にコテンパンにしてください。クリコンカスタム募集中！【クリコンランクマ】【侍】【ヴァイパー】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=KIluyye_JjM",
+    "thumbnail": "https://i.ytimg.com/vi/KIluyye_JjM/mqdefault_live.jpg",
+    "viewers": 20,
+    "started_at": "2026-02-22T11:45:44Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +68,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 10,
+    "viewers": 11,
     "started_at": "2026-02-22T13:03:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ クリ100～",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-22T12:13:28Z"
   },
   {
     "platform": "YouTube",
@@ -72,21 +90,12 @@
     "started_at": "2026-02-22T12:08:14Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコンランクマ クリ100～",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-22T12:13:28Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=s4Il3VaSyIA",
     "thumbnail": "https://i.ytimg.com/vi/s4Il3VaSyIA/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-22T13:25:42Z"
   },
   {
