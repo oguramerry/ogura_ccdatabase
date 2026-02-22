@@ -5,7 +5,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 31,
+    "viewers": 32,
     "started_at": "2026-02-22T09:26:45Z"
   },
   {
@@ -14,7 +14,16 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 18,
+    "viewers": 21,
     "started_at": "2026-02-22T05:43:17Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：ランクマ】今日も念仏のように声を出す練習するにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-22T10:29:55Z"
   }
 ]
