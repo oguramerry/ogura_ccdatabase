@@ -10,20 +10,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン：ランクマ】今日も念仏のように声を出す練習するにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 44,
-    "started_at": "2026-02-22T10:29:55Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day71【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 36,
+    "viewers": 41,
     "started_at": "2026-02-22T11:27:03Z"
   },
   {
@@ -32,17 +23,17 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 33,
+    "viewers": 38,
     "started_at": "2026-02-22T09:26:45Z"
   },
   {
     "platform": "Twitch",
-    "title": "のんびりクリコン",
-    "streamer": "もちどん",
-    "url": "https://www.twitch.tv/mochidon_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-22T11:29:51Z"
+    "title": "【クリコン：ランクマ】今日も念仏のように声を出す練習するにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 35,
+    "started_at": "2026-02-22T10:29:55Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +41,26 @@
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 2,
+    "viewers": 15,
     "started_at": "2026-02-22T11:42:54Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】クリスタル戻れるようにがんばる【クリコンランクマ】【侍】【ヴァイパー】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=KIluyye_JjM",
+    "thumbnail": "https://i.ytimg.com/vi/KIluyye_JjM/mqdefault_live.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-22T11:45:44Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "のんびりクリコン",
+    "streamer": "もちどん",
+    "url": "https://www.twitch.tv/mochidon_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-22T11:29:51Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +68,7 @@
     "streamer": "あどるんよしもり",
     "url": "https://www.twitch.tv/adolnyoshimori",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-22T11:14:59Z"
   }
 ]
