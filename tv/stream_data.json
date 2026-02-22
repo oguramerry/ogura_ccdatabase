@@ -1,39 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン：ランクマ】今日も念仏のように声を出す練習するにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 42,
-    "started_at": "2026-02-22T10:29:55Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンカジュDuo参加型🍹#CCRC2026 Day1の感想戦しながらカジュ🍹➧外配信IRLで東京タワーいくわよ🗼4周年記念ウィーク！Week2😎",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 34,
-    "started_at": "2026-02-22T09:26:45Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン 22時30分～『はとくらぶ(仮)様』と鳥華族のチームスクリムします （JP CC RANK） 『今日は何の日：猫の日、世界友情の日、頭痛にバファリンの日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 19,
+    "viewers": 52,
     "started_at": "2026-02-22T11:15:45Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #91 ～ 復調目指してコツコツ頑張る配信 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-22T05:43:17Z"
+    "title": "【クリコン：ランクマ】今日も念仏のように声を出す練習するにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 44,
+    "started_at": "2026-02-22T10:29:55Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +23,35 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 4,
+    "viewers": 36,
     "started_at": "2026-02-22T11:27:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンカジュDuo参加型🍹#CCRC2026 Day1の感想戦しながらカジュ🍹➧外配信IRLで東京タワーいくわよ🗼4周年記念ウィーク！Week2😎",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-02-22T09:26:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "のんびりクリコン",
+    "streamer": "もちどん",
+    "url": "https://www.twitch.tv/mochidon_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-22T11:29:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】カジュアルしたり/レート1299/1299～【S18/●●日目】",
+    "streamer": "眠居ねむ",
+    "url": "https://www.twitch.tv/nemu_yee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-22T11:42:54Z"
   },
   {
     "platform": "Twitch",
@@ -52,14 +61,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-22T11:14:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "のんびりクリコン",
-    "streamer": "もちどん",
-    "url": "https://www.twitch.tv/mochidon_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-22T11:29:51Z"
   }
 ]
