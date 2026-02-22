@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 49,
+    "viewers": 54,
     "started_at": "2026-02-21T20:30:11Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 22,
+    "viewers": 24,
     "started_at": "2026-02-22T02:45:49Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン  FF14 サンリオの決闘者",
-    "streamer": "ぶらはむ",
-    "url": "https://www.twitch.tv/brahamham",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brahamham-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-22T02:29:53Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +23,7 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=MRx87fiRYZU",
     "thumbnail": "https://i.ytimg.com/vi/MRx87fiRYZU/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-22T02:46:01Z"
   }
 ]
