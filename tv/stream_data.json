@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "まきなべるぐ",
-    "url": "https://www.twitch.tv/mknblg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-02-22T12:55:28Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day71【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 32,
+    "viewers": 29,
     "started_at": "2026-02-22T11:27:03Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】今シーズンは来週まで！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "title": "クリコン",
+    "streamer": "まきなべるぐ",
+    "url": "https://www.twitch.tv/mknblg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
     "viewers": 27,
-    "started_at": "2026-02-22T15:58:27Z"
+    "started_at": "2026-02-22T12:55:28Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 23,
+    "viewers": 22,
     "started_at": "2026-02-22T15:04:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】今シーズンは来週まで！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-22T15:58:27Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +41,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 23,
+    "viewers": 19,
     "started_at": "2026-02-22T13:03:23Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=ajJ6wOgN8iI",
     "thumbnail": "https://i.ytimg.com/vi/ajJ6wOgN8iI/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-02-22T12:08:14Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=s4Il3VaSyIA",
     "thumbnail": "https://i.ytimg.com/vi/s4Il3VaSyIA/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 9,
     "started_at": "2026-02-22T13:25:42Z"
   },
   {
