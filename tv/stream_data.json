@@ -5,17 +5,8 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 28,
+    "viewers": 34,
     "started_at": "2026-02-22T09:26:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #91 ～ 復調目指してコツコツ頑張る配信 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-22T05:43:17Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,16 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 13,
+    "viewers": 34,
     "started_at": "2026-02-22T10:29:55Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #91 ～ 復調目指してコツコツ頑張る配信 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-22T05:43:17Z"
   }
 ]
