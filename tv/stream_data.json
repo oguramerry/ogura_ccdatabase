@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day71【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 29,
-    "started_at": "2026-02-22T11:27:03Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン",
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 27,
+    "viewers": 45,
     "started_at": "2026-02-22T12:55:28Z"
   },
   {
     "platform": "Twitch",
-    "title": "【第117話】エレガキの母です。誠に息子が申し訳ございません【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 22,
-    "started_at": "2026-02-22T15:04:04Z"
+    "title": "【FF14】超クリコン研究会 Day71【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-02-22T11:27:03Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +23,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 21,
+    "viewers": 28,
     "started_at": "2026-02-22T15:58:27Z"
   },
   {
     "platform": "Twitch",
-    "title": "【ff14クリコン】22:30～チーム練習！！召喚でファイトー！！！対戦➤はとくらぶ(仮)様",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-02-22T13:03:23Z"
+    "title": "【第117話】エレガキの母です。誠に息子が申し訳ございません【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 24,
+    "started_at": "2026-02-22T15:04:04Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +41,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=ajJ6wOgN8iI",
     "thumbnail": "https://i.ytimg.com/vi/ajJ6wOgN8iI/mqdefault_live.jpg",
-    "viewers": 10,
+    "viewers": 13,
     "started_at": "2026-02-22T12:08:14Z"
   },
   {
@@ -59,7 +50,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=s4Il3VaSyIA",
     "thumbnail": "https://i.ytimg.com/vi/s4Il3VaSyIA/mqdefault_live.jpg",
-    "viewers": 9,
+    "viewers": 7,
     "started_at": "2026-02-22T13:25:42Z"
   },
   {
@@ -68,7 +59,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=qUa_aD6u3g4",
     "thumbnail": "https://i.ytimg.com/vi/qUa_aD6u3g4/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-22T15:58:52Z"
   }
 ]
