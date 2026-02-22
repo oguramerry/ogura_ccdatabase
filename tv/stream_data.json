@@ -5,17 +5,8 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 45,
+    "viewers": 43,
     "started_at": "2026-02-22T12:55:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day71【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 37,
-    "started_at": "2026-02-22T11:27:03Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 28,
+    "viewers": 33,
     "started_at": "2026-02-22T15:58:27Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day71【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 28,
+    "started_at": "2026-02-22T11:27:03Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 24,
+    "viewers": 23,
     "started_at": "2026-02-22T15:04:04Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=qUa_aD6u3g4",
     "thumbnail": "https://i.ytimg.com/vi/qUa_aD6u3g4/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 2,
     "started_at": "2026-02-22T15:58:52Z"
   }
 ]
