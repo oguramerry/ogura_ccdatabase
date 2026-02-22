@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 66,
+    "viewers": 64,
     "started_at": "2026-02-22T11:15:45Z"
   },
   {
@@ -14,17 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 36,
+    "viewers": 33,
     "started_at": "2026-02-22T11:27:03Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン：ランクマ】今日も念仏のように声を出す練習するにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-02-22T10:29:55Z"
+    "title": "【FF14PVP】クリコンランクマ！22時からFLいくぞおお！！ in Gaia フェンリル鯖  #ぎゃわ配信/視聴者参加型/イベント主催/Final Fantasy XIV PVP (@gyawa_vatos)",
+    "streamer": "Gyawa_Vatos",
+    "url": "https://www.twitch.tv/gyawa_vatos",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-02-22T12:16:09Z"
   },
   {
     "platform": "Twitch",
@@ -37,30 +37,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14PVP】クリコンランクマ！22時からFLいくぞおお！！ in Gaia フェンリル鯖  #ぎゃわ配信/視聴者参加型/イベント主催/Final Fantasy XIV PVP (@gyawa_vatos)",
-    "streamer": "Gyawa_Vatos",
-    "url": "https://www.twitch.tv/gyawa_vatos",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
+    "title": "【クリコン：ランクマ】今日も念仏のように声を出す練習するにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
     "viewers": 23,
-    "started_at": "2026-02-22T12:16:09Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】クリスタル戻れるようにがんばる【クリコンランクマ】【侍】【ヴァイパー】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=KIluyye_JjM",
-    "thumbnail": "https://i.ytimg.com/vi/KIluyye_JjM/mqdefault_live.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-22T11:45:44Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14/PVP】日曜もクリコンカジュアルの回/S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
-    "streamer": "せんとうっど",
-    "url": "https://www.youtube.com/watch?v=ajJ6wOgN8iI",
-    "thumbnail": "https://i.ytimg.com/vi/ajJ6wOgN8iI/mqdefault_live.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-22T12:08:14Z"
+    "started_at": "2026-02-22T10:29:55Z"
   },
   {
     "platform": "Twitch",
@@ -68,7 +50,7 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 7,
+    "viewers": 22,
     "started_at": "2026-02-22T12:55:28Z"
   },
   {
@@ -77,8 +59,26 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-02-22T12:13:28Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14クリコン】22:30～チーム練習！！召喚でファイトー！！！対戦➤はとくらぶ(仮)様",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-22T13:03:23Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14/PVP】日曜もクリコンカジュアルの回/S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=ajJ6wOgN8iI",
+    "thumbnail": "https://i.ytimg.com/vi/ajJ6wOgN8iI/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-22T12:08:14Z"
   },
   {
     "platform": "Twitch",
@@ -86,17 +86,8 @@
     "streamer": "天咲ゆい",
     "url": "https://www.twitch.tv/amasaki_yui",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-22T12:11:03Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリスタルコンフリクト ダイヤ２から～ ヴァイパー",
-    "streamer": "あどるんよしもり",
-    "url": "https://www.twitch.tv/adolnyoshimori",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-22T11:14:59Z"
   },
   {
     "platform": "Twitch",
