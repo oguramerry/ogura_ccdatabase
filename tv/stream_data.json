@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 52,
+    "viewers": 48,
     "started_at": "2026-02-22T11:15:45Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 41,
+    "viewers": 45,
     "started_at": "2026-02-22T11:27:03Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンカジュDuo参加型🍹#CCRC2026 Day1の感想戦しながらカジュ🍹➧外配信IRLで東京タワーいくわよ🗼4周年記念ウィーク！Week2😎",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 38,
-    "started_at": "2026-02-22T09:26:45Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,7 @@
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 15,
+    "viewers": 19,
     "started_at": "2026-02-22T11:42:54Z"
   },
   {
@@ -54,12 +45,21 @@
     "started_at": "2026-02-22T11:45:44Z"
   },
   {
+    "platform": "YouTube",
+    "title": "【FF14/PVP】日曜もクリコンカジュアルの回/S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=ajJ6wOgN8iI",
+    "thumbnail": "https://i.ytimg.com/vi/ajJ6wOgN8iI/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-22T12:08:14Z"
+  },
+  {
     "platform": "Twitch",
     "title": "のんびりクリコン",
     "streamer": "もちどん",
     "url": "https://www.twitch.tv/mochidon_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-22T11:29:51Z"
   },
   {
@@ -70,5 +70,32 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-22T11:14:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン（ランクマ）するよ！回線次第で別のゲーム",
+    "streamer": "天咲ゆい",
+    "url": "https://www.twitch.tv/amasaki_yui",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-22T12:11:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "自分を店員だと思い込んでいる光の戦士のクリコンランクマ配信",
+    "streamer": "ノットさん",
+    "url": "https://www.twitch.tv/notskeleton2",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_notskeleton2-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-22T12:04:49Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ クリ100～",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-22T12:13:28Z"
   }
 ]
