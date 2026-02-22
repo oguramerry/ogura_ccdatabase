@@ -1,11 +1,20 @@
 [
   {
     "platform": "Twitch",
+    "title": "【FF14】『バトロワクリコン』≪実況≫ 田村あかりさん主催",
+    "streamer": "せらヴぃ",
+    "url": "https://www.twitch.tv/celavi_ch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
+    "viewers": 68,
+    "started_at": "2026-02-21T20:30:11Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "Ranked Crystal Conflict, Post CCRC Chat",
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 18,
+    "viewers": 26,
     "started_at": "2026-02-22T02:45:49Z"
   },
   {
@@ -14,16 +23,7 @@
     "streamer": "ぶらはむ",
     "url": "https://www.twitch.tv/brahamham",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brahamham-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-22T02:29:53Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン  FF14 サンリオの決闘者",
-    "streamer": "ぶらはむ",
-    "url": "https://www.twitch.tv/brahamham",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brahamham-320x180.jpg",
-    "viewers": 4,
+    "viewers": 11,
     "started_at": "2026-02-22T02:29:53Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=MRx87fiRYZU",
     "thumbnail": "https://i.ytimg.com/vi/MRx87fiRYZU/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 0,
     "started_at": "2026-02-22T02:46:01Z"
   }
 ]
