@@ -5,17 +5,8 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 43,
+    "viewers": 44,
     "started_at": "2026-02-22T12:55:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】今シーズンは来週まで！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 33,
-    "started_at": "2026-02-22T15:58:27Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 28,
+    "viewers": 33,
     "started_at": "2026-02-22T11:27:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】今シーズンは来週まで！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 30,
+    "started_at": "2026-02-22T15:58:27Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 23,
+    "viewers": 24,
     "started_at": "2026-02-22T15:04:04Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=s4Il3VaSyIA",
     "thumbnail": "https://i.ytimg.com/vi/s4Il3VaSyIA/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 9,
     "started_at": "2026-02-22T13:25:42Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=qUa_aD6u3g4",
     "thumbnail": "https://i.ytimg.com/vi/qUa_aD6u3g4/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-22T15:58:52Z"
   }
 ]
