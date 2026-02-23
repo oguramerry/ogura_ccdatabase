@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 67,
+    "viewers": 71,
     "started_at": "2026-02-23T07:55:06Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 38,
+    "viewers": 46,
     "started_at": "2026-02-23T08:56:32Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ゲーマー主婦れんむ",
     "url": "https://www.twitch.tv/a_renmu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 24,
+    "viewers": 25,
     "started_at": "2026-02-23T05:55:07Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "ハミルトン",
     "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
     "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
-    "viewers": 19,
+    "viewers": 18,
     "started_at": "2026-02-23T04:06:34Z"
   },
   {
@@ -41,7 +41,16 @@
     "streamer": "フジスミカ",
     "url": "https://www.twitch.tv/fujisumika",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fujisumika-320x180.jpg",
-    "viewers": 8,
+    "viewers": 7,
     "started_at": "2026-02-23T07:51:10Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：ランクマ】ダイヤに帰りたい！！念仏のように声を出す練習するにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-23T09:54:44Z"
   }
 ]
