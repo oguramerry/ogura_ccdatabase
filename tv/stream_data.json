@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "調整クリコン",
-    "streamer": "まきなべるぐ",
-    "url": "https://www.twitch.tv/mknblg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 38,
-    "started_at": "2026-02-23T15:01:42Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day72【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 34,
+    "viewers": 48,
     "started_at": "2026-02-23T08:56:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "調整クリコン",
+    "streamer": "まきなべるぐ",
+    "url": "https://www.twitch.tv/mknblg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-02-23T15:01:42Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 32,
+    "viewers": 30,
     "started_at": "2026-02-23T13:04:30Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】カジュアルしたり/レート1299/1299～【S18/●●日目】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-02-23T15:09:29Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 9,
+    "viewers": 12,
     "started_at": "2026-02-23T16:06:26Z"
   },
   {
@@ -59,17 +50,8 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
+    "viewers": 9,
     "started_at": "2026-02-23T10:37:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン ランクマで斬鉄剣するだけ",
-    "streamer": "コンガナジャイ",
-    "url": "https://www.twitch.tv/konbanhag",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-23T15:00:59Z"
   },
   {
     "platform": "YouTube",
