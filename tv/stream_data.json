@@ -5,17 +5,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 70,
     "started_at": "2026-02-23T08:56:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14クリコン】22:30～チーム練習！！召喚でファイトー！！！対戦➤Stella Nova様",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 29,
-    "started_at": "2026-02-23T13:04:30Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 28,
+    "viewers": 41,
     "started_at": "2026-02-23T15:01:42Z"
   },
   {
@@ -32,7 +23,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 22,
+    "viewers": 31,
     "started_at": "2026-02-23T15:46:54Z"
   },
   {
@@ -41,44 +32,8 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 13,
+    "viewers": 9,
     "started_at": "2026-02-23T16:06:26Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】いつの間にかこんな所まで落ちてきていたんだとりあえずダイヤに戻ろうか！〜クリコン〜プラチナ帯",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-23T10:37:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】いつの間にかこんな所まで落ちてきていたんだとりあえずダイヤに戻ろうか！〜クリコン〜プラチナ帯",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-23T10:37:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-23T14:16:55Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-23T14:16:55Z"
   },
   {
     "platform": "YouTube",
@@ -86,7 +41,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=UWyhJSGIxu0",
     "thumbnail": "https://i.ytimg.com/vi/UWyhJSGIxu0/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 0,
     "started_at": "2026-02-23T15:47:42Z"
   }
 ]
