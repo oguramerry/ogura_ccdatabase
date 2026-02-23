@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "調整クリコン",
-    "streamer": "まきなべるぐ",
-    "url": "https://www.twitch.tv/mknblg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 43,
-    "started_at": "2026-02-23T15:01:42Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】クリコンランクマ→フロントライン",
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 22,
+    "viewers": 16,
     "started_at": "2026-02-23T16:06:26Z"
   }
 ]
