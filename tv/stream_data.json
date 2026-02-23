@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信 今週末 #クリコン月末杯",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 63,
-    "started_at": "2026-02-23T07:55:06Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day72【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 59,
     "started_at": "2026-02-23T08:56:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信 今週末 #クリコン月末杯",
+    "streamer": "せらヴぃ",
+    "url": "https://www.twitch.tv/celavi_ch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
+    "viewers": 57,
+    "started_at": "2026-02-23T07:55:06Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 20,
+    "viewers": 27,
     "started_at": "2026-02-23T09:54:44Z"
   },
   {
@@ -32,8 +32,17 @@
     "streamer": "ハミルトン",
     "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
     "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
-    "viewers": 13,
+    "viewers": 17,
     "started_at": "2026-02-23T04:06:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】いつの間にかこんな所まで落ちてきていたんだとりあえずダイヤに戻ろうか！〜クリコン〜プラチナ帯",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-23T10:37:20Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +50,7 @@
     "streamer": "フジスミカ",
     "url": "https://www.twitch.tv/fujisumika",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fujisumika-320x180.jpg",
-    "viewers": 10,
+    "viewers": 6,
     "started_at": "2026-02-23T07:51:10Z"
   },
   {
@@ -50,25 +59,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-23T10:06:42Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】いつの間にかこんな所まで落ちてきていたんだとりあえずダイヤに戻ろうか！〜クリコン〜プラチナ帯",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-23T10:37:20Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "[FF14]のんびりランクマ[クリコン]",
-    "streamer": "乙卯ぽるる",
-    "url": "https://www.twitch.tv/kinotoporuru",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-23T10:41:10Z"
   }
 ]
