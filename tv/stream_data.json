@@ -5,8 +5,17 @@
     "streamer": "ゲーマー主婦れんむ",
     "url": "https://www.twitch.tv/a_renmu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 30,
+    "viewers": 31,
     "started_at": "2026-02-23T05:55:07Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信 今週末 #クリコン月末杯",
+    "streamer": "せらヴぃ",
+    "url": "https://www.twitch.tv/celavi_ch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
+    "viewers": 26,
+    "started_at": "2026-02-23T07:55:06Z"
   },
   {
     "platform": "YouTube",
@@ -14,17 +23,8 @@
     "streamer": "ハミルトン",
     "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
     "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
-    "viewers": 16,
+    "viewers": 14,
     "started_at": "2026-02-23T04:06:34Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン取り合えずやってみる配信3回目",
-    "streamer": "ao_noa",
-    "url": "https://www.twitch.tv/ao_noa",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ao_noa-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-23T07:05:32Z"
   },
   {
     "platform": "Twitch",
@@ -32,12 +32,12 @@
     "streamer": "フジスミカ",
     "url": "https://www.twitch.tv/fujisumika",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fujisumika-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-23T07:51:10Z"
   },
   {
     "platform": "Twitch",
-    "title": "[FF14]ランクマ_声練習中[クリコン]",
+    "title": "[FF14]のんびりランクマ[クリコン]",
     "streamer": "乙卯ぽるる",
     "url": "https://www.twitch.tv/kinotoporuru",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
@@ -46,11 +46,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信 今週末 #クリコン月末杯",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
+    "title": "【FF14】びぎなークリコン ダイヤ",
+    "streamer": "ふらと_",
+    "url": "https://www.twitch.tv/phrato_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
     "viewers": 1,
-    "started_at": "2026-02-23T07:55:06Z"
+    "started_at": "2026-02-23T08:02:41Z"
   }
 ]
