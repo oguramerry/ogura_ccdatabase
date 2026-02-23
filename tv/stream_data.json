@@ -1,29 +1,20 @@
 [
   {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
-    "streamer": "ハミルトン",
-    "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
-    "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
-    "viewers": 22,
-    "started_at": "2026-02-23T04:06:34Z"
-  },
-  {
     "platform": "Twitch",
     "title": "【FF14】クリコンランク",
     "streamer": "ゲーマー主婦れんむ",
     "url": "https://www.twitch.tv/a_renmu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 20,
+    "viewers": 24,
     "started_at": "2026-02-23T05:55:07Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】びぎなークリコン ダイヤ",
-    "streamer": "ふらと_",
-    "url": "https://www.twitch.tv/phrato_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-23T04:26:59Z"
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
+    "streamer": "ハミルトン",
+    "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
+    "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-23T04:06:34Z"
   }
 ]
