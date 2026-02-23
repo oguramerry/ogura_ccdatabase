@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】クリコンランク",
-    "streamer": "ゲーマー主婦れんむ",
-    "url": "https://www.twitch.tv/a_renmu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-02-23T05:55:07Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信 今週末 #クリコン月末杯",
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 26,
+    "viewers": 35,
     "started_at": "2026-02-23T07:55:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンランク",
+    "streamer": "ゲーマー主婦れんむ",
+    "url": "https://www.twitch.tv/a_renmu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
+    "viewers": 25,
+    "started_at": "2026-02-23T05:55:07Z"
   },
   {
     "platform": "YouTube",
@@ -32,8 +32,17 @@
     "streamer": "フジスミカ",
     "url": "https://www.twitch.tv/fujisumika",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fujisumika-320x180.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-23T07:51:10Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】びぎなークリコン ダイヤ",
+    "streamer": "ふらと_",
+    "url": "https://www.twitch.tv/phrato_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-23T08:02:41Z"
   },
   {
     "platform": "Twitch",
@@ -43,14 +52,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-23T07:51:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】びぎなークリコン ダイヤ",
-    "streamer": "ふらと_",
-    "url": "https://www.twitch.tv/phrato_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-23T08:02:41Z"
   }
 ]
