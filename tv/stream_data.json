@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 47,
+    "viewers": 99,
     "started_at": "2026-02-23T07:55:06Z"
   },
   {
@@ -14,8 +14,17 @@
     "streamer": "ゲーマー主婦れんむ",
     "url": "https://www.twitch.tv/a_renmu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 20,
+    "viewers": 30,
     "started_at": "2026-02-23T05:55:07Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day72【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-23T08:56:32Z"
   },
   {
     "platform": "YouTube",
@@ -23,7 +32,7 @@
     "streamer": "ハミルトン",
     "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
     "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
-    "viewers": 18,
+    "viewers": 17,
     "started_at": "2026-02-23T04:06:34Z"
   },
   {
@@ -34,23 +43,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fujisumika-320x180.jpg",
     "viewers": 5,
     "started_at": "2026-02-23T07:51:10Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day72【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-23T08:56:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】びぎなークリコン ダイヤ",
-    "streamer": "ふらと_",
-    "url": "https://www.twitch.tv/phrato_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-23T08:02:41Z"
   }
 ]
