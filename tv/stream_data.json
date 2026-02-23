@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 45,
+    "viewers": 63,
     "started_at": "2026-02-23T08:56:32Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 27,
+    "viewers": 30,
     "started_at": "2026-02-23T09:54:44Z"
   },
   {
@@ -23,26 +23,8 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 18,
+    "viewers": 22,
     "started_at": "2026-02-23T11:01:56Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
-    "streamer": "ハミルトン",
-    "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
-    "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
-    "viewers": 17,
-    "started_at": "2026-02-23T04:06:34Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】いつの間にかこんな所まで落ちてきていたんだとりあえずダイヤに戻ろうか！〜クリコン〜プラチナ帯",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-23T10:37:20Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +32,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 6,
+    "viewers": 20,
     "started_at": "2026-02-23T11:10:38Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコンやりながら雑談するだけ",
-    "streamer": "フジスミカ",
-    "url": "https://www.twitch.tv/fujisumika",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fujisumika-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-23T07:51:10Z"
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
+    "streamer": "ハミルトン",
+    "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
+    "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
+    "viewers": 16,
+    "started_at": "2026-02-23T04:06:34Z"
   },
   {
     "platform": "Twitch",
@@ -68,17 +50,35 @@
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 6,
+    "viewers": 15,
     "started_at": "2026-02-23T11:00:32Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #92 ～ 復活の切っ掛けが見えない！それでも頑張る配信 ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "title": "【FF14】いつの間にかこんな所まで落ちてきていたんだとりあえずダイヤに戻ろうか！〜クリコン〜プラチナ帯",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-23T10:37:20Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン（ランクマ）するよ！回線次第で別のゲーム",
+    "streamer": "天咲ゆい",
+    "url": "https://www.twitch.tv/amasaki_yui",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-23T11:21:44Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14]のんびりランクマ[クリコン]",
+    "streamer": "乙卯ぽるる",
+    "url": "https://www.twitch.tv/kinotoporuru",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 2,
-    "started_at": "2026-02-23T10:06:42Z"
+    "started_at": "2026-02-23T11:15:17Z"
   },
   {
     "platform": "Twitch",
@@ -86,7 +86,16 @@
     "streamer": "あどるんよしもり",
     "url": "https://www.twitch.tv/adolnyoshimori",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-23T10:59:30Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #92 ～ 復活の切っ掛けが見えない！それでも頑張る配信 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-23T10:06:42Z"
   }
 ]
