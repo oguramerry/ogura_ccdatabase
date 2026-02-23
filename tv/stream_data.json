@@ -5,17 +5,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 99,
+    "viewers": 75,
     "started_at": "2026-02-23T07:55:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンランク",
-    "streamer": "ゲーマー主婦れんむ",
-    "url": "https://www.twitch.tv/a_renmu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 30,
-    "started_at": "2026-02-23T05:55:07Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 21,
+    "viewers": 31,
     "started_at": "2026-02-23T08:56:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンランク",
+    "streamer": "ゲーマー主婦れんむ",
+    "url": "https://www.twitch.tv/a_renmu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
+    "viewers": 25,
+    "started_at": "2026-02-23T05:55:07Z"
   },
   {
     "platform": "YouTube",
