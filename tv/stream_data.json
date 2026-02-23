@@ -5,8 +5,17 @@
     "streamer": "ハミルトン",
     "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
     "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
-    "viewers": 17,
+    "viewers": 20,
     "started_at": "2026-02-23T04:06:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンランク",
+    "streamer": "ゲーマー主婦れんむ",
+    "url": "https://www.twitch.tv/a_renmu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-02-23T05:55:07Z"
   },
   {
     "platform": "Twitch",
@@ -16,14 +25,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-23T04:26:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンランク",
-    "streamer": "ゲーマー主婦れんむ",
-    "url": "https://www.twitch.tv/a_renmu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_a_renmu-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-23T05:55:07Z"
   }
 ]
