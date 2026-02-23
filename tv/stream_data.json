@@ -5,7 +5,16 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 48,
+    "viewers": 40,
     "started_at": "2026-02-23T00:57:15Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
+    "streamer": "ハミルトン",
+    "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
+    "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-23T04:06:34Z"
   }
 ]
