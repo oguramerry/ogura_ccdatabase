@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 65,
+    "viewers": 77,
     "started_at": "2026-02-23T11:10:38Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 42,
+    "viewers": 39,
     "started_at": "2026-02-23T08:56:32Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 29,
+    "viewers": 32,
     "started_at": "2026-02-23T09:54:44Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 23,
+    "viewers": 20,
     "started_at": "2026-02-23T12:44:34Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 10,
+    "viewers": 12,
     "started_at": "2026-02-23T13:04:30Z"
   },
   {
@@ -63,13 +63,13 @@
     "started_at": "2026-02-23T11:52:16Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
-    "streamer": "ハミルトン",
-    "url": "https://www.youtube.com/watch?v=x5zqlbmsxHk",
-    "thumbnail": "https://i.ytimg.com/vi/x5zqlbmsxHk/mqdefault_live.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-23T04:06:34Z"
+    "platform": "Twitch",
+    "title": "【FF14】いつの間にかこんな所まで落ちてきていたんだとりあえずダイヤに戻ろうか！〜クリコン〜プラチナ帯",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-23T10:37:20Z"
   },
   {
     "platform": "YouTube",
@@ -77,17 +77,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=Vem5pbpYqdw",
     "thumbnail": "https://i.ytimg.com/vi/Vem5pbpYqdw/mqdefault_live.jpg",
-    "viewers": 6,
+    "viewers": 4,
     "started_at": "2026-02-23T13:31:42Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】いつの間にかこんな所まで落ちてきていたんだとりあえずダイヤに戻ろうか！〜クリコン〜プラチナ帯",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-23T10:37:20Z"
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-23T14:16:55Z"
   },
   {
     "platform": "Twitch",
@@ -97,15 +97,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-23T14:31:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-23T14:16:55Z"
   },
   {
     "platform": "Twitch",
