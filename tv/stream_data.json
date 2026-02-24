@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 53,
+    "viewers": 69,
     "started_at": "2026-02-24T11:09:25Z"
   },
   {
@@ -14,17 +14,17 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 49,
+    "viewers": 55,
     "started_at": "2026-02-24T10:35:06Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】カジュアルしたり/レート1299/1299～【S18/●●日目】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-02-24T11:26:25Z"
+    "title": "【クリコン】アドバイス歓迎",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-02-24T11:50:47Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
+    "viewers": 10,
     "started_at": "2026-02-24T09:56:44Z"
   },
   {
@@ -41,7 +41,16 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=uZrklYmWDmQ",
     "thumbnail": "https://i.ytimg.com/vi/uZrklYmWDmQ/mqdefault_live.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-02-24T10:59:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "のんびりクリコン",
+    "streamer": "もちどん",
+    "url": "https://www.twitch.tv/mochidon_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-24T11:52:44Z"
   }
 ]
