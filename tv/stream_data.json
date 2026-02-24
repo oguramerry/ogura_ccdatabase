@@ -5,7 +5,7 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 68,
+    "viewers": 59,
     "started_at": "2026-02-24T12:16:03Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 55,
+    "viewers": 53,
     "started_at": "2026-02-24T12:21:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【第118話】不労所得ンフリクト【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-02-24T14:32:34Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 28,
+    "viewers": 49,
     "started_at": "2026-02-24T15:55:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第118話】不労所得ンフリクト【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-02-24T14:32:34Z"
   },
   {
     "platform": "YouTube",
