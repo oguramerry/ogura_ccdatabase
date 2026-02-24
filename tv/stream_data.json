@@ -5,17 +5,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 69,
+    "viewers": 64,
     "started_at": "2026-02-24T08:04:57Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "[FF14] クリコン",
-    "streamer": "ソタです",
-    "url": "https://www.twitch.tv/aigosota",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-24T08:15:41Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,16 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 2,
+    "viewers": 7,
     "started_at": "2026-02-24T09:56:44Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14] クリコン",
+    "streamer": "ソタです",
+    "url": "https://www.twitch.tv/aigosota",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-24T08:15:41Z"
   }
 ]
