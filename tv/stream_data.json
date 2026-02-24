@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ【オメガ昇格を諦めきれない漢の物語】（JP CC RANK） 『今日は何の日：月光仮面登場の日、鉄道ストの日、クロスカントリーの日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 80,
-    "started_at": "2026-02-24T11:09:25Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14PVP】シン:クリコンランクマ 22時からFLいくぞおお！！ in Gaia フェンリル鯖  #ぎゃわ配信/視聴者参加型/イベント主催/Final Fantasy XIV PVP (@gyawa_vatos)",
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 78,
+    "viewers": 73,
     "started_at": "2026-02-24T12:21:04Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン1回負ける毎にガチャ10連",
-    "streamer": "まきなべるぐ",
-    "url": "https://www.twitch.tv/mknblg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 43,
-    "started_at": "2026-02-24T12:16:03Z"
+    "title": "【FF14】ミスタークリコン ランクマ【オメガ昇格を諦めきれない漢の物語】（JP CC RANK） 『今日は何の日：月光仮面登場の日、鉄道ストの日、クロスカントリーの日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 66,
+    "started_at": "2026-02-24T11:09:25Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,26 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 36,
+    "viewers": 43,
     "started_at": "2026-02-24T11:15:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン1回負ける毎にガチャ10連",
+    "streamer": "まきなべるぐ",
+    "url": "https://www.twitch.tv/mknblg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
+    "viewers": 41,
+    "started_at": "2026-02-24T12:16:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第118話】不労所得ンフリクト【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-02-24T14:32:34Z"
   },
   {
     "platform": "Twitch",
@@ -45,12 +54,12 @@
     "started_at": "2026-02-24T07:59:17Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【第118話】不労所得ンフリクト【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-24T14:32:34Z"
+    "platform": "YouTube",
+    "title": "【FINAL FANTASY XIV】 今日も一日お疲れ様でしたクリコン",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=Ok3mbUw6B8Q",
+    "thumbnail": "https://i.ytimg.com/vi/Ok3mbUw6B8Q/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-24T14:48:36Z"
   }
 ]
