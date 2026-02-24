@@ -5,7 +5,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 34,
+    "viewers": 48,
     "started_at": "2026-02-24T10:35:06Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 8,
+    "viewers": 35,
     "started_at": "2026-02-24T11:09:25Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】 さぁ、楽しもう！ 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=uZrklYmWDmQ",
-    "thumbnail": "https://i.ytimg.com/vi/uZrklYmWDmQ/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-24T10:59:56Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,25 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 3,
+    "viewers": 11,
     "started_at": "2026-02-24T09:56:44Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】 さぁ、楽しもう！ 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=uZrklYmWDmQ",
+    "thumbnail": "https://i.ytimg.com/vi/uZrklYmWDmQ/mqdefault_live.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-24T10:59:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】カジュアルしたり/レート1299/1299～【S18/●●日目】",
+    "streamer": "眠居ねむ",
+    "url": "https://www.twitch.tv/nemu_yee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-24T11:26:25Z"
   }
 ]
