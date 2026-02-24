@@ -1,21 +1,30 @@
 [
   {
     "platform": "Twitch",
-    "title": "ウォコチテ参加型🏆クリコンランクイン内定したので遊ぶ🍹22時からREPO初見w/ @oyasaio @gm9z @ponne_chan_ 🍹4周年記念ウィーク！Week2😎",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 48,
-    "started_at": "2026-02-24T10:35:06Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン ランクマ【オメガ昇格を諦めきれない漢の物語】（JP CC RANK） 『今日は何の日：月光仮面登場の日、鉄道ストの日、クロスカントリーの日』",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 35,
+    "viewers": 53,
     "started_at": "2026-02-24T11:09:25Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "ウォコチテ参加型🏆クリコンランクイン内定したので遊ぶ🍹22時からREPO初見w/ @oyasaio @gm9z @ponne_chan_ 🍹4周年記念ウィーク！Week2😎",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 49,
+    "started_at": "2026-02-24T10:35:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】カジュアルしたり/レート1299/1299～【S18/●●日目】",
+    "streamer": "眠居ねむ",
+    "url": "https://www.twitch.tv/nemu_yee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-24T11:26:25Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
+    "viewers": 8,
     "started_at": "2026-02-24T09:56:44Z"
   },
   {
@@ -34,14 +43,5 @@
     "thumbnail": "https://i.ytimg.com/vi/uZrklYmWDmQ/mqdefault_live.jpg",
     "viewers": 6,
     "started_at": "2026-02-24T10:59:56Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】カジュアルしたり/レート1299/1299～【S18/●●日目】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-24T11:26:25Z"
   }
 ]
