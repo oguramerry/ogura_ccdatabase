@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】クリコンしゅる！ 2000から！",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 69,
-    "started_at": "2026-02-24T11:15:51Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン1回負ける毎にガチャ10連",
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 61,
+    "viewers": 81,
     "started_at": "2026-02-24T12:16:03Z"
   },
   {
@@ -32,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 28,
+    "viewers": 32,
     "started_at": "2026-02-24T14:32:34Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 16,
+    "viewers": 26,
     "started_at": "2026-02-24T15:55:04Z"
   },
   {
@@ -59,7 +50,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=trxWVaGSm6s",
     "thumbnail": "https://i.ytimg.com/vi/trxWVaGSm6s/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-24T15:55:44Z"
   }
 ]
