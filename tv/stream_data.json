@@ -1,21 +1,30 @@
 [
   {
     "platform": "Twitch",
-    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信 今週末 #クリコン月末杯",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 62,
-    "started_at": "2026-02-24T08:04:57Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "ウォコチテ参加型🏆クリコンランクイン内定したので遊ぶ🍹22時からREPO初見w/ @oyasaio @gm9z @ponne_chan_ 🍹4周年記念ウィーク！Week2😎",
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 29,
+    "viewers": 34,
     "started_at": "2026-02-24T10:35:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ【オメガ昇格を諦めきれない漢の物語】（JP CC RANK） 『今日は何の日：月光仮面登場の日、鉄道ストの日、クロスカントリーの日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-24T11:09:25Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】 さぁ、楽しもう！ 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=uZrklYmWDmQ",
+    "thumbnail": "https://i.ytimg.com/vi/uZrklYmWDmQ/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-24T10:59:56Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-24T09:56:44Z"
   }
 ]
