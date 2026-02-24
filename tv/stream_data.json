@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 82,
+    "viewers": 80,
     "started_at": "2026-02-24T11:09:25Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 62,
+    "viewers": 78,
     "started_at": "2026-02-24T12:21:04Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 47,
+    "viewers": 43,
     "started_at": "2026-02-24T12:16:03Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 32,
+    "viewers": 36,
     "started_at": "2026-02-24T11:15:51Z"
   },
   {
@@ -41,16 +41,16 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 10,
+    "viewers": 9,
     "started_at": "2026-02-24T07:59:17Z"
   },
   {
-    "platform": "YouTube",
-    "title": "[FF14] 零式消化いってクリコンやる！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=-Vkrb4alUqw",
-    "thumbnail": "https://i.ytimg.com/vi/-Vkrb4alUqw/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-24T12:08:26Z"
+    "platform": "Twitch",
+    "title": "【第118話】不労所得ンフリクト【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-24T14:32:34Z"
   }
 ]
