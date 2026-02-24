@@ -5,17 +5,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 60,
     "started_at": "2026-02-24T08:04:57Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ガイアDCでクリコンカジュアル",
-    "streamer": "ゆゆじゃっく",
-    "url": "https://www.twitch.tv/yuyuhimarijackgravity",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yuyuhimarijackgravity-320x180.jpg",
-    "viewers": 20,
-    "started_at": "2026-02-24T04:32:09Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 5,
+    "viewers": 3,
     "started_at": "2026-02-24T08:15:41Z"
   }
 ]
