@@ -5,7 +5,7 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 49,
+    "viewers": 44,
     "started_at": "2026-02-24T12:16:03Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 34,
+    "viewers": 29,
     "started_at": "2026-02-24T15:55:04Z"
   },
   {
@@ -25,5 +25,14 @@
     "thumbnail": "https://i.ytimg.com/vi/trxWVaGSm6s/mqdefault_live.jpg",
     "viewers": 4,
     "started_at": "2026-02-24T15:55:44Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "ソタです",
+    "url": "https://www.twitch.tv/aigosota",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-24T18:55:53Z"
   }
 ]
