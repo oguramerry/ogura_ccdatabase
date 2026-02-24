@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 52,
+    "viewers": 54,
     "started_at": "2026-02-24T11:09:25Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 50,
+    "viewers": 54,
     "started_at": "2026-02-24T10:35:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】アドバイス歓迎",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 28,
-    "started_at": "2026-02-24T11:50:47Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +23,17 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 21,
+    "viewers": 34,
     "started_at": "2026-02-24T12:16:03Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14】 さぁ、楽しもう！ 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=uZrklYmWDmQ",
-    "thumbnail": "https://i.ytimg.com/vi/uZrklYmWDmQ/mqdefault_live.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-24T10:59:56Z"
+    "platform": "Twitch",
+    "title": "【クリコン】アドバイス歓迎",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 24,
+    "started_at": "2026-02-24T11:50:47Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +41,17 @@
     "streamer": "Gyawa_Vatos",
     "url": "https://www.twitch.tv/gyawa_vatos",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gyawa_vatos-320x180.jpg",
-    "viewers": 8,
+    "viewers": 14,
     "started_at": "2026-02-24T12:21:04Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】 さぁ、楽しもう！ 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=uZrklYmWDmQ",
+    "thumbnail": "https://i.ytimg.com/vi/uZrklYmWDmQ/mqdefault_live.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-24T10:59:56Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +59,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-02-24T09:56:44Z"
   },
   {
@@ -68,17 +68,17 @@
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 2,
+    "viewers": 5,
     "started_at": "2026-02-24T12:15:38Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "AliciaFF14",
-    "url": "https://www.twitch.tv/aliciaff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aliciaff14-320x180.jpg",
+    "title": "のんびりクリコン",
+    "streamer": "もちどん",
+    "url": "https://www.twitch.tv/mochidon_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
     "viewers": 2,
-    "started_at": "2026-02-24T12:18:32Z"
+    "started_at": "2026-02-24T11:52:44Z"
   },
   {
     "platform": "Twitch",
@@ -90,6 +90,15 @@
     "started_at": "2026-02-24T12:00:45Z"
   },
   {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "AliciaFF14",
+    "url": "https://www.twitch.tv/aliciaff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aliciaff14-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-24T12:18:32Z"
+  },
+  {
     "platform": "YouTube",
     "title": "[FF14] 零式1層いってクリコンやる！",
     "streamer": "山田ヤムダ",
@@ -97,14 +106,5 @@
     "thumbnail": "https://i.ytimg.com/vi/-Vkrb4alUqw/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-02-24T12:08:26Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "のんびりクリコン",
-    "streamer": "もちどん",
-    "url": "https://www.twitch.tv/mochidon_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-24T11:52:44Z"
   }
 ]
