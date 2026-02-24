@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 65,
+    "viewers": 69,
     "started_at": "2026-02-24T08:04:57Z"
   },
   {
@@ -14,7 +14,16 @@
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 6,
+    "viewers": 4,
     "started_at": "2026-02-24T08:15:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #93 ～ ふところが痛いのは最初の一杯だけである。 ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-24T09:56:44Z"
   }
 ]
