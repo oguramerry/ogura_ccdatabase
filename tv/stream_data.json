@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 56,
+    "viewers": 55,
     "started_at": "2026-02-25T15:05:29Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 16,
+    "viewers": 15,
     "started_at": "2026-02-25T12:56:15Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 14,
+    "viewers": 12,
     "started_at": "2026-02-25T15:13:58Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=7qhX4SnsLKk",
     "thumbnail": "https://i.ytimg.com/vi/7qhX4SnsLKk/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-02-25T15:33:34Z"
   },
   {
@@ -81,15 +81,6 @@
     "started_at": "2026-02-25T15:03:16Z"
   },
   {
-    "platform": "YouTube",
-    "title": "[FF14] 零式消化してクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=Di7Dxlai9c0",
-    "thumbnail": "https://i.ytimg.com/vi/Di7Dxlai9c0/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-25T12:03:02Z"
-  },
-  {
     "platform": "Twitch",
     "title": "[FF14]のんびりカスタム[クリコン]",
     "streamer": "乙卯ぽるる",
@@ -97,5 +88,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-25T12:57:32Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] 零式消化してクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=Di7Dxlai9c0",
+    "thumbnail": "https://i.ytimg.com/vi/Di7Dxlai9c0/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-25T12:03:02Z"
   }
 ]
