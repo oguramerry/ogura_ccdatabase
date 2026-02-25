@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】侍【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-02-25T15:33:06Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】クリコンランクマ、ムカついたらフロントライン",
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 23,
+    "viewers": 21,
     "started_at": "2026-02-25T15:13:58Z"
   },
   {
@@ -23,17 +14,8 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 5,
+    "viewers": 3,
     "started_at": "2026-02-25T16:46:53Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】侍【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=7qhX4SnsLKk",
-    "thumbnail": "https://i.ytimg.com/vi/7qhX4SnsLKk/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-25T15:33:34Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +23,7 @@
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-02-25T17:29:33Z"
   }
 ]
