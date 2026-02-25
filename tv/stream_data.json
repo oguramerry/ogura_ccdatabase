@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 45,
+    "viewers": 49,
     "started_at": "2026-02-25T15:05:29Z"
   },
   {
@@ -19,12 +19,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "オンサル参加型GaiaDC➧毎週水曜FLイベント！#FLどうでしょう🏆クリコンランクイン内定したので遊ぶ🍹",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 22,
-    "started_at": "2026-02-25T12:10:43Z"
+    "title": "【クリコン】侍【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-25T15:33:06Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +32,8 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 22,
+    "viewers": 19,
     "started_at": "2026-02-25T12:41:33Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンリハビリクリニック（定期）",
-    "streamer": "ひつじメリー",
-    "url": "https://www.twitch.tv/hitsuzimerry",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hitsuzimerry-320x180.jpg",
-    "viewers": 20,
-    "started_at": "2026-02-25T12:42:35Z"
   },
   {
     "platform": "Twitch",
@@ -55,12 +46,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】侍【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-25T15:33:06Z"
+    "title": "【FF14】クリコンランクマ、ムカついたらフロントライン",
+    "streamer": "じゅきん",
+    "url": "https://www.twitch.tv/tufujukin",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-25T15:13:58Z"
   },
   {
     "platform": "Twitch",
@@ -68,17 +59,17 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
+    "viewers": 5,
     "started_at": "2026-02-25T12:49:49Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンランクマ、ムカついたらフロントライン",
-    "streamer": "じゅきん",
-    "url": "https://www.twitch.tv/tufujukin",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-25T15:13:58Z"
+    "platform": "YouTube",
+    "title": "【クリコン】侍【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=7qhX4SnsLKk",
+    "thumbnail": "https://i.ytimg.com/vi/7qhX4SnsLKk/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-25T15:33:34Z"
   },
   {
     "platform": "Twitch",
@@ -99,6 +90,15 @@
     "started_at": "2026-02-25T15:03:16Z"
   },
   {
+    "platform": "YouTube",
+    "title": "[FF14] 零式消化してクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=Di7Dxlai9c0",
+    "thumbnail": "https://i.ytimg.com/vi/Di7Dxlai9c0/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-25T12:03:02Z"
+  },
+  {
     "platform": "Twitch",
     "title": "[FF14]のんびりカスタム[クリコン]",
     "streamer": "乙卯ぽるる",
@@ -106,23 +106,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-25T12:57:32Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】侍【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=7qhX4SnsLKk",
-    "thumbnail": "https://i.ytimg.com/vi/7qhX4SnsLKk/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-25T15:33:34Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "[FF14] 零式消化してクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=Di7Dxlai9c0",
-    "thumbnail": "https://i.ytimg.com/vi/Di7Dxlai9c0/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-25T12:03:02Z"
   }
 ]
