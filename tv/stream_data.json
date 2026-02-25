@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day73【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 39,
-    "started_at": "2026-02-25T12:20:46Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK）⇒【APEX】参加歓迎です！ランクマッチ！現在ブロンズ帯です！",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 36,
+    "viewers": 45,
     "started_at": "2026-02-25T15:05:29Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day73【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-02-25T12:20:46Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 26,
+    "viewers": 22,
     "started_at": "2026-02-25T12:10:43Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 25,
+    "viewers": 22,
     "started_at": "2026-02-25T12:41:33Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "ひつじメリー",
     "url": "https://www.twitch.tv/hitsuzimerry",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hitsuzimerry-320x180.jpg",
-    "viewers": 17,
+    "viewers": 20,
     "started_at": "2026-02-25T12:42:35Z"
   },
   {
@@ -50,17 +50,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 13,
+    "viewers": 16,
     "started_at": "2026-02-25T12:56:15Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
-    "streamer": "ハミルトン",
-    "url": "https://www.youtube.com/watch?v=xvMFQRv5UB8",
-    "thumbnail": "https://i.ytimg.com/vi/xvMFQRv5UB8/mqdefault_live.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-25T13:50:02Z"
+    "platform": "Twitch",
+    "title": "【クリコン】侍【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-25T15:33:06Z"
   },
   {
     "platform": "Twitch",
@@ -68,7 +68,7 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 8,
+    "viewers": 6,
     "started_at": "2026-02-25T12:49:49Z"
   },
   {
@@ -82,21 +82,21 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコン オメガ戦場久々",
-    "streamer": "felifelidesu",
-    "url": "https://www.twitch.tv/felifelidesu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-25T14:19:54Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】ランクももう少しで終わり(/・ω・)/",
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-25T15:19:26Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】絶クリスタルコンフリクト討滅戦【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-25T15:03:16Z"
   },
   {
     "platform": "Twitch",
@@ -108,13 +108,13 @@
     "started_at": "2026-02-25T12:57:32Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】絶クリスタルコンフリクト討滅戦【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-25T15:03:16Z"
+    "platform": "YouTube",
+    "title": "【クリコン】侍【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=7qhX4SnsLKk",
+    "thumbnail": "https://i.ytimg.com/vi/7qhX4SnsLKk/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-25T15:33:34Z"
   },
   {
     "platform": "YouTube",
