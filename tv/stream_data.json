@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ Crystalline Conflict（JP CC RANK）⇒【APEX】参加歓迎です！ランクマッチ！現在ブロンズ帯です！",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 54,
-    "started_at": "2026-02-25T15:05:29Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】侍【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 33,
+    "viewers": 29,
     "started_at": "2026-02-25T15:33:06Z"
   },
   {
@@ -23,17 +14,8 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 12,
+    "viewers": 17,
     "started_at": "2026-02-25T15:13:58Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】侍【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=7qhX4SnsLKk",
-    "thumbnail": "https://i.ytimg.com/vi/7qhX4SnsLKk/mqdefault_live.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-25T15:33:34Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +23,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
+    "viewers": 5,
     "started_at": "2026-02-25T16:46:53Z"
   },
   {
@@ -50,8 +32,17 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 2,
+    "viewers": 5,
     "started_at": "2026-02-25T15:19:26Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】侍【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=7qhX4SnsLKk",
+    "thumbnail": "https://i.ytimg.com/vi/7qhX4SnsLKk/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-25T15:33:34Z"
   },
   {
     "platform": "YouTube",
