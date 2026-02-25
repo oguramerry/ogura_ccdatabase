@@ -5,7 +5,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 57,
+    "viewers": 47,
     "started_at": "2026-02-25T08:09:23Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 17,
+    "viewers": 16,
     "started_at": "2026-02-25T11:10:43Z"
   },
   {
@@ -37,12 +37,21 @@
   },
   {
     "platform": "Twitch",
-    "title": "竜騎士クリコンの一日は洋服選びから始まるゾ【ff14】３月に開催されるPOPUPストアのグッズ良すぎ☆",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
+    "title": "オンサル参加型GaiaDC➧毎週水曜FLイベント！#FLどうでしょう 22時～🏆クリコンランクイン内定したので遊ぶ🍹",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
     "viewers": 8,
-    "started_at": "2026-02-25T07:59:36Z"
+    "started_at": "2026-02-25T12:10:43Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] 零式消化してクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=Di7Dxlai9c0",
+    "thumbnail": "https://i.ytimg.com/vi/Di7Dxlai9c0/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-25T12:03:02Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +59,7 @@
     "streamer": "あどるんよしもり",
     "url": "https://www.twitch.tv/adolnyoshimori",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-25T11:13:54Z"
   },
   {
@@ -61,5 +70,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-02-25T11:27:27Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14クリコン】クリスタル昇格を賭けて ランクマ侍 ダイヤ帯",
+    "streamer": "ぴょんちゃんねる",
+    "url": "https://www.youtube.com/watch?v=iwC-u5M303M",
+    "thumbnail": "https://i.ytimg.com/vi/iwC-u5M303M/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-25T12:00:15Z"
   }
 ]
