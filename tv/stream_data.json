@@ -5,8 +5,17 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 7,
+    "viewers": 27,
     "started_at": "2026-02-25T07:55:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【#FF14 】クリスタルもどれるかな～？【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-25T08:09:23Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,7 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-02-25T07:59:36Z"
   }
 ]
