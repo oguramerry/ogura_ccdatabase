@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 45,
+    "viewers": 50,
     "started_at": "2026-02-25T12:20:46Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 37,
+    "viewers": 40,
     "started_at": "2026-02-25T12:10:43Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 27,
+    "viewers": 28,
     "started_at": "2026-02-25T12:41:29Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 22,
+    "viewers": 24,
     "started_at": "2026-02-25T12:41:33Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "3層消化出来るかな？ 後にクリコン 24時ぐらいまで",
-    "streamer": "東雲ハクエン",
-    "url": "https://www.twitch.tv/hakuensinonome",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-02-25T11:10:43Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "ひつじメリー",
     "url": "https://www.twitch.tv/hitsuzimerry",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hitsuzimerry-320x180.jpg",
-    "viewers": 19,
+    "viewers": 20,
     "started_at": "2026-02-25T12:42:35Z"
   },
   {
@@ -59,8 +50,26 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
+    "viewers": 17,
     "started_at": "2026-02-25T12:56:15Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "3層消化出来るかな？ 後にクリコン 24時ぐらいまで",
+    "streamer": "東雲ハクエン",
+    "url": "https://www.twitch.tv/hakuensinonome",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-25T11:10:43Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】新人加入したので宜しくお願いします！〜クリコン〜22時から泥酔クリコン部カスタム！",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-25T12:49:49Z"
   },
   {
     "platform": "Twitch",
@@ -72,13 +81,13 @@
     "started_at": "2026-02-25T12:21:30Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】新人加入したので宜しくお願いします！〜クリコン〜22時から泥酔クリコン部カスタム！",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-25T12:49:49Z"
+    "platform": "YouTube",
+    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
+    "streamer": "ハミルトン",
+    "url": "https://www.youtube.com/watch?v=xvMFQRv5UB8",
+    "thumbnail": "https://i.ytimg.com/vi/xvMFQRv5UB8/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-25T13:50:02Z"
   },
   {
     "platform": "Twitch",
@@ -90,31 +99,22 @@
     "started_at": "2026-02-25T13:28:14Z"
   },
   {
-    "platform": "YouTube",
-    "title": "[FF14] 零式消化してクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=Di7Dxlai9c0",
-    "thumbnail": "https://i.ytimg.com/vi/Di7Dxlai9c0/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-25T12:03:02Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【シーズン18】FF14　クリスタルコンフリクト　ランクマッチ",
-    "streamer": "ハミルトン",
-    "url": "https://www.youtube.com/watch?v=xvMFQRv5UB8",
-    "thumbnail": "https://i.ytimg.com/vi/xvMFQRv5UB8/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-25T13:50:02Z"
-  },
-  {
     "platform": "Twitch",
     "title": "[FF14]のんびりカスタム[クリコン]",
     "streamer": "乙卯ぽるる",
     "url": "https://www.twitch.tv/kinotoporuru",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-25T12:57:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン オメガ戦場久々",
+    "streamer": "felifelidesu",
+    "url": "https://www.twitch.tv/felifelidesu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-25T14:19:54Z"
   },
   {
     "platform": "Twitch",
@@ -124,5 +124,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-25T11:27:27Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] 零式消化してクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=Di7Dxlai9c0",
+    "thumbnail": "https://i.ytimg.com/vi/Di7Dxlai9c0/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-25T12:03:02Z"
   }
 ]
