@@ -5,17 +5,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 53,
+    "viewers": 46,
     "started_at": "2026-02-26T07:54:49Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "花粉×/クリコン[#FF14]© SQUARE ENIX",
-    "streamer": "まなちゃーん",
-    "url": "https://www.twitch.tv/manachan_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_manachan_ch-320x180.jpg",
-    "viewers": 47,
-    "started_at": "2026-02-26T08:46:56Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 44,
+    "viewers": 43,
     "started_at": "2026-02-26T08:09:22Z"
   },
   {
@@ -32,7 +23,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 35,
+    "viewers": 36,
     "started_at": "2026-02-26T07:12:12Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 23,
+    "viewers": 27,
     "started_at": "2026-02-26T10:29:24Z"
   },
   {
@@ -52,5 +43,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
     "viewers": 6,
     "started_at": "2026-02-26T10:01:08Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14クリコン】ベイサイド見学！？ ランクマ ガンブレ ダイヤ帯",
+    "streamer": "ぴょんちゃんねる",
+    "url": "https://www.youtube.com/watch?v=We8S9vANX7k",
+    "thumbnail": "https://i.ytimg.com/vi/We8S9vANX7k/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-26T10:51:55Z"
   }
 ]
