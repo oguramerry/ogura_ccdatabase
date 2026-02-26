@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 53,
+    "viewers": 60,
     "started_at": "2026-02-26T10:29:24Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 44,
+    "viewers": 54,
     "started_at": "2026-02-26T07:12:12Z"
   },
   {
@@ -41,7 +41,34 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 1,
+    "viewers": 6,
     "started_at": "2026-02-26T11:40:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～『こしあん様』と鳥華族のチームスクリムします（JP CC RANK）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-26T11:55:36Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクいくぞ！シルバーを目指して。",
+    "streamer": "ふらんです",
+    "url": "https://www.twitch.tv/fran_umai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-26T11:53:17Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
+    "streamer": "ソタです",
+    "url": "https://www.twitch.tv/aigosota",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-26T12:00:02Z"
   }
 ]
