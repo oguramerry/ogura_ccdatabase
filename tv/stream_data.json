@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信 今週末 月末杯",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 46,
-    "started_at": "2026-02-26T07:54:49Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【#FF14 】ランクマッチ借レート返済できるかな【#クリコン 】",
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 43,
+    "viewers": 46,
     "started_at": "2026-02-26T08:09:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day74【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 42,
+    "started_at": "2026-02-26T10:29:24Z"
   },
   {
     "platform": "Twitch",
@@ -25,15 +25,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
     "viewers": 36,
     "started_at": "2026-02-26T07:12:12Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day74【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-02-26T10:29:24Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "ぴょんちゃんねる",
     "url": "https://www.youtube.com/watch?v=We8S9vANX7k",
     "thumbnail": "https://i.ytimg.com/vi/We8S9vANX7k/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-02-26T10:51:55Z"
   }
 ]
