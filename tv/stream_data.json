@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 45,
+    "viewers": 48,
     "started_at": "2026-02-26T13:27:25Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 35,
+    "viewers": 38,
     "started_at": "2026-02-26T15:37:07Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 27,
+    "viewers": 25,
     "started_at": "2026-02-26T14:51:22Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】2月もおわりですね【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=j3tEx_-D3Mg",
-    "thumbnail": "https://i.ytimg.com/vi/j3tEx_-D3Mg/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-26T15:39:49Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,16 @@
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-26T12:07:12Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】2月もおわりですね【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=j3tEx_-D3Mg",
+    "thumbnail": "https://i.ytimg.com/vi/j3tEx_-D3Mg/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-26T15:39:49Z"
   }
 ]
