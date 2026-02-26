@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン 22時30分～『こしあん様』と鳥華族のチームスクリムします（JP CC RANK）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 39,
-    "started_at": "2026-02-26T11:55:36Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】22:30からのクリコンチム練 そして伝説へ～。",
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 34,
+    "viewers": 35,
     "started_at": "2026-02-26T13:27:25Z"
   },
   {
@@ -23,7 +14,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 20,
+    "viewers": 25,
     "started_at": "2026-02-26T14:51:22Z"
   },
   {
@@ -50,17 +41,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 15,
+    "viewers": 17,
     "started_at": "2026-02-26T15:50:29Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン：カスタム？】泥酔クリコン部でチーム練習にゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-26T12:29:24Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +50,17 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 12,
+    "viewers": 15,
     "started_at": "2026-02-26T15:06:47Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：カスタム？】泥酔クリコン部でチーム練習にゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-26T12:29:24Z"
   },
   {
     "platform": "Twitch",
@@ -77,7 +68,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 11,
+    "viewers": 13,
     "started_at": "2026-02-26T13:22:10Z"
   },
   {
@@ -86,7 +77,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 7,
+    "viewers": 11,
     "started_at": "2026-02-26T13:01:58Z"
   },
   {
@@ -117,31 +108,13 @@
     "started_at": "2026-02-26T12:07:12Z"
   },
   {
-    "platform": "Twitch",
-    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
-    "streamer": "ソタです",
-    "url": "https://www.twitch.tv/aigosota",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-26T12:07:12Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【クリコン】2月もおわりですね【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=j3tEx_-D3Mg",
     "thumbnail": "https://i.ytimg.com/vi/j3tEx_-D3Mg/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-26T15:39:49Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=rjdGXrlrdmM",
-    "thumbnail": "https://i.ytimg.com/vi/rjdGXrlrdmM/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-26T13:35:28Z"
   },
   {
     "platform": "Twitch",
@@ -151,5 +124,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-26T13:52:54Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=rjdGXrlrdmM",
+    "thumbnail": "https://i.ytimg.com/vi/rjdGXrlrdmM/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-26T13:35:28Z"
   }
 ]
