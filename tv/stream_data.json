@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day74【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 58,
-    "started_at": "2026-02-26T10:29:24Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン 22時30分～『こしあん様』と鳥華族のチームスクリムします（JP CC RANK）",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 52,
+    "viewers": 51,
     "started_at": "2026-02-26T11:55:36Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day74【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 44,
+    "started_at": "2026-02-26T10:29:24Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +23,8 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 32,
+    "viewers": 37,
     "started_at": "2026-02-26T13:27:25Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランクいくぞ！シルバーを目指して。",
-    "streamer": "ふらんです",
-    "url": "https://www.twitch.tv/fran_umai",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-02-26T11:53:17Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +32,17 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 13,
+    "viewers": 16,
     "started_at": "2026-02-26T12:29:24Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-26T13:22:10Z"
+    "title": "クリコンランクいくぞ！シルバーを目指して。",
+    "streamer": "ふらんです",
+    "url": "https://www.twitch.tv/fran_umai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-26T11:53:17Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +50,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 9,
+    "viewers": 12,
     "started_at": "2026-02-26T13:01:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-26T13:22:10Z"
   },
   {
     "platform": "Twitch",
@@ -73,6 +73,15 @@
   },
   {
     "platform": "Twitch",
+    "title": "【FF14】ウォーミングアップと練習をかねて22時までカジュアルぶん回し〜クリコン〜22時からは泥酔クリコン部カスタム！",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-26T11:40:34Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【クリコン】ランクももう少し(/・ω・)/",
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
@@ -82,12 +91,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】ウォーミングアップと練習をかねて22時までカジュアルぶん回し〜クリコン〜22時からは泥酔クリコン部カスタム！",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-26T11:40:34Z"
+    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
+    "streamer": "ソタです",
+    "url": "https://www.twitch.tv/aigosota",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-26T12:07:12Z"
   },
   {
     "platform": "YouTube",
@@ -95,17 +104,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=rjdGXrlrdmM",
     "thumbnail": "https://i.ytimg.com/vi/rjdGXrlrdmM/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-26T13:35:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
-    "streamer": "ソタです",
-    "url": "https://www.twitch.tv/aigosota",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-26T12:07:12Z"
   },
   {
     "platform": "Twitch",
@@ -124,5 +124,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-26T13:52:54Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FINAL FANTASY XIV】 寝る前にちょっとととととクリコン",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=BKQsgC_omBM",
+    "thumbnail": "https://i.ytimg.com/vi/BKQsgC_omBM/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-26T14:30:45Z"
   }
 ]
