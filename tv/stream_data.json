@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 49,
+    "viewers": 46,
     "started_at": "2026-02-26T13:27:25Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 32,
+    "viewers": 23,
     "started_at": "2026-02-26T10:29:24Z"
   },
   {
@@ -32,8 +32,17 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 27,
+    "viewers": 23,
     "started_at": "2026-02-26T14:51:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：カスタム？】泥酔クリコン部でチーム練習にゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-26T12:29:24Z"
   },
   {
     "platform": "Twitch",
@@ -46,20 +55,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン：カスタム？】泥酔クリコン部でチーム練習にゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-26T12:29:24Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】寝る前に少しだけ",
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 13,
+    "viewers": 11,
     "started_at": "2026-02-26T15:06:47Z"
   },
   {
@@ -68,26 +68,17 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 13,
+    "viewers": 10,
     "started_at": "2026-02-26T11:53:17Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-26T13:22:10Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】寝る前に少しだけ",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-26T15:06:47Z"
+    "title": "【ff14クリコン】22:30～チーム練習！！召喚でファイトー！！！対戦➤こしあん様",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-26T13:01:58Z"
   },
   {
     "platform": "Twitch",
@@ -97,6 +88,24 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
     "viewers": 7,
     "started_at": "2026-02-26T15:04:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】2月もおわりですね【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-26T15:37:07Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=rjdGXrlrdmM",
+    "thumbnail": "https://i.ytimg.com/vi/rjdGXrlrdmM/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-26T13:35:28Z"
   },
   {
     "platform": "Twitch",
@@ -113,17 +122,17 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-02-26T11:40:34Z"
   },
   {
     "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=rjdGXrlrdmM",
-    "thumbnail": "https://i.ytimg.com/vi/rjdGXrlrdmM/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-26T13:35:28Z"
+    "title": "【FINAL FANTASY XIV】 寝る前にちょっとととととクリコン",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=BKQsgC_omBM",
+    "thumbnail": "https://i.ytimg.com/vi/BKQsgC_omBM/mqdefault_live.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-26T14:30:45Z"
   },
   {
     "platform": "Twitch",
@@ -135,15 +144,6 @@
     "started_at": "2026-02-26T12:07:12Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FINAL FANTASY XIV】 寝る前にちょっとととととクリコン",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=BKQsgC_omBM",
-    "thumbnail": "https://i.ytimg.com/vi/BKQsgC_omBM/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-26T14:30:45Z"
-  },
-  {
     "platform": "Twitch",
     "title": "[FF14]のんびりカスタム[クリコン]",
     "streamer": "乙卯ぽるる",
@@ -151,5 +151,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-26T13:52:54Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】2月もおわりですね【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=j3tEx_-D3Mg",
+    "thumbnail": "https://i.ytimg.com/vi/j3tEx_-D3Mg/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-26T15:39:49Z"
   }
 ]
