@@ -5,17 +5,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 50,
     "started_at": "2026-02-26T07:54:49Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】1~4層消化に夢を見る 22:30からクリコンチム練！",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 33,
-    "started_at": "2026-02-26T07:12:12Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "まなちゃーん",
     "url": "https://www.twitch.tv/manachan_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_manachan_ch-320x180.jpg",
-    "viewers": 19,
+    "viewers": 30,
     "started_at": "2026-02-26T08:46:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】1~4層消化に夢を見る 22:30からクリコンチム練！",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 28,
+    "started_at": "2026-02-26T07:12:12Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 17,
+    "viewers": 21,
     "started_at": "2026-02-26T08:09:22Z"
   }
 ]
