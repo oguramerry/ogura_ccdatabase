@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 51,
+    "viewers": 50,
     "started_at": "2026-02-26T11:55:36Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 43,
     "started_at": "2026-02-26T10:29:24Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 37,
+    "viewers": 42,
     "started_at": "2026-02-26T13:27:25Z"
   },
   {
@@ -32,17 +32,17 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 16,
+    "viewers": 17,
     "started_at": "2026-02-26T12:29:24Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコンランクいくぞ！シルバーを目指して。",
-    "streamer": "ふらんです",
-    "url": "https://www.twitch.tv/fran_umai",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-26T11:53:17Z"
+    "title": "【第119話】試験的読み上げ導入【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-26T14:51:22Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +50,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 12,
+    "viewers": 14,
     "started_at": "2026-02-26T13:01:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクいくぞ！シルバーを目指して。",
+    "streamer": "ふらんです",
+    "url": "https://www.twitch.tv/fran_umai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-26T11:53:17Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +68,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 8,
+    "viewers": 12,
     "started_at": "2026-02-26T13:22:10Z"
   },
   {
@@ -90,31 +99,22 @@
     "started_at": "2026-02-26T12:42:06Z"
   },
   {
-    "platform": "Twitch",
-    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
-    "streamer": "ソタです",
-    "url": "https://www.twitch.tv/aigosota",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-26T12:07:12Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=rjdGXrlrdmM",
     "thumbnail": "https://i.ytimg.com/vi/rjdGXrlrdmM/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-26T13:35:28Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】びぎなークリコン",
-    "streamer": "ふらと_",
-    "url": "https://www.twitch.tv/phrato_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-26T13:33:48Z"
+    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
+    "streamer": "ソタです",
+    "url": "https://www.twitch.tv/aigosota",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-26T12:07:12Z"
   },
   {
     "platform": "Twitch",
