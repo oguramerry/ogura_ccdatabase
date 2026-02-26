@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 39,
+    "viewers": 41,
     "started_at": "2026-02-26T13:27:25Z"
   },
   {
@@ -14,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 28,
+    "viewers": 33,
     "started_at": "2026-02-26T10:29:24Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】2月もおわりですね【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 26,
+    "started_at": "2026-02-26T15:37:07Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +32,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 28,
+    "viewers": 23,
     "started_at": "2026-02-26T14:51:22Z"
   },
   {
@@ -32,17 +41,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 18,
+    "viewers": 19,
     "started_at": "2026-02-26T15:50:29Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】2月もおわりですね【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-26T15:37:07Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +50,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 11,
+    "viewers": 14,
     "started_at": "2026-02-26T13:01:58Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 10,
+    "viewers": 12,
     "started_at": "2026-02-26T15:06:47Z"
   },
   {
