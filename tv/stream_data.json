@@ -5,17 +5,8 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 39,
+    "viewers": 54,
     "started_at": "2026-02-26T13:27:25Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day74【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 34,
-    "started_at": "2026-02-26T10:29:24Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 32,
+    "viewers": 38,
     "started_at": "2026-02-26T15:37:07Z"
   },
   {
@@ -32,26 +23,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 22,
+    "viewers": 25,
     "started_at": "2026-02-26T14:51:22Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】寝る前に少しだけ",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 20,
-    "started_at": "2026-02-26T15:06:47Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "お腹壊した。入眠クリコン ランク S18 暗黒騎士（500/1100）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-26T15:50:29Z"
   },
   {
     "platform": "YouTube",
@@ -59,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=j3tEx_-D3Mg",
     "thumbnail": "https://i.ytimg.com/vi/j3tEx_-D3Mg/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-26T15:39:49Z"
   },
   {
@@ -68,7 +41,7 @@
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-26T12:07:12Z"
   }
 ]
