@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 64,
+    "viewers": 75,
     "started_at": "2026-02-26T11:55:36Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 51,
+    "viewers": 50,
     "started_at": "2026-02-26T10:29:24Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 19,
+    "viewers": 16,
     "started_at": "2026-02-26T12:29:24Z"
   },
   {
@@ -32,17 +32,26 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 12,
+    "viewers": 16,
     "started_at": "2026-02-26T11:53:17Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】ウォーミングアップと練習をかねて22時までカジュアルぶん回し〜クリコン〜22時からは泥酔クリコン部カスタム！",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-26T11:40:34Z"
+    "title": "【ff14クリコン】22:30～チーム練習！！召喚でファイトー！！！対戦➤こしあん様",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-26T13:01:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #95 ～ 泥酔カスタム🍺 今日は1勝くらいしてみたいにゃん♪～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-26T13:00:16Z"
   },
   {
     "platform": "Twitch",
@@ -52,6 +61,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
     "viewers": 4,
     "started_at": "2026-02-26T12:42:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ウォーミングアップと練習をかねて22時までカジュアルぶん回し〜クリコン〜22時からは泥酔クリコン部カスタム！",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-26T11:40:34Z"
   },
   {
     "platform": "Twitch",
