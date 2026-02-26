@@ -1,30 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】2月もおわりですね【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 49,
-    "started_at": "2026-02-26T15:37:07Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【第119話】試験的読み上げ導入【FFXIV：クリコン】",
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 48,
+    "viewers": 54,
     "started_at": "2026-02-26T14:51:22Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】2月もおわりですね【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=j3tEx_-D3Mg",
-    "thumbnail": "https://i.ytimg.com/vi/j3tEx_-D3Mg/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-26T15:39:49Z"
   },
   {
     "platform": "Twitch",
