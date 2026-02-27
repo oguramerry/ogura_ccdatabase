@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 57,
+    "viewers": 59,
     "started_at": "2026-02-27T13:26:05Z"
   },
   {
@@ -14,26 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 40,
+    "viewers": 44,
     "started_at": "2026-02-27T12:08:57Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】あと3日？！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 18,
-    "started_at": "2026-02-27T16:05:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #96 ～ 泥酔カスタム🍺 チーム練習最終日！1歩でも成長するために！～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-02-27T13:02:59Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +23,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 13,
+    "viewers": 17,
     "started_at": "2026-02-27T15:28:56Z"
   },
   {
@@ -50,8 +32,26 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 13,
+    "viewers": 17,
     "started_at": "2026-02-27T15:11:15Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #96 ～ 泥酔カスタム🍺 チーム練習最終日！1歩でも成長するために！～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-02-27T13:02:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】あと3日？！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-02-27T16:05:38Z"
   },
   {
     "platform": "Twitch",
@@ -68,26 +68,8 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=44o2jtfkKu0",
     "thumbnail": "https://i.ytimg.com/vi/44o2jtfkKu0/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-27T11:50:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】びぎなークリコン",
-    "streamer": "ふらと_",
-    "url": "https://www.twitch.tv/phrato_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
     "viewers": 2,
-    "started_at": "2026-02-27T16:43:26Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】あと3日？！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=7mx38MJHC-s",
-    "thumbnail": "https://i.ytimg.com/vi/7mx38MJHC-s/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-27T16:06:07Z"
+    "started_at": "2026-02-27T11:50:23Z"
   },
   {
     "platform": "YouTube",
@@ -115,5 +97,23 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-27T15:26:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】びぎなークリコン",
+    "streamer": "ふらと_",
+    "url": "https://www.twitch.tv/phrato_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-27T16:43:26Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】あと3日？！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=7mx38MJHC-s",
+    "thumbnail": "https://i.ytimg.com/vi/7mx38MJHC-s/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-27T16:06:07Z"
   }
 ]
