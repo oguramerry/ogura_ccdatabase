@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 72,
+    "viewers": 70,
     "started_at": "2026-02-27T11:18:31Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【#FF14 】シーズンもうすぐ終わりの駆け込みランクマッチ【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 35,
-    "started_at": "2026-02-27T08:34:34Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 26,
+    "viewers": 32,
     "started_at": "2026-02-27T12:08:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【#FF14 】シーズンもうすぐ終わりの駆け込みランクマッチ【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-02-27T08:34:34Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "稲妻かなめ",
     "url": "https://www.twitch.tv/kaname_online",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaname_online-320x180.jpg",
-    "viewers": 16,
+    "viewers": 20,
     "started_at": "2026-02-27T12:14:21Z"
   },
   {
@@ -41,17 +41,8 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=oTZIvJrYpCI",
     "thumbnail": "https://i.ytimg.com/vi/oTZIvJrYpCI/mqdefault_live.jpg",
-    "viewers": 14,
+    "viewers": 12,
     "started_at": "2026-02-27T11:27:29Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン強化月間最終日!!!なるべくランク、心折れたらカジュアル☆【ff14】イベント、マシャ応援隊もできれば。",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-02-27T10:00:47Z"
   },
   {
     "platform": "YouTube",
@@ -59,7 +50,7 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=44o2jtfkKu0",
     "thumbnail": "https://i.ytimg.com/vi/44o2jtfkKu0/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-27T11:50:23Z"
   }
 ]
