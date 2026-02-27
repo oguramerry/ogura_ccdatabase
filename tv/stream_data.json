@@ -1,21 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】クリコンチム連 FFのりくりゅうと成りて─。",
+    "title": "【FF14】クリコン散る部",
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 45,
+    "viewers": 52,
     "started_at": "2026-02-27T13:26:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14【PvP】クリコンやる☆",
-    "streamer": "ゃんゃん",
-    "url": "https://www.twitch.tv/yanyan2525",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 40,
-    "started_at": "2026-02-27T12:47:37Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 38,
+    "viewers": 42,
     "started_at": "2026-02-27T12:08:57Z"
   },
   {
@@ -32,7 +23,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 26,
+    "viewers": 36,
     "started_at": "2026-02-27T11:18:31Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 22,
+    "viewers": 23,
     "started_at": "2026-02-27T13:00:19Z"
   },
   {
@@ -50,17 +41,17 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 12,
+    "viewers": 16,
     "started_at": "2026-02-27T15:11:15Z"
   },
   {
     "platform": "Twitch",
-    "title": "【#FF14 】シーズンもうすぐ終わりの駆け込みランクマッチ【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "title": "【クリコン】あと3日？！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
     "viewers": 11,
-    "started_at": "2026-02-27T08:34:34Z"
+    "started_at": "2026-02-27T16:05:38Z"
   },
   {
     "platform": "Twitch",
@@ -73,39 +64,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-27T13:24:34Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】猫又クリコン部 #96 ～ 泥酔カスタム🍺 チーム練習最終日！1歩でも成長するために！～",
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 8,
+    "viewers": 7,
     "started_at": "2026-02-27T13:02:59Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】最近クリコンにハマってる民【Vtuber】",
-    "streamer": "レモンティアー",
-    "url": "https://www.youtube.com/watch?v=c-42jGlqSR0",
-    "thumbnail": "https://i.ytimg.com/vi/c-42jGlqSR0/mqdefault_live.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-27T15:46:28Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=FrkolHmRm94",
-    "thumbnail": "https://i.ytimg.com/vi/FrkolHmRm94/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-27T13:24:53Z"
   },
   {
     "platform": "Twitch",
@@ -113,8 +77,17 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 3,
+    "viewers": 6,
     "started_at": "2026-02-27T13:00:46Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】最近クリコンにハマってる民【Vtuber】",
+    "streamer": "レモンティアー",
+    "url": "https://www.youtube.com/watch?v=c-42jGlqSR0",
+    "thumbnail": "https://i.ytimg.com/vi/c-42jGlqSR0/mqdefault_live.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-27T15:46:28Z"
   },
   {
     "platform": "YouTube",
@@ -122,8 +95,17 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=44o2jtfkKu0",
     "thumbnail": "https://i.ytimg.com/vi/44o2jtfkKu0/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-27T11:50:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】絶クリスタルコンフリクト討滅戦【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-27T15:26:45Z"
   },
   {
     "platform": "Twitch",
@@ -142,5 +124,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-27T15:26:45Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】あと3日？！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=7mx38MJHC-s",
+    "thumbnail": "https://i.ytimg.com/vi/7mx38MJHC-s/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-27T16:06:07Z"
   }
 ]
