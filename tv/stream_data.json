@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day75【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 57,
-    "started_at": "2026-02-27T12:08:57Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】クリコンランクマ→フロントライン",
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 30,
+    "viewers": 23,
     "started_at": "2026-02-27T15:11:15Z"
   },
   {
@@ -23,16 +14,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 17,
+    "viewers": 20,
     "started_at": "2026-02-27T15:28:56Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】最近クリコンにハマってる民【Vtuber】",
-    "streamer": "レモンティアー",
-    "url": "https://www.youtube.com/watch?v=c-42jGlqSR0",
-    "thumbnail": "https://i.ytimg.com/vi/c-42jGlqSR0/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-27T15:46:28Z"
   }
 ]
