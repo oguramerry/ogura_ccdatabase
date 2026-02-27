@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 60,
+    "viewers": 57,
     "started_at": "2026-02-27T13:26:05Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 40,
     "started_at": "2026-02-27T12:08:57Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 24,
+    "viewers": 18,
     "started_at": "2026-02-27T16:05:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコンランクマ→フロントライン",
-    "streamer": "じゅきん",
-    "url": "https://www.twitch.tv/tufujukin",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-02-27T15:11:15Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 15,
+    "viewers": 16,
     "started_at": "2026-02-27T13:02:59Z"
   },
   {
@@ -50,8 +41,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 11,
+    "viewers": 13,
     "started_at": "2026-02-27T15:28:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンランクマ→フロントライン",
+    "streamer": "じゅきん",
+    "url": "https://www.twitch.tv/tufujukin",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-27T15:11:15Z"
   },
   {
     "platform": "Twitch",
@@ -64,21 +64,30 @@
   },
   {
     "platform": "YouTube",
-    "title": "【クリコン】あと3日？！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=7mx38MJHC-s",
-    "thumbnail": "https://i.ytimg.com/vi/7mx38MJHC-s/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-27T16:06:07Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "[FF14] 零式4層練習とクリコンする！",
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=44o2jtfkKu0",
     "thumbnail": "https://i.ytimg.com/vi/44o2jtfkKu0/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-27T11:50:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】びぎなークリコン",
+    "streamer": "ふらと_",
+    "url": "https://www.twitch.tv/phrato_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-27T16:43:26Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】あと3日？！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=7mx38MJHC-s",
+    "thumbnail": "https://i.ytimg.com/vi/7mx38MJHC-s/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-27T16:06:07Z"
   },
   {
     "platform": "YouTube",
@@ -106,14 +115,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-27T15:26:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】びぎなークリコン",
-    "streamer": "ふらと_",
-    "url": "https://www.twitch.tv/phrato_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phrato_-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-27T16:43:26Z"
   }
 ]
