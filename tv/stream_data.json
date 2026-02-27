@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 70,
+    "viewers": 56,
     "started_at": "2026-02-27T11:18:31Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 32,
+    "viewers": 38,
     "started_at": "2026-02-27T12:08:57Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 31,
+    "viewers": 26,
     "started_at": "2026-02-27T08:34:34Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "稲妻かなめ",
     "url": "https://www.twitch.tv/kaname_online",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaname_online-320x180.jpg",
-    "viewers": 20,
+    "viewers": 23,
     "started_at": "2026-02-27T12:14:21Z"
   },
   {
@@ -45,12 +45,39 @@
     "started_at": "2026-02-27T11:27:29Z"
   },
   {
+    "platform": "Twitch",
+    "title": "FF14【PvP】クリコンやる☆",
+    "streamer": "ゃんゃん",
+    "url": "https://www.twitch.tv/yanyan2525",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-27T12:47:37Z"
+  },
+  {
     "platform": "YouTube",
     "title": "[FF14] 零式4層練習とクリコンする！",
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=44o2jtfkKu0",
     "thumbnail": "https://i.ytimg.com/vi/44o2jtfkKu0/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-02-27T11:50:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】冷笑したら終了。 #FF14 えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-27T12:58:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
+    "streamer": "ソタです",
+    "url": "https://www.twitch.tv/aigosota",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-27T13:00:07Z"
   }
 ]
