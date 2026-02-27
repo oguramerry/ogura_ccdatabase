@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 48,
+    "viewers": 46,
     "started_at": "2026-02-27T13:26:05Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 39,
     "started_at": "2026-02-27T12:08:57Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 21,
+    "viewers": 22,
     "started_at": "2026-02-27T15:11:15Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "今週もおつかれさまでした。クリコン ランク S18 暗黒騎士（D1/1100）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 18,
-    "started_at": "2026-02-27T15:28:56Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 16,
+    "viewers": 19,
     "started_at": "2026-02-27T16:05:38Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "今週もおつかれさまでした。クリコン ランク S18 暗黒騎士（D1/1100）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-02-27T15:28:56Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +50,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=7mx38MJHC-s",
     "thumbnail": "https://i.ytimg.com/vi/7mx38MJHC-s/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 1,
     "started_at": "2026-02-27T16:06:07Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "レモンティアー",
     "url": "https://www.youtube.com/watch?v=c-42jGlqSR0",
     "thumbnail": "https://i.ytimg.com/vi/c-42jGlqSR0/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 0,
     "started_at": "2026-02-27T15:46:28Z"
   }
 ]
