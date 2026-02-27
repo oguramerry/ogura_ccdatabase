@@ -1,15 +1,6 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】クリコンチム連 FFのりくりゅうと成りて─。",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 56,
-    "started_at": "2026-02-27T13:26:05Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "FF14【PvP】クリコンやる☆",
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
@@ -19,11 +10,20 @@
   },
   {
     "platform": "Twitch",
+    "title": "【FF14】クリコンチム連 FFのりくりゅうと成りて─。",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 48,
+    "started_at": "2026-02-27T13:26:05Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day75【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 37,
+    "viewers": 35,
     "started_at": "2026-02-27T12:08:57Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 23,
+    "viewers": 24,
     "started_at": "2026-02-27T13:00:19Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 22,
+    "viewers": 21,
     "started_at": "2026-02-27T11:18:31Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=oTZIvJrYpCI",
     "thumbnail": "https://i.ytimg.com/vi/oTZIvJrYpCI/mqdefault_live.jpg",
-    "viewers": 19,
+    "viewers": 15,
     "started_at": "2026-02-27T11:27:29Z"
   },
   {
@@ -59,8 +59,26 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 15,
+    "viewers": 14,
     "started_at": "2026-02-27T08:34:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンランクマ→フロントライン",
+    "streamer": "じゅきん",
+    "url": "https://www.twitch.tv/tufujukin",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-27T15:11:15Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンランクマ→フロントライン",
+    "streamer": "じゅきん",
+    "url": "https://www.twitch.tv/tufujukin",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-27T15:11:15Z"
   },
   {
     "platform": "Twitch",
@@ -68,7 +86,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-02-27T13:02:59Z"
   },
   {
@@ -77,17 +95,35 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 6,
+    "viewers": 8,
     "started_at": "2026-02-27T13:24:34Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】クリコンランクマ→フロントライン",
-    "streamer": "じゅきん",
-    "url": "https://www.twitch.tv/tufujukin",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-27T15:11:15Z"
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-27T13:24:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #96 ～ 泥酔カスタム🍺 チーム練習最終日！1歩でも成長するために！～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-02-27T13:02:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "今週もおつかれさまでした。クリコン ランク S18 暗黒騎士（D1/1100）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-02-27T15:28:56Z"
   },
   {
     "platform": "YouTube",
@@ -95,7 +131,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=FrkolHmRm94",
     "thumbnail": "https://i.ytimg.com/vi/FrkolHmRm94/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-02-27T13:24:53Z"
   },
   {
@@ -104,7 +140,7 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-02-27T13:00:46Z"
   },
   {
@@ -118,12 +154,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "今週もおつかれさまでした。クリコン ランク S18 暗黒騎士（D1/1100）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "title": "【FF14】絶クリスタルコンフリクト討滅戦【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 2,
-    "started_at": "2026-02-27T15:28:56Z"
+    "started_at": "2026-02-27T15:26:45Z"
   },
   {
     "platform": "Twitch",
@@ -133,14 +169,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-02-27T13:01:24Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】絶クリスタルコンフリクト討滅戦【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-27T15:26:45Z"
   }
 ]
