@@ -5,7 +5,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 22,
+    "viewers": 21,
     "started_at": "2026-02-27T15:11:15Z"
   },
   {
@@ -16,5 +16,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
     "viewers": 18,
     "started_at": "2026-02-27T15:28:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "18+ :) in crystalline conflict aufs maul bekommen",
+    "streamer": "asiandelicacyy",
+    "url": "https://www.twitch.tv/asiandelicacyy",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asiandelicacyy-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-27T20:15:14Z"
   }
 ]
