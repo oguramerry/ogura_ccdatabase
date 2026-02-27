@@ -5,7 +5,25 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 35,
+    "viewers": 42,
     "started_at": "2026-02-27T07:53:26Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【#FF14 】シーズンもうすぐ終わりの駆け込みランクマッチ【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-27T08:34:34Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "クリコン　機工士　ランクマ　シャキらない時カジュアル",
+    "streamer": "ナスおじ戦カミチャンネル",
+    "url": "https://www.youtube.com/watch?v=I-bhA-LV4jU",
+    "thumbnail": "https://i.ytimg.com/vi/I-bhA-LV4jU/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-27T08:39:21Z"
   }
 ]
