@@ -5,8 +5,17 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 43,
+    "viewers": 45,
     "started_at": "2026-02-27T08:34:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～『PlaycePeak様』と鳥華族のチームスクリムします（JP CC RANK）⇒【APEX】参加歓迎です！ランクマッチ！現在シルバー帯です！",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-02-27T11:18:31Z"
   },
   {
     "platform": "YouTube",
@@ -14,7 +23,7 @@
     "streamer": "ナスおじ戦カミチャンネル",
     "url": "https://www.youtube.com/watch?v=I-bhA-LV4jU",
     "thumbnail": "https://i.ytimg.com/vi/I-bhA-LV4jU/mqdefault_live.jpg",
-    "viewers": 15,
+    "viewers": 14,
     "started_at": "2026-02-27T08:39:21Z"
   },
   {
@@ -23,7 +32,16 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 8,
+    "viewers": 10,
     "started_at": "2026-02-27T10:00:47Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】今日はクリコンカジュアルで楽しもうぜ！【クリコンカジュアル】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=oTZIvJrYpCI",
+    "thumbnail": "https://i.ytimg.com/vi/oTZIvJrYpCI/mqdefault_live.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-27T11:27:29Z"
   }
 ]
