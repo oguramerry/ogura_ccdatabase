@@ -5,17 +5,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 32,
+    "viewers": 34,
     "started_at": "2026-02-28T15:41:04Z"
   },
   {
     "platform": "Twitch",
-    "title": "【第120話】Yahi param vaastavikta hai【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 29,
-    "started_at": "2026-02-28T15:09:59Z"
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-28T19:57:29Z"
   },
   {
     "platform": "YouTube",
@@ -23,7 +23,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=eFBLYHhG_4Q",
     "thumbnail": "https://i.ytimg.com/vi/eFBLYHhG_4Q/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 2,
     "started_at": "2026-02-28T15:41:45Z"
   }
 ]
