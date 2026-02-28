@@ -5,7 +5,7 @@
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 49,
+    "viewers": 47,
     "started_at": "2026-02-28T13:41:39Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 46,
+    "viewers": 43,
     "started_at": "2026-02-28T12:28:09Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 32,
+    "viewers": 26,
     "started_at": "2026-02-28T15:09:59Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 23,
-    "started_at": "2026-02-28T15:41:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day76【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
     "viewers": 20,
-    "started_at": "2026-02-28T07:07:26Z"
+    "started_at": "2026-02-28T15:41:04Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 18,
+    "viewers": 19,
     "started_at": "2026-02-28T13:00:23Z"
   },
   {
@@ -59,7 +50,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
     "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 13,
     "started_at": "2026-02-28T12:29:10Z"
   },
   {
@@ -68,7 +59,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=eFBLYHhG_4Q",
     "thumbnail": "https://i.ytimg.com/vi/eFBLYHhG_4Q/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-02-28T15:41:45Z"
   },
   {
