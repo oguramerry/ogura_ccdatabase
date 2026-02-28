@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day76【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 47,
-    "started_at": "2026-02-28T07:07:26Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン、やらせてください！",
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 46,
+    "viewers": 48,
     "started_at": "2026-02-28T05:38:38Z"
   },
   {
@@ -23,8 +14,17 @@
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 33,
+    "viewers": 42,
     "started_at": "2026-02-28T13:41:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day76【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 39,
+    "started_at": "2026-02-28T07:07:26Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +32,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 19,
+    "viewers": 20,
     "started_at": "2026-02-28T12:28:09Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～#エペ魔撃杯に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 20,
+    "started_at": "2026-02-28T11:15:40Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +50,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=SfX76hVYal4",
     "thumbnail": "https://i.ytimg.com/vi/SfX76hVYal4/mqdefault_live.jpg",
-    "viewers": 13,
+    "viewers": 19,
     "started_at": "2026-02-28T12:10:08Z"
   },
   {
@@ -50,26 +59,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 13,
+    "viewers": 17,
     "started_at": "2026-02-28T15:09:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～#エペ魔撃杯に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-28T11:15:40Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
-    "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-28T12:29:10Z"
   },
   {
     "platform": "YouTube",
@@ -77,8 +68,17 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
     "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 14,
     "started_at": "2026-02-28T11:48:03Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
+    "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-28T12:29:10Z"
   },
   {
     "platform": "Twitch",
@@ -86,7 +86,7 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 7,
+    "viewers": 9,
     "started_at": "2026-02-28T11:20:56Z"
   },
   {
@@ -95,8 +95,26 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 3,
+    "viewers": 6,
     "started_at": "2026-02-28T14:34:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】今こそ踏ん張る時【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-28T15:41:04Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "FF14 竜騎士でクリコンランクマッチ",
+    "streamer": "まぐちゃんねる",
+    "url": "https://www.youtube.com/watch?v=akpRxFHHOSw",
+    "thumbnail": "https://i.ytimg.com/vi/akpRxFHHOSw/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-28T15:15:51Z"
   },
   {
     "platform": "YouTube",
@@ -106,6 +124,15 @@
     "thumbnail": "https://i.ytimg.com/vi/oEevnIH7xJs/mqdefault_live.jpg",
     "viewers": 2,
     "started_at": "2026-02-28T13:12:02Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "クリコン",
+    "streamer": "Gaku",
+    "url": "https://www.youtube.com/watch?v=zFeg-708EYU",
+    "thumbnail": "https://i.ytimg.com/vi/zFeg-708EYU/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-28T15:01:49Z"
   },
   {
     "platform": "Twitch",
@@ -127,20 +154,11 @@
   },
   {
     "platform": "YouTube",
-    "title": "FF14 竜騎士でクリコンランクマッチ",
-    "streamer": "まぐちゃんねる",
-    "url": "https://www.youtube.com/watch?v=akpRxFHHOSw",
-    "thumbnail": "https://i.ytimg.com/vi/akpRxFHHOSw/mqdefault_live.jpg",
+    "title": "【クリコン】今こそ踏ん張る時【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=eFBLYHhG_4Q",
+    "thumbnail": "https://i.ytimg.com/vi/eFBLYHhG_4Q/mqdefault_live.jpg",
     "viewers": 0,
-    "started_at": "2026-02-28T15:15:51Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "クリコン",
-    "streamer": "Gaku",
-    "url": "https://www.youtube.com/watch?v=zFeg-708EYU",
-    "thumbnail": "https://i.ytimg.com/vi/zFeg-708EYU/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-28T15:01:49Z"
+    "started_at": "2026-02-28T15:41:45Z"
   }
 ]
