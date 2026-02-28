@@ -5,7 +5,7 @@
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 45,
+    "viewers": 49,
     "started_at": "2026-02-28T13:41:39Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 35,
+    "viewers": 37,
     "started_at": "2026-02-28T07:07:26Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～#エペ魔撃杯に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 33,
-    "started_at": "2026-02-28T11:15:40Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 30,
+    "viewers": 29,
     "started_at": "2026-02-28T15:09:59Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 25,
+    "viewers": 21,
     "started_at": "2026-02-28T15:36:25Z"
   },
   {
@@ -50,8 +41,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 21,
+    "viewers": 19,
     "started_at": "2026-02-28T12:28:09Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～#エペ魔撃杯に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-02-28T11:15:40Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +59,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 14,
+    "viewers": 17,
     "started_at": "2026-02-28T15:41:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14 クリコン】エペ→ランクマ行くぞ！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-02-28T13:00:23Z"
   },
   {
     "platform": "YouTube",
@@ -72,33 +81,6 @@
     "started_at": "2026-02-28T12:29:10Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】エペ→ランクマ行くぞ！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-28T13:00:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】また風邪ひいた説ある",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-02-28T14:34:37Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】走れ！ランクマ！【クリコンランクマ】【侍】【ヴァイパー】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
-    "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-02-28T11:48:03Z"
-  },
-  {
     "platform": "YouTube",
     "title": "クリコン",
     "streamer": "Gaku",
@@ -108,22 +90,22 @@
     "started_at": "2026-02-28T15:01:49Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコン ランクマで斬鉄剣するだけ",
-    "streamer": "コンガナジャイ",
-    "url": "https://www.twitch.tv/konbanhag",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-28T15:03:45Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【クリコン】今こそ踏ん張る時【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=eFBLYHhG_4Q",
     "thumbnail": "https://i.ytimg.com/vi/eFBLYHhG_4Q/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-02-28T15:41:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン ランクマで斬鉄剣するだけ",
+    "streamer": "コンガナジャイ",
+    "url": "https://www.twitch.tv/konbanhag",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-28T15:03:45Z"
   },
   {
     "platform": "YouTube",
