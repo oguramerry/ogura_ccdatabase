@@ -5,8 +5,17 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 76,
+    "viewers": 75,
     "started_at": "2026-02-28T05:38:38Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（ @reyo_sandayo ）とりお_ぶいちゅばさん（ @rio_hyk ）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 47,
+    "started_at": "2026-02-28T11:15:40Z"
   },
   {
     "platform": "Twitch",
@@ -19,20 +28,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（ @reyo_sandayo ）とりお_ぶいちゅばさん（ @rio_hyk ）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 40,
-    "started_at": "2026-02-28T11:15:40Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン：泥酔クリコン部】大会本番頑張るにゃん🎵22時〜『月末杯』 @celavi_ch",
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 21,
+    "viewers": 23,
     "started_at": "2026-02-28T10:12:04Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 7,
+    "viewers": 9,
     "started_at": "2026-02-28T11:15:50Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
     "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-02-28T11:48:03Z"
   },
   {
@@ -64,11 +64,11 @@
   },
   {
     "platform": "YouTube",
-    "title": "[FF14] 零式4層練習とクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=KGonwn0xwJo",
-    "thumbnail": "https://i.ytimg.com/vi/KGonwn0xwJo/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-28T11:46:21Z"
+    "title": "【FF14/PVP】のんびりクリコンカジュアルの回／S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=SfX76hVYal4",
+    "thumbnail": "https://i.ytimg.com/vi/SfX76hVYal4/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-28T12:10:08Z"
   }
 ]
