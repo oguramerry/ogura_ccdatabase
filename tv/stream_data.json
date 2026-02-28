@@ -1,21 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "Crystal Conflict and Frontlines Time",
-    "streamer": "BrianRicardo",
-    "url": "https://www.twitch.tv/brianricardo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 23,
-    "started_at": "2026-02-28T02:32:23Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "Crystal Conflict and Frontlines Time",
-    "streamer": "Brian Ricardo",
-    "url": "https://www.youtube.com/watch?v=2gRvnx4omrY",
-    "thumbnail": "https://i.ytimg.com/vi/2gRvnx4omrY/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-28T02:32:29Z"
+    "title": "【クリコン】既に疲労",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 22,
+    "started_at": "2026-02-28T03:59:41Z"
   },
   {
     "platform": "YouTube",
@@ -25,14 +16,5 @@
     "thumbnail": "https://i.ytimg.com/vi/-98rqsZsPgE/mqdefault_live.jpg",
     "viewers": 0,
     "started_at": "2026-02-28T03:19:12Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "Crystal Conflict and Frontlines Time",
-    "streamer": "Brian Ricardo Highlights",
-    "url": "https://www.youtube.com/watch?v=3NrbPK230oY",
-    "thumbnail": "https://i.ytimg.com/vi/3NrbPK230oY/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-02-28T02:32:31Z"
   }
 ]
