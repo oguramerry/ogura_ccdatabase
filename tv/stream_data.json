@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 99,
+    "viewers": 107,
     "started_at": "2026-02-28T12:49:19Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 66,
+    "viewers": 59,
     "started_at": "2026-02-28T05:38:38Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 39,
+    "viewers": 42,
     "started_at": "2026-02-28T07:07:26Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン：泥酔クリコン部】大会本番頑張るにゃん🎵22時〜『月末杯』 @celavi_ch",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 22,
-    "started_at": "2026-02-28T10:12:04Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,7 @@
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 21,
+    "viewers": 37,
     "started_at": "2026-02-28T13:41:39Z"
   },
   {
@@ -50,17 +41,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 18,
+    "viewers": 22,
     "started_at": "2026-02-28T12:28:09Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14/PVP】のんびりクリコンカジュアルの回／S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
-    "streamer": "せんとうっど",
-    "url": "https://www.youtube.com/watch?v=SfX76hVYal4",
-    "thumbnail": "https://i.ytimg.com/vi/SfX76hVYal4/mqdefault_live.jpg",
-    "viewers": 12,
-    "started_at": "2026-02-28T12:10:08Z"
   },
   {
     "platform": "YouTube",
@@ -68,8 +50,26 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
     "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 14,
     "started_at": "2026-02-28T11:48:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：泥酔クリコン部】大会本番頑張るにゃん🎵22時〜『月末杯』 @celavi_ch",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-28T10:12:04Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14/PVP】のんびりクリコンカジュアルの回／S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=SfX76hVYal4",
+    "thumbnail": "https://i.ytimg.com/vi/SfX76hVYal4/mqdefault_live.jpg",
+    "viewers": 11,
+    "started_at": "2026-02-28T12:10:08Z"
   },
   {
     "platform": "YouTube",
@@ -77,7 +77,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
     "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
-    "viewers": 9,
+    "viewers": 10,
     "started_at": "2026-02-28T12:29:10Z"
   },
   {
@@ -86,7 +86,7 @@
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 8,
+    "viewers": 7,
     "started_at": "2026-02-28T11:15:50Z"
   },
   {
@@ -95,8 +95,26 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 6,
     "started_at": "2026-02-28T12:54:42Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】また風邪ひいた説ある",
+    "streamer": "ぴてぃわっと",
+    "url": "https://www.twitch.tv/pittywhat",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-28T12:55:12Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ウォーミングアップしとこうか！楽しもうか！22時時から〜クリコン泥酔クリコン部「月末杯」実況はセラヴィさんの配信へ",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-28T11:20:56Z"
   },
   {
     "platform": "YouTube",
@@ -108,30 +126,12 @@
     "started_at": "2026-02-28T13:09:03Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】ウォーミングアップしとこうか！楽しもうか！22時時から〜クリコン泥酔クリコン部「月末杯」実況はセラヴィさんの配信へ",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-28T11:20:56Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】また風邪ひいた説ある",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-28T12:55:12Z"
-  },
-  {
     "platform": "YouTube",
     "title": "[FF14] 零式4層練習とクリコンする！",
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=oEevnIH7xJs",
     "thumbnail": "https://i.ytimg.com/vi/oEevnIH7xJs/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-02-28T13:12:02Z"
   }
 ]
