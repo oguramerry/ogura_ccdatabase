@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 116,
+    "viewers": 108,
     "started_at": "2026-02-28T12:49:19Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 57,
+    "viewers": 50,
     "started_at": "2026-02-28T05:38:38Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 43,
+    "viewers": 40,
     "started_at": "2026-02-28T07:07:26Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 33,
+    "viewers": 34,
     "started_at": "2026-02-28T13:41:39Z"
   },
   {
@@ -41,8 +41,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 18,
+    "viewers": 17,
     "started_at": "2026-02-28T12:28:09Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
+    "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
+    "viewers": 13,
+    "started_at": "2026-02-28T12:29:10Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +59,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
     "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
-    "viewers": 14,
+    "viewers": 13,
     "started_at": "2026-02-28T11:48:03Z"
   },
   {
@@ -59,17 +68,8 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 14,
+    "viewers": 12,
     "started_at": "2026-02-28T10:12:04Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
-    "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-28T12:29:10Z"
   },
   {
     "platform": "YouTube",
@@ -77,7 +77,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=SfX76hVYal4",
     "thumbnail": "https://i.ytimg.com/vi/SfX76hVYal4/mqdefault_live.jpg",
-    "viewers": 10,
+    "viewers": 11,
     "started_at": "2026-02-28T12:10:08Z"
   },
   {
@@ -86,8 +86,8 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-28T12:55:12Z"
+    "viewers": 8,
+    "started_at": "2026-02-28T14:34:37Z"
   },
   {
     "platform": "Twitch",
@@ -95,7 +95,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-28T12:54:42Z"
   },
   {
@@ -109,20 +109,20 @@
   },
   {
     "platform": "YouTube",
-    "title": "【FINAL FANTASY XIV】 「同時視聴」月末杯 クリスタルコンフリクト非公式大会",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=5s2ws_a3cgU",
-    "thumbnail": "https://i.ytimg.com/vi/5s2ws_a3cgU/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-02-28T13:09:03Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "[FF14] 零式4層練習とクリコンする！",
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=oEevnIH7xJs",
     "thumbnail": "https://i.ytimg.com/vi/oEevnIH7xJs/mqdefault_live.jpg",
     "viewers": 2,
     "started_at": "2026-02-28T13:12:02Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FINAL FANTASY XIV】 「同時視聴」月末杯 クリスタルコンフリクト非公式大会",
+    "streamer": "ショウケイ",
+    "url": "https://www.youtube.com/watch?v=5s2ws_a3cgU",
+    "thumbnail": "https://i.ytimg.com/vi/5s2ws_a3cgU/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-28T13:09:03Z"
   }
 ]
