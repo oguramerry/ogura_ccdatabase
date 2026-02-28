@@ -5,17 +5,8 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 75,
+    "viewers": 67,
     "started_at": "2026-02-28T05:38:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（ @reyo_sandayo ）とりお_ぶいちゅばさん（ @rio_hyk ）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 47,
-    "started_at": "2026-02-28T11:15:40Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 43,
+    "viewers": 45,
     "started_at": "2026-02-28T07:07:26Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（ @reyo_sandayo ）とりお_ぶいちゅばさん（ @rio_hyk ）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 44,
+    "started_at": "2026-02-28T11:15:40Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +32,17 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 23,
+    "viewers": 28,
     "started_at": "2026-02-28T10:12:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ウォーミングアップしとこうか！楽しもうか！22時時から〜クリコン泥酔クリコン部「月末杯」実況はセラヴィさんの配信へ",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-02-28T11:20:56Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +59,8 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
     "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-02-28T11:48:03Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ウォーミングアップしとこうか！楽しもうか！22時時から〜クリコン泥酔クリコン部「月末杯」実況はセラヴィさんの配信へ",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-28T11:20:56Z"
   },
   {
     "platform": "YouTube",
@@ -68,7 +68,25 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=SfX76hVYal4",
     "thumbnail": "https://i.ytimg.com/vi/SfX76hVYal4/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 7,
     "started_at": "2026-02-28T12:10:08Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-02-28T12:28:09Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
+    "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-28T12:29:10Z"
   }
 ]
