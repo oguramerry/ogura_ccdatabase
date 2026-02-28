@@ -5,17 +5,17 @@
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 45,
+    "viewers": 41,
     "started_at": "2026-02-28T13:41:39Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day76【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 35,
-    "started_at": "2026-02-28T07:07:26Z"
+    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～#エペ魔撃杯に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-02-28T11:15:40Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +32,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 30,
+    "viewers": 27,
     "started_at": "2026-02-28T15:41:04Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～#エペ魔撃杯に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 30,
-    "started_at": "2026-02-28T11:15:40Z"
+    "title": "【FF14】超クリコン研究会 Day76【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 23,
+    "started_at": "2026-02-28T07:07:26Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +50,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 22,
+    "viewers": 23,
     "started_at": "2026-02-28T12:28:09Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】エペ→ランクマ行くぞ！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-02-28T13:00:23Z"
   },
   {
     "platform": "YouTube",
@@ -68,8 +59,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
     "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
-    "viewers": 13,
+    "viewers": 16,
     "started_at": "2026-02-28T12:29:10Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14 クリコン】エペ→ランクマ行くぞ！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-02-28T13:00:23Z"
   },
   {
     "platform": "YouTube",
