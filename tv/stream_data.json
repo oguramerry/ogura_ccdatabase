@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 75,
+    "viewers": 81,
     "started_at": "2026-02-28T05:38:38Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 51,
     "started_at": "2026-02-28T07:07:26Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 23,
+    "viewers": 30,
     "started_at": "2026-02-28T10:12:04Z"
   },
   {
@@ -43,5 +43,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
     "viewers": 4,
     "started_at": "2026-02-28T09:41:23Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] 零式4層練習とクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=OfT3o4dOl8s",
+    "thumbnail": "https://i.ytimg.com/vi/OfT3o4dOl8s/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-28T11:00:44Z"
   }
 ]
