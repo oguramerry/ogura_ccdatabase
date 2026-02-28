@@ -5,17 +5,8 @@
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 47,
+    "viewers": 48,
     "started_at": "2026-02-28T13:41:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 43,
-    "started_at": "2026-02-28T12:28:09Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 26,
+    "viewers": 23,
     "started_at": "2026-02-28T15:09:59Z"
   },
   {
@@ -32,26 +23,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 20,
+    "viewers": 22,
     "started_at": "2026-02-28T15:41:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】エペ→ランクマ行くぞ！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-02-28T13:00:23Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
-    "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
-    "viewers": 13,
-    "started_at": "2026-02-28T12:29:10Z"
   },
   {
     "platform": "YouTube",
@@ -59,16 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=eFBLYHhG_4Q",
     "thumbnail": "https://i.ytimg.com/vi/eFBLYHhG_4Q/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-02-28T15:41:45Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "クリコン",
-    "streamer": "Gaku",
-    "url": "https://www.youtube.com/watch?v=zFeg-708EYU",
-    "thumbnail": "https://i.ytimg.com/vi/zFeg-708EYU/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-28T15:01:49Z"
   }
 ]
