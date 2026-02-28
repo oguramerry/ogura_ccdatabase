@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコン、やらせてください！",
-    "streamer": "ひめきゃっと",
-    "url": "https://www.twitch.tv/gm9z",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 48,
-    "started_at": "2026-02-28T05:38:38Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "#クリコン",
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 42,
+    "viewers": 50,
     "started_at": "2026-02-28T13:41:39Z"
   },
   {
@@ -23,17 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 39,
+    "viewers": 44,
     "started_at": "2026-02-28T07:07:26Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 20,
-    "started_at": "2026-02-28T12:28:09Z"
+    "title": "クリコン、やらせてください！",
+    "streamer": "ひめきゃっと",
+    "url": "https://www.twitch.tv/gm9z",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-02-28T05:38:38Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,26 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 20,
+    "viewers": 30,
     "started_at": "2026-02-28T11:15:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第120話】Yahi param vaastavikta hai【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 25,
+    "started_at": "2026-02-28T15:09:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 22,
+    "started_at": "2026-02-28T12:28:09Z"
   },
   {
     "platform": "YouTube",
@@ -54,24 +63,6 @@
     "started_at": "2026-02-28T12:10:08Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【第120話】Yahi param vaastavikta hai【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-02-28T15:09:59Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】走れ！ランクマ！【クリコンランクマ】【侍】【ヴァイパー】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
-    "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
-    "viewers": 14,
-    "started_at": "2026-02-28T11:48:03Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
     "streamer": "鳥乃すずめ",
@@ -81,22 +72,22 @@
     "started_at": "2026-02-28T12:29:10Z"
   },
   {
+    "platform": "YouTube",
+    "title": "【FF14】走れ！ランクマ！【クリコンランクマ】【侍】【ヴァイパー】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
+    "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
+    "viewers": 12,
+    "started_at": "2026-02-28T11:48:03Z"
+  },
+  {
     "platform": "Twitch",
     "title": "【FF14】ウォーミングアップしとこうか！楽しもうか！22時時から〜クリコン泥酔クリコン部「月末杯」実況はセラヴィさんの配信へ",
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 9,
+    "viewers": 7,
     "started_at": "2026-02-28T11:20:56Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】また風邪ひいた説ある",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-28T14:34:37Z"
   },
   {
     "platform": "Twitch",
@@ -104,35 +95,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-28T15:41:04Z"
   },
   {
-    "platform": "YouTube",
-    "title": "FF14 竜騎士でクリコンランクマッチ",
-    "streamer": "まぐちゃんねる",
-    "url": "https://www.youtube.com/watch?v=akpRxFHHOSw",
-    "thumbnail": "https://i.ytimg.com/vi/akpRxFHHOSw/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-28T15:15:51Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "[FF14] 零式4層練習とクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=oEevnIH7xJs",
-    "thumbnail": "https://i.ytimg.com/vi/oEevnIH7xJs/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-02-28T13:12:02Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "クリコン",
-    "streamer": "Gaku",
-    "url": "https://www.youtube.com/watch?v=zFeg-708EYU",
-    "thumbnail": "https://i.ytimg.com/vi/zFeg-708EYU/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-02-28T15:01:49Z"
+    "platform": "Twitch",
+    "title": "【クリコン】また風邪ひいた説ある",
+    "streamer": "ぴてぃわっと",
+    "url": "https://www.twitch.tv/pittywhat",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-02-28T14:34:37Z"
   },
   {
     "platform": "Twitch",
@@ -140,8 +113,26 @@
     "streamer": "コンガナジャイ",
     "url": "https://www.twitch.tv/konbanhag",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 1,
+    "viewers": 4,
     "started_at": "2026-02-28T15:03:45Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "クリコン",
+    "streamer": "Gaku",
+    "url": "https://www.youtube.com/watch?v=zFeg-708EYU",
+    "thumbnail": "https://i.ytimg.com/vi/zFeg-708EYU/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-02-28T15:01:49Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] 零式4層練習とクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=oEevnIH7xJs",
+    "thumbnail": "https://i.ytimg.com/vi/oEevnIH7xJs/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-28T13:12:02Z"
   },
   {
     "platform": "Twitch",
@@ -160,5 +151,14 @@
     "thumbnail": "https://i.ytimg.com/vi/eFBLYHhG_4Q/mqdefault_live.jpg",
     "viewers": 0,
     "started_at": "2026-02-28T15:41:45Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "FF14 竜騎士でクリコンランクマッチ",
+    "streamer": "まぐちゃんねる",
+    "url": "https://www.youtube.com/watch?v=akpRxFHHOSw",
+    "thumbnail": "https://i.ytimg.com/vi/akpRxFHHOSw/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-28T15:15:51Z"
   }
 ]
