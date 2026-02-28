@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 79,
+    "viewers": 76,
     "started_at": "2026-02-28T05:38:38Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 43,
     "started_at": "2026-02-28T07:07:26Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン：泥酔クリコン部】大会本番頑張るにゃん🎵22時〜『月末杯』 @celavi_ch",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 22,
-    "started_at": "2026-02-28T10:12:04Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +23,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 22,
+    "viewers": 40,
     "started_at": "2026-02-28T11:15:40Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14】 たまにはカジュアルでもいかが？ 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=atG8HCQC4Qw",
-    "thumbnail": "https://i.ytimg.com/vi/atG8HCQC4Qw/mqdefault_live.jpg",
-    "viewers": 10,
-    "started_at": "2026-02-28T10:29:12Z"
+    "platform": "Twitch",
+    "title": "【クリコン：泥酔クリコン部】大会本番頑張るにゃん🎵22時〜『月末杯』 @celavi_ch",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-02-28T10:12:04Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +41,17 @@
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 8,
+    "viewers": 7,
     "started_at": "2026-02-28T11:15:50Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】走れ！ランクマ！【クリコンランクマ】【侍】【ヴァイパー】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=Z3xi2p_Ltrs",
+    "thumbnail": "https://i.ytimg.com/vi/Z3xi2p_Ltrs/mqdefault_live.jpg",
+    "viewers": 6,
+    "started_at": "2026-02-28T11:48:03Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +59,16 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-02-28T11:20:56Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] 零式4層練習とクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=KGonwn0xwJo",
+    "thumbnail": "https://i.ytimg.com/vi/KGonwn0xwJo/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-02-28T11:46:21Z"
   }
 ]
