@@ -7,5 +7,23 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_haihanagumo-320x180.jpg",
     "viewers": 6,
     "started_at": "2026-02-28T01:46:57Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "Crystal Conflict and Frontlines Time",
+    "streamer": "Brian Ricardo",
+    "url": "https://www.youtube.com/watch?v=2gRvnx4omrY",
+    "thumbnail": "https://i.ytimg.com/vi/2gRvnx4omrY/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-28T02:32:29Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "Crystal Conflict and Frontlines Time",
+    "streamer": "Brian Ricardo Highlights",
+    "url": "https://www.youtube.com/watch?v=3NrbPK230oY",
+    "thumbnail": "https://i.ytimg.com/vi/3NrbPK230oY/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-02-28T02:32:31Z"
   }
 ]
