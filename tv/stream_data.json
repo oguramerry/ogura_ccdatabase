@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【第120話】Yahi param vaastavikta hai【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-02-28T15:09:59Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】今こそ踏ん張る時【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 25,
+    "viewers": 35,
     "started_at": "2026-02-28T15:41:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第120話】Yahi param vaastavikta hai【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-02-28T15:09:59Z"
   },
   {
     "platform": "YouTube",
