@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 107,
+    "viewers": 116,
     "started_at": "2026-02-28T12:49:19Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 59,
+    "viewers": 57,
     "started_at": "2026-02-28T05:38:38Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 42,
+    "viewers": 43,
     "started_at": "2026-02-28T07:07:26Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "エルシャ",
     "url": "https://www.twitch.tv/elllsha",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elllsha-320x180.jpg",
-    "viewers": 37,
+    "viewers": 33,
     "started_at": "2026-02-28T13:41:39Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 22,
+    "viewers": 18,
     "started_at": "2026-02-28T12:28:09Z"
   },
   {
@@ -59,17 +59,8 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 13,
+    "viewers": 14,
     "started_at": "2026-02-28T10:12:04Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14/PVP】のんびりクリコンカジュアルの回／S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
-    "streamer": "せんとうっど",
-    "url": "https://www.youtube.com/watch?v=SfX76hVYal4",
-    "thumbnail": "https://i.ytimg.com/vi/SfX76hVYal4/mqdefault_live.jpg",
-    "viewers": 11,
-    "started_at": "2026-02-28T12:10:08Z"
   },
   {
     "platform": "YouTube",
@@ -77,26 +68,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=dzbCzuJ4Jb4",
     "thumbnail": "https://i.ytimg.com/vi/dzbCzuJ4Jb4/mqdefault_live.jpg",
-    "viewers": 10,
+    "viewers": 11,
     "started_at": "2026-02-28T12:29:10Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】ブロンズのクリコン会場",
-    "streamer": "るりむい",
-    "url": "https://www.twitch.tv/ruri_muy",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-02-28T11:15:50Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】泥酔クリコン部 ～ 月末杯 @celavi_ch～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-02-28T12:54:42Z"
+    "platform": "YouTube",
+    "title": "【FF14/PVP】のんびりクリコンカジュアルの回／S17【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=SfX76hVYal4",
+    "thumbnail": "https://i.ytimg.com/vi/SfX76hVYal4/mqdefault_live.jpg",
+    "viewers": 10,
+    "started_at": "2026-02-28T12:10:08Z"
   },
   {
     "platform": "Twitch",
@@ -104,8 +86,17 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 5,
+    "viewers": 10,
     "started_at": "2026-02-28T12:55:12Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】泥酔クリコン部 ～ 月末杯 @celavi_ch～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-02-28T12:54:42Z"
   },
   {
     "platform": "Twitch",
