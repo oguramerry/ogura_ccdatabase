@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 32,
+    "viewers": 31,
     "started_at": "2026-03-01T11:01:22Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 19,
+    "viewers": 21,
     "started_at": "2026-03-01T15:38:38Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 15,
+    "viewers": 20,
     "started_at": "2026-03-01T12:44:09Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-01T13:24:38Z"
   },
   {
     "platform": "Twitch",
@@ -41,26 +32,8 @@
     "streamer": "MedohMeshi",
     "url": "https://www.twitch.tv/medohmeshi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 9,
+    "viewers": 6,
     "started_at": "2026-03-01T15:39:00Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
-    "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-01T13:24:58Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
-    "streamer": "ソタです",
-    "url": "https://www.twitch.tv/aigosota",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-01T13:45:05Z"
   },
   {
     "platform": "YouTube",
@@ -68,17 +41,8 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
     "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-01T12:04:27Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】出勤【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=wxnDW-Taqs0",
-    "thumbnail": "https://i.ytimg.com/vi/wxnDW-Taqs0/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-03-01T15:39:11Z"
   },
   {
     "platform": "Twitch",
@@ -86,7 +50,25 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 0,
+    "viewers": 2,
     "started_at": "2026-03-01T16:14:10Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
+    "streamer": "ソタです",
+    "url": "https://www.twitch.tv/aigosota",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-01T13:45:05Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】出勤【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=wxnDW-Taqs0",
+    "thumbnail": "https://i.ytimg.com/vi/wxnDW-Taqs0/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-01T15:39:11Z"
   }
 ]
