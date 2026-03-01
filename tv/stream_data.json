@@ -5,8 +5,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 51,
+    "viewers": 36,
     "started_at": "2026-03-01T11:01:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】出勤【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-01T15:38:38Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 12,
+    "viewers": 14,
     "started_at": "2026-03-01T12:44:09Z"
   },
   {
@@ -27,31 +36,13 @@
     "started_at": "2026-03-01T13:24:58Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14】クリスタルコンフリクト【PvP】",
-    "streamer": "八雲無月",
-    "url": "https://www.youtube.com/watch?v=tpyxCUmG9Os",
-    "thumbnail": "https://i.ytimg.com/vi/tpyxCUmG9Os/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-01T14:28:25Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "[FF14] 零式4層練習とクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
-    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-01T12:04:27Z"
-  },
-  {
     "platform": "Twitch",
-    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
-    "streamer": "ソタです",
-    "url": "https://www.twitch.tv/aigosota",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-01T13:45:05Z"
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-01T13:24:38Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +50,26 @@
     "streamer": "MedohMeshi",
     "url": "https://www.twitch.tv/medohmeshi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 1,
+    "viewers": 6,
     "started_at": "2026-03-01T15:39:00Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
+    "streamer": "ソタです",
+    "url": "https://www.twitch.tv/aigosota",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-01T13:45:05Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] 零式4層練習とクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
+    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-01T12:04:27Z"
   },
   {
     "platform": "YouTube",
