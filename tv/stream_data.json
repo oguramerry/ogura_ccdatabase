@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 43,
+    "viewers": 52,
     "started_at": "2026-03-01T11:01:22Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 15,
+    "viewers": 14,
     "started_at": "2026-03-01T11:50:39Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 14,
+    "viewers": 11,
     "started_at": "2026-03-01T12:44:09Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-03-01T13:24:38Z"
   },
   {
@@ -41,17 +41,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
     "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 6,
     "started_at": "2026-03-01T13:24:58Z"
   },
   {
     "platform": "YouTube",
-    "title": "[FF14] 零式4層練習とクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
-    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-01T12:04:27Z"
+    "title": "【FF14】クリスタルコンフリクト【PvP】",
+    "streamer": "八雲無月",
+    "url": "https://www.youtube.com/watch?v=tpyxCUmG9Os",
+    "thumbnail": "https://i.ytimg.com/vi/tpyxCUmG9Os/mqdefault_live.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-01T14:28:25Z"
   },
   {
     "platform": "Twitch",
@@ -64,11 +64,11 @@
   },
   {
     "platform": "YouTube",
-    "title": "【FF14】クリスタルコンフリクト【PvP】",
-    "streamer": "八雲無月",
-    "url": "https://www.youtube.com/watch?v=tpyxCUmG9Os",
-    "thumbnail": "https://i.ytimg.com/vi/tpyxCUmG9Os/mqdefault_live.jpg",
+    "title": "[FF14] 零式4層練習とクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
+    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
     "viewers": 1,
-    "started_at": "2026-03-01T14:28:25Z"
+    "started_at": "2026-03-01T12:04:27Z"
   }
 ]
