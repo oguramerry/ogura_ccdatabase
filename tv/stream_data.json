@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 57,
+    "viewers": 51,
     "started_at": "2026-03-01T11:01:22Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】花粉症",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-03-01T11:50:39Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +23,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
     "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 10,
     "started_at": "2026-03-01T13:24:58Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-01T13:24:38Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +32,7 @@
     "streamer": "八雲無月",
     "url": "https://www.youtube.com/watch?v=tpyxCUmG9Os",
     "thumbnail": "https://i.ytimg.com/vi/tpyxCUmG9Os/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 2,
     "started_at": "2026-03-01T14:28:25Z"
   },
   {
@@ -70,5 +52,23 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-01T13:45:05Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ holy a cc stream",
+    "streamer": "MedohMeshi",
+    "url": "https://www.twitch.tv/medohmeshi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-01T15:39:00Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】出勤【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=wxnDW-Taqs0",
+    "thumbnail": "https://i.ytimg.com/vi/wxnDW-Taqs0/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-01T15:39:11Z"
   }
 ]
