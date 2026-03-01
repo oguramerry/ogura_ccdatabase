@@ -5,8 +5,26 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 72,
+    "viewers": 67,
     "started_at": "2026-03-01T05:44:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！GAIA DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-03-01T11:01:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン（ランクマ）するよ！０になったら季節イベやFLとか",
+    "streamer": "天咲ゆい",
+    "url": "https://www.twitch.tv/amasaki_yui",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-03-01T11:01:50Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
+    "viewers": 5,
     "started_at": "2026-03-01T10:15:41Z"
   }
 ]
