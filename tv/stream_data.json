@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 55,
+    "viewers": 58,
     "started_at": "2026-03-01T05:44:48Z"
   },
   {
@@ -14,8 +14,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 29,
+    "viewers": 36,
     "started_at": "2026-03-01T11:01:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン大会『星雲杯Part3』RedLotus視点",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-03-01T11:41:42Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +32,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-03-01T10:15:41Z"
   },
   {
@@ -32,17 +41,17 @@
     "streamer": "天咲ゆい",
     "url": "https://www.twitch.tv/amasaki_yui",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 10,
+    "viewers": 5,
     "started_at": "2026-03-01T11:01:50Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン大会『星雲杯Part3』RedLotus視点",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "title": "【クリコン】花粉症",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
     "viewers": 4,
-    "started_at": "2026-03-01T11:41:42Z"
+    "started_at": "2026-03-01T11:50:39Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +59,16 @@
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 1,
+    "viewers": 4,
     "started_at": "2026-03-01T11:25:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【RedLotus】クリコン星雲杯#3",
+    "streamer": "ひなさくら",
+    "url": "https://www.twitch.tv/hina_s_g",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hina_s_g-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-01T11:47:43Z"
   }
 ]
