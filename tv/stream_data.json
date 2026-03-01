@@ -1,11 +1,20 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】『バトロワクリコン』≪実況≫ 田村あかりさん主催",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 44,
-    "started_at": "2026-03-01T02:57:38Z"
+    "title": "ご飯食べたらクリコンランクいくぞ！シルバーを目指して。",
+    "streamer": "ふらんです",
+    "url": "https://www.twitch.tv/fran_umai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-01T05:02:44Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "ご飯食べたらクリコンランクいくぞ！シルバーを目指して。",
+    "streamer": "ふらんです",
+    "url": "https://www.twitch.tv/fran_umai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-01T05:02:44Z"
   }
 ]
