@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 41,
+    "viewers": 48,
     "started_at": "2026-03-01T11:01:22Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 26,
+    "viewers": 28,
     "started_at": "2026-03-01T11:41:42Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 17,
+    "viewers": 23,
     "started_at": "2026-03-01T11:50:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【RedLotus】クリコン星雲杯#3",
+    "streamer": "ひなさくら",
+    "url": "https://www.twitch.tv/hina_s_g",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hina_s_g-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-01T11:47:43Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +41,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 11,
+    "viewers": 12,
     "started_at": "2026-03-01T12:44:09Z"
   },
   {
@@ -41,26 +50,8 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 9,
+    "viewers": 7,
     "started_at": "2026-03-01T10:15:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【RedLotus】クリコン星雲杯#3",
-    "streamer": "ひなさくら",
-    "url": "https://www.twitch.tv/hina_s_g",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hina_s_g-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-03-01T11:47:43Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "[FF14] 零式4層練習とクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
-    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-01T12:04:27Z"
   },
   {
     "platform": "Twitch",
@@ -68,7 +59,16 @@
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 2,
+    "viewers": 4,
     "started_at": "2026-03-01T11:25:45Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[FF14] 零式4層練習とクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
+    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-01T12:04:27Z"
   }
 ]
