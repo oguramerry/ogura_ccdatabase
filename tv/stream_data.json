@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 52,
+    "viewers": 57,
     "started_at": "2026-03-01T11:01:22Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 11,
+    "viewers": 12,
     "started_at": "2026-03-01T12:44:09Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-01T13:24:38Z"
   },
   {
     "platform": "YouTube",
@@ -41,8 +32,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
     "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
-    "viewers": 6,
+    "viewers": 8,
     "started_at": "2026-03-01T13:24:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-01T13:24:38Z"
   },
   {
     "platform": "YouTube",
@@ -54,6 +54,15 @@
     "started_at": "2026-03-01T14:28:25Z"
   },
   {
+    "platform": "YouTube",
+    "title": "[FF14] 零式4層練習とクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
+    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-01T12:04:27Z"
+  },
+  {
     "platform": "Twitch",
     "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
     "streamer": "ソタです",
@@ -61,14 +70,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-01T13:45:05Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "[FF14] 零式4層練習とクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
-    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-01T12:04:27Z"
   }
 ]
