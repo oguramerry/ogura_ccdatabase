@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 36,
+    "viewers": 32,
     "started_at": "2026-03-01T11:01:22Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 15,
+    "viewers": 19,
     "started_at": "2026-03-01T15:38:38Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 14,
+    "viewers": 15,
     "started_at": "2026-03-01T12:44:09Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
-    "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-01T13:24:58Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 8,
+    "viewers": 10,
     "started_at": "2026-03-01T13:24:38Z"
   },
   {
@@ -50,8 +41,17 @@
     "streamer": "MedohMeshi",
     "url": "https://www.twitch.tv/medohmeshi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 6,
+    "viewers": 9,
     "started_at": "2026-03-01T15:39:00Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
+    "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-01T13:24:58Z"
   },
   {
     "platform": "Twitch",
@@ -79,5 +79,14 @@
     "thumbnail": "https://i.ytimg.com/vi/wxnDW-Taqs0/mqdefault_live.jpg",
     "viewers": 0,
     "started_at": "2026-03-01T15:39:11Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコンとフロントライン",
+    "streamer": "じゅきん",
+    "url": "https://www.twitch.tv/tufujukin",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-01T16:14:10Z"
   }
 ]
