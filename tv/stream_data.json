@@ -5,17 +5,8 @@
     "streamer": "merlin_xiv",
     "url": "https://www.twitch.tv/merlin_xiv",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_merlin_xiv-320x180.jpg",
-    "viewers": 5,
+    "viewers": 15,
     "started_at": "2026-03-01T20:52:31Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "こんな時間にランク回したっていい！クリコンランク★",
-    "streamer": "てとぽて",
-    "url": "https://www.twitch.tv/tet_potet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tet_potet-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-01T21:05:10Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 2,
+    "viewers": 9,
     "started_at": "2026-03-01T21:10:09Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "こんな時間にランク回したっていい！クリコンランク★",
+    "streamer": "てとぽて",
+    "url": "https://www.twitch.tv/tet_potet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tet_potet-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-01T21:05:10Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "DevilishAngel40",
     "url": "https://www.twitch.tv/devilishangel40",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_devilishangel40-320x180.jpg",
-    "viewers": 2,
+    "viewers": 6,
     "started_at": "2026-03-01T20:30:56Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=OylS4B-Bv9o",
     "thumbnail": "https://i.ytimg.com/vi/OylS4B-Bv9o/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 2,
     "started_at": "2026-03-01T21:10:14Z"
   }
 ]
