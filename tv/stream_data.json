@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！GAIA DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 38,
-    "started_at": "2026-03-01T11:01:22Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】出勤【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 22,
+    "viewers": 19,
     "started_at": "2026-03-01T15:38:38Z"
   },
   {
@@ -23,7 +14,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 16,
+    "viewers": 13,
     "started_at": "2026-03-01T12:44:09Z"
   },
   {
@@ -32,17 +23,8 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 5,
+    "viewers": 11,
     "started_at": "2026-03-01T16:14:10Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】出勤【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=wxnDW-Taqs0",
-    "thumbnail": "https://i.ytimg.com/vi/wxnDW-Taqs0/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-01T15:39:11Z"
   },
   {
     "platform": "Twitch",
@@ -52,5 +34,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
     "viewers": 3,
     "started_at": "2026-03-01T13:45:05Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】出勤【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=wxnDW-Taqs0",
+    "thumbnail": "https://i.ytimg.com/vi/wxnDW-Taqs0/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-01T15:39:11Z"
   }
 ]
