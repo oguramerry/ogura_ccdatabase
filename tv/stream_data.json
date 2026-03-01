@@ -1,11 +1,20 @@
 [
   {
     "platform": "Twitch",
+    "title": "_crystalline conflict ranked - season ends",
+    "streamer": "merlin_xiv",
+    "url": "https://www.twitch.tv/merlin_xiv",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_merlin_xiv-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-03-01T20:52:31Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "Crystalline Conflict - Q UP PLATINUM RANKED ON EU <3",
     "streamer": "DevilishAngel40",
     "url": "https://www.twitch.tv/devilishangel40",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_devilishangel40-320x180.jpg",
-    "viewers": 3,
+    "viewers": 5,
     "started_at": "2026-03-01T20:30:56Z"
   }
 ]
