@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 48,
+    "viewers": 47,
     "started_at": "2026-03-01T11:01:22Z"
   },
   {
@@ -19,12 +19,30 @@
   },
   {
     "platform": "Twitch",
+    "title": "【RedLotus】クリコン星雲杯#3",
+    "streamer": "ひなさくら",
+    "url": "https://www.twitch.tv/hina_s_g",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hina_s_g-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-01T11:47:43Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【ff14 クリコン】22:30～チーム練習カスタム！ご参加よろしくお願いいたします！",
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 12,
+    "viewers": 10,
     "started_at": "2026-03-01T12:44:09Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
+    "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
+    "viewers": 9,
+    "started_at": "2026-03-01T13:24:58Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +50,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 11,
+    "viewers": 9,
     "started_at": "2026-03-01T13:24:38Z"
   },
   {
@@ -41,35 +59,17 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-01T13:50:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン大会『星雲杯Part3』RedLotus視点",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-01T13:50:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【RedLotus】クリコン星雲杯#3",
-    "streamer": "ひなさくら",
-    "url": "https://www.twitch.tv/hina_s_g",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hina_s_g-320x180.jpg",
     "viewers": 9,
-    "started_at": "2026-03-01T11:47:43Z"
+    "started_at": "2026-03-01T13:50:05Z"
   },
   {
     "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
-    "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-01T13:24:58Z"
+    "title": "[FF14] 零式4層練習とクリコンする！",
+    "streamer": "山田ヤムダ",
+    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
+    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-01T12:04:27Z"
   },
   {
     "platform": "Twitch",
@@ -77,7 +77,7 @@
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-03-01T13:45:05Z"
   },
   {
@@ -88,14 +88,5 @@
     "thumbnail": "https://i.ytimg.com/vi/tpyxCUmG9Os/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-03-01T14:28:25Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "[FF14] 零式4層練習とクリコンする！",
-    "streamer": "山田ヤムダ",
-    "url": "https://www.youtube.com/watch?v=babcqk7RnZE",
-    "thumbnail": "https://i.ytimg.com/vi/babcqk7RnZE/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-01T12:04:27Z"
   }
 ]
