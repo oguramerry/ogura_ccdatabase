@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 17,
+    "viewers": 24,
     "started_at": "2026-03-01T15:38:38Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 16,
+    "viewers": 17,
     "started_at": "2026-03-01T16:14:10Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "[FF14] クリコン｜ENG配信｜日本語勉強中",
-    "streamer": "ソタです",
-    "url": "https://www.twitch.tv/aigosota",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-01T13:45:05Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +23,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=wxnDW-Taqs0",
     "thumbnail": "https://i.ytimg.com/vi/wxnDW-Taqs0/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-01T15:39:11Z"
   }
 ]
