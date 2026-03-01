@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 47,
+    "viewers": 43,
     "started_at": "2026-03-01T11:01:22Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 12,
+    "viewers": 15,
     "started_at": "2026-03-01T11:50:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【RedLotus】クリコン星雲杯#3",
-    "streamer": "ひなさくら",
-    "url": "https://www.twitch.tv/hina_s_g",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hina_s_g-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-03-01T11:47:43Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +23,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 10,
+    "viewers": 14,
     "started_at": "2026-03-01T12:44:09Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
-    "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
-    "viewers": 9,
-    "started_at": "2026-03-01T13:24:58Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +32,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 9,
+    "viewers": 6,
     "started_at": "2026-03-01T13:24:38Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコン大会『星雲杯Part3』RedLotus視点",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-03-01T13:50:05Z"
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=ZQQjsdus1Ng",
+    "thumbnail": "https://i.ytimg.com/vi/ZQQjsdus1Ng/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-01T13:24:58Z"
   },
   {
     "platform": "YouTube",
