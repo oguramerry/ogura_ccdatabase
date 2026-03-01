@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 58,
+    "viewers": 55,
     "started_at": "2026-03-01T05:44:48Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 25,
+    "viewers": 29,
     "started_at": "2026-03-01T11:01:22Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン（ランクマ）するよ！０になったら季節イベやFLとか",
-    "streamer": "天咲ゆい",
-    "url": "https://www.twitch.tv/amasaki_yui",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-01T11:01:50Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,34 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 11,
     "started_at": "2026-03-01T10:15:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン（ランクマ）するよ！０になったら季節イベやFLとか",
+    "streamer": "天咲ゆい",
+    "url": "https://www.twitch.tv/amasaki_yui",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-01T11:01:50Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン大会『星雲杯Part3』RedLotus視点",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-01T11:41:42Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ブロンズのクリコン会場",
+    "streamer": "るりむい",
+    "url": "https://www.twitch.tv/ruri_muy",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-01T11:25:45Z"
   }
 ]
