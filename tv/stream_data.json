@@ -1,15 +1,6 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】出勤【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 36,
-    "started_at": "2026-03-01T15:38:38Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】クリコンとフロントライン",
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
@@ -23,16 +14,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 10,
+    "viewers": 8,
     "started_at": "2026-03-01T18:53:16Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】出勤【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=wxnDW-Taqs0",
-    "thumbnail": "https://i.ytimg.com/vi/wxnDW-Taqs0/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-01T15:39:11Z"
   }
 ]
