@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 46,
+    "viewers": 50,
     "started_at": "2026-03-02T10:41:37Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 31,
+    "viewers": 41,
     "started_at": "2026-03-02T12:19:32Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 26,
+    "viewers": 33,
     "started_at": "2026-03-02T12:13:17Z"
   },
   {
@@ -32,26 +32,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 26,
+    "viewers": 23,
     "started_at": "2026-03-02T12:20:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンS18ランクマ最終日～レート698から",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-02T12:46:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ファイナルラスト最終日(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-02T12:01:25Z"
   },
   {
     "platform": "YouTube",
@@ -64,12 +46,21 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】ゴールドになりたいクリコン",
-    "streamer": "るりむい",
-    "url": "https://www.twitch.tv/ruri_muy",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
+    "title": "クリコンS18ランクマ最終日～レート698から",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
     "viewers": 2,
-    "started_at": "2026-03-02T11:07:56Z"
+    "started_at": "2026-03-02T12:46:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】ファイナルラスト最終日(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-02T12:01:25Z"
   },
   {
     "platform": "Twitch",
@@ -79,5 +70,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-02T11:07:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FINAL FANTASY? 14?? PvP Frontlines/Crystalline Conflict",
+    "streamer": "ThatJayDudee",
+    "url": "https://www.twitch.tv/thatjaydudee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thatjaydudee-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-02T13:28:00Z"
   }
 ]
