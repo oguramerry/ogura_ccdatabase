@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 49,
+    "viewers": 53,
     "started_at": "2026-03-02T13:40:36Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 43,
+    "viewers": 40,
     "started_at": "2026-03-02T10:41:37Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 36,
+    "viewers": 31,
     "started_at": "2026-03-02T14:45:53Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 34,
+    "viewers": 30,
     "started_at": "2026-03-02T14:59:08Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】ついに来た！パッチ前最終日ランクマ！召喚＆黒魔だ！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-03-02T12:20:05Z"
   },
   {
     "platform": "YouTube",
@@ -50,16 +41,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=YYrBJ5aerE4",
     "thumbnail": "https://i.ytimg.com/vi/YYrBJ5aerE4/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-02T14:46:22Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ファイナルラスト最終日(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
     "viewers": 2,
-    "started_at": "2026-03-02T12:01:25Z"
+    "started_at": "2026-03-02T14:46:22Z"
   }
 ]
