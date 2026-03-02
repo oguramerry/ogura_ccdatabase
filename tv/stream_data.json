@@ -1,15 +1,6 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day78【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
-    "started_at": "2026-03-02T10:41:37Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコンファイナルシーズンがんばらせてください",
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
@@ -19,21 +10,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【ff14 クリコン】ついに来た！パッチ前最終日ランクマ！召喚＆黒魔だ！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 29,
-    "started_at": "2026-03-02T12:20:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】シーズン最終日！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-03-02T14:45:53Z"
+    "title": "【FF14】超クリコン研究会 Day78【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 44,
+    "started_at": "2026-03-02T10:41:37Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +23,26 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 21,
+    "viewers": 32,
     "started_at": "2026-03-02T14:59:08Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】いけるとこまで",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-03-02T15:58:48Z"
+    "title": "【クリコン】シーズン最終日！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 28,
+    "started_at": "2026-03-02T14:45:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14 クリコン】ついに来た！パッチ前最終日ランクマ！召喚＆黒魔だ！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-03-02T12:20:05Z"
   },
   {
     "platform": "YouTube",
@@ -68,7 +59,7 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-03-02T12:01:25Z"
   },
   {
