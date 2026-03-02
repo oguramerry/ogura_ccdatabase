@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 54,
+    "viewers": 60,
     "started_at": "2026-03-02T12:19:32Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 42,
+    "viewers": 40,
     "started_at": "2026-03-02T10:41:37Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 34,
+    "viewers": 32,
     "started_at": "2026-03-02T13:40:36Z"
   },
   {
@@ -32,8 +32,17 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 26,
+    "viewers": 29,
     "started_at": "2026-03-02T12:13:17Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ～❁⃘**゜",
+    "streamer": "りりちゃん___",
+    "url": "https://www.twitch.tv/ririmari_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ririmari_-320x180.jpg",
+    "viewers": 24,
+    "started_at": "2026-03-02T13:27:46Z"
   },
   {
     "platform": "Twitch",
@@ -46,21 +55,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコン最終日～世間は巨乳ララフェルが人気だけど個人的には貧乳ララフェルを推したい",
-    "streamer": "雪之枝ひお",
-    "url": "https://www.twitch.tv/yukinoe_hio",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 20,
-    "started_at": "2026-03-02T13:18:00Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランクマ～❁⃘**゜",
-    "streamer": "りりちゃん___",
-    "url": "https://www.twitch.tv/ririmari_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ririmari_-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-03-02T13:27:46Z"
+    "title": "【#FF14】今日がほんとのランクマシーズン最終日？【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-03-02T14:21:53Z"
   },
   {
     "platform": "Twitch",
@@ -73,12 +73,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【#FF14】今日がほんとのランクマシーズン最終日？【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-02T14:21:53Z"
+    "title": "クリコン最終日～世間は巨乳ララフェルが人気だけど個人的には貧乳ララフェルを推したい",
+    "streamer": "雪之枝ひお",
+    "url": "https://www.twitch.tv/yukinoe_hio",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-02T13:18:00Z"
   },
   {
     "platform": "Twitch",
@@ -86,8 +86,35 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 8,
+    "viewers": 10,
     "started_at": "2026-03-02T12:46:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】シーズン最終日！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-02T14:45:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第121話】クリスタルハラスメント【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-02T14:59:08Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】シーズン最終日！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=YYrBJ5aerE4",
+    "thumbnail": "https://i.ytimg.com/vi/YYrBJ5aerE4/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-02T14:46:22Z"
   },
   {
     "platform": "YouTube",
@@ -95,17 +122,8 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=FWygCW_B6SM",
     "thumbnail": "https://i.ytimg.com/vi/FWygCW_B6SM/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-03-02T11:39:24Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FINAL FANTASY XIV】 クリスタルコンフリクトシーズン１８最終日！",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=8eGE1jDA4vY",
-    "thumbnail": "https://i.ytimg.com/vi/8eGE1jDA4vY/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-02T13:46:11Z"
   },
   {
     "platform": "Twitch",
@@ -113,7 +131,7 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-02T12:01:25Z"
   },
   {
