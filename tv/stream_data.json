@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 51,
+    "viewers": 50,
     "started_at": "2026-03-02T10:41:37Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 30,
+    "viewers": 28,
     "started_at": "2026-03-02T11:15:11Z"
   },
   {
@@ -32,8 +32,17 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=5XJR1aOaWRA",
     "thumbnail": "https://i.ytimg.com/vi/5XJR1aOaWRA/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-03-02T11:05:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ゴールドになりたいクリコン",
+    "streamer": "るりむい",
+    "url": "https://www.twitch.tv/ruri_muy",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-02T11:07:56Z"
   },
   {
     "platform": "Twitch",
@@ -45,21 +54,39 @@
     "started_at": "2026-03-02T10:46:10Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】ゴールドになりたいクリコン",
-    "streamer": "るりむい",
-    "url": "https://www.twitch.tv/ruri_muy",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-02T11:07:56Z"
-  },
-  {
     "platform": "YouTube",
     "title": "[FF14] 零式4層練習とクリコンする！",
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=FWygCW_B6SM",
     "thumbnail": "https://i.ytimg.com/vi/FWygCW_B6SM/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-02T11:39:24Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14]のんびりカスタム[クリコン]",
+    "streamer": "乙卯ぽるる",
+    "url": "https://www.twitch.tv/kinotoporuru",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-02T12:09:17Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】ファイナルラスト最終日(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-02T12:01:25Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14]のんびりカスタム[クリコン]",
+    "streamer": "乙卯ぽるる",
+    "url": "https://www.twitch.tv/kinotoporuru",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-02T12:09:17Z"
   }
 ]
