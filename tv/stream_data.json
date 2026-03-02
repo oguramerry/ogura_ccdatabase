@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 40,
+    "viewers": 54,
     "started_at": "2026-03-02T12:19:32Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 37,
+    "viewers": 41,
     "started_at": "2026-03-02T10:41:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン🍹3000まで100勝未満で行くかシーズン最終日チャレンジ2600スタート🌙月曜はクリコンデー！",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-03-02T12:13:17Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 22,
+    "viewers": 27,
     "started_at": "2026-03-02T13:40:36Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン🍹3000まで100勝未満で行くかシーズン最終日チャレンジ2600スタート🌙月曜はクリコンデー！",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-03-02T12:13:17Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +41,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 22,
+    "viewers": 23,
     "started_at": "2026-03-02T12:20:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランクマ～❁⃘**゜",
-    "streamer": "りりちゃん___",
-    "url": "https://www.twitch.tv/ririmari_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ririmari_-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-03-02T13:27:46Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +50,7 @@
     "streamer": "雪之枝ひお",
     "url": "https://www.twitch.tv/yukinoe_hio",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 12,
+    "viewers": 13,
     "started_at": "2026-03-02T13:18:00Z"
   },
   {
@@ -68,17 +59,17 @@
     "streamer": "LufefeLufe",
     "url": "https://www.twitch.tv/lufefelufe",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lufefelufe-320x180.jpg",
-    "viewers": 11,
+    "viewers": 12,
     "started_at": "2026-03-02T10:05:47Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】ゴールドになりたいクリコン",
-    "streamer": "るりむい",
-    "url": "https://www.twitch.tv/ruri_muy",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-02T11:07:56Z"
+    "title": "クリコンランクマ～❁⃘**゜",
+    "streamer": "りりちゃん___",
+    "url": "https://www.twitch.tv/ririmari_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ririmari_-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-02T13:27:46Z"
   },
   {
     "platform": "Twitch",
@@ -86,26 +77,8 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-03-02T12:46:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンS18ランクマ最終日～レート698から",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-02T12:46:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ゴールドになりたいクリコン",
-    "streamer": "るりむい",
-    "url": "https://www.twitch.tv/ruri_muy",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-02T11:07:56Z"
   },
   {
     "platform": "YouTube",
@@ -113,8 +86,17 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=FWygCW_B6SM",
     "thumbnail": "https://i.ytimg.com/vi/FWygCW_B6SM/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 4,
     "started_at": "2026-03-02T11:39:24Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ゴールドになりたいクリコン",
+    "streamer": "るりむい",
+    "url": "https://www.twitch.tv/ruri_muy",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-02T11:07:56Z"
   },
   {
     "platform": "Twitch",
@@ -124,6 +106,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-02T12:01:25Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FINAL FANTASY? 14?? PvP Frontlines/Crystalline Conflict",
+    "streamer": "ThatJayDudee",
+    "url": "https://www.twitch.tv/thatjaydudee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thatjaydudee-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-02T13:28:00Z"
   },
   {
     "platform": "YouTube",
