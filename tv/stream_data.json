@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 46,
+    "viewers": 49,
     "started_at": "2026-03-02T13:40:36Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 43,
     "started_at": "2026-03-02T10:41:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【第121話】クリスタルハラスメント【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-03-02T14:59:08Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 28,
+    "viewers": 36,
     "started_at": "2026-03-02T14:45:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第121話】クリスタルハラスメント【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 34,
+    "started_at": "2026-03-02T14:59:08Z"
   },
   {
     "platform": "Twitch",
@@ -61,14 +61,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-02T12:01:25Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "bety_49",
-    "url": "https://www.twitch.tv/bety_49",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bety_49-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-02T15:18:54Z"
   }
 ]
