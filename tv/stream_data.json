@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 55,
+    "viewers": 51,
     "started_at": "2026-03-02T10:41:37Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 32,
+    "viewers": 30,
     "started_at": "2026-03-02T11:15:11Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 9,
+    "viewers": 15,
     "started_at": "2026-03-02T09:45:20Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=5XJR1aOaWRA",
     "thumbnail": "https://i.ytimg.com/vi/5XJR1aOaWRA/mqdefault_live.jpg",
-    "viewers": 8,
+    "viewers": 11,
     "started_at": "2026-03-02T11:05:37Z"
   },
   {
@@ -41,44 +41,17 @@
     "streamer": "ウツトカゲ",
     "url": "https://www.twitch.tv/mozu223",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mozu223-320x180.jpg",
-    "viewers": 7,
+    "viewers": 4,
     "started_at": "2026-03-02T10:46:10Z"
   },
   {
     "platform": "Twitch",
-    "title": "FF14 クリスタルコンフリクト 忍者たのしい",
-    "streamer": "あどるんよしもり",
-    "url": "https://www.twitch.tv/adolnyoshimori",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-02T11:13:54Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】シルバーになりたいクリコン",
+    "title": "【FF14】ゴールドになりたいクリコン",
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-03-02T11:07:56Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】シルバーになりたいクリコン",
-    "streamer": "るりむい",
-    "url": "https://www.twitch.tv/ruri_muy",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-02T11:07:56Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリスタルコンフリクト 忍者たのしい",
-    "streamer": "あどるんよしもり",
-    "url": "https://www.twitch.tv/adolnyoshimori",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_adolnyoshimori-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-02T11:13:54Z"
   },
   {
     "platform": "YouTube",
