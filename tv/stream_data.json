@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day78【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 41,
-    "started_at": "2026-03-02T10:41:37Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン シーズン18最終日 皆さん今シーズンもお疲れ様でした！マッチングした全ての人に感謝！（JP CC RANK）",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 29,
+    "viewers": 43,
     "started_at": "2026-03-02T12:19:32Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】しゃきらせ求",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-03-02T11:15:11Z"
+    "title": "【FF14】超クリコン研究会 Day78【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 42,
+    "started_at": "2026-03-02T10:41:37Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 19,
+    "viewers": 20,
     "started_at": "2026-03-02T12:13:17Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 11,
+    "viewers": 17,
     "started_at": "2026-03-02T12:20:05Z"
   },
   {
@@ -50,17 +41,17 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=5XJR1aOaWRA",
     "thumbnail": "https://i.ytimg.com/vi/5XJR1aOaWRA/mqdefault_live.jpg",
-    "viewers": 6,
+    "viewers": 9,
     "started_at": "2026-03-02T11:05:37Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】ランクマッチ／クリスタル帯",
-    "streamer": "ウツトカゲ",
-    "url": "https://www.twitch.tv/mozu223",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mozu223-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-02T10:46:10Z"
+    "title": "【クリコン】ファイナルラスト最終日(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-02T12:01:25Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +59,17 @@
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-03-02T11:07:56Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS18ランクマ最終日～レート698から",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-02T12:46:23Z"
   },
   {
     "platform": "YouTube",
@@ -79,23 +79,5 @@
     "thumbnail": "https://i.ytimg.com/vi/FWygCW_B6SM/mqdefault_live.jpg",
     "viewers": 2,
     "started_at": "2026-03-02T11:39:24Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ファイナルラスト最終日(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-02T12:01:25Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "[FF14]のんびりカスタム[クリコン]",
-    "streamer": "乙卯ぽるる",
-    "url": "https://www.twitch.tv/kinotoporuru",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-02T12:09:17Z"
   }
 ]
