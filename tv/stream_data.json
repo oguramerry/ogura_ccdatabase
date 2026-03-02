@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン シーズン18最終日 皆さん今シーズンもお疲れ様でした！マッチングした全ての人に感謝！（JP CC RANK）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 65,
-    "started_at": "2026-03-02T12:19:32Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day78【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 38,
+    "viewers": 40,
     "started_at": "2026-03-02T10:41:37Z"
   },
   {
@@ -23,7 +14,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 36,
+    "viewers": 35,
     "started_at": "2026-03-02T13:40:36Z"
   },
   {
@@ -32,7 +23,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 25,
+    "viewers": 28,
     "started_at": "2026-03-02T12:20:05Z"
   },
   {
@@ -41,8 +32,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 23,
+    "viewers": 24,
     "started_at": "2026-03-02T14:45:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第121話】クリスタルハラスメント【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 22,
+    "started_at": "2026-03-02T14:59:08Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +50,8 @@
     "streamer": "りりちゃん___",
     "url": "https://www.twitch.tv/ririmari_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ririmari_-320x180.jpg",
-    "viewers": 22,
+    "viewers": 18,
     "started_at": "2026-03-02T13:27:46Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【#FF14】今日がほんとのランクマシーズン最終日？【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-03-02T14:21:53Z"
   },
   {
     "platform": "Twitch",
@@ -73,21 +64,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【第121話】クリスタルハラスメント【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-03-02T14:59:08Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】シーズン最終日！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=YYrBJ5aerE4",
-    "thumbnail": "https://i.ytimg.com/vi/YYrBJ5aerE4/mqdefault_live.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-02T14:46:22Z"
+    "title": "【#FF14】今日がほんとのランクマシーズン最終日？【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-02T14:21:53Z"
   },
   {
     "platform": "Twitch",
@@ -95,8 +77,26 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-03-02T12:46:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS18ランクマ最終日～レート698から",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-02T12:46:23Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】シーズン最終日！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=YYrBJ5aerE4",
+    "thumbnail": "https://i.ytimg.com/vi/YYrBJ5aerE4/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-02T14:46:22Z"
   },
   {
     "platform": "Twitch",
