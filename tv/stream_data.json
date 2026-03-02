@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 64,
+    "viewers": 70,
     "started_at": "2026-03-02T13:40:36Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 43,
+    "viewers": 37,
     "started_at": "2026-03-02T10:41:37Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 30,
+    "viewers": 31,
     "started_at": "2026-03-02T14:45:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】最終日だけど今起きました！！！！！！！！！！！！ #FF14 えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-02T18:02:27Z"
   },
   {
     "platform": "Twitch",
@@ -32,44 +41,8 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-03-02T18:15:52Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】シーズン最終日！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=YYrBJ5aerE4",
-    "thumbnail": "https://i.ytimg.com/vi/YYrBJ5aerE4/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-02T14:46:22Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】最終日だけど今起きました！！！！！！！！！！！！ #FF14 えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-02T18:02:27Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】最終日だけど今起きました！！！！！！！！！！！！ #FF14 えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-02T18:02:27Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "EU Crystal Conflict and Frontlines",
-    "streamer": "Brian Ricardo Highlights",
-    "url": "https://www.youtube.com/watch?v=Qbeu_AD6vvI",
-    "thumbnail": "https://i.ytimg.com/vi/Qbeu_AD6vvI/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-02T18:15:57Z"
   },
   {
     "platform": "YouTube",
@@ -77,7 +50,25 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=EiLN7hvNRD0",
     "thumbnail": "https://i.ytimg.com/vi/EiLN7hvNRD0/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-03-02T18:15:58Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】シーズン最終日！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=YYrBJ5aerE4",
+    "thumbnail": "https://i.ytimg.com/vi/YYrBJ5aerE4/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-02T14:46:22Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "EU Crystal Conflict and Frontlines",
+    "streamer": "Brian Ricardo Highlights",
+    "url": "https://www.youtube.com/watch?v=Qbeu_AD6vvI",
+    "thumbnail": "https://i.ytimg.com/vi/Qbeu_AD6vvI/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-02T18:15:57Z"
   }
 ]
