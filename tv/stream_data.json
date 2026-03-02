@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 58,
+    "viewers": 64,
     "started_at": "2026-03-02T13:40:36Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 49,
+    "viewers": 43,
     "started_at": "2026-03-02T10:41:37Z"
   },
   {
@@ -28,20 +28,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】最終日だけど今起きました！！！！！！！！！！！！ #FF14 えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-03-02T18:02:27Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "EU Crystal Conflict and Frontlines",
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 6,
+    "viewers": 11,
     "started_at": "2026-03-02T18:15:52Z"
   },
   {
@@ -50,8 +41,35 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=YYrBJ5aerE4",
     "thumbnail": "https://i.ytimg.com/vi/YYrBJ5aerE4/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 4,
     "started_at": "2026-03-02T14:46:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】最終日だけど今起きました！！！！！！！！！！！！ #FF14 えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-02T18:02:27Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】最終日だけど今起きました！！！！！！！！！！！！ #FF14 えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-02T18:02:27Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "EU Crystal Conflict and Frontlines",
+    "streamer": "Brian Ricardo Highlights",
+    "url": "https://www.youtube.com/watch?v=Qbeu_AD6vvI",
+    "thumbnail": "https://i.ytimg.com/vi/Qbeu_AD6vvI/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-02T18:15:57Z"
   },
   {
     "platform": "YouTube",
@@ -61,14 +79,5 @@
     "thumbnail": "https://i.ytimg.com/vi/EiLN7hvNRD0/mqdefault_live.jpg",
     "viewers": 0,
     "started_at": "2026-03-02T18:15:58Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "EU Crystal Conflict and Frontlines",
-    "streamer": "Brian Ricardo Highlights",
-    "url": "https://www.youtube.com/watch?v=Qbeu_AD6vvI",
-    "thumbnail": "https://i.ytimg.com/vi/Qbeu_AD6vvI/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-03-02T18:15:57Z"
   }
 ]
