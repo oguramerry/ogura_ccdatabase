@@ -5,17 +5,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 45,
+    "viewers": 41,
     "started_at": "2026-03-02T10:41:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】しゃきらせ求",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 23,
-    "started_at": "2026-03-02T11:15:11Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 18,
+    "viewers": 29,
     "started_at": "2026-03-02T12:19:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】しゃきらせ求",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-03-02T11:15:11Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +32,8 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 12,
+    "viewers": 19,
     "started_at": "2026-03-02T12:13:17Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #99 ～ S18 最後の悪あがき！ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-03-02T09:45:20Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 9,
+    "viewers": 11,
     "started_at": "2026-03-02T12:20:05Z"
   },
   {
@@ -59,7 +50,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=5XJR1aOaWRA",
     "thumbnail": "https://i.ytimg.com/vi/5XJR1aOaWRA/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 6,
     "started_at": "2026-03-02T11:05:37Z"
   },
   {
@@ -68,7 +59,7 @@
     "streamer": "ウツトカゲ",
     "url": "https://www.twitch.tv/mozu223",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mozu223-320x180.jpg",
-    "viewers": 5,
+    "viewers": 3,
     "started_at": "2026-03-02T10:46:10Z"
   },
   {
@@ -77,7 +68,7 @@
     "streamer": "るりむい",
     "url": "https://www.twitch.tv/ruri_muy",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ruri_muy-320x180.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-03-02T11:07:56Z"
   },
   {
@@ -86,7 +77,7 @@
     "streamer": "山田ヤムダ",
     "url": "https://www.youtube.com/watch?v=FWygCW_B6SM",
     "thumbnail": "https://i.ytimg.com/vi/FWygCW_B6SM/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-03-02T11:39:24Z"
   },
   {
@@ -95,7 +86,7 @@
     "streamer": "おるちゃ",
     "url": "https://www.twitch.tv/orpheusj",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-03-02T12:01:25Z"
   },
   {
