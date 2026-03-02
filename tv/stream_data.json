@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 52,
+    "viewers": 50,
     "started_at": "2026-03-02T13:40:36Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 28,
+    "viewers": 26,
     "started_at": "2026-03-02T18:15:52Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】最終日だけど今起きました！！！！！！！！！！！！ #FF14 えふじゅよ",
-    "streamer": "ネネムネム",
-    "url": "https://www.twitch.tv/nenemu_nemu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-02T18:02:27Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +23,7 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=EiLN7hvNRD0",
     "thumbnail": "https://i.ytimg.com/vi/EiLN7hvNRD0/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-03-02T18:15:58Z"
   },
   {
