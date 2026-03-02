@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 45,
+    "viewers": 56,
     "started_at": "2026-03-02T13:40:36Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 24,
+    "viewers": 20,
     "started_at": "2026-03-02T18:15:52Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=EiLN7hvNRD0",
     "thumbnail": "https://i.ytimg.com/vi/EiLN7hvNRD0/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-03-02T18:15:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FINAL FANTASY? 14?? PvP Frontlines/Crystalline Conflict",
+    "streamer": "ThatJayDudee",
+    "url": "https://www.twitch.tv/thatjaydudee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thatjaydudee-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-02T21:23:39Z"
   },
   {
     "platform": "YouTube",
