@@ -1,38 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "EU Crystal Conflict and Frontlines",
-    "streamer": "BrianRicardo",
-    "url": "https://www.twitch.tv/brianricardo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-03-02T18:15:52Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "FINAL FANTASY? 14?? PvP Frontlines/Crystalline Conflict",
     "streamer": "ThatJayDudee",
     "url": "https://www.twitch.tv/thatjaydudee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thatjaydudee-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-02T21:23:39Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "EU Crystal Conflict and Frontlines",
-    "streamer": "Brian Ricardo",
-    "url": "https://www.youtube.com/watch?v=EiLN7hvNRD0",
-    "thumbnail": "https://i.ytimg.com/vi/EiLN7hvNRD0/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-02T18:15:58Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "EU Crystal Conflict and Frontlines",
-    "streamer": "Brian Ricardo Highlights",
-    "url": "https://www.youtube.com/watch?v=Qbeu_AD6vvI",
-    "thumbnail": "https://i.ytimg.com/vi/Qbeu_AD6vvI/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-03-02T18:15:57Z"
   }
 ]
