@@ -5,7 +5,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 35,
+    "viewers": 40,
     "started_at": "2026-03-03T10:06:54Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 25,
+    "viewers": 27,
     "started_at": "2026-03-03T10:13:32Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 7,
+    "viewers": 10,
     "started_at": "2026-03-03T10:11:45Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "felifelidesu",
     "url": "https://www.twitch.tv/felifelidesu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-03-03T10:40:42Z"
   },
   {
@@ -43,5 +43,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-03T10:34:20Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "[FF14]新シーズン！ランクマだよっ[クリコン]",
+    "streamer": "乙卯ぽるる",
+    "url": "https://www.twitch.tv/kinotoporuru",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-03T10:53:29Z"
   }
 ]
