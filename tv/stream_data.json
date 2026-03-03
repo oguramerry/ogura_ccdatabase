@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】やるべきこと→零式＞ヴァリアント＞クリコン＞呼吸",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 37,
-    "started_at": "2026-03-03T11:07:55Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】怖いか、「新時代」が!!! ﾄﾞﾝｯ",
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 37,
+    "viewers": 36,
     "started_at": "2026-03-03T12:10:24Z"
   },
   {
@@ -23,17 +14,17 @@
     "streamer": "AMEPERO",
     "url": "https://www.twitch.tv/amepero",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amepero-320x180.jpg",
-    "viewers": 31,
+    "viewers": 35,
     "started_at": "2026-03-03T12:56:14Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】「生業」決め",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-03-03T11:20:50Z"
+    "title": "【FF14】やるべきこと→零式＞ヴァリアント＞クリコン＞呼吸",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-03-03T11:07:55Z"
   },
   {
     "platform": "Twitch",
@@ -41,26 +32,17 @@
     "streamer": "amemiya_xiv",
     "url": "https://www.twitch.tv/amemiya_xiv",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 17,
+    "viewers": 19,
     "started_at": "2026-03-03T13:57:36Z"
   },
   {
     "platform": "Twitch",
-    "title": "【#FF14】今日から新シーズン！！調整どうですか？【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-03-03T10:13:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "アプデで強化された黒魔導士をクリコンランクマ",
-    "streamer": "ふらんです",
-    "url": "https://www.twitch.tv/fran_umai",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-03-03T11:56:00Z"
+    "title": "【クリコン】「生業」決め",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-03T11:20:50Z"
   },
   {
     "platform": "Twitch",
@@ -77,7 +59,7 @@
     "streamer": "コンガナジャイ",
     "url": "https://www.twitch.tv/konbanhag",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 8,
+    "viewers": 9,
     "started_at": "2026-03-03T14:13:32Z"
   },
   {
@@ -90,12 +72,30 @@
     "started_at": "2026-03-03T12:56:21Z"
   },
   {
+    "platform": "Twitch",
+    "title": "【クリコン】調整後どう？！いろいろつかうけど今季は忍者予定【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-03T15:42:19Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンorヴァリアント(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-03T10:34:20Z"
+  },
+  {
     "platform": "YouTube",
-    "title": "【FINAL FANTASY XIV】 クリスタルコンフリクトシーズン１９開幕！少しだけランクマ行きます",
-    "streamer": "ショウケイ",
-    "url": "https://www.youtube.com/watch?v=CvTs_j2ZHpc",
-    "thumbnail": "https://i.ytimg.com/vi/CvTs_j2ZHpc/mqdefault_live.jpg",
+    "title": "【クリコン】調整後どう？！いろいろつかうけど今季は忍者予定【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=Dsv0-YqX3W4",
+    "thumbnail": "https://i.ytimg.com/vi/Dsv0-YqX3W4/mqdefault_live.jpg",
     "viewers": 0,
-    "started_at": "2026-03-03T14:51:53Z"
+    "started_at": "2026-03-03T15:42:49Z"
   }
 ]
