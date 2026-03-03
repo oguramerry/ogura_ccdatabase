@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "platform": "Twitch",
+    "title": "［FF14］クリコンシーズンランクマッチ",
+    "streamer": "ろびす",
+    "url": "https://www.twitch.tv/robswiz_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-03T10:06:54Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンやっちゃいましょうよ！",
+    "streamer": "わらびたろ",
+    "url": "https://www.twitch.tv/warabitaroff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-03T10:11:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【#FF14】今日から新シーズン！！調整どうですか？【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-03T10:13:32Z"
+  }
+]
