@@ -5,7 +5,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 37,
+    "viewers": 35,
     "started_at": "2026-03-03T10:06:54Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 10,
+    "viewers": 25,
     "started_at": "2026-03-03T10:13:32Z"
   },
   {
@@ -23,7 +23,25 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 5,
+    "viewers": 7,
     "started_at": "2026-03-03T10:11:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "心穏やかクリコン 上手くなりたい！",
+    "streamer": "felifelidesu",
+    "url": "https://www.twitch.tv/felifelidesu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-03T10:40:42Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンorヴァリアント(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-03T10:34:20Z"
   }
 ]
