@@ -5,17 +5,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 33,
+    "viewers": 46,
     "started_at": "2026-03-03T15:42:19Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】調整後どう？！いろいろつかうけど今季は忍者予定【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=Dsv0-YqX3W4",
-    "thumbnail": "https://i.ytimg.com/vi/Dsv0-YqX3W4/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-03T15:42:49Z"
   },
   {
     "platform": "Twitch",
@@ -25,6 +16,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
     "viewers": 4,
     "started_at": "2026-03-03T17:00:03Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】調整後どう？！いろいろつかうけど今季は忍者予定【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=Dsv0-YqX3W4",
+    "thumbnail": "https://i.ytimg.com/vi/Dsv0-YqX3W4/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-03T15:42:49Z"
   },
   {
     "platform": "Twitch",
