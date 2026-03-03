@@ -1,11 +1,20 @@
 [
   {
     "platform": "Twitch",
+    "title": "【FF14】やるべきこと→零式＞ヴァリアント＞クリコン＞呼吸",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-03-03T11:07:55Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【クリコン】怖いか、「新時代」が!!! ﾄﾞﾝｯ",
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 36,
+    "viewers": 31,
     "started_at": "2026-03-03T12:10:24Z"
   },
   {
@@ -14,26 +23,8 @@
     "streamer": "AMEPERO",
     "url": "https://www.twitch.tv/amepero",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amepero-320x180.jpg",
-    "viewers": 35,
+    "viewers": 30,
     "started_at": "2026-03-03T12:56:14Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】やるべきこと→零式＞ヴァリアント＞クリコン＞呼吸",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-03-03T11:07:55Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "amemiya_xiv",
-    "url": "https://www.twitch.tv/amemiya_xiv",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-03-03T13:57:36Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,26 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 15,
+    "viewers": 21,
     "started_at": "2026-03-03T11:20:50Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】調整後どう？！いろいろつかうけど今季は忍者予定【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-03-03T15:42:19Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "amemiya_xiv",
+    "url": "https://www.twitch.tv/amemiya_xiv",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
+    "viewers": 16,
+    "started_at": "2026-03-03T13:57:36Z"
   },
   {
     "platform": "Twitch",
@@ -59,26 +68,8 @@
     "streamer": "コンガナジャイ",
     "url": "https://www.twitch.tv/konbanhag",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 9,
+    "viewers": 6,
     "started_at": "2026-03-03T14:13:32Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【 #FF14 】クリコン新シーズン🍭久しぶりの手汗プレイ【AMEPERO/Vtuber】",
-    "streamer": "AMEPERO",
-    "url": "https://www.youtube.com/watch?v=TbHAbZ9nlwE",
-    "thumbnail": "https://i.ytimg.com/vi/TbHAbZ9nlwE/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-03T12:56:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】調整後どう？！いろいろつかうけど今季は忍者予定【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-03T15:42:19Z"
   },
   {
     "platform": "Twitch",
@@ -88,6 +79,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-03T10:34:20Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【 #FF14 】クリコン新シーズン🍭久しぶりの手汗プレイ【AMEPERO/Vtuber】",
+    "streamer": "AMEPERO",
+    "url": "https://www.youtube.com/watch?v=TbHAbZ9nlwE",
+    "thumbnail": "https://i.ytimg.com/vi/TbHAbZ9nlwE/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-03T12:56:21Z"
   },
   {
     "platform": "YouTube",
