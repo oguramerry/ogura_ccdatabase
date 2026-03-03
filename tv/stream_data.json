@@ -1,15 +1,6 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】怖いか、「新時代」が!!! ﾄﾞﾝｯ",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 44,
-    "started_at": "2026-03-03T12:10:24Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】調整後どう？！いろいろつかうけど今季は忍者予定【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
@@ -18,30 +9,12 @@
     "started_at": "2026-03-03T15:42:19Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "amemiya_xiv",
-    "url": "https://www.twitch.tv/amemiya_xiv",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-03-03T13:57:36Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンやっちゃいましょうよ！",
-    "streamer": "わらびたろ",
-    "url": "https://www.twitch.tv/warabitaroff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-03T10:11:45Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【クリコン】調整後どう？！いろいろつかうけど今季は忍者予定【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=Dsv0-YqX3W4",
     "thumbnail": "https://i.ytimg.com/vi/Dsv0-YqX3W4/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-03-03T15:42:49Z"
   }
 ]
