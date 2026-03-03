@@ -14,7 +14,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 43,
+    "viewers": 44,
     "started_at": "2026-03-03T10:58:36Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 37,
+    "viewers": 35,
     "started_at": "2026-03-03T10:06:54Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 23,
+    "viewers": 25,
     "started_at": "2026-03-03T11:07:55Z"
   },
   {
@@ -41,17 +41,8 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 20,
+    "viewers": 22,
     "started_at": "2026-03-03T10:13:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】目指せライジング/ダイヤ5～【S19/1日目】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-03T10:56:33Z"
   },
   {
     "platform": "Twitch",
@@ -59,17 +50,26 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 11,
+    "viewers": 15,
     "started_at": "2026-03-03T11:20:50Z"
   },
   {
     "platform": "Twitch",
-    "title": "心穏やかクリコン 上手くなりたい！",
-    "streamer": "felifelidesu",
-    "url": "https://www.twitch.tv/felifelidesu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-03T10:40:42Z"
+    "title": "クリコンやっちゃいましょうよ！",
+    "streamer": "わらびたろ",
+    "url": "https://www.twitch.tv/warabitaroff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-03T10:11:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】目指せライジング/ダイヤ5～【S19/1日目】",
+    "streamer": "眠居ねむ",
+    "url": "https://www.twitch.tv/nemu_yee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-03T10:56:33Z"
   },
   {
     "platform": "Twitch",
@@ -77,17 +77,17 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-03-03T11:09:39Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコンorヴァリアント(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-03T10:34:20Z"
+    "title": "心穏やかクリコン 上手くなりたい！",
+    "streamer": "felifelidesu",
+    "url": "https://www.twitch.tv/felifelidesu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-03T10:40:42Z"
   },
   {
     "platform": "Twitch",
@@ -95,7 +95,25 @@
     "streamer": "乙卯ぽるる",
     "url": "https://www.twitch.tv/kinotoporuru",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-03T10:53:29Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "[何も]４ヶ月ぶりにクリコンやる[わからない]",
+    "streamer": "あだしののもふ",
+    "url": "https://www.youtube.com/watch?v=u_jZd2VdBjM",
+    "thumbnail": "https://i.ytimg.com/vi/u_jZd2VdBjM/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-03T11:35:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンorヴァリアント(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-03T10:34:20Z"
   }
 ]
