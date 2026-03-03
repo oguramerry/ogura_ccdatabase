@@ -5,7 +5,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 65,
+    "viewers": 59,
     "started_at": "2026-03-03T11:07:34Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 49,
+    "viewers": 51,
     "started_at": "2026-03-03T12:09:17Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 34,
+    "viewers": 43,
     "started_at": "2026-03-03T10:58:36Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 28,
+    "viewers": 31,
     "started_at": "2026-03-03T11:07:55Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "AMEPERO",
     "url": "https://www.twitch.tv/amepero",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amepero-320x180.jpg",
-    "viewers": 27,
+    "viewers": 29,
     "started_at": "2026-03-03T12:56:14Z"
   },
   {
@@ -50,17 +50,8 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 17,
+    "viewers": 20,
     "started_at": "2026-03-03T10:06:54Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "シーズン19クリコンランク/戦士/プラチナ4から   @nikeajikyo",
-    "streamer": "ニケア",
-    "url": "https://www.twitch.tv/nikeajikyo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-03-03T12:00:41Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +59,26 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 14,
+    "viewers": 18,
     "started_at": "2026-03-03T11:20:50Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "アプデで強化された黒魔導士をクリコンで試す",
+    "streamer": "ふらんです",
+    "url": "https://www.twitch.tv/fran_umai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-03T11:56:00Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "シーズン19クリコンランク/戦士/プラチナ4から   @nikeajikyo",
+    "streamer": "ニケア",
+    "url": "https://www.twitch.tv/nikeajikyo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nikeajikyo-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-03T12:00:41Z"
   },
   {
     "platform": "Twitch",
@@ -77,17 +86,8 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 13,
+    "viewers": 14,
     "started_at": "2026-03-03T12:10:24Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【#FF14】今日から新シーズン！！調整どうですか？【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-03-03T10:13:32Z"
   },
   {
     "platform": "YouTube",
@@ -100,21 +100,30 @@
   },
   {
     "platform": "Twitch",
+    "title": "【#FF14】今日から新シーズン！！調整どうですか？【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-03T10:13:32Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン 新忍者とリーパー",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-03T11:09:39Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "クリコンやっちゃいましょうよ！",
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 9,
+    "viewers": 7,
     "started_at": "2026-03-03T10:11:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンorヴァリアント(/・ω・)/",
-    "streamer": "おるちゃ",
-    "url": "https://www.twitch.tv/orpheusj",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-03T10:34:20Z"
   },
   {
     "platform": "YouTube",
@@ -122,25 +131,16 @@
     "streamer": "AMEPERO",
     "url": "https://www.youtube.com/watch?v=TbHAbZ9nlwE",
     "thumbnail": "https://i.ytimg.com/vi/TbHAbZ9nlwE/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-03-03T12:56:21Z"
   },
   {
     "platform": "Twitch",
-    "title": "のんびりクリコン",
-    "streamer": "もちどん",
-    "url": "https://www.twitch.tv/mochidon_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-03T11:48:02Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "[何も]４ヶ月ぶりにクリコンやる[わからない]",
-    "streamer": "あだしののもふ",
-    "url": "https://www.youtube.com/watch?v=u_jZd2VdBjM",
-    "thumbnail": "https://i.ytimg.com/vi/u_jZd2VdBjM/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-03-03T11:35:37Z"
+    "title": "クリコンorヴァリアント(/・ω・)/",
+    "streamer": "おるちゃ",
+    "url": "https://www.twitch.tv/orpheusj",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orpheusj-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-03T10:34:20Z"
   }
 ]
