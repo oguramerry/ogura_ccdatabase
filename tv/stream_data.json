@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 41,
+    "viewers": 39,
     "started_at": "2026-03-04T11:00:02Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 37,
+    "viewers": 38,
     "started_at": "2026-03-04T10:56:18Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 35,
+    "viewers": 28,
     "started_at": "2026-03-04T07:31:02Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 35,
+    "viewers": 22,
     "started_at": "2026-03-04T11:10:39Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "AMEPERO",
     "url": "https://www.twitch.tv/amepero",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amepero-320x180.jpg",
-    "viewers": 24,
+    "viewers": 21,
     "started_at": "2026-03-04T12:20:32Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 24,
+    "viewers": 21,
     "started_at": "2026-03-04T11:50:27Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 12,
+    "viewers": 13,
     "started_at": "2026-03-04T13:06:49Z"
   },
   {
@@ -68,7 +68,7 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 9,
+    "viewers": 11,
     "started_at": "2026-03-04T12:40:09Z"
   },
   {
@@ -77,17 +77,8 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 9,
+    "viewers": 11,
     "started_at": "2026-03-04T12:40:09Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-04T13:20:16Z"
   },
   {
     "platform": "YouTube",
@@ -95,17 +86,26 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=aoeJMzwEBZQ",
     "thumbnail": "https://i.ytimg.com/vi/aoeJMzwEBZQ/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 6,
     "started_at": "2026-03-04T13:20:38Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】細長い天球儀 (侍)100/100",
-    "streamer": "おるてんちゃん",
-    "url": "https://www.twitch.tv/woltenrema",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-04T14:42:57Z"
+    "title": "【第122話】political correctness【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-04T15:01:15Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第122話】political correctness【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-04T15:01:15Z"
   },
   {
     "platform": "Twitch",
@@ -113,7 +113,25 @@
     "streamer": "おるてんちゃん",
     "url": "https://www.twitch.tv/woltenrema",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
+    "started_at": "2026-03-04T14:42:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "800～ クリコンやっちゃいましょうよ！",
+    "streamer": "わらびたろ",
+    "url": "https://www.twitch.tv/warabitaroff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-04T15:08:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】細長い天球儀 (侍)100/100",
+    "streamer": "おるてんちゃん",
+    "url": "https://www.twitch.tv/woltenrema",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
+    "viewers": 2,
     "started_at": "2026-03-04T14:42:57Z"
   }
 ]
