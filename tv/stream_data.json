@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【Twitchパートナー 1周年】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！Elemental DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 44,
-    "started_at": "2026-03-04T10:56:18Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day79【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 42,
+    "viewers": 55,
     "started_at": "2026-03-04T11:00:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【Twitchパートナー 1周年】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！Elemental DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 50,
+    "started_at": "2026-03-04T10:56:18Z"
   },
   {
     "platform": "Twitch",
@@ -23,35 +23,8 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 38,
+    "viewers": 43,
     "started_at": "2026-03-04T07:31:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "フロライ参加型たまに指揮🍹黒魔激推しデー！｜水曜はFLイベントデー！#FLどうでしょうGaiaDC ㊗クリコンランカーカムバック後夜祭",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 37,
-    "started_at": "2026-03-04T11:10:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "こちらクリコンシャキ観測所",
-    "streamer": "雪之枝ひお",
-    "url": "https://www.twitch.tv/yukinoe_hio",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 34,
-    "started_at": "2026-03-04T05:50:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "［FF14］クリコンランクマ",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 33,
-    "started_at": "2026-03-04T10:39:10Z"
   },
   {
     "platform": "Twitch",
@@ -59,17 +32,17 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 15,
+    "viewers": 33,
     "started_at": "2026-03-04T11:10:57Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン 新忍者とリーパー",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-03-04T10:00:03Z"
+    "title": "フロライ参加型たまに指揮🍹黒魔激推しデー！｜水曜はFLイベントデー！#FLどうでしょうGaiaDC ㊗クリコンランカーカムバック後夜祭",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-03-04T11:10:39Z"
   },
   {
     "platform": "Twitch",
@@ -77,8 +50,17 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 11,
+    "viewers": 12,
     "started_at": "2026-03-04T11:44:01Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン 新忍者とリーパー",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-04T10:00:03Z"
   },
   {
     "platform": "Twitch",
@@ -88,6 +70,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
     "viewers": 9,
     "started_at": "2026-03-04T09:22:19Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】おれ、ゴールド【クリコンランクマ】【侍】【学者】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=9VO7BWi6Oeo",
+    "thumbnail": "https://i.ytimg.com/vi/9VO7BWi6Oeo/mqdefault_live.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-04T11:51:51Z"
   },
   {
     "platform": "YouTube",
@@ -104,7 +95,7 @@
     "streamer": "おらくる3210",
     "url": "https://www.twitch.tv/oracle_protocol",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oracle_protocol-320x180.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-03-04T11:29:49Z"
   },
   {
@@ -113,16 +104,16 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 5,
+    "viewers": 7,
     "started_at": "2026-03-04T11:50:27Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14】おれ、ゴールド【クリコンランクマ】【侍】【学者】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=9VO7BWi6Oeo",
-    "thumbnail": "https://i.ytimg.com/vi/9VO7BWi6Oeo/mqdefault_live.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-04T11:51:51Z"
+    "platform": "Twitch",
+    "title": "少しだけクリコン😡結構重い",
+    "streamer": "felifelidesu",
+    "url": "https://www.twitch.tv/felifelidesu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-04T12:01:56Z"
   }
 ]
