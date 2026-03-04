@@ -5,35 +5,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 41,
+    "viewers": 40,
     "started_at": "2026-03-04T11:00:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【Twitchパートナー 1周年】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！Elemental DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-03-04T10:56:18Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "こちらクリコンシャキ観測所",
-    "streamer": "雪之枝ひお",
-    "url": "https://www.twitch.tv/yukinoe_hio",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-03-04T05:50:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】零式シャキ待ち→アークレイダーズっ！☆→22時30分クリコンtム連",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-03-04T07:31:02Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +14,26 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 24,
+    "viewers": 30,
     "started_at": "2026-03-04T11:10:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【Twitchパートナー 1周年】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！Elemental DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 29,
+    "started_at": "2026-03-04T10:56:18Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】零式シャキ待ち→アークレイダーズっ！☆→22時30分クリコンtム連",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 28,
+    "started_at": "2026-03-04T07:31:02Z"
   },
   {
     "platform": "Twitch",
@@ -50,26 +41,17 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 22,
+    "viewers": 27,
     "started_at": "2026-03-04T10:39:10Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #100 ～ ありがとうS18!! よろしくお願いしますS19!! ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-04T09:22:19Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "1000～ クリコンやっちゃいましょうよ！",
-    "streamer": "わらびたろ",
-    "url": "https://www.twitch.tv/warabitaroff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-04T10:30:03Z"
+    "title": "こちらクリコンシャキ観測所",
+    "streamer": "雪之枝ひお",
+    "url": "https://www.twitch.tv/yukinoe_hio",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
+    "viewers": 24,
+    "started_at": "2026-03-04T05:50:39Z"
   },
   {
     "platform": "Twitch",
@@ -77,8 +59,26 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 8,
+    "viewers": 11,
     "started_at": "2026-03-04T11:10:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "1100～ クリコンやっちゃいましょうよ！",
+    "streamer": "わらびたろ",
+    "url": "https://www.twitch.tv/warabitaroff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-04T11:44:01Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #100 ～ ありがとうS18!! よろしくお願いしますS19!! ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-03-04T09:22:19Z"
   },
   {
     "platform": "Twitch",
@@ -86,7 +86,7 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-03-04T10:00:03Z"
   },
   {
@@ -95,17 +95,8 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=_RbDdVafCbk",
     "thumbnail": "https://i.ytimg.com/vi/_RbDdVafCbk/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 6,
     "started_at": "2026-03-04T11:01:19Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "RANKED CRYSTAL CONFLICT - trolling around",
-    "streamer": "MomokoTomoko",
-    "url": "https://www.twitch.tv/momokotomoko",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_momokotomoko-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-04T11:04:47Z"
   },
   {
     "platform": "Twitch",
@@ -113,7 +104,16 @@
     "streamer": "おらくる3210",
     "url": "https://www.twitch.tv/oracle_protocol",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oracle_protocol-320x180.jpg",
-    "viewers": 0,
+    "viewers": 2,
     "started_at": "2026-03-04T11:29:49Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "少しだけクリコン😡",
+    "streamer": "felifelidesu",
+    "url": "https://www.twitch.tv/felifelidesu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-04T11:30:27Z"
   }
 ]
