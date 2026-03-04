@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 50,
+    "viewers": 52,
     "started_at": "2026-03-04T10:56:18Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】零式シャキ待ち→アークレイダーズっ！☆→22時30分クリコンtム連",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 40,
-    "started_at": "2026-03-04T07:31:02Z"
   },
   {
     "platform": "Twitch",
@@ -28,11 +19,20 @@
   },
   {
     "platform": "Twitch",
-    "title": "水曜はFLイベントデー！#FLどうでしょうGaiaDC フロライ参加型たまに指揮🍹黒魔激推しデー！｜㊗クリコンランカーカムバック後夜祭",
+    "title": "【FF14】零式シャキ待ち→アークレイダーズっ！☆→22時30分クリコンtム連",
+    "streamer": "ずむちゃ",
+    "url": "https://www.twitch.tv/zumumu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-03-04T07:31:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "水曜は参加型FLイベントデー！#FLどうでしょうGaiaDC フロライ参加型たまに指揮🍹黒魔激推しデー！｜㊗クリコンランカーカムバック後夜祭",
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 38,
+    "viewers": 37,
     "started_at": "2026-03-04T11:10:39Z"
   },
   {
@@ -46,20 +46,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【#FF14】ランクマッチ今シーズンはがんばるぞー！【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 22,
-    "started_at": "2026-03-04T11:10:57Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】rude",
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 18,
+    "viewers": 17,
     "started_at": "2026-03-04T11:50:27Z"
   },
   {
@@ -73,12 +64,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "FF14 クリコン カジュアル → ランク",
-    "streamer": "おらくる3210",
-    "url": "https://www.twitch.tv/oracle_protocol",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oracle_protocol-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-03-04T11:29:49Z"
+    "title": "【#FF14】ランクマッチ今シーズンはがんばるぞー！【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-04T11:10:57Z"
   },
   {
     "platform": "Twitch",
@@ -86,8 +77,26 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-03-04T10:00:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン カジュアル → ランク",
+    "streamer": "おらくる3210",
+    "url": "https://www.twitch.tv/oracle_protocol",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oracle_protocol-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-04T11:29:49Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14 クリコン】チーム練習参加型カスタム！召喚で第七霊災だぁぁ！！！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-04T13:06:49Z"
   },
   {
     "platform": "Twitch",
@@ -95,7 +104,7 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 2,
+    "viewers": 4,
     "started_at": "2026-03-04T12:40:09Z"
   }
 ]
