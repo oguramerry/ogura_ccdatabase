@@ -1,6 +1,15 @@
 [
   {
     "platform": "Twitch",
+    "title": "朝からだってクリコンがしたい★",
+    "streamer": "てとぽて",
+    "url": "https://www.twitch.tv/tet_potet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tet_potet-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-04T00:47:09Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "[FF14] クリコン｜ENG配信｜日本語勉強中v  (Patch 7.45)",
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
@@ -14,16 +23,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-04T00:38:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "［FF14］クリコンランクマor作業しながら雑談",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-03-04T00:38:38Z"
   }
 ]
