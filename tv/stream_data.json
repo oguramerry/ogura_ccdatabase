@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 63,
+    "viewers": 57,
     "started_at": "2026-03-04T07:55:17Z"
   },
   {
@@ -14,26 +14,8 @@
     "streamer": "雪之枝ひお",
     "url": "https://www.twitch.tv/yukinoe_hio",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
-    "viewers": 28,
+    "viewers": 34,
     "started_at": "2026-03-04T05:50:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ごはんまで！",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-04T08:56:55Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #100 ～ ありがとうS18!! よろしくお願いしますS19!! ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-04T09:22:19Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +23,16 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 4,
+    "viewers": 13,
     "started_at": "2026-03-04T10:00:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #100 ～ ありがとうS18!! よろしくお願いしますS19!! ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-04T09:22:19Z"
   }
 ]
