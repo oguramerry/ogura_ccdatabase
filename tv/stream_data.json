@@ -5,7 +5,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 57,
+    "viewers": 67,
     "started_at": "2026-03-05T12:15:03Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 51,
+    "viewers": 38,
     "started_at": "2026-03-05T13:28:26Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 36,
+    "viewers": 33,
     "started_at": "2026-03-05T11:19:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-05T12:19:11Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,26 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 12,
+    "viewers": 13,
     "started_at": "2026-03-05T12:00:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】目指せライジング/ダイヤ4～【S19/2日目】",
+    "streamer": "眠居ねむ",
+    "url": "https://www.twitch.tv/nemu_yee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-05T15:29:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-05T12:19:11Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +59,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-03-05T13:02:55Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=DXqBr3NAnZE",
-    "thumbnail": "https://i.ytimg.com/vi/DXqBr3NAnZE/mqdefault_live.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-05T12:20:37Z"
   },
   {
     "platform": "Twitch",
@@ -73,20 +73,38 @@
   },
   {
     "platform": "Twitch",
+    "title": "【クリコン】忍道【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-05T15:41:03Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=DXqBr3NAnZE",
+    "thumbnail": "https://i.ytimg.com/vi/DXqBr3NAnZE/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-05T12:20:37Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "クリコン 侍強くなったらしい",
     "streamer": "コンガナジャイ",
     "url": "https://www.twitch.tv/konbanhag",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 6,
+    "viewers": 3,
     "started_at": "2026-03-05T14:00:46Z"
   },
   {
     "platform": "YouTube",
-    "title": "クリコン～ゴールドスタート",
-    "streamer": "あうらのしっぽ",
-    "url": "https://www.youtube.com/watch?v=f45KPNdmNAc",
-    "thumbnail": "https://i.ytimg.com/vi/f45KPNdmNAc/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-05T14:21:04Z"
+    "title": "【クリコン】忍道【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=lqUbnNyURTM",
+    "thumbnail": "https://i.ytimg.com/vi/lqUbnNyURTM/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-05T15:41:31Z"
   }
 ]
