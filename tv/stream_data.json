@@ -5,17 +5,26 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 52,
+    "viewers": 53,
     "started_at": "2026-03-05T11:19:37Z"
   },
   {
     "platform": "Twitch",
-    "title": "Ranked Crystalline Conflict Omega Dragoon PoV! [ PVP +e | !discord !kofi | It's Teysa Time baby! 🕒 |",
+    "title": "Ranked Crystalline Conflict Omega Dragoon PoV! [ PVP +e | !ffbot !discord !kofi | It's Teysa Time baby! 🕒 |",
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 23,
+    "viewers": 25,
     "started_at": "2026-03-05T02:09:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14【PvP】クリコン S19 Day2",
+    "streamer": "ゃんゃん",
+    "url": "https://www.twitch.tv/yanyan2525",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-03-05T12:15:03Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +32,26 @@
     "streamer": "ふらんです",
     "url": "https://www.twitch.tv/fran_umai",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
-    "viewers": 11,
+    "viewers": 13,
     "started_at": "2026-03-05T12:00:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-05T12:19:11Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=DXqBr3NAnZE",
+    "thumbnail": "https://i.ytimg.com/vi/DXqBr3NAnZE/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-05T12:20:37Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +59,7 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 5,
+    "viewers": 3,
     "started_at": "2026-03-05T12:09:42Z"
   }
 ]
