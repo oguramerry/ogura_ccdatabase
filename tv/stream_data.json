@@ -5,7 +5,7 @@
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 21,
+    "viewers": 22,
     "started_at": "2026-03-05T02:09:51Z"
   },
   {
@@ -16,5 +16,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
     "viewers": 6,
     "started_at": "2026-03-05T09:01:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコン レート95～【アドバイス歓迎",
+    "streamer": "デルアキ",
+    "url": "https://www.twitch.tv/deluaki",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-05T10:44:52Z"
   }
 ]
