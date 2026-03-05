@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 57,
+    "viewers": 47,
     "started_at": "2026-03-05T11:19:37Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 45,
+    "viewers": 44,
     "started_at": "2026-03-05T15:41:03Z"
   },
   {
@@ -25,15 +25,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
     "viewers": 16,
     "started_at": "2026-03-05T15:29:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "1200～ クリコンやっちゃいましょうよ！day3",
-    "streamer": "わらびたろ",
-    "url": "https://www.twitch.tv/warabitaroff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-03-05T15:09:58Z"
   },
   {
     "platform": "YouTube",
@@ -52,14 +43,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-03-05T16:36:27Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "FF14　PVPの民 クリコン・ｗ・",
-    "streamer": "じる",
-    "url": "https://www.youtube.com/watch?v=LSUz2dWfcMU",
-    "thumbnail": "https://i.ytimg.com/vi/LSUz2dWfcMU/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-03-05T16:36:46Z"
   }
 ]
