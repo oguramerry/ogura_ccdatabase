@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】忍道【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 49,
-    "started_at": "2026-03-05T15:41:03Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！Elemental DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 38,
+    "viewers": 46,
     "started_at": "2026-03-05T11:19:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】忍道【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 45,
+    "started_at": "2026-03-05T15:41:03Z"
   },
   {
     "platform": "YouTube",
@@ -23,7 +23,16 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=lqUbnNyURTM",
     "thumbnail": "https://i.ytimg.com/vi/lqUbnNyURTM/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-03-05T15:41:31Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "レイナーのそっくりさんを育てていく クリコンとかストーリー（紅蓮）とか",
+    "streamer": "フォルターの屋根裏部屋",
+    "url": "https://www.twitch.tv/folter_ex3",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_folter_ex3-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-05T18:21:18Z"
   }
 ]
