@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 55,
+    "viewers": 49,
     "started_at": "2026-03-05T15:41:03Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 42,
+    "viewers": 38,
     "started_at": "2026-03-05T11:19:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】目指せライジング/ダイヤ4～【S19/2日目】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-03-05T15:29:04Z"
   },
   {
     "platform": "YouTube",
@@ -32,16 +23,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=lqUbnNyURTM",
     "thumbnail": "https://i.ytimg.com/vi/lqUbnNyURTM/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-03-05T15:41:31Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン 侍が強くなったぞ！",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-05T16:36:27Z"
   }
 ]
