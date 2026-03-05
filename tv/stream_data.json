@@ -5,7 +5,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 26,
+    "viewers": 31,
     "started_at": "2026-03-05T10:32:30Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 22,
+    "viewers": 24,
     "started_at": "2026-03-05T02:09:51Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "われらがホーム、Elementalがクリコンランク戦の会場だー‼【FF14】イベント、クリコン",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-05T09:01:35Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,16 @@
     "streamer": "デルアキ",
     "url": "https://www.twitch.tv/deluaki",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deluaki-320x180.jpg",
-    "viewers": 6,
+    "viewers": 10,
     "started_at": "2026-03-05T10:44:52Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "われらがホーム、Elementalがクリコンランク戦の会場だー‼【FF14】イベント、クリコン",
+    "streamer": "ゆきはれ",
+    "url": "https://www.twitch.tv/yukihale",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-05T09:01:35Z"
   }
 ]
