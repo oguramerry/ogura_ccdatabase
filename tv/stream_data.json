@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 56,
+    "viewers": 52,
     "started_at": "2026-03-05T11:19:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "［FF14］クリコンランクマ",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 35,
-    "started_at": "2026-03-05T10:32:30Z"
   },
   {
     "platform": "Twitch",
@@ -23,16 +14,25 @@
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 24,
+    "viewers": 23,
     "started_at": "2026-03-05T02:09:51Z"
   },
   {
     "platform": "Twitch",
-    "title": "われらがホーム、Elementalがクリコンランク戦の会場だー‼【FF14】イベント、クリコン",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-05T09:01:35Z"
+    "title": "暁月のストーリーを見る。飽きたらクリコン",
+    "streamer": "ふらんです",
+    "url": "https://www.twitch.tv/fran_umai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-05T12:00:22Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#3 ダイヤ5～",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-05T12:09:42Z"
   }
 ]
