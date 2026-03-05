@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！Elemental DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 47,
-    "started_at": "2026-03-05T11:19:37Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】忍道【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 44,
+    "viewers": 51,
     "started_at": "2026-03-05T15:41:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！Elemental DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 48,
+    "started_at": "2026-03-05T11:19:37Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 16,
+    "viewers": 15,
     "started_at": "2026-03-05T15:29:04Z"
   },
   {
