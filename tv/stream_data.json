@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】忍道【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 49,
-    "started_at": "2026-03-05T15:41:03Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】→22時30分クリコンチム連電気羊は新型モンクの夢を見るか",
-    "streamer": "ずむちゃ",
-    "url": "https://www.twitch.tv/zumumu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 46,
-    "started_at": "2026-03-05T13:28:26Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン 22時30分～【参加型カスタム募集】を行います！Elemental DCにて募集します！ランク帯は問いませんので、どなたでもご参加お待ちしています！",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 37,
+    "viewers": 70,
     "started_at": "2026-03-05T11:19:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】忍道【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 39,
+    "started_at": "2026-03-05T15:41:03Z"
   },
   {
     "platform": "Twitch",
@@ -32,17 +23,8 @@
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 13,
+    "viewers": 14,
     "started_at": "2026-03-05T15:29:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】今日もチーム練習参加型カスタム！召喚で第七霊災だぁぁ！！！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-05T13:02:55Z"
   },
   {
     "platform": "Twitch",
@@ -50,26 +32,26 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 12,
+    "viewers": 14,
     "started_at": "2026-03-05T15:09:58Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-03-05T12:19:11Z"
+    "title": "FF14 クリコン 侍が強くなったぞ！",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-05T16:36:27Z"
   },
   {
     "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=DXqBr3NAnZE",
-    "thumbnail": "https://i.ytimg.com/vi/DXqBr3NAnZE/mqdefault_live.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-05T12:20:37Z"
+    "title": "FF14　PVPの民 クリコン・ｗ・",
+    "streamer": "じる",
+    "url": "https://www.youtube.com/watch?v=LSUz2dWfcMU",
+    "thumbnail": "https://i.ytimg.com/vi/LSUz2dWfcMU/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-05T16:36:46Z"
   },
   {
     "platform": "YouTube",
