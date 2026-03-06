@@ -1,11 +1,20 @@
 [
   {
+    "platform": "Twitch",
+    "title": "【FF14】エレDCでクリコンカジュアル",
+    "streamer": "ゆゆじゃっく",
+    "url": "https://www.twitch.tv/yuyuhimarijackgravity",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yuyuhimarijackgravity-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-06T06:30:23Z"
+  },
+  {
     "platform": "YouTube",
     "title": "NA Ranked Crystal Conflict and Trying all the 7.45 job changes!",
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=b9gHKnkChNI",
     "thumbnail": "https://i.ytimg.com/vi/b9gHKnkChNI/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-03-06T01:28:14Z"
   },
   {
@@ -14,7 +23,7 @@
     "streamer": "Brian Ricardo Highlights",
     "url": "https://www.youtube.com/watch?v=Fvzs_Faqo8A",
     "thumbnail": "https://i.ytimg.com/vi/Fvzs_Faqo8A/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-03-06T01:28:09Z"
   }
 ]
