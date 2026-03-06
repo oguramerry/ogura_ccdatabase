@@ -5,17 +5,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 66,
+    "viewers": 71,
     "started_at": "2026-03-06T11:16:52Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "こっそりとクリコンランクマ",
-    "streamer": "東雲ハクエン",
-    "url": "https://www.twitch.tv/hakuensinonome",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-03-06T17:14:37Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "ぐみもぐ",
     "url": "https://www.twitch.tv/gumimogumogu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 6,
+    "viewers": 14,
     "started_at": "2026-03-06T18:59:13Z"
   },
   {
@@ -32,7 +23,7 @@
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 4,
+    "viewers": 1,
     "started_at": "2026-03-06T18:32:31Z"
   }
 ]
