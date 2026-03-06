@@ -5,8 +5,17 @@
     "streamer": "iDiosMioh",
     "url": "https://www.twitch.tv/idiosmioh",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_idiosmioh-320x180.jpg",
-    "viewers": 25,
+    "viewers": 27,
     "started_at": "2026-03-05T23:50:10Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "NA Ranked Crystal Conflict and Trying all the 7.45 job changes!",
+    "streamer": "BrianRicardo",
+    "url": "https://www.twitch.tv/brianricardo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-06T01:28:04Z"
   },
   {
     "platform": "YouTube",
@@ -14,7 +23,7 @@
     "streamer": "Brian Ricardo",
     "url": "https://www.youtube.com/watch?v=b9gHKnkChNI",
     "thumbnail": "https://i.ytimg.com/vi/b9gHKnkChNI/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-06T01:28:14Z"
   },
   {
