@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 24,
+    "viewers": 28,
     "started_at": "2026-03-06T09:27:16Z"
   },
   {
@@ -14,26 +14,8 @@
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 6,
+    "viewers": 9,
     "started_at": "2026-03-06T08:19:13Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "マシャ応援隊🔥クリコンしたいしサブクエもしたい。【FF14】イベント、クリコン",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-06T09:00:48Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "ナスのクリコン　ランクマorカジュアル",
-    "streamer": "ナスおじ戦カミチャンネル",
-    "url": "https://www.youtube.com/watch?v=9J6RDiA-dWs",
-    "thumbnail": "https://i.ytimg.com/vi/9J6RDiA-dWs/mqdefault_live.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-06T09:17:52Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +23,26 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 9,
     "started_at": "2026-03-06T09:30:16Z"
   },
   {
     "platform": "YouTube",
-    "title": "【ff14】クリスタルコンフリクト（ランクマッチ）",
-    "streamer": "Alice Violet",
-    "url": "https://www.youtube.com/watch?v=pdF-h3mcjx4",
-    "thumbnail": "https://i.ytimg.com/vi/pdF-h3mcjx4/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-06T07:52:45Z"
+    "title": "ナスのクリコン　ランクマorカジュアル",
+    "streamer": "ナスおじ戦カミチャンネル",
+    "url": "https://www.youtube.com/watch?v=9J6RDiA-dWs",
+    "thumbnail": "https://i.ytimg.com/vi/9J6RDiA-dWs/mqdefault_live.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-06T09:17:52Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "マシャ応援隊🔥クリコンしたいしサブクエもしたい。【FF14】イベント、クリコン",
+    "streamer": "ゆきはれ",
+    "url": "https://www.twitch.tv/yukihale",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-06T09:00:48Z"
   },
   {
     "platform": "Twitch",
