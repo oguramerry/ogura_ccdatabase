@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 46,
+    "viewers": 47,
     "started_at": "2026-03-06T11:16:52Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 42,
+    "viewers": 45,
     "started_at": "2026-03-06T13:14:19Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 40,
+    "viewers": 42,
     "started_at": "2026-03-06T09:27:16Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 34,
+    "viewers": 27,
     "started_at": "2026-03-06T13:26:17Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 14,
+    "viewers": 19,
     "started_at": "2026-03-06T15:45:10Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 14,
+    "viewers": 13,
     "started_at": "2026-03-06T15:33:36Z"
   },
   {
@@ -59,8 +59,17 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 6,
+    "viewers": 9,
     "started_at": "2026-03-06T15:36:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】隠れます！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-06T16:12:01Z"
   },
   {
     "platform": "Twitch",
@@ -70,5 +79,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ersharifst-320x180.jpg",
     "viewers": 3,
     "started_at": "2026-03-06T14:31:27Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】隠れます！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=D2GvIxcPRNw",
+    "thumbnail": "https://i.ytimg.com/vi/D2GvIxcPRNw/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-06T16:12:23Z"
   }
 ]
