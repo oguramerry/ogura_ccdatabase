@@ -1,6 +1,15 @@
 [
   {
     "platform": "Twitch",
+    "title": "【クリコン】隠れます！【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 44,
+    "started_at": "2026-03-06T16:12:01Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day80【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
@@ -10,30 +19,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】隠れます！【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 31,
-    "started_at": "2026-03-06T16:12:01Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】目指せライジング/ダイヤ4～【S19/2日目】",
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 25,
+    "viewers": 28,
     "started_at": "2026-03-06T15:45:10Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ふぐ",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-03-06T15:33:36Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,26 @@
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 4,
+    "viewers": 10,
     "started_at": "2026-03-06T17:14:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "1400～ クリコンやっちゃいましょうよ！day4",
+    "streamer": "わらびたろ",
+    "url": "https://www.twitch.tv/warabitaroff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-06T15:36:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】細長い天球儀 (侍)",
+    "streamer": "おるてんちゃん",
+    "url": "https://www.twitch.tv/woltenrema",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-06T17:31:56Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +59,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=D2GvIxcPRNw",
     "thumbnail": "https://i.ytimg.com/vi/D2GvIxcPRNw/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-03-06T16:12:23Z"
   }
 ]
