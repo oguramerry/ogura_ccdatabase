@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 73,
+    "viewers": 76,
     "started_at": "2026-03-06T09:27:16Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 43,
+    "viewers": 44,
     "started_at": "2026-03-06T11:16:52Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "1300～ クリコンやっちゃいましょうよ！day4",
-    "streamer": "わらびたろ",
-    "url": "https://www.twitch.tv/warabitaroff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-03-06T10:38:38Z"
   },
   {
     "platform": "Twitch",
@@ -37,21 +28,21 @@
   },
   {
     "platform": "YouTube",
-    "title": "【FF14】戦場に赴く、クリコンVtuber。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
-    "streamer": "鈴屋ベル / Suzuya Bell",
-    "url": "https://www.youtube.com/watch?v=34kifSijG0M",
-    "thumbnail": "https://i.ytimg.com/vi/34kifSijG0M/mqdefault_live.jpg",
-    "viewers": 9,
-    "started_at": "2026-03-06T10:59:42Z"
-  },
-  {
-    "platform": "YouTube",
     "title": "【FF14】質上げてぇ…。【クリコンランクマ】【侍】【学者】",
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=CUhgDOCDo28",
     "thumbnail": "https://i.ytimg.com/vi/CUhgDOCDo28/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 10,
     "started_at": "2026-03-06T11:32:48Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】戦場に赴く、クリコンVtuber。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=34kifSijG0M",
+    "thumbnail": "https://i.ytimg.com/vi/34kifSijG0M/mqdefault_live.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-06T10:59:42Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +50,16 @@
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-03-06T10:27:02Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン カジュアル → ランク",
+    "streamer": "おらくる3210",
+    "url": "https://www.twitch.tv/oracle_protocol",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oracle_protocol-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-06T12:34:29Z"
   }
 ]
