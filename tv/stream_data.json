@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 70,
+    "viewers": 66,
     "started_at": "2026-03-06T11:16:52Z"
   },
   {
@@ -14,8 +14,17 @@
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 16,
+    "viewers": 15,
     "started_at": "2026-03-06T17:14:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】新しくなったリーパーを触ってみる【クリコン】",
+    "streamer": "ぐみもぐ",
+    "url": "https://www.twitch.tv/gumimogumogu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-06T18:59:13Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +32,7 @@
     "streamer": "ソタです",
     "url": "https://www.twitch.tv/aigosota",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aigosota-320x180.jpg",
-    "viewers": 1,
+    "viewers": 4,
     "started_at": "2026-03-06T18:32:31Z"
   }
 ]
