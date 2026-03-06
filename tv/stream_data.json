@@ -5,7 +5,7 @@
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-03-06T08:19:13Z"
   },
   {
@@ -14,8 +14,26 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-03-06T09:00:48Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "ナスのクリコン　ランクマorカジュアル",
+    "streamer": "ナスおじ戦カミチャンネル",
+    "url": "https://www.youtube.com/watch?v=9J6RDiA-dWs",
+    "thumbnail": "https://i.ytimg.com/vi/9J6RDiA-dWs/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-06T09:17:52Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-06T09:27:16Z"
   },
   {
     "platform": "YouTube",
