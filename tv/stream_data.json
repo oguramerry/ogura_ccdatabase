@@ -5,7 +5,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 39,
+    "viewers": 44,
     "started_at": "2026-03-06T16:12:01Z"
   },
   {
@@ -14,17 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 38,
+    "viewers": 43,
     "started_at": "2026-03-06T11:16:52Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】目指せライジング/ダイヤ4～【S19/2日目】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 33,
-    "started_at": "2026-03-06T15:45:10Z"
+    "title": "【クリコン】細長い天球儀 (侍)",
+    "streamer": "おるてんちゃん",
+    "url": "https://www.twitch.tv/woltenrema",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-03-06T17:31:56Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 11,
+    "viewers": 8,
     "started_at": "2026-03-06T17:14:37Z"
   },
   {
@@ -41,17 +41,8 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 10,
+    "viewers": 8,
     "started_at": "2026-03-06T15:36:53Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】細長い天球儀 (侍)",
-    "streamer": "おるてんちゃん",
-    "url": "https://www.twitch.tv/woltenrema",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-06T17:31:56Z"
   },
   {
     "platform": "YouTube",
@@ -59,7 +50,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=D2GvIxcPRNw",
     "thumbnail": "https://i.ytimg.com/vi/D2GvIxcPRNw/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 4,
     "started_at": "2026-03-06T16:12:23Z"
   }
 ]
