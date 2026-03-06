@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "Ranked Crystalline Conflict Omega Dragoon PoV! -> Slay the Spire 2 !howto [ PVP +e | !ffbot !discord !kofi | It's Teysa Time baby! 🕒 |",
-    "streamer": "Jayrod_TM",
-    "url": "https://www.twitch.tv/jayrod_tm",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-03-06T07:24:21Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】エレDCでクリコンカジュアル",
     "streamer": "ゆゆじゃっく",
     "url": "https://www.twitch.tv/yuyuhimarijackgravity",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yuyuhimarijackgravity-320x180.jpg",
-    "viewers": 16,
+    "viewers": 15,
     "started_at": "2026-03-06T06:30:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "Ranked Crystalline Conflict Omega Dragoon PoV! -> Slay the Spire 2 !howto [ PVP +e | !ffbot !discord !kofi | It's Teysa Time baby! 🕒 |",
+    "streamer": "Jayrod_TM",
+    "url": "https://www.twitch.tv/jayrod_tm",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-06T08:19:13Z"
   },
   {
     "platform": "YouTube",
@@ -23,7 +23,7 @@
     "streamer": "Alice Violet",
     "url": "https://www.youtube.com/watch?v=pdF-h3mcjx4",
     "thumbnail": "https://i.ytimg.com/vi/pdF-h3mcjx4/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-06T07:52:45Z"
   }
 ]
