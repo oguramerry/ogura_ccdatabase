@@ -5,7 +5,7 @@
     "streamer": "ゆゆじゃっく",
     "url": "https://www.twitch.tv/yuyuhimarijackgravity",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yuyuhimarijackgravity-320x180.jpg",
-    "viewers": 16,
+    "viewers": 17,
     "started_at": "2026-03-06T06:30:23Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 15,
+    "viewers": 12,
     "started_at": "2026-03-06T08:19:13Z"
   },
   {
@@ -23,7 +23,16 @@
     "streamer": "Alice Violet",
     "url": "https://www.youtube.com/watch?v=pdF-h3mcjx4",
     "thumbnail": "https://i.ytimg.com/vi/pdF-h3mcjx4/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-03-06T07:52:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "RANKED CRYSTAL CONFLICT - trolling around",
+    "streamer": "MomokoTomoko",
+    "url": "https://www.twitch.tv/momokotomoko",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_momokotomoko-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-06T08:52:24Z"
   }
 ]
