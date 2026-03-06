@@ -5,7 +5,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 55,
+    "viewers": 53,
     "started_at": "2026-03-06T13:14:19Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 48,
     "started_at": "2026-03-06T11:16:52Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 29,
+    "viewers": 27,
     "started_at": "2026-03-06T13:26:17Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】異世界転移したと思ったらクリコンだった件【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-03-06T10:27:02Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +32,17 @@
     "streamer": "おらくる3210",
     "url": "https://www.twitch.tv/oracle_protocol",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oracle_protocol-320x180.jpg",
-    "viewers": 8,
+    "viewers": 10,
     "started_at": "2026-03-06T12:34:29Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコンS19ランクマ#4 ダイヤ2～",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-06T13:29:58Z"
+    "title": "【FF14】異世界転移したと思ったらクリコンだった件【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-06T10:27:02Z"
   },
   {
     "platform": "YouTube",
@@ -61,5 +52,14 @@
     "thumbnail": "https://i.ytimg.com/vi/JEOHq-4BxoE/mqdefault_live.jpg",
     "viewers": 4,
     "started_at": "2026-03-06T14:14:12Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "ぬるま湯クリコン",
+    "streamer": "erSharifst",
+    "url": "https://www.twitch.tv/ersharifst",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ersharifst-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-06T14:31:27Z"
   }
 ]
