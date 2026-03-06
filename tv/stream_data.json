@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 68,
+    "viewers": 64,
     "started_at": "2026-03-06T09:27:16Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ナスおじ戦カミチャンネル",
     "url": "https://www.youtube.com/watch?v=9J6RDiA-dWs",
     "thumbnail": "https://i.ytimg.com/vi/9J6RDiA-dWs/mqdefault_live.jpg",
-    "viewers": 18,
+    "viewers": 12,
     "started_at": "2026-03-06T09:17:52Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 15,
+    "viewers": 12,
     "started_at": "2026-03-06T09:30:16Z"
   },
   {
@@ -32,17 +32,26 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-03-06T09:00:48Z"
   },
   {
     "platform": "Twitch",
-    "title": "RANKED CRYSTAL CONFLICT NA CC GAMES ARE INSANE",
-    "streamer": "MomokoTomoko",
-    "url": "https://www.twitch.tv/momokotomoko",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_momokotomoko-320x180.jpg",
+    "title": "1300～ クリコンやっちゃいましょうよ！day4",
+    "streamer": "わらびたろ",
+    "url": "https://www.twitch.tv/warabitaroff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
     "viewers": 4,
-    "started_at": "2026-03-06T10:03:00Z"
+    "started_at": "2026-03-06T10:38:38Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】異世界転移したと思ったらクリコンだった件【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-06T10:27:02Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +59,7 @@
     "streamer": "ゲーム狂人リッスン",
     "url": "https://www.twitch.tv/gkrissun",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gkrissun-320x180.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-03-06T10:29:50Z"
   }
 ]
