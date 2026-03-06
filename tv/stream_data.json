@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 76,
-    "started_at": "2026-03-06T09:27:16Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day80【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 55,
     "started_at": "2026-03-06T11:16:52Z"
   },
   {
@@ -23,7 +14,7 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 20,
+    "viewers": 22,
     "started_at": "2026-03-06T11:18:16Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=34kifSijG0M",
     "thumbnail": "https://i.ytimg.com/vi/34kifSijG0M/mqdefault_live.jpg",
-    "viewers": 7,
+    "viewers": 8,
     "started_at": "2026-03-06T10:59:42Z"
   },
   {
@@ -50,7 +41,7 @@
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 5,
+    "viewers": 8,
     "started_at": "2026-03-06T10:27:02Z"
   },
   {
@@ -59,7 +50,7 @@
     "streamer": "おらくる3210",
     "url": "https://www.twitch.tv/oracle_protocol",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oracle_protocol-320x180.jpg",
-    "viewers": 1,
+    "viewers": 5,
     "started_at": "2026-03-06T12:34:29Z"
   }
 ]
