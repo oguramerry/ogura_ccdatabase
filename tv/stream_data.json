@@ -5,7 +5,7 @@
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 15,
+    "viewers": 18,
     "started_at": "2026-03-06T07:24:21Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ゆゆじゃっく",
     "url": "https://www.twitch.tv/yuyuhimarijackgravity",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yuyuhimarijackgravity-320x180.jpg",
-    "viewers": 14,
+    "viewers": 17,
     "started_at": "2026-03-06T06:30:23Z"
   },
   {
@@ -23,7 +23,16 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 7,
+    "viewers": 12,
     "started_at": "2026-03-06T06:58:29Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "クリコン",
+    "streamer": "Alice Violet",
+    "url": "https://www.youtube.com/watch?v=pdF-h3mcjx4",
+    "thumbnail": "https://i.ytimg.com/vi/pdF-h3mcjx4/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-06T07:52:45Z"
   }
 ]
