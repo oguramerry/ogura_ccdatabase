@@ -5,7 +5,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 62,
+    "viewers": 63,
     "started_at": "2026-03-07T13:05:28Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 34,
+    "viewers": 31,
     "started_at": "2026-03-07T14:47:22Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン 侍が強くなったぞ！",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-07T18:20:41Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,25 @@
     "streamer": "Lexellent7",
     "url": "https://www.twitch.tv/lexellent7",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
-    "viewers": 4,
+    "viewers": 7,
     "started_at": "2026-03-07T19:42:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "Quid vis pacem, para Crystal Conflict",
+    "streamer": "Shiroe_Wolfus",
+    "url": "https://www.twitch.tv/shiroe_wolfus",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shiroe_wolfus-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-07T20:59:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン 侍が強くなったぞ！",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-07T18:20:41Z"
   }
 ]
