@@ -5,7 +5,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 54,
+    "viewers": 53,
     "started_at": "2026-03-07T02:23:26Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 30,
+    "viewers": 35,
     "started_at": "2026-03-07T06:15:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコン ランクマ 久しぶりに",
-    "streamer": "よおちゃん",
-    "url": "https://www.twitch.tv/yoochan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yoochan_twitch-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-03-07T02:15:58Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 5,
+    "viewers": 12,
     "started_at": "2026-03-07T06:16:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコン ランクマ 久しぶりに",
+    "streamer": "よおちゃん",
+    "url": "https://www.twitch.tv/yoochan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yoochan_twitch-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-07T02:15:58Z"
   },
   {
     "platform": "YouTube",
