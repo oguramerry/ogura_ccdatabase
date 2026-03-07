@@ -1,30 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコンフィジカル強化週間",
-    "streamer": "まきなべるぐ",
-    "url": "https://www.twitch.tv/mknblg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 58,
-    "started_at": "2026-03-07T07:26:54Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【本日で配信3年目】ミスタークリコン ランクマ「私のことは嫌いでも、クリコンのことは嫌いにならないでください！！！」（JP CC RANK）",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 52,
+    "viewers": 71,
     "started_at": "2026-03-07T10:56:49Z"
   },
   {
     "platform": "Twitch",
-    "title": "1400～ クリコンやっちゃいましょうよ！day5",
-    "streamer": "わらびたろ",
-    "url": "https://www.twitch.tv/warabitaroff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 18,
-    "started_at": "2026-03-07T10:15:26Z"
+    "title": "クリコンフィジカル強化週間",
+    "streamer": "まきなべるぐ",
+    "url": "https://www.twitch.tv/mknblg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
+    "viewers": 56,
+    "started_at": "2026-03-07T07:26:54Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,35 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 12,
+    "viewers": 17,
     "started_at": "2026-03-07T11:26:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "1400～ クリコンやっちゃいましょうよ！day5",
+    "streamer": "わらびたろ",
+    "url": "https://www.twitch.tv/warabitaroff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-07T10:15:26Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】う〇ちたくさんでたよ！",
+    "streamer": "ぴてぃわっと",
+    "url": "https://www.twitch.tv/pittywhat",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-07T11:50:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#5 ダイヤ1～",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-03-07T11:50:46Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +59,7 @@
     "streamer": "felifelidesu",
     "url": "https://www.twitch.tv/felifelidesu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
-    "viewers": 10,
+    "viewers": 8,
     "started_at": "2026-03-07T09:42:54Z"
   },
   {
@@ -52,5 +70,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
     "viewers": 5,
     "started_at": "2026-03-07T11:23:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】異世界転移したと思ったらクリコンだった件【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-07T11:59:57Z"
   }
 ]
