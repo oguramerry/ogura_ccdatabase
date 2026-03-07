@@ -5,17 +5,8 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 51,
+    "viewers": 68,
     "started_at": "2026-03-07T07:26:54Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "RANKED CRYSTAL CONFLICT NA CC GAMES ARE INSANE",
-    "streamer": "MomokoTomoko",
-    "url": "https://www.twitch.tv/momokotomoko",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_momokotomoko-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-07T07:46:51Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "felifelidesu",
     "url": "https://www.twitch.tv/felifelidesu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
-    "viewers": 4,
+    "viewers": 6,
     "started_at": "2026-03-07T09:42:54Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "1400～ クリコンやっちゃいましょうよ！day5",
+    "streamer": "わらびたろ",
+    "url": "https://www.twitch.tv/warabitaroff14",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-07T10:15:26Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "MomokoTomoko",
     "url": "https://www.twitch.tv/momokotomoko",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_momokotomoko-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-03-07T07:46:51Z"
   },
   {
