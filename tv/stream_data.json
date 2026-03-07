@@ -5,17 +5,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 60,
+    "viewers": 54,
     "started_at": "2026-03-07T16:02:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】今日もチーム練習！召喚で第七霊災だぁぁ！！！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 46,
-    "started_at": "2026-03-07T13:05:28Z"
   },
   {
     "platform": "Twitch",
@@ -28,11 +19,20 @@
   },
   {
     "platform": "Twitch",
+    "title": "【ff14 クリコン】今日もチーム練習！召喚で第七霊災だぁぁ！！！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 41,
+    "started_at": "2026-03-07T13:05:28Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【FF14】クリコン→オコチテ",
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 14,
+    "viewers": 17,
     "started_at": "2026-03-07T15:12:05Z"
   },
   {
@@ -59,7 +59,16 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-03-07T18:20:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "miti_______mg",
+    "url": "https://www.twitch.tv/miti_______mg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_miti_______mg-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-07T18:45:08Z"
   }
 ]
