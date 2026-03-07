@@ -5,7 +5,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 54,
+    "viewers": 53,
     "started_at": "2026-03-07T11:50:37Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 44,
+    "viewers": 36,
     "started_at": "2026-03-07T10:56:49Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=epSQdWoWF4A",
     "thumbnail": "https://i.ytimg.com/vi/epSQdWoWF4A/mqdefault_live.jpg",
-    "viewers": 18,
+    "viewers": 20,
     "started_at": "2026-03-07T12:43:11Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第123話】ブレインデッド・リデンプション【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-03-07T14:47:22Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +41,7 @@
     "streamer": "天咲ゆい",
     "url": "https://www.twitch.tv/amasaki_yui",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 15,
+    "viewers": 18,
     "started_at": "2026-03-07T13:14:04Z"
   },
   {
@@ -41,17 +50,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 12,
+    "viewers": 13,
     "started_at": "2026-03-07T13:29:19Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンS19ランクマ#5 ダイヤ1～",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-03-07T11:50:46Z"
   },
   {
     "platform": "Twitch",
@@ -59,26 +59,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 12,
+    "viewers": 11,
     "started_at": "2026-03-07T13:05:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランクマ",
-    "streamer": "MedohMeshi",
-    "url": "https://www.twitch.tv/medohmeshi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-07T13:42:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "HPを見ることから始める久々のクリコン",
-    "streamer": "ラプカ",
-    "url": "https://www.twitch.tv/rap_amd",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rap_amd-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-07T14:14:21Z"
   },
   {
     "platform": "Twitch",
@@ -86,17 +68,35 @@
     "streamer": "おるてんちゃん",
     "url": "https://www.twitch.tv/woltenrema",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
-    "viewers": 6,
+    "viewers": 10,
     "started_at": "2026-03-07T13:21:07Z"
   },
   {
     "platform": "Twitch",
-    "title": "【第123話】ブレインデッド・リデンプション【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-07T14:47:22Z"
+    "title": "クリコンS19ランクマ#5 ダイヤ1～",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-07T11:50:46Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "HPを見ることから始める久々のクリコン",
+    "streamer": "ラプカ",
+    "url": "https://www.twitch.tv/rap_amd",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rap_amd-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-03-07T14:14:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ",
+    "streamer": "MedohMeshi",
+    "url": "https://www.twitch.tv/medohmeshi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-07T13:42:39Z"
   },
   {
     "platform": "YouTube",
@@ -115,6 +115,24 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 4,
     "started_at": "2026-03-07T11:59:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】クリコン→オコチテ",
+    "streamer": "じゅきん",
+    "url": "https://www.twitch.tv/tufujukin",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-07T15:12:05Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "S19クリコンやっていく！ダイヤ～",
+    "streamer": "りん部屋",
+    "url": "https://www.twitch.tv/marin0319",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marin0319-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-07T15:13:14Z"
   },
   {
     "platform": "Twitch",
