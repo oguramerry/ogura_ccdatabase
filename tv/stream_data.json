@@ -5,7 +5,16 @@
     "streamer": "Lexellent7",
     "url": "https://www.twitch.tv/lexellent7",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
-    "viewers": 8,
+    "viewers": 9,
     "started_at": "2026-03-07T19:42:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ na cc",
+    "streamer": "MedohMeshi",
+    "url": "https://www.twitch.tv/medohmeshi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-07T23:03:22Z"
   }
 ]
