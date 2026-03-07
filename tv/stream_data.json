@@ -5,7 +5,7 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 57,
+    "viewers": 50,
     "started_at": "2026-03-07T07:26:54Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 34,
+    "viewers": 50,
     "started_at": "2026-03-07T10:56:49Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 18,
+    "viewers": 13,
     "started_at": "2026-03-07T10:15:26Z"
   },
   {
@@ -32,16 +32,25 @@
     "streamer": "felifelidesu",
     "url": "https://www.twitch.tv/felifelidesu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
-    "viewers": 10,
+    "viewers": 9,
     "started_at": "2026-03-07T09:42:54Z"
   },
   {
-    "platform": "YouTube",
-    "title": "[現在]リハビリクリコン[ブロンズ]",
-    "streamer": "あだしののもふ",
-    "url": "https://www.youtube.com/watch?v=6vwdSWuDwm0",
-    "thumbnail": "https://i.ytimg.com/vi/6vwdSWuDwm0/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-03-07T10:12:55Z"
+    "platform": "Twitch",
+    "title": "【クリコン】キリトに似てます！人権最強ぶっ壊れジョブおしえてください！！！！！！！！！ #FF14 えふじゅよ",
+    "streamer": "ネネムネム",
+    "url": "https://www.twitch.tv/nenemu_nemu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-07T11:26:45Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #102 ～ プラチナからはじめるクリコン生活♬ ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-07T11:23:40Z"
   }
 ]
