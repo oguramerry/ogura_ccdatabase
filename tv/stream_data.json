@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】chill天誅【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 73,
-    "started_at": "2026-03-07T16:02:07Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【第123話】ブレインデッド・リデンプション【FFXIV：クリコン】",
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 43,
+    "viewers": 41,
     "started_at": "2026-03-07T14:47:22Z"
   },
   {
@@ -23,7 +14,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 41,
+    "viewers": 31,
     "started_at": "2026-03-07T13:05:28Z"
   },
   {
@@ -32,7 +23,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 16,
+    "viewers": 20,
     "started_at": "2026-03-07T15:12:05Z"
   },
   {
@@ -41,8 +32,17 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=U_vcH9f5HnE",
     "thumbnail": "https://i.ytimg.com/vi/U_vcH9f5HnE/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-03-07T16:02:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "Definitely one of the Crystal Conflict PvP streams of all time",
+    "streamer": "Lexellent7",
+    "url": "https://www.twitch.tv/lexellent7",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-07T19:42:35Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +50,7 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 4,
+    "viewers": 2,
     "started_at": "2026-03-07T18:20:41Z"
   },
   {
