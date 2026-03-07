@@ -1,6 +1,15 @@
 [
   {
     "platform": "Twitch",
+    "title": "【クリコン】う〇ちたくさんでたよ！",
+    "streamer": "ぴてぃわっと",
+    "url": "https://www.twitch.tv/pittywhat",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
+    "viewers": 48,
+    "started_at": "2026-03-07T11:50:37Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【本日で配信3年目】ミスタークリコン ランクマ「私のことは嫌いでも、クリコンのことは嫌いにならないでください！！！」（JP CC RANK）",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
@@ -10,48 +19,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】う〇ちたくさんでたよ！",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 46,
-    "started_at": "2026-03-07T11:50:37Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】キリトに似てます！人権最強ぶっ壊れジョブおしえてください！！！！！！！！！ #FF14 えふじゅよ",
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 23,
+    "viewers": 20,
     "started_at": "2026-03-07T11:26:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】今日もチーム練習！召喚で第七霊災だぁぁ！！！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 18,
-    "started_at": "2026-03-07T13:05:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン（ランクマ）するよ！ダイヤ５から",
-    "streamer": "天咲ゆい",
-    "url": "https://www.twitch.tv/amasaki_yui",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-07T13:14:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンS19ランクマ#5 ダイヤ1～",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-03-07T11:50:46Z"
   },
   {
     "platform": "YouTube",
@@ -59,8 +32,35 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=epSQdWoWF4A",
     "thumbnail": "https://i.ytimg.com/vi/epSQdWoWF4A/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 17,
     "started_at": "2026-03-07T12:43:11Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#5 ダイヤ1～",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-07T11:50:46Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン（ランクマ）するよ！ダイヤ５から",
+    "streamer": "天咲ゆい",
+    "url": "https://www.twitch.tv/amasaki_yui",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-03-07T13:14:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14 クリコン】今日もチーム練習！召喚で第七霊災だぁぁ！！！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-03-07T13:05:28Z"
   },
   {
     "platform": "Twitch",
@@ -68,17 +68,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 10,
+    "viewers": 11,
     "started_at": "2026-03-07T13:29:19Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=OsL-vqMkvvg",
-    "thumbnail": "https://i.ytimg.com/vi/OsL-vqMkvvg/mqdefault_live.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-07T13:29:40Z"
   },
   {
     "platform": "Twitch",
@@ -90,22 +81,13 @@
     "started_at": "2026-03-07T13:21:07Z"
   },
   {
-    "platform": "Twitch",
-    "title": "クリコンランクマ",
-    "streamer": "MedohMeshi",
-    "url": "https://www.twitch.tv/medohmeshi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-07T13:42:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】異世界転移したと思ったらクリコンだった件【クリコン】",
-    "streamer": "class_d_channel",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-07T11:59:57Z"
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=OsL-vqMkvvg",
+    "thumbnail": "https://i.ytimg.com/vi/OsL-vqMkvvg/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-07T13:29:40Z"
   },
   {
     "platform": "YouTube",
@@ -115,6 +97,33 @@
     "thumbnail": "https://i.ytimg.com/vi/YK5rtYNDdLc/mqdefault_live.jpg",
     "viewers": 2,
     "started_at": "2026-03-07T13:20:24Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】異世界転移したと思ったらクリコンだった件【クリコン】",
+    "streamer": "class_d_channel",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-07T11:59:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ",
+    "streamer": "MedohMeshi",
+    "url": "https://www.twitch.tv/medohmeshi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-07T13:42:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "HPを見ることから始める久々のクリコン",
+    "streamer": "ラプカ",
+    "url": "https://www.twitch.tv/rap_amd",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rap_amd-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-07T14:14:21Z"
   },
   {
     "platform": "Twitch",
