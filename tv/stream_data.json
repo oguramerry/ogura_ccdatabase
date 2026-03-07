@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 64,
+    "viewers": 78,
     "started_at": "2026-03-07T10:56:49Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 30,
+    "viewers": 49,
     "started_at": "2026-03-07T11:50:37Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 14,
+    "viewers": 22,
     "started_at": "2026-03-07T11:26:45Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 11,
+    "viewers": 15,
     "started_at": "2026-03-07T10:15:26Z"
   },
   {
@@ -41,8 +41,17 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 8,
+    "viewers": 10,
     "started_at": "2026-03-07T11:50:46Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #102 ～ プラチナからはじめるクリコン生活♬ ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-07T11:23:40Z"
   },
   {
     "platform": "Twitch",
@@ -55,20 +64,20 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #102 ～ プラチナからはじめるクリコン生活♬ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-07T11:23:40Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】異世界転移したと思ったらクリコンだった件【クリコン】",
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
+    "viewers": 5,
     "started_at": "2026-03-07T11:59:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "新PCでクリコン復帰！リハビリしながら！",
+    "streamer": "凪沙ハルト",
+    "url": "https://www.twitch.tv/nagisaharuto",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nagisaharuto-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-07T12:19:27Z"
   }
 ]
