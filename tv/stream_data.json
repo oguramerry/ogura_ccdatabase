@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 62,
+    "viewers": 51,
     "started_at": "2026-03-07T10:56:49Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 47,
+    "viewers": 44,
     "started_at": "2026-03-07T11:50:37Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 25,
+    "viewers": 27,
     "started_at": "2026-03-07T11:26:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンS19ランクマ#5 ダイヤ1～",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 18,
-    "started_at": "2026-03-07T11:50:46Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 16,
+    "viewers": 14,
     "started_at": "2026-03-07T13:05:28Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#5 ダイヤ1～",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-07T11:50:46Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +50,7 @@
     "streamer": "せんとうっど",
     "url": "https://www.youtube.com/watch?v=epSQdWoWF4A",
     "thumbnail": "https://i.ytimg.com/vi/epSQdWoWF4A/mqdefault_live.jpg",
-    "viewers": 10,
+    "viewers": 11,
     "started_at": "2026-03-07T12:43:11Z"
   },
   {
@@ -59,17 +59,8 @@
     "streamer": "天咲ゆい",
     "url": "https://www.twitch.tv/amasaki_yui",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 6,
+    "viewers": 10,
     "started_at": "2026-03-07T13:14:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランク クリダイ戦場確認",
-    "streamer": "felifelidesu",
-    "url": "https://www.twitch.tv/felifelidesu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-07T09:42:54Z"
   },
   {
     "platform": "YouTube",
@@ -77,8 +68,26 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=OsL-vqMkvvg",
     "thumbnail": "https://i.ytimg.com/vi/OsL-vqMkvvg/mqdefault_live.jpg",
-    "viewers": 3,
+    "viewers": 6,
     "started_at": "2026-03-07T13:29:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】細長い天球儀 (侍)",
+    "streamer": "おるてんちゃん",
+    "url": "https://www.twitch.tv/woltenrema",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-07T13:21:07Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-07T13:29:19Z"
   },
   {
     "platform": "Twitch",
@@ -86,7 +95,7 @@
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-03-07T11:59:57Z"
   },
   {
@@ -95,25 +104,16 @@
     "streamer": "じる",
     "url": "https://www.youtube.com/watch?v=YK5rtYNDdLc",
     "thumbnail": "https://i.ytimg.com/vi/YK5rtYNDdLc/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-03-07T13:20:24Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "title": "クリコンランクマ",
+    "streamer": "MedohMeshi",
+    "url": "https://www.twitch.tv/medohmeshi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
     "viewers": 1,
-    "started_at": "2026-03-07T13:29:19Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】細長い天球儀 (侍)",
-    "streamer": "おるてんちゃん",
-    "url": "https://www.twitch.tv/woltenrema",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woltenrema-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-07T13:21:07Z"
+    "started_at": "2026-03-07T13:42:39Z"
   }
 ]
