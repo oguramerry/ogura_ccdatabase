@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 82,
+    "viewers": 72,
     "started_at": "2026-03-07T10:56:49Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 53,
+    "viewers": 46,
     "started_at": "2026-03-07T11:50:37Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ネネムネム",
     "url": "https://www.twitch.tv/nenemu_nemu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nenemu_nemu-320x180.jpg",
-    "viewers": 25,
+    "viewers": 26,
     "started_at": "2026-03-07T11:26:45Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 14,
+    "viewers": 15,
     "started_at": "2026-03-07T11:50:46Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "1400～ クリコンやっちゃいましょうよ！day5",
-    "streamer": "わらびたろ",
-    "url": "https://www.twitch.tv/warabitaroff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-03-07T10:15:26Z"
   },
   {
     "platform": "Twitch",
@@ -50,8 +41,17 @@
     "streamer": "felifelidesu",
     "url": "https://www.twitch.tv/felifelidesu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_felifelidesu-320x180.jpg",
-    "viewers": 4,
+    "viewers": 10,
     "started_at": "2026-03-07T09:42:54Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14/PVP】クリコン新シーズンになってるのに今気付いたの回／S18【ナイト】【クリスタルコンフリクト】【FINALFANTASYXIV】",
+    "streamer": "せんとうっど",
+    "url": "https://www.youtube.com/watch?v=epSQdWoWF4A",
+    "thumbnail": "https://i.ytimg.com/vi/epSQdWoWF4A/mqdefault_live.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-07T12:43:11Z"
   },
   {
     "platform": "Twitch",
@@ -59,25 +59,7 @@
     "streamer": "class_d_channel",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-07T11:59:57Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14/PVP】クリコン新シーズンになってるのに今気付いた回",
-    "streamer": "せんとうっど",
-    "url": "https://www.youtube.com/watch?v=epSQdWoWF4A",
-    "thumbnail": "https://i.ytimg.com/vi/epSQdWoWF4A/mqdefault_live.jpg",
     "viewers": 2,
-    "started_at": "2026-03-07T12:43:11Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "新PCでクリコン復帰！リハビリしながら！",
-    "streamer": "凪沙ハルト",
-    "url": "https://www.twitch.tv/nagisaharuto",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nagisaharuto-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-07T12:19:27Z"
+    "started_at": "2026-03-07T11:59:57Z"
   }
 ]
