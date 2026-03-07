@@ -1,11 +1,38 @@
 [
   {
     "platform": "Twitch",
+    "title": "【FF14】クリコン ランクマ 久しぶりに",
+    "streamer": "よおちゃん",
+    "url": "https://www.twitch.tv/yoochan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yoochan_twitch-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-07T02:15:58Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "ちょっとだけクリコン[JP-CCranked]マイク無し",
     "streamer": "お塩__グレネッタ",
     "url": "https://www.twitch.tv/soltiorva",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_soltiorva-320x180.jpg",
-    "viewers": 8,
+    "viewers": 4,
     "started_at": "2026-03-07T00:15:55Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【#FF14】プラチナまで落ちるなどしていましたが私は元気です【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-07T02:23:26Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】クリコン ランクマ　久しぶりに",
+    "streamer": "よおちゃん",
+    "url": "https://www.youtube.com/watch?v=0VLnkkvHmdI",
+    "thumbnail": "https://i.ytimg.com/vi/0VLnkkvHmdI/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-07T02:16:06Z"
   }
 ]
