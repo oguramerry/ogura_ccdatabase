@@ -5,17 +5,8 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 60,
+    "viewers": 56,
     "started_at": "2026-03-07T06:15:39Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "［FF14］詩人でクリコン",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-03-07T06:16:40Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "まきなべるぐ",
     "url": "https://www.twitch.tv/mknblg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 13,
+    "viewers": 14,
     "started_at": "2026-03-07T07:26:54Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "［FF14］詩人でクリコン",
+    "streamer": "ろびす",
+    "url": "https://www.twitch.tv/robswiz_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-07T06:16:40Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +32,17 @@
     "streamer": "よおちゃん",
     "url": "https://www.twitch.tv/yoochan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yoochan_twitch-320x180.jpg",
-    "viewers": 11,
+    "viewers": 8,
     "started_at": "2026-03-07T02:15:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "RANKED CRYSTAL CONFLICT NA CC GAMES ARE INSANE",
+    "streamer": "MomokoTomoko",
+    "url": "https://www.twitch.tv/momokotomoko",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_momokotomoko-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-07T07:46:51Z"
   },
   {
     "platform": "YouTube",
