@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【第123話】ブレインデッド・リデンプション【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 41,
-    "started_at": "2026-03-07T14:47:22Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【ff14 クリコン】今日もチーム練習！召喚で第七霊災だぁぁ！！！",
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 31,
+    "viewers": 74,
     "started_at": "2026-03-07T13:05:28Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第123話】ブレインデッド・リデンプション【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 43,
+    "started_at": "2026-03-07T14:47:22Z"
   },
   {
     "platform": "Twitch",
@@ -27,21 +27,12 @@
     "started_at": "2026-03-07T15:12:05Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【クリコン】chill天誅【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=U_vcH9f5HnE",
-    "thumbnail": "https://i.ytimg.com/vi/U_vcH9f5HnE/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-07T16:02:35Z"
-  },
-  {
     "platform": "Twitch",
     "title": "Definitely one of the Crystal Conflict PvP streams of all time",
     "streamer": "Lexellent7",
     "url": "https://www.twitch.tv/lexellent7",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
-    "viewers": 2,
+    "viewers": 4,
     "started_at": "2026-03-07T19:42:35Z"
   },
   {
@@ -55,11 +46,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "Definitely one of the Crystal Conflict PvP streams of all time",
-    "streamer": "Lexellent7",
-    "url": "https://www.twitch.tv/lexellent7",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
+    "title": "FF14 クリコン 侍が強くなったぞ！",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
     "viewers": 2,
-    "started_at": "2026-03-07T19:42:35Z"
+    "started_at": "2026-03-07T18:20:41Z"
   }
 ]
