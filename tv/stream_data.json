@@ -1,6 +1,15 @@
 [
   {
     "platform": "Twitch",
+    "title": "【#FF14】プラチナまで落ちるなどしていましたが私は元気です【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-03-07T02:23:26Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【FF14】クリコン ランクマ 久しぶりに",
     "streamer": "よおちゃん",
     "url": "https://www.twitch.tv/yoochan_twitch",
@@ -10,12 +19,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "【#FF14】プラチナまで落ちるなどしていましたが私は元気です【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-07T02:23:26Z"
+    "title": "こちらクリコンシャキ観測所",
+    "streamer": "雪之枝ひお",
+    "url": "https://www.twitch.tv/yukinoe_hio",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukinoe_hio-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-07T02:46:11Z"
   },
   {
     "platform": "YouTube",
@@ -23,7 +32,7 @@
     "streamer": "よおちゃん",
     "url": "https://www.youtube.com/watch?v=0VLnkkvHmdI",
     "thumbnail": "https://i.ytimg.com/vi/0VLnkkvHmdI/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-03-07T02:16:06Z"
   }
 ]
