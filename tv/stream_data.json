@@ -14,7 +14,7 @@
     "streamer": "ゃんゃん",
     "url": "https://www.twitch.tv/yanyan2525",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yanyan2525-320x180.jpg",
-    "viewers": 25,
+    "viewers": 30,
     "started_at": "2026-03-07T06:15:39Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "よおちゃん",
     "url": "https://www.twitch.tv/yoochan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yoochan_twitch-320x180.jpg",
-    "viewers": 17,
+    "viewers": 15,
     "started_at": "2026-03-07T02:15:58Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 6,
+    "viewers": 5,
     "started_at": "2026-03-07T06:16:40Z"
   },
   {
@@ -43,6 +43,15 @@
     "thumbnail": "https://i.ytimg.com/vi/0VLnkkvHmdI/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-03-07T02:16:06Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】ブロンズ3から～　【クリコンランクマ】【学者】",
+    "streamer": "konoka LAB",
+    "url": "https://www.youtube.com/watch?v=V5htJvUl0Do",
+    "thumbnail": "https://i.ytimg.com/vi/V5htJvUl0Do/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-07T06:33:27Z"
   },
   {
     "platform": "YouTube",
