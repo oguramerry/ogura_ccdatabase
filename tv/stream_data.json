@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコンフィジカル強化週間",
-    "streamer": "まきなべるぐ",
-    "url": "https://www.twitch.tv/mknblg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
-    "viewers": 25,
-    "started_at": "2026-03-07T07:26:54Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "［FF14］詩人でクリコン",
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 16,
+    "viewers": 40,
     "started_at": "2026-03-07T06:16:40Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンフィジカル強化週間",
+    "streamer": "まきなべるぐ",
+    "url": "https://www.twitch.tv/mknblg",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mknblg-320x180.jpg",
+    "viewers": 28,
+    "started_at": "2026-03-07T07:26:54Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "よおちゃん",
     "url": "https://www.twitch.tv/yoochan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yoochan_twitch-320x180.jpg",
-    "viewers": 14,
+    "viewers": 13,
     "started_at": "2026-03-07T02:15:58Z"
   },
   {
