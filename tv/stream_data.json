@@ -5,26 +5,8 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 36,
+    "viewers": 38,
     "started_at": "2026-03-08T12:09:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランクマ playing jp cc in hopes to be as cool as hime cat",
-    "streamer": "MedohMeshi",
-    "url": "https://www.twitch.tv/medohmeshi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 32,
-    "started_at": "2026-03-08T16:47:00Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】短め【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.twitch.tv/so_wa__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 30,
-    "started_at": "2026-03-08T16:29:27Z"
   },
   {
     "platform": "Twitch",
@@ -32,25 +14,16 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 29,
+    "viewers": 36,
     "started_at": "2026-03-08T15:58:48Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【クリコン】短め【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=fOJ8LT9-F7A",
-    "thumbnail": "https://i.ytimg.com/vi/fOJ8LT9-F7A/mqdefault_live.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-08T16:29:55Z"
-  },
-  {
     "platform": "Twitch",
-    "title": "クリコン！",
-    "streamer": "しるふぃブラック",
-    "url": "https://www.twitch.tv/shilfiebr",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shilfiebr-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-08T17:33:52Z"
+    "title": "クリコンランクマ playing jp cc in hopes to be as cool as hime cat",
+    "streamer": "MedohMeshi",
+    "url": "https://www.twitch.tv/medohmeshi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-03-08T16:47:00Z"
   }
 ]
