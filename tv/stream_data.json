@@ -1,21 +1,30 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコン界の大谷翔平目指して",
-    "streamer": "ひめきゃっと",
-    "url": "https://www.twitch.tv/gm9z",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 69,
-    "started_at": "2026-03-08T00:29:41Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day81【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 57,
+    "viewers": 66,
     "started_at": "2026-03-08T03:47:49Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン界の大谷翔平目指して",
+    "streamer": "ひめきゃっと",
+    "url": "https://www.twitch.tv/gm9z",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
+    "viewers": 55,
+    "started_at": "2026-03-08T00:29:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "花粉症治ったかもしれない人です。クリコン ランク S19 暗黒騎士（D1☆☆☆/ー）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-08T07:51:54Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +32,8 @@
     "streamer": "ぐみもぐ",
     "url": "https://www.twitch.tv/gumimogumogu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 8,
+    "viewers": 9,
     "started_at": "2026-03-08T05:35:45Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "花粉症治ったかもしれない人です。クリコン ランク S19 暗黒騎士（D1☆☆☆/ー）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-08T07:51:54Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +41,8 @@
     "streamer": "天咲ゆい",
     "url": "https://www.twitch.tv/amasaki_yui",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-08T07:48:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "花粉症治ったかもしれない人です。クリコン ランク S19 暗黒騎士（D1☆☆☆/ー）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-08T07:51:54Z"
+    "viewers": 4,
+    "started_at": "2026-03-08T08:06:26Z"
   },
   {
     "platform": "Twitch",
