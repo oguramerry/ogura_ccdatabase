@@ -1,29 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【クリコン】今日、まだう〇ち出てません涙",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 61,
-    "started_at": "2026-03-08T12:09:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランクマ playing jp cc in hopes to be as cool as hime cat",
-    "streamer": "MedohMeshi",
-    "url": "https://www.twitch.tv/medohmeshi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-03-08T16:47:00Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【ff14 クリコン】召喚士なり",
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 21,
+    "viewers": 70,
     "started_at": "2026-03-08T12:23:40Z"
   },
   {
@@ -32,17 +14,8 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 14,
+    "viewers": 31,
     "started_at": "2026-03-08T18:33:25Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "EU Ranked Crystal Conflict and still need to try out some of the job changes",
-    "streamer": "Brian Ricardo Highlights",
-    "url": "https://www.youtube.com/watch?v=aSEyy3fdRI4",
-    "thumbnail": "https://i.ytimg.com/vi/aSEyy3fdRI4/mqdefault_live.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-08T18:33:30Z"
   },
   {
     "platform": "YouTube",
@@ -52,5 +25,14 @@
     "thumbnail": "https://i.ytimg.com/vi/efsifkyF8G0/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-03-08T18:33:34Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "EU Ranked Crystal Conflict and still need to try out some of the job changes",
+    "streamer": "Brian Ricardo Highlights",
+    "url": "https://www.youtube.com/watch?v=aSEyy3fdRI4",
+    "thumbnail": "https://i.ytimg.com/vi/aSEyy3fdRI4/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-08T18:33:30Z"
   }
 ]
