@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 47,
+    "viewers": 54,
     "started_at": "2026-03-08T12:01:59Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 35,
+    "viewers": 27,
     "started_at": "2026-03-08T12:09:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン Dies irae",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-03-08T13:41:54Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 15,
+    "viewers": 25,
     "started_at": "2026-03-08T07:51:54Z"
   },
   {
@@ -41,16 +32,25 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 12,
+    "viewers": 21,
     "started_at": "2026-03-08T15:58:48Z"
   },
   {
+    "platform": "YouTube",
+    "title": "【クリコン】短め【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=fOJ8LT9-F7A",
+    "thumbnail": "https://i.ytimg.com/vi/fOJ8LT9-F7A/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-08T16:29:55Z"
+  },
+  {
     "platform": "Twitch",
-    "title": "クリコン 侍強くなったらしい",
-    "streamer": "コンガナジャイ",
-    "url": "https://www.twitch.tv/konbanhag",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-08T14:47:24Z"
+    "title": "【クリコン】短め【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-08T16:29:27Z"
   }
 ]
