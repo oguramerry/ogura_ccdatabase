@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 54,
+    "viewers": 53,
     "started_at": "2026-03-08T12:01:59Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 33,
+    "viewers": 32,
     "started_at": "2026-03-08T12:09:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "花粉症治ったかもしれない人です。クリコン ランク S19 暗黒騎士（D1☆☆☆/ー）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-03-08T07:51:54Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 19,
+    "viewers": 29,
     "started_at": "2026-03-08T15:58:48Z"
   },
   {
@@ -41,17 +32,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 13,
+    "viewers": 17,
     "started_at": "2026-03-08T16:29:27Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【クリコン】短め【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=fOJ8LT9-F7A",
-    "thumbnail": "https://i.ytimg.com/vi/fOJ8LT9-F7A/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-08T16:29:55Z"
+    "platform": "Twitch",
+    "title": "クリコンランクマ playing jp cc in hopes to be as cool as hime cat",
+    "streamer": "MedohMeshi",
+    "url": "https://www.twitch.tv/medohmeshi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-08T16:47:00Z"
   },
   {
     "platform": "Twitch",
@@ -61,5 +52,14 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shilfiebr-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-03-08T16:30:56Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】短め【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=fOJ8LT9-F7A",
+    "thumbnail": "https://i.ytimg.com/vi/fOJ8LT9-F7A/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-08T16:29:55Z"
   }
 ]
