@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 64,
+    "viewers": 60,
     "started_at": "2026-03-08T03:47:49Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 59,
+    "viewers": 52,
     "started_at": "2026-03-08T00:29:41Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 18,
+    "viewers": 20,
     "started_at": "2026-03-08T07:51:54Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン（ランクマ）するよ！ダイヤ４から",
-    "streamer": "天咲ゆい",
-    "url": "https://www.twitch.tv/amasaki_yui",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-08T08:06:26Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +32,17 @@
     "streamer": "ぐみもぐ",
     "url": "https://www.twitch.tv/gumimogumogu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 9,
+    "viewers": 11,
     "started_at": "2026-03-08T05:35:45Z"
   },
   {
     "platform": "Twitch",
-    "title": "1200～ クリコンやっちゃいましょうよ！day6",
-    "streamer": "わらびたろ",
-    "url": "https://www.twitch.tv/warabitaroff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-08T08:39:28Z"
+    "title": "クリコン（ランクマ）するよ！ダイヤ４から",
+    "streamer": "天咲ゆい",
+    "url": "https://www.twitch.tv/amasaki_yui",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amasaki_yui-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-08T08:06:26Z"
   },
   {
     "platform": "Twitch",
