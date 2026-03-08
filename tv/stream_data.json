@@ -5,7 +5,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 64,
+    "viewers": 58,
     "started_at": "2026-03-08T12:23:40Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "BrianRicardo",
     "url": "https://www.twitch.tv/brianricardo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brianricardo-320x180.jpg",
-    "viewers": 38,
+    "viewers": 34,
     "started_at": "2026-03-08T18:33:25Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "[18+] Doing Some Crystalline Conflict!",
-    "streamer": "SleepyCaliTV",
-    "url": "https://www.twitch.tv/sleepycalitv",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sleepycalitv-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-08T16:48:38Z"
   },
   {
     "platform": "YouTube",
@@ -34,6 +25,15 @@
     "thumbnail": "https://i.ytimg.com/vi/efsifkyF8G0/mqdefault_live.jpg",
     "viewers": 2,
     "started_at": "2026-03-08T18:33:34Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "Crystal Conflict and friends",
+    "streamer": "Shiroe_Wolfus",
+    "url": "https://www.twitch.tv/shiroe_wolfus",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shiroe_wolfus-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-08T20:27:11Z"
   },
   {
     "platform": "YouTube",
