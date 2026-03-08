@@ -1,12 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK） 『今日は何の日：みつばちの日、ギョーザの日、サバの日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 55,
-    "started_at": "2026-03-08T12:01:59Z"
+    "title": "【クリコン】高校球児",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 30,
+    "started_at": "2026-03-08T15:58:48Z"
   },
   {
     "platform": "Twitch",
@@ -19,20 +19,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】高校球児",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-03-08T15:58:48Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】短め【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 23,
+    "viewers": 24,
     "started_at": "2026-03-08T16:29:27Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "MedohMeshi",
     "url": "https://www.twitch.tv/medohmeshi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 10,
+    "viewers": 15,
     "started_at": "2026-03-08T16:47:00Z"
   },
   {
@@ -50,7 +41,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=fOJ8LT9-F7A",
     "thumbnail": "https://i.ytimg.com/vi/fOJ8LT9-F7A/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-03-08T16:29:55Z"
   }
 ]
