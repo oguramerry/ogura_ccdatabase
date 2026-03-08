@@ -5,7 +5,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 56,
+    "viewers": 60,
     "started_at": "2026-03-08T00:29:41Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 55,
+    "viewers": 58,
     "started_at": "2026-03-08T03:47:49Z"
   },
   {
@@ -23,17 +23,17 @@
     "streamer": "ぐみもぐ",
     "url": "https://www.twitch.tv/gumimogumogu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 8,
+    "viewers": 9,
     "started_at": "2026-03-08T05:35:45Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14】クリコンカジュアルで遊びましょ【クリコンカジュアル】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=lG9w3-WFC_I",
-    "thumbnail": "https://i.ytimg.com/vi/lG9w3-WFC_I/mqdefault_live.jpg",
-    "viewers": 7,
-    "started_at": "2026-03-08T03:22:59Z"
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #103 ～ プラチナからはじめるクリコン生活♬ ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-08T04:48:10Z"
   },
   {
     "platform": "YouTube",
@@ -45,12 +45,21 @@
     "started_at": "2026-03-08T05:00:20Z"
   },
   {
+    "platform": "YouTube",
+    "title": "【FF14】クリコンカジュアルで遊びましょ【クリコンカジュアル】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=lG9w3-WFC_I",
+    "thumbnail": "https://i.ytimg.com/vi/lG9w3-WFC_I/mqdefault_live.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-08T03:22:59Z"
+  },
+  {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #103 ～ プラチナからはじめるクリコン生活♬ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-08T04:48:10Z"
+    "title": "【FF14/S17】クリコン上手くなりたいよ゛【ランクマ#17】 © SQUARE ENIX",
+    "streamer": "狗成まか",
+    "url": "https://www.twitch.tv/tmkami__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tmkami__-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-08T07:06:23Z"
   }
 ]
