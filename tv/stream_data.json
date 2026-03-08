@@ -1,11 +1,29 @@
 [
   {
     "platform": "Twitch",
+    "title": "【クリコン】今日、まだう〇ち出てません涙",
+    "streamer": "ぴてぃわっと",
+    "url": "https://www.twitch.tv/pittywhat",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
+    "viewers": 36,
+    "started_at": "2026-03-08T12:09:07Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ playing jp cc in hopes to be as cool as hime cat",
+    "streamer": "MedohMeshi",
+    "url": "https://www.twitch.tv/medohmeshi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
+    "viewers": 32,
+    "started_at": "2026-03-08T16:47:00Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "【クリコン】短め【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 29,
+    "viewers": 30,
     "started_at": "2026-03-08T16:29:27Z"
   },
   {
@@ -18,30 +36,12 @@
     "started_at": "2026-03-08T15:58:48Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【クリコン】今日、まだう〇ち出てません涙",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-03-08T12:09:07Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランクマ playing jp cc in hopes to be as cool as hime cat",
-    "streamer": "MedohMeshi",
-    "url": "https://www.twitch.tv/medohmeshi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-03-08T16:47:00Z"
-  },
-  {
     "platform": "YouTube",
     "title": "【クリコン】短め【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=fOJ8LT9-F7A",
     "thumbnail": "https://i.ytimg.com/vi/fOJ8LT9-F7A/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 4,
     "started_at": "2026-03-08T16:29:55Z"
   },
   {
