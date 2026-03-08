@@ -5,7 +5,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 143,
+    "viewers": 141,
     "started_at": "2026-03-08T11:54:32Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 51,
+    "viewers": 53,
     "started_at": "2026-03-08T12:01:59Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 35,
+    "viewers": 28,
     "started_at": "2026-03-08T12:09:07Z"
   },
   {
@@ -32,26 +32,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 15,
+    "viewers": 18,
     "started_at": "2026-03-08T07:51:54Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスって名前を変えてしまいましたが僕は元気です【クリコン】",
-    "streamer": "財団の捨て駒",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-08T13:18:05Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "FF14　クリコン ２日目、暦法を授け・ｗ・",
-    "streamer": "じる",
-    "url": "https://www.youtube.com/watch?v=H5TPOE4HAqQ",
-    "thumbnail": "https://i.ytimg.com/vi/H5TPOE4HAqQ/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-08T13:11:50Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +41,17 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 1,
+    "viewers": 6,
     "started_at": "2026-03-08T13:41:54Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスって名前を変えてしまいましたが僕は元気です【クリコン】",
+    "streamer": "財団の捨て駒",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-08T13:18:05Z"
   },
   {
     "platform": "Twitch",
@@ -68,7 +59,16 @@
     "streamer": "ディストとフォルター",
     "url": "https://www.twitch.tv/ex3_twich",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ex3_twich-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-08T13:00:34Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "FF14　クリコン ２日目、暦法を授け・ｗ・",
+    "streamer": "じる",
+    "url": "https://www.youtube.com/watch?v=H5TPOE4HAqQ",
+    "thumbnail": "https://i.ytimg.com/vi/H5TPOE4HAqQ/mqdefault_live.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-08T13:11:50Z"
   }
 ]
