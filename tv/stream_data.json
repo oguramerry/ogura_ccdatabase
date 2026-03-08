@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 60,
+    "viewers": 57,
     "started_at": "2026-03-08T03:47:49Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 17,
+    "viewers": 27,
     "started_at": "2026-03-08T07:51:54Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】タゲ追い犬リーパー【クリコン】",
-    "streamer": "ぐみもぐ",
-    "url": "https://www.twitch.tv/gumimogumogu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 11,
-    "started_at": "2026-03-08T05:35:45Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,7 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 9,
+    "viewers": 15,
     "started_at": "2026-03-08T08:39:28Z"
   }
 ]
