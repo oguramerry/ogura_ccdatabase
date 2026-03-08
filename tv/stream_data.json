@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day81【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
-    "started_at": "2026-03-08T03:47:49Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン界の大谷翔平目指して",
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 43,
+    "viewers": 53,
     "started_at": "2026-03-08T00:29:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day81【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 47,
+    "started_at": "2026-03-08T03:47:49Z"
   },
   {
     "platform": "YouTube",
@@ -23,8 +23,17 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=lG9w3-WFC_I",
     "thumbnail": "https://i.ytimg.com/vi/lG9w3-WFC_I/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 9,
     "started_at": "2026-03-08T03:22:59Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】クリスタル、行こうぜ～。 【クリスタルコンフリクト】【竜騎士】【鈴屋ベル/すずやべる】",
+    "streamer": "鈴屋ベル / Suzuya Bell",
+    "url": "https://www.youtube.com/watch?v=1c2OMFo0NNQ",
+    "thumbnail": "https://i.ytimg.com/vi/1c2OMFo0NNQ/mqdefault_live.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-08T05:00:20Z"
   },
   {
     "platform": "Twitch",
