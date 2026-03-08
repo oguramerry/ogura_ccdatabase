@@ -5,8 +5,17 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 60,
+    "viewers": 61,
     "started_at": "2026-03-08T00:29:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day81【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-03-08T03:47:49Z"
   },
   {
     "platform": "YouTube",
@@ -14,16 +23,7 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=lG9w3-WFC_I",
     "thumbnail": "https://i.ytimg.com/vi/lG9w3-WFC_I/mqdefault_live.jpg",
-    "viewers": 10,
+    "viewers": 9,
     "started_at": "2026-03-08T03:22:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "Definitely one of the Crystal Conflict PvP streams of all time",
-    "streamer": "Lexellent7",
-    "url": "https://www.twitch.tv/lexellent7",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lexellent7-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-08T02:45:20Z"
   }
 ]
