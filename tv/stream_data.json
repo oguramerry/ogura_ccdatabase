@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 50,
+    "viewers": 54,
     "started_at": "2026-03-08T03:47:49Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ひめきゃっと",
     "url": "https://www.twitch.tv/gm9z",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gm9z-320x180.jpg",
-    "viewers": 49,
+    "viewers": 51,
     "started_at": "2026-03-08T00:29:41Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=lG9w3-WFC_I",
     "thumbnail": "https://i.ytimg.com/vi/lG9w3-WFC_I/mqdefault_live.jpg",
-    "viewers": 10,
+    "viewers": 9,
     "started_at": "2026-03-08T03:22:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】タゲ追い犬リーパー【クリコン】",
+    "streamer": "ぐみもぐ",
+    "url": "https://www.twitch.tv/gumimogumogu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-08T05:35:45Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +41,7 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=1c2OMFo0NNQ",
     "thumbnail": "https://i.ytimg.com/vi/1c2OMFo0NNQ/mqdefault_live.jpg",
-    "viewers": 6,
+    "viewers": 7,
     "started_at": "2026-03-08T05:00:20Z"
   },
   {
@@ -41,7 +50,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 4,
+    "viewers": 2,
     "started_at": "2026-03-08T04:48:10Z"
   }
 ]
