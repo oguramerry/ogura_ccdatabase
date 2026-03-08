@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 58,
+    "viewers": 46,
     "started_at": "2026-03-08T03:47:49Z"
   },
   {
@@ -14,26 +14,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 23,
+    "viewers": 26,
     "started_at": "2026-03-08T07:51:54Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "［FF14］詩人でクリコン",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-08T10:42:55Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "［FF14］詩人でクリコン",
-    "streamer": "ろびす",
-    "url": "https://www.twitch.tv/robswiz_",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-08T10:42:55Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +23,16 @@
     "streamer": "わらびたろ",
     "url": "https://www.twitch.tv/warabitaroff14",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 8,
+    "viewers": 15,
     "started_at": "2026-03-08T08:39:28Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "［FF14］詩人でクリコン",
+    "streamer": "ろびす",
+    "url": "https://www.twitch.tv/robswiz_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-03-08T10:42:55Z"
   }
 ]
