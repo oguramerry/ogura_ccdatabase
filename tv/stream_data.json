@@ -5,26 +5,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 143,
+    "viewers": 162,
     "started_at": "2026-03-08T11:54:32Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day81【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 46,
-    "started_at": "2026-03-08T03:47:49Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】今日、まだう〇ち出てません涙",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 39,
-    "started_at": "2026-03-08T12:09:07Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +14,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 29,
+    "viewers": 44,
     "started_at": "2026-03-08T12:01:59Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】今日、まだう〇ち出てません涙",
+    "streamer": "ぴてぃわっと",
+    "url": "https://www.twitch.tv/pittywhat",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
+    "viewers": 42,
+    "started_at": "2026-03-08T12:09:07Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +32,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 21,
+    "viewers": 16,
     "started_at": "2026-03-08T07:51:54Z"
   }
 ]
