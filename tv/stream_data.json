@@ -5,7 +5,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 38,
+    "viewers": 40,
     "started_at": "2026-03-08T12:09:07Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 36,
+    "viewers": 29,
     "started_at": "2026-03-08T15:58:48Z"
   },
   {
@@ -23,7 +23,16 @@
     "streamer": "MedohMeshi",
     "url": "https://www.twitch.tv/medohmeshi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_medohmeshi-320x180.jpg",
-    "viewers": 27,
+    "viewers": 22,
     "started_at": "2026-03-08T16:47:00Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14 クリコン】召喚士なり",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-03-08T12:23:40Z"
   }
 ]
