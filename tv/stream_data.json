@@ -5,8 +5,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 56,
     "started_at": "2026-03-08T03:47:49Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン大会】クリコンコネクトⅤ 実況：せらヴぃ 解説：ともも @tomomomo_momomo_",
+    "streamer": "せらヴぃ",
+    "url": "https://www.twitch.tv/celavi_ch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-03-08T11:54:32Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 31,
+    "viewers": 25,
     "started_at": "2026-03-08T07:51:54Z"
   },
   {
@@ -23,16 +32,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 18,
+    "viewers": 23,
     "started_at": "2026-03-08T10:42:55Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "1200～ クリコンやっちゃいましょうよ！day6",
-    "streamer": "わらびたろ",
-    "url": "https://www.twitch.tv/warabitaroff14",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_warabitaroff14-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-03-08T08:39:28Z"
   }
 ]
