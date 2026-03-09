@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 82,
+    "viewers": 102,
     "started_at": "2026-03-09T09:42:59Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 37,
+    "viewers": 38,
     "started_at": "2026-03-09T11:01:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "S19クリコン初め。闇のランククリ100～🌙月曜はクリコン配信デー！",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-03-09T10:19:18Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 22,
+    "viewers": 20,
     "started_at": "2026-03-09T13:06:43Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "S19クリコン初め。闇のランククリ100～🌙月曜はクリコン配信デー！",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 19,
+    "started_at": "2026-03-09T10:19:18Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +50,7 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 13,
+    "viewers": 12,
     "started_at": "2026-03-09T11:28:43Z"
   },
   {
@@ -59,8 +59,26 @@
     "streamer": "ハミルトン",
     "url": "https://www.youtube.com/watch?v=CGPlbg32kf0",
     "thumbnail": "https://i.ytimg.com/vi/CGPlbg32kf0/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 7,
     "started_at": "2026-03-09T12:04:21Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン 侍強くなったらしい",
+    "streamer": "コンガナジャイ",
+    "url": "https://www.twitch.tv/konbanhag",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-09T13:41:14Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン 寝すぎた、ちょっとだけ。",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-09T14:13:52Z"
   },
   {
     "platform": "Twitch",
@@ -70,15 +88,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-03-09T13:08:16Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン 侍強くなったらしい",
-    "streamer": "コンガナジャイ",
-    "url": "https://www.twitch.tv/konbanhag",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-09T13:41:14Z"
   },
   {
     "platform": "YouTube",
