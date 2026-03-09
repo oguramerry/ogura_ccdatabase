@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 73,
+    "viewers": 80,
     "started_at": "2026-03-09T09:42:59Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "amemiya_xiv",
     "url": "https://www.twitch.tv/amemiya_xiv",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 61,
+    "viewers": 54,
     "started_at": "2026-03-09T11:10:13Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 38,
     "started_at": "2026-03-09T11:01:06Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 44,
+    "viewers": 37,
     "started_at": "2026-03-09T10:57:35Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 33,
+    "viewers": 32,
     "started_at": "2026-03-09T10:19:18Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "ろびす",
     "url": "https://www.twitch.tv/robswiz_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
-    "viewers": 9,
+    "viewers": 12,
     "started_at": "2026-03-09T11:43:06Z"
   },
   {
@@ -63,12 +63,21 @@
     "started_at": "2026-03-09T11:28:43Z"
   },
   {
+    "platform": "YouTube",
+    "title": "【シーズン19】FF14　クリスタルコンフリクト　ランクマッチ",
+    "streamer": "ハミルトン",
+    "url": "https://www.youtube.com/watch?v=CGPlbg32kf0",
+    "thumbnail": "https://i.ytimg.com/vi/CGPlbg32kf0/mqdefault_live.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-09T12:04:21Z"
+  },
+  {
     "platform": "Twitch",
     "title": "【FF14】リ。【クリコン】",
     "streamer": "ぐみもぐ",
     "url": "https://www.twitch.tv/gumimogumogu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 3,
+    "viewers": 4,
     "started_at": "2026-03-09T11:37:28Z"
   },
   {
@@ -77,7 +86,7 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-03-09T09:46:41Z"
   },
   {
@@ -86,7 +95,7 @@
     "streamer": "あだしののもふ",
     "url": "https://www.youtube.com/watch?v=6yOJw5-bI60",
     "thumbnail": "https://i.ytimg.com/vi/6yOJw5-bI60/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-09T11:11:02Z"
   },
   {
