@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 61,
+    "viewers": 59,
     "started_at": "2026-03-09T10:57:35Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 42,
+    "viewers": 45,
     "started_at": "2026-03-09T14:43:42Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 34,
+    "viewers": 29,
     "started_at": "2026-03-09T13:06:43Z"
   },
   {
@@ -41,17 +41,8 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 22,
+    "viewers": 21,
     "started_at": "2026-03-09T15:09:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-03-09T11:28:43Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +50,16 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 10,
+    "viewers": 19,
     "started_at": "2026-03-09T16:05:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-03-09T11:28:43Z"
   }
 ]
