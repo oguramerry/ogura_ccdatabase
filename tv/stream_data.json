@@ -1,11 +1,20 @@
 [
   {
     "platform": "Twitch",
+    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信  クリコネの感想もお待ちしてます！",
+    "streamer": "せらヴぃ",
+    "url": "https://www.twitch.tv/celavi_ch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-03-09T07:54:32Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "Ranked Crystal Conflict DRG PoV -> Slay the Spire w/FFBot with the chat !howto [ PVP +e | !ffbot !discord !kofi | It's Teysa Time baby! 🕒 |",
     "streamer": "Jayrod_TM",
     "url": "https://www.twitch.tv/jayrod_tm",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jayrod_tm-320x180.jpg",
-    "viewers": 27,
+    "viewers": 30,
     "started_at": "2026-03-09T06:14:13Z"
   },
   {
@@ -14,16 +23,7 @@
     "streamer": "ゆゆじゃっく",
     "url": "https://www.twitch.tv/yuyuhimarijackgravity",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yuyuhimarijackgravity-320x180.jpg",
-    "viewers": 22,
+    "viewers": 24,
     "started_at": "2026-03-09T05:45:14Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "カジュアル→クリコンカスタム≪実況≫夕餉前配信  クリコネの感想もお待ちしてます！",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 9,
-    "started_at": "2026-03-09T07:54:32Z"
   }
 ]
