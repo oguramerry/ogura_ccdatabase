@@ -5,26 +5,8 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 75,
+    "viewers": 82,
     "started_at": "2026-03-09T09:42:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン クリスタル 403~",
-    "streamer": "amemiya_xiv",
-    "url": "https://www.twitch.tv/amemiya_xiv",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 50,
-    "started_at": "2026-03-09T11:10:13Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day82【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 42,
-    "started_at": "2026-03-09T11:01:06Z"
   },
   {
     "platform": "Twitch",
@@ -32,16 +14,25 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 42,
+    "viewers": 60,
     "started_at": "2026-03-09T10:57:35Z"
   },
   {
     "platform": "Twitch",
-    "title": "S19クリコン初め。レンキャスランククリ100～🌙月曜はクリコン配信デー！",
+    "title": "【FF14】超クリコン研究会 Day82【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-03-09T11:01:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "S19クリコン初め。闇のランククリ100～🌙月曜はクリコン配信デー！",
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 21,
+    "viewers": 26,
     "started_at": "2026-03-09T10:19:18Z"
   },
   {
@@ -50,26 +41,8 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 18,
+    "viewers": 22,
     "started_at": "2026-03-09T13:06:43Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【シーズン19】FF14　クリスタルコンフリクト　ランクマッチ",
-    "streamer": "ハミルトン",
-    "url": "https://www.youtube.com/watch?v=CGPlbg32kf0",
-    "thumbnail": "https://i.ytimg.com/vi/CGPlbg32kf0/mqdefault_live.jpg",
-    "viewers": 14,
-    "started_at": "2026-03-09T12:04:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】リ。【クリコン】",
-    "streamer": "ぐみもぐ",
-    "url": "https://www.twitch.tv/gumimogumogu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-03-09T11:37:28Z"
   },
   {
     "platform": "Twitch",
@@ -77,17 +50,17 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 10,
+    "viewers": 13,
     "started_at": "2026-03-09T11:28:43Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #104～ プラチナからはじめるクリコン生活♬ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-09T09:46:41Z"
+    "platform": "YouTube",
+    "title": "【シーズン19】FF14　クリスタルコンフリクト　ランクマッチ",
+    "streamer": "ハミルトン",
+    "url": "https://www.youtube.com/watch?v=CGPlbg32kf0",
+    "thumbnail": "https://i.ytimg.com/vi/CGPlbg32kf0/mqdefault_live.jpg",
+    "viewers": 12,
+    "started_at": "2026-03-09T12:04:21Z"
   },
   {
     "platform": "Twitch",
