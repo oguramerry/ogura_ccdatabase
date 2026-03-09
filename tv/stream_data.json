@@ -1,12 +1,12 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day82【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
-    "started_at": "2026-03-09T11:01:06Z"
+    "title": "【ff14 クリコン】強くなるために召喚を勉強するの巻！！！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 62,
+    "started_at": "2026-03-09T13:06:43Z"
   },
   {
     "platform": "Twitch",
@@ -14,17 +14,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 45,
+    "viewers": 52,
     "started_at": "2026-03-09T14:43:42Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】強くなるために召喚を勉強するの巻！！！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 35,
-    "started_at": "2026-03-09T13:06:43Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 19,
+    "viewers": 26,
     "started_at": "2026-03-09T15:09:38Z"
   }
 ]
