@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）『今日は何の日：記念切手記念日、関門国道トンネル開通記念日、バービー人形の誕生日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 56,
-    "started_at": "2026-03-09T10:57:35Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】超クリコン研究会 Day82【Kaheo】",
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 48,
+    "viewers": 62,
     "started_at": "2026-03-09T11:01:06Z"
   },
   {
@@ -23,17 +14,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 47,
+    "viewers": 48,
     "started_at": "2026-03-09T14:43:42Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンランクマ→オコチテ",
-    "streamer": "じゅきん",
-    "url": "https://www.twitch.tv/tufujukin",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-03-09T15:09:38Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +23,8 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 18,
+    "viewers": 24,
     "started_at": "2026-03-09T11:28:43Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコンl】ちょび",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 18,
-    "started_at": "2026-03-09T16:05:06Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +32,16 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 17,
+    "viewers": 24,
     "started_at": "2026-03-09T13:06:43Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンランクマ→オコチテ",
+    "streamer": "じゅきん",
+    "url": "https://www.twitch.tv/tufujukin",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-09T15:09:38Z"
   }
 ]
