@@ -5,17 +5,8 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 68,
+    "viewers": 73,
     "started_at": "2026-03-09T09:42:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）『今日は何の日：記念切手記念日、関門国道トンネル開通記念日、バービー人形の誕生日』",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 45,
-    "started_at": "2026-03-09T10:57:35Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "amemiya_xiv",
     "url": "https://www.twitch.tv/amemiya_xiv",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 42,
+    "viewers": 61,
     "started_at": "2026-03-09T11:10:13Z"
   },
   {
@@ -32,8 +23,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 39,
+    "viewers": 44,
     "started_at": "2026-03-09T11:01:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）『今日は何の日：記念切手記念日、関門国道トンネル開通記念日、バービー人形の誕生日』",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 44,
+    "started_at": "2026-03-09T10:57:35Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +41,17 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 29,
+    "viewers": 33,
     "started_at": "2026-03-09T10:19:18Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #104～ プラチナからはじめるクリコン生活♬ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-09T09:46:41Z"
+    "title": "［FF14］詩人でクリコン",
+    "streamer": "ろびす",
+    "url": "https://www.twitch.tv/robswiz_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_robswiz_-320x180.jpg",
+    "viewers": 9,
+    "started_at": "2026-03-09T11:43:06Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +59,26 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 3,
+    "viewers": 6,
     "started_at": "2026-03-09T11:28:43Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】リ。【クリコン】",
+    "streamer": "ぐみもぐ",
+    "url": "https://www.twitch.tv/gumimogumogu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-09T11:37:28Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #104～ プラチナからはじめるクリコン生活♬ ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-09T09:46:41Z"
   },
   {
     "platform": "YouTube",
@@ -68,7 +86,7 @@
     "streamer": "あだしののもふ",
     "url": "https://www.youtube.com/watch?v=6yOJw5-bI60",
     "thumbnail": "https://i.ytimg.com/vi/6yOJw5-bI60/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-03-09T11:11:02Z"
   },
   {
