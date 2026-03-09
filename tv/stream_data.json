@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 63,
+    "viewers": 61,
     "started_at": "2026-03-09T10:57:35Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
+    "viewers": 46,
     "started_at": "2026-03-09T11:01:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン 寝すぎた、ちょっとだけ。",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 30,
-    "started_at": "2026-03-09T14:13:52Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 27,
+    "viewers": 36,
     "started_at": "2026-03-09T14:43:42Z"
   },
   {
@@ -41,7 +32,7 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 23,
+    "viewers": 34,
     "started_at": "2026-03-09T13:06:43Z"
   },
   {
@@ -50,7 +41,7 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 15,
+    "viewers": 22,
     "started_at": "2026-03-09T11:28:43Z"
   },
   {
@@ -59,7 +50,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 15,
+    "viewers": 22,
     "started_at": "2026-03-09T15:09:38Z"
   },
   {
@@ -68,16 +59,7 @@
     "streamer": "財団の捨て駒",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-03-09T13:08:16Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【FF14】猫又クリコン部 #104～ プラチナからはじめるクリコン生活♬ ～",
-    "streamer": "ねこららCh / 猫又縁",
-    "url": "https://www.youtube.com/watch?v=1URM6s9AYas",
-    "thumbnail": "https://i.ytimg.com/vi/1URM6s9AYas/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-03-09T09:38:47Z"
   }
 ]
