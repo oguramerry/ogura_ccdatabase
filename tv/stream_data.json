@@ -5,26 +5,8 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 70,
+    "viewers": 68,
     "started_at": "2026-03-09T09:42:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day82【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 47,
-    "started_at": "2026-03-09T11:01:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン クリスタル 403~",
-    "streamer": "amemiya_xiv",
-    "url": "https://www.twitch.tv/amemiya_xiv",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 37,
-    "started_at": "2026-03-09T11:10:13Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +14,26 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 33,
+    "viewers": 45,
     "started_at": "2026-03-09T10:57:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン クリスタル 403~",
+    "streamer": "amemiya_xiv",
+    "url": "https://www.twitch.tv/amemiya_xiv",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
+    "viewers": 42,
+    "started_at": "2026-03-09T11:10:13Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day82【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 39,
+    "started_at": "2026-03-09T11:01:06Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +41,7 @@
     "streamer": "なしあ",
     "url": "https://www.twitch.tv/nasiapvp",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 27,
+    "viewers": 29,
     "started_at": "2026-03-09T10:19:18Z"
   },
   {
@@ -50,8 +50,17 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 7,
+    "viewers": 5,
     "started_at": "2026-03-09T09:46:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-09T11:28:43Z"
   },
   {
     "platform": "YouTube",
@@ -59,7 +68,7 @@
     "streamer": "あだしののもふ",
     "url": "https://www.youtube.com/watch?v=6yOJw5-bI60",
     "thumbnail": "https://i.ytimg.com/vi/6yOJw5-bI60/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-09T11:11:02Z"
   },
   {
