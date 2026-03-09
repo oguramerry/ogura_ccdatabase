@@ -23,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 36,
+    "viewers": 42,
     "started_at": "2026-03-09T14:43:42Z"
   },
   {
@@ -37,15 +37,6 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 22,
-    "started_at": "2026-03-09T11:28:43Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコンランクマ→オコチテ",
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
@@ -55,11 +46,20 @@
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】だ、誰がレンタルよわいひとやねん！【クリコン】",
-    "streamer": "財団の捨て駒",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-09T13:08:16Z"
+    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 16,
+    "started_at": "2026-03-09T11:28:43Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコンl】ちょび",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-09T16:05:06Z"
   }
 ]
