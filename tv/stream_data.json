@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 60,
+    "viewers": 69,
     "started_at": "2026-03-09T11:01:06Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 48,
+    "viewers": 52,
     "started_at": "2026-03-09T14:43:42Z"
   },
   {
@@ -28,20 +28,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-03-09T11:28:43Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコンランクマ→オコチテ",
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 17,
+    "viewers": 18,
     "started_at": "2026-03-09T15:09:38Z"
   }
 ]
