@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 90,
+    "viewers": 87,
     "started_at": "2026-03-09T09:42:59Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 54,
+    "viewers": 51,
     "started_at": "2026-03-09T10:57:35Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 33,
+    "viewers": 41,
     "started_at": "2026-03-09T11:01:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "S19クリコン初め。闇のランククリ100～🌙月曜はクリコン配信デー！",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 23,
-    "started_at": "2026-03-09T10:19:18Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +32,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 20,
+    "viewers": 22,
     "started_at": "2026-03-09T13:06:43Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-03-09T11:28:43Z"
+    "title": "S19クリコン初め。闇のランククリ100～🌙月曜はクリコン配信デー！",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-03-09T10:19:18Z"
   },
   {
     "platform": "Twitch",
@@ -59,8 +50,17 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 9,
+    "viewers": 16,
     "started_at": "2026-03-09T14:13:52Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-09T11:28:43Z"
   },
   {
     "platform": "Twitch",
@@ -68,7 +68,7 @@
     "streamer": "コンガナジャイ",
     "url": "https://www.twitch.tv/konbanhag",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 4,
+    "viewers": 9,
     "started_at": "2026-03-09T13:41:14Z"
   },
   {
@@ -88,5 +88,14 @@
     "thumbnail": "https://i.ytimg.com/vi/1URM6s9AYas/mqdefault_live.jpg",
     "viewers": 0,
     "started_at": "2026-03-09T09:38:47Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第124話】ぽこ あ マラソンウォッチ of spire 2【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-09T14:43:42Z"
   }
 ]
