@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 59,
+    "viewers": 56,
     "started_at": "2026-03-09T10:57:35Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 46,
+    "viewers": 48,
     "started_at": "2026-03-09T11:01:06Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 45,
+    "viewers": 47,
     "started_at": "2026-03-09T14:43:42Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】強くなるために召喚を勉強するの巻！！！",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 29,
-    "started_at": "2026-03-09T13:06:43Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +32,8 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 21,
+    "viewers": 26,
     "started_at": "2026-03-09T15:09:38Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコンl】ちょび",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-03-09T16:05:06Z"
   },
   {
     "platform": "Twitch",
@@ -61,5 +43,23 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
     "viewers": 18,
     "started_at": "2026-03-09T11:28:43Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコンl】ちょび",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 18,
+    "started_at": "2026-03-09T16:05:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14 クリコン】強くなるために召喚を勉強するの巻！！！",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-03-09T13:06:43Z"
   }
 ]
