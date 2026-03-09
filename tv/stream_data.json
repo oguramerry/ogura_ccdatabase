@@ -5,7 +5,7 @@
     "streamer": "ずむちゃ",
     "url": "https://www.twitch.tv/zumumu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zumumu-320x180.jpg",
-    "viewers": 86,
+    "viewers": 70,
     "started_at": "2026-03-09T09:42:59Z"
   },
   {
@@ -19,12 +19,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "S19クリコン初め。レンキャスランククリ100～🌙月曜はクリコン配信デー！",
-    "streamer": "なしあ",
-    "url": "https://www.twitch.tv/nasiapvp",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
-    "viewers": 41,
-    "started_at": "2026-03-09T10:19:18Z"
+    "title": "クリコン クリスタル 403~",
+    "streamer": "amemiya_xiv",
+    "url": "https://www.twitch.tv/amemiya_xiv",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-03-09T11:10:13Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +32,17 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 22,
+    "viewers": 33,
     "started_at": "2026-03-09T10:57:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "S19クリコン初め。レンキャスランククリ100～🌙月曜はクリコン配信デー！",
+    "streamer": "なしあ",
+    "url": "https://www.twitch.tv/nasiapvp",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nasiapvp-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-03-09T10:19:18Z"
   },
   {
     "platform": "Twitch",
@@ -41,26 +50,8 @@
     "streamer": "猫又縁",
     "url": "https://www.twitch.tv/neco_urara",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 9,
+    "viewers": 7,
     "started_at": "2026-03-09T09:46:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-09T08:38:34Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン クリスタル 403~",
-    "streamer": "amemiya_xiv",
-    "url": "https://www.twitch.tv/amemiya_xiv",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-09T11:10:13Z"
   },
   {
     "platform": "YouTube",
@@ -68,7 +59,7 @@
     "streamer": "あだしののもふ",
     "url": "https://www.youtube.com/watch?v=6yOJw5-bI60",
     "thumbnail": "https://i.ytimg.com/vi/6yOJw5-bI60/mqdefault_live.jpg",
-    "viewers": 0,
+    "viewers": 1,
     "started_at": "2026-03-09T11:11:02Z"
   },
   {
