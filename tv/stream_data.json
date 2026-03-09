@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14/S19】クリコン上手くなりたいよ゛【ランクマ#18】 © SQUARE ENIX",
-    "streamer": "狗成まか",
-    "url": "https://www.twitch.tv/tmkami__",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tmkami__-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-03-09T18:30:52Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコンランクマ→オコチテ",
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 13,
+    "viewers": 18,
     "started_at": "2026-03-09T15:09:38Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14/S19】クリコン上手くなりたいよ゛【ランクマ#18】 © SQUARE ENIX",
+    "streamer": "狗成まか",
+    "url": "https://www.twitch.tv/tmkami__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tmkami__-320x180.jpg",
+    "viewers": 16,
+    "started_at": "2026-03-09T18:30:52Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +23,7 @@
     "streamer": "Shiroe_Wolfus",
     "url": "https://www.twitch.tv/shiroe_wolfus",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shiroe_wolfus-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-09T19:38:14Z"
   }
 ]
