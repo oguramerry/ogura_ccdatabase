@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "クリコンランクマ→オコチテ",
-    "streamer": "じゅきん",
-    "url": "https://www.twitch.tv/tufujukin",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-03-09T15:09:38Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "La malédiction du Crystal Conflict",
     "streamer": "Shiroe_Wolfus",
     "url": "https://www.twitch.tv/shiroe_wolfus",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shiroe_wolfus-320x180.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-03-09T19:38:14Z"
   }
 ]
