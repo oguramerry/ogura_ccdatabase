@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 95,
+    "viewers": 73,
     "started_at": "2026-03-09T10:57:35Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 41,
+    "viewers": 44,
     "started_at": "2026-03-09T11:01:06Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "すこぴちゃん",
     "url": "https://www.twitch.tv/sukoya_man",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 26,
+    "viewers": 30,
     "started_at": "2026-03-09T14:13:52Z"
   },
   {
@@ -41,7 +41,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 18,
+    "viewers": 20,
     "started_at": "2026-03-09T14:43:42Z"
   },
   {
@@ -50,26 +50,17 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 13,
+    "viewers": 18,
     "started_at": "2026-03-09T11:28:43Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン 侍強くなったらしい",
-    "streamer": "コンガナジャイ",
-    "url": "https://www.twitch.tv/konbanhag",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_konbanhag-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-09T13:41:14Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "FF14 クリコン",
-    "streamer": "Rai0825",
-    "url": "https://www.twitch.tv/rai0825",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-09T08:38:34Z"
+    "title": "クリコンランクマ→オコチテ",
+    "streamer": "じゅきん",
+    "url": "https://www.twitch.tv/tufujukin",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-03-09T15:09:38Z"
   },
   {
     "platform": "Twitch",
@@ -79,6 +70,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
     "viewers": 2,
     "started_at": "2026-03-09T13:08:16Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-09T08:38:34Z"
   },
   {
     "platform": "YouTube",
