@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 62,
+    "viewers": 60,
     "started_at": "2026-03-09T11:01:06Z"
   },
   {
@@ -19,21 +19,21 @@
   },
   {
     "platform": "Twitch",
-    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-03-09T11:28:43Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【ff14 クリコン】強くなるために召喚を勉強するの巻！！！",
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 24,
+    "viewers": 25,
     "started_at": "2026-03-09T13:06:43Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#7 ダイヤ4～取り合えずクリ目指そう",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-03-09T11:28:43Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +41,7 @@
     "streamer": "じゅきん",
     "url": "https://www.twitch.tv/tufujukin",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tufujukin-320x180.jpg",
-    "viewers": 15,
+    "viewers": 17,
     "started_at": "2026-03-09T15:09:38Z"
   }
 ]
