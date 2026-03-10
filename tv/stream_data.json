@@ -5,7 +5,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 35,
+    "viewers": 64,
     "started_at": "2026-03-10T11:28:28Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 32,
+    "viewers": 38,
     "started_at": "2026-03-10T10:57:23Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 18,
+    "viewers": 23,
     "started_at": "2026-03-10T15:16:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "今日はクリスタルコンフリクト",
-    "streamer": "miti_______mg",
-    "url": "https://www.twitch.tv/miti_______mg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_miti_______mg-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-10T15:51:58Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=wnp0Zrry4u0",
     "thumbnail": "https://i.ytimg.com/vi/wnp0Zrry4u0/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 3,
     "started_at": "2026-03-10T15:17:03Z"
   }
 ]
