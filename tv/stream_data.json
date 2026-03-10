@@ -5,17 +5,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 54,
+    "viewers": 57,
     "started_at": "2026-03-10T11:28:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
-    "streamer": "shink_1018",
-    "url": "https://www.twitch.tv/shink_1018",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 33,
-    "started_at": "2026-03-10T10:57:23Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +14,8 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 26,
+    "viewers": 31,
     "started_at": "2026-03-10T15:16:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "今日はクリスタルコンフリクト",
-    "streamer": "miti_______mg",
-    "url": "https://www.twitch.tv/miti_______mg",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_miti_______mg-320x180.jpg",
-    "viewers": 14,
-    "started_at": "2026-03-10T15:51:58Z"
   },
   {
     "platform": "YouTube",
@@ -41,7 +23,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=wnp0Zrry4u0",
     "thumbnail": "https://i.ytimg.com/vi/wnp0Zrry4u0/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 2,
     "started_at": "2026-03-10T15:17:03Z"
   }
 ]
