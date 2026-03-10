@@ -1,20 +1,11 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day83【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 49,
-    "started_at": "2026-03-10T11:28:28Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】本日の主役HBD俺【ランクマ】",
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 31,
+    "viewers": 60,
     "started_at": "2026-03-10T15:16:06Z"
   },
   {
@@ -23,7 +14,7 @@
     "streamer": "そわさん",
     "url": "https://www.youtube.com/watch?v=wnp0Zrry4u0",
     "thumbnail": "https://i.ytimg.com/vi/wnp0Zrry4u0/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-03-10T15:17:03Z"
   }
 ]
