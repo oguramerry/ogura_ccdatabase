@@ -1,21 +1,21 @@
 [
   {
     "platform": "Twitch",
-    "title": "【FF14】超クリコン研究会 Day83【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 44,
-    "started_at": "2026-03-10T11:28:28Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 31,
+    "viewers": 47,
     "started_at": "2026-03-10T10:57:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】超クリコン研究会 Day83【Kaheo】",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 38,
+    "started_at": "2026-03-10T11:28:28Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +23,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 20,
+    "viewers": 24,
     "started_at": "2026-03-10T15:16:06Z"
   },
   {
     "platform": "Twitch",
-    "title": "黒魔導士でクリコンカジュアル",
-    "streamer": "ふらんです",
-    "url": "https://www.twitch.tv/fran_umai",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "title": "【ｆｆ14】クリコン練習",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
     "viewers": 12,
-    "started_at": "2026-03-10T11:57:37Z"
+    "started_at": "2026-03-10T12:59:59Z"
   },
   {
     "platform": "YouTube",
@@ -50,7 +50,16 @@
     "streamer": "miti_______mg",
     "url": "https://www.twitch.tv/miti_______mg",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_miti_______mg-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-10T15:51:58Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-10T09:28:52Z"
   }
 ]
