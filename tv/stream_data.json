@@ -5,16 +5,52 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 47,
+    "viewers": 43,
     "started_at": "2026-03-10T11:28:28Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコンS19ランクマ#8 ダイヤ3～ぽこあランクマ",
-    "streamer": "SakuraKisaragi",
-    "url": "https://www.twitch.tv/sakurakisaragi",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-10T11:42:06Z"
+    "title": "【FF14】ミスタークリコン ランクマ（JP CC RANK）⇒【APEX】22時～ #エペ魔撃杯 に向けてチーム練習！茉麦レヨさん（@reyo_sandayo）とりお_ぶいちゅばさん（@rio_hyk）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 27,
+    "started_at": "2026-03-10T10:57:23Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】本日の主役HBD俺【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-10T15:16:06Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "黒魔導士でクリコンカジュアル",
+    "streamer": "ふらんです",
+    "url": "https://www.twitch.tv/fran_umai",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fran_umai-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-10T11:57:37Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】本日の主役HBD俺【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=wnp0Zrry4u0",
+    "thumbnail": "https://i.ytimg.com/vi/wnp0Zrry4u0/mqdefault_live.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-10T15:17:03Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "FF14 クリコン",
+    "streamer": "Rai0825",
+    "url": "https://www.twitch.tv/rai0825",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-10T09:28:52Z"
   }
 ]
