@@ -5,7 +5,7 @@
     "streamer": "amemiya_xiv",
     "url": "https://www.twitch.tv/amemiya_xiv",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 69,
+    "viewers": 60,
     "started_at": "2026-03-10T12:37:26Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 56,
+    "viewers": 55,
     "started_at": "2026-03-10T11:28:28Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 10,
+    "viewers": 11,
     "started_at": "2026-03-10T11:42:06Z"
   },
   {
@@ -32,7 +32,16 @@
     "streamer": "もちどん",
     "url": "https://www.twitch.tv/mochidon_",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
+    "started_at": "2026-03-10T13:00:48Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "のんびりクリコン",
+    "streamer": "もちどん",
+    "url": "https://www.twitch.tv/mochidon_",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mochidon_-320x180.jpg",
+    "viewers": 3,
     "started_at": "2026-03-10T13:00:48Z"
   },
   {
