@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 62,
+    "viewers": 59,
     "started_at": "2026-03-10T10:57:23Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 51,
+    "viewers": 52,
     "started_at": "2026-03-10T11:28:28Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【#FF14】クリスタルに戻りたい。ランクマッチ、シャキっていますか？【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-03-10T08:04:14Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "東雲ハクエン",
     "url": "https://www.twitch.tv/hakuensinonome",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hakuensinonome-320x180.jpg",
-    "viewers": 21,
+    "viewers": 22,
     "started_at": "2026-03-10T11:09:53Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【#FF14】クリスタルに戻りたい。ランクマッチ、シャキっていますか？【#クリコン 】",
+    "streamer": "さくやせら",
+    "url": "https://www.twitch.tv/sakuyasera",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-03-10T08:04:14Z"
   },
   {
     "platform": "Twitch",
@@ -41,17 +41,8 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 9,
+    "viewers": 10,
     "started_at": "2026-03-10T11:42:06Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "調子よければランクしちゃう?【FF14】イベント、クリコン。明日はメンテあるよ！",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-10T12:00:08Z"
   },
   {
     "platform": "Twitch",
