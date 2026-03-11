@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 77,
+    "viewers": 67,
     "started_at": "2026-03-11T11:23:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【第125話】ボロ小屋の腐ったパン【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 38,
-    "started_at": "2026-03-11T14:56:21Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 27,
+    "viewers": 35,
     "started_at": "2026-03-11T12:55:46Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第125話】ボロ小屋の腐ったパン【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 33,
+    "started_at": "2026-03-11T14:56:21Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 24,
+    "viewers": 31,
     "started_at": "2026-03-11T16:10:35Z"
   },
   {
@@ -41,17 +41,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 20,
+    "viewers": 16,
     "started_at": "2026-03-11T16:25:10Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコンda",
-    "streamer": "ちゃんたば",
-    "url": "https://www.twitch.tv/chan_tabata",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chan_tabata-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-11T14:28:19Z"
   },
   {
     "platform": "YouTube",
@@ -61,5 +52,14 @@
     "thumbnail": "https://i.ytimg.com/vi/W2nro_YnS6o/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-03-11T16:11:07Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンda",
+    "streamer": "ちゃんたば",
+    "url": "https://www.twitch.tv/chan_tabata",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chan_tabata-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-11T14:28:19Z"
   }
 ]
