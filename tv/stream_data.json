@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 83,
+    "viewers": 89,
     "started_at": "2026-03-11T11:23:23Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 43,
+    "viewers": 38,
     "started_at": "2026-03-11T12:55:46Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 33,
+    "viewers": 30,
     "started_at": "2026-03-11T14:56:21Z"
   },
   {
@@ -32,7 +32,7 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 18,
+    "viewers": 25,
     "started_at": "2026-03-11T16:10:35Z"
   },
   {
@@ -41,17 +41,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 11,
+    "viewers": 14,
     "started_at": "2026-03-11T16:25:10Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【クリコン】今年もあと10か月を切りました【ランクマ】",
-    "streamer": "そわさん",
-    "url": "https://www.youtube.com/watch?v=W2nro_YnS6o",
-    "thumbnail": "https://i.ytimg.com/vi/W2nro_YnS6o/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-11T16:11:07Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +50,16 @@
     "streamer": "ちゃんたば",
     "url": "https://www.twitch.tv/chan_tabata",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chan_tabata-320x180.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-03-11T14:28:19Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】今年もあと10か月を切りました【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=W2nro_YnS6o",
+    "thumbnail": "https://i.ytimg.com/vi/W2nro_YnS6o/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-11T16:11:07Z"
   }
 ]
