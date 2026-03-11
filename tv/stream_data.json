@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 62,
+    "viewers": 70,
     "started_at": "2026-03-11T11:23:23Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 36,
+    "viewers": 33,
     "started_at": "2026-03-11T12:55:46Z"
   },
   {
@@ -23,17 +23,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 32,
+    "viewers": 31,
     "started_at": "2026-03-11T13:07:12Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン 禁煙。",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 26,
-    "started_at": "2026-03-11T12:35:04Z"
+    "title": "眠くなるまで クリコン ランク S19 暗黒騎士（D1★☆☆/ー）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 16,
+    "started_at": "2026-03-11T13:33:33Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +41,17 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 14,
+    "viewers": 15,
     "started_at": "2026-03-11T09:26:05Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン 禁煙。",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-11T12:35:04Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +59,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 13,
+    "viewers": 12,
     "started_at": "2026-03-11T14:56:21Z"
   },
   {
@@ -64,30 +73,21 @@
   },
   {
     "platform": "Twitch",
-    "title": "眠くなるまで クリコン ランク S19 暗黒騎士（D1★☆☆/ー）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 10,
-    "started_at": "2026-03-11T13:33:33Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "【クリコン】ラフラフさんとスクリム【ぶるま決死隊】",
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 4,
+    "viewers": 5,
     "started_at": "2026-03-11T12:54:14Z"
   },
   {
     "platform": "Twitch",
-    "title": "ゆるくクリコンをする",
-    "streamer": "ya_ya_kei",
-    "url": "https://www.twitch.tv/ya_ya_kei",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_ya_kei-320x180.jpg",
+    "title": "クリコンda",
+    "streamer": "ちゃんたば",
+    "url": "https://www.twitch.tv/chan_tabata",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chan_tabata-320x180.jpg",
     "viewers": 1,
-    "started_at": "2026-03-11T14:50:49Z"
+    "started_at": "2026-03-11T14:28:19Z"
   },
   {
     "platform": "Twitch",
