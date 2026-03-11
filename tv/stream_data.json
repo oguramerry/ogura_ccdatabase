@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 66,
+    "viewers": 81,
     "started_at": "2026-03-11T11:23:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】誕生日なのでクリコンカスタムで遊んでください！【Kaheo】",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 42,
-    "started_at": "2026-03-11T13:07:12Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 34,
+    "viewers": 41,
     "started_at": "2026-03-11T12:55:46Z"
   },
   {
@@ -32,7 +23,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 30,
+    "viewers": 31,
     "started_at": "2026-03-11T14:56:21Z"
   },
   {
@@ -41,8 +32,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 17,
+    "viewers": 21,
     "started_at": "2026-03-11T13:33:33Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】今年もあと10か月を切りました【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.twitch.tv/so_wa__",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-11T16:10:35Z"
   },
   {
     "platform": "Twitch",
@@ -52,14 +52,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chan_tabata-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-03-11T14:28:19Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "ゆるくクリコンをする",
-    "streamer": "ya_ya_kei",
-    "url": "https://www.twitch.tv/ya_ya_kei",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_ya_kei-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-11T14:50:49Z"
   }
 ]
