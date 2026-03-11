@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 52,
+    "viewers": 51,
     "started_at": "2026-03-11T11:23:23Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 26,
+    "viewers": 27,
     "started_at": "2026-03-11T09:26:05Z"
   },
   {
@@ -23,8 +23,17 @@
     "streamer": "眠居ねむ",
     "url": "https://www.twitch.tv/nemu_yee",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 23,
+    "viewers": 26,
     "started_at": "2026-03-11T10:43:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：ランクマのちスクリム】22時〜『Rough Laugh』様とぶるま決死隊再結成後初スクリムにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-11T12:15:36Z"
   },
   {
     "platform": "YouTube",
@@ -32,7 +41,7 @@
     "streamer": "鈴屋ベル / Suzuya Bell",
     "url": "https://www.youtube.com/watch?v=2bZU8GH8sxI",
     "thumbnail": "https://i.ytimg.com/vi/2bZU8GH8sxI/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 9,
     "started_at": "2026-03-11T10:30:39Z"
   },
   {
@@ -46,12 +55,12 @@
   },
   {
     "platform": "Twitch",
-    "title": "[FF14]のんびりクリコンランクマ！",
-    "streamer": "乙卯ぽるる",
-    "url": "https://www.twitch.tv/kinotoporuru",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kinotoporuru-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-11T11:16:04Z"
+    "title": "眠くなるまで クリコン ランク S19 暗黒騎士（D1★☆☆/ー）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-11T12:18:38Z"
   },
   {
     "platform": "Twitch",
@@ -59,7 +68,16 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 0,
+    "viewers": 2,
+    "started_at": "2026-03-11T12:14:39Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンS19ランクマ#9 ダイヤ2～ぽこあは明日やる",
+    "streamer": "SakuraKisaragi",
+    "url": "https://www.twitch.tv/sakurakisaragi",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
+    "viewers": 2,
     "started_at": "2026-03-11T12:14:39Z"
   }
 ]
