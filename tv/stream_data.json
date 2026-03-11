@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 75,
+    "viewers": 56,
     "started_at": "2026-03-11T11:23:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【第125話】ボロ小屋の腐ったパン【FFXIV：クリコン】",
-    "streamer": "魔法騎士",
-    "url": "https://www.twitch.tv/fullfacehelmet",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 41,
-    "started_at": "2026-03-11T14:56:21Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 40,
+    "viewers": 44,
     "started_at": "2026-03-11T16:10:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【第125話】ボロ小屋の腐ったパン【FFXIV：クリコン】",
+    "streamer": "魔法騎士",
+    "url": "https://www.twitch.tv/fullfacehelmet",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-03-11T14:56:21Z"
   },
   {
     "platform": "YouTube",
