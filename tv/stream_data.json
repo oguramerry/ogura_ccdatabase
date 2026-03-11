@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 50,
+    "viewers": 66,
     "started_at": "2026-03-11T11:23:23Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】アルテマのくせに前シーズンアルテマ取れなかったんやって。どんなショボくれた人なんやろ。どんな惨めな顔しとんのやろ。",
-    "streamer": "ぴてぃわっと",
-    "url": "https://www.twitch.tv/pittywhat",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 37,
-    "started_at": "2026-03-11T12:55:46Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 33,
+    "viewers": 42,
     "started_at": "2026-03-11T13:07:12Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】アルテマのくせに前シーズンアルテマ取れなかったんやって。どんなショボくれた人なんやろ。どんな惨めな顔しとんのやろ。",
+    "streamer": "ぴてぃわっと",
+    "url": "https://www.twitch.tv/pittywhat",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
+    "viewers": 34,
+    "started_at": "2026-03-11T12:55:46Z"
   },
   {
     "platform": "Twitch",
@@ -32,7 +32,7 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 27,
+    "viewers": 30,
     "started_at": "2026-03-11T14:56:21Z"
   },
   {
@@ -41,35 +41,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 19,
+    "viewers": 17,
     "started_at": "2026-03-11T13:33:33Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン：ランクマのちスクリム】22時〜『Rough Laugh』様とぶるま決死隊再結成後初スクリムにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-03-11T12:15:36Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ラフラフさんとスクリム【ぶるま決死隊】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-11T12:54:14Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】ラフラフさんとスクリム【ぶるま決死隊】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-11T12:54:14Z"
   },
   {
     "platform": "Twitch",
