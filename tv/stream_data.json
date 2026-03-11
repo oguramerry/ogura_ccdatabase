@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 81,
+    "viewers": 83,
     "started_at": "2026-03-11T11:23:23Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 41,
+    "viewers": 43,
     "started_at": "2026-03-11T12:55:46Z"
   },
   {
@@ -23,17 +23,8 @@
     "streamer": "魔法騎士",
     "url": "https://www.twitch.tv/fullfacehelmet",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fullfacehelmet-320x180.jpg",
-    "viewers": 31,
+    "viewers": 33,
     "started_at": "2026-03-11T14:56:21Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "眠くなるまで クリコン ランク S19 暗黒騎士（D1★☆☆/ー）",
-    "streamer": "つくお",
-    "url": "https://www.twitch.tv/tsukuo_game",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 21,
-    "started_at": "2026-03-11T13:33:33Z"
   },
   {
     "platform": "Twitch",
@@ -41,8 +32,26 @@
     "streamer": "そわさん",
     "url": "https://www.twitch.tv/so_wa__",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so_wa__-320x180.jpg",
-    "viewers": 5,
+    "viewers": 18,
     "started_at": "2026-03-11T16:10:35Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "眠くなるまで クリコン ランク S19 暗黒騎士（D1★☆☆/ー）",
+    "streamer": "つくお",
+    "url": "https://www.twitch.tv/tsukuo_game",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-11T16:25:10Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【クリコン】今年もあと10か月を切りました【ランクマ】",
+    "streamer": "そわさん",
+    "url": "https://www.youtube.com/watch?v=W2nro_YnS6o",
+    "thumbnail": "https://i.ytimg.com/vi/W2nro_YnS6o/mqdefault_live.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-11T16:11:07Z"
   },
   {
     "platform": "Twitch",
