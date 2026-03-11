@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 48,
+    "viewers": 58,
     "started_at": "2026-03-11T11:23:23Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 31,
+    "viewers": 38,
     "started_at": "2026-03-11T13:07:12Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "ぴてぃわっと",
     "url": "https://www.twitch.tv/pittywhat",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pittywhat-320x180.jpg",
-    "viewers": 26,
+    "viewers": 22,
     "started_at": "2026-03-11T12:55:46Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 16,
+    "viewers": 19,
     "started_at": "2026-03-11T09:26:05Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】:;(∩´﹏`∩);:",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 15,
-    "started_at": "2026-03-11T12:36:11Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "にゃんまる居酒屋",
     "url": "https://www.twitch.tv/nyanmaru_blue",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 12,
+    "viewers": 16,
     "started_at": "2026-03-11T12:15:36Z"
   },
   {
@@ -59,26 +50,26 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 9,
+    "viewers": 13,
     "started_at": "2026-03-11T12:14:39Z"
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】ラフラフさんとスクリム【ぶるま決死隊】",
-    "streamer": "眠居ねむ",
-    "url": "https://www.twitch.tv/nemu_yee",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
+    "title": "【クリコン】:;(∩´﹏`∩);:",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
     "viewers": 8,
-    "started_at": "2026-03-11T12:54:14Z"
+    "started_at": "2026-03-11T12:36:11Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン 禁煙。",
-    "streamer": "すこぴちゃん",
-    "url": "https://www.twitch.tv/sukoya_man",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-11T12:35:04Z"
+    "title": "【🐟AKARIUM🐟】のんびりクリコン !soundboard !discord !karaoke【ENG/日本語✓】@AkariTsugomori",
+    "streamer": "晦あかり",
+    "url": "https://www.twitch.tv/akaritsugomori",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_akaritsugomori-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-11T11:00:51Z"
   },
   {
     "platform": "Twitch",
@@ -86,7 +77,25 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 2,
+    "viewers": 6,
     "started_at": "2026-03-11T13:33:33Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン 禁煙。",
+    "streamer": "すこぴちゃん",
+    "url": "https://www.twitch.tv/sukoya_man",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sukoya_man-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-11T12:35:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】ラフラフさんとスクリム【ぶるま決死隊】",
+    "streamer": "眠居ねむ",
+    "url": "https://www.twitch.tv/nemu_yee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nemu_yee-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-11T12:54:14Z"
   }
 ]
