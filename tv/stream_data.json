@@ -5,8 +5,17 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 37,
+    "viewers": 39,
     "started_at": "2026-03-11T09:26:05Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】:;(∩´﹏`∩);:",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-11T07:01:07Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,7 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 10,
+    "viewers": 4,
     "started_at": "2026-03-11T09:00:57Z"
   }
 ]
