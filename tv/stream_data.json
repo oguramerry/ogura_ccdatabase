@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 30,
+    "viewers": 29,
     "started_at": "2026-03-12T11:09:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】クリコン 即席スクリム！",
-    "streamer": "so5u",
-    "url": "https://www.twitch.tv/so5u",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 24,
-    "started_at": "2026-03-12T12:23:50Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 23,
+    "viewers": 29,
     "started_at": "2026-03-12T12:02:08Z"
   },
   {
@@ -32,17 +23,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 23,
+    "viewers": 25,
     "started_at": "2026-03-12T13:52:37Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコンスクリム 即席チーム「飛信隊」が『鳥華族』に挑む！",
-    "streamer": "せらヴぃ",
-    "url": "https://www.twitch.tv/celavi_ch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 23,
-    "started_at": "2026-03-12T12:14:26Z"
+    "title": "【ff14 クリコン】チーム練習だ！！対戦➤飛信隊（せらヴぃさんとこ",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 15,
+    "started_at": "2026-03-12T13:12:55Z"
   },
   {
     "platform": "Twitch",
@@ -50,7 +41,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 15,
+    "viewers": 13,
     "started_at": "2026-03-12T12:26:57Z"
   },
   {
@@ -59,17 +50,17 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 13,
+    "viewers": 9,
     "started_at": "2026-03-12T13:23:38Z"
   },
   {
-    "platform": "Twitch",
-    "title": "【ff14 クリコン】チーム練習だ！！対戦➤飛信隊（せらヴぃさんとこ",
-    "streamer": "茉麦レヨ",
-    "url": "https://www.twitch.tv/reyo_sandayo",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-12T13:12:55Z"
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=rpa5QJw6AuU",
+    "thumbnail": "https://i.ytimg.com/vi/rpa5QJw6AuU/mqdefault_live.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-12T13:23:59Z"
   },
   {
     "platform": "Twitch",
@@ -81,30 +72,21 @@
     "started_at": "2026-03-12T11:04:41Z"
   },
   {
+    "platform": "Twitch",
+    "title": "ゆるくクリコン垂れ流し。音小さめ",
+    "streamer": "ya_ya_kei",
+    "url": "https://www.twitch.tv/ya_ya_kei",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_ya_kei-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-12T15:45:45Z"
+  },
+  {
     "platform": "YouTube",
     "title": "クリコンランク",
     "streamer": "Gaku",
     "url": "https://www.youtube.com/watch?v=Lm_Wv1XUbuw",
     "thumbnail": "https://i.ytimg.com/vi/Lm_Wv1XUbuw/mqdefault_live.jpg",
-    "viewers": 1,
+    "viewers": 0,
     "started_at": "2026-03-12T13:00:48Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【 #FF14 】配信者即席チームで鳥華族に挑む🍭 クリコンカスタム【AMEPERO/Vtuber】",
-    "streamer": "AMEPERO",
-    "url": "https://www.youtube.com/watch?v=mKwpxNGNsv0",
-    "thumbnail": "https://i.ytimg.com/vi/mKwpxNGNsv0/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-12T12:30:46Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=rpa5QJw6AuU",
-    "thumbnail": "https://i.ytimg.com/vi/rpa5QJw6AuU/mqdefault_live.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-12T13:23:59Z"
   }
 ]
