@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 30,
+    "viewers": 32,
     "started_at": "2026-03-12T11:09:41Z"
   },
   {
@@ -14,17 +14,8 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 28,
+    "viewers": 23,
     "started_at": "2026-03-12T13:52:37Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】即席ちーむ！",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 16,
-    "started_at": "2026-03-12T12:26:57Z"
   },
   {
     "platform": "Twitch",
@@ -32,8 +23,17 @@
     "streamer": "茉麦レヨ",
     "url": "https://www.twitch.tv/reyo_sandayo",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
-    "viewers": 15,
+    "viewers": 18,
     "started_at": "2026-03-12T13:12:55Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】即席ちーむ！",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 14,
+    "started_at": "2026-03-12T12:26:57Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +41,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 11,
+    "viewers": 10,
     "started_at": "2026-03-12T13:23:38Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=rpa5QJw6AuU",
     "thumbnail": "https://i.ytimg.com/vi/rpa5QJw6AuU/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 5,
     "started_at": "2026-03-12T13:23:59Z"
   },
   {
@@ -59,7 +59,7 @@
     "streamer": "財団の捨て駒",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 2,
+    "viewers": 3,
     "started_at": "2026-03-12T11:04:41Z"
   },
   {
@@ -70,14 +70,5 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ya_ya_kei-320x180.jpg",
     "viewers": 1,
     "started_at": "2026-03-12T15:45:45Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "クリコンランク",
-    "streamer": "Gaku",
-    "url": "https://www.youtube.com/watch?v=Lm_Wv1XUbuw",
-    "thumbnail": "https://i.ytimg.com/vi/Lm_Wv1XUbuw/mqdefault_live.jpg",
-    "viewers": 0,
-    "started_at": "2026-03-12T13:00:48Z"
   }
 ]
