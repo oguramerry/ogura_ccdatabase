@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 29,
+    "viewers": 30,
     "started_at": "2026-03-12T11:09:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14クリコン】一夜限定チーム『飛信隊』VS『鳥華族』※尾平視点【Kaheo】 w/so5uさん、せらヴぃさん、あめぺろさん、みあるさん",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 29,
-    "started_at": "2026-03-12T12:02:08Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 25,
+    "viewers": 28,
     "started_at": "2026-03-12T13:52:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】即席ちーむ！",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 16,
+    "started_at": "2026-03-12T12:26:57Z"
   },
   {
     "platform": "Twitch",
@@ -37,20 +37,11 @@
   },
   {
     "platform": "Twitch",
-    "title": "【クリコン】即席ちーむ！",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-12T12:26:57Z"
-  },
-  {
-    "platform": "Twitch",
     "title": "クリコン",
     "streamer": "鳥乃すずめ",
     "url": "https://www.twitch.tv/suzumetorino",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 9,
+    "viewers": 11,
     "started_at": "2026-03-12T13:23:38Z"
   },
   {
@@ -59,7 +50,7 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=rpa5QJw6AuU",
     "thumbnail": "https://i.ytimg.com/vi/rpa5QJw6AuU/mqdefault_live.jpg",
-    "viewers": 4,
+    "viewers": 2,
     "started_at": "2026-03-12T13:23:59Z"
   },
   {
