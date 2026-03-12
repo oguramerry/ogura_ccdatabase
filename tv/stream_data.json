@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 62,
+    "viewers": 65,
     "started_at": "2026-03-12T11:09:41Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 40,
+    "viewers": 36,
     "started_at": "2026-03-12T12:14:26Z"
   },
   {
@@ -23,17 +23,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 31,
+    "viewers": 32,
     "started_at": "2026-03-12T12:02:08Z"
   },
   {
     "platform": "Twitch",
-    "title": "固定までクリコン",
-    "streamer": "ひつじメリー",
-    "url": "https://www.twitch.tv/hitsuzimerry",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hitsuzimerry-320x180.jpg",
-    "viewers": 17,
-    "started_at": "2026-03-12T12:07:04Z"
+    "title": "クリコン クリスタル 1588~",
+    "streamer": "amemiya_xiv",
+    "url": "https://www.twitch.tv/amemiya_xiv",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
+    "viewers": 29,
+    "started_at": "2026-03-12T12:39:21Z"
   },
   {
     "platform": "Twitch",
@@ -41,7 +41,7 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 16,
+    "viewers": 18,
     "started_at": "2026-03-12T12:23:50Z"
   },
   {
@@ -50,7 +50,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 13,
+    "viewers": 17,
     "started_at": "2026-03-12T12:26:57Z"
   },
   {
@@ -59,17 +59,26 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=xqU43QWbQos",
     "thumbnail": "https://i.ytimg.com/vi/xqU43QWbQos/mqdefault_live.jpg",
-    "viewers": 12,
+    "viewers": 14,
     "started_at": "2026-03-12T11:31:37Z"
   },
   {
     "platform": "Twitch",
-    "title": "クリコン クリスタル 1588~",
-    "streamer": "amemiya_xiv",
-    "url": "https://www.twitch.tv/amemiya_xiv",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-03-12T12:39:21Z"
+    "title": "固定までクリコン",
+    "streamer": "ひつじメリー",
+    "url": "https://www.twitch.tv/hitsuzimerry",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hitsuzimerry-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-12T12:07:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：ランクマのちカスタム】エレメンタルでカスタム募集立てるにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-12T12:40:07Z"
   },
   {
     "platform": "Twitch",
@@ -77,7 +86,7 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 8,
+    "viewers": 5,
     "started_at": "2026-03-12T11:32:47Z"
   },
   {
@@ -104,16 +113,7 @@
     "streamer": "AMEPERO",
     "url": "https://www.youtube.com/watch?v=mKwpxNGNsv0",
     "thumbnail": "https://i.ytimg.com/vi/mKwpxNGNsv0/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 0,
     "started_at": "2026-03-12T12:30:46Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン：ランクマのちカスタム】エレメンタルでカスタム募集立てるにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-12T12:40:07Z"
   }
 ]
