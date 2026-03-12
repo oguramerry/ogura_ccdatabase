@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 29,
+    "viewers": 34,
     "started_at": "2026-03-12T11:09:41Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 29,
+    "viewers": 33,
     "started_at": "2026-03-12T13:52:37Z"
   },
   {
@@ -23,7 +23,7 @@
     "streamer": "みある",
     "url": "https://www.twitch.tv/shrimpmialu",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 23,
+    "viewers": 19,
     "started_at": "2026-03-12T12:26:57Z"
   },
   {
@@ -32,7 +32,16 @@
     "streamer": "Rai0825",
     "url": "https://www.twitch.tv/rai0825",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rai0825-320x180.jpg",
-    "viewers": 1,
+    "viewers": 2,
     "started_at": "2026-03-12T17:04:14Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "unscheduled short stream - some midday crystalline conflict",
+    "streamer": "ShaedaNapalee",
+    "url": "https://www.twitch.tv/shaedanapalee",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shaedanapalee-320x180.jpg",
+    "viewers": 0,
+    "started_at": "2026-03-12T17:44:37Z"
   }
 ]
