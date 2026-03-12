@@ -5,8 +5,17 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 68,
+    "viewers": 63,
     "started_at": "2026-03-12T09:19:31Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】ミスタークリコン ランクマ 22:30～飛信隊様（せらヴぃ様・so5u様・AMEPERO様・Kaheo様・みある様）とチームスクリムします！（JP CC RANK）",
+    "streamer": "shink_1018",
+    "url": "https://www.twitch.tv/shink_1018",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
+    "viewers": 37,
+    "started_at": "2026-03-12T11:09:41Z"
   },
   {
     "platform": "Twitch",
@@ -14,7 +23,16 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 6,
+    "viewers": 5,
     "started_at": "2026-03-12T09:00:51Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】Rated -0 暴力【クリコン】",
+    "streamer": "財団の捨て駒",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-12T11:04:41Z"
   }
 ]
