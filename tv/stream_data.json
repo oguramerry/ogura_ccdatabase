@@ -5,7 +5,7 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 48,
+    "viewers": 46,
     "started_at": "2026-03-12T11:09:41Z"
   },
   {
@@ -14,7 +14,7 @@
     "streamer": "amemiya_xiv",
     "url": "https://www.twitch.tv/amemiya_xiv",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
-    "viewers": 39,
+    "viewers": 43,
     "started_at": "2026-03-12T12:39:21Z"
   },
   {
@@ -32,17 +32,8 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 26,
+    "viewers": 32,
     "started_at": "2026-03-12T12:14:26Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】即席ちーむ！",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 20,
-    "started_at": "2026-03-12T12:26:57Z"
   },
   {
     "platform": "Twitch",
@@ -50,17 +41,8 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 18,
+    "viewers": 17,
     "started_at": "2026-03-12T12:23:50Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン：ランクマのちカスタム】エレメンタルでカスタム募集立てるにゃん🎵",
-    "streamer": "にゃんまる居酒屋",
-    "url": "https://www.twitch.tv/nyanmaru_blue",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
-    "viewers": 12,
-    "started_at": "2026-03-12T12:40:07Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +50,26 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 10,
+    "viewers": 11,
     "started_at": "2026-03-12T12:05:11Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】即席ちーむ！",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 11,
+    "started_at": "2026-03-12T12:26:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 8,
+    "started_at": "2026-03-12T13:23:38Z"
   },
   {
     "platform": "Twitch",
@@ -79,6 +79,15 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
     "viewers": 8,
     "started_at": "2026-03-12T13:12:55Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.youtube.com/watch?v=rpa5QJw6AuU",
+    "thumbnail": "https://i.ytimg.com/vi/rpa5QJw6AuU/mqdefault_live.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-12T13:23:59Z"
   },
   {
     "platform": "Twitch",
@@ -95,8 +104,17 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 6,
+    "viewers": 5,
     "started_at": "2026-03-12T11:32:47Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】猫又クリコン部 #106～ プラチナからはじめるクリコン生活♬ ～",
+    "streamer": "猫又縁",
+    "url": "https://www.twitch.tv/neco_urara",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-12T13:10:02Z"
   },
   {
     "platform": "Twitch",
@@ -104,17 +122,8 @@
     "streamer": "財団の捨て駒",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
-    "started_at": "2026-03-12T11:04:41Z"
-  },
-  {
-    "platform": "YouTube",
-    "title": "【#FF14】クリコン【鳥乃すずめ/Vtuber】",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.youtube.com/watch?v=rpa5QJw6AuU",
-    "thumbnail": "https://i.ytimg.com/vi/rpa5QJw6AuU/mqdefault_live.jpg",
     "viewers": 2,
-    "started_at": "2026-03-12T13:23:59Z"
+    "started_at": "2026-03-12T11:04:41Z"
   },
   {
     "platform": "YouTube",
@@ -124,24 +133,6 @@
     "thumbnail": "https://i.ytimg.com/vi/mKwpxNGNsv0/mqdefault_live.jpg",
     "viewers": 1,
     "started_at": "2026-03-12T12:30:46Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #106～ プラチナからはじめるクリコン生活♬ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-12T13:10:02Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 1,
-    "started_at": "2026-03-12T13:23:38Z"
   },
   {
     "platform": "YouTube",
