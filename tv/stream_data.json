@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 66,
+    "viewers": 57,
     "started_at": "2026-03-12T11:09:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【#FF14】6時間やって±0レートでもめげないランクマ【#クリコン 】",
-    "streamer": "さくやせら",
-    "url": "https://www.twitch.tv/sakuyasera",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 37,
-    "started_at": "2026-03-12T09:19:31Z"
   },
   {
     "platform": "Twitch",
@@ -23,8 +14,17 @@
     "streamer": "kaheoCh",
     "url": "https://www.twitch.tv/kaheoch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 17,
+    "viewers": 27,
     "started_at": "2026-03-12T12:02:08Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコンスクリム 即席チーム「飛信隊」が『鳥華族』に挑む！",
+    "streamer": "せらヴぃ",
+    "url": "https://www.twitch.tv/celavi_ch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
+    "viewers": 21,
+    "started_at": "2026-03-12T12:14:26Z"
   },
   {
     "platform": "YouTube",
@@ -32,17 +32,26 @@
     "streamer": "コウ",
     "url": "https://www.youtube.com/watch?v=xqU43QWbQos",
     "thumbnail": "https://i.ytimg.com/vi/xqU43QWbQos/mqdefault_live.jpg",
-    "viewers": 11,
+    "viewers": 13,
     "started_at": "2026-03-12T11:31:37Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】今シーズンも始まる沼の試練だよ！自衛大事にしたいよね〜クリコン〜プラチナ帯",
-    "streamer": "アスヤン",
-    "url": "https://www.twitch.tv/asuyan_twitch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 8,
-    "started_at": "2026-03-12T11:32:47Z"
+    "title": "固定までクリコン",
+    "streamer": "ひつじメリー",
+    "url": "https://www.twitch.tv/hitsuzimerry",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hitsuzimerry-320x180.jpg",
+    "viewers": 10,
+    "started_at": "2026-03-12T12:07:04Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "プリンセスデー最終日；；応援隊は不滅🔥🔥【FF14】イベント、クリコン",
+    "streamer": "ゆきはれ",
+    "url": "https://www.twitch.tv/yukihale",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-12T09:00:51Z"
   },
   {
     "platform": "Twitch",
@@ -55,21 +64,21 @@
   },
   {
     "platform": "Twitch",
-    "title": "プリンセスデー最終日；；応援隊は不滅🔥🔥【FF14】イベント、クリコン",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 4,
-    "started_at": "2026-03-12T09:00:51Z"
+    "title": "【FF14】クリコン 即席スクリム！",
+    "streamer": "so5u",
+    "url": "https://www.twitch.tv/so5u",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
+    "viewers": 5,
+    "started_at": "2026-03-12T12:23:50Z"
   },
   {
     "platform": "Twitch",
-    "title": "固定までクリコン",
-    "streamer": "ひつじメリー",
-    "url": "https://www.twitch.tv/hitsuzimerry",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hitsuzimerry-320x180.jpg",
-    "viewers": 2,
-    "started_at": "2026-03-12T12:07:04Z"
+    "title": "【FF14】今シーズンも始まる沼の試練だよ！自衛大事にしたいよね〜クリコン〜プラチナ帯",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-12T11:32:47Z"
   },
   {
     "platform": "Twitch",
@@ -77,7 +86,7 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 1,
+    "viewers": 3,
     "started_at": "2026-03-12T12:05:11Z"
   }
 ]
