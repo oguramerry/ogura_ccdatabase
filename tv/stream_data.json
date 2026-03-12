@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 37,
+    "viewers": 40,
     "started_at": "2026-03-12T11:09:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14クリコン】一夜限定チーム『飛信隊』VS『鳥華族』※尾平視点【Kaheo】 w/so5uさん、せらヴぃさん、あめぺろさん、みあるさん",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 30,
-    "started_at": "2026-03-12T12:02:08Z"
   },
   {
     "platform": "Twitch",
@@ -28,21 +19,21 @@
   },
   {
     "platform": "Twitch",
+    "title": "【FF14クリコン】一夜限定チーム『飛信隊』VS『鳥華族』※尾平視点【Kaheo】 w/so5uさん、せらヴぃさん、あめぺろさん、みあるさん",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 30,
+    "started_at": "2026-03-12T12:02:08Z"
+  },
+  {
+    "platform": "Twitch",
     "title": "クリコンスクリム 即席チーム「飛信隊」が『鳥華族』に挑む！",
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 27,
+    "viewers": 23,
     "started_at": "2026-03-12T12:14:26Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【クリコン】即席ちーむ！",
-    "streamer": "みある",
-    "url": "https://www.twitch.tv/shrimpmialu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
-    "viewers": 19,
-    "started_at": "2026-03-12T12:26:57Z"
   },
   {
     "platform": "Twitch",
@@ -59,17 +50,26 @@
     "streamer": "つくお",
     "url": "https://www.twitch.tv/tsukuo_game",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tsukuo_game-320x180.jpg",
-    "viewers": 16,
+    "viewers": 18,
     "started_at": "2026-03-12T13:52:37Z"
   },
   {
     "platform": "Twitch",
-    "title": "【FF14】猫又クリコン部 #106～ プラチナからはじめるクリコン生活♬ ～",
-    "streamer": "猫又縁",
-    "url": "https://www.twitch.tv/neco_urara",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_neco_urara-320x180.jpg",
-    "viewers": 6,
-    "started_at": "2026-03-12T13:10:02Z"
+    "title": "【クリコン】即席ちーむ！",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 17,
+    "started_at": "2026-03-12T12:26:57Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【ff14 クリコン】チーム練習だ！！対戦➤飛信隊（せらヴぃさんとこ",
+    "streamer": "茉麦レヨ",
+    "url": "https://www.twitch.tv/reyo_sandayo",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reyo_sandayo-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-12T13:12:55Z"
   },
   {
     "platform": "YouTube",
@@ -77,17 +77,8 @@
     "streamer": "鳥乃すずめ",
     "url": "https://www.youtube.com/watch?v=rpa5QJw6AuU",
     "thumbnail": "https://i.ytimg.com/vi/rpa5QJw6AuU/mqdefault_live.jpg",
-    "viewers": 5,
+    "viewers": 6,
     "started_at": "2026-03-12T13:23:59Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "クリコン",
-    "streamer": "鳥乃すずめ",
-    "url": "https://www.twitch.tv/suzumetorino",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-12T13:23:38Z"
   },
   {
     "platform": "YouTube",
@@ -99,12 +90,30 @@
     "started_at": "2026-03-12T12:30:46Z"
   },
   {
+    "platform": "Twitch",
+    "title": "【FF14】Rated -0 暴力【クリコン】",
+    "streamer": "財団の捨て駒",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-12T11:04:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン",
+    "streamer": "鳥乃すずめ",
+    "url": "https://www.twitch.tv/suzumetorino",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suzumetorino-320x180.jpg",
+    "viewers": 3,
+    "started_at": "2026-03-12T13:23:38Z"
+  },
+  {
     "platform": "YouTube",
     "title": "クリコンランク",
     "streamer": "Gaku",
     "url": "https://www.youtube.com/watch?v=Lm_Wv1XUbuw",
     "thumbnail": "https://i.ytimg.com/vi/Lm_Wv1XUbuw/mqdefault_live.jpg",
-    "viewers": 2,
+    "viewers": 1,
     "started_at": "2026-03-12T13:00:48Z"
   }
 ]
