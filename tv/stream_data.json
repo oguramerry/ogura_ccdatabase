@@ -5,17 +5,8 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 57,
+    "viewers": 62,
     "started_at": "2026-03-12T11:09:41Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14クリコン】一夜限定チーム『飛信隊』VS『鳥華族』※尾平視点【Kaheo】 w/so5uさん、せらヴぃさん、あめぺろさん、みあるさん",
-    "streamer": "kaheoCh",
-    "url": "https://www.twitch.tv/kaheoch",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
-    "viewers": 27,
-    "started_at": "2026-03-12T12:02:08Z"
   },
   {
     "platform": "Twitch",
@@ -23,17 +14,17 @@
     "streamer": "せらヴぃ",
     "url": "https://www.twitch.tv/celavi_ch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_celavi_ch-320x180.jpg",
-    "viewers": 21,
+    "viewers": 40,
     "started_at": "2026-03-12T12:14:26Z"
   },
   {
-    "platform": "YouTube",
-    "title": "【FF14】厳しい戦いが続くぜ…【クリコンランクマ】【侍】【学者】",
-    "streamer": "コウ",
-    "url": "https://www.youtube.com/watch?v=xqU43QWbQos",
-    "thumbnail": "https://i.ytimg.com/vi/xqU43QWbQos/mqdefault_live.jpg",
-    "viewers": 13,
-    "started_at": "2026-03-12T11:31:37Z"
+    "platform": "Twitch",
+    "title": "【FF14クリコン】一夜限定チーム『飛信隊』VS『鳥華族』※尾平視点【Kaheo】 w/so5uさん、せらヴぃさん、あめぺろさん、みあるさん",
+    "streamer": "kaheoCh",
+    "url": "https://www.twitch.tv/kaheoch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kaheoch-320x180.jpg",
+    "viewers": 31,
+    "started_at": "2026-03-12T12:02:08Z"
   },
   {
     "platform": "Twitch",
@@ -41,26 +32,8 @@
     "streamer": "ひつじメリー",
     "url": "https://www.twitch.tv/hitsuzimerry",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hitsuzimerry-320x180.jpg",
-    "viewers": 10,
+    "viewers": 17,
     "started_at": "2026-03-12T12:07:04Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "プリンセスデー最終日；；応援隊は不滅🔥🔥【FF14】イベント、クリコン",
-    "streamer": "ゆきはれ",
-    "url": "https://www.twitch.tv/yukihale",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-12T09:00:51Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】Rated -0 暴力【クリコン】",
-    "streamer": "財団の捨て駒",
-    "url": "https://www.twitch.tv/class_d_channel",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 5,
-    "started_at": "2026-03-12T11:04:41Z"
   },
   {
     "platform": "Twitch",
@@ -68,8 +41,35 @@
     "streamer": "so5u",
     "url": "https://www.twitch.tv/so5u",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_so5u-320x180.jpg",
-    "viewers": 5,
+    "viewers": 16,
     "started_at": "2026-03-12T12:23:50Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン】即席ちーむ！",
+    "streamer": "みある",
+    "url": "https://www.twitch.tv/shrimpmialu",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shrimpmialu-320x180.jpg",
+    "viewers": 13,
+    "started_at": "2026-03-12T12:26:57Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】厳しい戦いが続くぜ…【クリコンランクマ】【侍】【学者】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=xqU43QWbQos",
+    "thumbnail": "https://i.ytimg.com/vi/xqU43QWbQos/mqdefault_live.jpg",
+    "viewers": 12,
+    "started_at": "2026-03-12T11:31:37Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "クリコン クリスタル 1588~",
+    "streamer": "amemiya_xiv",
+    "url": "https://www.twitch.tv/amemiya_xiv",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_amemiya_xiv-320x180.jpg",
+    "viewers": 12,
+    "started_at": "2026-03-12T12:39:21Z"
   },
   {
     "platform": "Twitch",
@@ -77,7 +77,7 @@
     "streamer": "アスヤン",
     "url": "https://www.twitch.tv/asuyan_twitch",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
-    "viewers": 4,
+    "viewers": 8,
     "started_at": "2026-03-12T11:32:47Z"
   },
   {
@@ -86,7 +86,34 @@
     "streamer": "SakuraKisaragi",
     "url": "https://www.twitch.tv/sakurakisaragi",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakurakisaragi-320x180.jpg",
-    "viewers": 3,
+    "viewers": 5,
     "started_at": "2026-03-12T12:05:11Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】Rated -0 暴力【クリコン】",
+    "streamer": "財団の捨て駒",
+    "url": "https://www.twitch.tv/class_d_channel",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
+    "viewers": 4,
+    "started_at": "2026-03-12T11:04:41Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【 #FF14 】配信者即席チームで鳥華族に挑む🍭 クリコンカスタム【AMEPERO/Vtuber】",
+    "streamer": "AMEPERO",
+    "url": "https://www.youtube.com/watch?v=mKwpxNGNsv0",
+    "thumbnail": "https://i.ytimg.com/vi/mKwpxNGNsv0/mqdefault_live.jpg",
+    "viewers": 2,
+    "started_at": "2026-03-12T12:30:46Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【クリコン：ランクマのちカスタム】エレメンタルでカスタム募集立てるにゃん🎵",
+    "streamer": "にゃんまる居酒屋",
+    "url": "https://www.twitch.tv/nyanmaru_blue",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyanmaru_blue-320x180.jpg",
+    "viewers": 1,
+    "started_at": "2026-03-12T12:40:07Z"
   }
 ]
