@@ -5,7 +5,7 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 63,
+    "viewers": 47,
     "started_at": "2026-03-12T09:19:31Z"
   },
   {
@@ -14,8 +14,26 @@
     "streamer": "shink_1018",
     "url": "https://www.twitch.tv/shink_1018",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_shink_1018-320x180.jpg",
-    "viewers": 37,
+    "viewers": 45,
     "started_at": "2026-03-12T11:09:41Z"
+  },
+  {
+    "platform": "Twitch",
+    "title": "【FF14】今シーズンも始まる沼の試練だよ！自衛大事にしたいよね〜クリコン〜プラチナ帯",
+    "streamer": "アスヤン",
+    "url": "https://www.twitch.tv/asuyan_twitch",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asuyan_twitch-320x180.jpg",
+    "viewers": 7,
+    "started_at": "2026-03-12T11:32:47Z"
+  },
+  {
+    "platform": "YouTube",
+    "title": "【FF14】厳しい戦いが続くぜ…【クリコンランクマ】【侍】【学者】",
+    "streamer": "コウ",
+    "url": "https://www.youtube.com/watch?v=xqU43QWbQos",
+    "thumbnail": "https://i.ytimg.com/vi/xqU43QWbQos/mqdefault_live.jpg",
+    "viewers": 6,
+    "started_at": "2026-03-12T11:31:37Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +41,7 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 5,
+    "viewers": 4,
     "started_at": "2026-03-12T09:00:51Z"
   },
   {
@@ -32,7 +50,7 @@
     "streamer": "財団の捨て駒",
     "url": "https://www.twitch.tv/class_d_channel",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_class_d_channel-320x180.jpg",
-    "viewers": 3,
+    "viewers": 2,
     "started_at": "2026-03-12T11:04:41Z"
   }
 ]
