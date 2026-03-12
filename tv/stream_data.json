@@ -5,17 +5,8 @@
     "streamer": "さくやせら",
     "url": "https://www.twitch.tv/sakuyasera",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuyasera-320x180.jpg",
-    "viewers": 39,
+    "viewers": 60,
     "started_at": "2026-03-12T09:19:31Z"
-  },
-  {
-    "platform": "Twitch",
-    "title": "【FF14】カジュアル→ランクマ【クリコン】",
-    "streamer": "ぐみもぐ",
-    "url": "https://www.twitch.tv/gumimogumogu",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gumimogumogu-320x180.jpg",
-    "viewers": 23,
-    "started_at": "2026-03-12T07:17:21Z"
   },
   {
     "platform": "Twitch",
@@ -23,7 +14,7 @@
     "streamer": "ゆきはれ",
     "url": "https://www.twitch.tv/yukihale",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yukihale-320x180.jpg",
-    "viewers": 5,
+    "viewers": 6,
     "started_at": "2026-03-12T09:00:51Z"
   }
 ]
